@@ -1,12 +1,12 @@
-# NLP Project
 
+## NLP Project
+
+```text
 MD&A text
-    ↓
+  ↓
 Sentiment / uncertainty / tone (NLP output)
-    ↓
+  ↓
 Performance check (future returns)
-
-Reading the Energy Market: Evidence from MD&A Disclosures
 
 
 
