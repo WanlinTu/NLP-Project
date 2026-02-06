@@ -1,4 +1,13 @@
 # NLP Project
+
+MD&A text
+   ↓
+Sentiment / uncertainty / tone (NLP output)
+   ↓
+Performance check (future returns)
+
+
+
 Reading the Energy Market: Evidence from MD&amp;A Disclosures
 
 Concrete project pipeline 
