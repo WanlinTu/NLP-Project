@@ -1,3 +1,8 @@
+Google Doc: https://docs.google.com/document/d/1pO_aZJfCujaOTlTdMzWrOZdifnR9t8Cg4uFwxbXjDaQ/edit?tab=t.0
+
+
+
+
 
 ## NLP Project
 
