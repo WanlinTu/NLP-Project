@@ -1,0 +1,714 @@
+{
+  "ticker": "AAL",
+  "form": "10-K",
+  "filing_date": "2016-02-24",
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "num_factors": 30,
+  "factors": [
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing declining pricing power, with passenger yields and PRASM decreasing.",
+      "evidence": [
+        {
+          "text": "Mainline passenger yield decreased 7.5% to 14.56 cents in 2015 from 15.74 cents in 2014. Mainline PRASM decreased 6.5% to 12.13 cents in 2015 from 12.97 cents in 2014.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is experiencing a decline in pricing power, evidenced by decreases in passenger yields and PRASM.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving, with initiatives aimed at reducing the time aircraft are out of service and improving customer service metrics.",
+      "evidence": [
+        {
+          "text": "We are working to improve these metrics by making investments in our operations, which include the hiring of additional maintenance personnel to reduce the time aircraft are out of service.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Operational efficiency is improving through targeted investments and initiatives aimed at reducing downtime and enhancing service.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management conveys cautious optimism about future financial results, noting that 2015 financial results are evidence of progress but acknowledging uncertainty.",
+      "evidence": [
+        {
+          "text": "Although it is difficult to predict the price of oil or the strength of the economy, we believe that our 2015 financial results are evidence of the substantial progress we have made and can continue to build on.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management expresses cautious optimism but acknowledges uncertainties, providing a balanced view without a clear directional signal.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intensifying due to low-cost carriers and potential industry consolidation.",
+      "evidence": [
+        {
+          "text": "Our competitors include other major domestic airlines and foreign, regional and new entrant airlines, as well as joint ventures formed by some of these airlines, many of which have more financial or other resources and/or lower cost structures than ours, as well as other forms of transportation, including rail and private automobiles.",
+          "section": "risk_factors",
+          "subsection": "The airline industry is intensely competitive and dynamic."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intensifying competition from low-cost carriers and potential industry consolidation poses a significant challenge.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations and emissions requirements are creating significant compliance costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "Compliance with environmental laws and regulations can require significant expenditures, and violations can lead to significant fines and penalties.",
+          "section": "risk_factors",
+          "subsection": "We rely on third-party distribution channels and must manage effectively the costs, rights and functionality of these channels."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant compliance costs and operational constraints due to environmental regulations are impacting the company negatively.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is involved in various legal proceedings and claims that could result in significant financial and operational impacts, including adverse publicity and damage to its reputation.",
+      "evidence": [
+        {
+          "text": "If a legal proceeding is resolved against us, it could result in significant compensatory damages, and in certain circumstances punitive or trebled damages, disgorgement of revenue or profits, remedial corporate measures or injunctive relief imposed on us. If our existing insurance does not cover the amount or types of damages awarded, or if other resolution or actions taken as a result of the legal proceeding were to restrain our ability to operate or market our services, our consolidated financial position, results of operations or cash flows could be materially adversely affected.",
+          "section": "risk_factors",
+          "subsection": "We rely heavily on technology and automated systems to operate our business, and any\nfailure of these technologies or systems could harm our business, results of operations and financial condition."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential for significant financial and operational impacts from ongoing legal proceedings and claims poses a substantial risk.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are hurting the company, with a substantial portion of the company's debt bearing interest at fluctuating rates, leading to increased interest expense and potential difficulties in making interest payments.",
+      "evidence": [
+        {
+          "text": "A substantial portion of our indebtedness bears interest at fluctuating interest rates, primarily based on the London interbank offered rate for deposits of U.S. dollars (LIBOR). LIBOR tends to fluctuate based on general economic conditions, general interest rates, rates set by the Federal Reserve and other central banks, and the supply of and demand for credit in the London interbank market.",
+          "section": "risk_factors",
+          "subsection": "Increased costs of financing, a reduction in the availability of financing and fluctuations in interest rates could\nadversely affect our liquidity, results of operations and financial condition."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased interest expenses due to fluctuating rates on a large portion of the company's debt are harming the company financially.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are a risk, with the possibility of strikes or other labor disruptions that could materially adversely affect the company's business, results of operations, and financial condition.",
+      "evidence": [
+        {
+          "text": "In the case of a CBA that is amendable under the RLA, if no agreement is reached during direct negotiations between the parties, either party may request that the NMB appoint a federal mediator. The RLA prescribes no timetable for the direct negotiation and mediation processes, and it is not unusual for those processes to last for many months or even several years.",
+          "section": "risk_factors",
+          "subsection": "Increased costs of financing, a reduction in the availability of financing and fluctuations in interest rates could\nadversely affect our liquidity, results of operations and financial condition."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Risk of strikes or other labor disruptions could materially adversely affect the company's business and financial condition.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Operating margins are expanding due to significantly lower fuel costs and reduced operating expenses, particularly CASM, despite some increases in labor costs and a negative impact from Venezuelan currency issues. However, there is a slight indication that margins may have been stable or slightly compressed in 2014 compared to 2013.",
+      "evidence": [
+        {
+          "text": "Total operating expenses in 2015 decreased $3.6 billion, or 9.4%, from 2014.",
+          "section": "mda",
+          "subsection": "Operating Statistics"
+        },
+        {
+          "text": "Operating cost per available seat mile (CASM) decreased by 10.4% from 2014 to 2015.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Driven by substantially lower fuel costs, we realized operating income of $6.2 billion and net income of $7.6 billion in 2015.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Operating margins are expanding due to lower fuel costs and reduced operating expenses, despite some labor cost increases.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capacity_load_yield",
+      "category": "airlines_transport",
+      "summary": "The company is experiencing a mixed situation with capacity expansion and slight improvements in load factors, but facing significant declines in revenue per available seat mile (PRASM), which is negatively impacting passenger revenues. There is concern over potential economic downturns and technological disruptions that could further exacerbate these issues.",
+      "evidence": [
+        {
+          "text": "Mainline passenger revenues decreased $1.8 billion, or 5.7%, in 2015 from 2014 driven primarily by a decrease in yield.",
+          "section": "mda",
+          "subsection": "Operating Statistics"
+        },
+        {
+          "text": "Our mainline and regional passenger revenue per available seat mile (PRASM) was 13.21 cents in 2015, a 5.4% decrease, as compared to 13.97 cents in 2014.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "An economic downturn or general global instability caused by military actions, terrorism, disease outbreaks or natural disasters could reduce the demand for air travel, which would reduce the amount of cash generated by operations.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "There are significant declines in revenue per available seat mile (PRASM) and concerns about economic downturns and technological disruptions.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are mixed across different segments, showing growth in regional passenger revenues and RPMs but declines in mainline passenger revenues and cargo revenues. Revenue growth is generally driven by price decreases rather than volume increases.",
+      "evidence": [
+        {
+          "text": "Total Mainline and Regional Revenue passenger miles (RPMs) increased by 2.4% from 2014 to 2015, while Passenger revenue per available seat mile (PRASM) decreased by 5.4%",
+          "section": "mda",
+          "subsection": "Operating Statistics"
+        },
+        {
+          "text": "Mainline RPMs increased 2.0% as mainline capacity, as measured by ASMs, increased 0.8%, resulting in a 0.9 point increase in load factor to 83.3%. Mainline passenger yield decreased 7.5% to 14.56 cents in 2015 from 15.74 cents in 2014",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Mainline and regional passenger revenues were $35.5 billion, a decrease of $1.6 billion, or 4.3%, as compared to 2014",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Unit volumes show mixed trends with growth in regional passenger revenues and RPMs but declines in mainline passenger revenues and cargo revenues.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly aircraft fuel, have been declining significantly, leading to substantial reductions in fuel expenses and operating costs. However, there is a concern that rising fuel costs could put pressure on cash availability in the future.",
+      "evidence": [
+        {
+          "text": "Aircraft fuel and related taxes decreased $4.4 billion, or 41.2%, in 2015 from 2014 primarily due to a 40.7% decrease in the average price per gallon of fuel to $1.72 in 2015 from an average price per gallon of $2.91 in 2014.",
+          "section": "mda",
+          "subsection": "Operating Statistics"
+        },
+        {
+          "text": "Mainline and regional fuel expense totaled $7.5 billion in 2015, which was $5.1 billion, or 40.8%, lower as compared to 2014. This decrease was driven by a 40.7% decrease in the average price per gallon of fuel to $1.72 in 2015 from $2.91 in 2014.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "An increase in costs, either due to an increase in borrowing costs caused by a reduction in credit ratings or a general increase in interest rates, or due to an increase in the cost of fuel, maintenance, or aircraft, aircraft engines or parts, could decrease the amount of cash available to cover cash contractual obligations.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Input costs, particularly fuel, have been declining significantly, leading to substantial reductions in fuel expenses and operating costs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fuel_costs_hedging",
+      "category": "airlines_transport",
+      "summary": "Fuel costs are currently decreasing, which is beneficial for the company's profitability. However, the company does not have any fuel hedging contracts in place, leaving it vulnerable to potential future increases in fuel prices.",
+      "evidence": [
+        {
+          "text": "The average aircraft fuel price including related taxes dropped from $2.91 to $1.72 per gallon, a decrease of 40.7%",
+          "section": "mda",
+          "subsection": "AAG\u0092s Results of Operations"
+        },
+        {
+          "text": "As of December\u00a031, 2015, we did not have any fuel hedging contracts outstanding to hedge our fuel consumption.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "An increase in costs, either due to an increase in borrowing costs caused by a reduction in credit ratings or a general increase in interest rates, or due to an increase in the cost of fuel, maintenance, or aircraft, aircraft engines or parts, could decrease the amount of cash available to cover cash contractual obligations.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While current fuel costs are decreasing, the lack of hedging leaves the company vulnerable to future increases.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction programs are delivering measurable savings across various areas including fuel costs, maintenance expenses, and overall operating expenses, while also focusing on managing the cost structure. However, there is a notable emphasis on fuel cost reductions compared to other expense categories.",
+      "evidence": [
+        {
+          "text": "Operating cost per available seat mile (CASM) decreased by 10.4% from 2014 to 2015.",
+          "section": "mda",
+          "subsection": "Operating Statistics"
+        },
+        {
+          "text": "Aircraft fuel and related taxes decreased $4.4 billion, or 41.2%, in 2015 from 2014 primarily due to a 40.7% decrease in the average price per gallon of fuel to $1.72 in 2015 from an average price per gallon of $2.91 in 2014.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "We remain committed to actively managing our cost structure, which we believe is necessary in an industry whose economic prospects are heavily dependent upon two variables we cannot control: the health of the economy and the price of fuel.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction programs are delivering measurable savings across various areas, particularly in fuel costs and overall operating expenses.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting unfavorably towards lower-margin segments, especially in mainline passenger revenues and international yields due to foreign currency devaluation, despite some growth in other revenues. Domestic markets outperformed international markets in yield and overall revenue performance.",
+      "evidence": [
+        {
+          "text": "Mainline passenger revenues decreased $1.8 billion, or 5.7%, in 2015 from 2014 driven primarily by a decrease in yield.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Total operating revenues in 2015 decreased $1.7 billion, or 3.9%, from 2014 principally due to competitive growth and weaker international yields primarily due to foreign currency devaluation relative to the U.S. dollar.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Additionally, domestic markets outperformed international markets (Atlantic, Pacific and Latin America) in both yield and overall revenue performance.",
+          "section": "mda",
+          "subsection": "The U.S. Airline Industry"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Revenue mix is shifting unfavorably towards lower-margin segments, especially in mainline passenger revenues and international yields.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing due to new merger-related labor contracts and are a concern as they put pressure on margins and could potentially become less competitive in the future.",
+      "evidence": [
+        {
+          "text": "Salaries, wages and benefits increased $1.0 billion, or 11.9%, in 2015 from 2014 primarily due to increased costs associated with the new, merger related pilot, flight attendant and customer service and reservation agent collective bargaining agreements.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Salaries, wages and benefits increased $395 million, or 7.5%, in 2014 from 2013 primarily due to increased costs associated with merger related labor contracts.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Currently, we believe our labor costs are competitive relative to the other large network carriers. However, we cannot provide assurance that labor costs going forward will remain competitive because some of our agreements are amendable now and others may become amendable, competitors may significantly reduce their labor costs or we may agree to higher-cost provisions in our current or future labor negotiations.",
+          "section": "mda",
+          "subsection": "2014 Compared to 2013"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing due to new merger-related labor contracts, putting pressure on margins and potentially reducing competitiveness.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating, with a significant decline in 2015 compared to 2014, despite some acceleration noted between 2014 and 2013.",
+      "evidence": [
+        {
+          "text": "Total operating revenues in 2015 decreased $1.7 billion, or 3.9%, from 2014.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Mainline and regional passenger revenues were $35.5 billion, a decrease of $1.6 billion, or 4.3%, as compared to 2014.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        },
+        {
+          "text": "Total operating revenues in 2014 increased $1.4 billion or 5.4%, which was driven by strong demand for air travel.",
+          "section": "mda",
+          "subsection": "2014 Compared to 2013"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary indicates a deceleration in organic revenue growth, with a significant decline in 2015 compared to 2014.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment poses significant challenges for the company, acting as a headwind due to factors such as foreign currency devaluation, the discretionary nature of travel spending, and broader concerns like inflation, credit availability, and geopolitical issues.",
+      "evidence": [
+        {
+          "text": "Total operating revenues in 2015 decreased $1.7 billion, or 3.9%, from 2014 principally due to competitive growth and weaker international yields primarily due to foreign currency devaluation relative to the U.S. dollar.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Due to the discretionary nature of business and leisure travel spending, airline industry revenues are heavily influenced by the condition of the U.S. economy and economies in other regions of the world.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Concerns about the systemic impact of inflation, the availability and cost of credit, energy costs and geopolitical issues, combined with continued changes in business activity levels and consumer confidence, increased unemployment and volatile oil prices, have in the past and may in the future contribute to volatility in the capital and credit markets.",
+          "section": "risk_factors",
+          "subsection": "Downturns in economic conditions adversely affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary highlights multiple economic challenges, including foreign currency devaluation and broader macroeconomic concerns, acting as significant headwinds.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are negatively impacting the company, leading to significant foreign currency losses that hurt nonoperating income, particularly in Latin American and European markets due to the strengthening of the U.S. dollar.",
+      "evidence": [
+        {
+          "text": "Other nonoperating expense, net in 2015 included a net $616 million in other nonoperating special charges and $159 million of foreign currency losses.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Other nonoperating expense, net in 2015 included a net $594 million in other nonoperating special charges and $159 million of foreign currency losses.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "The foreign currency losses were driven primarily by the strengthening of the U.S. dollar relative to other currencies during 2015, principally in Latin American and European markets, including a 34% decrease in the value of the Argentinian peso, a 30% decrease in the value of the Brazilian real, a 14% decrease in the value of the Mexican peso, a 10% decrease in the value of the Euro and a 5% decrease in the value of the British pound.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary mentions significant foreign currency losses that negatively impacted nonoperating income, especially in Latin American and European markets.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "travel_demand_mix",
+      "category": "airlines_transport",
+      "summary": "The travel demand mix is mixed; while international freight volumes are increasing and positively impacting cargo revenues, there is a shift towards weaker international passenger markets, negatively affecting overall passenger revenue.",
+      "evidence": [
+        {
+          "text": "Our mainline and regional passenger revenue per available seat mile (PRASM) was 13.21 cents in 2015, a 5.4% decrease, as compared to 13.97 cents in 2014.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        },
+        {
+          "text": "Cargo revenues increased $41 million, or 6.1%, in 2014 from 2013 driven primarily by an increase in international freight volumes.",
+          "section": "mda",
+          "subsection": "2014 Compared to 2013"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The summary shows a mixed situation with increasing international freight volumes positively impacting cargo revenues, but a shift towards weaker international passenger markets negatively affecting overall passenger revenue.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management demonstrates strong confidence through various capital management actions, including significant debt issuance, share repurchases, and dividend payments, despite some offsetting debt repayments.",
+      "evidence": [
+        {
+          "text": "In 2015, we returned $3.9 billion to our shareholders through the payment of $278 million in quarterly dividends and the repurchase of $3.6 billion of common stock, or 85.1 million shares.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        },
+        {
+          "text": "Principal financing activities in 2015 included proceeds from the issuance of $4.5 billion of debt primarily including $4.2 billion of EETC equipment notes and other aircraft related financings.",
+          "section": "mda",
+          "subsection": "American"
+        },
+        {
+          "text": "These cash inflows were offset in part by debt repayments of $2.2 billion, including the $400 million repayment of American\u0092s AAdvantage loan with Citibank.",
+          "section": "mda",
+          "subsection": "American"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management demonstrates strong confidence through significant capital management actions, including debt issuance, share repurchases, and dividend payments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fleet_strategy",
+      "category": "airlines_transport",
+      "summary": "American Airlines' fleet strategy focuses on modernizing and renewing its fleet to enhance efficiency and support growth, but this approach may increase operational costs due to higher maintenance and lease expenses. Additionally, there is a risk of delays in aircraft deliveries and integration challenges with new technology systems.",
+      "evidence": [
+        {
+          "text": "In 2015, we took delivery of 75 new mainline aircraft while retiring 112 aircraft. We also added 52 regional aircraft to our fleet and removed 31 regional aircraft.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        },
+        {
+          "text": "Operating the aircraft for a longer period will result in higher maintenance, fuel and other operating costs than if we replaced the aircraft.",
+          "section": "mda",
+          "subsection": "Long-lived Assets"
+        },
+        {
+          "text": "Aircraft rent increased $117 million, or 15.7%, in 2014 from 2013 primarily as a result of new leased aircraft deliveries in 2014 as American continued its fleet renewal program.",
+          "section": "mda",
+          "subsection": "2014 Compared to 2013"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the fleet strategy aims to enhance efficiency and support growth, it also increases operational costs and poses risks of delays and integration challenges.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "American Airlines Group has a stable capex outlook with planned expenditures of approximately $4.5 billion annually for 2016 and 2017, primarily focused on fleet renewal. However, there is uncertainty regarding the financing needed for future aircraft deliveries, indicating potential risks.",
+      "evidence": [
+        {
+          "text": "We believe it is important to retain liquidity levels above our network peers as we expect capital expenditures of approximately $4.5 billion in each of 2016 and 2017 as we continue our fleet renewal program.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        },
+        {
+          "text": "Our business plan contemplates significant investments in modernizing our fleet and integrating the American and US Airways businesses. Significant capital resources will be required to execute this plan.",
+          "section": "mda",
+          "subsection": "AAG"
+        },
+        {
+          "text": "Principal investing activities in 2015 included expenditures of $6.2 billion for property and equipment, consisting primarily of the purchase of 114 newly delivered aircraft and eight spare engines.",
+          "section": "risk_factors",
+          "subsection": "We will need to obtain sufficient financing or other capital to operate successfully."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The summary indicates a stable capex outlook with planned expenditures, but also highlights potential risks regarding future aircraft deliveries and financing needs.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks for the company include economic conditions, fuel price volatility, and currency devaluations, particularly in Venezuela, which could negatively impact operating results, liquidity, and financial condition.",
+      "evidence": [
+        {
+          "text": "Uncertainty exists regarding the economic conditions driving these declines. See Part I, Item 1A. Risk Factors \u2013 \u201cDownturns in economic conditions adversely affect our business\u201d and \u201cOur business is dependent on the price and availability of aircraft fuel. Continued periods of high volatility in fuel costs, increased fuel prices and significant disruptions in the supply of aircraft fuel could have a significant negative impact on our operating results and liquidity.\u201d",
+          "section": "mda",
+          "subsection": "The U.S. Airline Industry"
+        },
+        {
+          "text": "During 2014, we significantly reduced capacity in the Venezuelan market and we no longer accept bolivars as payment for airline tickets. Generally, fluctuations in foreign currencies, including devaluations, cannot be predicted by us and can significantly affect the value of our cash and short-term investments located outside the United States. These conditions, as well as any further delays, devaluations or imposition of more stringent repatriation restrictions, may materially adversely affect our business, results of operations and financial condition.",
+          "section": "mda",
+          "subsection": "Cash, Short-Term Investments and Restricted Cash"
+        },
+        {
+          "text": "American\u0092s 2015 profitability was negatively affected by a $592 million charge to write off all of the value of Venezuelan bolivars held by American due to continued lack of repatriations and deterioration of economic conditions in Venezuela.",
+          "section": "mda",
+          "subsection": "American"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include economic conditions, fuel price volatility, and currency devaluations, which could negatively impact operating results, liquidity, and financial condition.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand for air travel is strong, driving revenue growth, but there is a risk that economic downturns or global instability could lead to a decline in demand.",
+      "evidence": [
+        {
+          "text": "Total operating revenues in 2014 increased $1.4 billion or 5.4%, which was driven by strong demand for air travel.",
+          "section": "mda",
+          "subsection": "Capital Raising Activity and Other Possible Actions"
+        },
+        {
+          "text": "An economic downturn or general global instability caused by military actions, terrorism, disease outbreaks or natural disasters could reduce the demand for air travel, which would reduce the amount of cash generated by operations.",
+          "section": "mda",
+          "subsection": "2014 Compared to 2013"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The summary highlights strong demand for air travel driving revenue growth, despite mentioning potential risks.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are strong and consistent, with a focus on share repurchases and dividend payments. Management's confidence is reflected in the ongoing share repurchase activities, while the capital deployment program continues to support these initiatives despite potential volatility in the stock price.",
+      "evidence": [
+        {
+          "text": "In 2015, we returned $3.9 billion to our shareholders through the payment of $278 million in quarterly dividends and the repurchase of $3.6 billion of common stock, or 85.1 million shares.",
+          "section": "mda",
+          "subsection": "American Airlines Group"
+        },
+        {
+          "text": "Since July 2014, as part of our capital deployment program, our Board of Directors has approved several share repurchase programs aggregating $7.0 billion of authority of which, as of December\u00a031, 2015, $2.4 billion remained unused under repurchase programs which are to be completed no later than December\u00a031, 2016.",
+          "section": "mda",
+          "subsection": "AAG"
+        },
+        {
+          "text": "Cash flows were generated from increased profitability, driven by substantially lower fuel costs and a decrease in pension contributions, which were offset in part by American\u0092s funding of share repurchase activities performed at the AAG parent company level.",
+          "section": "mda",
+          "subsection": "American"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The company is consistently returning substantial value to shareholders through dividends and share repurchases, indicating strong financial performance and management confidence.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is actively managing its debt through various actions like refinancing and reducing debt obligations, but it still faces significant debt and fixed obligations that could strain its balance sheet and limit its financial flexibility. This indicates a mixed approach towards debt management.",
+      "evidence": [
+        {
+          "text": "Going forward, depending on market conditions, our cash position and other considerations, we may continue to take such actions [refinancing, redeeming or repurchasing debt].",
+          "section": "mda",
+          "subsection": "Capital Raising Activity and Other Possible Actions"
+        },
+        {
+          "text": "Our high level of fixed obligations may limit our ability to fund general corporate requirements and obtain additional financing, may limit our flexibility in responding to competitive developments and causes our business to be vulnerable to adverse economic and industry conditions.",
+          "section": "mda",
+          "subsection": "AAG"
+        },
+        {
+          "text": "Principal financing activities in 2015 included proceeds from the issuance of $4.5 billion of debt primarily including $4.2 billion of EETC equipment notes and other aircraft related financings.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the company is taking steps to manage its debt, it still faces significant obligations that could strain its balance sheet, leading to a mixed sentiment.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation shows mixed signals; while overall net cash provided by operating activities remained stable at $2.6 billion, there was a significant improvement in cash flow due to increased profitability and reduced pension contributions.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities was flat at $2.6 billion in each of 2015 and 2014.",
+          "section": "mda",
+          "subsection": "AAG"
+        },
+        {
+          "text": "Net cash provided by operating activities was $6.2 billion and $3.1 billion in 2015 and 2014, respectively, a year-over-year increase of $3.2 billion. The increase was primarily due to increased profitability driven by substantially lower fuel costs. In addition, a decrease in pension contributions from $810 million in 2014 to $6 million in 2015 contributed to increased operating cash flows.",
+          "section": "mda",
+          "subsection": "American"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Despite stable operating cash flows, there was a significant improvement in cash flow due to increased profitability and reduced pension contributions.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes are imposing new costs and operational constraints, particularly in areas of security and environmental compliance, which may affect our operations and distribution channels negatively.",
+      "evidence": [
+        {
+          "text": "The DOT consumer rules that took effect in 2010 require procedures for customer handling during long onboard delays, further regulate airline interactions with passengers through the reservations process, at the airport, and onboard the aircraft, and require disclosures concerning airline fares and ancillary fees such as baggage fees.",
+          "section": "risk_factors",
+          "subsection": "We rely on third-party distribution channels and must manage effectively the costs, rights and functionality of these channels."
+        },
+        {
+          "text": "The Aviation and Transportation Security Act mandates the federalization of certain airport security procedures and imposes additional security requirements on airports and airlines, most of which are funded by a per-ticket tax on passengers and a tax on airlines.",
+          "section": "risk_factors",
+          "subsection": "We rely on third-party distribution channels and must manage effectively the costs, rights and functionality of these channels."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes are imposing new costs and operational constraints, which may negatively affect operations and distribution channels.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical factors pose significant risks, including conflicts, terrorism, and economic uncertainties that can disrupt travel, increase operational costs, and create volatility in capital and credit markets, negatively impacting the company's financial health.",
+      "evidence": [
+        {
+          "text": "Acts of terrorism or fear of such attacks, including elevated national threat warnings, wars or other military conflicts, may depress air travel, particularly on international routes, and cause declines in revenues and increases in costs.",
+          "section": "risk_factors",
+          "subsection": "We rely on third-party distribution channels and must manage effectively the costs, rights and functionality of these channels."
+        },
+        {
+          "text": "Concerns about the systemic impact of inflation, the availability and cost of credit, energy costs and geopolitical issues, combined with continued changes in business activity levels and consumer confidence, increased unemployment and volatile oil prices, have in the past and may in the future contribute to volatility in the capital and credit markets.",
+          "section": "risk_factors",
+          "subsection": "Increased costs of financing, a reduction in the availability of financing and fluctuations in interest rates could\nadversely affect our liquidity, results of operations and financial condition."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Geopolitical factors pose significant risks that can disrupt travel, increase operational costs, and create volatility in capital and credit markets, negatively impacting the company's financial health.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}
