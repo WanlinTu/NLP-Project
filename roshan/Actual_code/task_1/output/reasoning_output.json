@@ -1,255 +1,389 @@
 {
-  "ticker": "AAL",
   "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
-  "num_filings": 4,
-  "pairwise": [
-    {
-      "filing_a": "2015-02-25",
-      "filing_b": "2016-02-24",
-      "ret_a": 0.056690462639422,
-      "ret_b": -0.0607035194002416,
-      "result": {
-        "changed_factors": [
-          {
-            "key": "airlines_transport.capacity_load_yield",
-            "from_label": "neutral",
-            "to_label": "negative",
-            "interpretation": "The company's capacity and load yield situation has deteriorated, with declining PRASM negatively impacting passenger revenues."
-          },
-          {
-            "key": "capital_allocation.capex_outlook",
-            "from_label": "positive",
-            "to_label": "neutral",
-            "interpretation": "Capital expenditure outlook has stabilized, reflecting a more cautious approach to fleet renewal and expansion."
-          },
-          {
-            "key": "airlines_transport.fleet_strategy",
-            "from_label": "positive",
-            "to_label": "neutral",
-            "interpretation": "Fleet strategy has become less favorable due to risks associated with aircraft delivery delays and operational costs."
-          },
-          {
-            "key": "capital_allocation.free_cash_flow",
-            "from_label": "positive",
-            "to_label": "positive",
-            "interpretation": "Free cash flow remains strong, supporting debt reduction and shareholder returns, though there are discrepancies in reported figures."
-          },
-          {
-            "key": "airlines_transport.fuel_costs_hedging",
-            "from_label": "negative",
-            "to_label": "neutral",
-            "interpretation": "Fuel cost hedging has improved slightly, but the company remains vulnerable to future price fluctuations."
-          },
-          {
-            "key": "cost_margins.input_costs",
-            "from_label": "neutral",
-            "to_label": "positive",
-            "interpretation": "Input costs have improved due to declining fuel expenses, though government fees and taxes remain a concern."
-          },
-          {
-            "key": "outlook_guidance.management_confidence",
-            "from_label": "very_positive",
-            "to_label": "positive",
-            "interpretation": "Management confidence has slightly decreased, though actions like share repurchases indicate ongoing commitment to shareholder value."
-          },
-          {
-            "key": "demand_revenue.organic_growth",
-            "from_label": "very_positive",
-            "to_label": "negative",
-            "interpretation": "Organic revenue growth has significantly slowed, reflecting broader economic and industry challenges."
-          },
-          {
-            "key": "demand_revenue.pricing_power",
-            "from_label": "neutral",
-            "to_label": "negative",
-            "interpretation": "Pricing power has weakened, with declining passenger yields and PRASM impacting revenue performance."
-          },
-          {
-            "key": "demand_revenue.revenue_mix",
-            "from_label": "positive",
-            "to_label": "negative",
-            "interpretation": "Revenue mix has shifted unfavorably, with lower-margin segments contributing more to revenue, negatively impacting overall profitability."
-          },
-          {
-            "key": "capital_allocation.shareholder_returns",
-            "from_label": "positive",
-            "to_label": "very_positive",
-            "interpretation": "Shareholder returns have strengthened, reflecting management's focus on returning value through dividends and share repurchases."
-          }
-        ],
-        "persistent_themes": [
-          {
-            "key": "competitive_position.competitive_dynamics",
-            "label": "negative",
-            "interpretation": "Intensifying competition from low-cost carriers and international competitors continues to pressure revenue and market share."
-          },
-          {
-            "key": "cost_margins.cost_actions",
-            "label": "positive",
-            "interpretation": "Cost reduction initiatives remain effective, particularly in fuel and maintenance expenses, though labor costs remain a concern."
-          },
-          {
-            "key": "capital_allocation.debt_leverage",
-            "label": "neutral",
-            "interpretation": "Debt management is ongoing, with refinancing and debt reduction efforts, though significant debt levels remain a risk."
-          },
-          {
-            "key": "demand_revenue.demand_trends",
-            "label": "positive",
-            "interpretation": "Overall demand for air travel remains strong, though vulnerable to economic downturns and geopolitical risks."
-          },
-          {
-            "key": "regulatory_legal.environmental_compliance",
-            "label": "negative",
-            "interpretation": "Environmental regulations continue to impose significant costs and operational constraints."
-          }
-        ],
-        "emerged_or_disappeared": [
-          {
-            "key": "macro_external.fx_exposure",
-            "direction": "emerged",
-            "interpretation": "Foreign exchange risks have emerged as a significant factor, particularly impacting Latin American and European markets due to currency devaluations."
-          },
-          {
-            "key": "macro_external.geopolitical_risk",
-            "direction": "emerged",
-            "interpretation": "Geopolitical risks, including conflicts and terrorism, have become more prominent, posing operational and financial challenges."
-          }
-        ],
-        "overall_narrative": "The company faced a shift from strong growth in 2015 to a more challenging environment in 2016, marked by declining revenue growth, weakened pricing power, and increased external risks such as foreign exchange and geopolitical instability. Despite these challenges, management maintained a positive outlook, supported by strong free cash flow and consistent shareholder returns, though concerns about economic conditions and competitive pressures remained."
-      }
-    },
-    {
-      "filing_a": "2016-02-24",
-      "filing_b": "2017-02-22",
-      "ret_a": -0.0607035194002416,
-      "ret_b": -0.100788637335494,
-      "result": null
-    },
-    {
-      "filing_a": "2017-02-22",
-      "filing_b": "2018-02-21",
-      "ret_a": -0.100788637335494,
-      "ret_b": 0.0108097132937111,
-      "result": {
-        "changed_factors": [
-          {
-            "key": "[airlines_transport] capacity_load_yield",
-            "from_label": "negative",
-            "to_label": "neutral",
-            "interpretation": "The company's capacity and load yield situation has stabilized, though challenges remain with competition and operational efficiency."
-          },
-          {
-            "key": "[supply_chain_operations] capacity_utilization",
-            "from_label": "negative",
-            "to_label": "positive",
-            "interpretation": "Capacity utilization has improved due to new aircraft deliveries and increased operational efficiency."
-          },
-          {
-            "key": "[cost_margins] cost_actions",
-            "from_label": "positive",
-            "to_label": "negative",
-            "interpretation": "While cost reduction programs have delivered savings, rising fuel and labor costs are now negatively impacting margins."
-          },
-          {
-            "key": "[demand_revenue] demand_trends",
-            "from_label": "negative",
-            "to_label": "positive",
-            "interpretation": "Demand trends have improved, driven by strong performance in key regions like Latin America."
-          },
-          {
-            "key": "[airlines_transport] fuel_costs_hedging",
-            "from_label": "negative",
-            "to_label": "very_negative",
-            "interpretation": "Fuel costs have risen significantly, and the lack of hedging exposes the company to further volatility."
-          },
-          {
-            "key": "[macro_external] geopolitical_risk",
-            "from_label": "negative",
-            "to_label": "very_negative",
-            "interpretation": "Geopolitical risks remain a significant threat, with increased concerns over conflicts and terrorism impacting operations."
-          },
-          {
-            "key": "[cost_margins] input_costs",
-            "from_label": "positive",
-            "to_label": "negative",
-            "interpretation": "Input costs, particularly fuel, are rising, putting pressure on margins despite some offset from pricing strategies."
-          },
-          {
-            "key": "[demand_revenue] organic_growth",
-            "from_label": "negative",
-            "to_label": "positive",
-            "interpretation": "Organic revenue growth has turned positive, with a 5.0% increase in total operating revenues in 2017 compared to 2016."
-          },
-          {
-            "key": "[outlook_guidance] near_term_risks",
-            "from_label": "neutral",
-            "to_label": "very_negative",
-            "interpretation": "The company faces multiple near-term risks, including higher fuel costs, wages, and economic downturns, which could impact financial performance."
-          }
-        ],
-        "persistent_themes": [
-          {
-            "key": "[regulatory_legal] environmental_compliance",
-            "label": "negative",
-            "interpretation": "Environmental regulations and emissions requirements continue to pose significant compliance costs and operational constraints."
-          },
-          {
-            "key": "[labor_workforce] talent_retention",
-            "label": "negative",
-            "interpretation": "The company continues to face challenges in retaining and attracting qualified personnel, which is crucial for its success."
-          }
-        ],
-        "emerged_or_disappeared": [],
-        "overall_narrative": "American Airlines experienced a shift from a challenging operational and financial environment in 2017 to a more positive outlook in 2018, with improving demand trends and revenue growth. However, the company continues to grapple with rising input costs, particularly fuel, and faces significant risks from geopolitical instability and regulatory changes. Despite these challenges, management remains confident in the long-term strategy, focusing on customer experience and technological innovation."
-      }
-    }
+  "n_tickers": 83,
+  "n_filings": 2542,
+  "sectors": [
+    "airlines",
+    "defense",
+    "industrial_equipment",
+    "general"
   ],
+  "sector_reasoning": {
+    "airlines": {
+      "key_trends": [
+        {
+          "factor": "interest_rate_impact",
+          "trend": "Negative impact on returns when positive",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "new_products",
+          "trend": "Positive average score but low return impact",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "fx_exposure",
+          "trend": "Negative impact on returns when positive",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "cost_actions",
+          "trend": "Positive impact on returns when positive",
+          "sectors_affected": "All"
+        }
+      ],
+      "sentiment_return_link": [
+        {
+          "factor": "interest_rate_impact",
+          "IC": 0.0999,
+          "hit_rate": 0.54,
+          "interpretation": "Positive sentiment on interest rate impact correlates with lower returns, suggesting higher rates negatively affect airline performance."
+        },
+        {
+          "factor": "new_products",
+          "IC": -0.0796,
+          "hit_rate": 0.49,
+          "interpretation": "Positive sentiment on new products has a weak inverse correlation with returns, indicating limited impact on stock performance."
+        },
+        {
+          "factor": "fx_exposure",
+          "IC": -0.052,
+          "hit_rate": 0.46,
+          "interpretation": "Positive sentiment on fx exposure has a slightly negative correlation with returns, suggesting currency fluctuations may weigh on performance."
+        },
+        {
+          "factor": "cost_actions",
+          "IC": 0.038,
+          "hit_rate": 0.54,
+          "interpretation": "Positive sentiment on cost actions strongly correlates with higher returns, implying effective cost management drives stock performance."
+        }
+      ],
+      "sector_specific_factors": [
+        {
+          "factor": "capacity_load_yield",
+          "why_sector_specific": "Relates directly to airline operations and efficiency.",
+          "investment_signal": "mixed"
+        },
+        {
+          "factor": "fleet_strategy",
+          "why_sector_specific": "Involves strategic decisions on aircraft management.",
+          "investment_signal": "positive"
+        },
+        {
+          "factor": "volume_trends",
+          "why_sector_specific": "Reflects demand and revenue expectations.",
+          "investment_signal": "positive"
+        },
+        {
+          "factor": "headcount_restructuring",
+          "why_sector_specific": "Affects labor costs and workforce management.",
+          "investment_signal": "negative"
+        }
+      ],
+      "overall_narrative": "The airlines sector shows mixed factor-return patterns, with interest rates and foreign exchange exposure negatively impacting returns when positive. Conversely, cost management and new products have limited positive effects. Sector-specific factors like capacity load yield and fleet strategy are significant, suggesting operational efficiency and strategic decisions are crucial. Overall, effective cost actions and positive volume trends are key drivers of returns, while factors like reputation risk and fuel cost hedging pose challenges."
+    },
+    "defense": {
+      "key_trends": [
+        {
+          "factor": "interest_rate_impact",
+          "trend": "Negative impact on returns when positive sentiment is present",
+          "sectors_affected": "all"
+        },
+        {
+          "factor": "new_products",
+          "trend": "Positive impact on returns when positive sentiment is present",
+          "sectors_affected": "all"
+        },
+        {
+          "factor": "capex_outlook",
+          "trend": "Positive impact on returns when positive sentiment is present",
+          "sectors_affected": "all"
+        },
+        {
+          "factor": "fx_exposure",
+          "trend": "Negative impact on returns when positive sentiment is present",
+          "sectors_affected": "all"
+        }
+      ],
+      "sentiment_return_link": [
+        {
+          "factor": "interest_rate_impact",
+          "IC": -0.0796,
+          "hit_rate": 0.54,
+          "interpretation": "Negative sentiment towards interest rate impact predicts lower returns, likely due to increased borrowing costs affecting profitability."
+        },
+        {
+          "factor": "new_products",
+          "IC": -0.0566,
+          "hit_rate": 0.49,
+          "interpretation": "Positive sentiment about new products correlates slightly with returns, possibly indicating innovation's role in sector performance."
+        },
+        {
+          "factor": "capex_outlook",
+          "IC": -0.0488,
+          "hit_rate": 0.51,
+          "interpretation": "Positive sentiment on capital expenditure outlook links with returns, suggesting investments in growth opportunities."
+        },
+        {
+          "factor": "trade_tariffs",
+          "IC": 0.0594,
+          "hit_rate": 0.53,
+          "interpretation": "Negative sentiment towards trade tariffs predicts higher returns, perhaps due to reduced trade barriers boosting exports."
+        }
+      ],
+      "sector_specific_factors": [
+        {
+          "factor": "international_sales",
+          "why_sector_specific": "Defense companies often rely on government contracts, which can be influenced by international sales.",
+          "investment_signal": "negative"
+        },
+        {
+          "factor": "government_budget",
+          "why_sector_specific": "Sensitivity to government spending directly impacts defense companies.",
+          "investment_signal": "negative"
+        }
+      ],
+      "overall_narrative": "The defense sector exhibits significant factor-return patterns, with interest rate impact and new products being prominent. Positive sentiment on new products and capital expenditure outlook generally correlates with modest returns, while negative sentiment on factors like interest rates and foreign exchange exposure may hinder returns. The sector is particularly influenced by government-related factors, such as trade tariffs and budget allocations, which can have substantial impacts on performance. Overall, the sector's performance is driven by a mix of macroeconomic factors, innovation, and regulatory influences, suggesting a cautious investment approach considering these interdependencies."
+    },
+    "general": {
+      "key_trends": [
+        {
+          "factor": "interest_rate_impact",
+          "trend": "Negative impact on returns when positive sentiment is present.",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "new_products",
+          "trend": "Positive sentiment linked to returns, but low IC.",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "reputation_risk",
+          "trend": "Severe negative impact on returns when positive sentiment.",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "capex_outlook",
+          "trend": "Positive sentiment associated with minimal returns.",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "fx_exposure",
+          "trend": "Negative impact on returns when positive sentiment.",
+          "sectors_affected": "All"
+        }
+      ],
+      "sentiment_return_link": [
+        {
+          "factor": "interest_rate_impact",
+          "IC": 0.0999,
+          "hit_rate": 0.54,
+          "interpretation": "Positive sentiment on interest rate impact is correlated with slightly higher returns, but the effect is weak."
+        },
+        {
+          "factor": "new_products",
+          "IC": -0.0796,
+          "hit_rate": 0.49,
+          "interpretation": "Positive sentiment towards new products is somewhat inversely related to returns, but the relationship is weak."
+        },
+        {
+          "factor": "risk_factors",
+          "IC": -0.2623,
+          "hit_rate": 0.6,
+          "interpretation": "Negative sentiment towards risk factors is strongly inversely related to returns, indicating that higher risk perceptions may lead to lower returns."
+        }
+      ],
+      "sector_specific_factors": [
+        {
+          "factor": "fx_exposure",
+          "why_sector_specific": "Currency exposure is critical for international trade, affecting many companies in the general sector.",
+          "investment_signal": "negative"
+        },
+        {
+          "factor": "trade_tariffs",
+          "why_sector_specific": "Regulatory changes like tariffs can significantly impact import/export costs and margins.",
+          "investment_signal": "negative"
+        }
+      ],
+      "overall_narrative": "The general sector shows varied factor-return patterns, with interest rate impact and new products having moderate influence. Negative sentiment towards factors like reputation risk and risk factors significantly impacts returns. FX exposure and trade tariffs are sector-specific risks with negative signals. Overall, the sector's performance is influenced by macroeconomic factors, regulatory changes, and operational efficiencies, with mixed investment signals."
+    },
+    "industrial_equipment": {
+      "key_trends": [
+        {
+          "factor": "interest_rate_impact",
+          "trend": "Negative impact on returns when positive",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "new_products",
+          "trend": "Positive impact on returns when positive",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "reputation_risk",
+          "trend": "Significantly negative impact on returns when positive",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "capex_outlook",
+          "trend": "Positive impact on returns when positive",
+          "sectors_affected": "All"
+        },
+        {
+          "factor": "fx_exposure",
+          "trend": "Negative impact on returns when positive",
+          "sectors_affected": "All"
+        }
+      ],
+      "sentiment_return_link": [
+        {
+          "factor": "interest_rate_impact",
+          "IC": 0.0999,
+          "hit_rate": 0.54,
+          "interpretation": "Higher interest rates tend to negatively impact returns, likely due to increased borrowing costs."
+        },
+        {
+          "factor": "new_products",
+          "IC": -0.0796,
+          "hit_rate": 0.49,
+          "interpretation": "Positive sentiment around new products is moderately correlated with returns, suggesting innovation drives performance."
+        },
+        {
+          "factor": "risk_factors",
+          "IC": -0.2623,
+          "hit_rate": 0.6,
+          "interpretation": "Negative sentiment related to risk factors strongly correlates with lower returns, indicating potential vulnerabilities."
+        },
+        {
+          "factor": "trade_tariffs",
+          "IC": 0.0594,
+          "hit_rate": 0.53,
+          "interpretation": "Positive sentiment about trade tariffs has a modest positive impact on returns, possibly reflecting strategic advantages."
+        },
+        {
+          "factor": "cost_actions",
+          "IC": 0.038,
+          "hit_rate": 0.54,
+          "interpretation": "Positive sentiment around cost actions moderately predicts higher returns, likely due to margin improvements."
+        }
+      ],
+      "sector_specific_factors": [
+        {
+          "factor": "new_products",
+          "why_sector_specific": "The sector's reliance on innovation for competitive edge makes new product developments a key driver.",
+          "investment_signal": "positive"
+        },
+        {
+          "factor": "fx_exposure",
+          "why_sector_specific": "Given the global nature of industrial equipment, foreign exchange risks are particularly significant.",
+          "investment_signal": "negative"
+        },
+        {
+          "factor": "capacity_utilization",
+          "why_sector_specific": "Efficient production capacity is crucial for this sector's operational efficiency.",
+          "investment_signal": "positive"
+        },
+        {
+          "factor": "dealer_channel",
+          "why_sector_specific": "Distribution networks are vital for equipment sales, affecting market reach.",
+          "investment_signal": "positive"
+        }
+      ],
+      "overall_narrative": "The industrial equipment sector shows mixed factor-return patterns, with new products and capex outlook driving positive returns, while interest rates and FX exposure pose risks. Sentiment around cost actions and trade tariffs also influences performance. Sector-specific factors like new products and dealer channels highlight the importance of innovation and distribution in driving returns, while macro factors such as interest rates and inflation impact overall risk. The data suggests a need for cautious investment strategies considering both external macroeconomic conditions and internal operational factors."
+    }
+  },
   "synthesis": {
     "key_patterns": [
       {
-        "pattern": "Declining revenue growth and weakened pricing power negatively impact stock returns",
+        "pattern": "Macroeconomic factors like interest rates and foreign exchange exposure negatively impact returns when positive.",
         "supporting_factors": [
-          "revenue_growth",
-          "pricing_power"
+          "interest_rate_impact",
+          "fx_exposure"
+        ],
+        "sectors": [
+          "airlines",
+          "defense",
+          "general",
+          "industrial_equipment"
         ],
         "direction": "negative",
         "strength": "strong",
-        "explanation": "The shift from strong growth in 2015 to declining revenue growth in 2016 and 2017 directly correlates with negative stock returns, indicating that revenue performance is a critical driver of investor sentiment."
+        "explanation": "These factors are significant across all sectors, indicating a broad external economic influence on performance."
       },
       {
-        "pattern": "Positive outlook and strong free cash flow offset external risks",
+        "pattern": "Innovation and new product development are key drivers of positive returns.",
         "supporting_factors": [
-          "free_cash_flow",
-          "external_risks"
+          "new_products"
         ],
-        "direction": "mixed",
-        "strength": "moderate",
-        "explanation": "While management's positive outlook and strong free cash flow provided some stability, external risks such as geopolitical instability and macroeconomic factors still impacted stock performance."
-      },
-      {
-        "pattern": "Improving demand trends and revenue growth enhance stock returns",
-        "supporting_factors": [
-          "demand_trends",
-          "revenue_growth"
+        "sectors": [
+          "airlines",
+          "defense",
+          "general",
+          "industrial_equipment"
         ],
         "direction": "positive",
         "strength": "moderate",
-        "explanation": "The shift to a more positive outlook in 2018, driven by improving demand trends and revenue growth, contributed to a slight recovery in stock returns, though challenges like rising input costs remained."
+        "explanation": "The consistent presence of new_products across sectors highlights its importance in driving growth and competitiveness."
+      },
+      {
+        "pattern": "Reputation risk and negative sentiment significantly impact returns negatively.",
+        "supporting_factors": [
+          "reputation_risk",
+          "risk_factors"
+        ],
+        "sectors": [
+          "general"
+        ],
+        "direction": "negative",
+        "strength": "strong",
+        "explanation": "The strong correlation in the general sector underscores the importance of brand image and risk management."
+      },
+      {
+        "pattern": "Sector-specific operational factors, such as capacity load yield and fleet strategy, are crucial for performance.",
+        "supporting_factors": [
+          "capacity_load_yield",
+          "fleet_strategy"
+        ],
+        "sectors": [
+          "airlines"
+        ],
+        "direction": "positive",
+        "strength": "strong",
+        "explanation": "These factors are unique to the airlines sector, emphasizing the role of operational efficiency in this industry."
       }
     ],
     "most_predictive_factors": [
       {
-        "key": "demand_revenue",
-        "rationale": "Positive demand trends and revenue growth are strongly correlated with improved stock returns, as seen in 2018.",
+        "key": "interest_rate_impact",
+        "sectors": [
+          "airlines",
+          "defense",
+          "general",
+          "industrial_equipment"
+        ],
+        "rationale": "Strong influence across multiple sectors suggests it's a critical external factor affecting financial performance.",
         "confidence": "high"
       },
       {
-        "key": "macro_external",
-        "rationale": "Negative sentiment towards macroeconomic and external risks consistently impacts stock performance, highlighting the importance of geopolitical and economic stability.",
+        "key": "new_products",
+        "sectors": [
+          "airlines",
+          "defense",
+          "general",
+          "industrial_equipment"
+        ],
+        "rationale": "Consistent across sectors, indicating its role in driving innovation and growth.",
         "confidence": "medium"
+      },
+      {
+        "key": "reputation_risk",
+        "sectors": [
+          "general"
+        ],
+        "rationale": "Strong correlation in the general sector, highlighting the importance of brand image.",
+        "confidence": "high"
       }
     ],
-    "overall_narrative": "The analysis reveals that stock returns are influenced by a combination of internal operational factors, such as revenue growth and demand trends, and external macroeconomic risks. Positive shifts in demand and revenue growth, as seen in 2018, contributed to improved stock performance, while challenges like declining revenue growth and external risks weighed heavily on returns in earlier years. The company's ability to maintain strong free cash flow and a positive outlook, despite these challenges, provided some stability, but the impact of external factors remained significant."
+    "overall_narrative": "The analysis reveals a mix of universal and sector-specific factors influencing returns across industries. Macroeconomic factors like interest rates and foreign exchange exposure play a significant role in most sectors, indicating broader economic influences. Innovation through new products is a consistent driver of positive returns, highlighting the importance of technological advancement. However, each sector also exhibits unique characteristics: airlines depend on operational efficiency, defense is shaped by government policies, general industries face reputation risks, and industrial equipment relies on capital investment and innovation. This duality underscores the need for a tailored investment approach that considers both macroeconomic trends and industry-specific dynamics."
   }
 }
