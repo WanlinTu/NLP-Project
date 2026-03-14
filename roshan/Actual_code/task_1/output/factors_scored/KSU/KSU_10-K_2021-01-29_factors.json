@@ -1,0 +1,518 @@
+{
+  "ticker": "KSU",
+  "form": "10-K",
+  "filing_date": "2021-01-29",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs have decreased due to lower headcount and work hours, partially offset by wage inflation.",
+      "evidence": [
+        {
+          "text": "Compensation and benefits decreased $52.6 million... due to a decrease in headcount and work hours of approximately $54.0 million caused by volume declines as a result of COVID-19...",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor costs decreased due to lower headcount and work hours, but wage inflation partially offsets this improvement.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes in Mexico, such as the 2020 Tax Reform, have impacted the company's operations and financials.",
+      "evidence": [
+        {
+          "text": "Mexico 2020 Tax Reform excluded railroads from eligibility for the Mexican fuel excise tax credit...",
+          "section": "mda",
+          "subsection": "Mexico Regulatory and Legal Updates"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes in Mexico, such as the 2020 Tax Reform, have negatively impacted the company's operations and financials.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are decelerating, particularly in the rail transportation industry.",
+      "evidence": [
+        {
+          "text": "The rail transportation industry and the Company\u2019s business were negatively impacted by the COVID-19 pandemic, leading to a decline in demand.",
+          "section": "risk_factors",
+          "subsection": "Public health threats or outbreaks of communicable diseases could have a material adverse effect on the Company\u2019s operations and financial results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand trends are decelerating, particularly in the rail transportation industry, negatively impacting the company's performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating due to the impact of the COVID-19 pandemic.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s revenues decreased by approximately 8% during 2020, as compared to the prior year, and approximately $10.0 million in additional expenses were incurred due to COVID-19 as part of the Company providing a safe and healthy work environment for KCS employees.",
+          "section": "risk_factors",
+          "subsection": "Public health threats or outbreaks of communicable diseases could have a material adverse effect on the Company\u2019s operations and financial results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is decelerating due to the impact of the COVID-19 pandemic, indicating a challenging market environment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improved due to PSR initiatives, including longer train lengths and increased fuel efficiency.",
+      "evidence": [
+        {
+          "text": "Record average train length reduced the number of train starts and crew costs, leading to operating efficiencies across the organization and record fuel efficiency. [...] Fuel efficiency (gallons per 1,000 GTM's) [...] 1.24 1.31 5%",
+          "section": "mda",
+          "subsection": "Strategic Initiatives"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improved due to PSR initiatives, leading to operating efficiencies and fuel savings.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company faced challenges due to the weakening of the Mexican peso against the U.S. dollar, impacting revenues and expenses.",
+      "evidence": [
+        {
+          "text": "Revenues decreased primarily due to [...] the weakening of the Mexican peso against the U.S dollar, and lower fuel surcharge due to lower fuel prices. [...] The weakening of the Mexican peso against the U.S. dollar.",
+          "section": "mda",
+          "subsection": "2020 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The weakening of the Mexican peso against the U.S. dollar negatively impacted the company's revenues and expenses.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "KCS faces significant litigation and claims risks, including labor disputes and personal injury claims, which could impact its financial statements.",
+      "evidence": [
+        {
+          "text": "The Company is exposed to the potential of various claims and litigation related to labor and employment, personal injury, commercial disputes, freight loss and other property damage, and other matters that arise in the normal course of business. The Company may experience material judgments or incur significant costs to defend existing and future lawsuits. Although the Company maintains insurance to cover some of these types of claims and establishes reserves when appropriate, final amounts determined to be due on any outstanding matters may exceed the Company\u2019s insurance coverage or differ materially from the recorded reserves. Additionally, the Company could be impacted by adverse developments not currently reflected in the Company\u2019s reserve estimates.",
+          "section": "risk_factors",
+          "subsection": "KCS may be subject to various claims and litigation that could have a material adverse effect on KCS\u2019s consolidated financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant litigation and claims risks could negatively impact the company's financial statements.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "KCS has labor relations risks due to a high percentage of unionized employees, which could lead to strikes or work stoppages affecting operations.",
+      "evidence": [
+        {
+          "text": "The Company is a party to collective bargaining agreements with various labor unions in the United States and Mexico. As of December 31, 2020, approximately 70% and 79% of KCSR and KCSM Servicios employees, respectively, were covered by labor contracts subject to collective bargaining. The Company may be subject to, among other things, strikes, work stoppages or work slowdowns as a result of disputes under these collective bargaining agreements and labor contracts or KCS\u2019s potential inability to negotiate acceptable contracts with these unions.",
+          "section": "risk_factors",
+          "subsection": "A majority of KCS\u2019s employees belong to labor unions. Strikes or work stoppages could adversely affect operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High unionization rate poses significant labor relations risks, including potential strikes or work stoppages affecting operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "KCS faces significant environmental compliance costs and risks, including potential liabilities from handling hazardous materials and environmental regulations.",
+      "evidence": [
+        {
+          "text": "KCS subsidiaries\u2019 operations are subject to environmental regulation enacted by federal, state and local legislatures in the U.S. and Mexico. Environmental liability under federal and state law in the United States can also extend to previously owned or operated properties, leased properties and properties owned by third parties, as well as to properties currently owned and used by the Company. Environmental liabilities may also arise from claims asserted by adjacent landowners or other third parties. Given the nature of its business, the Company incurs, and expects to continue to incur, environmental compliance costs, including, in particular, costs necessary to maintain compliance with requirements governing chemical and hazardous material shipping operations, refueling operations and repair facilities.",
+          "section": "risk_factors",
+          "subsection": "KCS is subject to environmental regulations, which may impose significant costs on the Company\u2019s business operations."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant environmental compliance costs and potential liabilities pose a major risk to KCS.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "KCS's capacity utilization could be impacted by disruptions in fuel supplies and severe weather events, affecting its operations.",
+      "evidence": [
+        {
+          "text": "Severe weather or other natural disasters could result in significant business interruptions that impact KCS\u2019s railroad operations and expenditures, and KCS\u2019s insurance coverage may not be sufficient to cover damages to KCS or all of KCS\u2019s liabilities.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s business strategy, operations and growth rely significantly on agreements with other railroads and third parties."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Disruptions from severe weather and fuel shortages could moderately impact operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "fuel_costs",
+      "category": "unknown",
+      "summary": "KCS is vulnerable to fluctuations in fuel costs, which could significantly impact its operating results.",
+      "evidence": [
+        {
+          "text": "KCS incurs substantial fuel costs in its railroad operations and these costs represent a significant portion of its transportation expenses. Significant price increases for fuel may have a material adverse effect on operating results. If KCS is unable to recapture its costs of fuel from its customers, operating results could be materially adversely affected. In addition, a severe disruption of fuel supplies resulting from supply shortages, political unrest, a disruption of oil imports, weather events, war, or otherwise, and the resulting impact on fuel prices could have a material adverse effect on KCS\u2019s consolidated financial statements.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s business is vulnerable to fluctuations in fuel costs and disruptions in fuel supplies."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Vulnerability to fuel price fluctuations and supply disruptions poses a significant risk.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The factor of input costs presents mixed implications. While fuel prices have decreased, leading to a reduction in fuel surcharge revenues, the company faces increased expenses related to managing costs during the pandemic and higher payments for foreign currency derivatives and taxes, which have negatively impacted cash flows.",
+      "evidence": [
+        {
+          "text": "Fuel surcharge revenue decreased $89.4 million for the year ended December\u00a031, 2020, primarily due to lower fuel prices...",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Approximately $10.0 million in additional expenses were incurred due to COVID-19 as part of the Company providing a safe and healthy work environment for KCS employees.",
+          "section": "risk_factors",
+          "subsection": "Public health threats or outbreaks of communicable diseases could have a material adverse effect on the Company\u2019s operations and financial results."
+        },
+        {
+          "text": "Net cash provided by operating activities decreased $24.0 million for 2020, as compared to 2019, primarily due to increased cash paid to settle foreign currency derivative instruments and an increase in advance Mexican income tax payments...",
+          "section": "mda",
+          "subsection": "Cash Flow Information and Contractual Obligations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed implications with overall negative impacts from increased expenses and reduced revenues.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends show a mixed performance, with significant declines due to the COVID-19 pandemic and the impact of the Teachers' Protests, particularly affecting the rail transportation industry. However, there was a rebound in volumes by the end of the third quarter of 2020, indicating some recovery despite ongoing challenges.",
+      "evidence": [
+        {
+          "text": "Revenues decreased primarily due to lower volumes as a result of COVID-19 and Teachers\u2019 Protests...",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "The rail transportation industry and the Company\u2019s business were negatively impacted by the COVID-19 pandemic, leading to a decline in demand.",
+          "section": "risk_factors",
+          "subsection": "Public health threats or outbreaks of communicable diseases could have a material adverse effect on the Company\u2019s operations and financial results."
+        },
+        {
+          "text": "Volumes significantly declined in the second quarter of 2020; however, by early June volumes began to rapidly rebound. By the end of the third quarter, weekly volumes were higher than pre-COVID-19 levels and had increased by approximately 60% from the lowest levels in the second quarter of 2020.",
+          "section": "mda",
+          "subsection": "Capital Expenditures"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volumes show a mixed performance with declines due to COVID-19 but a rebound by the end of Q3 2020.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's operating margins have shown significant improvement, driven by cost reductions, efficiency initiatives, higher revenues, and effective cost management. The decrease in operating expenses, particularly due to lower fuel prices, reduced restructuring charges, and savings from PSR initiatives, has been a key factor in this positive trajectory.",
+      "evidence": [
+        {
+          "text": "Operating expenses decreased $350.1 million... primarily due to decreased restructuring charges, lower fuel prices, COVID-19 related volume declines, increased savings from PSR initiatives...",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating income increased to $521.8 million in 2020 from $403.5 million in 2019. Net income also increased to $329.8 million from $235.0 million.",
+          "section": "mda",
+          "subsection": "Summarized Financial Information"
+        },
+        {
+          "text": "Operating expenses decreased 18% compared to 2019, primarily due to decreased restructuring charges, lower fuel prices, COVID-19 related volume declines, increased savings from PSR initiatives and the weakening of the Mexican peso against the U.S. dollar. Operating expenses as a percentage of revenues (''operating ratio'') decreased to 61.9% in 2020 from 69.1% in 2019.",
+          "section": "mda",
+          "subsection": "2020 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant improvement in operating margins driven by cost reductions and efficiency.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix experienced both positive and negative shifts in 2020. On one hand, there was an increase in Chemical and Petroleum revenues due to higher shipments, despite lower prices. On the other hand, overall revenues decreased by 8% due to lower carload/unit volumes, a weaker Mexican peso, and reduced fuel surcharges. Additionally, the impact of COVID-19 highlighted potential shifts in demand patterns, further complicating the revenue mix.",
+      "evidence": [
+        {
+          "text": "Chemical and petroleum revenues increased due to refined fuel product shipments to Mexico, despite a 2% decrease in revenue per carload/unit.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Revenues decreased 8% for the year ended December 31, 2020, as compared to 2019, due to a 6% decrease in carload/unit volumes and a 3% decrease in revenue per carload/unit. Revenues decreased primarily due to lower volumes as a result of COVID-19 and Teachers\u2019 Protests, the weakening of the Mexican peso against the U.S dollar, and lower fuel surcharge due to lower fuel prices.",
+          "section": "risk_factors",
+          "subsection": "Public health threats or outbreaks of communicable diseases could have a material adverse effect on the Company\u2019s operations and financial results."
+        },
+        {
+          "text": "The Company\u2019s revenues decreased by approximately 8% during 2020, as compared to the prior year, and approximately $10.0 million in additional expenses were incurred due to COVID-19 as part of the Company providing a safe and healthy work environment for KCS employees.",
+          "section": "mda",
+          "subsection": "2020 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Revenue mix has both positive and negative shifts with overall decrease due to various factors.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has successfully implemented cost reduction initiatives such as PSR and restructuring programs, achieving significant savings. These initiatives have progressively increased savings from $58 million in 2019 to $96 million in 2020, demonstrating effective cost management.",
+      "evidence": [
+        {
+          "text": "The Company recognized $17.0 million of restructuring charges... compared to $168.8 million in 2019...",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "As a result of the PSR initiatives in 2019, management approved four separate restructuring plans that totaled $168.8 million. The PSR plans included asset impairments, workforce reductions, and contract restructuring, which resulted in 2019 operating expense savings of approximately $58.0 million.",
+          "section": "mda",
+          "subsection": "Strategic Initiatives"
+        },
+        {
+          "text": "Due to acceleration of PSR initiatives in the second quarter of 2020, the Company realized incremental annual operating savings of approximately $96.0 million.",
+          "section": "mda",
+          "subsection": "Strategic Initiatives"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Successful cost reduction initiatives leading to significant savings and improved margins.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include ongoing impacts from the COVID-19 pandemic, which could continue to affect demand and operations. Additionally, there are potential future disruptions from natural events or labor issues.",
+      "evidence": [
+        {
+          "text": "The situation surrounding COVID-19 remains fluid and for this reason, KCS cannot reasonably estimate with any degree of certainty the future impact COVID-19 may have on the Company\u2019s results of operations, financial position, and liquidity.",
+          "section": "risk_factors",
+          "subsection": "Public health threats or outbreaks of communicable diseases could have a material adverse effect on the Company\u2019s operations and financial results."
+        },
+        {
+          "text": "KCS continues to monitor the rapidly evolving COVID-19 situation [...] and may take additional actions based on their recommendations. [...] Natural events such as severe weather, fire, floods, hurricanes, earthquakes or other disruptions to the Company\u2019s operating systems, structures and equipment or the ability of customers to produce or deliver their products.",
+          "section": "mda",
+          "subsection": "COVID-19 Update"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "KCS faces multiple key sensitivities, including currency fluctuations, fuel costs, economic conditions, and labor relations. The weakening Mexican peso negatively impacted revenues, while fuel expenses and economic downturns pose risks to operating results. Labor unions, with a significant portion of employees covered by collective bargaining agreements, could disrupt operations through strikes or work stoppages.",
+      "evidence": [
+        {
+          "text": "The weakening of the Mexican peso against the U.S. dollar resulted in a decrease to revenues of approximately $43.0 million...",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "KCS incurs substantial fuel costs in its railroad operations and these costs represent a significant portion of its transportation expenses...",
+          "section": "risk_factors",
+          "subsection": "A majority of KCS\u2019s employees belong to labor unions. Strikes or work stoppages could adversely affect operations."
+        },
+        {
+          "text": "A significant and sustained decrease in crude oil prices could adversely affect the transport of crude oil by rail to the U.S. Gulf region as well as negatively impact railroad volumes related to equipment and other materials that support crude oil production...",
+          "section": "risk_factors",
+          "subsection": "A majority of KCS\u2019s employees belong to labor unions. Strikes or work stoppages could adversely affect operations."
+        },
+        {
+          "text": "The Company is a party to collective bargaining agreements with various labor unions in the United States and Mexico... The Company may be subject to, among other things, strikes, work stoppages or work slowdowns as a result of disputes under these collective bargaining agreements and labor contracts or KCS\u2019s potential inability to negotiate acceptable contracts with these unions.",
+          "section": "risk_factors",
+          "subsection": "A majority of KCS\u2019s employees belong to labor unions. Strikes or work stoppages could adversely affect operations."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is increasing its debt leverage as part of its capital allocation strategy, aiming for a Debt-to-EBITDA ratio in the mid-2x range, which aligns with its current credit ratings. However, there are risks associated with market instability potentially restricting access to capital and increasing financing costs, as well as the absence of debt maturities until 2023, which supports stable debt leverage in the near term.",
+      "evidence": [
+        {
+          "text": "In addition, from time to time, the Company also plans to prudently use additional debt to support the revised policy and intends to increase its Debt-to-EBITDA ratio to the mid-2x range, consistent with its current ratings from Standard & Poor\u2019s, Fitch and Moody\u2019s Ratings.",
+          "section": "mda",
+          "subsection": "Overview"
+        },
+        {
+          "text": "Significant, sustained instability or disruptions of the capital markets [...] could restrict or prohibit access and could increase the cost of financing sources.",
+          "section": "risk_factors",
+          "subsection": "Weaknesses in the short and long-term debt markets could negatively impact the Company\u2019s access to capital."
+        },
+        {
+          "text": "The Company does not have any debt maturities until 2023. [...] KCS believes it has a strong liquidity position to continue business operations and service its debt obligations.",
+          "section": "mda",
+          "subsection": "COVID-19 Update"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation has shown improvement, supported by cost savings and operational efficiency, despite reduced capital expenditures.",
+      "evidence": [
+        {
+          "text": "Cash and cash equivalents increased $39.4 million as a result of the impacts discussed below.",
+          "section": "mda",
+          "subsection": "Cash Flow Information and Contractual Obligations"
+        },
+        {
+          "text": "Cash flows from operations remain strong; however, planned capital expenditures were reduced by $75.0 million, resulting in annual capital expenditures of $410.2 million in 2020.",
+          "section": "mda",
+          "subsection": "COVID-19 Update"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is enhancing shareholder returns through increased dividends and a new share repurchase program, while maintaining these initiatives despite the challenges of COVID-19.",
+      "evidence": [
+        {
+          "text": "The Board declared a cash dividend on its outstanding common stock for this increased amount payable on January 20, 2021, to stockholders of record at the close of business on December 31, 2020. In April 2021, the Company will implement a quarterly dividend approach that targets a low 20% range payout;",
+          "section": "mda",
+          "subsection": "Overview"
+        },
+        {
+          "text": "A new $3.0 billion share repurchase program (the '2020 Program'), expiring December 31, 2023;",
+          "section": "mda",
+          "subsection": "COVID-19 Update"
+        },
+        {
+          "text": "To date, the Company has not reduced or suspended its share repurchase program or dividend payments.",
+          "section": "mda",
+          "subsection": "COVID-19 Update"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company has shown a mixed approach to capital expenditures, with increased investments in 2021 compared to a cautious reduction in 2020.",
+      "evidence": [
+        {
+          "text": "KCS has funded, and expects to continue to fund, capital expenditures with operating cash flows and short and long-term debt. For 2021, internally generated cash flows are expected to fund cash capital expenditures, which are currently estimated to be approximately 17% of revenue in 2021, assuming constant currency and fuel price.",
+          "section": "mda",
+          "subsection": "Capital Expenditures"
+        },
+        {
+          "text": "Planned capital expenditures were reduced by $75.0 million, resulting in annual capital expenditures of $410.2 million in 2020.",
+          "section": "mda",
+          "subsection": "COVID-19 Update"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "KCS faces challenges in retaining qualified personnel, which could impact operational efficiency. Additionally, the company implemented a voluntary separation program, indicating potential challenges in talent retention.",
+      "evidence": [
+        {
+          "text": "Changes in demographics, training requirements and the unavailability of qualified personnel could negatively affect KCS\u2019s ability to meet demand for rail service.",
+          "section": "risk_factors",
+          "subsection": "The unavailability of qualified personnel could adversely affect KCS\u2019s operations."
+        },
+        {
+          "text": "The Company offered a voluntary separation program [...] which resulted in a restructuring charge of $9.7 million for the year ended December 31, 2020, [...] Approximately 6% of management employees were irrevocably accepted into the voluntary separation program.",
+          "section": "mda",
+          "subsection": "COVID-19 Update"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "KCS is exposed to significant geopolitical risks, including social unrest, economic instability in Mexico, and potential disruptions from terrorism, war, or acts of violence. These risks could lead to adverse effects on KCS\u2019s financial performance and operational continuity.",
+      "evidence": [
+        {
+          "text": "The Mexican government has exercised, and continues to exercise, significant influence over the Mexican economy. [...] The social and political situation in Mexico could adversely affect the Mexican economy and KCSM\u2019s operations.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s ownership of KCSM and operations in Mexico subject it to Mexican economic and political risks."
+        },
+        {
+          "text": "Terrorist attacks and any government response thereto, and war or risk of war could have a material adverse effect on KCS\u2019s consolidated financial statements. KCS is involved in the transport of hazardous materials, which could result in KCS\u2019s rail lines, facilities, or equipment being direct targets or indirect casualties of acts of terror, which could cause significant business interruption and damage to KCS\u2019s property. As a result, acts of terrorism or war or acts of crime or violence could result in increased costs and liabilities and decreased revenues for KCS.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s business may be affected by future acts of terrorism, war or other acts of violence or crime."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions in Mexico and the broader U.S. and global economies pose risks to KCS, including currency fluctuations, reduced demand, operational disruptions, and impacts from cyclical industries such as energy. The company is also susceptible to downturns in trade and economic conditions, particularly affecting its operations in Mexico and the transport of energy commodities.",
+      "evidence": [
+        {
+          "text": "The Mexican economy in the past has suffered balance of payment deficits and shortages in foreign exchange reserves. [...] Downturns in the United States economy or in trade between the United States and Mexico could have material adverse effects on KCS\u2019s consolidated financial statements.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s ownership of KCSM and operations in Mexico subject it to Mexican economic and political risks."
+        },
+        {
+          "text": "The discussions set forth in this Annual Report on Form\u00a010-K may contain forward-looking statements [...] Actual results could materially differ from those anticipated by such forward-looking statements. Such differences could be caused by a number of factors or combination of factors including, but not limited to, the factors identified below and those discussed under Item\u00a01A, Risk Factors, of this Form\u00a010-K.",
+          "section": "mda",
+          "subsection": "CAUTIONARY INFORMATION"
+        },
+        {
+          "text": "KCS\u2019s operations may be materially adversely affected by changes in the economic conditions of the industries and geographic areas that produce and consume the freight that KCS transports. The relative strength or weakness of the United States and Mexican economies affects the businesses served by KCS. A significant and sustained decrease in crude oil prices could adversely affect the transport of crude oil by rail to the U.S. Gulf region as well as negatively impact railroad volumes related to equipment and other materials that support crude oil production. For example, energy revenues have historically decreased when oil prices decline due to lower frac sand and crude oil volumes. Prolonged negative changes in domestic and global economic conditions may affect KCS, as well as the producers and consumers of the commodities that KCS transports and may have a material adverse effect on KCS\u2019s consolidated financial statements.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s business may be adversely affected by changes in general economic or other conditions."
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

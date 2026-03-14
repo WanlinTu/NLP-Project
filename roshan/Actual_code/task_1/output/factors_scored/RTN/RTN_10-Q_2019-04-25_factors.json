@@ -1,0 +1,374 @@
+{
+  "ticker": "RTN",
+  "form": "10-Q",
+  "filing_date": "2019-04-25",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 20,
+  "factors": [
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin products.",
+      "evidence": [
+        {
+          "text": "Products net sales increased by $308 million, while services net sales increased by $154 million, with products making up a larger percentage of total net sales.",
+          "section": "mda",
+          "subsection": "Total Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin products indicates improved profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_pressure",
+      "category": "unknown",
+      "summary": "Margin pressure is present due to higher expenses.",
+      "evidence": [
+        {
+          "text": "The increase in administrative and selling expenses of $16 million and research and development expenses of $29 million contributed to margin pressure.",
+          "section": "mda",
+          "subsection": "General and Administrative Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher expenses contribute to margin issues, affecting profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing, particularly in selling and marketing.",
+      "evidence": [
+        {
+          "text": "The increase in administrative and selling expenses was primarily due to higher selling and marketing expenses of $9 million at Forcepoint, driven by increased staffing and training.",
+          "section": "mda",
+          "subsection": "General and Administrative Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increasing labor costs in selling and marketing strain margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Revenue growth is driven by real demand rather than price increases.",
+      "evidence": [
+        {
+          "text": "The increase in total net sales was primarily due to higher external net sales at IIS and MS, with no significant mention of price increases driving revenue growth.",
+          "section": "mda",
+          "subsection": "Total Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue growth driven by real demand, indicating sustainable expansion.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Government defense budgets are growing.",
+      "evidence": [
+        {
+          "text": "Sales to the U.S. government increased from 65% to 66% of total net sales, indicating growth in government defense spending.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Growth in government defense spending suggests increased revenue opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "classified_programs",
+      "category": "defense_government",
+      "summary": "Classified programs are contributing a growing share of revenue.",
+      "evidence": [
+        {
+          "text": "The increase in external net sales at IIS and MS was primarily due to higher net sales on classified programs.",
+          "section": "mda",
+          "subsection": "Total Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Higher net sales on classified programs indicate steady revenue growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is increasing.",
+      "evidence": [
+        {
+          "text": "Research and development expenses increased by $29 million, primarily due to higher independent research and development expense of $21 million at IDS related to next-generation radars.",
+          "section": "mda",
+          "subsection": "General and Administrative Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "R&D investment is a mixed signal, indicating potential future growth but current expense.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog includes $2.4 billion in precision guided munitions contracts with delayed government approvals.",
+      "evidence": [
+        {
+          "text": "For these precision guided munitions contracts with certain Middle Eastern customers, we had approximately $2.4 billion of total contract value, recognized approximately $1.1 billion of sales for work performed to date and received approximately $850 million in advances.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Significant backlog with delayed approvals presents mixed signals for future revenue.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, such as delays in government approvals, are affecting contract fulfillment.",
+      "evidence": [
+        {
+          "text": "While uncertainty exists over the timing of these pending approvals, and from time to time members of Congress have expressed concerns over these sales, we have taken contractual actions, such as changing or removing the government approval deadlines, or invoking the force majeure clauses for government delays.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The delays in government approvals and contractual actions taken indicate a moderate headwind.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company is involved in environmental remediation but expects no material impact.",
+      "evidence": [
+        {
+          "text": "Due to the complexity of environmental laws and regulations, the varying costs and effectiveness of alternative cleanup methods and technologies, the uncertainty of insurance coverage, and the unresolved extent of our responsibility, it is difficult to determine the ultimate outcome of environmental matters. However, we do not expect any additional liability to have a material adverse effect on our financial position, results of operations or liquidity.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company faces environmental risks but does not expect a material impact, indicating stability.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces potential litigation risks but does not expect material impact.",
+      "evidence": [
+        {
+          "text": "Other than as specifically disclosed herein, we do not expect these audits, investigations or disputes to have a material effect on our financial position, results of operations or liquidity, either individually or in the aggregate.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Potential litigation risks exist, but no material impact is expected, showing mixed signals.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include delays in government approvals for certain contracts.",
+      "evidence": [
+        {
+          "text": "While uncertainty exists over the timing of these pending approvals, and from time to time members of Congress have expressed concerns over these sales, we have taken contractual actions, such as changing or removing the government approval deadlines, or invoking the force majeure clauses for government delays.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Delays in government approvals pose a moderate risk, similar to regulatory changes.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Contract backlog includes significant amounts related to precision guided munitions and other defense products.",
+      "evidence": [
+        {
+          "text": "For these precision guided munitions contracts with certain Middle Eastern customers, we had approximately $2.4 billion of total contract value, recognized approximately $1.1 billion of sales for work performed to date and received approximately $850 million in advances.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant backlog indicates strong demand and future revenue growth.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are monitored but not expected to have a material impact.",
+      "evidence": [
+        {
+          "text": "The British pound is the functional currency for approximately 2% of our sales. In addition, for any contracts that are not denominated in the same currency as the functional currency (for example, contracts denominated in British pounds where the functional currency is the U.S. dollar), we enter into foreign currency forward contracts to hedge our risk related to foreign currency exchange rate fluctuations. As a result, we currently do not expect the U.K.\u2019s exit from the EU to have a material impact on our financial position, results of operations or liquidity.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign exchange movements are monitored but not expected to have a material impact, showing stability.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical factors, such as conflicts and trade tensions, pose risks but are not expected to have a material impact.",
+      "evidence": [
+        {
+          "text": "Recent events have caused increased attention on U.S. defense sales to the Kingdom of Saudi Arabia (KSA). KSA represents less than 5% of our sales and $2.1 billion of our backlog at March 31, 2019. This includes the majority of the precision guided munitions described below, integrated air and missile defense systems, as well as other products and services. Although we currently do not expect to be prevented from doing business in KSA, if government action impairs our ability to fulfill our contractual obligations or otherwise to continue to do business in KSA, it would have a material adverse effect on our financial results.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Geopolitical factors pose risks but are not expected to have a material impact, indicating mixed signals.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is present and accelerating, as evidenced by higher external net sales at IIS and MS, with no significant mention of acquisitions impacting the growth.",
+      "evidence": [
+        {
+          "text": "The increase in total net sales was primarily due to higher external net sales at IIS and MS, with no significant mention of acquisitions impacting the growth.",
+          "section": "mda",
+          "subsection": "Total Net Sales"
+        },
+        {
+          "text": "The increase in total net sales was primarily due to higher external net sales at IIS and MS, indicating organic growth.",
+          "section": "mda",
+          "subsection": "Total Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Accelerating organic revenue growth with no significant mention of acquisitions indicates strong positive development.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed, with evidence of acceleration in certain segments, particularly in external net sales at IIS and MS, while delays in demand for precision guided munitions and other products are noted due to government approvals.",
+      "evidence": [
+        {
+          "text": "The increase in total net sales of $462 million in the first quarter of 2019 compared to the first quarter of 2018 was primarily due to higher external net sales of $189 million at IIS and $150 million at MS.",
+          "section": "mda",
+          "subsection": "Total Net Sales"
+        },
+        {
+          "text": "These contracts contain clauses that permit the customer to terminate the contract, and require refund of any advances received, if those approvals are not received by a stated date or that date is not otherwise changed.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals with some positive and some negative trends.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is experiencing a slight compression in both gross and operating margins, despite an increase in operating income. The operating margin decreased marginally from 16.6% to 16.5%, while total operating expenses rose by $390 million.",
+      "evidence": [
+        {
+          "text": "Operating income increased by $72 million, but the operating margin decreased slightly from 16.6% to 16.5%. The total operating expenses increased by $390 million.",
+          "section": "mda",
+          "subsection": "Operating Income"
+        },
+        {
+          "text": "Operating income increased by $72 million, but the operating margin decreased slightly from 16.6% to 16.5%",
+          "section": "mda",
+          "subsection": "Operating Income"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Slight compression in margins despite increased operating income.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end markets such as cyber and space are growing fastest, indicating positive momentum. However, demand for precision guided munitions and integrated air and missile defense systems, while significant, faces potential delays and risks related to government actions that could impact financial results.",
+      "evidence": [
+        {
+          "text": "The increase in external net sales at IIS was primarily due to higher net sales on classified programs in both cyber and space.",
+          "section": "mda",
+          "subsection": "Total Net Sales"
+        },
+        {
+          "text": "This includes the majority of the precision guided munitions described below, integrated air and missile defense systems, as well as other products and services. Although we currently do not expect to be prevented from doing business in KSA, if government action impairs our ability to fulfill our contractual obligations or otherwise to continue to do business in KSA, it would have a material adverse effect on our financial results.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing end markets in cyber and space despite some risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International defense sales are growing, though they face challenges such as delays in government approvals and geopolitical factors. While foreign military sales through the U.S. government have increased from 11% to 15% of total net sales, almost all contracts in certain regions, like Qatar, represent less than 5% of the backlog and are subject to these risks.",
+      "evidence": [
+        {
+          "text": "Foreign military sales through the U.S. government increased from 11% to 15% of total net sales.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW"
+        },
+        {
+          "text": "Almost all of our contracts in Qatar are foreign military sales contracts through the U.S. government and represent less than 5% of our backlog at March 31, 2019. This includes the majority of the precision guided munitions described below, integrated air and missile defense systems, as well as other products and services.",
+          "section": "mda",
+          "subsection": "COMMITMENTS AND CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in international sales despite challenges.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

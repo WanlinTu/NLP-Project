@@ -1,0 +1,878 @@
+{
+  "ticker": "FTV",
+  "form": "10-K",
+  "filing_date": "2023-02-28",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 42,
+  "factors": [
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to extensive environmental regulations which pose compliance costs and risks to financial statements.",
+      "evidence": [
+        {
+          "text": "Our operations, products, and services expose us to the risk of environmental, health, and safety liabilities, costs, and violations that could adversely affect our reputation and financial statements.",
+          "section": "risk_factors",
+          "subsection": "Our businesses are subject to extensive regulation; failure to comply with those regulations could adversely affect our financial statements and reputation."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant compliance costs and risks to financial statements due to environmental regulations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly related to climate change and tax matters, pose risks to the company's financial statements and operations.",
+      "evidence": [
+        {
+          "text": "Climate change resulting from increased concentrations of carbon dioxide and other greenhouse gases in the atmosphere could present risks to our operations... Any such new or additional legal or regulatory requirements may increase the costs associated with, or disrupt, sourcing, manufacturing and distribution of our products, which may adversely affect our business and financial statements.",
+          "section": "risk_factors",
+          "subsection": "Climate change, or legal or regulatory measures to address climate change, may negatively affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Regulatory changes, especially related to climate change and taxes, pose major risks to the company's financials and operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "tax_liabilities",
+      "category": "unknown",
+      "summary": "The company faces potential tax liabilities and uncertainties due to changes in tax laws and audits.",
+      "evidence": [
+        {
+          "text": "Changes in our effective tax rates or exposure to additional income tax liabilities or assessments could affect our profitability. ... If these audits result in payments or assessments different from our reserves, our future results may include unfavorable adjustments to our tax liabilities and our financial statements could be adversely affected.",
+          "section": "risk_factors",
+          "subsection": "Risk Related to Our Tax and Accounting Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Potential tax liabilities and uncertainties could significantly affect profitability and financial statements.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "impairment_charges",
+      "category": "unknown",
+      "summary": "The company may incur significant impairment charges related to goodwill and intangible assets.",
+      "evidence": [
+        {
+          "text": "As of December 31, 2022, the net carrying value of our goodwill and other intangible assets totaled approximately $12.5 billion. ... Any charges relating to such impairments would adversely affect our results of operations in the periods recognized.",
+          "section": "risk_factors",
+          "subsection": "We may be required to recognize impairment charges for our goodwill and other intangible assets."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant impairment charges related to goodwill and intangibles pose a substantial risk to financial results.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Revenue growth is driven by both price increases and real demand.",
+      "evidence": [
+        {
+          "text": "The year-over-year increase was driven by price increases and continued strong demand for test and measurement instrumentation, gas detection offerings, and software and related services.",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue growth is driven by price increases and strong demand, indicating positive volume trends.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The text does not explicitly mention whether order backlog or book-to-bill is growing, stable, or shrinking. However, it discusses the impact of global economic conditions on customers' ability to pay, which could indirectly affect order backlogs.",
+      "evidence": [
+        {
+          "text": "Volatility and uncertainty in overall global economic conditions and worldwide capital markets may negatively impact our customers\u2019 ability to pay and, as a result, may increase the difficulty in collecting trade accounts and unbilled receivables.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit mention of backlog trends; economic uncertainty may indirectly affect it, but no clear signal.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "The text discusses the estimation of net realizable value of inventory and the potential impact of market conditions on inventory levels but does not provide a clear direction on whether levels are normalizing, building, or being drawn down.",
+      "evidence": [
+        {
+          "text": "We estimate the net realizable value of our inventory based on assumptions of future demand and related pricing. Estimating the net realizable value of inventory is inherently uncertain because levels of demand, technological advances, and pricing competition in many of our markets can fluctuate significantly from period to period due to circumstances beyond our control.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Unclear direction on inventory levels due to reliance on uncertain market conditions.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "The text does not mention any incidents related to product quality or safety. It focuses on accounting estimates and impairment testing but does not discuss quality or safety issues.",
+      "evidence": [
+        {
+          "text": "If actual results are not consistent with management\u2019s estimates and assumptions, goodwill and other intangible assets may be overstated and a charge would need to be taken against net earnings which would adversely affect our financial statements.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No discussion of quality or safety incidents, focusing instead on accounting matters.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "The text does not provide clear signals of management confidence through actions like buyback pace or CapEx commitments. It discusses accounting estimates and potential risks but not management's specific actions.",
+      "evidence": [
+        {
+          "text": "If the financial condition of our customers were to deteriorate beyond our current estimates, resulting in an impairment of their ability to make payments, we would be required to write-off additional receivable balances, which would adversely impact our net earnings and financial condition.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The text does not provide clear signals of management confidence through specific actions.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The text highlights risks related to global economic conditions and the potential impact on customers' ability to pay, which could affect near-term results.",
+      "evidence": [
+        {
+          "text": "Volatility and uncertainty in overall global economic conditions and worldwide capital markets may negatively impact our customers\u2019 ability to pay and, as a result, may increase the difficulty in collecting trade accounts and unbilled receivables.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Highlights risks related to global economic conditions affecting near-term results.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The text does not provide specific information on the company's long-term strategic direction or resource allocation. It focuses on accounting estimates and impairment testing but does not discuss strategic initiatives.",
+      "evidence": [
+        {
+          "text": "If actual results are not consistent with management\u2019s estimates and assumptions, goodwill and other intangible assets may be overstated and a charge would need to be taken against net earnings which would adversely affect our financial statements.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Lacks specific information on long-term strategic direction.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The text identifies sensitivity to changes in economic conditions, particularly global economic uncertainty affecting customers' ability to pay, which could impact near-term results.",
+      "evidence": [
+        {
+          "text": "Volatility and uncertainty in overall global economic conditions and worldwide capital markets may negatively impact our customers\u2019 ability to pay and, as a result, may increase the difficulty in collecting trade accounts and unbilled receivables.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Identifies sensitivity to economic conditions impacting near-term results.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is still disrupted with extended lead times and limited availability.",
+      "evidence": [
+        {
+          "text": "The widespread supply chain challenges due to labor, raw material, and component shortages, as well as widespread logistics issues, affected multiple industries, raised material and shipping costs, limited the quantities available, and extended the lead time required for supplies and deliveries. In addition, the spread of, and the remediation efforts related to, COVID-19 in certain key jurisdictions on supply chain, labor force, and the operations of our customers, suppliers, and vendors are continuing to have an adverse impact on our business and results of operations.",
+          "section": "risk_factors",
+          "subsection": "Our financial results are subject to fluctuations in the cost and availability of commodities or components that we use in our operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Describes ongoing disruptions affecting operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is facing challenges in retaining key employees due to a competitive job market.",
+      "evidence": [
+        {
+          "text": "Much of our future success and our ability to realize the benefit of our acquisitions and execute our portfolio strategy depends on our ability to attract and retain key employees, including our senior management. In particular, the markets for highly skilled employees and leaders in the technology and healthcare industries are extremely competitive. Furthermore, the workforce shortage in the United States and in other jurisdictions has increased the overall competitiveness and cost of retaining and attracting qualified employees.",
+          "section": "risk_factors",
+          "subsection": "If we are unable to recruit and retain key employees, our business may be harmed."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Faces challenges in retaining employees due to a competitive job market.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is focused on integration and may face challenges from past acquisitions.",
+      "evidence": [
+        {
+          "text": "We have implemented, and may continue to implement significant restructuring activities across our businesses to adjust our cost structure. These significant restructuring activities as well as our regular ongoing cost reduction activities (including in connection with the integration of acquired businesses) reduce our available talent, assets, and other resources and could slow improvements in our products and services, adversely affect our ability to respond to customers and limit our ability to increase production quickly if demand for our products increases.",
+          "section": "risk_factors",
+          "subsection": "Our restructuring activities could have long-term adverse effects on our business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Focus on integration with past challenges from acquisitions.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "workforce",
+      "category": "unknown",
+      "summary": "The workforce is facing challenges due to shortages and increased competition.",
+      "evidence": [
+        {
+          "text": "Much of our future success and our ability to realize the benefit of our acquisitions and execute our portfolio strategy depends on our ability to attract and retain key employees, including our senior management. In particular, the markets for highly skilled employees and leaders in the technology and healthcare industries are extremely competitive. Furthermore, the workforce shortage in the United States and in other jurisdictions has increased the overall competitiveness and cost of retaining and attracting qualified employees.",
+          "section": "risk_factors",
+          "subsection": "If we are unable to recruit and retain key employees, our business may be harmed."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenges due to shortages and increased competition.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable but subject to potential disruptions.",
+      "evidence": [
+        {
+          "text": "We have various non-U.S. collective labor arrangements. We are subject to potential work stoppages, works council campaigns, and other labor disputes, any of which could adversely impact our productivity, results of operations, and reputation.",
+          "section": "risk_factors",
+          "subsection": "Work stoppages, works council campaigns, and other labor disputes could adversely impact our productivity and results of operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential disruptions such as work stoppages pose a moderate risk to operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration is a risk due to dependency on key distributors.",
+      "evidence": [
+        {
+          "text": "Adverse changes in our relationships with, or the financial condition, performance, purchasing patterns, or inventory levels of, key distributors and other channel partners could adversely affect our financial statements.",
+          "section": "risk_factors",
+          "subsection": "Our growth could suffer if the markets into which we sell our products and services decline, do not grow as anticipated, or experience cyclicality."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Dependency on key distributors introduces a moderate risk to financial stability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is under pressure due to competition and economic conditions.",
+      "evidence": [
+        {
+          "text": "Our success will depend on several factors, including our ability to... differentiate our offerings from our competitors\u2019 offerings and avoid commoditization; ... even if we successfully innovate and develop new and enhanced products and services, we may incur substantial costs in doing so, and our profitability may suffer.",
+          "section": "risk_factors",
+          "subsection": "Our growth depends in part on the timely development and commercialization and customer acceptance of new and enhanced products and services based on technological innovation."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Competition and economic conditions pressure market share, indicating a moderate challenge.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is a focus, but challenges exist in aligning spending with growth opportunities.",
+      "evidence": [
+        {
+          "text": "Our success will depend on several factors, including our ability to... allocate our research and development funding to products and services with higher growth prospects; ... even if we successfully innovate and develop new and enhanced products and services, we may incur substantial costs in doing so, and our profitability may suffer.",
+          "section": "risk_factors",
+          "subsection": "Our growth depends in part on the timely development and commercialization and customer acceptance of new and enhanced products and services based on technological innovation."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While R&D is a focus, challenges in aligning spending with growth opportunities suggest mixed signals.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "The company is investing in digital technologies to improve efficiency.",
+      "evidence": [
+        {
+          "text": "In order to compete effectively, we must retain longstanding relationships with major customers and continue to grow our business by establishing relationships with new customers, continually developing new or enhanced products and services to maintain and expand our brand recognition and leadership position in various product and service categories, and penetrating new markets, including high-growth markets.",
+          "section": "risk_factors",
+          "subsection": "Our growth depends in part on the timely development and commercialization and customer acceptance of new and enhanced products and services based on technological innovation."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investment in digital technologies aims to enhance efficiency, presenting a clear opportunity.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New product launches are critical, but success is uncertain.",
+      "evidence": [
+        {
+          "text": "Even if we successfully innovate and develop new and enhanced products and services, we may incur substantial costs in doing so, and our profitability may suffer. In addition, if we fail to accurately predict future customer needs and preferences or fail to produce viable technologies, we may invest heavily in research and development of products and services that do not lead to significant revenue, which would adversely affect our profitability.",
+          "section": "risk_factors",
+          "subsection": "Our growth depends in part on the timely development and commercialization and customer acceptance of new and enhanced products and services based on technological innovation."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Success of new products is uncertain, posing a moderate risk to profitability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is ongoing as part of cost reduction efforts.",
+      "evidence": [
+        {
+          "text": "We have implemented, and may continue to implement significant restructuring activities across our businesses to adjust our cost structure.",
+          "section": "risk_factors",
+          "subsection": "Our restructuring activities could have long-term adverse effects on our business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring activities indicate ongoing cost-cutting measures, signaling a moderate challenge.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company's commitment to buybacks and dividends indicates confidence, but economic conditions and access to capital could impact shareholder returns.",
+      "evidence": [
+        {
+          "text": "During 2022, we repurchased 7 million shares of our outstanding common stock for approximately $443 million under our publicly-announced share repurchase program. We paid $99.5 million in dividends to common shareholders.",
+          "section": "mda",
+          "subsection": "Financing Activities and Indebtedness"
+        },
+        {
+          "text": "If we are unable to access capital and credit markets on terms that are acceptable to us or our lenders are unable to provide financing in accordance with their contractual obligations, we may not be able to make certain investments or acquisitions or fully execute our business plans and strategies.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While buybacks and dividends show confidence, economic conditions may impact returns, leading to mixed signals.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining capital expenditures, signaling confidence in future growth, but acknowledges potential economic uncertainties that may constrain future spending.",
+      "evidence": [
+        {
+          "text": "Capital expenditures totaled $96 million in 2022, $50 million in 2021, and $76 million in 2020. We expect capital spending to be between approximately $90 million and $110 million in 2023.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        },
+        {
+          "text": "If growth in the global economy or in any of the markets we serve slows for a significant period, if there is significant deterioration in the global economy or such markets, if there is instability in global capital and credit markets, or if improvements in the global economy do not benefit the markets we serve, our business and financial statements would be adversely affected.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is maintaining capital expenditures, signaling confidence in future growth despite acknowledging potential economic uncertainties.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "The company's free cash flow generation is showing improvement, as evidenced by increased financing cash flows. However, there are risks associated with economic conditions that could negatively impact future cash flows.",
+      "evidence": [
+        {
+          "text": "Financing cash flows from continuing operations generated $652 million in 2021, up from a use of $675 million in 2020.",
+          "section": "mda",
+          "subsection": "Financing Activities and Indebtedness"
+        },
+        {
+          "text": "As of December 31, 2022, we expect to have sufficient liquidity to satisfy our cash needs for the foreseeable future, including our cash needs in the United States.",
+          "section": "mda",
+          "subsection": "Cash and Cash Requirements"
+        },
+        {
+          "text": "If we are unable to access capital and credit markets on terms that are acceptable to us or our lenders are unable to provide financing in accordance with their contractual obligations, we may not be able to make certain investments or acquisitions or fully execute our business plans and strategies.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow generation has improved, with increased financing cash flows, indicating financial strength.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has a significant amount of debt, which poses risks including cash flow diversion and potential defaults. However, the company is also taking actions to manage its debt leverage, including refinancing at lower rates, maintaining compliance with covenants, and deleveraging by using available cash and internally generated funds. Despite these efforts, the company remains exposed to risks associated with its substantial debt load.",
+      "evidence": [
+        {
+          "text": "The company had approximately $3.3 billion of long-term debt as of December 31, 2022.",
+          "section": "mda",
+          "subsection": "2021 Financing and Capital Transactions"
+        },
+        {
+          "text": "The company is obligated to maintain a consolidated net leverage ratio of debt to consolidated EBITDA.",
+          "section": "mda",
+          "subsection": "2022 Financing and Capital Transactions"
+        },
+        {
+          "text": "The company intends to use available cash and internally generated funds to meet cash requirements, but may borrow under commercial paper programs or credit facilities if needed.",
+          "section": "mda",
+          "subsection": "Cash and Cash Requirements"
+        },
+        {
+          "text": "The company drew down a $1.0 billion Delayed-Draw Term Loan with repayment due December 15, 2022, bearing interest at a variable rate equal to the daily LIBOR rate plus a spread of 60 basis points.",
+          "section": "risk_factors",
+          "subsection": "We have incurred a significant amount of debt, and our debt will increase further if we incur additional debt and do not retire existing debt."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High debt levels pose significant risks, despite efforts to manage leverage through refinancing and cash management.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is generally strong, with robust growth overall despite macroeconomic challenges, though there are slight variations in growth across different segments.",
+      "evidence": [
+        {
+          "text": "We experienced robust demand for our products and service during 2022 and despite challenging macroeconomic conditions and global supply chain constraints, aggregate year-over-year sales increased 10.9%, with contributions from both existing and newly acquired businesses, all partially offset by unfavorable changes in foreign exchange rates.",
+          "section": "mda",
+          "subsection": "Business Performance and Outlook"
+        },
+        {
+          "text": "Year-over-year sales from existing businesses increased 12.0% in 2022, as compared to 2021. The year-over-year increase was driven by price increases and continued strong demand for test and measurement instrumentation, gas detection offerings, and software and related services.",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Robust demand growth across segments, driven by strong sales and market expansion, despite macroeconomic challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company faces foreign currency exchange rate risk, which has unfavorably impacted sales and could affect future results. While the MDA section highlights the negative impact of currency exchange rates on sales, the Critical Accounting Estimates section does not mention foreign exchange movements or their specific impact on financials, instead focusing on broader economic conditions.",
+      "evidence": [
+        {
+          "text": "Currency exchange rates unfavorably impacted 2022 reported sales by 3.1% as compared to 2021, as the U.S. dollar was, on average, stronger against most major currencies during 2022 as compared to exchange rate levels during 2021. If the exchange rates in effect as of December 31, 2022 were to prevail throughout 2023, currency exchange rates would negatively impact 2023 estimated sales by approximately 0.3% relative to our performance in 2022.",
+          "section": "mda",
+          "subsection": "Foreign Currency Exchange Rate Risk"
+        },
+        {
+          "text": "Volatility and uncertainty in overall global economic conditions and worldwide capital markets may negatively impact our customers\u2019 ability to pay and, as a result, may increase the difficulty in collecting trade accounts and unbilled receivables.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange rate risks have unfavorably impacted sales and could affect future results.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The company faces both positive and negative impacts from interest rate changes. While fixed-rate debt is affected by changes in fair value, variable-rate debt directly influences interest expense. A 100 basis points increase would decrease the fair value of fixed-rate debt by $79 million, and a 10 basis points increase on variable-rate debt would raise interest expense by $1.8 million annually.",
+      "evidence": [
+        {
+          "text": "We manage interest cost using a mixture of fixed-rate and variable-rate debt. A change in interest rates on long-term debt impacts the fair value of our fixed-rate long-term debt but not our earnings or cash flows...",
+          "section": "mda",
+          "subsection": "Interest Rate Risk"
+        },
+        {
+          "text": "As of December 31, 2022, an increase of 100 basis points in interest rates would have decreased the fair value of our fixed-rate long-term debt by approximately $79 million...",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        },
+        {
+          "text": "The annual effective rate associated with our outstanding variable-rate obligation was approximately 2.04% with interest expense of $44.9 million. On an annualized basis, a hypothetical 10 basis points increase in market interest rates as of December 31, 2022 on our variable-rate debt obligations as of December 31, 2022 would have increased our interest expense by $1.8 million in 2022.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed impact from interest rate changes; negative on fixed-rate debt value but positive on variable-rate interest expense.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing strong organic revenue growth, with acceleration noted across different periods. However, this growth is contingent upon favorable market conditions, and uncertainties in market demand and cyclicality pose risks to sustaining this growth.",
+      "evidence": [
+        {
+          "text": "Year-over-year sales from existing businesses increased 10.1%, reflecting strong end-market demand for our offerings as well as focused execution on product and service delivery, and favorable pricing.",
+          "section": "mda",
+          "subsection": "Business Performance and Outlook"
+        },
+        {
+          "text": "Year-over-year sales from existing businesses increased 12.0% in 2022, as compared to 2021.",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        },
+        {
+          "text": "Our growth depends in part on the growth of the markets which we serve, and visibility into our markets is limited (particularly for markets into which we sell through distribution). Our quarterly sales and profits depend substantially on the volume and timing of orders received during the fiscal quarter, which are difficult to forecast. Any decline or lower than expected growth in our served markets could diminish demand for our products and services, which could adversely affect our financial statements.",
+          "section": "risk_factors",
+          "subsection": "Our growth could suffer if the markets into which we sell our products and services decline, do not grow as anticipated, or experience cyclicality."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong organic revenue growth acceleration, though contingent on favorable market conditions.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end markets are experiencing mixed momentum with high-growth regions like Latin America and China driving demand, while specific end markets such as manufacturing, healthcare, utilities, and power are growing the fastest.",
+      "evidence": [
+        {
+          "text": "Year-over-year sales from existing businesses in high growth markets increased low double-digits driven by low twenties growth in Latin America and low double-digit growth in China.",
+          "section": "mda",
+          "subsection": "Business Performance and Outlook"
+        },
+        {
+          "text": "These offerings include electrical test & measurement, facility and asset lifecycle software applications, connected worker safety and compliance solutions across a range of vertical end markets, including manufacturing, process industries, healthcare, utilities and power, communications and electronics, among others.",
+          "section": "mda",
+          "subsection": "INTELLIGENT OPERATING SOLUTIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "High-growth regions and strong end-market demand across key sectors drive positive momentum.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company has demonstrated positive pricing power, successfully raising prices to contribute to sales growth. However, there are risks associated with this strategy, particularly the potential inability to fully recover cost increases due to competitive pressures, which could negatively impact margins and profitability.",
+      "evidence": [
+        {
+          "text": "Year-over-year price increases contributed 5.2% to sales growth during 2022, as compared to 2021, and is reflected as a component of the change in sales from existing businesses. During 2022, price increases exceeded inflationary increases that we experienced on purchased materials.",
+          "section": "mda",
+          "subsection": "Business Performance and Outlook"
+        },
+        {
+          "text": "Year-over-year price increases in our Intelligent Operating Solutions segment contributed 5.8% to sales growth in 2022, as compared to 2021, and is reflected as a component of the change in sales from existing businesses.",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        },
+        {
+          "text": "If commodity or component prices rise we may be unable to pass along cost increases through higher prices. If we are unable to fully recover higher commodity or component costs through price increases or offset these increases through cost reductions, or if there is a time delay between the increase in costs and our ability to recover or offset these costs, we could experience lower margins and profitability and our financial statements could be adversely affected.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company successfully raised prices to boost sales growth, but faces risks of not recovering cost increases.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is positive, with both operating and gross margins expanding in 2022 compared to 2021 due to pricing increases and productivity measures. However, there is a note of caution regarding potential impacts on net earnings from changes in accounting estimates, which could affect financial statements if actual results differ from management's assumptions.",
+      "evidence": [
+        {
+          "text": "Operating profit margins were 16.9% for the year ended December 31, 2022, an increase of 140 basis points as compared to 15.5% in 2021...",
+          "section": "mda",
+          "subsection": "2022 vs. 2021"
+        },
+        {
+          "text": "Operating profit margin increased 230 basis points during 2022 as compared to 2021...",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        },
+        {
+          "text": "If actual results are not consistent with management\u2019s estimates and assumptions, goodwill and other intangible assets may be overstated and a charge would need to be taken against net earnings...",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Both operating and gross margins expanded in 2022 due to pricing and productivity.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising due to supply chain challenges, inflation, and increased material and shipping costs. The company is facing margin pressure and may struggle to offset these increases through price hikes or cost reductions, which could impact profitability.",
+      "evidence": [
+        {
+          "text": "Widespread supply chain challenges and inflationary pressures persisted throughout the year resulting in higher costs in each of our three segments.",
+          "section": "mda",
+          "subsection": "Business Performance and Outlook"
+        },
+        {
+          "text": "Higher year-over-year freight, logistics and material costs and employee compensation costs, and growth investments in R&D, sales and marketing and unfavorable foreign exchange rates \u2014 favorable 230 basis points.",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        },
+        {
+          "text": "The widespread supply chain challenges due to labor, raw material, and component shortages... raised material and shipping costs, limited the quantities available, and extended the lead time required for supplies and deliveries.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        },
+        {
+          "text": "Prices for and availability of these components, raw materials, and other commodities have fluctuated significantly in the past... The widespread supply chain challenges due to labor, raw material, and component shortages... raised material and shipping costs, limited the quantities available, and extended the lead time required for supplies and deliveries.",
+          "section": "risk_factors",
+          "subsection": "Our financial results are subject to fluctuations in the cost and availability of commodities or components that we use in our operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising costs from supply chain issues and inflation are pressuring margins.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising, leading to margin pressure. While one section highlights the increase in employee compensation and SG&A costs, another section does not address labor costs, wage inflation, or benefit expenses, focusing instead on accounting estimates.",
+      "evidence": [
+        {
+          "text": "Higher year-over-year employee compensation and SG&A costs due to broad cost reduction efforts in 2020 that reduced expenses to better align with reductions in demand, and increased investment in key growth and innovation initiatives \u2014 favorable 290 basis points.",
+          "section": "mda",
+          "subsection": "2021 COMPARED TO 2020"
+        },
+        {
+          "text": "The future expected losses of each pool are estimated based on numerous quantitative and qualitative factors reflecting management\u2019s estimate of collectability over the remaining contractual life of the pooled assets, including: [...] historical, current, and forecasted economic conditions; and historical, current, and forecasted credit risk.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs are putting pressure on margins.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The forward guidance from the SEC filing is mixed. While management projects moderate growth for 2023, anticipating continued demand despite challenges, they also caution against economic and market uncertainties that could negatively impact the business. The critical accounting estimates section does not provide specific numerical forward guidance on revenue, earnings, or margins, focusing instead on past performance and potential impacts of economic conditions.",
+      "evidence": [
+        {
+          "text": "We anticipate that the disruptions caused by the pandemic will continue to impact future periods. [...] We are projecting full year sales to grow on a year-over-year basis by approximately 2.0%-4.5% with year-over-year growth from existing businesses of approximately 3.0%-5.5%.",
+          "section": "mda",
+          "subsection": "ITEM 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "If growth in the global economy or in any of the markets we serve slows for a significant period, if there is significant deterioration in the global economy or such markets, if there is instability in global capital and credit markets, or if improvements in the global economy do not benefit the markets we serve, our business and financial statements would be adversely affected.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        },
+        {
+          "text": "We did not realize notable increases in loss rates and delinquencies or record material provisions for credit losses during the year ended December 31, 2022 or 2021.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed outlook with projected growth but caution on uncertainties.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company has experienced a decrease in litigation exposure following the dismissal of a whistleblower lawsuit, resulting in a gain of $26 million. However, there remains a significant risk of future litigation exposure due to potential improper conduct by employees, agents, or business partners, which could damage the company's reputation and lead to substantial legal and financial consequences.",
+      "evidence": [
+        {
+          "text": "Following the Principal Closing Date, management continually evaluated the likelihood and magnitude of the asserted claims based on any new information that became available. [...] Based on these developments, management derecognized the litigation liability [...] and recorded a Gain on litigation resolution of $26\u00a0million.",
+          "section": "mda",
+          "subsection": "Other Acquisition-related Matters"
+        },
+        {
+          "text": "Any such improper actions or allegations of such acts could damage our reputation and subject us to civil or criminal investigations in the United States and in other jurisdictions and related shareholder lawsuits, could lead to substantial civil and criminal, monetary and non-monetary penalties and could cause us to incur significant legal and investigatory fees.",
+          "section": "risk_factors",
+          "subsection": "Our reputation, ability to do business, and financial statements may be impaired by improper conduct by any of our employees, agents, or business partners."
+        },
+        {
+          "text": "As discussed in Note 16 to the consolidated financial statements, we are, from time to time, subject to a variety of litigation and similar contingent liabilities incidental to our business.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreased current exposure, but significant future risks remain.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company is facing significant negative impacts from geopolitical risks, particularly the Russia-Ukraine conflict, which has led to increased costs, supply chain disruptions, and economic instability. While some sections acknowledge the direct effects on operations and financials, others focus on broader economic uncertainties without explicitly linking them to geopolitical factors.",
+      "evidence": [
+        {
+          "text": "In February 2022, Russian forces invaded Ukraine [...] The Company exited business operations in Russia [...] These costs are identified as the 'Russia exit and wind down costs' in the Consolidated Statements of Earnings.",
+          "section": "mda",
+          "subsection": "ITEM 7. MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "Energy, manufacturing or component supply constraints arising from the Ukraine/Russia conflict... Our suppliers and customers are also dependent upon the capital and credit markets. Limitations on the ability of customers, suppliers, or financial counterparties to access credit at interest rates and on terms that are acceptable to them could lead to insolvencies of key suppliers and customers, limit or prevent customers from obtaining credit to finance purchases of our products and services, and cause delays in the delivery of key products from suppliers.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        },
+        {
+          "text": "Volatility and uncertainty in overall global economic conditions and worldwide capital markets may negatively impact our customers\u2019 ability to pay and, as a result, may increase the difficulty in collecting trade accounts and unbilled receivables.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant negative impacts from geopolitical tensions affecting costs and supply.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "The company is experiencing mixed productivity trends. While operational efficiency is improving due to productivity measures, supply chain issues, labor shortages, and increased costs are negatively impacting productivity.",
+      "evidence": [
+        {
+          "text": "Year-over-year increase in price and sales volume from existing businesses and gains from productivity measures, partially offset by higher year-over-year freight, logistics and material costs and employee compensation costs, and growth investments in R&D, sales and marketing and unfavorable foreign exchange rates \u2014 favorable 230 basis points.",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        },
+        {
+          "text": "The widespread supply chain challenges due to labor, raw material, and component shortages, as well as widespread logistics issues, affected multiple industries, raised material and shipping costs, limited the quantities available, and extended the lead time required for supplies and deliveries.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed productivity trends with some improvements but challenges remain.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has implemented restructuring and productivity measures that have resulted in measurable savings, despite facing challenges such as higher freight, logistics, and material costs, as well as increased employee compensation costs. Additionally, economic conditions have impacted costs related to allowances and impairments, potentially affecting net earnings if customer financial conditions deteriorate further.",
+      "evidence": [
+        {
+          "text": "Year-over-year operating profit margin comparisons impacted by: \u2022 Year-over-year increase in price and sales volume from existing businesses and gains from productivity measures, partially offset by higher year-over-year freight, logistics and material costs and employee compensation costs, and growth investments in R&D, sales and marketing and unfavorable foreign exchange rates \u2014 favorable 230 basis points.",
+          "section": "mda",
+          "subsection": "2022 COMPARED TO 2021"
+        },
+        {
+          "text": "If the financial condition of our customers were to deteriorate beyond our current estimates, resulting in an impairment of their ability to make payments, we would be required to write-off additional receivable balances, which would adversely impact our net earnings and financial condition.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company has implemented cost-saving measures but still faces significant challenges like higher freight, logistics, material costs, and employee compensation, which could negatively impact net earnings.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The global economic environment presents significant challenges, with various adverse conditions acting as headwinds. Economic uncertainty and volatility negatively impact customers' ability to pay, increasing the difficulty in collecting receivables. Additionally, factors such as slower economic growth, reduced demand, inflation, and geopolitical instability further exacerbate these challenges.",
+      "evidence": [
+        {
+          "text": "Volatility and uncertainty in overall global economic conditions and worldwide capital markets may negatively impact our customers\u2019 ability to pay and, as a result, may increase the difficulty in collecting trade accounts and unbilled receivables.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        },
+        {
+          "text": "Our business is impacted by general economic conditions, and adverse economic conditions... such as slower global economic growth, reduced demand or consumer confidence, energy, manufacturing or component supply constraints... high inflation rates and the corresponding interest rate policies, volatility in currency and credit markets, actual or anticipated default on sovereign debt, changes in global trade policies, unemployment and underemployment rates, reduced levels of capital expenditures, changes in government fiscal and monetary policies, government deficit reduction and budget negotiation dynamics, sequestration, other austerity measures, political and social instability, other geopolitical conflict, sanctions, natural disasters, terrorist attacks, and other challenges affect us and our distributors, customers, and suppliers.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The global economic environment presents significant challenges, including economic uncertainty, volatility, inflation, and geopolitical instability, which are acting as headwinds and negatively impacting the company's financial health.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

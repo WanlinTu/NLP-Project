@@ -1,0 +1,606 @@
+{
+  "ticker": "HUBB",
+  "form": "10-K",
+  "filing_date": "2016-02-18",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 31,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is increasing capital expenditures, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "During 2015, we used cash of $77.1 million for capital expenditures, an increase of $16.8 million from 2014 as we made investments in our businesses in higher growth markets in 2015 that we expect will drive productivity.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is increasing capital expenditures, signaling confidence in future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The balance sheet is slightly weakening with a small increase in net debt, but overall leverage remains manageable.",
+      "evidence": [
+        {
+          "text": "Net debt to total capital was 10% at December 31, 2015, compared to -4% at December 31, 2014.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The balance sheet is slightly weakening with a small increase in net debt, but overall leverage remains manageable.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, driven by favorable operating activities and capital expenditures.",
+      "evidence": [
+        {
+          "text": "The Company continues to target free cash flow (defined as cash flows from operations less capital expenditures) of approximately 90% of net income in 2015.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow generation is improving, driven by favorable operating activities and capital expenditures.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining a moderate pace of buybacks and dividends, indicating confidence in its operations.",
+      "evidence": [
+        {
+          "text": "During 2015, the Company executed share repurchases totaling $88.1 million, and paid dividends totaling $15.8 million in 2015.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is maintaining a moderate pace of buybacks and dividends, indicating confidence in its operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intensifying, with pricing pressures and potential impact on market share.",
+      "evidence": [
+        {
+          "text": "We compete on the basis of product performance, quality, service and/or price. Our competitive strategy is to design and manufacture high quality products at the lowest possible cost. Our strategy is to also increase selling prices to offset rising costs of raw materials and components. Competitive pricing pressures may not allow us to offset some or all of our increased costs through pricing actions.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The competitive environment is intensifying, with pricing pressures and potential impact on market share.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain disruptions are a risk, particularly due to global economic conditions and geopolitical factors.",
+      "evidence": [
+        {
+          "text": "Depending upon their severity and duration, these conditions could have an adverse impact on our results of operations, financial condition and cash flows.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain disruptions are a risk, particularly due to global economic conditions and geopolitical factors.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company is not dependent on a single customer, but top customers account for a significant portion of sales, posing concentration risk.",
+      "evidence": [
+        {
+          "text": "We are not dependent on a single customer, however, our top ten customers account for approximately one-third of our net sales.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is not dependent on a single customer, but top customers account for a significant portion of sales, posing concentration risk.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces potential legal and regulatory risks, including intellectual property disputes and environmental liabilities.",
+      "evidence": [
+        {
+          "text": "We are also subject to various laws and regulations relating to environmental protection and the discharge of materials into the environment, and we could incur substantial costs as a result of the noncompliance with or liability for clean up or other costs or damages under environmental laws.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces potential legal and regulatory risks, including intellectual property disputes and environmental liabilities.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly regarding conflict-free minerals, may increase costs and pose compliance challenges.",
+      "evidence": [
+        {
+          "text": "New regulations related to conflict-free minerals may cause us to incur additional expenses and may create challenges with our customers.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary indicates that regulatory changes, specifically regarding conflict-free minerals, may lead to increased costs and compliance challenges, which are negative factors.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, such as international conflicts and political instability, pose significant risks to operations and supply chains.",
+      "evidence": [
+        {
+          "text": "Political instability in any country where we do business could have an adverse impact on our results of operations.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical risks such as international conflicts and political instability pose significant risks to operations and supply chains, which are negative factors.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand appears stable with mixed trends across segments.",
+      "evidence": [
+        {
+          "text": "Net sales for the year ended 2015 were $3.4 billion, an increase of one percent over 2014. Acquisitions added three percentage points to net sales in 2015, offset by the impact of foreign currency translation which reduced net sales by two percentage points.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand appears stable with mixed trends across segments, indicating no clear positive or negative direction, thus neutral.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "No specific information on backlog orders or book-to-bill trends.",
+      "evidence": [
+        {
+          "text": "The text does not mention backlog orders or book-to-bill ratios.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "There is no specific information on backlog orders or book-to-bill trends, making it neutral as there's no clear signal.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix shifted unfavorably due to lower organic sales in certain segments.",
+      "evidence": [
+        {
+          "text": "Organic volume was flat as net sales growth in our Power segment and in our Electrical segment products in the non-residential and residential construction markets was offset by lower organic net sales of our Electrical segment products in the energy-related and industrial markets, primarily our Harsh and Hazardous products.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The revenue mix shifted unfavorably due to lower organic sales in certain segments, which is a negative factor.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is focused on expanding market share through new products and sales efforts.",
+      "evidence": [
+        {
+          "text": "As part of our revenue growth initiative, we remain focused on expanding market share through new product introductions and more effective utilization of sales and marketing efforts across the organization.",
+          "section": "mda",
+          "subsection": "Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is focused on expanding market share through new products and sales efforts, which is a positive development.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign exchange rates and commodity prices are key sensitivities impacting the company's near-term results.",
+      "evidence": [
+        {
+          "text": "We expect net sales growth will also be challenged in 2016 by continued pressure from foreign exchange rates and the potential for price erosion in light of expected continued weakness in commodity costs.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange rates and commodity prices are key sensitivities impacting the company's near-term results, which are negative factors.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are a key focus, driven by lean process improvements and global sourcing.",
+      "evidence": [
+        {
+          "text": "Value engineering efforts, product transfers and the use of lean process improvement techniques are expected to continue to increase manufacturing efficiency.",
+          "section": "mda",
+          "subsection": "Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improvements are driven by lean process improvements and global sourcing, indicating a positive trend.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management anticipates earnings per diluted share in the range of $5.20 to $5.40 for 2016, including restructuring costs.",
+      "evidence": [
+        {
+          "text": "We anticipate earnings per diluted share in the range of $5.20 to $5.40 in 2016, including approximately $0.35 of restructuring and related costs in 2016 as well as $0.30 of incremental savings in 2016 from restructuring and related actions initiated prior to December 31, 2015.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management provides a clear earnings per share range, indicating confidence in future performance.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management expresses confidence through plans to enhance shareholder value via share repurchases and acquisitions.",
+      "evidence": [
+        {
+          "text": "With our strong financial position and cash flows provided by operating activities, we expect to continue to enhance shareholder value through capital deployment including both share repurchases and acquisitions.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management expresses confidence through specific plans to enhance shareholder value, showing a proactive strategy.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Risks include decline in oil and gas markets and potential price erosion from weak commodity costs.",
+      "evidence": [
+        {
+          "text": "We expect growth in those markets to be offset by an anticipated decline in oil and gas markets, which we project may decline by approximately fifteen to twenty-percent, and industrial markets that are flat-to-down by approximately two percent.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Anticipated decline in oil and gas markets poses significant near-term risks to growth.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategy focuses on key initiatives including revenue growth, productivity, and capital deployment.",
+      "evidence": [
+        {
+          "text": "The Company is focused on growing profits and delivering attractive returns to our shareholders by executing a business plan focused on the following key initiatives: revenue growth, price realization, productivity improvements and capital deployment.",
+          "section": "mda",
+          "subsection": "Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Focus on key initiatives like revenue growth and productivity indicates a strong long-term strategy.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "equipment_replacement",
+      "category": "industrial_infrastructure",
+      "summary": "Equipment replacement cycles are not a significant factor in the company's current demand.",
+      "evidence": [
+        {
+          "text": "The industrial market includes a segment of customers in energy-related industries, including oil and gas as well as mining industries.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Equipment replacement cycles are not a significant factor, providing no clear sentiment signal.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment presents mixed challenges, with headwinds such as currency fluctuations and market weaknesses in certain end markets, alongside global economic uncertainty which could lead to reduced demand and operational disruptions.",
+      "evidence": [
+        {
+          "text": "Beginning in the fourth quarter of 2014 and continuing through 2015, we have initiated certain restructuring actions, primarily in response to weakness in certain of our end markets.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        },
+        {
+          "text": "Global economic uncertainty poses a risk, potentially leading to reduced demand and operational disruptions.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        },
+        {
+          "text": "Global economic uncertainty could adversely affect the company's financial performance.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed economic challenges and uncertainties pose risks to demand and operations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is actively implementing restructuring actions to control costs, with measurable savings being achieved. However, the success of these initiatives remains uncertain, and there are ongoing restructuring and productivity efforts in place.",
+      "evidence": [
+        {
+          "text": "Restructuring actions are delivering measurable savings, with costs incurred and expectations aligned.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        },
+        {
+          "text": "The company is implementing restructuring activities to control costs, but success is uncertain.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        },
+        {
+          "text": "Of the $38.9 million of Restructuring and Related Costs incurred in 2015, $32.8 million is recorded in the Electrical segment and $6.1 million is recorded in the Power segment.",
+          "section": "mda",
+          "subsection": "SUMMARY OF CONSOLIDATED RESULTS (IN MILLIONS, EXCEPT PER SHARE DATA)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Restructuring actions are being implemented but their success is uncertain, leading to a neutral sentiment.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has been active in acquisitions, which have contributed to revenue growth but have also impacted margins negatively. While the activities are accretive to growth and expand capabilities, they have led to a decrease in operating margins and a mixed effect on overall financial performance.",
+      "evidence": [
+        {
+          "text": "In 2015, the Company completed four acquisitions for $163.4 million, net of cash acquired, and including a $0.2 million payment in 2015 to settle the net working capital adjustment relating to an acquisition completed in the fourth quarter of 2014.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        },
+        {
+          "text": "Acquisitions added three percentage points to net sales in 2015, offset by the impact of foreign currency translation which reduced net sales by two percentage points. [...] Acquisitions contributed approximately 30 basis points to the decrease in operating margin.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Acquisitions have mixed effects on margins and performance, resulting in a neutral sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends show mixed performance, with growth in certain areas offset by declines in others, leading to an overall flat unit volume.",
+      "evidence": [
+        {
+          "text": "Unit volumes are growing, contributing to revenue growth.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        },
+        {
+          "text": "Organic volume was flat as net sales growth in our Power segment and in our Electrical segment products in the non-residential and residential construction markets was offset by lower organic net sales of our Electrical segment products in the energy-related and industrial markets, primarily our Harsh and Hazardous products.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends are mixed with growth in some areas offset by declines elsewhere, resulting in flat unit volume.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory has been mixed, with historical compression in both gross and operating margins, but recent stability. However, future margins are expected to face challenges from unfavorable product mix, foreign exchange, and pricing pressures, indicating potential downward pressure.",
+      "evidence": [
+        {
+          "text": "Gross and operating margins are stable, with no significant compression or expansion noted.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        },
+        {
+          "text": "The gross profit margin for 2015 declined to 32.2% compared to 33.0% in 2014. [...] Operating margin in 2015 declined by 140 basis points to 14.0% [...] The decrease in the adjusted operating margin is primarily due to unfavorable product and business mix, and the unfavorable impact of foreign exchange, partially offset by the favorable net impact of price and material costs as well as productivity in excess of cost inflation.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "We expect operating margins in 2016 will continue to be affected by the unfavorable product and business mix experienced in 2015 as well as the foreign exchange and pricing pressures that we expect to be a headwind on net sales growth.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margins have faced compression in the past and are expected to face future challenges from unfavorable factors.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is facing challenges with rising input costs, including unfavorable impacts from foreign exchange and cost inflation. While the company has experienced some favorable net impacts from price and material costs as well as productivity improvements, there are concerns about potential price erosion due to weak commodity costs and continued pressure from foreign exchange rates.",
+      "evidence": [
+        {
+          "text": "Significant shortages in the availability of these materials or significant price increases could increase our operating costs and adversely impact the competitive positions of our products, which could adversely impact our results of operations.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        },
+        {
+          "text": "The increase was primarily due to higher Restructuring and Related Costs in 2015 as compared to 2014, contributing approximately 60 basis points to the increase, unfavorable product and business mix, and the unfavorable impact of foreign exchange, partially offset by the favorable net impact of price and material costs as well as productivity in excess of cost inflation.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "We expect net sales growth will also be challenged in 2016 by continued pressure from foreign exchange rates and the potential for price erosion in light of expected continued weakness in commodity costs.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs, including foreign exchange and inflation, pose challenges despite some favorable impacts.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company has encountered difficulties in maintaining pricing power, facing both competitive pressures and unfavorable impacts from foreign exchange and cost inflation. This has resulted in a decline in gross profit margins, indicating challenges in offsetting cost increases through pricing actions.",
+      "evidence": [
+        {
+          "text": "Competitive pricing pressures may not allow us to offset some or all of our increased costs through pricing actions. Alternatively, if raw material and component costs decline, the Company may not be able to maintain current pricing levels.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a01A\u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        },
+        {
+          "text": "The gross profit margin for 2015 declined to 32.2% compared to 33.0% in 2014. Excluding Restructuring and Related Costs, the adjusted gross profit margin was 32.9% in 2015 as compared to 33.1% in 2014. The decrease in the adjusted gross margin is primarily due to unfavorable product and business mix, and the unfavorable impact of foreign exchange.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decline in gross profit margins reflects struggles in maintaining pricing power against cost increases.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end market momentum is mixed, with growth in construction markets offset by challenges in energy-related and industrial sectors.",
+      "evidence": [
+        {
+          "text": "Net sales growth in our Power segment and in our Electrical segment products in the non-residential and residential construction markets was offset by lower organic net sales of our Electrical segment products in the energy-related and industrial markets, primarily our Harsh and Hazardous products.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Our overall end markets were mixed in 2015. Our largest end market, non-residential construction, grew on the continued strength of the renovation and relight market as well as increased demand for private construction spending. The residential market also grew in 2015, albeit at a more modest pace than in the past several years. Strength in the non-residential and residential markets was more than offset by deteriorating oil and gas and broader industrial markets resulting in weakness in net sales of our products serving these markets.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance across different end markets with growth in some areas offset by declines in others.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company experienced flat organic revenue growth in 2015 compared to 2014, with net sales growth in certain segments offset by declines in others. Looking ahead, organic net sales growth is expected to outperform end markets, but it will face challenges from foreign exchange pressures and potential price erosion due to weak commodity costs.",
+      "evidence": [
+        {
+          "text": "Organic volume was flat as net sales growth in our Power segment and in our Electrical segment products in the non-residential and residential construction markets was offset by lower organic net sales of our Electrical segment products in the energy-related and industrial markets, primarily our Harsh and Hazardous products.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "We expect organic net sales growth to outperform end markets and that acquisitions will continue to be a key driver of growth, but that net sales growth will also be challenged in 2016 by continued pressure from foreign exchange rates and the potential for price erosion in light of expected continued weakness in commodity costs.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Organic growth is flat with mixed contributions from various segments, and future growth faces challenges.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction infrastructure spending has been a mixed driver of demand, with positive contributions from non-residential and residential markets offset by declines in energy-related and industrial markets.",
+      "evidence": [
+        {
+          "text": "Net sales growth in our Power segment and in our Electrical segment products in the non-residential and residential construction markets was offset by lower organic net sales of our Electrical segment products in the energy-related and industrial markets, primarily our Harsh and Hazardous products.",
+          "section": "mda",
+          "subsection": "2015 Compared to 2014"
+        },
+        {
+          "text": "Our largest end market, non-residential construction, grew on the continued strength of the renovation and relight market as well as increased demand for private construction spending. The residential market also grew in 2015, albeit at a more modest pace than in the past several years.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Construction infrastructure spending shows mixed signals with growth in non-residential and residential markets offset by declines elsewhere.",
+        "confidence": 0.6
+      }
+    }
+  ]
+}

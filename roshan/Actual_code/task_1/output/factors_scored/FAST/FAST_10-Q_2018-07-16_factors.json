@@ -1,0 +1,507 @@
+{
+  "ticker": "FAST",
+  "form": "10-Q",
+  "filing_date": "2018-07-16",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 29,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is purchasing shares of its common stock, indicating active shareholder returns through buybacks.",
+      "evidence": [
+        {
+          "text": "During the first six months of 2018, we purchased 800,000 shares of our common stock at an average price of approximately $50.51 per share. During the first six months of 2017, we purchased 1,300,000 shares of our common stock at an average price of approximately $43.62 per share. We currently have authority to purchase up to 3,600,000 additional shares of our common stock.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Financing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is actively repurchasing shares, which is a positive sign for shareholder value.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is accelerating, supported by strong business activity metrics.",
+      "evidence": [
+        {
+          "text": "The Purchasing Managers Index averaged 59.7 and 58.7 in the first and second quarters of 2018, respectively, indicating growing demand. Daily sales of fasteners, the most cyclical product line, grew 11.1% in the second quarter of 2018.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong business activity and growing demand indicate a positive trend.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company successfully raised prices to mitigate marketplace inflation, though the impact was less significant in 2018.",
+      "evidence": [
+        {
+          "text": "We instituted product price increases at the end of the fourth quarter of 2017 aimed at mitigating the impact of product inflation in the marketplace. These price increases represent a lesser contributor to our sales growth thus far in 2018 relative to the market and growth driver impacts described above.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the company has pricing power, its impact is less significant in 2018, showing mixed results.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix shifted towards higher-margin products and larger customers, which impacted gross profit margin negatively.",
+      "evidence": [
+        {
+          "text": "Relatively slower growth in the fastener line (product mix) with relatively faster growth in sales to our largest customers (customer mix) pushed our gross profit margin lower. Fasteners are our highest gross profit margin product line, and a reduction in their sales mix negatively impacts gross profit.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Shift towards lower margin products and larger customers negatively impacts gross profit.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, driven by strong unit sales growth across multiple product lines and customer segments.",
+      "evidence": [
+        {
+          "text": "The increase in net sales noted above for 2018 was driven primarily by higher unit sales and, to a lesser degree, higher prices to mitigate marketplace inflation. The increase in net sales noted above for 2017 was driven primarily by higher unit sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong unit sales growth across product lines and customer segments indicates solid organic growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, with revenue growth driven by real demand rather than price increases.",
+      "evidence": [
+        {
+          "text": "The increase in net sales noted above for 2018 was driven primarily by higher unit sales and, to a lesser degree, higher prices to mitigate marketplace inflation. The increase in net sales noted above for 2017 was driven primarily by higher unit sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth driven by real demand rather than price increases suggests a healthy market position.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The manufacturing and non-residential construction markets are growing fastest, supported by strong economic activity and customer growth.",
+      "evidence": [
+        {
+          "text": "The manufacturing market includes both original equipment manufacturers (OEM) and maintenance, repair, and operations (MRO). The non-residential construction market includes general, electrical, plumbing, sheet metal, and road contractors. Other users of our products include farmers, truckers, railroads, oil exploration, production, and refinement companies, mining companies, federal, state, and local governmental entities, schools, and certain retail trades. Geographically, our branches and customers are primarily located in North America.",
+          "section": "mda",
+          "subsection": "Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Rapidly growing markets supported by strong economic activity present significant opportunities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly transportation costs, are rising and creating margin pressure.",
+      "evidence": [
+        {
+          "text": "Rising costs related to transporting products, particularly shipping fees, driver wages, and fuel, caused our freight expense to rise faster than sales, hurting our gross profit margin.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising transportation costs create margin pressure, which is a headwind for profitability.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing due to higher wages, bonuses, and commissions, driven by net sales and earnings growth.",
+      "evidence": [
+        {
+          "text": "Our employee-related expenses increased in both periods. This was primarily related to: (1) an increase in our full-time equivalent ('FTE') headcount, (2) inflation in base wages, and (3) higher bonuses and commissions due to growth in net sales and net earnings.",
+          "section": "mda",
+          "subsection": "Operating and Administrative Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing due to higher wages, bonuses, and commissions, driven by net sales and earnings growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross margins are compressing due to product mix, customer mix, and rising transportation costs, while operating margins have improved slightly.",
+      "evidence": [
+        {
+          "text": "Our gross profit, as a percentage of net sales, was 48.7% in the first half of 2018 and 49.6% in the first half of 2017. [...] The primary contributors to this improvement in both periods were relatively lower growth in employee-related, occupancy-related, and general corporate expenses.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Gross margins are compressing due to product mix, customer mix, and rising transportation costs, though operating margins have slightly improved.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction programs are delivering measurable savings, with improvements in operating and administrative expenses.",
+      "evidence": [
+        {
+          "text": "The primary contributors to this improvement in both periods were relatively lower growth in employee-related, occupancy-related, and general corporate expenses.",
+          "section": "mda",
+          "subsection": "Operating and Administrative Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction programs are delivering measurable savings in operating and administrative expenses.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving, particularly in freight management and leverage related to growth.",
+      "evidence": [
+        {
+          "text": "Challenges from product inflation and mix were offset by improvements in our freight management and leverage related to growth.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Operational efficiency is improving, particularly in freight management and leverage related to growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is under some pressure due to rising transportation costs, particularly in shipping fees, driver wages, and fuel.",
+      "evidence": [
+        {
+          "text": "Rising costs related to transporting products, particularly shipping fees, driver wages, and fuel, caused our freight expense to rise faster than sales, hurting our gross profit margin.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The supply chain is under pressure due to rising transportation costs, including shipping fees, driver wages, and fuel.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are increasing to support healthy business activity and sales growth.",
+      "evidence": [
+        {
+          "text": "The increase in inventory from June 30, 2017 to June 30, 2018 was primarily to support healthy business activity and sales growth.",
+          "section": "mda",
+          "subsection": "Net Cash Provided by Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory levels are increasing to support healthy business activity and sales growth, which is a mixed signal.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is confident, as evidenced by increased hiring and investments in growth drivers.",
+      "evidence": [
+        {
+          "text": "We opened five branches in the second quarter of 2018 and closed 43 branches. [...] We continue to focus on our growth drivers. During the second quarter of 2018, we signed 43 new national account contracts [...] and 5,537 new industrial vending devices.",
+          "section": "mda",
+          "subsection": "Executive Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management is confident, as evidenced by increased hiring and investments in growth drivers.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include rising transportation costs and potential challenges in managing freight expenses.",
+      "evidence": [
+        {
+          "text": "Rising costs related to transporting products, particularly shipping fees, driver wages, and fuel, caused our freight expense to rise faster than sales, hurting our gross profit margin.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include rising transportation costs and potential challenges in managing freight expenses.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is focused on growth through customer service, with investments in growth drivers like national accounts and industrial vending.",
+      "evidence": [
+        {
+          "text": "Our growth drivers have evolved, and can be expected to continue to evolve, over time. [...] We signed 11,216 industrial vending devices during the first six months of 2018, an increase of 8.7% over the first six months of 2017.",
+          "section": "mda",
+          "subsection": "Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is focusing on growth through customer service and investing in growth drivers, indicating a positive outlook.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company is sensitive to transportation costs, economic conditions, and labor costs, which can impact margins and growth.",
+      "evidence": [
+        {
+          "text": "Rising costs related to transporting products, particularly shipping fees, driver wages, and fuel, caused our freight expense to rise faster than sales, hurting our gross profit margin. [...] The growth in employee-related expenses was primarily related to: (1) an increase in our full-time equivalent ('FTE') headcount, (2) inflation in base wages, and (3) higher bonuses and commissions due to growth in net sales and net earnings.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces risks from transportation costs, economic conditions, and labor costs, which could impact margins and growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The company identifies customer growth initiatives and increased efficiency in industrial vending as key catalysts for future performance.",
+      "evidence": [
+        {
+          "text": "We signed 11,216 industrial vending devices during the first six months of 2018, an increase of 8.7% over the first six months of 2017. [...] Combined sales through our vending devices continued to grow at a strong double-digit pace in the first six months and second quarter of 2018.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Customer growth initiatives and increased efficiency in industrial vending are identified as key catalysts for future performance, indicating positive developments.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is gaining market share, particularly in the manufacturing and non-residential construction markets through growth drivers like national accounts and industrial vending.",
+      "evidence": [
+        {
+          "text": "Our growth drivers have evolved, and can be expected to continue to evolve, over time. [...] We signed 11,216 industrial vending devices during the first six months of 2018, an increase of 8.7% over the first six months of 2017.",
+          "section": "mda",
+          "subsection": "Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is gaining market share in key sectors, which is a strong positive indicator.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intensifying slightly, with the company focusing on differentiation through customer service and growth initiatives.",
+      "evidence": [
+        {
+          "text": "We are a growth-centric organization focused on identifying 'drivers' that will allow us to get closer to our customers and gain market share in what we believe remains a fragmented industrial distribution market.",
+          "section": "mda",
+          "subsection": "Business"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While competition is intensifying, the company is differentiating itself through customer service and growth initiatives, leading to a neutral assessment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "The company's competitive advantages include its customer-centric approach, extensive branch network, and focus on growth drivers like national accounts and industrial vending.",
+      "evidence": [
+        {
+          "text": "Our growth drivers have evolved, and can be expected to continue to evolve, over time. [...] We signed 11,216 industrial vending devices during the first six months of 2018, an increase of 8.7% over the first six months of 2017.",
+          "section": "mda",
+          "subsection": "Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's competitive advantages include a customer-centric approach and growth drivers, which are significant positive factors.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is in growth mode, increasing headcount to support customer growth in the field and investments in growth drivers.",
+      "evidence": [
+        {
+          "text": "During the last twelve months, we increased our absolute employee headcount by 353 people in our in-market locations and 681 people in total. The increase is mostly a function of additions we have made to support customer growth in the field as well as investments in our growth drivers.",
+          "section": "mda",
+          "subsection": "Executive Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is increasing headcount to support customer growth and investments, indicating a positive trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are increasing, signaling confidence in future growth, particularly in distribution center expansion and equipment.",
+      "evidence": [
+        {
+          "text": "Our net capital expenditures were $53.8 (or 14.0% of net earnings), which is an increase of 1.9% from the first six months of 2017. [...] Capital expenditures in the first six months of 2018 consisted of: [...] (1) the purchase of software and hardware for our information processing systems, (2) the addition of fleet vehicles, (3) the purchase of signage, shelving, and other fixed assets related to branch openings and Onsite activations, (4) the addition of manufacturing and warehouse property and equipment, including automation systems equipment, (5) the expansion or improvement of certain owned or leased branch properties, and (6) purchases related to industrial vending.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased capital expenditures signal confidence in future growth, particularly in distribution center expansion and equipment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, supported by strong net earnings and cash flow from operations.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities increased in the first six months of 2018 relative to the six months of 2017, primarily due to growth in net earnings which was partially offset by working capital trends as described further below.",
+          "section": "mda",
+          "subsection": "Net Cash Provided by Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow generation is improving, supported by strong net earnings and cash flow from operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has completed an acquisition (Mansco) and is making strategic investments in growth drivers, which are creating value through expanded capabilities.",
+      "evidence": [
+        {
+          "text": "Net cash used in investing activities decreased from the first six months of 2017 to the first six months of 2018 primarily due to the cash paid for the Mansco acquisition in the first quarter of 2017.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has completed an acquisition and is making strategic investments in growth drivers, creating value through expanded capabilities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are favorable, with strong business activity and growth in key metrics like the Purchasing Managers Index.",
+      "evidence": [
+        {
+          "text": "The Purchasing Managers Index averaged 59.7 and 58.7 in the first and second quarters of 2018, respectively, indicating strong economic activity.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Economic conditions are favorable with strong business activity and growth in key metrics like the Purchasing Managers Index.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Higher interest rates are increasing net interest expense, though the impact is manageable and the company is refinancing at lower rates.",
+      "evidence": [
+        {
+          "text": "Our net interest expense was $5.7 in the first half of 2018 and $3.1 in the second quarter of 2018, compared to $3.7 in the first half of 2017 and $2.1 in the second quarter of 2017. [...] We continue to believe our ongoing tax rate will be in the 24.5% to 25.0% range.",
+          "section": "mda",
+          "subsection": "Net Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Higher interest rates are increasing net interest expense, but the impact is manageable and the company is refinancing at lower rates.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is showing a trend of increasing debt leverage, as indicated by higher net interest expenses due to both rising average interest rates and slightly higher average debt balances. However, there is a specific instance of debt issuance for the Mansco acquisition, which suggests a strategic increase in leverage for expansion purposes.",
+      "evidence": [
+        {
+          "text": "The notes bear interest at a fixed rate of 3.22% per annum, are due and payable in full on March 1, 2024, and were issued to fund the purchase price of the Mansco acquisition.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Financing Activities"
+        },
+        {
+          "text": "Our net interest expense was $5.7 in the first half of 2018 and $3.1 in the second quarter of 2018, compared to $3.7 in the first half of 2017 and $2.1 in the second quarter of 2017. These increases were mainly caused by higher average interest rates and a slightly higher average debt balance during the period.",
+          "section": "mda",
+          "subsection": "Net Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is increasing debt leverage, partly for strategic expansion, but there's a manageable impact on net interest expense.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

@@ -1,0 +1,1089 @@
+{
+  "ticker": "LII",
+  "form": "10-K",
+  "filing_date": "2020-02-18",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 50,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed across segments.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling net sales increased 4% in 2018 compared to 2017. Commercial Heating & Cooling net sales increased 10% in 2018 compared to 2017. Refrigeration net sales decreased 14% in 2018 compared to 2017.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand trends with increases in some segments and decreases in others.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog or book-to-bill information is not explicitly provided.",
+      "evidence": [
+        {
+          "text": "No specific information on backlog orders or book-to-bill ratios is mentioned in the provided text.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information provided on backlog orders or book-to-bill ratios.",
+        "confidence": 0.2
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company has pricing power in most segments, with price and mix contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling: price and mix combined increased 2%. Commercial Heating & Cooling: price and mix combined increased 3%.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Company shows pricing power with price and mix increases in most segments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix shifted towards higher-margin segments in some areas and lower in others.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling: % of net sales increased from 17.5% to 18.0%. Commercial Heating & Cooling: % of net sales decreased from 18.2% to 17.5%.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Revenue mix shifts with some areas increasing and others decreasing.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is present in Residential and Commercial segments, but declining in Refrigeration.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling: 4% increase. Commercial Heating & Cooling: 10% increase. Refrigeration: 14% decrease.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Organic growth present in key segments despite some decline.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed with increases in Residential and Commercial segments, but a decrease in Refrigeration.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling: sales volume increased 2%. Commercial Heating & Cooling: sales volume increased 7%. Refrigeration: sales volume decreased 1%.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends show increases in some segments and a slight decrease in others.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "Residential and Commercial Heating & Cooling segments are growing, while Refrigeration is declining.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling: 4% sales increase. Commercial Heating & Cooling: 10% sales increase. Refrigeration: 14% sales decrease.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Most segments show positive growth trends.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable with some savings from productivity.",
+      "evidence": [
+        {
+          "text": "Residential: $5 million from higher factory productivity. Commercial: no mention. Refrigeration: $2 million from lower factory productivity.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Labor costs are manageable with productivity savings.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is under pressure due to competitive dynamics and potential inability to adapt to market changes.",
+      "evidence": [
+        {
+          "text": "The most significant competitive factors we face are product reliability, product performance, reputation of our company and brands, service and price, with the relative importance of these factors varying among our product lines. Other factors that affect competition in the HVACR market include the development and application of new technologies, an increasing emphasis on the development of more efficient HVACR products and new product introductions. We may not be able to adapt to market changes as quickly or effectively as our current and future competitors. Also, the establishment of manufacturing operations in low-cost countries could provide cost advantages to existing and emerging competitors.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Compete Favorably in the Competitive HVACR Business."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Market share is under pressure due to competitive dynamics and inability to adapt.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics are intense, with factors such as product reliability, performance, and price driving competition. The company faces risks from new entrants and changing market conditions.",
+      "evidence": [
+        {
+          "text": "The most significant competitive factors we face are product reliability, product performance, reputation of our company and brands, service and price, with the relative importance of these factors varying among our product lines. Other factors that affect competition in the HVACR market include the development and application of new technologies, an increasing emphasis on the development of more efficient HVACR products and new product introductions. We may not be able to adapt to market changes as quickly or effectively as our current and future competitors. Also, the establishment of manufacturing operations in low-cost countries could provide cost advantages to existing and emerging competitors.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Compete Favorably in the Competitive HVACR Business."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Competitive dynamics are intense with significant risks from new entrants and market changes.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "The company's differentiation is based on product reliability, performance, and brand reputation, but faces challenges from competitors with cost advantages.",
+      "evidence": [
+        {
+          "text": "The most significant competitive factors we face are product reliability, product performance, reputation of our company and brands, service and price, with the relative importance of these factors varying among our product lines. Other factors that affect competition in the HVACR market include the development and application of new technologies, an increasing emphasis on the development of more efficient HVACR products and new product introductions. We may not be able to adapt to market changes as quickly or effectively as our current and future competitors. Also, the establishment of manufacturing operations in low-cost countries could provide cost advantages to existing and emerging competitors.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Compete Favorably in the Competitive HVACR Business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Differentiation is present but challenged by competitors' cost advantages.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration is a risk, as the company's sales are affected by the U.S. construction industry, indicating potential dependence on a few large customers or market segments.",
+      "evidence": [
+        {
+          "text": "Our business is affected by the performance of the U.S. construction industry. Our sales in the residential and commercial new construction markets correlate to the number of new homes and buildings that are built, which in turn is influenced by cyclical factors such as interest rates, inflation, availability of financing, consumer spending habits and confidence, employment rates and other macroeconomic factors over which we have no control. Our sales may not improve, or improvement may be limited or lower than expected.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High customer concentration poses risks due to dependence on the U.S. construction industry.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "The company is investing in research and development to drive innovation and compete in the market.",
+      "evidence": [
+        {
+          "text": "Our future success depends on our continued investment in research and new product development as well as our ability to commercialize new HVACR technological advances in domestic and global markets. If we are unable to continue to timely and successfully develop and market new products, achieve technological advances or extend our business model and technological advances into international markets, our business and results of operations could be adversely impacted.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investment in R&D indicates a strategic focus on innovation and competition.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "The company is adopting digital technologies and automation to improve operational efficiency and gain competitive advantages.",
+      "evidence": [
+        {
+          "text": "We are engaged in various manufacturing rationalization actions designed to achieve our strategic priorities of manufacturing, sourcing and distribution excellence and of lowering our cost structure. For example, we are continuing to reorganize our North American distribution network in order to better serve our customers\u2019 needs by deploying parts and equipment inventory closer to them and are expanding our sourcing activities outside of the U.S. We also continue to rationalize and reorganize various support and administrative functions in order to reduce ongoing selling and administrative expenses.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Adoption of digital technologies and automation suggests operational efficiency improvements.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New product introductions are a key part of the company's strategy, but success depends on timely and effective market entry.",
+      "evidence": [
+        {
+          "text": "The development and application of new technologies, an increasing emphasis on the development of more efficient HVACR products and new product introductions. We may not be able to adapt to market changes as quickly or effectively as our current and future competitors. Also, the establishment of manufacturing operations in low-cost countries could provide cost advantages to existing and emerging competitors.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Compete Favorably in the Competitive HVACR Business."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While new products are introduced, there's uncertainty about their success.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "Environmental regulations and ESG commitments are creating costs and risks, particularly related to product efficiency and sustainability.",
+      "evidence": [
+        {
+          "text": "Changes in environmental and energy efficiency standards and regulations, such as the recent amendments to the Montreal Protocol to phase down the use of hydrofluorocarbons, may particularly have a significant impact on the types of products that we are allowed to develop and sell, and the types of products that are developed and sold by our competitors. Our inability or delay in developing or marketing products that match customer demand and that meet applicable efficiency and environmental standards may negatively impact our results.",
+          "section": "risk_factors",
+          "subsection": "Changes in Legislation or Government Regulations or Policies Could Have an Adverse Effect on Our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Environmental regulations and ESG commitments pose costs and risks to the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is restructuring its workforce to reduce costs and improve efficiency, indicating a focus on cost management.",
+      "evidence": [
+        {
+          "text": "We continue to rationalize and reorganize various support and administrative functions in order to reduce ongoing selling and administrative expenses. If we cannot successfully implement such distribution and restructuring strategies or other cost savings plans, we may not achieve our expected cost savings in the time anticipated, or at all. In such case, our results of operations and profitability may be negatively impacted, making us less competitive and potentially causing us to lose market share.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring workforce to reduce costs and improve efficiency indicates cost management focus, which could lead to short-term disruptions but may improve long-term efficiency.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are a risk due to approximately 27% of the workforce being unionized, which could lead to work stoppages or other labor relations problems.",
+      "evidence": [
+        {
+          "text": "As of February 7, 2020, approximately 27% of our workforce, including international locations, was unionized. The results of future negotiations with these unions and the effects of any production interruptions or labor stoppages could have a material adverse effect on our results of operations.",
+          "section": "risk_factors",
+          "subsection": "Because a Significant Percentage of Our Workforce is Unionized in Certain Manufacturing Facilities, We Face Risks of Work Stoppages and Other Labor Relations Problems."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "27% unionized workforce poses a significant risk of labor stoppages, which could negatively impact operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is not explicitly discussed, but the company is focused on operational efficiency and restructuring, which may impact workforce dynamics.",
+      "evidence": [
+        {
+          "text": "We are engaged in various manufacturing rationalization actions designed to achieve our strategic priorities of manufacturing, sourcing and distribution excellence and of lowering our cost structure. For example, we are continuing to reorganize our North American distribution network in order to better serve our customers\u2019 needs by deploying parts and equipment inventory closer to them and are expanding our sourcing activities outside of the U.S. We also continue to rationalize and reorganize various support and administrative functions in order to reduce ongoing selling and administrative expenses.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Talent retention isn't explicitly discussed, but restructuring may affect workforce dynamics without clear positive or negative signals.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company identifies capital market volatility and intellectual property as key sensitivities impacting near-term results.",
+      "evidence": [
+        {
+          "text": "Volatility in the capital markets may have a significant impact on the funding status of our defined benefit pension plans. [...] Third parties may also claim that we are infringing upon their intellectual property rights.",
+          "section": "risk_factors",
+          "subsection": "Volatility in Capital Markets Could Necessitate Increased Cash Contributions by Us to Our Pension Plans to Maintain Required Levels of Funding."
+        },
+        {
+          "text": "Commodity price risk, foreign currency exchange rate risk, interest rate risk.",
+          "section": "mda",
+          "subsection": "Market Risk"
+        },
+        {
+          "text": "Foreign exchange movements could have an impact on our financial results. Our international sales and operations are subject to risks including foreign currency fluctuations, regulations, and other risks. Additionally, changes in U.S. trade policy, including the imposition of tariffs, could have an adverse effect on our results of operations. The overall economic environment also poses risks, particularly in the construction industry and the demand for HVACR products.",
+          "section": "risk_factors",
+          "subsection": "Our International Operations Subject Us to Risks Including Foreign Currency Fluctuations, Regulations and Other Risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Multiple key sensitivities like capital market volatility, intellectual property issues, and economic factors pose significant risks to near-term results.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has been involved in significant divestitures, including the sale of the Kysor Warren business and other international operations, which have impacted its revenue and margins. Additionally, the company is pursuing strategic acquisitions and partnerships, though the success of these initiatives depends on effective execution and integration.",
+      "evidence": [
+        {
+          "text": "Sales in our Refrigeration segment decreased 25% and segment profit decreased $7 million compared to 2018 mostly due to the sale of our Australia, Asia, South America businesses and the sale of our Kysor Warren business in the first quarter of 2019.",
+          "section": "risk_factors",
+          "subsection": "Volatility in Capital Markets Could Necessitate Increased Cash Contributions by Us to Our Pension Plans to Maintain Required Levels of Funding."
+        },
+        {
+          "text": "MA activity includes divestitures and asset sales.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        },
+        {
+          "text": "From time to time, we may seek to complement or expand our businesses through strategic acquisitions, joint ventures and strategic relationships. The success of these transactions will depend, in part, on our ability to timely identify those relationships, negotiate and close the transactions and then integrate, manage and operate those businesses profitably. If we are unable to successfully do those things, we may not realize the anticipated benefits associated with such transactions, which could adversely affect our business and results of operations.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Significant divestitures and strategic acquisitions present both opportunities and risks depending on execution, making the sentiment mixed.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The near-term risks include potential significant contributions to pension plans, intellectual property disputes, higher commodity costs, foreign exchange impacts, and adverse effects from changes in U.S. trade policy, including tariffs and geopolitical factors.",
+      "evidence": [
+        {
+          "text": "Volatility in the capital markets may have a significant impact on the funding status of our defined benefit pension plans. If the performance of the capital markets depresses the value of our defined benefit pension plan assets or increases the liabilities, we would be required to make additional contributions to the pension plans.",
+          "section": "risk_factors",
+          "subsection": "Volatility in Capital Markets Could Necessitate Increased Cash Contributions by Us to Our Pension Plans to Maintain Required Levels of Funding."
+        },
+        {
+          "text": "Third parties may also claim that we are infringing upon their intellectual property rights. If we do not license infringed intellectual property or if we are required to substitute similar technology from another source, our operations could be adversely affected.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Higher commodity costs affecting margins. Foreign exchange rates had a $3 million unfavorable impact in Residential segment.",
+          "section": "risk_factors",
+          "subsection": "Changes in U.S. Trade Policy, Including the Imposition of Tariffs and the Resulting Consequences, Could Have an Adverse Effect on our Results of Operations."
+        },
+        {
+          "text": "The U.S. government has made changes in U.S. trade policy over the past several years. These changes include renegotiating and terminating certain existing bilateral or multi-lateral trade agreements, such as the North American Free Trade Agreement, and initiating tariffs on certain foreign goods from a variety of countries and regions, most notably China. These changes in U.S. trade policy have resulted in, and may continue to result in, one or more foreign governments adopting responsive trade policies that make it more difficult or costly for us to do business in or import our products or components from those countries. The sales, gross margins and profitability for each of our segments could be directly impacted by changes in tariffs and trade agreements.",
+          "section": "risk_factors",
+          "subsection": "Changes in U.S. Trade Policy, Including the Imposition of Tariffs and the Resulting Consequences, Could Have an Adverse Effect on our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include pension contributions, intellectual property disputes, and trade policy changes, which could adversely affect financial results.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins are facing mixed pressures, with some areas showing stability or improvement while others are under stress. Specifically, there are instances of margin compression due to higher commodity costs, freight expenses, and lower factory productivity, which could negatively impact margins if not offset by other factors. Additionally, potential increases in cash contributions to pension plans due to market volatility and rising raw material costs pose further risks to margin health. However, there are also positive offsets, such as favorable price and mix, cost reduction initiatives, and divestitures, which have helped mitigate some margin pressures in certain segments like Residential and Commercial. Overall, while there are significant challenges, there are also efforts underway to manage and mitigate margin pressures through various strategic initiatives.",
+      "evidence": [
+        {
+          "text": "The company may face margin compression due to potential increased cash contributions to pension plans.",
+          "section": "risk_factors",
+          "subsection": "Volatility in Capital Markets Could Necessitate Increased Cash Contributions by Us to Our Pension Plans to Maintain Required Levels of Funding."
+        },
+        {
+          "text": "Gross profit margins for 2019 decreased 20 basis points ('bps') to 28.4% compared to 28.6% in 2018. We saw margin decreases of 30 bps from higher commodity costs, 80 bps from higher freight and distribution costs, 70 bps from lower factory productivity, and 50 bps from other product costs. These decreases were offset by increases of 100 bps from favorable price and mix, 50 bps from sourcing and engineering-led cost reductions, and 60 bps from our divested Australia, Asia, South America, and Kysor Warren businesses which collectively had lower margins.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2019 Compared to Year Ended December 31, 2018 - Consolidated Results"
+        },
+        {
+          "text": "Price Volatility for Commodities and Components We Purchase or Significant Supply Interruptions Could Have an Adverse Effect on Our Cash Flow or Results of Operations.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Residential Heating & Cooling: % of net sales increased. Commercial Heating & Cooling: % of net sales decreased slightly. Refrigeration: % of net sales decreased.",
+          "section": "risk_factors",
+          "subsection": "Price Volatility for Commodities and Components We Purchase or Significant Supply Interruptions Could Have an Adverse Effect on Our Cash Flow or Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Margins face mixed pressures with some improvements and some challenges, leading to an overall neutral sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has implemented cost reduction initiatives, such as sourcing and engineering-led cost reductions and restructuring charges, which have contributed to margin improvements. However, the company faces risks related to price volatility in commodities and components, as increases in raw material prices not covered by fixed price arrangements could negatively impact margins despite their hedging efforts.",
+      "evidence": [
+        {
+          "text": "The increase in operating income was primarily due to increased sales in our Residential Heating & Cooling and Commercial Heating & Cooling segments, sourcing and engineering-led cost reductions, and a larger gain from insurance proceeds received related to the Marshalltown tornado. SG&A expenses decreased primarily due to the sale of our divested Australia, Asia, South America, and Kysor Warren businesses. Restructuring charges were $10.3 million in 2019 compared to $3.0 million in 2018.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2019 Compared to Year Ended December 31, 2018 - Consolidated Results"
+        },
+        {
+          "text": "Residential: $12 million from sourcing and engineering. Commercial: $5 million from sourcing and engineering. Refrigeration: $6 million from sourcing and engineering.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Although we regularly pre-purchase a portion of our raw materials at fixed prices each year to hedge against price increases, an increase in raw materials prices not covered by our fixed price arrangements could significantly increase our cost of goods sold and negatively impact our margins if we are unable to effectively pass such price increases on to our customers.",
+          "section": "risk_factors",
+          "subsection": "Price Volatility for Commodities and Components We Purchase or Significant Supply Interruptions Could Have an Adverse Effect on Our Cash Flow or Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction initiatives have contributed to margin improvements, despite risks from commodity price volatility.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction activity and infrastructure spending are key drivers of demand for the company's products. While construction activity is contributing to demand in the Residential and Commercial Heating & Cooling segments, sales growth is driven by market expansion. However, the company's sales may not improve or improvement may be limited or lower than expected due to economic conditions affecting the U.S. construction industry.",
+      "evidence": [
+        {
+          "text": "The increase in volume was primarily due to market growth in our Residential Heating & Cooling and Commercial Heating & Cooling segments, and the favorable price and mix combined was attributable to all three of our business segments.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2019 Compared to Year Ended December 31, 2018 - Consolidated Results"
+        },
+        {
+          "text": "Our business is affected by the performance of the U.S. construction industry. Our sales in the residential and commercial new construction markets correlate to the number of new homes and buildings that are built, which in turn is influenced by cyclical factors such as interest rates, inflation, availability of financing, consumer spending habits and confidence, employment rates and other macroeconomic factors over which we have no control. Our sales may not improve, or improvement may be limited or lower than expected.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Construction activity is a key driver but faces risks from economic conditions.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "equipment_replacement",
+      "category": "industrial_infrastructure",
+      "summary": "The equipment replacement demand is influenced by seasonal weather variations and equipment aging, contributing to significant replacement business. However, economic conditions and customer decisions may be decelerating demand, potentially limiting sales improvement.",
+      "evidence": [
+        {
+          "text": "Replacement demand is significant, driven by seasonal weather variations and equipment aging, with a substantial portion of sales coming from replacement business.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Our sales may not improve, or improvement may be limited or lower than expected.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals with both opportunities and potential limitations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising due to commodity price volatility, particularly for steel, copper, and aluminum. The company is facing margin pressure across its segments and is attempting to mitigate these increases through various strategies including pricing actions, vendor contracts, production efficiency, and futures contracts. However, there are risks associated with supply interruptions and the inability to fully pass on cost increases to customers, which could negatively impact margins further.",
+      "evidence": [
+        {
+          "text": "The principal raw materials used in our manufacturing processes are steel, copper and aluminum. In recent years, pricing volatility for these commodities and related components has impacted us and the HVACR industry in general. We seek to mitigate the impact of commodity price volatility through a combination of pricing actions, vendor contracts, improved production efficiency and cost reduction initiatives. We also partially mitigate volatility in the prices of these commodities by entering into futures contracts and fixed forward contracts.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Higher commodity costs: $35 million (Residential), $9 million (Commercial), $6 million (Refrigeration).",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "We depend on raw materials, such as steel, copper and aluminum, and components purchased from third parties to manufacture our products. Some of these third-party suppliers are located outside of the United States. We generally concentrate purchases for a given raw material or component with a small number of suppliers. If a supplier is unable or unwilling to meet our supply requirements, including suffering any disruptions at its facilities or in its supply chain, we could experience supply interruptions or cost increases, either of which could have an adverse effect on our results of operations. Similarly, suppliers of components that we purchase for use in our products may be affected by rising material costs and pass these increased costs on to us. Although we regularly pre-purchase a portion of our raw materials at fixed prices each year to hedge against price increases, an increase in raw materials prices not covered by our fixed price arrangements could significantly increase our cost of goods sold and negatively impact our margins if we are unable to effectively pass such price increases on to our customers.",
+          "section": "risk_factors",
+          "subsection": "Price Volatility for Commodities and Components We Purchase or Significant Supply Interruptions Could Have an Adverse Effect on Our Cash Flow or Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs and margin pressures despite mitigation efforts.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity has shown mixed results across different segments. While the company has implemented cost reduction initiatives and restructuring efforts that have positively impacted productivity in certain areas, such as the Residential and Refrigeration segments, challenges remain due to factory inefficiencies and the impact of events like the Marshalltown tornado. These factors have necessitated ongoing operational adjustments and rationalization efforts to improve overall productivity.",
+      "evidence": [
+        {
+          "text": "These decreases were offset by increases of 100 bps from favorable price and mix, 50 bps from sourcing and engineering-led cost reductions, and 60 bps from our divested Australia, Asia, South America, and Kysor Warren businesses which collectively had lower margins. Restructuring charges were $10.3 million in 2019 compared to $3.0 million in 2018. The charges in 2019 related primarily to activities in the Residential Heating & Cooling segment to close certain Lennox Stores and reduce management and support staff, and activities in the Commercial Heating & Cooling segments to re-align resources and its product portfolio.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2019 Compared to Year Ended December 31, 2018 - Consolidated Results"
+        },
+        {
+          "text": "Residential: $5 million from higher factory productivity. Refrigeration: $2 million from lower factory productivity.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "We are engaged in various manufacturing rationalization actions designed to achieve our strategic priorities of manufacturing, sourcing and distribution excellence and of lowering our cost structure. For example, we are continuing to reorganize our North American distribution network in order to better serve our customers\u2019 needs by deploying parts and equipment inventory closer to them and are expanding our sourcing activities outside of the U.S. We also continue to rationalize and reorganize various support and administrative functions in order to reduce ongoing selling and administrative expenses.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed productivity results with some improvements and challenges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "dealer_channel",
+      "category": "industrial_infrastructure",
+      "summary": "The dealer/distributor channel is influenced by seasonal weather patterns and economic conditions, with inventory levels and demand being managed but also subject to external factors beyond the company's control. This results in a mixed outlook for the dealer_channel factor, as while relationships are healthy, economic uncertainties and weather-dependent demand create potential challenges.",
+      "evidence": [
+        {
+          "text": "\"We sell our products and services through a combination of direct sales, distributors and company-owned stores. The demand for our products and services is seasonal and significantly impacted by the weather. Warmer than normal summer temperatures generate demand for replacement air conditioning and refrigeration products and services, and colder than normal winter temperatures have a similar effect on heating products and services.\"",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "\"Our sales in the residential and commercial new construction markets correlate to the number of new homes and buildings that are built, which in turn is influenced by cyclical factors such as interest rates, inflation, availability of financing, consumer spending habits and confidence, employment rates and other macroeconomic factors over which we have no control. Our sales may not improve, or improvement may be limited or lower than expected.\"",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Influence of external factors leading to mixed outlook.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "The aftermarket/service revenue is growing, particularly in the Residential Heating & Cooling segment, which saw a significant increase in segment profit. However, the growth is influenced by factors such as an increasing installed base of products, which may provide opportunities but also poses competition risks due to emerging technologies and potential cost advantages from low-cost countries.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2019 increased $65 million compared to 2018 due to an incremental $72 million of insurance proceeds for lost profits related to the Marshalltown tornado, $53 million of favorable price, $14 million of sourcing and engineer-led cost reductions, $8 million of lower warranty costs, and $2 million of higher sales volume. Partially offsetting these increases is $28 million of higher freight and distribution expense, $16 million from lower factory efficiency, $12 million of higher SG&A, $11 million of unfavorable mix, $10 million of higher other product costs, $6 million of higher commodities, and $1 million of unfavorable foreign exchange rates.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2019 Compared to Year Ended December 31, 2018 - Results by Segment"
+        },
+        {
+          "text": "The development and application of new technologies, an increasing emphasis on the development of more efficient HVACR products and new product introductions. We may not be able to adapt to market changes as quickly or effectively as our current and future competitors. Also, the establishment of manufacturing operations in low-cost countries could provide cost advantages to existing and emerging competitors.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Compete Favorably in the Competitive HVACR Business."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing aftermarket/service revenue despite competitive risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditure outlook is mixed. While significant capital expenditures are being allocated to rebuild manufacturing capacity post-disaster, there are also signs of cautious investment in future growth through manufacturing rationalization and restructuring.",
+      "evidence": [
+        {
+          "text": "In December 2019, we reached a final settlement with our insurance carriers for the losses we suffered from the tornado. The settlement allowed for total cumulative insurance recoveries of $367.5 million, of which $243 million was received for the year ended December 31, 2019. We allocated the first $64 million of insurance recoveries received in 2019 to cover our expenses, we allocated $80 million for capital expenditures related to rebuilding costs, and the remaining $99 million of insurance recoveries represents amounts for lost profits.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Capital expenditures of approximately $153 million in 2020, including $53 million for Marshalltown reconstruction.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "We are engaged in various manufacturing rationalization actions designed to achieve our strategic priorities of manufacturing, sourcing and distribution excellence and of lowering our cost structure. For example, we are continuing to reorganize our North American distribution network in order to better serve our customers\u2019 needs by deploying parts and equipment inventory closer to them and are expanding our sourcing activities outside of the U.S. We also continue to rationalize and reorganize various support and administrative functions in order to reduce ongoing selling and administrative expenses.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals from cautious investment and rebuilding efforts.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage is showing mixed trends. On one hand, there is an increase in net interest expense due to higher borrowings and rising interest rates, indicating increased debt leverage. On the other hand, the debt-to-capital ratio has only increased slightly, suggesting a relatively stable leverage position. Additionally, there are risks associated with potential future disruptions in financial markets and rising borrowing costs, which could further impact the company's financial performance.",
+      "evidence": [
+        {
+          "text": "Net interest expense of $48 million in 2019 increased from $38 million in 2018 primarily due to an increase in our average borrowings and rising interest rates.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2019 Compared to Year Ended December 31, 2018 - Consolidated Results"
+        },
+        {
+          "text": "Debt-to-total-capital ratio increased slightly to 117.0% from 116.8%.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "Future disruptions in U.S. or global financial and credit markets or increases in the costs of capital might have an adverse impact on our business. The tightening, unavailability or increased costs of credit adversely affects the ability of our customers to obtain financing for significant purchases and operations, which could result in a decrease in sales of our products and services and may impact the ability of our customers to make payments to us. Similarly, tightening of credit may adversely affect our supplier base and increase the potential for one or more of our suppliers to experience financial distress or bankruptcy. Our business may also be adversely affected by future decreases in the general level of economic activity and increases in borrowing costs, which may cause our customers to cancel, decrease or delay their purchases of our products and services.",
+          "section": "risk_factors",
+          "subsection": "Global General Business, Economic and Market Conditions Could Adversely Affect Our Financial Performance and Limit our Access to the Capital Markets."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased net interest expense and debt leverage risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has demonstrated a strong commitment to returning capital to shareholders through both dividends and share repurchases. While the financial highlights and liquidity sections provide clear evidence of significant returns, the forward-looking section is less specific, focusing on general risks without explicit details on future shareholder returns.",
+      "evidence": [
+        {
+          "text": "In 2019, we returned $111 million to shareholders through dividend payments and we used $400 million to purchase 1.5 million shares of stock under our Share Repurchase Plans. We also received $44 million in net proceeds from the sale of our Kysor Warren business.",
+          "section": "mda",
+          "subsection": "Financial Highlights"
+        },
+        {
+          "text": "20% increase in quarterly dividend. $400 million share repurchases in 2019 and expected in 2020.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The risks and uncertainties may affect our performance and results of operations. Should one or more of these risks or uncertainties materialize, or should underlying assumptions prove incorrect, actual results may differ materially from those in the forward-looking statements. We disclaim any intention or obligation to update or review any forward-looking statements or information, whether as a result of new information, future events or otherwise unless required by law.",
+          "section": "risk_factors",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has demonstrated a strong commitment to returning capital to shareholders through both dividends and share repurchases.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management's confidence appears mixed. While there are signs of caution due to cost pressures and margin compression, there is no explicit indication of confidence levels in the forward-looking statements.",
+      "evidence": [
+        {
+          "text": "Management appears cautious due to higher costs and some margin compression.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Corporate and Other expenses decreased, but overall margin pressures from costs suggest caution.",
+          "section": "risk_factors",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "The risks and uncertainties may affect our performance and results of operations. Should one or more of these risks or uncertainties materialize, or should underlying assumptions prove incorrect, actual results may differ materially from those in the forward-looking statements.",
+          "section": "risk_factors",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "We disclaim any intention or obligation to update or review any forward-looking statements or information, whether as a result of new information, future events or otherwise unless required by law.",
+          "section": "risk_factors",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management's confidence appears mixed, with signs of caution due to cost pressures and margin compression, but no explicit indication of confidence levels in the forward-looking statements.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy focuses on manufacturing rationalization, expansions, and international market growth, supported by capital expenditures and investments in research and development.",
+      "evidence": [
+        {
+          "text": "Capital expenditures for Marshalltown facility reconstruction and other manufacturing expansions.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "Our future success depends on our continued investment in research and new product development as well as our ability to commercialize new HVACR technological advances in domestic and global markets. If we are unable to continue to timely and successfully develop and market new products, achieve technological advances or extend our business model and technological advances into international markets, our business and results of operations could be adversely impacted.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's long-term strategy focuses on manufacturing rationalization, expansions, and international market growth, supported by capital expenditures and investments in research and development.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow decreased in 2019 compared to 2018, primarily due to increased working capital and decreased net cash provided by operating activities. Additionally, economic conditions and pressures in the capital markets pose risks to future free cash flow generation.",
+      "evidence": [
+        {
+          "text": "We generated $396 million of cash flow from operating activities in 2019 compared to $496 million in 2018. The decrease was primarily due to an increase in working capital.",
+          "section": "mda",
+          "subsection": "Financial Highlights"
+        },
+        {
+          "text": "Net cash provided by operating activities decreased to $396 million in 2019 from $495.5 million in 2018.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "Future disruptions in U.S. or global financial and credit markets or increases in the costs of capital might have an adverse impact on our business. The tightening, unavailability or increased costs of credit adversely affects the ability of our customers to obtain financing for significant purchases and operations, which could result in a decrease in sales of our products and services and may impact the ability of our customers to make payments to us. Similarly, tightening of credit may adversely affect our supplier base and increase the potential for one or more of our suppliers to experience financial distress or bankruptcy. Our business may also be adversely affected by future decreases in the general level of economic activity and increases in borrowing costs, which may cause our customers to cancel, decrease or delay their purchases of our products and services.",
+          "section": "risk_factors",
+          "subsection": "Global General Business, Economic and Market Conditions Could Adversely Affect Our Financial Performance and Limit our Access to the Capital Markets."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Free cash flow decreased in 2019 compared to 2018, primarily due to increased working capital and decreased net cash provided by operating activities, with risks from economic conditions.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The company identifies both internal efficiency programs and new product launches as potential catalysts for future performance. However, there are risks associated with not adapting to market changes quickly enough and the cost advantages that competitors might gain from establishing operations in low-cost countries.",
+      "evidence": [
+        {
+          "text": "Sourcing and engineering-led cost reductions. Favorable foreign currency exchange rates in Refrigeration.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "The development and application of new technologies, an increasing emphasis on the development of more efficient HVACR products and new product introductions. We may not be able to adapt to market changes as quickly or effectively as our current and future competitors. Also, the establishment of manufacturing operations in low-cost countries could provide cost advantages to existing and emerging competitors.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Compete Favorably in the Competitive HVACR Business."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company identifies internal efficiency programs and new product launches as potential catalysts, but there are risks associated with market changes and competition.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The factor forward_guidance is not explicitly mentioned in the text. However, management discusses risks associated with forward-looking statements without providing specific guidance.",
+      "evidence": [
+        {
+          "text": "No specific forward guidance is mentioned in the provided text.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "This Annual Report on Form 10-K contains forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Exchange Act that are based on information currently available to management as well as management\u2019s assumptions and beliefs as of the date hereof. All statements, other than statements of historical fact, included in this Annual Report on Form 10-K constitute forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Forward-looking statements can be identified by the words \u201cmay,\u201d \u201cwill,\u201d \u201cshould,\u201d \u201cplan,\u201d \u201cpredict,\u201d \u201canticipate,\u201d \u201cbelieve,\u201d \u201cintend,\u201d \u201cestimate\u201d and \u201cexpect\u201d and similar expressions. Statements that are not historical should also be considered forward-looking statements. Such statements reflect our current views with respect to future events. Readers are cautioned not to place undue reliance on these forward-looking statements. We believe these statements are based on reasonable assumptions; however, such statements are inherently subject to risks and uncertainties, including but not limited to the specific uncertainties discussed elsewhere in this Annual Report on Form 10-K and the risk factors set forth in Item 1A. Risk Factors in this Annual Report on Form 10-K. These risks and uncertainties may affect our performance and results of operations. Should one or more of these risks or uncertainties materialize, or should underlying assumptions prove incorrect, actual results may differ materially from those in the forward-looking statements. We disclaim any intention or obligation to update or review any forward-looking statements or information, whether as a result of new information, future events or otherwise unless required by law.",
+          "section": "risk_factors",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Forward guidance is not explicitly mentioned; management discusses risks without providing specific guidance.",
+        "confidence": 0.4
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "The company's capacity utilization is mixed, with some areas experiencing expansions, while other factors, such as production disruptions due to external events, indicate potential vulnerabilities.",
+      "evidence": [
+        {
+          "text": "Capital expenditures for manufacturing capacity expansion.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "We experienced such an event in July 2018, when our manufacturing facility in Marshalltown, Iowa was severely damaged by a tornado. See Item 7. \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations - Business Overview - Marshalltown Tornado.\u201d",
+          "section": "risk_factors",
+          "subsection": "Our Ability to Meet Customer Demand may be Limited by Our Single-Location Production Facilities, Reliance on Certain Key Suppliers and Unanticipated Significant Shifts in Customer Demand."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capacity utilization is mixed, with some expansions but potential vulnerabilities due to external events.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain health is mixed, with stability noted in recent years but significant risks such as foreign currency fluctuations, regulations, and potential disruptions remain due to international operations.",
+      "evidence": [
+        {
+          "text": "No specific information on supply chain disruptions or improvements.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Our international sales and operations, including purchases of raw materials from international suppliers, are subject to risks associated with local government laws, regulations and policies (including those related to tariffs and trade barriers, investments, taxation, exchange controls, employment regulations and changes in laws and regulations). Our international sales and operations are also sensitive to changes in foreign national priorities, including government budgets, as well as to geopolitical and economic instability.",
+          "section": "risk_factors",
+          "subsection": "Our International Operations Subject Us to Risks Including Foreign Currency Fluctuations, Regulations and Other Risks."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Supply chain health is mixed, with stability noted but significant risks from international operations.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "The company reported no significant quality or safety issues in its 2018 results compared to 2017. However, it acknowledges risks related to product warranties and potential quality issues that could impact its financial statements.",
+      "evidence": [
+        {
+          "text": "No notable incidents or recalls mentioned in the text.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "The estimate of our liability for future warranty costs requires us to make assumptions about the amount, timing and nature of future product-related costs. Some of the warranties we issue extend 10 years or more in duration and a relatively small adjustment to an assumption may have a significant impact on our overall liability. From time to time, we may also incur costs to repair or replace installed products experiencing quality issues in order to satisfy our customers and protect our brand. These product-related costs may not be covered under our warranties and are not covered by insurance.",
+          "section": "mda",
+          "subsection": "Critical Accounting Estimates"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces risks related to product warranties and potential quality issues, indicating vulnerabilities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant environmental compliance costs and operational challenges due to extensive and changing regulations. While the 2018 results did not highlight environmental compliance as a material factor, the risk factors indicate ongoing compliance costs and potential penalties from non-compliance.",
+      "evidence": [
+        {
+          "text": "No specific information on environmental regulations or compliance costs.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "We are subject to extensive and changing federal, state and local laws and regulations designed to protect the environment. These laws and regulations could impose liability for remediation costs and civil or criminal penalties in cases of non-compliance. Compliance with environmental laws increases our costs of doing business. Because these laws are subject to frequent change, we are unable to predict the future costs resulting from environmental compliance.",
+          "section": "risk_factors",
+          "subsection": "We are Subject to Litigation and Tax, Environmental and Other Regulations that Could Have an Adverse Effect on Our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant environmental compliance costs and potential penalties pose financial risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "The company manages inventory levels through various strategies, including pre-purchasing and hedging, but faces risks such as obsolescence and shortages due to raw material price fluctuations. The Refrigeration segment experienced a 1% decrease in sales volume, which may have impacted inventory levels.",
+      "evidence": [
+        {
+          "text": "Refrigeration segment saw a 1% decrease in sales volume, possibly affecting inventory.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Although we regularly pre-purchase a portion of our raw materials at fixed prices each year to hedge against price increases, an increase in raw materials prices not covered by our fixed price arrangements could significantly increase our cost of goods sold and negatively impact our margins if we are unable to effectively pass such price increases on to our customers. In addition, we use derivatives to hedge price risk associated with forecasted purchases of certain raw materials. Our hedged prices could result in paying higher or lower prices for commodities as compared to the market prices for those commodities when purchased.",
+          "section": "risk_factors",
+          "subsection": "Price Volatility for Commodities and Components We Purchase or Significant Supply Interruptions Could Have an Adverse Effect on Our Cash Flow or Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Inventory management challenges due to raw material fluctuations and decreased sales impact stability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly environmental and energy efficiency standards, pose risks to the company by potentially impacting the types of products they can develop and sell. While one section notes that regulatory changes were not a significant factor in the 2018 compared to 2017 results, another highlights the potential adverse effects of such changes on their operations, especially concerning hydrofluorocarbons under the Montreal Protocol amendments. This creates a mixed perspective where immediate impacts are minimal but future risks are significant.",
+      "evidence": [
+        {
+          "text": "\"No specific mention of regulatory changes impacting operations.\"",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "\"Changes in environmental and energy efficiency standards and regulations, such as the recent amendments to the Montreal Protocol to phase down the use of hydrofluorocarbons, may particularly have a significant impact on the types of products that we are allowed to develop and sell, and the types of products that are developed and sold by our competitors. Our inability or delay in developing or marketing products that match customer demand and that meet applicable efficiency and environmental standards may negatively impact our results.",
+          "section": "risk_factors",
+          "subsection": "Changes in Legislation or Government Regulations or Policies Could Have an Adverse Effect on Our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes pose future risks despite minimal immediate impact.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company's performance is influenced by economic conditions, particularly in the U.S. construction industry. While overall economic conditions are stable, factors such as interest rates, inflation, and employment rates can impact sales in residential and commercial construction markets.",
+      "evidence": [
+        {
+          "text": "No specific mention of economic downturns or expansions affecting the company.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Our business is affected by the performance of the U.S. construction industry. Our sales in the residential and commercial new construction markets correlate to the number of new homes and buildings that are built, which in turn is influenced by cyclical factors such as interest rates, inflation, availability of financing, consumer spending habits and confidence, employment rates and other macroeconomic factors over which we have no control. Our sales may not improve, or improvement may be limited or lower than expected.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Overall stable economic conditions with mixed potential impacts.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The impact of interest rate changes on the company is mixed. While slight increases in interest expense are manageable, higher borrowing costs and reduced customer financing availability due to rate changes could negatively affect financial performance and sales.",
+      "evidence": [
+        {
+          "text": "Estimated interest payments increased slightly in 2019 compared to 2019.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "Future disruptions in U.S. or global financial and credit markets or increases in the costs of capital might have an adverse impact on our business. The tightening, unavailability or increased costs of credit adversely affects the ability of our customers to obtain financing for significant purchases and operations, which could result in a decrease in sales of our products and services and may impact the ability of our customers to make payments to us.",
+          "section": "risk_factors",
+          "subsection": "Global General Business, Economic and Market Conditions Could Adversely Affect Our Financial Performance and Limit our Access to the Capital Markets."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher interest rates could negatively affect financial performance and sales.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces potential litigation exposure, particularly in areas such as product liability, labor relations, asbestos-related claims, and environmental matters. While specific information on litigation is not provided for the year ended December 31, 2018 compared to 2017, the risk factors indicate ongoing exposure to various claims and lawsuits that could adversely affect its financial condition.",
+      "evidence": [
+        {
+          "text": "No specific information on litigation or investigations.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "We are involved in various claims and lawsuits incidental to our business, including those involving product liability, labor relations, alleged exposure to asbestos-containing materials and environmental matters, some of which claim significant damages. Estimates related to our claims and lawsuits, including estimates for asbestos-related claims and related insurance recoveries, involve numerous uncertainties. Given the inherent uncertainty of litigation and estimates, we cannot be certain that existing claims or litigation or any future adverse legal developments will not have a material adverse impact on our financial condition.",
+          "section": "risk_factors",
+          "subsection": "We are Subject to Litigation and Tax, Environmental and Other Regulations that Could Have an Adverse Effect on Our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Ongoing litigation risks could harm financial condition.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "The impact of trade tariffs on the company is a mixed issue. While trade tariffs are not explicitly mentioned as affecting sales or costs in the 2018 compared to 2017 results, the risk factors indicate that changes in U.S. trade policy, including tariffs, could negatively impact the company's supply chain and costs, affecting sales, gross margins, and profitability.",
+      "evidence": [
+        {
+          "text": "No information on trade tariffs affecting sales or costs.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "The U.S. government has made changes in U.S. trade policy over the past several years. These changes include renegotiating and terminating certain existing bilateral or multi-lateral trade agreements, such as the North American Free Trade Agreement, and initiating tariffs on certain foreign goods from a variety of countries and regions, most notably China. These changes in U.S. trade policy have resulted in, and may continue to result in, one or more foreign governments adopting responsive trade policies that make it more difficult or costly for us to do business in or import our products or components from those countries. The sales, gross margins and profitability for each of our segments could be directly impacted by changes in tariffs and trade agreements.",
+          "section": "risk_factors",
+          "subsection": "Changes in U.S. Trade Policy, Including the Imposition of Tariffs and the Resulting Consequences, Could Have an Adverse Effect on our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Trade policy changes pose risks to supply chain and costs.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements impact the company's financial results due to international operations.",
+      "evidence": [
+        {
+          "text": "Favorable foreign exchange in Refrigeration segment offset some losses. Unfavorable rates in Residential segment.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Foreign exchange movements could have an impact on our financial results. Our international sales and operations are subject to risks including foreign currency fluctuations, regulations, and other risks. Additionally, changes in U.S. trade policy, including the imposition of tariffs, could have an adverse effect on our results of operations. The overall economic environment also poses risks, particularly in the construction industry and the demand for HVACR products.",
+          "section": "risk_factors",
+          "subsection": "Our International Operations Subject Us to Risks Including Foreign Currency Fluctuations, Regulations and Other Risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company experiences both favorable and unfavorable foreign exchange impacts, indicating moderate risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company faces significant geopolitical risks, including trade tensions, conflicts, and compliance challenges with international laws such as the U.S. Foreign Corrupt Practices Act and the U.K. Bribery Act. These risks could disrupt operations, damage facilities, and negatively impact demand for products.",
+      "evidence": [
+        {
+          "text": "International transactions may involve increased financial and legal risks due to differing legal systems and customs in foreign countries, as well as compliance with anti-corruption laws such as the U.S. Foreign Corrupt Practices Act and the U.K. Bribery Act.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2018 Compared to Year Ended December 31, 2017 - Results by Segment"
+        },
+        {
+          "text": "Conflicts, wars, natural disasters, infectious disease outbreaks or terrorist acts could also cause significant damage or disruption to our operations, employees, facilities, systems, suppliers, supply chain, distributors, resellers or customers in the United States and internationally for extended periods of time and could also affect demand for our products.",
+          "section": "risk_factors",
+          "subsection": "Our International Operations Subject Us to Risks Including Foreign Currency Fluctuations, Regulations and Other Risks."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant geopolitical risks including trade tensions, conflicts, and compliance challenges pose clear major risks to the company.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

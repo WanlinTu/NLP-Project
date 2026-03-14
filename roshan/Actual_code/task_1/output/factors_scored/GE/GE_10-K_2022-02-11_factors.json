@@ -1,0 +1,1364 @@
+{
+  "ticker": "GE",
+  "form": "10-K",
+  "filing_date": "2022-02-11",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 50,
+  "factors": [
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are impacting the company's interest payable and potentially affecting its financial stability.",
+      "evidence": [
+        {
+          "text": "Interest payable 276 \u00a0 793 \u00a0",
+          "section": "mda",
+          "subsection": "NOTE 13. CURRENT AND ALL OTHER LIABILITIES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Interest rate changes are affecting the company's financial stability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company has significant foreign exchange exposure, impacting its international operations and financial performance.",
+      "evidence": [
+        {
+          "text": "Currency translation adjustments AOCI $ ( 4,562 ) $ ( 4,386 ) $ ( 4,818 )",
+          "section": "mda",
+          "subsection": "NOTE 15. SHAREHOLDERS\u2019 EQUITY"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant foreign exchange exposure impacts financial performance.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is a headwind due to the global COVID-19 pandemic and geopolitical risks.",
+      "evidence": [
+        {
+          "text": "The global COVID-19 pandemic has had and may continue to have a material adverse impact on our operations and financial performance, as well as on the operations and financial performance of many of the customers and suppliers in industries that we serve.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Global pandemic and geopolitical risks hinder economic environment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is stable with no significant growth or contraction mentioned.",
+      "evidence": [
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant changes in headcount restructuring.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable with no significant issues mentioned.",
+      "evidence": [
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor relations are stable with no issues.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is stable with no significant shortages or turnover mentioned.",
+      "evidence": [
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Talent retention is stable with no significant shortages.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "RD investment is stable with no significant changes in spending mentioned.",
+      "evidence": [
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "RD investment is stable with no significant changes.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Digital automation adoption is stable with no significant gains or losses mentioned.",
+      "evidence": [
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Digital automation adoption is stable with no significant gains.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed trends, with some segments experiencing margin expansion due to increased service revenues and cost reductions, while others face compression or pressure from higher costs, pricing challenges, and premium deficiency adjustments. Overall, the company's gross and operating margins are under pressure, though certain areas demonstrate improvement.",
+      "evidence": [
+        {
+          "text": "Operating margins are expanding due to increased service revenues and cost reduction efforts.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (4%) and segment profit was up $0.5 billion."
+        },
+        {
+          "text": "Gross and operating margins are under pressure, primarily due to higher costs and inefficiencies.",
+          "section": "mda",
+          "subsection": "CAPITAL RESOURCES AND LIQUIDITY"
+        },
+        {
+          "text": "The decrease in insurance liabilities and annuity benefits of $5.0 billion... primarily due to an adjustment of $4.8 billion resulting from the higher margin from the 2021 premium deficiency test and the decline in unrealized gains on investment securities that would result in a premium deficiency should those gains be realized.",
+          "section": "mda",
+          "subsection": "OTHER ITEMS"
+        },
+        {
+          "text": "Segment profit decreased from $10,049 million in 2019 to $5,778 million in 2021, indicating a compression in margins.",
+          "section": "mda",
+          "subsection": "Key Portfolio Characteristics"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The margin trajectory shows mixed trends with some improvements but overall pressure on margins.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, particularly in Healthcare and Renewable Energy, which are driving organic growth. However, there are also signs of a shift towards lower-margin segments in Power and Corporate, which may negatively impact profitability.",
+      "evidence": [
+        {
+          "text": "Revenues decreased $0.7 billion (4%) organically*... partially offset by an increase in Gas Power and Steam Power services revenues.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (4%) and segment profit was up $0.5 billion."
+        },
+        {
+          "text": "Adjusted organic profit* increased $2.7 billion, driven primarily by increases at Aviation, Power and Healthcare. Additionally, we continue to experience inflation pressure in our supply chain as well as delays in sourcing key materials needed for our products. The most significant impact to date has been at our Healthcare segment, which has delayed our ability to convert remaining performance obligation (RPO) to revenue.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Total revenues decreased from $90,221 million in 2019 to $74,196 million in 2021, with a significant decline in the proportion of higher-margin segments.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "Power segment revenue decreased from $18,625 million in 2019 to $16,903 million in 2021, while Corporate segment revenue also declined from $3,442 million to $2,561 million over the same period.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The shift towards lower-margin segments may negatively impact profitability despite some growth in higher-margin areas.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic growth is mixed, with evidence of deceleration in certain segments such as Gas Power, Steam Power, Aviation, and Healthcare, while Renewable Energy and Insurance segments show stability or slight increases. Overall, the trend suggests a slowdown in organic revenue growth across key business units.",
+      "evidence": [
+        {
+          "text": "Revenues decreased $0.7 billion (4%) organically* primarily due to decreased Gas Power equipment revenues on lower turnkey sales and Steam Power equipment on the exit of new build coal, partially offset by an increase in Gas Power and Steam Power services revenues.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (4%) and segment profit was up $0.5 billion."
+        },
+        {
+          "text": "Segment revenues were flat [...] Equipment revenues decreased primarily at Power, due to decreased Gas Power equipment revenues on lower turnkey sales and Steam Power equipment on the exit of new build coal; at Aviation, due to fewer commercial install and spare engine unit shipments; and at Healthcare, due to the disposition of the BioPharma business; partially offset by an increase at Renewable Energy driven by higher revenue at Offshore Wind.",
+          "section": "mda",
+          "subsection": "STATEMENT OF CASH FLOWS"
+        },
+        {
+          "text": "Aviation segment revenue decreased from $32,875 million in 2019 to $21,310 million in 2021, and Healthcare segment revenue decreased from $19,942 million to $17,725 million over the same period.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Our insurance operations... generated revenues of $3,106 million, $2,865 million and $2,802 million... net earnings of $444 million, $143 million and $(663) million...",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic growth is decelerating across key segments, indicating a slowdown in revenue growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction activity and infrastructure spending are growing, which is driving demand for the company's products, particularly in Gas Power services. The evidence indicates a positive trend with increased revenues and margins in this segment.",
+      "evidence": [
+        {
+          "text": "Construction activity and infrastructure spending are creating growing demand, particularly in Gas Power services.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (4%) and segment profit was up $0.5 billion."
+        },
+        {
+          "text": "The company benefits from increased construction activity and infrastructure spending, driving demand for its products.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "Profit increased $0.5 billion organically* due to increases in Gas Power services revenues and margins, predominately in the long-term services portfolio...",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased construction and infrastructure spending is driving demand, leading to higher revenues and margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost reduction actions, including restructuring programs and debt tenders, which are delivering measurable savings. However, there are challenges in managing costs due to separation plans and external disruptions, and some cost pressures remain.",
+      "evidence": [
+        {
+          "text": "Restructuring and cost reduction programs are delivering measurable savings, with a focus on streamlining businesses.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (4%) and segment profit was up $0.5 billion."
+        },
+        {
+          "text": "During 2021, we completed debt tenders to repurchase a total of $32.6 billion of debt... The total after-tax loss on these actions was $6.1 billion... Additionally, we have elected to prospectively measure our investment in AerCap at fair value and expect to have continuing involvement with AerCap, primarily through our ownership interest and ongoing sales or leases of products and services. We expect to fully monetize our stake in AerCap over time.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Selling, general and administrative expenses 11,707 \u00a0 12,592 \u00a0 13,806 \u00a0 Research and development 2,497 \u00a0 2,565 \u00a0 3,118 \u00a0 Interest and other financial charges 1,876 \u00a0 2,068 \u00a0 2,927 \u00a0 Debt extinguishment costs (Note 10) 6,524 \u00a0 301 \u00a0 256 \u00a0 Insurance losses and annuity benefits (Note 11) 2,283 \u00a0 2,397 \u00a0 3,294 \u00a0 Goodwill impairments (Note 7) \u2014 \u00a0 877 \u00a0 1,486 \u00a0 Non-operating benefit costs 1,782 \u00a0 2,430 \u00a0 2,839 \u00a0 Other costs and expenses 136 \u00a0 159 \u00a0 176 \u00a0 Total costs and expenses 80,702 \u00a0 81,259 \u00a0 92,754",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The failure to satisfy all of the required conditions could delay the completion of the separation transactions for a significant period of time or prevent them from occurring at all.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction actions are delivering measurable savings, though some challenges remain.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditure outlook is mixed, with some evidence indicating confidence in future growth through maintained or increased capital spending, while other information suggests a cautious approach with decreased capital expenditures.",
+      "evidence": [
+        {
+          "text": "The company is maintaining its capital expenditure, signaling confidence in future growth.",
+          "section": "mda",
+          "subsection": "CAPITAL RESOURCES AND LIQUIDITY"
+        },
+        {
+          "text": "Expenditures for site remediation, nuclear decommissioning and worker exposure claims amounted to approximately $ 193 million, $ 180 million and $ 236 million for the years ended December 31, 2021, 2020 and 2019, respectively.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Capital expenditures have decreased, signaling caution regarding future growth investments.",
+          "section": "mda",
+          "subsection": "NOTE 22. COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES AND OTHER LOSS CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals with some sections showing confidence and others caution regarding future growth investments.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining shareholder returns through consistent dividend policies and buybacks, as indicated in multiple sections. However, some subsections do not provide specific information on shareholder returns, indicating a mixed approach to transparency.",
+      "evidence": [
+        {
+          "text": "The company is maintaining shareholder returns through consistent dividend policies and buybacks.",
+          "section": "mda",
+          "subsection": "CAPITAL RESOURCES AND LIQUIDITY"
+        },
+        {
+          "text": "We expect to fully monetize our stake in AerCap over time.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "No information is provided on dividend policies or stock buybacks.",
+          "section": "mda",
+          "subsection": "(a)2. Financial Statement Schedules / (a)3. Exhibit Index"
+        },
+        {
+          "text": "The company has maintained its dividend payments, signaling confidence in its financial position.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Consistent dividend policies and buybacks are maintained, but some lack of transparency exists.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is actively pursuing a deleveraging strategy through significant debt repurchases and spin-offs, which has led to a noticeable reduction in borrowings and an improved balance sheet. However, there are some sections that do not provide specific information on debt levels or activities, indicating potential gaps in the disclosure.",
+      "evidence": [
+        {
+          "text": "\"The reduction in borrowings was driven by debt repurchases of $32.6 billion, net repayments and maturities of debt of $4.6 billion, $1.7 billion of fair value adjustments for debt in fair value hedge relationships, and $0.8 billion related to changes in foreign exchange rates and other amortization.\"",
+          "section": "mda",
+          "subsection": "CAPITAL RESOURCES AND LIQUIDITY"
+        },
+        {
+          "text": "\"During 2021, we completed debt tenders to repurchase a total of $32.6 billion of debt... Additionally, we have elected to prospectively measure our investment in AerCap at fair value and expect to have continuing involvement with AerCap, primarily through our ownership interest and ongoing sales or leases of products and services. We expect to fully monetize our stake in AerCap over time.\"",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "\"In the second quarter of 2021, we completed a debt tender to repurchase a total of $ 7,275 million of debt... In the fourth quarter of 2021, we completed a debt tender to repurchase a total of $ 25,350 million of debt.\"",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "\"The company has deleveraged its balance sheet, improving financial stability.\"",
+          "section": "mda",
+          "subsection": "NOTE 10. BORROWINGS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active deleveraging through debt repurchases has improved the balance sheet significantly.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed across different sectors. While Healthcare and Life Sciences (HCS) and Personalized Diagnostics (PDx) have recovered to pre-pandemic levels or higher, the Renewable Energy sector faces uncertainty due to policy changes. The aviation sector is improving but remains below pre-pandemic levels. Overall, demand trends are stable with slight variability, though there are signs of recovery in some areas and ongoing challenges in others.",
+      "evidence": [
+        {
+          "text": "The effects of COVID-19, including the continued emergence of variants and success of vaccinations, remain uncertain and may result in variability in levels of future mortality and long-term care insurance claims activity, including changes in policyholder behavior.",
+          "section": "mda",
+          "subsection": "OTHER ITEMS"
+        },
+        {
+          "text": "Both HCS and PDx demand has recovered to at or above pre-pandemic levels. [...] The expiry of U.S. Production Tax Credits (PTC) in 2021 has created uncertainty resulting in project delays and deferral of customer investments.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Global departures for 2021 were approximately 30% below 2019, though they improved by about 20% compared to 2020. The recovery is expected to be prolonged over the next couple of years, depending on factors like virus containment and government collaboration.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "Total revenues for the years ended December 31, 2021, 2020, and 2019 were $74,196 million, $75,833 million, and $90,221 million, respectively.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand trends are mixed with some sectors recovering but others facing challenges.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company exhibits mixed sensitivity across various factors, with significant exposure to interest rates, economic conditions, and global macro-environmental risks. While certain areas highlight sensitivity to supply chain disruptions and commodity prices, others show limited discussion on external variables impacting near-term results.",
+      "evidence": [
+        {
+          "text": "The results of our premium deficiency testing are sensitive to the assumptions described above.",
+          "section": "mda",
+          "subsection": "Key Portfolio Characteristics"
+        },
+        {
+          "text": "delays in sourcing key materials [...] expiry of U.S. Production Tax Credits [...] impact from a stronger U.S. dollar",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "The COVID-19 pandemic has impacted global economies... The most significant impact to date has been at our Aviation segment.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The severity, magnitude and duration, as well as the economic consequences of the COVID-19 pandemic, are uncertain, rapidly changing and difficult to predict.",
+          "section": "mda",
+          "subsection": "NOTE 1. BASIS OF PRESENTATION AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES"
+        },
+        {
+          "text": "The global macro-environment - Our growth is subject to global economic, political and geopolitical risks.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Exhibit 4(l) Description of the Registrant\u2019s Securities Registered Pursuant to Section 12 of the Securities Exchange Act of 1934.*",
+          "section": "mda",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        },
+        {
+          "text": "The company identifies commodity prices and interest rates as having the largest potential impact on near-term results.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant exposure to multiple risks, including interest rates and supply chain issues.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "The company's free cash flow generation has shown improvement in 2021 compared to 2020, driven by lower pension contributions and higher net income. However, the discontinuation of factoring programs may impact future cash flows, and significant debt repayments and capital contributions could constrain free cash flow. Additionally, there is notable cash collateral activity related to derivatives which influences operating cash flows.",
+      "evidence": [
+        {
+          "text": "Cash from operating activities was $0.9 billion in 2021, a decrease of $0.1 billion compared with 2020, primarily due to: an increase in financial services-related cash collateral paid net of settlements on derivative contracts of $3.0 billion, which is a standard market practice to minimize derivative counterparty exposures; an increase in cash used for working capital of $1.5 billion; a decrease in employee benefit liabilities (a component of All other operating activities) of $0.3 billion; partially offset by lower GE Pension Plan contributions (which are excluded from free cash flows*) of $2.5 billion; and an increase in net income (after adjusting for the gain on the sale of BioPharma, non-cash losses related to our interest in Baker Hughes, goodwill impairments, provision for income taxes, non-operating benefit costs and non-operating debt extinguishment costs) primarily due to COVID-19 pandemic impacts in our Aviation segment in 2020.",
+          "section": "mda",
+          "subsection": "CAPITAL RESOURCES AND LIQUIDITY"
+        },
+        {
+          "text": "CFFOA decreased primarily due to an increase in cash collateral paid net of settlements on derivative contracts and an increase in cash used for working capital, partially offset by lower GE Pension Plan contributions (which are excluded from free cash flows (FCF)*) and an increase in net income (after adjusting for the gain on the sale of BioPharma, non-cash gains/losses related to our interest in Baker Hughes, non-operating benefit costs and non-operating debt extinguishment costs). FCF* were $1.9 billion and $0.6 billion for the years ended December 31, 2021 and 2020, respectively. FCF* increased primarily due to an increase in net income... partially offset by an increase in cash collateral paid net of settlements on derivative contracts. We discontinued the majority of our factoring programs in 2021.",
+          "section": "mda",
+          "subsection": "STATEMENT OF CASH FLOWS"
+        },
+        {
+          "text": "The total interest payments on consolidated borrowings are estimated to be $1,245 million... We expect to provide further capital contributions of approximately $5,500 million through 2024...",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "Included in cash, cash equivalents and restricted cash was total net cash collateral received on derivatives of $ 66 million... and $ 3,289 million at December 31, 2020.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Improvement in cash flow but constrained by debt repayments and collateral.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is experiencing rising input costs, particularly in materials and labor, driven by supply chain inflation and delays in sourcing key materials. While proactive management has partially mitigated some impacts, especially in the Healthcare segment, cost pressures remain significant and have affected the company's ability to achieve targeted investment margins and convert performance obligations to revenue.",
+      "evidence": [
+        {
+          "text": "Changes in working capital compared to prior year were as follows: current receivables of $1.1 billion, driven by a lower decrease in sales of receivables to third parties of $0.9 billion; inventories, including deferred inventory, of $(1.8) billion, driven by higher material purchases and lower liquidations; current contract assets of $(0.6) billion, driven by lower net unfavorable changes in estimated profitability at Aviation partially offset by the timing of revenue recognition relative to billings and collections on our long-term equipment contracts; accounts payable and equipment project accruals of $0.6 billion, driven by lower disbursements related to purchases of materials in prior periods; progress collections and current deferred income of $(0.8) billion, driven by higher net liquidations.",
+          "section": "mda",
+          "subsection": "Key Portfolio Characteristics"
+        },
+        {
+          "text": "Inflation in our supply chain as well as delays in sourcing key materials [...] proactively managed sourcing and logistics, material and design costs to partially mitigate supply chain impacts",
+          "section": "mda",
+          "subsection": "STATEMENT OF CASH FLOWS"
+        },
+        {
+          "text": "Additionally, we continue to experience inflation pressure in our supply chain as well as delays in sourcing key materials needed for our products. The most significant impact to date has been at our Healthcare segment, which has delayed our ability to convert remaining performance obligation (RPO) to revenue.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "The total amount of such estimated losses was $ 755 million and $ 315 million at December 31, 2021 and December 31, 2020, respectively.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising costs affecting margins and revenue conversion.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power appears to be mixed. While customer-related activities, such as equipment or services sales, indicate stable pricing power, challenges in offsetting rising input costs through pricing have led to margin compression. Additionally, there is no explicit mention of pricing strategies or changes, and pricing power may be affected by competitive market dynamics.",
+      "evidence": [
+        {
+          "text": "The most significant source of cash in CFOA is customer-related activities, the largest of which is collecting cash resulting from equipment or services sales.",
+          "section": "mda",
+          "subsection": "STATEMENT OF CASH FLOWS"
+        },
+        {
+          "text": "The markets in which we operate are highly competitive in terms of pricing, product and service quality, product development and introduction time, customer service, financing terms, the ability to respond to shifts in market demand and the ability to attract and retain skilled talent.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "The effective tax rate reflects the benefit of these tax reductions in the consolidated return. Cash payments are made to GE's businesses for tax reductions and from GE's businesses for tax increases.",
+          "section": "mda",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed pricing power with some stable areas but margin compression elsewhere.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management exhibits mixed confidence, with cautious optimism in certain areas due to external challenges like the pandemic and supply chain issues, yet shows confidence in key segments such as Aviation and Healthcare. However, there is limited direct evidence of management's actions, such as buybacks or CapEx, which could indicate stronger confidence.",
+      "evidence": [
+        {
+          "text": "continued to execute on structural cost reductions [...] remained committed to innovate and invest [...] anticipate the power market to continue to be impacted by overcapacity",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Aviation remains confident in the recovery, while actively monitoring the impact of travel restrictions, quarantine requirements, and economic and industry forecasts.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The tone of management commentary reflects caution due to market conditions and supply chain disruptions.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed confidence with cautious optimism and limited evidence of strong actions.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's order backlog shows mixed trends across different segments. While the backlog increased in Healthcare and Renewable Energy, it decreased in Power. Overall, the backlog appears stable, with some sectors experiencing growth and others facing declines.",
+      "evidence": [
+        {
+          "text": "RPO as of December 31, 2021 increased $11.2 billion (10%) [...] RPO as of December 31, 2021 increased $1.7 billion (13%) [...] RPO as of December 31, 2021 increased $0.7 billion (2%) [...] RPO as of December 31, 2021 decreased $2.6 billion (3%)",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "RPO increased $9.2 billion (4%) from December 31, 2020, primarily at Aviation, from engines contracted under long-term service agreements that have now been put into service; at Healthcare, from new contracts and renewals with large customers as well as supply chain challenges in converting RPO to revenue; and at Renewable Energy, primarily at Offshore Wind.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The aggregate amount of the contracted revenues allocated to our unsatisfied (or partially unsatisfied) performance obligations was $239,820 million as of December 31, 2021.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Remaining performance obligations as of December 31, 2021, were $239,820 million, with expected recognition over several years.",
+          "section": "mda",
+          "subsection": "NOTE 22. COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES AND OTHER LOSS CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed trends with some segments growing and others declining.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end market momentum is mixed across different segments. The Renewable Energy and Offshore Wind sectors are growing, particularly Healthcare and Offshore Wind, which are outperforming others. However, Onshore Wind and Power segments face challenges, including declines and supply chain issues.",
+      "evidence": [
+        {
+          "text": "Both HCS and PDx demand has recovered to at or above pre-pandemic levels. [...] Offshore Wind [...] continues to experience strong global market momentum [...] U.S onshore wind market is expected to decline",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "RPO increased $9.2 billion (4%) from December 31, 2020, primarily at Aviation, from engines contracted under long-term service agreements that have now been put into service; at Healthcare, from new contracts and renewals with large customers as well as supply chain challenges in converting RPO to revenue; and at Renewable Energy, primarily at Offshore Wind.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The Renewable Energy segment's revenues increased from $15,337 million in 2019 to $15,697 million in 2021.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Renewable Energy segment revenue remained relatively stable at $15,697 million in 2021, compared to $15,337 million in 2019, while Power segment revenue decreased from $18,625 million to $16,903 million, and Corporate segment revenue declined from $3,442 million to $2,561 million over the same period.",
+          "section": "mda",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed momentum across different segments with some growth and challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is focused on innovation and sustainability across key sectors such as Healthcare, Renewable Energy, and Aviation. There is a clear emphasis on resource allocation to support growth initiatives, though some sections do not provide explicit details on strategic plans or resource allocation.",
+      "evidence": [
+        {
+          "text": "continue to grow and invest in precision health [...] remain uniquely positioned to lead the energy transition [...] continue to invest in generating wind turbine product improvements",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "GE announced it plans to form three public companies focused on the growth sectors of aviation, healthcare and energy... Following these transactions, GE will be an aviation-focused company, shaping the future of flight. As independently run companies, each can benefit from greater focus, tailored capital allocation, and strategic flexibility to deliver long-term growth and create value for customers, investors and employees.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The company has a clear long-term strategy focused on sustainable growth and innovation, supported by adequate resources.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has a clear, focused long-term strategy with investments in innovation and sustainability across key sectors.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces multiple near-term risks, including supply chain disruptions affecting various segments, policy uncertainty in Renewable Energy, potential impacts from emerging COVID-19 variants, and the expiry of U.S. Production Tax Credits. Additionally, there are concerns about raw material costs and labor costs, as well as market demand uncertainty. While some segments, like the Healthcare segment, are experiencing specific disruptions, others, such as the NOTE 8 and NOTE 18 sections, do not explicitly mention near-term risks.",
+      "evidence": [
+        {
+          "text": "delays in sourcing key materials [...] expiry of U.S. Production Tax Credits [...] project delays and deferral of customer investments",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "The COVID-19 pandemic has impacted global economies... The most significant impact to date has been at our Aviation segment.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The severity, magnitude and duration, as well as the economic consequences of the COVID-19 pandemic, are uncertain, rapidly changing and difficult to predict.",
+          "section": "mda",
+          "subsection": "NOTE 1. BASIS OF PRESENTATION AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES"
+        },
+        {
+          "text": "The company faces risks from ongoing supply chain disruptions and fluctuating market demand, which could impact near-term results.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Exhibit 4(l) Description of the Registrant\u2019s Securities Registered Pursuant to Section 12 of the Securities Exchange Act of 1934.*",
+          "section": "mda",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces multiple near-term risks including supply chain disruptions, policy uncertainties, and economic impacts from the COVID-19 pandemic.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The company identifies several potential catalysts for growth, including new product launches and regulatory approvals, as well as the strategic restructuring into three new public companies. However, some sections do not mention specific catalysts, indicating a mixed approach to identifying near-term drivers.",
+      "evidence": [
+        {
+          "text": "introduced the Vscan Air [...] received customer commitments for the Haliade-X [...] new product platforms and blade technologies",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Following these transactions, GE will be an aviation-focused company, shaping the future of flight. As independently run companies, each can benefit from greater focus, tailored capital allocation, and strategic flexibility to deliver long-term growth and create value for customers, investors and employees.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "The company anticipates catalysts such as new product launches and regulatory approvals to drive future growth and improvements.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company identifies several growth catalysts such as new product launches and strategic restructuring, indicating opportunities for expansion.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed across different segments, with some showing growth and others facing declines. The overall impact of the COVID-19 pandemic has led to reduced demand and activity in certain areas, particularly in segments like Aviation and Healthcare. Despite some increases in specific segments such as Offshore Wind and Imaging, there is a notable decline in unit volumes in Onshore Wind, Gas Turbines, and Commercial Engines. Additionally, there are no explicit mentions of volume trends in certain sections, which adds some uncertainty to the overall assessment.",
+      "evidence": [
+        {
+          "text": "Cash from operating activities was $0.9 billion in 2021, a decrease of $0.1 billion compared with 2020, primarily due to: an increase in financial services-related cash collateral paid net of settlements on derivative contracts of $3.0 billion, which is a standard market practice to minimize derivative counterparty exposures; an increase in cash used for working capital of $1.5 billion; a decrease in employee benefit liabilities (a component of All other operating activities) of $0.3 billion; partially offset by lower GE Pension Plan contributions (which are excluded from free cash flows*) of $2.5 billion; and an increase in net income (after adjusting for the gain on the sale of BioPharma, non-cash losses related to our interest in Baker Hughes, goodwill impairments, provision for income taxes, non-operating benefit costs and non-operating debt extinguishment costs) primarily due to COVID-19 pandemic impacts in our Aviation segment in 2020.",
+          "section": "mda",
+          "subsection": "STATEMENT OF CASH FLOWS"
+        },
+        {
+          "text": "Onshore Wind sales in units decreased [...] Offshore Wind sales in units increased [...] GE Gas Turbines unit sales decreased",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Sales in units, except where noted 2021 2020 2019 Commercial Engines(a) 1,487\u00a0 1,720\u00a0 3,048\u00a0 LEAP Engines(b) 845\u00a0 815\u00a0 1,736\u00a0 Military Engines 553\u00a0 683\u00a0 717\u00a0 Spare Parts Rate(c) $ 17.8\u00a0 $ 18.0\u00a0 $ 31.0\u00a0 (a) Commercial Engines now includes Business Aviation and Aeroderivative units for all periods presented. (b) LEAP engines are subsets of commercial engines. (c) Commercial externally shipped spare parts and spare parts used in time and material shop visits in millions of dollars per day.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "Our operations and financial performance since early 2020 have been negatively impacted by the COVID-19 pandemic that has caused, and may continue to cause, a slowdown of economic activity (including the decrease in demand for a broad variety of goods and services), disruptions in global supply chains and significant volatility and disruption of financial markets.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Total revenues decreased from $90,221 million in 2019 to $74,196 million in 2021, indicating a decline in unit volumes or transaction counts.",
+          "section": "mda",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        },
+        {
+          "text": "Aviation segment revenue decreased from $32,875 million in 2019 to $21,310 million in 2021, and Healthcare segment revenue decreased from $19,942 million to $17,725 million over the same period.",
+          "section": "mda",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Volume trends show mixed performance with declines in several key segments and ongoing impacts from the COVID-19 pandemic.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "The aftermarket/service revenue is showing mixed performance across different segments. While revenue is growing in specific sectors like Healthcare and Renewable Energy, it is growing slower compared to new equipment sales. Additionally, there is no significant growth or decline mentioned in other areas, indicating overall stability.",
+      "evidence": [
+        {
+          "text": "Aftermarket service revenue is growing in Healthcare and Renewable Energy, driven by increased customer activity.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "Commercial Services revenues increased [...]",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "Aftermarket/service revenue growth is outpaced by new equipment sales, suggesting a focus on new product sales over recurring services.",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Aftermarket/service revenue is mixed with growth in some sectors but slower compared to new equipment sales, indicating overall stability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company's market share appears to be stable or improving in key segments, with evidence of competitive advantages maintained across its operations. Despite some sections not providing specific information on market share trends, the consistent revenue performance and resilience in gas turbine utilization support the notion of a stable market position.",
+      "evidence": [
+        {
+          "text": "continue to lead the energy transition [...] remain the largest provider of nuclear technology solutions [...] Gas turbine utilization continues to be resilient",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "The company's market share remains stable across its key segments, with consistent revenue performance.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company maintains stable or improving market share in key segments, supported by consistent revenue performance and competitive advantages.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain health exhibits mixed performance. While there are reports of delays and inflation affecting the conversion of RPO to revenue, indicating ongoing challenges, there are also signs of improvement with normalized lead times and enhanced supply chain operations.",
+      "evidence": [
+        {
+          "text": "delays in sourcing key materials [...] supply chain challenges in converting RPO to revenues",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "The company has made progress in normalizing lead times and improving supply chain operations.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "No information on supply chain disruptions or improvements is found in the text.",
+          "section": "risk_factors",
+          "subsection": "NOTE 18. OTHER INCOME"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The supply chain health is mixed with ongoing challenges but also signs of improvement, leading to a balanced assessment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The company faces mixed competitive dynamics, with some areas experiencing intense competition and pricing pressures, while other areas show stability.",
+      "evidence": [
+        {
+          "text": "intense competition for power generation products and services [...] new technologies could make products obsolete",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "No information is provided on competitive environment changes.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 8. CONTRACT AND OTHER DEFERRED ASSETS & PROGRESS COLLECTIONS AND DEFERRED INCOME"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Competitive dynamics are mixed with some areas facing intense competition while others remain stable.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "The new Catalyst engine is making progress, with its first flight completed in September 2021. However, there is no significant mention of traction or underperformance in new product launches.",
+      "evidence": [
+        {
+          "text": "In September 2021, Aviation\u2019s Catalyst engine, the first clean-sheet turboprop design entering the business and general aviation market in 50 years, completed its first flight.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The successful first flight of the Catalyst engine indicates progress in new product development, which is a positive sign for future growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "The company's differentiation remains strong, particularly through technology leadership and customer relationships. However, there is no explicit mention of competitive advantages such as scale or brand strength in the management and auditor\u2019s reports section. The stability of differentiation is noted in the risk factors section, indicating no significant changes in competitive advantages.",
+      "evidence": [
+        {
+          "text": "Differentiation remains strong through technology leadership and customer relationships.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "cutting edge wireless pocket-sized ultrasound [...] best in class image quality [...] unique applications of existing offerings",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "No information is available on technology, scale, or brand strength.",
+          "section": "risk_factors",
+          "subsection": "NOTE 8. CONTRACT AND OTHER DEFERRED ASSETS & PROGRESS COLLECTIONS AND DEFERRED INCOME"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 8. CONTRACT AND OTHER DEFERRED ASSETS & PROGRESS COLLECTIONS AND DEFERRED INCOME"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong differentiation through technology leadership and customer relationships suggests a competitive advantage, which is positive for the company.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "The company is making investments in environmental sustainability initiatives, which could provide competitive advantages, but these ESG commitments are also resulting in significant costs that impact financial performance.",
+      "evidence": [
+        {
+          "text": "The company is investing in sustainability initiatives, such as developing more fuel-efficient engines and exploring alternative energy sources, which could create competitive advantages.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "Aviation continues to be committed to investment in developing and maturing technologies that enable a more sustainable future of flight. In June 2021, Aviation and Safran announced Revolutionary Innovation for Sustainable Engines (RISE), a technology development program targeting more than 20% lower fuel consumption and CO2 emissions compared to today\u2019s engines.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "The company's ESG commitments are resulting in significant costs, impacting financial performance.",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the company is making investments in sustainability, the significant costs impacting financial performance balance out the sentiment, leading to a neutral assessment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "The company's productivity is mixed, with some evidence of operational efficiency improvements but no explicit mention of overall productivity gains or losses. While certain segments show progress, other sections lack specific information on productivity trends.",
+      "evidence": [
+        {
+          "text": "The company has achieved operational efficiency improvements through restructuring and productivity initiatives.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "No information is provided on productivity gains or losses.",
+          "section": "mda",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        },
+        {
+          "text": "Productivity is stable with no significant improvements or declines.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed evidence on productivity, with some improvements but no clear overall trend, results in a neutral sentiment.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "The information on labor costs is mixed, with some sections indicating manageable costs and stable labor conditions, while others suggest increasing labor costs due to wage inflation and growing pension obligations.",
+      "evidence": [
+        {
+          "text": "There is no discussion of labor cost pressures or benefit expenses.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "The text does not provide specific information on labor cost trends or wage inflation.",
+          "section": "mda",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        },
+        {
+          "text": "Labor costs are creating margin pressure due to benefit obligations and increasing compensation assumptions.",
+          "section": "risk_factors",
+          "subsection": "NOTE 9. ALL OTHER ASSETS"
+        },
+        {
+          "text": "Our businesses are subject to regulation under a wide variety of U.S. federal, state and foreign tax laws, regulations and policies. Changes to these laws or regulations may affect our tax liability, return on investments and business operations.",
+          "section": "risk_factors",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increasing labor costs due to wage inflation and pension obligations are creating margin pressure, which is a negative sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has been engaged in significant merger and acquisition (M&A) activities, including notable acquisitions such as BK Medical and strategic divestitures like the sale of the Steam Power business, BioPharma, Baker Hughes, and the Transportation business. These activities have had both positive and negative impacts on the company's financials, with a focus on strategic restructuring and growth through integration.",
+      "evidence": [
+        {
+          "text": "acquired BK Medical [...] sold a portion of its business to \u00c9lectricit\u00e9 de France S.A.",
+          "section": "mda",
+          "subsection": "For the year ended December 31, 2021, segment revenues were down $0.7 billion (3%) and segment profit was up $1.7 billion."
+        },
+        {
+          "text": "In the fourth quarter of 2021, we acquired BK Medical, a leader in surgical ultrasound imaging and guidance, from Altaris Capital Partners for a cash purchase price of $1.5 billion.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS"
+        },
+        {
+          "text": "On November 1, 2021, we completed the combination of our GE Capital Aviation Services (GECAS) business with AerCap Holdings N.V. (AerCap). [...] On March 31, 2020, we completed the sale of our BioPharma business within our Healthcare segment for total consideration of $21,112 million [...] In September 2019, we reduced our ownership percentage in Baker Hughes [...] As a result, we deconsolidated our Baker Hughes segment and recognized a loss of $8,715 million [...] In February 2019, we completed the spin-off and subsequent merger of our Transportation business with Wabtec.",
+          "section": "mda",
+          "subsection": "NOTE 1. BASIS OF PRESENTATION AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES"
+        },
+        {
+          "text": "The company has successfully integrated recent acquisitions, expanding its capabilities and driving growth.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant M&A activities, including strategic acquisitions and divestitures, indicate growth and restructuring, which is positive for the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes are having mixed effects on the company, with new compliance costs impacting operational efficiency and margins.",
+      "evidence": [
+        {
+          "text": "No information is available on regulatory impacts.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "The company faces new compliance costs due to regulatory changes, impacting operational efficiency and margins.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed effects from regulatory changes, with compliance costs impacting efficiency but no clear overall trend, leads to a neutral sentiment.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant compliance costs due to environmental regulations and emissions requirements, though no specific information is provided on their environmental compliance efforts or costs.",
+      "evidence": [
+        {
+          "text": "Environmental regulations and emissions requirements are resulting in significant compliance costs for the company.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "No information is provided on environmental compliance efforts or costs.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant compliance costs due to environmental regulations without specific efforts to mitigate them indicate a negative sentiment.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "The impact of trade tariffs and restrictions is a mixed issue, with one subsection indicating no available information on trade-related matters while another highlights their negative effects on sales and supply chain operations.",
+      "evidence": [
+        {
+          "text": "No information is available on trade-related issues.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "Trade tariffs and restrictions are negatively impacting the company's sales and supply chain operations.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Trade tariffs and restrictions are negatively impacting sales and supply chain operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The analysis of forward guidance across various subsections of the SEC filing indicates a mixed approach. While management has maintained or not changed their forward guidance for revenue, earnings, and margins in some sections, there are instances where specific forward-looking statements are provided, such as the expected decrease in net periodic benefit costs for 2022. However, other sections either do not mention forward guidance or explicitly state that no updates or changes have been made to future expectations.",
+      "evidence": [
+        {
+          "text": "Management has maintained forward guidance.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "We expect 2022 net periodic benefit income for principal pension, other pension and principal retiree benefit plans to be about $40 million, which is a decrease of approximately $2,420 million in costs from 2021.",
+          "section": "mda",
+          "subsection": "NOTE 12. POSTRETIREMENT BENEFIT PLANS"
+        },
+        {
+          "text": "No specific forward-looking statements on revenue or margins are mentioned.",
+          "section": "mda",
+          "subsection": "(a)2. Financial Statement Schedules / (a)3. Exhibit Index"
+        },
+        {
+          "text": "There is no discussion of updated financial targets or future expectations.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Forward guidance is mixed with some sections maintaining guidance while others show no updates.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company's customer concentration shows mixed trends. While customer diversification is improving according to one source, another indicates that customer concentration remains stable with no significant risks from dependence on a few large customers.",
+      "evidence": [
+        {
+          "text": "Customer concentration and diversification are not discussed in the provided text.",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "The company has reduced reliance on a few large customers, improving customer diversification.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 8. CONTRACT AND OTHER DEFERRED ASSETS & PROGRESS COLLECTIONS AND DEFERRED INCOME"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Customer concentration shows mixed trends with some improvement but no significant risks.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company has mixed litigation exposure, with some sections indicating potential material risks from environmental, health, and safety liabilities, as well as ongoing legal risks including legacy matters and shareholder lawsuits. However, one section notes that no information is available on legal matters affecting the company.",
+      "evidence": [
+        {
+          "text": "Environmental, health and safety liabilities (Note 22) 386 \u00a0 359",
+          "section": "mda",
+          "subsection": "MANAGEMENT AND AUDITOR\u2019S REPORTS"
+        },
+        {
+          "text": "We have established reserves for legal matters when and as appropriate; however, the estimation of legal reserves or possible losses involves significant judgment and may not reflect the full range of uncertainties and unpredictable outcomes inherent in litigation and investigations, and the actual losses arising from particular matters may exceed our current estimates and adversely affect our results of operations.",
+          "section": "mda",
+          "subsection": "NOTE 13. CURRENT AND ALL OTHER LIABILITIES"
+        },
+        {
+          "text": "The company is facing material litigation and investigations that could result in significant financial or operational impact.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant litigation risks including material environmental and legal liabilities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company faces significant geopolitical risks, particularly in emerging markets, due to heightened economic, political, and legal risks. Additionally, trade tensions and potential impacts from international regulations pose further challenges. However, the company has demonstrated some ability to manage these risks, as evidenced by resolving a dispute with the UK tax authority.",
+      "evidence": [
+        {
+          "text": "In September 2021, GE resolved its dispute with the United Kingdom tax authority, HM Revenue & Customs (HMRC) in connection with interest deductions claimed by GE Capital for the years 2004-2015.",
+          "section": "mda",
+          "subsection": "NOTE 15. SHAREHOLDERS\u2019 EQUITY"
+        },
+        {
+          "text": "We do business in many emerging market jurisdictions where economic, political and legal risks are heightened.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High geopolitical risks in emerging markets and trade tensions pose challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "The company's product quality and safety are under scrutiny, particularly in its legacy businesses. However, there is no explicit mention of current quality issues, safety incidents, or recalls in the provided sections. Stability in quality and safety is noted in some areas, but historical concerns remain.",
+      "evidence": [
+        {
+          "text": "In November 2015, we acquired the Thermal, Renewables and Grid businesses from Alstom, which prior to the acquisition was the subject of significant cases involving anti-competitive activities and improper payments.",
+          "section": "mda",
+          "subsection": "NOTE 22. COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES AND OTHER LOSS CONTINGENCIES"
+        },
+        {
+          "text": "There is no mention of quality issues, safety incidents, or warranty costs.",
+          "section": "risk_factors",
+          "subsection": "NOTE 18. OTHER INCOME"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit current issues, but historical concerns exist.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization has shown a negative trend, with manufacturing utilization decreasing. However, there is evidence suggesting stability in capacity utilization.",
+      "evidence": [
+        {
+          "text": "Property, plant, and equipment additions decreased from $2,216 million in 2019 to $1,286 million in 2021, indicating reduced capacity utilization.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 18. OTHER INCOME"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreasing manufacturing utilization indicates a negative trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are showing signs of normalization and stability across different sections of the filing. While one subsection explicitly mentions stabilization due to normalized demand and supply chain improvements, another notes that inventory levels are stable with no significant changes, and a third does not provide specific information on inventory trends.",
+      "evidence": [
+        {
+          "text": "Inventory levels have stabilized, reflecting normalized demand and supply chain improvements.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "Inventory levels are stable with no significant build-up or depletion mentioned.",
+          "section": "risk_factors",
+          "subsection": "NOTE 18. OTHER INCOME"
+        },
+        {
+          "text": "No information on inventory trends, obsolescence, or shortages is found in the text.",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory levels are stable with mixed evidence on trends.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "equipment_replacement",
+      "category": "industrial_infrastructure",
+      "summary": "The equipment replacement cycles are showing mixed trends, with one section indicating a deceleration and another showing stability without significant changes.",
+      "evidence": [
+        {
+          "text": "The equipment replacement cycles have slowed, with customers extending asset life, impacting demand for new equipment.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed trends with deceleration in some areas and stability in others suggest no clear directional sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "dealer_channel",
+      "category": "industrial_infrastructure",
+      "summary": "Dealer/distributor inventory levels are generally stable, with one source indicating strong end-user demand.",
+      "evidence": [
+        {
+          "text": "Dealer inventory levels are reported as healthy, indicating strong end-user demand.",
+          "section": "mda",
+          "subsection": "NOTE 23. OPERATING SEGMENTS"
+        },
+        {
+          "text": "Customer advances and other 2,620 154 \u2014 801 \u2014 3,574",
+          "section": "risk_factors",
+          "subsection": "NOTE 4. CURRENT AND LONG-TERM RECEIVABLES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong end-user demand despite stable inventory levels indicates a positive sentiment.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

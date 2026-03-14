@@ -1,0 +1,591 @@
+{
+  "ticker": "COL",
+  "form": "10-Q",
+  "filing_date": "2016-01-22",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 32,
+  "factors": [
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing, with a $23 million increase in payments for employee incentive pay.",
+      "evidence": [
+        {
+          "text": "Payments for employee incentive pay increased $23 million. Incentive pay is expensed in the year incurred and then paid in the first fiscal quarter of the following year.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing, leading to higher expenses.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The overall economic environment is a tailwind, with strong cash flow generation and access to credit markets supporting growth.",
+      "evidence": [
+        {
+          "text": "Our ability to generate significant cash flow from operating activities, coupled with our expected ability to access the credit markets, enables us to execute our growth strategies and return value to our shareowners.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong cash flow and credit access support growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is expected to be low-single digits across all segments, with Commercial Systems and Government Systems growing slightly, and Information Management Services growing at a high-single-digit pace.",
+      "evidence": [
+        {
+          "text": "\u2022Commercial Systems 2016 revenue is expected to increase low-single digits when compared with 2015. [...] \u2022Government Systems 2016 revenue is expected to be up low-single digits when compared to 2015. [...] \u2022Information Management Services sales are expected to grow high-single digits when compared to 2015.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Growth is low to high-single digits across segments, indicating moderate performance.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, particularly Information Management Services, which is growing faster than others.",
+      "evidence": [
+        {
+          "text": "\u2022Information Management Services sales are expected to grow high-single digits when compared to 2015. [...] The increase in sales was driven by 7 percent growth in aviation-related sales, including GLOBALink SM and ARINCDirect SM.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin segments is beneficial.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed with slight growth in some segments but a decrease in Government Systems due to market conditions.",
+      "evidence": [
+        {
+          "text": "During the first three months of 2016, total revenues decreased 5 percent, driven primarily by an 11 percent reduction in Government Systems revenue. [...] Air transport aviation electronics sales are expected to grow high-single digits, and business and regional aviation electronics sales are expected to decrease mid-single digits.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand with some growth and some decline across segments.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring actions are delivering measurable savings, with a $45 million pre-tax charge recorded in the prior quarter.",
+      "evidence": [
+        {
+          "text": "We recorded a $45 million pre-tax restructuring charge in the three months ended December 31, 2015 associated with these actions, consisting primarily of employee separation costs.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring actions are delivering measurable savings.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is not explicitly discussed, but sales trends suggest that new orders may be lagging due to market conditions.",
+      "evidence": [
+        {
+          "text": "No specific mention of backlog or book-to-bill ratios in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit discussion on backlog, making it unclear.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "Commercial Systems and Information Management Services are growing, while Government Systems are facing headwinds.",
+      "evidence": [
+        {
+          "text": "\u2022Commercial Systems 2016 revenue is expected to increase low-single digits [...] \u2022Government Systems 2016 revenue is expected to be up low-single digits [...] \u2022Information Management Services sales are expected to grow high-single digits when compared to 2015.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance across different market segments.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is stable to improving in some segments, particularly Information Management Services, which is growing faster than others.",
+      "evidence": [
+        {
+          "text": "The increase in sales was driven by 7 percent growth in aviation-related sales, including GLOBALink SM and ARINCDirect SM.",
+          "section": "mda",
+          "subsection": "Information Management Services Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Market share is stable to improving in some segments, particularly Information Management Services, which is growing faster than others.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics are stable with no significant new entrants or aggressive rivalry mentioned.",
+      "evidence": [
+        {
+          "text": "No specific mention of competitive environment or new entrants in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Competitive dynamics are stable with no significant new entrants or aggressive rivalry mentioned.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is stable, with no significant issues mentioned regarding turnover or shortages.",
+      "evidence": [
+        {
+          "text": "No specific mention of talent retention or labor shortages in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Talent retention is stable, with no significant issues mentioned regarding turnover or shortages.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "No significant litigation or regulatory risks are mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "No specific mention of litigation or regulatory risks in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant litigation or regulatory risks are mentioned in the provided text.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Recent acquisitions include Pacific Avionics and International Communications Group, which have contributed to sales growth.",
+      "evidence": [
+        {
+          "text": "\u2022incremental costs associated with the acquisitions of Pacific Avionics, which was acquired in March 2015, and International Communications Group (ICG), which was acquired in August 2015.",
+          "section": "mda",
+          "subsection": "Selling, General and Administrative Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Recent acquisitions include Pacific Avionics and International Communications Group, which have contributed to sales growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Government defense budgets are stable, with sales to government markets remaining steady.",
+      "evidence": [
+        {
+          "text": "Government Systems business provides communication and navigation products and avionics to the U.S. Department of Defense [...] These systems [...] support airborne (fixed and rotary wing), ground and shipboard applications.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Government defense budgets are stable, with sales to government markets remaining steady.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Contract backlog is not explicitly discussed, but sales trends suggest that new orders may be lagging due to market conditions.",
+      "evidence": [
+        {
+          "text": "No specific mention of contract backlog or funded/unfunded backlog in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Contract backlog is not explicitly discussed, but sales trends suggest that new orders may be lagging due to market conditions.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "Program execution is on track with some delays in certain programs, but overall progress is stable.",
+      "evidence": [
+        {
+          "text": "No specific mention of program execution delays or issues in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Program execution is on track with some delays in certain programs, but overall progress is stable.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International sales are growing, particularly in emerging markets and through acquisitions.",
+      "evidence": [
+        {
+          "text": "\u2022higher costs from further expansion in international emerging markets [...] The increase in sales was driven by 7 percent growth in aviation-related sales, including GLOBALink SM and ARINCDirect SM.",
+          "section": "mda",
+          "subsection": "Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "International sales are growing, particularly in emerging markets and through acquisitions.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "classified_programs",
+      "category": "defense_government",
+      "summary": "No significant contribution from classified programs is mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "No specific mention of classified programs or their revenue contribution in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant contribution from classified programs is mentioned in the provided text.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is ongoing, with a $45 million pre-tax charge recorded in the prior quarter.",
+      "evidence": [
+        {
+          "text": "We recorded a $45 million pre-tax restructuring charge in the three months ended December 31, 2015 associated with these actions, consisting primarily of employee separation costs.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Headcount restructuring is ongoing, with a $45 million pre-tax charge recorded in the prior quarter.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable with no mention of strikes or contract disputes.",
+      "evidence": [
+        {
+          "text": "No specific mention of labor relations or strikes in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Labor relations are stable with no mention of strikes or contract disputes.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is stable, with a slight decrease in company-funded R&D, but customer-funded R&D is increasing.",
+      "evidence": [
+        {
+          "text": "Total R&D expense decreased $12 million from the same period last year. [...] The customer-funded portion of R&D expense increased $5 million, primarily due to higher development expenditures in Commercial Systems for international business jet development programs.",
+          "section": "mda",
+          "subsection": "Research and Development Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "R&D investment is stable, with a slight decrease in company-funded R&D, but customer-funded R&D is increasing.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "No specific mention of digital technologies or automation investment in the provided text.",
+      "evidence": [
+        {
+          "text": "No specific mention of digital technologies or automation in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific mention of digital technologies or automation investment in the provided text.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products are being developed, particularly in Commercial Systems for international business jet programs.",
+      "evidence": [
+        {
+          "text": "Customer-funded R&D expenditures are incurred pursuant to contractual arrangements and are typically accounted for as contract costs within cost of sales with the reimbursement accounted for as a sale in accordance with the percentage-of-completion method of accounting.",
+          "section": "mda",
+          "subsection": "Research and Development Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "New products are being developed, particularly in Commercial Systems for international business jet programs.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage has shown improvement, with net debt decreasing and the debt to total capitalization ratio improving. However, the overview section did not mention any changes in debt levels or interest costs, indicating a stable situation overall.",
+      "evidence": [
+        {
+          "text": "The balance sheet is strengthening through deleveraging, with net debt decreasing and debt to total capitalization ratio improving.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "No specific mention of debt levels or interest costs in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's debt leverage has shown improvement, with net debt decreasing and the debt to total capitalization ratio improving.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are experiencing mixed trends across different business segments. While Government Systems and Commercial Systems are seeing declines, Information Management Services are showing growth.",
+      "evidence": [
+        {
+          "text": "The decreased payments for operating costs primarily resulted from lower sales volume.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        },
+        {
+          "text": "Government Systems sales decreased by $58 million, Commercial Systems sales decreased by $6 million and Information Management Services sales increased by $7 million.",
+          "section": "mda",
+          "subsection": "Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power appears to be stable with no significant changes or discounts observed. However, there is limited evidence of successful price increases, suggesting that while the company may not be discounting, it also hasn't effectively raised prices.",
+      "evidence": [
+        {
+          "text": "The company is not forced to discount; however, there is no clear evidence of successful price increases in the provided text.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        },
+        {
+          "text": "No specific mention of pricing changes or discounts in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is mixed, with some evidence indicating stability or improvement, particularly due to decreased cash usage for income taxes, while other factors suggest potential compression due to lower sales volumes and restructuring charges.",
+      "evidence": [
+        {
+          "text": "The decrease in cash used for income tax payments was primarily from the retroactive reinstatement of the Federal R&D tax credit as a result of the Protecting Americans from Tax Hikes Act.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        },
+        {
+          "text": "Segment operating margins decreased 50 basis points to 20.1 percent primarily due to the lower sales volume.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "The decrease in Government Systems operating earnings as a percent of sales was primarily due to lower sales volumes.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs have shown a mixed trend, with a decrease in production inventory and other operating costs leading to lower cash payments, while raw material and component costs remain stable without significant changes impacting the current period.",
+      "evidence": [
+        {
+          "text": "Lower payments for production inventory and other operating costs decreased $23 million to $1.054 billion.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        },
+        {
+          "text": "Cost of sales consists of all costs incurred to design and manufacture our products and provide our services and includes R&D, raw material, labor, facility, product warranty, depreciation, amortization, service and support and other related expenses.",
+          "section": "mda",
+          "subsection": "Cost of Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company's approach to shareholder returns is mixed. While it is maintaining buybacks and dividends, which is a positive sign of confidence, there is no explicit mention of a strategy focused on maximizing shareholder returns in the overview and outlook section.",
+      "evidence": [
+        {
+          "text": "The company is maintaining buybacks and dividends, signaling confidence.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "We were in compliance with all debt covenants at December 31, 2015 and September 30, 2015.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "Shareholder returns are not explicitly discussed, but the company is focusing on operational efficiency and growth.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "No specific mention of buybacks or dividends in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditures outlook is mixed. While capital expenditures are expected to be around $200 million for 2016, indicating confidence in future growth, there is a decrease in cash used for investing activities by $28 million compared to the previous year.",
+      "evidence": [
+        {
+          "text": "Cash used for investing activities for the three months ended December 31, 2015 decreased $28 million compared to the same period last year.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        },
+        {
+          "text": "\u2022capital expenditures of about $200 million",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is expected to be strong, with projections in the range of $750 million to $850 million. This improvement is supported by robust cash flow from operations and the company's ability to access credit markets, which aids in executing growth strategies and returning value to shareholders.",
+      "evidence": [
+        {
+          "text": "Free cash flow generation is improving, supported by strong cash flow from operations and strategic financing activities.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        },
+        {
+          "text": "Our ability to generate significant cash flow from operating activities, coupled with our expected ability to access the credit markets, enables us to execute our growth strategies and return value to our shareowners.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "Free cash flow is expected to be in the range of $750 million to $850 million, indicating strong cash generation.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "Cash provided by operating activities in the range of $750 million to $850 million.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The company has demonstrated positive forward guidance, with management both maintaining and raising expectations, reflecting confidence in future performance and the impact of beneficial tax credits.",
+      "evidence": [
+        {
+          "text": "The company expects this trend to continue in the future.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        },
+        {
+          "text": "We are increasing our 2016 earnings per share guidance by 25 cents primarily due to the benefit of the Federal R&D Tax Credit, partially offset by higher restructuring and incentive compensation expense.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

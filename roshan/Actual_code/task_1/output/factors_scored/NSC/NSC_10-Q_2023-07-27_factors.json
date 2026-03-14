@@ -1,0 +1,163 @@
+{
+  "ticker": "NSC",
+  "form": "10-Q",
+  "filing_date": "2023-07-27",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 9,
+  "factors": [
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to environmental regulations and costs related to cleanup and remediation activities.",
+      "evidence": [
+        {
+          "text": "Our environmental estimates are based upon types of remediation efforts currently anticipated, the volume of contaminants in the impacted areas, and governmental oversight and other costs, amongst other factors.",
+          "section": "mda",
+          "subsection": "Contingencies"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces ongoing costs and risks related to environmental regulations and cleanup efforts.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable as the company has collective bargaining agreements in place and is engaged in voluntary local discussions with unions.",
+      "evidence": [
+        {
+          "text": "Approximately 80% of our railroad employees are covered by collective bargaining agreements with various labor unions... We largely bargain nationally in concert with other major railroads... neither party can compel mandatory bargaining around any new proposals until November 1, 2024.",
+          "section": "mda",
+          "subsection": "Labor Agreements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable collective bargaining agreements suggest no immediate labor issues, but future negotiations could pose risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are decelerating, particularly in the intermodal and merchandise segments.",
+      "evidence": [
+        {
+          "text": "Second Quarter First Six Months Revenues 2023 2022 % change 2023 2022 % change Merchandise: ... Intermodal revenues decreased in both periods the result of lower average revenue per unit, driven by lower fuel surcharge revenue and storage service charges, and decreased volume.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is decelerating in key segments, indicating potential revenue decline.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volumes are declining in several segments, including intermodal and coal, while some merchandise categories show mixed performance.",
+      "evidence": [
+        {
+          "text": "Intermodal units (in thousands) by market were as follows: ... Domestic volume declined in both periods due to a decrease in freight demand as a result of reduced consumer consumption combined with high inventories. ... Coal tonnage declined during the second quarter but rose for the first six months.",
+          "section": "mda",
+          "subsection": "Intermodal"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining volumes across multiple segments suggest weaker demand and possible revenue decreases.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is facing challenges in pricing power, particularly due to lower fuel surcharge revenues.",
+      "evidence": [
+        {
+          "text": "The decrease in fuel surcharge revenues is driven by lower fuel commodity prices. ... For the remainder of 2023, we expect that revenue will decline compared to 2022 driven by lower fuel prices, declining storage service charges, and softening coal pricing.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Reduced pricing power due to lower fuel surcharge revenues and declining storage service charges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are acting as a headwind, with a weaker demand environment affecting the company's ability to grow revenue.",
+      "evidence": [
+        {
+          "text": "The reduction in revenue was due to a decline in volumes, as service challenges and a weaker demand environment restricted our ability to grow, and a lower average revenue per unit, driven by lower fuel surcharge revenue.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Weaker economic conditions are acting as a headwind, impacting demand and revenue growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are a mixed bag, with fuel costs decreasing but other costs like materials and labor increasing.",
+      "evidence": [
+        {
+          "text": "Fuel expense, which includes the cost of locomotive fuel as well as other fuel used in railway operations, decreased in both periods due to lower locomotive fuel prices ... Materials and other expenses increased in both periods as follows ...",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed input cost trends with fuel costs decreasing but other costs increasing, resulting in an uncertain impact on margins.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow has decreased, with cash provided by operating activities lower than the previous year, though liquidity remains sufficient.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities was $1.8 billion for the first six months of 2023, compared with $2.0 billion for the same period of 2022. ... We expect cash on hand combined with cash provided by operating activities will be sufficient to meet our ongoing obligations.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION AND LIQUIDITY"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Decreased free cash flow indicates some financial pressure, but liquidity remains sufficient, showing resilience.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure due to the Eastern Ohio incident, which has resulted in substantial associated costs and ongoing legal proceedings.",
+      "evidence": [
+        {
+          "text": "We are currently involved in certain environmental response and remediation activities and subject to numerous legal proceedings and regulatory inquiries and investigations resulting from the Incident.",
+          "section": "mda",
+          "subsection": "Contingencies"
+        },
+        {
+          "text": "During the second quarter and the first six months of 2023, we recorded $416 million and $803 million, respectively, for costs primarily associated with environmental matters and legal proceedings.",
+          "section": "mda",
+          "subsection": "Eastern Ohio incident"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

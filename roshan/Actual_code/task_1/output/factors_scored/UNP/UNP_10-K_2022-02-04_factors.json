@@ -1,0 +1,484 @@
+{
+  "ticker": "UNP",
+  "form": "10-K",
+  "filing_date": "2022-02-04",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is successfully raising prices.",
+      "evidence": [
+        {
+          "text": "Operating ratio improved 2.7 points compared to 2020 mainly driven by a 2020 one-time impairment, core pricing gains, productivity initiatives, and positive mix of traffic.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company successfully raising prices indicates strong pricing power.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, but the company is managing them through productivity.",
+      "evidence": [
+        {
+          "text": "Fuel prices increased significantly, contributing to higher expenses, but the company achieved a 1% improvement in fuel consumption rate.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Rising input costs are partially offset by productivity improvements, resulting in a mixed sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is confident.",
+      "evidence": [
+        {
+          "text": "The company increased dividends twice during 2021 and repurchased shares totaling $7.3 billion.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's actions, such as dividend increases and share repurchases, demonstrate confidence.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are increasing.",
+      "evidence": [
+        {
+          "text": "The company expects its 2022 capital plan to be approximately $3.3 billion, up 10% compared to 2021.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "An increase in capital expenditures is a strategic move without clear positive or negative implications.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is improving.",
+      "evidence": [
+        {
+          "text": "Adjusted debt to adjusted EBITDA improved to 2.7 times in 2021 from 2.9 times in 2020.",
+          "section": "mda",
+          "subsection": "Adjusted Debt / Adjusted EBITDA"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Improved debt leverage significantly reduces financial risk, indicating a very positive development.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are increasing.",
+      "evidence": [
+        {
+          "text": "The company increased dividends twice during 2021 and repurchased shares totaling $7.3 billion.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased dividends and share repurchases indicate strong shareholder returns.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is strong.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities was $9.0 billion in 2021.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Strong free cash flow of $9.0 billion is a clear positive indicator of financial health.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes are creating new costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "We are subject to significant governmental regulation... Many laws and regulations require us to obtain and maintain various licenses, permits, and other authorizations... Significant legislative activity... could expand regulation of railroad operations and pricing...",
+          "section": "risk_factors",
+          "subsection": "Legal and Regulatory Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes are creating new costs and operational constraints, which are negative developments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations are creating significant compliance costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "We are subject to extensive federal, state, and local environmental laws and regulations... Environmental liability can extend to previously owned or operated properties... We could incur significant costs as a result of any of the foregoing...",
+          "section": "risk_factors",
+          "subsection": "Legal and Regulatory Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant compliance costs and operational constraints indicate a moderate headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation and claims exposure.",
+      "evidence": [
+        {
+          "text": "We are exposed to the potential for various claims and litigation related to labor and employment, personal injury, property damage, environmental liability, and other matters... Any material changes to litigation trends or a catastrophic rail accident... could have a material adverse effect...",
+          "section": "risk_factors",
+          "subsection": "Legal and Regulatory Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Exposure to various claims and potential material adverse effects pose a moderate risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is facing potential workforce changes due to labor shortages and disputes.",
+      "evidence": [
+        {
+          "text": "Changes in demographics, training requirements, and the availability of qualified personnel... could negatively affect our ability to meet demand for rail service... Labor disputes, work stoppages, slowdowns, or lockouts... could have a material adverse effect...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor shortages and disputes negatively affect operational capacity, indicating a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are a risk due to potential strikes and disputes.",
+      "evidence": [
+        {
+          "text": "Strikes or work stoppages could cause a significant disruption of our operations... Labor disputes, work stoppages, slowdowns, or lockouts... could have a material adverse effect...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential strikes and disputes threaten operational continuity, posing a moderate risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is facing challenges in retaining qualified personnel.",
+      "evidence": [
+        {
+          "text": "Changes in demographics, training requirements, and the availability of qualified personnel... could negatively affect our ability to meet demand for rail service...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenges in retaining personnel negatively impact meeting demand, indicating a moderate headwind.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "Environmental regulations and compliance are creating costs and risks.",
+      "evidence": [
+        {
+          "text": "We are subject to extensive federal, state, and local environmental laws and regulations... Environmental liability can extend to previously owned or operated properties... We could incur significant costs as a result of any of the foregoing...",
+          "section": "risk_factors",
+          "subsection": "Legal and Regulatory Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory costs and liabilities create significant risks, indicating a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, as evidenced by increases in gross and revenue ton-miles. However, demand fluctuations and potential network capacity constraints could impact future volume trends.",
+      "evidence": [
+        {
+          "text": "Gross ton-miles and revenue ton-miles increased 6% and 7%, respectively, compared to 2020, driven by a 4% increase in carloadings.",
+          "section": "mda",
+          "subsection": "OTHER OPERATING/PERFORMANCE AND FINANCIAL STATISTICS / Operating/Performance Statistics"
+        },
+        {
+          "text": "If there is significant demand for our services that exceeds the designed capacity of our network, we may experience network difficulties... Unpredictable increases in demand for rail services and a lack of network fluidity may exacerbate such risks...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Growth in ton-miles is offset by risks from demand fluctuations and capacity constraints, resulting in mixed signals.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand for rail services is accelerating, but this trend carries risks. While higher demand is leading to increased operational costs and challenges, significant fluctuations in demand could result in additional expenses and network difficulties.",
+      "evidence": [
+        {
+          "text": "Operating expenses increased $767 million in 2021 compared to 2020 driven by higher fuel prices, volume-related costs, inflation, higher casualty costs, 2020 management actions, weather and wildfire-related expenses, incentive compensation, and higher state and local taxes.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Significant reductions in demand for rail services... can lead to increased costs associated with resizing our operations... If there is significant demand for our services that exceeds the designed capacity of our network, we may experience network difficulties...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Accelerating demand leads to higher costs and potential network issues, posing a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising, driven by factors such as inflation, weather-related events, and volume-related costs, but productivity initiatives have helped manage these increases. However, there are risks associated with labor shortages, training requirements, and potential labor disputes, which could negatively impact the company's ability to meet demand and result in material adverse effects.",
+      "evidence": [
+        {
+          "text": "Compensation and benefits increased 4% due to volume-related costs, inflation, and weather-related events, but employee levels declined 3% despite a 4% volume increase.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Changes in demographics, training requirements, and the availability of qualified personnel... could negatively affect our ability to meet demand for rail service... Labor disputes, work stoppages, slowdowns, or lockouts... could have a material adverse effect...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs and associated risks pose a moderate headwind despite productivity initiatives.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are expanding, as evidenced by the improvement in the operating ratio and the increase in return on average common shareholders' equity.",
+      "evidence": [
+        {
+          "text": "Operating ratio improved 2.7 points compared to 2020, and return on average common shareholders' equity increased to 41.9%",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating ratio improved 2.7 points compared to 2020, and return on average common shareholders' equity increased to 41.9%",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Improving margins with a better operating ratio and higher return on equity indicate strong positive developments.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction programs are delivering measurable savings, as evidenced by productivity initiatives that resulted in a 3% decline in employee levels despite a 4% volume increase.",
+      "evidence": [
+        {
+          "text": "Productivity initiatives resulted in a 3% decline in employee levels despite a 4% volume increase.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Measurable savings from productivity initiatives suggest a moderate improvement in cost management.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, as evidenced by a 10% increase in workforce productivity, which reached an all-time record. This improvement was supported by a 3% reduction in employee counts and a 6% increase in average daily car miles. Additionally, the company is actively working to improve operational efficiency through various initiatives, including enhancing transportation plans, adding capacity, and improving operations at yards and other facilities to address surges in demand.",
+      "evidence": [
+        {
+          "text": "Workforce productivity improved 10%, reaching an all-time record as employee counts were down 3% compared to 2020, while average daily car miles increased 6%",
+          "section": "mda",
+          "subsection": "OTHER OPERATING/PERFORMANCE AND FINANCIAL STATISTICS / Operating/Performance Statistics"
+        },
+        {
+          "text": "Although we continue to improve our transportation plan, add capacity, improve operations at our yards and other facilities, and improve our ability to address surges in demand for any reason with adequate resources...",
+          "section": "mda",
+          "subsection": "OTHER OPERATING/PERFORMANCE AND FINANCIAL STATISTICS / Operating/Performance Statistics"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Significant productivity improvements and operational efficiency initiatives indicate a major positive development.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment has been a tailwind, as evidenced by the significant increase in net income to $6.5 billion in 2021, reflecting strong economic conditions.",
+      "evidence": [
+        {
+          "text": "Net income increased to $6.5 billion in 2021, reflecting strong economic conditions.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Net income increased to $6.5 billion in 2021, reflecting strong economic conditions.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Strong economic conditions contributing to a $6.5 billion net income reflect a very positive tailwind.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rates remain stable, as evidenced by the consistent effective interest rate of 4.1% for both 2021 and 2020.",
+      "evidence": [
+        {
+          "text": "The effective interest rate was 4.1% for both 2021 and 2020.",
+          "section": "mda",
+          "subsection": "Non-Operating Items"
+        },
+        {
+          "text": "The effective interest rate was 4.1% for both 2021 and 2020.",
+          "section": "mda",
+          "subsection": "Non-Operating Items"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable interest rates do not indicate a clear directional signal for the company's financials.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include supply chain disruptions, inflation, labor disputes, and regulatory changes. These risks could impact operations, disrupt rail services, and lead to increased regulatory scrutiny.",
+      "evidence": [
+        {
+          "text": "Global supply chain disruptions and inflationary pressures are impacting operations.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Strikes or work stoppages could disrupt our operations... Changes in demographics, training requirements, and the availability of qualified personnel... could negatively affect our ability to meet demand for rail service... Significant legislative activity... could expand regulation of railroad operations and pricing...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Multiple near-term risks pose moderate headwinds to operations and financial performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is currently facing disruptions, which have negatively impacted intermodal trip plan compliance and overall network efficiency. Additionally, there are significant risks associated with shortages and delays, particularly due to reliance on a limited number of steel producers and the critical role of rail in operations.",
+      "evidence": [
+        {
+          "text": "Global supply chain disruptions impacted intermodal trip plan compliance and overall network efficiency.",
+          "section": "mda",
+          "subsection": "OTHER OPERATING/PERFORMANCE AND FINANCIAL STATISTICS / Operating/Performance Statistics"
+        },
+        {
+          "text": "We rely on a limited number of steel producers that meet our specifications. Rail is critical to our operations... If one of these suppliers discontinues operations for any reason... we could experience both significant cost increases for rail purchases and difficulty obtaining sufficient rail...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain disruptions and reliance risks indicate a moderate negative impact on operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is increasing, though there are concerns about potential network constraints and demand fluctuations that could impact service quality.",
+      "evidence": [
+        {
+          "text": "Train length increased 6% compared to 2020 as a result of blending service products and transportation plan changes.",
+          "section": "mda",
+          "subsection": "OTHER OPERATING/PERFORMANCE AND FINANCIAL STATISTICS / Operating/Performance Statistics"
+        },
+        {
+          "text": "If there is significant demand for our services that exceeds the designed capacity of our network, we may experience network difficulties... We may experience other operational or service difficulties related to network capacity...",
+          "section": "risk_factors",
+          "subsection": "Strategic and Operational Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The factor shows both positive signs of increasing utilization and negative concerns about potential network constraints.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

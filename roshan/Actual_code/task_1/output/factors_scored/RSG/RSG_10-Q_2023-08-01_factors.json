@@ -1,0 +1,374 @@
+{
+  "ticker": "RSG",
+  "form": "10-Q",
+  "filing_date": "2023-08-01",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 20,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is increasing due to higher outstanding debt and interest rates.",
+      "evidence": [
+        {
+          "text": "Total interest expense for the three and six months ended June 30, 2023 increased primarily due to additional outstanding debt on our term loan and revolving lines of credit used to fund the purchase of US Ecology and higher interest rates on our floating rate debt.",
+          "section": "mda",
+          "subsection": "Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher debt and interest rates are increasing financial strain.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisitions are creating value through growth and integration, but also contributing to higher costs.",
+      "evidence": [
+        {
+          "text": "Amortization expense increased due to assets added through acquisition activity.",
+          "section": "mda",
+          "subsection": "Amortization of Other Intangible Assets"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Acquisition costs are rising despite growth.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Higher interest rates are increasing debt service costs.",
+      "evidence": [
+        {
+          "text": "If interest rates increased or decreased by 100 basis points on our variable rate debt, annualized interest expense and net cash payments for interest would increase or decrease by approximately $25 million.",
+          "section": "mda",
+          "subsection": "Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher rates increase debt service costs significantly.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is accelerating due to increased revenue from acquisitions, higher average yield, and volume growth.",
+      "evidence": [
+        {
+          "text": "Revenue for the six months ended June 30, 2023 increased by 14.5% to $7,307.0 million compared to $6,383.7 million for the same period in 2022. This change in revenue is due to increased revenue from acquisitions, net of divestitures of 7.5%, increases in average yield of 6.2%, volume of 0.9%, fuel recovery fees of 0.4%, and environmental solutions revenue of 0.4%.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Revenue is growing strongly across multiple drivers.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments, particularly environmental solutions, which is beneficial.",
+      "evidence": [
+        {
+          "text": "Environmental solutions revenue increased by 0.2% and 0.4% during the three and six months ended June 30, 2023, respectively, primarily due to an increase in volumes, including those driven by an increase in rig counts, as well as price increases.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift to higher-margin segments is beneficial.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, particularly in landfills and small-container collection, contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "Volume increased revenue by 0.4% and 0.9% during the three and six months ended June 30, 2023, respectively, primarily due to volume growth in our landfill, small-container and residential lines of business.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Volume growth contributes to revenue increase.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The fastest-growing end market is environmental solutions, driven by increased rig counts and price increases.",
+      "evidence": [
+        {
+          "text": "Environmental solutions revenue increased by 0.2% and 0.4% during the three and six months ended June 30, 2023, respectively, primarily due to an increase in volumes, including those driven by an increase in rig counts, as well as price increases.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Rapid growth in environmental solutions.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring charges are part of ongoing efforts, but their impact on savings is not explicitly quantified.",
+      "evidence": [
+        {
+          "text": "During the three and six months ended June 30, 2023, we incurred restructuring charges of $15.5 million and $21.0 million, respectively, and during the three and six months ended June 30, 2022, we incurred restructuring charges of $5.9 million and $11.9 million, respectively.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increasing restructuring charges without clear savings.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is showing confidence through investments in acquisitions and expanding services.",
+      "evidence": [
+        {
+          "text": "We expect to incur additional costs of approximately $15 million to integrate the US Ecology business, primarily related to the integration of certain software systems as well as rebranding the business. We expect to be substantially complete with our integration activities by the end of 2023.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's investments in acquisitions and expanding services indicate confidence in future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include commodity price volatility affecting recycling revenue.",
+      "evidence": [
+        {
+          "text": "Changing market demand for recycled commodities causes volatility in commodity prices. At current volumes and mix of materials, we believe a $10 per ton change in the price of recycled commodities would change both annual revenue and operating income by approximately $10 million.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Commodity price volatility poses a moderate risk to recycling revenue.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is clear, focusing on acquisitions and expanding environmental services.",
+      "evidence": [
+        {
+          "text": "We expect to incur additional costs of approximately $15 million to integrate the US Ecology business, primarily related to the integration of certain software systems as well as rebranding the business. We expect to be substantially complete with our integration activities by the end of 2023.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Clear focus on acquisitions and expanding environmental services suggests a strong long-term vision.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Commodity prices and fuel costs are significant variables impacting near-term results.",
+      "evidence": [
+        {
+          "text": "Changing market demand for recycled commodities causes volatility in commodity prices. At current volumes and mix of materials, we believe a $10 per ton change in the price of recycled commodities would change both annual revenue and operating income by approximately $10 million. At current consumption levels, we believe a twenty-cent per gallon change in the price of diesel fuel would change our fuel costs by approximately $27 million per year.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Commodity prices and fuel costs are significant but do not indicate a clear directional trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The integration of US Ecology is a near-term catalyst for growth.",
+      "evidence": [
+        {
+          "text": "We expect to incur additional costs of approximately $15 million to integrate the US Ecology business, primarily related to the integration of certain software systems as well as rebranding the business. We expect to be substantially complete with our integration activities by the end of 2023.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Integration of US Ecology is expected to drive growth in the near term.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "The company's differentiation comes from its scale and position as a leading environmental services provider.",
+      "evidence": [
+        {
+          "text": "Republic is one of the largest providers of environmental services in the United States, as measured by revenue.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Leading position as a large environmental services provider highlights strong differentiation.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is in a restructuring phase, with efforts focused on software system redesign and lease terminations.",
+      "evidence": [
+        {
+          "text": "During the three and six months ended June 30, 2023, we incurred restructuring charges of $15.5 million and $21.0 million, respectively, and during the three and six months ended June 30, 2022, we incurred restructuring charges of $5.9 million and $11.9 million, respectively.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Ongoing restructuring charges indicate challenges in workforce management.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is present but appears to be decelerating, with evidence suggesting that while organic growth exists, it is not the primary driver of revenue growth. Instead, acquisitions have played a significant role in driving revenue increases, which may be contributing to the observed deceleration in organic growth.",
+      "evidence": [
+        {
+          "text": "Depreciation and amortization of property and equipment increased in aggregate dollars for the three and six months ended June 30, 2023 primarily due to assets added through acquisitions.",
+          "section": "mda",
+          "subsection": "Depreciation, Amortization and Depletion of Property and Equipment"
+        },
+        {
+          "text": "Acquisitions, net of divestitures, increased revenue by 4.4% and 7.5% during the three and six months ended June 30, 2023, respectively, reflecting the results of our continued growth strategy of acquiring solid waste, recycling, and environmental services companies that complement and expand our existing business platform.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decelerating organic growth, with acquisitions as a primary driver, suggests a moderate headwind.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company exhibits mixed performance in pricing power, with evidence of successful price increases across all lines of business, which has positively contributed to revenue growth, while simultaneously facing margin compression due to higher labor and third-party maintenance costs, as well as decreased recycled commodity prices.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA margin for the three and six months ended June 30, 2023 was unfavorably impacted by an increase in labor costs, higher third party maintenance costs due to inflationary pressures and a decrease in recycled commodity prices.",
+          "section": "mda",
+          "subsection": "Group 1"
+        },
+        {
+          "text": "Average yield increased revenue by 5.9% and 6.2% during the three and six months ended June 30, 2023, respectively, due to price increases in all lines of business.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The factor shows both positive revenue growth from price increases and negative margin compression, resulting in a mixed sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is experiencing mixed margin performance, with gross margins remaining stable while operating margins are under pressure due to higher labor and maintenance costs. However, these pressures are partially offset by decreases in fuel costs, leading to an overall mixed margin trajectory.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA margin for the three and six months ended June 30, 2023 was unfavorably impacted by an increase in labor costs, higher third party maintenance costs due to inflationary pressures and a decrease in recycled commodity prices. The unfavorable impact was partially offset by decreases in fuel costs due to a decrease in average fuel cost per gallon.",
+          "section": "mda",
+          "subsection": "Group 1"
+        },
+        {
+          "text": "Our pre-tax income was $580.2 million and $1,102.3 million for the three and six months ended June 30, 2023, respectively, compared to $478.1 million and $950.3 million for the same respective periods in 2022.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "While there are some positive offsets like decreased fuel costs, the overall impact from higher labor and maintenance costs is unfavorable.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing, creating margin pressure and are attributed to higher hourly wages, merit increases, volume-related growth, and an additional workday. These increases are impacting the adjusted EBITDA margin unfavorably.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA margin for the three and six months ended June 30, 2023 was unfavorably impacted by an increase in labor costs...",
+          "section": "mda",
+          "subsection": "Group 1"
+        },
+        {
+          "text": "Labor and related benefits increased due to higher hourly and salaried wages as a result of annual merit increases, volume-related growth, and one additional workday in 2023. Acquisition-related growth also contributed to the increase in labor and related benefits.",
+          "section": "mda",
+          "subsection": "Cost of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing, leading to unfavorable impacts on margins, indicating a clear negative sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs experienced mixed trends, with decreasing recycled commodity prices contributing to margin pressure, while fuel costs declined due to lower diesel prices, partially offset by the fuel recovery fee program.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA margin for the three and six months ended June 30, 2023 was unfavorably impacted by... a decrease in recycled commodity prices.",
+          "section": "mda",
+          "subsection": "Group 1"
+        },
+        {
+          "text": "Our fuel costs decreased due to a decrease in the average diesel fuel cost per gallon. The national average diesel fuel cost per gallon for the three and six months ended June 30, 2023 was $3.94 and $4.18, respectively, as compared to $5.49 and $4.87, respectively, for the same periods in 2022.",
+          "section": "mda",
+          "subsection": "Cost of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The factor experiences mixed trends with negative impacts from recycled commodity prices partially offset by lower fuel costs, resulting in an overall neutral sentiment.",
+        "confidence": 0.65
+      }
+    }
+  ]
+}

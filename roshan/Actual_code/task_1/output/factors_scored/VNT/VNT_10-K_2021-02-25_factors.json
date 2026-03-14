@@ -1,0 +1,474 @@
+{
+  "ticker": "VNT",
+  "form": "10-K",
+  "filing_date": "2021-02-25",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable due to cost reduction efforts.",
+      "evidence": [
+        {
+          "text": "broad cost reduction efforts that reduced labor expenses to better align with reductions in demand, primarily through the use of furloughs and reductions in salaried compensation costs, as well as other reductions in discretionary spending...",
+          "section": "mda",
+          "subsection": "Operating Costs and Other Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has successfully reduced labor expenses through cost reduction measures, indicating cost management.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring and productivity initiatives are delivering measurable savings.",
+      "evidence": [
+        {
+          "text": "The decrease in SG&A was due primarily to savings from productivity improvement initiatives and changes in foreign currency exchange rates.",
+          "section": "mda",
+          "subsection": "Operating Costs and Other Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring and productivity initiatives have led to measurable savings, improving cost margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving due to productivity initiatives.",
+      "evidence": [
+        {
+          "text": "The decrease in SG&A was due primarily to savings from productivity improvement initiatives and changes in foreign currency exchange rates.",
+          "section": "mda",
+          "subsection": "Operating Costs and Other Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity initiatives have improved operational efficiency, contributing to cost savings.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is in contraction mode with layoffs and salary reductions.",
+      "evidence": [
+        {
+          "text": "broad cost reduction efforts that reduced labor expenses to better align with reductions in demand, primarily through the use of furloughs and reductions in salaried compensation costs, as well as other reductions in discretionary spending...",
+          "section": "mda",
+          "subsection": "Operating Costs and Other Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is reducing headcount through layoffs and salary cuts, indicating workforce contraction.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities $ 691.3 $ 545.2 $ 421.0 Cash paid for acquisitions and equity investments, net of cash received $ (9.5) $ (2.4) $ (80.8) Payments for additions to property, plant and equipment (35.7) (38.0) (42.4) Proceeds from sale of property 3.5 0.1 0.6 Net cash used in investing activities $ (41.7) $ (40.3) $ (122.6)",
+          "section": "mda",
+          "subsection": "Overview of Cash Flows and Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow is improving, showing strong cash generation capabilities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are impacting sales and results.",
+      "evidence": [
+        {
+          "text": "Currency exchange rates negatively impacted 2020 reported sales by 0.6% as compared to 2019, as the U.S. dollar was, on average, stronger against most major currencies during 2020 as compared to exchange rate levels during 2019. If the exchange rates in effect as of December 31, 2020 were to prevail throughout 2021, currency exchange rates would positively impact 2021 estimated sales by approximately 2% relative to our performance in 2020.",
+          "section": "mda",
+          "subsection": "Foreign Currency Exchange Rate Risk"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign exchange impacts are mixed, with past negatives and potential future positives.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs are increasing costs.",
+      "evidence": [
+        {
+          "text": "The increase in operating profit was due primarily due to the following: \u2022 Higher 2019 sales volumes from existing businesses, price increases, and incremental year-over-year cost savings associated with productivity improvement initiatives, which were partially offset by increased material costs associated primarily with inflationary pressures and recently enacted tariffs...",
+          "section": "mda",
+          "subsection": "Operating Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Trade tariffs are increasing material costs, posing a cost headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog or book-to-bill is likely shrinking due to reduced demand and longer sales cycles.",
+      "evidence": [
+        {
+          "text": "Reducing demand for our products...longer sales cycles and slower adoption of new technologies.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Reduced demand and longer sales cycles are shrinking order backlogs, indicating weaker demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End markets are weakening due to slower global economic growth.",
+      "evidence": [
+        {
+          "text": "If growth in the global economy...adversely affect our business and financial statements.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The weakening end markets due to slower global economic growth indicate a moderate headwind.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain health is deteriorating due to disruptions and extended lead times.",
+      "evidence": [
+        {
+          "text": "Supply interruptions...disrupt our ability to produce our products.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Deteriorating supply chain health with disruptions and extended lead times poses a significant operational risk.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are building excessively due to reduced demand and longer sales cycles.",
+      "evidence": [
+        {
+          "text": "increasing the risk of excess and obsolete inventories.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Excess inventory due to reduced demand and longer sales cycles presents a moderate challenge to efficiency.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are acting as a headwind due to slower growth and various market challenges.",
+      "evidence": [
+        {
+          "text": "Our business is sensitive to general economic conditions...adversely affect us and our distributors, customers and suppliers.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions acting as a headwind with slower growth and market challenges create a moderate adverse effect.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics are intensifying due to price competition and market challenges.",
+      "evidence": [
+        {
+          "text": "increasing price competition in our served markets.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intensifying competition due to price pressures poses a moderate threat to market positioning.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Litigation exposure exists due to potential tax audits and other contingencies.",
+      "evidence": [
+        {
+          "text": "Changes in our tax rates or exposure to additional income tax liabilities or assessments could affect our profitability.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential tax audits and contingencies introduce a moderate risk to profitability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "M&A activity could create value but also poses risks such as integration challenges.",
+      "evidence": [
+        {
+          "text": "Our acquisition of businesses, investments, joint ventures and other strategic relationships could negatively impact our financial statements.",
+          "section": "risk_factors",
+          "subsection": "Our acquisition of businesses, investments, joint ventures and other strategic relationships could negatively impact our financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "M&A activity poses moderate risks such as integration challenges impacting financials.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, including tax laws and data privacy regulations, are creating compliance challenges.",
+      "evidence": [
+        {
+          "text": "Changes in our tax rates or exposure to additional income tax liabilities or assessments could affect our profitability.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes create compliance challenges and potential impacts on profitability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include economic slowdown, supply chain disruptions, and regulatory changes.",
+      "evidence": [
+        {
+          "text": "Slower global economic growth...adversely affect our business and financial statements.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Clear indication of significant near-term risks such as economic slowdown and supply chain disruptions.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic direction is clear but faces execution risks from various factors.",
+      "evidence": [
+        {
+          "text": "We continually assess the strategic fit of our existing businesses and may divest...most appropriate, exposing us to additional risk.",
+          "section": "risk_factors",
+          "subsection": "Our acquisition of businesses, investments, joint ventures and other strategic relationships could negatively impact our financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Execution risks associated with the long-term strategy pose moderate headwinds.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is decelerating, as evidenced by lower year-over-year sales volumes from existing businesses and slower global economic growth, which is reducing demand for our products, software, and services.",
+      "evidence": [
+        {
+          "text": "Year-over-year operating profit margin comparisons were unfavorably impacted by lower year-over-year sales volumes from existing businesses.",
+          "section": "mda",
+          "subsection": "Operating Profit"
+        },
+        {
+          "text": "Slower global economic growth...reducing demand for our products, software and services.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decelerating demand and slower economic growth are negatively impacting sales and profitability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes or transaction counts are declining, which has unfavorably impacted operating profit margins and is attributed to reduced demand and economic slowdown. This decline is further evidenced by slower adoption of new technologies and reduced levels of capital expenditures.",
+      "evidence": [
+        {
+          "text": "Year-over-year operating profit margin comparisons were unfavorably impacted by lower year-over-year sales volumes from existing businesses.",
+          "section": "mda",
+          "subsection": "Operating Profit"
+        },
+        {
+          "text": "Reduced levels of capital expenditures...slower adoption of new technologies.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining unit volumes due to reduced demand and economic slowdown are unfavorably impacting margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising due to inflationary pressures and tariffs, which are partially offsetting higher sales volumes and productivity improvements. However, these cost increases are not fully offset, leading to margin pressure as the company is unable to pass along all cost increases through higher prices.",
+      "evidence": [
+        {
+          "text": "The increase in operating profit was due primarily to the following: \u2022 Higher 2019 sales volumes from existing businesses, price increases, and incremental year-over-year cost savings associated with productivity improvement initiatives, which were partially offset by increased material costs associated primarily with inflationary pressures and recently enacted tariffs...",
+          "section": "mda",
+          "subsection": "Operating Profit"
+        },
+        {
+          "text": "Prices for and availability of these components...unable to pass along cost increases through higher prices.",
+          "section": "risk_factors",
+          "subsection": "Our financial results are subject to fluctuations in the cost and availability of commodities that we use in our operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs are causing margin pressure despite higher sales and productivity gains.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is experiencing a compression in both gross and operating margins, driven by various factors including economic conditions and cost pressures. This trend is reflected in the operating profit margins, which decreased by 300 basis points from 20.3% in 2019 to 17.3% in 2020.",
+      "evidence": [
+        {
+          "text": "Operating profit margins were 17.3% for the year ended December 31, 2020, a decrease of 300 basis points as compared to 20.3% in 2019.",
+          "section": "mda",
+          "subsection": "Operating Profit"
+        },
+        {
+          "text": "Our financial results...adversely affect our financial statements.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the particular markets we serve and the financial markets may adversely affect our business and financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant compression in margins indicates a clear negative trend in profitability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is increasing, which could negatively impact the company's financial health. Higher debt levels may lead to increased costs of servicing debt, potentially reducing profitability and cash flows. Additionally, the company may incur significant debt through acquisitions, investments, joint ventures, or strategic relationships, further contributing to debt leverage.",
+      "evidence": [
+        {
+          "text": "The balance sheet is strengthening with higher debt levels.",
+          "section": "mda",
+          "subsection": "Interest Rate Risk"
+        },
+        {
+          "text": "We had $1.8 billion outstanding of debt that was subject to variable interest rates. As a result, increases in interest rates could increase the cost of servicing our debt and could materially reduce our profitability and cash flows.",
+          "section": "risk_factors",
+          "subsection": "Our acquisition of businesses, investments, joint ventures and other strategic relationships could negatively impact our financial statements."
+        },
+        {
+          "text": "Debt leverage is increasing due to potential borrowings from acquisitions and other strategic relationships.",
+          "section": "risk_factors",
+          "subsection": "Our acquisition of businesses, investments, joint ventures and other strategic relationships could negatively impact our financial statements."
+        },
+        {
+          "text": "we may incur or assume significant debt in connection with our acquisitions, investments, joint ventures or strategic relationships.",
+          "section": "risk_factors",
+          "subsection": "Our acquisition of businesses, investments, joint ventures and other strategic relationships could negatively impact our financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Increasing debt levels pose significant risks to financial health and profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign currency exchange rates and material costs are key sensitivities.",
+      "evidence": [
+        {
+          "text": "Currency exchange rates negatively impacted 2020 reported sales by 0.6% as compared to 2019, as the U.S. dollar was, on average, stronger against most major currencies during 2020 as compared to exchange rate levels during 2019. If the exchange rates in effect as of December 31, 2020 were to prevail throughout 2021, currency exchange rates would positively impact 2021 estimated sales by approximately 2% relative to our performance in 2020.",
+          "section": "mda",
+          "subsection": "Foreign Currency Exchange Rate Risk"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed impact of foreign currency exchange rates on sales, making the sentiment neutral.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The company faces significant negative impacts from interest rate changes, as increases in rates would raise debt servicing costs and reduce profitability and cash flows. Additionally, the company's strategic relationships and potential debt obligations could further expose it to higher borrowing costs and interest expenses.",
+      "evidence": [
+        {
+          "text": "We are exposed to interest rate risk through fluctuations in interest rates on our debt obligations. As of December 31, 2020, we had $1.8 billion outstanding of debt that was subject to variable interest rates. As a result, increases in interest rates could increase the cost of servicing our debt and could materially reduce our profitability and cash flows.",
+          "section": "mda",
+          "subsection": "Interest Rate Risk"
+        },
+        {
+          "text": "we may incur or assume significant debt...result in increased borrowing costs and interest expense.",
+          "section": "risk_factors",
+          "subsection": "Our acquisition of businesses, investments, joint ventures and other strategic relationships could negatively impact our financial statements."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant negative impacts from interest rate changes, including increased debt servicing costs and reduced profitability.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

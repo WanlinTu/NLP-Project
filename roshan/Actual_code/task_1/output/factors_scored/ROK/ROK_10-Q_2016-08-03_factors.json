@@ -1,0 +1,111 @@
+{
+  "ticker": "ROK",
+  "form": "10-Q",
+  "filing_date": "2016-08-03",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 6,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is decelerating.",
+      "evidence": [
+        {
+          "text": "Sales in the third quarter of 2016 decreased 6.4 percent compared to the third quarter of 2015. Organic sales decreased 4.8 percent year over year.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is clearly decelerating with significant year-over-year decreases in sales.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating.",
+      "evidence": [
+        {
+          "text": "Organic sales decreased 4.8 percent year over year in the third quarter of 2016.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is decelerating, evidenced by a 4.8% year-over-year decrease.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End market momentum is mixed with weakness in heavy industries offsetting growth in consumer and automotive industries.",
+      "evidence": [
+        {
+          "text": "Growth in consumer and automotive industries was more than offset by continued weakness in heavy industries, particularly oil and gas.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed momentum with significant weakness in heavy industries offsetting growth in other sectors.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are compressing.",
+      "evidence": [
+        {
+          "text": "Total segment operating margin decreased to 20.4% in the third quarter of 2016 from 21.8% in the prior year period.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Gross and operating margins are compressing, indicating margin pressure.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategic direction is clear and well-resourced.",
+      "evidence": [
+        {
+          "text": "Our vision of being the most valued global provider of innovative industrial automation and information products, solutions and services is supported by our growth and performance strategy, which seeks to achieve above-market organic sales growth, EPS growth above sales growth, return on invested capital in excess of 20 percent and free cash flow equal to about 100 percent of Adjusted Income.",
+          "section": "mda",
+          "subsection": "Long-term Strategy"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Clear and well-resourced long-term strategic direction with strong growth targets.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind with mixed indicators in the U.S. and weakness in emerging markets.",
+      "evidence": [
+        {
+          "text": "In the third quarter of 2016, changes in U.S. economic indicators compared to the prior quarter continue to be mixed, with IP and capacity utilization declining, but PMI and industrial equipment spending increasing. Recent third-party IP growth projections continue to be negative for fiscal 2016.",
+          "section": "mda",
+          "subsection": "U. S. Industrial Economic Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions present a headwind with mixed U.S. indicators and emerging market weakness.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

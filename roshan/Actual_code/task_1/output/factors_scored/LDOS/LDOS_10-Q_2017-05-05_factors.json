@@ -1,0 +1,179 @@
+{
+  "ticker": "LDOS",
+  "form": "10-Q",
+  "filing_date": "2017-05-05",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 10,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand for the company's services is growing, particularly in U.S. Government markets.",
+      "evidence": [
+        {
+          "text": "For fiscal 2016, we generated approximately 81% of our total revenues from contracts with the U.S. Government. Accordingly, our business performance is affected by the overall level of U.S. Government spending, especially on national security, homeland security and intelligence, and the alignment of our service and product offerings and capabilities with current and future budget priorities of the U.S. Government.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is growing, especially in a key market segment (U.S. Government).",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is growing, with new orders outpacing revenue.",
+      "evidence": [
+        {
+          "text": "We received net bookings worth an estimated $1.7 billion during the three months ended March 31, 2017, compared to $1.2 billion for the three months ended April 1, 2016, respectively. [...] The estimated value of our total backlog was as follows: [...] Total backlog at March 31, 2017 included $34 million of benefit due to the impact of foreign currency movement between the U.S. dollar and the British pound.",
+          "section": "mda",
+          "subsection": "Bookings and Backlog / Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Order backlog is increasing, indicating strong demand.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is stable, with some acceleration in certain segments.",
+      "evidence": [
+        {
+          "text": "The revenue increase in constant currency (1) for the three months ended March 31, 2017, was 97.4% as compared to an overall increase of 96.6% . The adverse foreign currency impact was attributable to our U.K. business in the Civil segment.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Growth is stable with slight acceleration in some areas, but overall no significant change.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are stable, with slight compression in the short term.",
+      "evidence": [
+        {
+          "text": "Operating margin for the three months ended March 31, 2017, was 5.5%, compared to 6.8% for the prior year period.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Gross and operating margins are stable but show slight compression, indicating potential margin pressure.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring and cost reduction programs are ongoing but have increased costs in the short term.",
+      "evidence": [
+        {
+          "text": "Corporate operating loss increased $19 million for the three months ended March 31, 2017, as compared to the three months ended April 1, 2016. The increase in operating loss was primarily driven by an increase of $13 million of restructuring expenses, and an increase of $10 million of acquisition and integration costs related to the acquisition of the IS&GS Business.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring and cost reduction programs are increasing short-term costs.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "U.S. Government defense budgets are a significant factor, with spending affecting the company's performance.",
+      "evidence": [
+        {
+          "text": "Our business performance is affected by the overall level of U.S. Government spending, especially on national security, homeland security and intelligence, and the alignment of our service and product offerings and capabilities with current and future budget priorities of the U.S. Government.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Defense budgets impact performance, but no clear trend is indicated.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Contract backlog is growing, with new wins outpacing completions.",
+      "evidence": [
+        {
+          "text": "The estimated value of our total backlog was as follows: [...] Total backlog at March 31, 2017 included $34 million of benefit due to the impact of foreign currency movement between the U.S. dollar and the British pound.",
+          "section": "mda",
+          "subsection": "Bookings and Backlog / Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Contract backlog is growing, suggesting increased future revenue.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has completed a significant acquisition, with ongoing integration activities.",
+      "evidence": [
+        {
+          "text": "On August 16, 2016, a wholly-owned subsidiary of Leidos Holdings, Inc. merged with the Information Systems & Global Solutions business (the 'IS&GS Business') of Lockheed Martin Corporation in a Reverse Morris Trust transaction (the 'Transactions'). The acquired IS&GS Business was renamed Leidos Innovations Corporation. [...] We expect to incur additional acquisition and integration costs in connection with the Transactions through fiscal 2019.",
+          "section": "mda",
+          "subsection": "Lockheed Martin Transaction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Significant acquisition with ongoing integration, which could be a double-edged sword.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company has significant foreign exchange exposure, particularly in the U.K., impacting both revenue and margins.",
+      "evidence": [
+        {
+          "text": "The adverse foreign currency impact was primarily due to the movement of the exchange rate between the U.S. dollar and the British pound.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant foreign exchange impacts, particularly from the U.S. dollar to British pound movement, affecting both revenue and margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks in international markets, particularly in the U.K. and Middle East, are increasing due to the company's expanded presence there.",
+      "evidence": [
+        {
+          "text": "International Markets [...] Sales to customers in international markets represented 9% of total revenues for fiscal 2016. Our acquisition of the IS&GS Business has increased the relative contribution from international business, particularly in the United Kingdom ('U.K.') and Australia, and has therefore increased our exposure to international markets and the associated international regulatory and geopolitical risks.",
+          "section": "mda",
+          "subsection": "Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased geopolitical risks in international markets, especially in the U.K. and Middle East, pose a moderate headwind due to the company's expanded presence.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

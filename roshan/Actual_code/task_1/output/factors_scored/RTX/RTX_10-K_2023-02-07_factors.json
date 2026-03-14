@@ -1,0 +1,496 @@
+{
+  "ticker": "RTX",
+  "form": "10-K",
+  "filing_date": "2023-02-07",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 26,
+  "factors": [
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting toward higher-margin services.",
+      "evidence": [
+        {
+          "text": "Net services sales increased $1.2 billion in 2022 compared to 2021 primarily due to increases in external services sales of $1.2 billion at Pratt & Whitney and $0.5 billion at Collins, partially offset by a decrease in external services sales of $0.5 billion at RIS primarily driven by the sale of the global training and services business in the fourth quarter of 2021.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The shift towards higher-margin services indicates significant improvement in profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Backlog is growing, with total backlog increasing from $156 billion to $175 billion.",
+      "evidence": [
+        {
+          "text": "Total backlog was $175 billion and $156 billion as of December\u00a031, 2022 and 2021, respectively.",
+          "section": "mda",
+          "subsection": "FINANCIAL SUMMARY"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The increase in backlog suggests strong demand and positive future revenue expectations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed, with commercial aerospace recovery ongoing but uncertain, while defense demand remains strong.",
+      "evidence": [
+        {
+          "text": "The pace of the commercial aerospace recovery is tied to general economic conditions and may be impacted by inflation, an economic downturn, or government budget deficits, among other factors, and may also be impacted by a resurgence of the pandemic and corresponding travel restrictions and protocols. [...] These adverse impacts have been mitigated in part by the identification of alternative suppliers and an increase in the global demand for our products as a result of the current geopolitical environment.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals from ongoing commercial aerospace recovery and strong defense demand make the trend unclear.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are creating pressure due to shortages and wage inflation.",
+      "evidence": [
+        {
+          "text": "We have had difficulties hiring qualified personnel, particularly personnel with specialized engineering experience and security clearances. [...] Global supply chain and labor markets are continuing to experience high levels of disruption, causing significant materials and parts shortages, including raw material, microelectronics and commodity shortages, as well as delivery delays, labor shortages, distribution problems and price increases.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor shortages and wage inflation are creating significant pressure on costs.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain health is still disrupted, with ongoing issues related to raw material shortages, component availability, and geopolitical factors.",
+      "evidence": [
+        {
+          "text": "Global supply chain and labor markets are continuing to experience high levels of disruption, causing significant materials and parts shortages, including raw material, microelectronics and commodity shortages, as well as delivery delays, labor shortages, distribution problems and price increases.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Ongoing disruptions from raw material shortages and geopolitical factors severely impact operations.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management confidence is cautious due to ongoing supply chain and labor challenges, but optimistic about long-term aerospace industry growth.",
+      "evidence": [
+        {
+          "text": "While we believe that the long-term outlook for the aerospace industry remains positive due to the fundamental drivers of air travel demand, uncertainty continues with respect to when commercial air traffic capacity will fully return to and/or exceed pre-COVID-19 levels.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Cautious outlook due to challenges, yet optimistic about long-term growth, indicating mixed sentiment.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic direction is clear, with a focus on streamlining business segments and investing in key areas.",
+      "evidence": [
+        {
+          "text": "The Company recently announced its intention to streamline the structure of its core businesses into three principal business segments: Collins Aerospace, Pratt & Whitney, and Raytheon. [...] We use the following key financial performance measures to manage our business on a consolidated basis and by business segment, and to monitor and assess our results of operations.",
+          "section": "mda",
+          "subsection": "BUSINESS OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Clear strategic focus on streamlining and investing in key areas supports future growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Catalysts include contract wins, regulatory approvals, and geopolitical demand for defense products.",
+      "evidence": [
+        {
+          "text": "These adverse impacts have been mitigated in part by the identification of alternative suppliers and an increase in the global demand for our products as a result of the current geopolitical environment. [...] The U.S. government\u2019s approval of these sales is subject to a range of factors, including its foreign policies related to these customers, which are subject to continuing review and potential changes.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Contract wins and geopolitical demand present significant opportunities for growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Defense budgets are stable to growing, with demand directed toward the company's core program areas.",
+      "evidence": [
+        {
+          "text": "Our defense business serves both domestic and international customers primarily as a prime contractor or subcontractor on a broad portfolio of defense and related programs for government customers. [...] RIS, RMD, and the defense operations of Collins and Pratt & Whitney are affected by U.S. Department of Defense (DoD) budget and spending levels, changes in demand, changes in policy positions or priorities, the domestic and global political environment and the evolving nature of the global and national security threat environment.",
+          "section": "mda",
+          "subsection": "Industry Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The summary indicates stable to growing defense budgets, which is a positive development for the company.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Contract backlog is growing, with total backlog increasing from $156 billion to $175 billion.",
+      "evidence": [
+        {
+          "text": "Total backlog was $175 billion and $156 billion as of December\u00a031, 2022 and 2021, respectively.",
+          "section": "mda",
+          "subsection": "FINANCIAL SUMMARY"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The contract backlog has increased, indicating strong demand and positive business momentum.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International defense sales are impacted by geopolitical factors and export controls.",
+      "evidence": [
+        {
+          "text": "Our defense businesses engage in both direct commercial sales, which generally require U.S. government licenses and approvals, as well as foreign military sales, which are government-to-government transactions initiated by, and carried out at the direction of, the U.S. government.",
+          "section": "mda",
+          "subsection": "Industry Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical factors and export controls pose risks to international defense sales, creating a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes include new environmental and trade laws, which may impact operations and compliance costs.",
+      "evidence": [
+        {
+          "text": "Changes in environmental and climate change laws or regulations, including regulations on greenhouse gas emissions, carbon pricing, and energy taxes, could lead to new or additional investment in product designs and facility upgrades and could increase our operational and environmental compliance expenditures, including increased energy and raw materials costs and costs associated with manufacturing changes.",
+          "section": "mda",
+          "subsection": "Industry Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "New environmental and trade laws could increase compliance costs and operational challenges, indicating a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is a focus area, with potential costs associated with new regulations.",
+      "evidence": [
+        {
+          "text": "Changes in environmental and climate change laws or regulations, including regulations on greenhouse gas emissions, carbon pricing, and energy taxes, could lead to new or additional investment in product designs and facility upgrades and could increase our operational and environmental compliance expenditures, including increased energy and raw materials costs and costs associated with manufacturing changes.",
+          "section": "mda",
+          "subsection": "Industry Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential costs from new regulations on environmental compliance present a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs and export controls are impacting the business, particularly in the aerospace sector.",
+      "evidence": [
+        {
+          "text": "In response to the Russian military\u2019s invasion of Ukraine on February 24, 2022, the U.S. government and the governments of various jurisdictions in which we operate, including Canada, the United Kingdom, the European Union, and others, have imposed broad economic sanctions and export controls targeting specific industries, entities and individuals in Russia.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Trade tariffs and export controls, particularly in aerospace, are impacting the business negatively.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind due to inflation, supply chain disruptions, and labor shortages.",
+      "evidence": [
+        {
+          "text": "Global economic and political conditions, changes in raw material and commodity prices and supply, labor availability and costs, inflation, interest rates, international and domestic tax law changes, foreign currency exchange rates, energy costs and supply, levels of air travel, the financial condition of commercial airlines, and the impact from natural disasters and weather conditions create uncertainties that could impact our businesses.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Inflation, supply chain disruptions, and labor shortages are headwinds creating a negative economic environment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks include sanctions, trade tensions, and conflicts impacting supply chains and demand.",
+      "evidence": [
+        {
+          "text": "In response to the Russian military\u2019s invasion of Ukraine on February 24, 2022, the U.S. government and the governments of various jurisdictions in which we operate [...] have imposed broad economic sanctions and export controls targeting specific industries, entities and individuals in Russia. [...] China previously announced that it may take measures against RTC in connection with certain foreign military sales to Taiwan.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical risks such as sanctions and trade tensions pose significant threats to supply chains and demand, indicating a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is ongoing, with efforts to mitigate labor shortages through hiring and talent management.",
+      "evidence": [
+        {
+          "text": "We also continuously monitor labor market conditions and trends and work to mitigate constraints through talent acquisition, partnership, sourcing and recruiting arrangements, workforce succession planning, and initiatives to attract, retain and rehire former employees.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is restructuring its workforce to address labor shortages, indicating challenges in maintaining adequate staffing levels.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is a focus area, with initiatives to attract and retain critical personnel.",
+      "evidence": [
+        {
+          "text": "We also continuously monitor labor market conditions and trends and work to mitigate constraints through talent acquisition, partnership, sourcing and recruiting arrangements, workforce succession planning, and initiatives to attract, retain and rehire former employees.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Initiatives to attract and retain talent suggest efforts to strengthen the workforce, which is a positive development.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating and improving, with net sales growing from $64.4 billion in 2021 to $67.1 billion in 2022, driven by higher organic sales at Pratt & Whitney and Collins, partially offset by lower organic sales at RMD.",
+      "evidence": [
+        {
+          "text": "Net sales increased $3.7 billion organically in 2022 compared to 2021 primarily due to higher organic sales of $2.5 billion at Pratt & Whitney and $2.4 billion at Collins, partially offset by lower organic sales of $0.6 billion at RMD.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "Net Sales: a growth metric that measures our revenue for the current year; [...] 2022: $67,074; 2021: $64,388; 2020: $56,587.",
+          "section": "mda",
+          "subsection": "FINANCIAL SUMMARY"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Net sales growth and higher organic sales in key segments indicate positive revenue momentum.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed, with evidence of acceleration in higher-margin segments, particularly in defense, while the commercial aerospace recovery remains uncertain and subject to external economic and geopolitical factors.",
+      "evidence": [
+        {
+          "text": "Net sales increased $3.7 billion organically in 2022 compared to 2021 primarily due to higher organic sales of $2.5 billion at Pratt & Whitney and $2.4 billion at Collins, partially offset by lower organic sales of $0.6 billion at RMD.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "The pace of the commercial aerospace recovery is tied to general economic conditions and may be impacted by inflation, an economic downturn, or government budget deficits, among other factors, and may also be impacted by a resurgence of the pandemic and corresponding travel restrictions and protocols. [...] These adverse impacts have been mitigated in part by the identification of alternative suppliers and an increase in the global demand for our products as a result of the current geopolitical environment.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand trends show mixed signals with strong growth in some areas but uncertainty in others.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End market momentum is mixed, with specific end markets like Pratt & Whitney and Collins showing strong growth, while the commercial aerospace recovery remains uncertain and tied to broader economic conditions. Defense demand remains strong, though it is partially offset by lower organic sales in other segments.",
+      "evidence": [
+        {
+          "text": "Net sales increased $3.7 billion organically in 2022 compared to 2021 primarily due to higher organic sales of $2.5 billion at Pratt & Whitney and $2.4 billion at Collins, partially offset by lower organic sales of $0.6 billion at RMD.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "The pace of the commercial aerospace recovery is tied to general economic conditions and may be impacted by inflation, an economic downturn, or government budget deficits, among other factors, and may also be impacted by a resurgence of the pandemic and corresponding travel restrictions and protocols. [...] These adverse impacts have been mitigated in part by the identification of alternative suppliers and an increase in the global demand for our products as a result of the current geopolitical environment.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "End market momentum is mixed, with some strong performances offset by uncertainties in others.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, driven by multiple factors including global sanctions on Russia, supply chain disruptions, raw material shortages, and geopolitical tensions. These challenges are impacting various aspects of operations, such as foreign exchange impacts, inventory reserves, and delivery delays, leading to increased costs and operational complexities.",
+      "evidence": [
+        {
+          "text": "The decrease in other cost of sales of $0.2 billion in 2022 compared to 2021 was primarily driven by the impact of foreign exchange, partially offset by charges recorded during the first quarter of 2022 at Pratt & Whitney and Collins related to impairment of customer financing assets for products under lease, inventory reserves, purchase order obligations, and the impairment of contract fulfillment costs that are no longer recoverable, all due to global sanctions on and export controls with respect to Russia.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "Global supply chain and labor markets are continuing to experience high levels of disruption, causing significant materials and parts shortages, including raw material, microelectronics and commodity shortages, as well as delivery delays, labor shortages, distribution problems and price increases.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Rising input costs due to multiple challenges are negatively impacting operational efficiency and profitability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is actively implementing restructuring and cost reduction programs to achieve measurable savings and maintain a competitive cost structure. These efforts are ongoing and include targeted activities to mitigate supply chain and labor constraints.",
+      "evidence": [
+        {
+          "text": "Restructuring and cost reduction programs are delivering measurable savings.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "We are continuously evaluating our cost structure and have implemented restructuring actions in an effort to keep our cost structure competitive. Acquisition accounting adjustments include the amortization of acquired intangible assets related to acquisitions, the amortization of the property, plant and equipment fair value adjustment acquired through acquisitions, the amortization of customer contractual obligations related to loss making or below market contracts acquired, and goodwill impairment.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        },
+        {
+          "text": "We work continuously to mitigate the effects of these supply chain and labor constraints through targeted activities and ongoing programs.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        },
+        {
+          "text": "We also continuously monitor labor market conditions and trends and work to mitigate constraints through talent acquisition, partnership, sourcing and recruiting arrangements, workforce succession planning, and initiatives to attract, retain and rehire former employees.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Implementation of restructuring and cost reduction programs is leading to measurable savings, indicating positive cost management.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are improving, with both gross and operating margins showing positive trends. The improvement is driven by cost reduction initiatives, leading to a decrease in the cost of sales and an increase in operating profit margins from 7.7% in 2021 to 8.1% in 2022.",
+      "evidence": [
+        {
+          "text": "The organic decrease in total Cost of sales in 2021 compared to 2020 of $1.3 billion was primarily due to an organic Cost of sales decrease at Collins and RMD. The Collins decrease was primarily due to the sales decrease noted above, the benefit of cost reduction initiatives, and the absence of prior year significant unfavorable adjustments.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "Operating profit (loss) margins 8.1 % 7.7 % (3.3) %",
+          "section": "mda",
+          "subsection": "FINANCIAL SUMMARY"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Improving margins reflect successful cost reduction initiatives and enhanced profitability.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include global sanctions on Russia affecting costs and sales, as well as broader operational challenges such as supply chain disruptions, labor shortages, and geopolitical tensions.",
+      "evidence": [
+        {
+          "text": "The decrease in other cost of sales of $0.2 billion in 2022 compared to 2021 was primarily driven by the impact of foreign exchange, partially offset by charges recorded during the first quarter of 2022 at Pratt & Whitney and Collins related to impairment of customer financing assets for products under lease, inventory reserves, purchase order obligations, and the impairment of contract fulfillment costs that are no longer recoverable, all due to global sanctions on and export controls with respect to Russia.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "Global supply chain and labor markets are continuing to experience high levels of disruption, causing significant materials and parts shortages, including raw material, microelectronics and commodity shortages, as well as delivery delays, labor shortages, distribution problems and price increases. [...] In response to the Russian military\u2019s invasion of Ukraine on February 24, 2022, the U.S. government and the governments of various jurisdictions in which we operate [...] have imposed broad economic sanctions and export controls targeting specific industries, entities and individuals in Russia.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The factor highlights significant operational challenges and risks, including sanctions and supply chain issues, indicating moderate headwinds.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Commodity prices and foreign exchange are key sensitivities.",
+      "evidence": [
+        {
+          "text": "The decrease in other cost of sales of $0.2 billion in 2022 compared to 2021 was primarily driven by the impact of foreign exchange, partially offset by charges recorded during the first quarter of 2022 at Pratt & Whitney and Collins related to impairment of customer financing assets for products under lease, inventory reserves, purchase order obligations, and the impairment of contract fulfillment costs that are no longer recoverable, all due to global sanctions on and export controls with respect to Russia.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The factor identifies key sensitivities without clear positive or negative implications, leading to a neutral assessment.",
+        "confidence": 0.6
+      }
+    }
+  ]
+}

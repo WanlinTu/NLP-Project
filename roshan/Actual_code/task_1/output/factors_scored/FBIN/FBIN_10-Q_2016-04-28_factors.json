@@ -1,0 +1,111 @@
+{
+  "ticker": "FBIN",
+  "form": "10-Q",
+  "filing_date": "2016-04-28",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 6,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is deleveraging by reducing debt and refinancing at lower rates.",
+      "evidence": [
+        {
+          "text": "We used the proceeds from the Senior Notes offering to pay down our revolving credit facility and for general purposes.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is reducing debt and refinancing at lower rates, which is a positive sign for financial health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving as evidenced by positive net cash flow in the first quarter.",
+      "evidence": [
+        {
+          "text": "Net increase (decrease) in cash and cash equivalents $15.1 $(12.5)",
+          "section": "risk_factors",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES (Continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving free cash flow indicates strong cash generation ability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are increasing, indicating confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Higher capital spending of $19.2 million in the three months ended March 31, 2016.",
+          "section": "risk_factors",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES (Continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased capital expenditures suggest confidence in future growth opportunities.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company completed significant acquisitions and divestitures, showing active M&A activity.",
+      "evidence": [
+        {
+          "text": "In May 2015, we acquired Norcraft for $648.6 million and in September 2015, we sold the Waterloo tool storage business for approximately $14 million in cash.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant M&A activity indicates strategic expansion and confidence.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces ongoing legal proceedings but believes they will not have a material adverse effect.",
+      "evidence": [
+        {
+          "text": "The Company is a defendant in lawsuits associated with the normal conduct of its businesses and operations.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Ongoing legal proceedings without material impact suggest stable exposure.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is increasing buybacks, signaling confidence in its future prospects.",
+      "evidence": [
+        {
+          "text": "Higher share repurchases in 2016 compared to 2015 ($362.3 million).",
+          "section": "risk_factors",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES (Continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased buybacks signal confidence in future prospects.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "ticker": "CSX",
+  "form": "10-Q",
+  "filing_date": "2021-04-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 33,
+  "factors": [
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable, with ongoing negotiations for benefits, wages, and work rules.",
+      "evidence": [
+        {
+          "text": "Approximately 15,500 of the Company's approximately 19,000 employees are members of a labor union. For the 13 rail unions that participate in national bargaining, a round of negotiations for benefits, wages and work rules is underway.",
+          "section": "mda",
+          "subsection": "LABOR AGREEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Negotiations are ongoing but no indication of positive or negative outcome.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not explicitly raised, maintained, or lowered forward guidance in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific forward guidance on revenue, earnings, or margins.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit forward guidance provided.",
+        "confidence": 1.0
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Management identifies several near-term risks, including legislative changes, litigation outcomes, economic conditions, and supply chain disruptions.",
+      "evidence": [
+        {
+          "text": "The following important factors... may cause actual results to differ materially from those contemplated by any forward-looking statements: [...] natural events such as severe weather conditions, including floods, fire, hurricanes and earthquakes, a pandemic crisis, including the outbreak of COVID-19, affecting the health of the Company's employees, its shippers or the consumers of goods, or other unforeseen disruptions of the Company's operations, systems, property, equipment or supply chain.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Multiple near-term risks identified that could impact performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Management highlights several key sensitivities, including regulatory changes, economic conditions, and supply chain disruptions.",
+      "evidence": [
+        {
+          "text": "The Company is subject to a number of risks and uncertainties, including legislative, regulatory or legal developments involving transportation, [...] natural events such as severe weather conditions, [...] and the impact of global supply and price of seaborne coal on CSXT's export coal market.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Several key sensitivities noted that pose risks to operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is facing potential litigation risks, particularly related to fuel surcharges, environmental matters, taxes, and personal injuries.",
+      "evidence": [
+        {
+          "text": "The outcome of litigation, claims and other contingent liabilities, including, but not limited to, those related to fuel surcharge, environmental matters, taxes, shipper and rate claims subject to adjudication, personal injuries and occupational illnesses.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential litigation risks in multiple areas identified.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical factors, such as conflicts and trade tensions, pose risks to the company's operations.",
+      "evidence": [
+        {
+          "text": "adverse economic or operational effects from actual or threatened war or terrorist activities and any governmental response.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical factors pose risks to operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are not specifically addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on foreign exchange movements affecting the company.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information on foreign exchange exposure.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D spending is not specifically addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on R&D investment.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information on R&D investment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Adoption of digital technologies and automation is not specifically discussed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on digital technologies or automation adoption.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New product launches are not specifically mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on new product launches.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is not specifically addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on organic revenue growth.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "Pricing power is not specifically mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on pricing actions or customer responses.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is not specifically addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on revenue mix.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are not specifically addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on operational efficiency or productivity gains.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management confidence is not explicitly conveyed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on management's confidence through actions like buybacks or hiring.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Specific catalysts for improvement are not mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on near-term catalysts like new product launches or regulatory approvals.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is not specifically addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on backlog orders or book-to-bill trends.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information is available on backlog orders, making it impossible to determine a trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "The company's volume trends show a slight decline, with a 1% decrease in unit volumes year over year. However, there is no specific forward-looking information provided regarding future volume trends.",
+      "evidence": [
+        {
+          "text": "Volume (in thousands) 1,529 1,514 15 1% (in millions)",
+          "section": "mda",
+          "subsection": "FIRST QUARTER 2021 HIGHLIGHTS"
+        },
+        {
+          "text": "Revenue $ 2,813 $ 2,855 $ (42) (1)",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "The text does not contain specific information on unit volumes or transaction counts.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Unit volumes have declined slightly, indicating a moderate headwind.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand for rail services has shown improvement but continues to face challenges due to the COVID-19 pandemic and supply chain disruptions. However, there is no specific forward-looking information available on future demand trends.",
+      "evidence": [
+        {
+          "text": "Demand for rail services has improved from steep declines in the first half of 2020, but the effects of the disruption of global manufacturing, supply chains and consumer spending as a result of the COVID-19 global pandemic are ongoing.",
+          "section": "mda",
+          "subsection": "FIRST QUARTER 2021 HIGHLIGHTS"
+        },
+        {
+          "text": "The text does not contain specific information on demand acceleration or deceleration.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand has improved but faces ongoing challenges, resulting in a mixed signal.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs have shown a mixed trend, with an increase driven by higher incentive compensation and inflation, but partially offset by efficiency savings. However, there is no specific information provided in the forward-looking statements regarding future labor costs.",
+      "evidence": [
+        {
+          "text": "Labor and Fringe expense increased $14 million due to the following: \u2022 Total incentive compensation increased $29 million primarily due to higher expected annual incentive award payouts. \u2022 Other costs increased $14 million primarily due to inflation.",
+          "section": "mda",
+          "subsection": "Expenses"
+        },
+        {
+          "text": "The text does not contain specific information on wage inflation or benefit expenses.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs have increased due to higher incentives and inflation, despite some efficiency savings, indicating cost pressures.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, particularly due to inflation and increased materials and supplies expenses. However, there is no specific mention of raw material or commodity costs in the forward-looking statements.",
+      "evidence": [
+        {
+          "text": "Materials, Supplies and Other expense increased $15 million due to the following: \u2022 Gains from real estate sales of $3 million in 2021 were lower than gains of $18 million in 2020. \u2022 Other costs increased $12 million primarily driven by inflation and other non-significant items.",
+          "section": "mda",
+          "subsection": "Expenses"
+        },
+        {
+          "text": "The text does not contain specific information on raw material or commodity costs.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Input costs are rising due to inflation and increased materials expenses, presenting a headwind.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margin trajectory is negative as operating margins have declined due to increased expenses and operational challenges. Despite forward-looking statements not addressing margins specifically, the current performance indicates a downward trend in margins. ",
+      "evidence": [
+        {
+          "text": "Operating income of $1.1 billion decreased $77 million, or 7% year over year. Operating ratio of 60.9% increased 220 basis points versus last year's quarter.",
+          "section": "mda",
+          "subsection": "FIRST QUARTER 2021 HIGHLIGHTS"
+        },
+        {
+          "text": "The text does not contain specific information on gross and operating margins relative to prior periods.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Operating margins have declined significantly, pointing to a major negative trend.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Efficiency initiatives have achieved partial savings, but cost pressures remain significant, and there is no specific mention of future cost reduction programs.",
+      "evidence": [
+        {
+          "text": "Partial savings of $29 million were primarily attributable to efficiencies from changes to the train plan that resulted in reduced crew starts and lower headcount across operating departments. Savings of $12 million primarily resulted from increased efficiency within asset maintenance and operating support functions, despite challenging weather.",
+          "section": "mda",
+          "subsection": "Expenses"
+        },
+        {
+          "text": "The text does not contain specific information on cost reduction or efficiency programs.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Efficiency initiatives have had partial success, but no future programs are mentioned, resulting in an unclear direction.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain faces significant disruptions due to the ongoing impacts of the COVID-19 pandemic and potential risks from severe weather events.",
+      "evidence": [
+        {
+          "text": "The full implications of COVID-19 will be determined by the length of time that the pandemic continues, its effect on the demand for the Company\u2019s transportation services and the supply chain, as well as the effect of governmental regulations imposed and legislative stimulus packages passed in response to the pandemic.",
+          "section": "mda",
+          "subsection": "FIRST QUARTER 2021 HIGHLIGHTS"
+        },
+        {
+          "text": "natural events such as severe weather conditions, including floods, fire, hurricanes and earthquakes, a pandemic crisis, including the outbreak of COVID-19, affecting the health of the Company's employees, its shippers or the consumers of goods, or other unforeseen disruptions of the Company's operations, systems, property, equipment or supply chain.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic conditions present a mixed outlook, with ongoing challenges from the COVID-19 pandemic and inflationary pressures impacting the transportation sector, while broader economic and political changes pose additional risks to the company's financial stability.",
+      "evidence": [
+        {
+          "text": "The full implications of COVID-19 will be determined by the length of time that the pandemic continues, its effect on the demand for the Company\u2019s transportation services and the supply chain, as well as the effect of governmental regulations imposed and legislative stimulus packages passed in response to the pandemic.",
+          "section": "mda",
+          "subsection": "FIRST QUARTER 2021 HIGHLIGHTS"
+        },
+        {
+          "text": "changes in domestic or international economic, political or business conditions, including those affecting the transportation industry (such as the impact of industry competition, conditions, performance and consolidation) and the level of demand for products carried by CSXT.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The economic conditions present a mixed outlook with challenges from COVID-19 and inflation, posing risks to financial stability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The impact of interest rate changes on the company is mixed. While lower interest rates have resulted in a slight benefit through reduced interest expenses, there is no specific forward-looking information indicating how the company plans to manage or anticipate future changes in interest rates.",
+      "evidence": [
+        {
+          "text": "Interest expense decreased $3 million primarily due to lower average interest rates, partially offset by higher average debt balances.",
+          "section": "mda",
+          "subsection": "Interest Expense / Other Income - Net"
+        },
+        {
+          "text": "The text does not contain specific information on the impact of interest rate changes.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The impact of interest rate changes is mixed with slight benefits but no specific forward-looking info on management.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company anticipates steady capital expenditures in 2021, with a focus on core infrastructure and growth initiatives, indicating confidence in future development despite cautious investment strategies.",
+      "evidence": [
+        {
+          "text": "Planned capital investments for 2021 are expected to be between $1.7 billion and $1.8 billion. Of the total 2021 investment, the majority will be used to sustain the core infrastructure and the remaining amounts will be allocated to projects supporting service enhancements, productivity initiatives and profitable growth.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        },
+        {
+          "text": "The text does not contain specific information on CapEx plans.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Anticipation of steady capital expenditures indicates confidence in future development despite cautious strategies.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has demonstrated a commitment to returning cash to shareholders through consistent share repurchases and dividend payments, reflecting confidence in its financial position. However, the forward-looking statements section does not provide specific details about future shareholder returns, indicating a cautious or unspecified approach regarding these distributions.",
+      "evidence": [
+        {
+          "text": "CSX is committed to returning cash to shareholders and maintaining an investment-grade credit profile. Capital structure, capital investments and cash distributions, including dividends and share repurchases, are reviewed at least annually by the Board of Directors.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        },
+        {
+          "text": "The text does not contain specific information on shareholder returns.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Consistent returns to shareholders, but no specific future details indicating a cautious approach.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow has shown improvement, primarily due to favorable working capital activities and efficient capital management, as highlighted in the Income Tax Expense / Non-GAAP Measures section. However, there is no specific mention of free cash flow in the FORWARD-LOOKING STATEMENTS subsection.",
+      "evidence": [
+        {
+          "text": "Free Cash Flow (before payment of dividends) $ 934 $ 812 The increase in free cash flow before dividends from the prior year of $122 million is primarily due to lower property additions and higher cash from net favorable working capital activities, despite lower net earnings.",
+          "section": "mda",
+          "subsection": "Income Tax Expense / Non-GAAP Measures - Unaudited"
+        },
+        {
+          "text": "The text does not contain specific information on free cash flow.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in free cash flow due to favorable working capital and efficient management.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage remains stable, as the company effectively manages its balance sheet through cash management and debt repayments. While the specific details on debt leverage are not discussed in the forward-looking statements section, the company has sufficient financial capacity, including its revolving credit facility, commercial paper program, and shelf registration statement, to manage its day-to-day cash requirements and any anticipated obligations.",
+      "evidence": [
+        {
+          "text": "Debt leverage remains stable, with the company managing its balance sheet effectively through cash management and debt repayments.",
+          "section": "mda",
+          "subsection": "Guaranteed Notes Issued By CSXT"
+        },
+        {
+          "text": "At March\u00a031, 2021, the principal balance of these secured equipment notes was $160 million. The Company has sufficient financial capacity, including its revolving credit facility, commercial paper program and shelf registration statement to manage its day-to-day cash requirements and any anticipated obligations.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "The text does not contain specific information on debt leverage or balance sheet strength.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable debt leverage with effective management, but no specific forward-looking info.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is actively engaged in strategic transactions, including acquisitions and divestitures, as evidenced by the acquisition of Pan Am Systems and the sale of certain rail interests. However, the forward-looking statements section does not mention any future mergers or acquisitions, which may indicate a pause in such activities or a shift in focus.",
+      "evidence": [
+        {
+          "text": "On November 30, 2020, CSX signed a definitive agreement to acquire Pan Am Systems, Inc.",
+          "section": "mda",
+          "subsection": "Pending Transactions"
+        },
+        {
+          "text": "On March 26, 2021, the Company entered into a comprehensive rail agreement to sell certain interests in three CSX-owned line segments to the Commonwealth of Virginia over three phases for a total of $525 million.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "The text does not contain specific information on mergers or acquisitions.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Active transactions in past, but no mention of future mergers or acquisitions.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly in areas such as state taxation, transportation, environmental regulations, and hazardous materials, have had a mixed impact on the company's financial performance. While certain changes have led to decreased income tax expenses, others pose risks and require ongoing compliance efforts, affecting earnings and operational strategies.",
+      "evidence": [
+        {
+          "text": "Income tax expense decreased $12 million primarily due to lower earnings before income taxes, partially offset by the impacts of an unfavorable state legislative change.",
+          "section": "mda",
+          "subsection": "Income Tax Expense / Non-GAAP Measures - Unaudited"
+        },
+        {
+          "text": "legislative, regulatory or legal developments involving transportation, including rail or intermodal transportation, the environment, hazardous materials, taxation, international trade and initiatives to further regulate the rail industry.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed impact from regulatory changes with risks and compliance efforts affecting earnings.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations are a significant factor with both cost implications and potential operational constraints. The evidence highlights increased costs due to fuel efficiency and emissions requirements, as well as ongoing legal and contingent liabilities related to environmental matters.",
+      "evidence": [
+        {
+          "text": "Environmental regulations are creating costs, particularly in the context of fuel efficiency and emissions.",
+          "section": "mda",
+          "subsection": "Expenses"
+        },
+        {
+          "text": "Fuel expense decreased $2 million primarily resulting from record first quarter fuel efficiency and lower ton-miles, partially offset by a 4% increase in fuel prices.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "the outcome of litigation, claims and other contingent liabilities, including, but not limited to, those related to fuel surcharge, environmental matters, taxes, shipper and rate claims subject to adjudication, personal injuries and occupational illnesses.",
+          "section": "mda",
+          "subsection": "Table of Contents CSX CORPORATION ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The evidence indicates increased costs and ongoing legal liabilities due to environmental regulations.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

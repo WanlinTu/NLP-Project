@@ -1,0 +1,451 @@
+{
+  "ticker": "OTIS",
+  "form": "10-K",
+  "filing_date": "2025-02-04",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 26,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is decelerating due to a decline in China, partially offset by growth in other regions.",
+      "evidence": [
+        {
+          "text": "The organic sales decrease of (6.4)% was driven by a greater than 20% decline in China, partially offset by mid single-digit organic sales growth in Americas and Asia Pacific and low single-digit organic sales growth in EMEA.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is decelerating due to a significant decline in China, offsetting growth in other regions.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog or book-to-bill is growing as Service operating profit increased due to higher volume and favorable pricing.",
+      "evidence": [
+        {
+          "text": "Service operating profit increased $171 million including foreign exchange headwinds of $(21) million. Higher volume, improved pricing on maintenance contracts, and productivity including the benefits from UpLift were partially offset by inflationary pressures.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Order backlog is growing, driven by higher volume and improved pricing in the Service segment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is successfully raising prices, particularly in the Service segment.",
+      "evidence": [
+        {
+          "text": "Higher volume, improved pricing on maintenance contracts, and productivity including the benefits from UpLift were partially offset by inflationary pressures.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is successfully raising prices, particularly in the Service segment, indicating strong pricing power.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting toward higher-margin segments, particularly in the Service segment.",
+      "evidence": [
+        {
+          "text": "Operating profit margin for Service increased to 24.6% from 24.0%, driven by higher volume and improved pricing.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting towards higher-margin segments, driven by improved pricing and higher volume.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating in the New Equipment segment.",
+      "evidence": [
+        {
+          "text": "The organic sales decrease of (6.4)% was driven by a greater than 20% decline in China, partially offset by mid single-digit organic sales growth in Americas and Asia Pacific and low single-digit organic sales growth in EMEA.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is decelerating in the New Equipment segment, driven by a significant decline in China.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining in New Equipment but increasing in Service.",
+      "evidence": [
+        {
+          "text": "The organic sales decrease of (6.4)% was driven by a greater than 20% decline in China... Service operating profit increased $171 million including foreign exchange headwinds of $(21) million. Higher volume, improved pricing on maintenance contracts, and productivity including the benefits from UpLift were partially offset by inflationary pressures.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are increasing in the Service segment, despite a decline in New Equipment.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The Service segment is growing faster than New Equipment.",
+      "evidence": [
+        {
+          "text": "Service operating profit increased $171 million including foreign exchange headwinds of $(21) million. Higher volume, improved pricing on maintenance contracts, and productivity including the benefits from UpLift were partially offset by inflationary pressures.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The Service segment is growing faster than New Equipment, indicating strong end-market momentum.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company faces headwinds from inflationary pressures, including wage increases and higher material costs.",
+      "evidence": [
+        {
+          "text": "Higher volume, improved pricing on maintenance contracts, and productivity including the benefits from UpLift were partially offset by inflationary pressures, including annual wage increases and higher material costs.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant headwinds from inflationary pressures, including wage increases and higher material costs.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are creating margin pressure due to annual wage increases.",
+      "evidence": [
+        {
+          "text": "Higher volume, improved pricing on maintenance contracts, and productivity including the benefits from UpLift were partially offset by inflationary pressures, including annual wage increases and higher material costs.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing due to annual wage hikes, causing margin pressure.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Operating margins are expanding in the Service segment but contracting in New Equipment.",
+      "evidence": [
+        {
+          "text": "Operating margin for Service increased to 24.6% from 24.0%. Operating margin for New Equipment decreased 50 basis points to 6.1% from 6.6%.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed margin performance across segments with Service improving and New Equipment declining.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring and UpLift initiatives are delivering measurable savings.",
+      "evidence": [
+        {
+          "text": "The impacts of lower volume and unfavorable regional and product mix were partially offset by favorable price, productivity including the benefits from UpLift, and commodity tailwinds.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring and UpLift initiatives are successfully delivering savings.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are driving margin expansion, particularly from UpLift initiatives.",
+      "evidence": [
+        {
+          "text": "The benefits from UpLift, and commodity tailwinds. Operating margin decreased 50 basis points.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Productivity improvements are noted, but margin decrease complicates the outlook.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears confident with ongoing share repurchase programs and capital expenditures.",
+      "evidence": [
+        {
+          "text": "On December 1, 2022, our Board of Directors approved a share repurchase program for up to $2.0 billion of Common Stock... There is no commercial paper outstanding as of December 31, 2024.",
+          "section": "mda",
+          "subsection": "Share Repurchase Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's actions, like share repurchases, indicate confidence.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Foreign exchange headwinds and economic conditions are near-term risks.",
+      "evidence": [
+        {
+          "text": "Foreign exchange headwinds of $(8) million... The overall economic environment is a headwind.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange and economic conditions pose immediate risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company has a clear long-term strategic direction with UpLift transformation.",
+      "evidence": [
+        {
+          "text": "The benefits from UpLift, and commodity tailwinds. Operating margin decreased 50 basis points.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Clear long-term strategy with UpLift transformation driving positive developments.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign exchange movements and economic conditions are key sensitivities.",
+      "evidence": [
+        {
+          "text": "Foreign exchange headwinds of $(8) million... The overall economic environment is a headwind.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange and economic conditions are significant sensitivities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "UpLift transformation and Service segment growth are catalysts for improvement.",
+      "evidence": [
+        {
+          "text": "The benefits from UpLift... Service operating profit increased $171 million including foreign exchange headwinds of $(21) million.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The Service segment growth and UpLift transformation are catalysts for improvement, supported by a significant increase in operating profit.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction activity and infrastructure spending are creating growing demand for Service but declining for New Equipment.",
+      "evidence": [
+        {
+          "text": "The organic sales decrease of (6.4)% was driven by a greater than 20% decline in China... Service operating profit increased $171 million including foreign exchange headwinds of $(21) million.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing demand for Service despite declining New Equipment sales suggests a positive trend in the Service segment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "equipment_replacement",
+      "category": "industrial_infrastructure",
+      "summary": "Equipment replacement cycles are decelerating.",
+      "evidence": [
+        {
+          "text": "The organic sales decrease of (6.4)% was driven by a greater than 20% decline in China...",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining equipment replacement cycles indicate a negative trend in demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "Aftermarket/service revenue is growing faster than new equipment sales.",
+      "evidence": [
+        {
+          "text": "Service operating profit increased $171 million including foreign exchange headwinds of $(21) million. Higher volume, improved pricing on maintenance contracts, and productivity including the benefits from UpLift were partially offset by inflationary pressures.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Aftermarket/service revenue growth outpacing new equipment sales, despite inflation, indicates a positive trend.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The overall economic environment is a headwind.",
+      "evidence": [
+        {
+          "text": "The overall economic environment is a headwind.",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The economic environment is a headwind, indicating negative conditions affecting performance.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are a headwind.",
+      "evidence": [
+        {
+          "text": "Foreign exchange headwinds of $(8) million...",
+          "section": "mda",
+          "subsection": "2024 Compared with 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange headwinds are impacting profits, indicating a negative factor.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are ongoing but no clear trajectory is provided.",
+      "evidence": [
+        {
+          "text": "During 2024, net cash used in investing activities was $164 million. The primary drivers of the outflow related to $126 million of capital expenditures...",
+          "section": "mda",
+          "subsection": "Discussion of Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No clear trajectory for capital expenditures, making the outlook neutral.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is increasing.",
+      "evidence": [
+        {
+          "text": "Total debt to total capitalization increased to 235% from 338%. Net debt to net capitalization increased to 486% from 731%.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND FINANCIAL CONDITION"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increasing debt leverage poses a significant risk, indicating a negative development.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are ongoing with a share repurchase program.",
+      "evidence": [
+        {
+          "text": "On December 1, 2022, our Board of Directors approved a share repurchase program for up to $2.0 billion of Common Stock...",
+          "section": "mda",
+          "subsection": "Share Repurchase Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's share repurchase program indicates a positive approach to returning value to shareholders.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation decreased.",
+      "evidence": [
+        {
+          "text": "The decrease in net cash provided by operating activities in 2024 compared to 2023 was primarily driven by Separation-related and UpLift-related net payments...",
+          "section": "mda",
+          "subsection": "Discussion of Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreased free cash flow suggests a headwind due to increased payments related to Separation and UpLift.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "ticker": "NSC",
+  "form": "10-Q",
+  "filing_date": "2023-10-25",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 16,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt-to-total capitalization ratio was 56.8% at September 30, 2023, up from 54.4% at December 31, 2022, indicating slight leverage increase.",
+      "evidence": [
+        {
+          "text": "Our debt-to-total capitalization ratio was 56.8% at September\u00a030, 2023 and 54.4% at December\u00a031, 2022.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION AND LIQUIDITY"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The debt-to-total capitalization ratio increased slightly, indicating higher leverage which could pose a financial risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow was $2.5 billion for the first nine months of 2023, down from $3.4 billion in 2022, showing a decrease in cash flow.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities, our principal source of liquidity, was $2.5 billion for the first nine months of 2023, compared with $3.4 billion for the same period of 2022.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION AND LIQUIDITY"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Free cash flow decreased from $3.4 billion to $2.5 billion, showing a decline in liquidity.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Share repurchases decreased, with $503 million spent in the first nine months of 2023 compared to $2.3 billion in the same period of 2022, indicating reduced buybacks.",
+      "evidence": [
+        {
+          "text": "We paid $503 million for the repurchase of Common Stock in the first nine months of 2023 compared to $2.3\u00a0billion in the same period last year.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION AND LIQUIDITY"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Share repurchases decreased significantly, indicating reduced returns to shareholders.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant legal and regulatory risks due to the Incident, including potential costs and penalties that could impact financial results.",
+      "evidence": [
+        {
+          "text": "We are currently involved in certain environmental response and remediation activities and subject to numerous legal proceedings and regulatory inquiries and investigations resulting from the Incident.",
+          "section": "mda",
+          "subsection": "Contingencies"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant legal and regulatory risks from the Incident pose a major threat to financial stability.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "Environmental regulations and the Incident have created significant compliance costs and operational constraints, affecting financial performance.",
+      "evidence": [
+        {
+          "text": "Our current estimates of future environmental cleanup and remediation liabilities related to the Incident are expected to change over time due to various factors [...] Any amounts that are recoverable under our insurance policies or from third parties will be reflected in future periods in which recovery is considered probable.",
+          "section": "mda",
+          "subsection": "Contingencies"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Environmental regulations and the Incident lead to significant compliance costs and operational issues, impacting financial performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable with 80% of railroad employees covered by collective bargaining agreements, and no immediate risk of work stoppage.",
+      "evidence": [
+        {
+          "text": "Approximately 80% of our railroad employees are covered by collective bargaining agreements with various labor unions [...] With the conclusion of national bargaining, neither party can compel mandatory bargaining around any new proposals until November 1, 2024.",
+          "section": "mda",
+          "subsection": "Labor Agreements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable labor relations with no immediate risk of work stoppage suggest a stable situation.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is decelerating, particularly in intermodal and merchandise segments.",
+      "evidence": [
+        {
+          "text": "Railway operating revenues declined in the third quarter, a result of lower average revenue per unit and volume declines. Decreases in fuel surcharge revenue and intermodal storage revenues drove the overall decline in average revenue per unit, while volume declines were driven by continued service challenges and a weaker demand environment.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decelerating demand in key segments indicates a challenging market environment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining across most segments, with exceptions in automotive.",
+      "evidence": [
+        {
+          "text": "Units Merchandise: ... Total 1,687.2\u00a0 1,725.3\u00a0 (2%) ... Intermodal 965.4\u00a0 972.7\u00a0 (1%) ... Metals and construction volume declined in both periods ... Automotive volume was higher in both periods due to higher finished vehicle inventory levels available for rail transportation.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining unit volumes across most segments, despite growth in automotive, show a negative trend.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "Pricing power is mixed, with some success in certain segments but offset by challenges in others.",
+      "evidence": [
+        {
+          "text": "Approximately 95% of our revenue base is covered by contracts that include negotiated fuel surcharges. Revenues associated with these surcharges totaled $247 million and $501 million in the third quarters of 2023 and 2022, respectively, and $909 million and $1.2 billion for the first nine months of 2023 and 2022, respectively. The decrease in fuel surcharge revenues is driven by lower fuel commodity prices.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Pricing power is mixed with success in some areas but offset by challenges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are acting as a headwind, with weaker demand across multiple segments.",
+      "evidence": [
+        {
+          "text": "Volume declines were driven by continued service challenges and a weaker demand environment. Approximately 95% of our revenue base is covered by contracts that include negotiated fuel surcharges. Revenues associated with these surcharges totaled $247 million and $501 million in the third quarters of 2023 and 2022, respectively, and $909 million and $1.2 billion for the first nine months of 2023 and 2022, respectively.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions are acting as a headwind with weaker demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are decreasing, particularly for fuel, which is benefiting the company.",
+      "evidence": [
+        {
+          "text": "Fuel expense, which includes the cost of locomotive fuel as well as other fuel used in railway operations, decreased in both periods primarily due to lower locomotive fuel prices (down 23% in the third quarter and 20% in the first nine months).",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Input costs are decreasing, particularly for fuel, which is benefiting the company.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable, with slight decreases in compensation and benefits in the third quarter and increases in the first nine months.",
+      "evidence": [
+        {
+          "text": "Compensation and benefits expense decreased in the third quarter but increased in the first nine months as follows: ... Pay rates (down $54 million for the quarter and up $49 million for the first nine months), ... Overtime (up $4 million for the quarter and $6 million for the first nine months), ... Employee activity levels (up $35 million for the quarter and $101 million for the first nine months).",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor costs are showing mixed trends with slight decreases and increases over different periods.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are under pressure due to increased expenses and declining revenues.",
+      "evidence": [
+        {
+          "text": "Railway operating ratio (percent) 74.6\u00a0 62.0\u00a0 20% 77.5\u00a0 61.8\u00a0 25% ... The decrease in fuel surcharge revenues is driven by lower fuel commodity prices.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margins are under pressure due to increased expenses and declining revenues.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost actions are partially offsetting the impact of inflation, but expenses are still rising due to various factors.",
+      "evidence": [
+        {
+          "text": "Purchased services and rents increased in both periods due to increased operational and transportation expenses and higher technology-related expenses. In addition, the first nine months were impacted by higher intermodal-related expenses.",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Cost actions are only partially offsetting inflation, with expenses still rising.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating, primarily due to lower demand and fuel surcharge revenues.",
+      "evidence": [
+        {
+          "text": "Income from railway operations decreased in both periods due to lower railway operating revenues. Railway operating revenues declined in both periods due to decreased fuel surcharge revenue, lower volume, and decreased intermodal storage revenues, partially offset by increased pricing compared to the same period last year.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is decelerating due to lower demand and fuel surcharge revenues.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "There are significant regulatory changes impacting the company, particularly related to environmental matters.",
+      "evidence": [
+        {
+          "text": "During the third quarter and the first nine months of 2023, we recorded $163 million and $966 million, respectively, for costs primarily associated with environmental matters and legal proceedings.",
+          "section": "mda",
+          "subsection": "Eastern Ohio incident"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant regulatory changes, particularly environmental, are impacting the company negatively.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

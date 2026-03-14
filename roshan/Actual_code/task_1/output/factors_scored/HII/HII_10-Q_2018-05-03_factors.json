@@ -1,0 +1,295 @@
+{
+  "ticker": "HII",
+  "form": "10-Q",
+  "filing_date": "2018-05-03",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 15,
+  "factors": [
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The company has not provided forward guidance for revenue, earnings, or margins.",
+      "evidence": [
+        {
+          "text": "The Company has no material changes to report from the risk factors described in 'Risk Factors' in its Annual Report on Form 10-K for the year ended December 31, 2017.",
+          "section": "risk_factors",
+          "subsection": "Item 1A. Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company has not provided forward guidance, which neither indicates a positive nor negative outlook.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Adverse economic conditions could negatively impact the company's business.",
+      "evidence": [
+        {
+          "text": "Adverse economic conditions in the United States and globally;",
+          "section": "mda",
+          "subsection": "ACCOUNTING STANDARDS UPDATES / FORWARD-LOOKING STATEMENTS AND PROJECTIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Adverse economic conditions pose a significant risk to the company's business performance.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving.",
+      "evidence": [
+        {
+          "text": "Free cash flow for the three months ended March\u00a031, 2018, increased $7 million compared with the same period in 2017, primarily due to a change in trade working capital, partially offset by higher capital expenditures.",
+          "section": "mda",
+          "subsection": "Free Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in free cash flow suggests better capital allocation and financial health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand appears stable with slight growth in service revenues.",
+      "evidence": [
+        {
+          "text": "Service revenues for the three months ended March\u00a031, 2018 , increased $80 million , or 19% , compared with the same period in 2017 .",
+          "section": "mda",
+          "subsection": "Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable demand with slight growth in service revenues indicates a healthy revenue trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "Pricing power is stable as the company is able to hold prices despite cost increases.",
+      "evidence": [
+        {
+          "text": "The BCA also provided that the defense budget would face \u201csequestration\u201d cuts of up to an additional $500 billion during that same period, to the extent that discretionary spending limits are exceeded, and $500 billion for non-defense discretionary spending, including the U.S. Coast Guard.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable pricing power despite cost increases does not indicate a clear positive or negative trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin service revenues, which grew significantly.",
+      "evidence": [
+        {
+          "text": "Service revenues for the three months ended March\u00a031, 2018 , increased $80 million , or 19% , compared with the same period in 2017 .",
+          "section": "mda",
+          "subsection": "Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin service revenues supports a positive revenue mix development.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volumes are growing, particularly in Newport News due to higher volumes in aircraft carriers.",
+      "evidence": [
+        {
+          "text": "Newport News product sales increased $54 million for the three months ended March\u00a031, 2018 , primarily as a result of higher volumes in aircraft carriers.",
+          "section": "mda",
+          "subsection": "Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in volumes, especially in Newport News, suggests strong demand and business momentum.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The defense market is stable with slight growth, while technical solutions are growing in oil and gas and fleet support services.",
+      "evidence": [
+        {
+          "text": "Technical Solutions service revenues increased $16 million for the three months ended March\u00a031, 2018 , primarily as a result of higher volumes in oil and gas and fleet support services, partially offset by lower volumes in integrated mission solutions services.",
+          "section": "mda",
+          "subsection": "Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in technical solutions across oil and gas and fleet support services indicates a positive market momentum.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, particularly in labor, due to one-time bonuses related to the Tax Act.",
+      "evidence": [
+        {
+          "text": "Cost of product sales related to the Operating FAS/CAS Adjustment decreased $14 million as described below. Cost of service revenues related to the Operating FAS/CAS Adjustment decreased $5 million as described below.",
+          "section": "mda",
+          "subsection": "Cost of Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Input costs are rising due to one-time bonuses, which could pressure margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing due to one-time bonuses and higher overhead costs.",
+      "evidence": [
+        {
+          "text": "General and administrative expenses for the three months ended March\u00a031, 2018 , increased $14 million compared with the same period in 2017 , primarily driven by higher overhead costs and current state income tax expense, partially offset by lower non-current state income tax expense.",
+          "section": "mda",
+          "subsection": "Cost of Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing, driven by higher overhead and bonuses, which may strain profitability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The order backlog is growing, with a notable increase in Newport News' product sales due to higher volumes in aircraft carriers.",
+      "evidence": [
+        {
+          "text": "Total backlog as of March\u00a031, 2018, and December\u00a031, 2017, was approximately $22 billion and $21 billion, respectively.",
+          "section": "mda",
+          "subsection": "BACKLOG"
+        },
+        {
+          "text": "Newport News product sales increased $54 million for the three months ended March\u00a031, 2018, primarily as a result of higher volumes in aircraft carriers.",
+          "section": "mda",
+          "subsection": "Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing backlog and increased product sales indicate strong demand and future revenue potential.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Government defense budgets are a critical factor, though they face challenges such as budgetary constraints and sequestration, which could lead to reduced funding for certain programs. The defense industry is uncertain about future budget decisions and the challenges these changes may present.",
+      "evidence": [
+        {
+          "text": "Changes in government and customer priorities and requirements (including government budgetary constraints, shifts in defense spending, and changes in customer short-range and long-range plans);",
+          "section": "mda",
+          "subsection": "ACCOUNTING STANDARDS UPDATES / FORWARD-LOOKING STATEMENTS AND PROJECTIONS"
+        },
+        {
+          "text": "The budget environment, including sequestration as currently mandated, remains a significant long-term risk. Considerable uncertainty exists regarding how future budget and program decisions will develop and what challenges budget changes will present for the defense industry.",
+          "section": "mda",
+          "subsection": "Business Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Uncertainty and potential budget cuts pose significant risks to the defense industry.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, particularly in service revenues.",
+      "evidence": [
+        {
+          "text": "The decrease in segment operating income was primarily due to lower risk retirement on the Legend class NSC program, partially offset by higher risk retirement on the San Antonio class (LPD 17) program.",
+          "section": "mda",
+          "subsection": "Segment Operating Income"
+        },
+        {
+          "text": "Service revenues for the three months ended March\u00a031, 2018 , increased $80 million , or 19% , compared with the same period in 2017 .",
+          "section": "mda",
+          "subsection": "Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Accelerating organic growth, especially in services, suggests strong revenue expansion opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins have shown stability with slight improvements, primarily in product sales. However, there are some offsetting factors affecting operating margins, including one-time bonuses and contract mix variances.",
+      "evidence": [
+        {
+          "text": "Operating margins are stable.",
+          "section": "mda",
+          "subsection": "Segment Operating Income"
+        },
+        {
+          "text": "The decrease was primarily due to lower risk retirement on the Legend class NSC program, one time employee bonus payments in 2018 related to the Tax Act, and year-to-year variances in contract mix, partially offset by the establishment of an allowance for accounts receivable on a nuclear and environmental commercial contract in 2017 and higher risk retirement on the San Antonio class (LPD 17) program.",
+          "section": "mda",
+          "subsection": "Cost of Sales and Service Revenues"
+        },
+        {
+          "text": "Gross margins are stable with slight improvement in product sales margins.",
+          "section": "mda",
+          "subsection": "Cost of Sales and Service Revenues"
+        },
+        {
+          "text": "Cost of product sales as a percentage of product sales decreased from 79.0% for the three months ended March\u00a031, 2017 , to 77.6% for the three months ended March\u00a031, 2018 .",
+          "section": "mda",
+          "subsection": "Cost of Sales and Service Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Margins are stable with slight improvements but face offsetting challenges like bonuses and contract mix.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "The contract backlog is growing, with a notable increase in Newport News' product sales due to higher volumes in aircraft carriers.",
+      "evidence": [
+        {
+          "text": "Total backlog as of March\u00a031, 2018, and December\u00a031, 2017, was approximately $22 billion and $21 billion, respectively.",
+          "section": "mda",
+          "subsection": "BACKLOG"
+        },
+        {
+          "text": "Newport News product sales increased $54 million for the three months ended March\u00a031, 2018, primarily as a result of higher volumes in aircraft carriers.",
+          "section": "mda",
+          "subsection": "Sales and Service Revenues"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

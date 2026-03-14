@@ -1,0 +1,450 @@
+{
+  "ticker": "BLDR",
+  "form": "10-Q",
+  "filing_date": "2018-05-10",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has increased its debt, with net borrowings on the 2022 facility rising, which may affect its financial flexibility.",
+      "evidence": [
+        {
+          "text": "Our primary capital requirements are to fund working capital needs and operating expenses, meet required interest and principal payments, and to fund capital expenditures and potential future acquisitions. [...] As of March 31, 2018 we had $506.0 million in outstanding borrowings under our 2022 facility and our net excess borrowing availability was $311.8 million after being reduced by outstanding letters of credit of approximately $82.2 million.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased debt levels may reduce financial flexibility.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is negative due to increased cash used in operating activities, driven by higher working capital requirements.",
+      "evidence": [
+        {
+          "text": "Cash used in operating activities was $178.3 million and $136.4 million for the three months ended March 31, 2018 and 2017, respectively. [...] The impact of the larger working capital increase was partially offset by a $19.2 million decrease in cash interest payments for the three months ended March 31, 2018 compared to the three months ended March 31, 2017.",
+          "section": "mda",
+          "subsection": "Consolidated Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Negative free cash flow due to higher working capital requirements.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures increased due to facility improvements and machinery purchases, indicating investment in growth.",
+      "evidence": [
+        {
+          "text": "Cash used in investing activities was $19.5 million and $9.3 million for the three months ended March 31, 2018 and 2017, respectively. [...] The increase in capital expenditures in 2018 largely relates to the timing of capital expenditures under the Company\u2019s 2018 capital plan for facility improvements and the purchase of machinery and rolling stock to support sales growth.",
+          "section": "mda",
+          "subsection": "Consolidated Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investment in growth through facility improvements and machinery purchases.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has been repurchasing shares, showing confidence in its stock's value.",
+      "evidence": [
+        {
+          "text": "The shares presented in the above table represent stock tendered in order to meet tax withholding requirements for restricted stock units vested.",
+          "section": "risk_factors",
+          "subsection": "Company Stock Repurchases"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Share buybacks indicate confidence in stock value.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company faced challenges in pricing due to commodity price inflation, which impacted gross margins.",
+      "evidence": [
+        {
+          "text": "Commodity price inflation resulted in an additional 9.5% increase in sales during the first quarter of 2018 compared to the first quarter of 2017. Our gross margin percentage decreased primarily due to the impact of commodity price inflation during the first quarter of 2018 relative to our short-term customer pricing commitments.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Pricing challenges due to commodity inflation affecting margins.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix shifted towards higher-margin products, particularly in the lumber and lumber sheet goods category.",
+      "evidence": [
+        {
+          "text": "The impact of commodity price inflation in the first quarter of 2018 resulted in the sales growth of our lumber and lumber sheet goods categories exceeding the sales growth of our other product categories.",
+          "section": "mda",
+          "subsection": "RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin products.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, driven by increases in single-family and repair and remodel end markets, but multi-family sales have declined.",
+      "evidence": [
+        {
+          "text": "Increases in single-family and repair and remodel/other end market sales volume were offset by declines in multi-family.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed volume trends across different end markets.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The repair and remodel end market is growing, driven by favorable economic conditions and customer demand.",
+      "evidence": [
+        {
+          "text": "We expect that our ability to remain competitive in this space as well as grow our market share will depend on our continued ability to provide a high level of customer service coupled with a broad product offering.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in repair and remodel end market driven by demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable, but there is a shortage of skilled construction labor which could impact future demand.",
+      "evidence": [
+        {
+          "text": "The homebuilding industry is currently experiencing a shortage of skilled construction labor, which is constraining housing activity.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Evidence points to a labor shortage that could negatively impact future demand.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost actions, such as cost management and restructuring, are contributing to improved operating efficiency.",
+      "evidence": [
+        {
+          "text": "This improvement was driven by cost leverage and continued cost management, partially offset by investments the Company made in growth initiatives as well as a one-time decrease in insurance and benefits expense in the first quarter of 2017.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost management and restructuring are improving operating efficiency.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, with better cost leverage and continued cost management.",
+      "evidence": [
+        {
+          "text": "This improvement was driven by cost leverage and continued cost management, partially offset by investments the Company made in growth initiatives as well as a one-time decrease in insurance and benefits expense in the first quarter of 2017.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving productivity through cost leverage and management.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is cautiously optimistic with a focus on long-term growth and debt reduction.",
+      "evidence": [
+        {
+          "text": "We believe the long-term outlook for the housing industry is positive due to growth in the underlying demographics. We feel we are well-positioned to take advantage of the construction activity in our markets and to increase our market share, which may include strategic acquisitions. We will continue to focus on working capital by closely monitoring the credit exposure of our customers and by working with our vendors to improve our payment terms and pricing on our products. We strive to achieve the appropriate balance of short-term expense control while maintaining the expertise and capacity to grow the business as market conditions improve. In addition, debt reduction will continue to be a key area of focus for the Company.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management is cautiously optimistic with a focus on growth and debt reduction.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include weather affecting construction activity and ongoing challenges with skilled labor shortages.",
+      "evidence": [
+        {
+          "text": "Our first and fourth quarters have historically been, and are generally expected to continue to be, adversely affected by weather causing reduced construction activity during these quarters. In addition, quarterly results historically have reflected, and are expected to continue to reflect, fluctuations from period to period arising from the following: The volatility of lumber prices; The cyclical nature of the homebuilding industry; General economic conditions in the markets in which we compete; The pricing policies of our competitors; The production schedules of our customers; and The effects of weather.",
+          "section": "mda",
+          "subsection": "SEASONALITY AND OTHER FACTORS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include weather affecting construction and labor shortages.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is focused on market expansion, cost management, and debt reduction.",
+      "evidence": [
+        {
+          "text": "We believe the long-term outlook for the housing industry is positive due to growth in the underlying demographics. We feel we are well-positioned to take advantage of the construction activity in our markets and to increase our market share, which may include strategic acquisitions. We will continue to focus on working capital by closely monitoring the credit exposure of our customers and by working with our vendors to improve our payment terms and pricing on our products. We strive to achieve the appropriate balance of short-term expense control while maintaining the expertise and capacity to grow the business as market conditions improve. In addition, debt reduction will continue to be a key area of focus for the Company.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Long-term strategy focuses on market expansion, cost management, and debt reduction.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company is sensitive to lumber prices, economic conditions, and labor availability.",
+      "evidence": [
+        {
+          "text": "The building products supply industry is highly dependent upon new home construction and subject to cyclical market changes. Our operations are subject to fluctuations arising from changes in supply and demand, national and local economic conditions, labor costs and availability, competition, government regulation, trade policies and other factors that affect the homebuilding industry such as demographic trends, interest rates, housing starts, the availability of suitable building lots, employment levels, consumer confidence, and the availability of credit to homebuilders, contractors, and homeowners.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is sensitive to various factors, but no clear positive or negative signal is evident.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is focused on maintaining and growing market share, particularly with large production homebuilders.",
+      "evidence": [
+        {
+          "text": "Our focus is on maintaining relationships and market share with these customers while balancing the competitive pressures we are facing in servicing large homebuilders with certain profitability expectations. We expect that our ability to maintain strong relationships with the largest builders will be vital to our ability to expand into new markets as well as grow our market share.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Focus on maintaining and growing market share with key customers.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intense, with consolidation within the industry and significant competition from local and regional suppliers.",
+      "evidence": [
+        {
+          "text": "However, our industry remains highly fragmented and competitive and we will continue to face significant competition from local and regional suppliers.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The industry is highly fragmented and competitive, with consolidation and competition from local suppliers.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "The company differentiates itself through a broad product offering, integrated solutions, and strong customer relationships.",
+      "evidence": [
+        {
+          "text": "We offer an integrated solution to our customers providing manufacturing, supply and installation of a full range of structural and related building products. Our manufactured products include our factory-built roof and floor trusses, wall panels and stairs, vinyl windows, custom millwork and trim, as well as engineered wood that we design, cut, and assemble for each home. We also assemble interior and exterior doors into pre-hung units. Additionally, we supply our customers with a broad offering of professional grade building products not manufactured by us, such as dimensional lumber and lumber sheet goods and various window, door and millwork lines. Our full range of construction-related services includes professional installation, turn-key framing and shell construction, and spans all our product categories.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company offers a broad product range and integrated solutions, giving it a competitive edge.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction activity is growing, driven by increases in housing starts and repair and remodel end markets.",
+      "evidence": [
+        {
+          "text": "The homebuilding industry has shown improvement since 2011. For the first quarter of 2018, actual U.S. total housing starts were 288,700, an 8.0% increase compared to the first quarter of 2017. Actual U.S. single-family starts were 193,900 in the first quarter of 2018, a 6.9% increase compared to the same quarter a year ago.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Construction activity is growing due to increased housing starts and remodel activity.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are favorable, with low interest rates and population growth supporting housing demand.",
+      "evidence": [
+        {
+          "text": "These trends include relatively low interest rates, the aging of housing stock, and normal population growth due to immigration and birthrate exceeding death rate. Industry forecasters, including the National Association of Homebuilders ('NAHB'), expect to see continued improvement in housing demand over the next few years.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Low interest rates and population growth are supporting housing demand.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Low interest rates are supporting housing demand, which benefits the company.",
+      "evidence": [
+        {
+          "text": "These trends include relatively low interest rates, the aging of housing stock, and normal population growth due to immigration and birthrate exceeding death rate. Industry forecasters, including the National Association of Homebuilders ('NAHB'), expect to see continued improvement in housing demand over the next few years.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Low interest rates are supporting housing demand, benefiting the company.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is negative, with gross margins under pressure due to commodity price inflation in key regions and the impact of pricing commitments.",
+      "evidence": [
+        {
+          "text": "Gross margins are under pressure due to commodity price inflation, particularly in the Northeast and South regions, leading to a compression in margins.",
+          "section": "mda",
+          "subsection": "Results by Reportable Segment"
+        },
+        {
+          "text": "Our gross margin percentage decreased primarily due to the impact of commodity price inflation during the first quarter of 2018 relative to our short-term customer pricing commitments.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Gross margins are under pressure due to commodity price inflation and pricing commitments.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input cost increases, particularly in lumber prices, are negatively impacting margins and profitability across certain regions, leading to declines in profitability.",
+      "evidence": [
+        {
+          "text": "While we also achieved increased net sales in our Northeast and South reportable segments, profitability for those segments declined largely due to the impact of commodity price inflation relative to our costs.",
+          "section": "mda",
+          "subsection": "Results by Reportable Segment"
+        },
+        {
+          "text": "Prices of wood products, which are subject to cyclical market fluctuations, may adversely impact operating income when prices rapidly rise or fall within a relatively short period of time. We purchase certain materials, including lumber products, which are then sold to customers as well as used as direct production inputs for our manufactured and prefabricated products.",
+          "section": "mda",
+          "subsection": "COMPANY OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increases in input costs, especially lumber prices, are negatively impacting margins and profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing mixed organic growth. While there is a stable increase in sales volume of 1.4%, this growth is offset by declines in multi-family sales. Additionally, organic revenue growth is present in specific regions like the Southeast and West, but profitability in other regions such as Northeast and South has declined due to commodity price inflation affecting costs.",
+      "evidence": [
+        {
+          "text": "For the first quarter of 2018, we achieved increased net sales and profitability in our Southeast and West reportable segments. While we also achieved increased net sales in our Northeast and South reportable segments, profitability for those segments declined largely due to the impact of commodity price inflation relative to our costs.",
+          "section": "mda",
+          "subsection": "Results by Reportable Segment"
+        },
+        {
+          "text": "We estimate that our sales volume increased 1.4%, while commodity price inflation resulted in an additional 9.5% increase in sales during the first quarter of 2018 compared to the first quarter of 2017. Single-family and repair and remodel/other end market sales volume growth in the first quarter of 2018 was offset by declines in multi-family.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is improving, particularly in the Southeast and West regions, as evidenced by increased net sales and profitability. Overall demand is supported by increases in housing starts and sales volumes, with notable growth in the South and West regions, despite slight declines in the Northeast and Midwest.",
+      "evidence": [
+        {
+          "text": "According to the U.S. Census Bureau, actual single-family housing starts in the first quarter of 2018 increased 2.7% and 26.4% in the South and West regions, respectively, compared to the first quarter of 2017. However, single-family housing starts decreased 5.1% and 2.8% in the Northeast and Midwest regions, respectively over the same period.",
+          "section": "mda",
+          "subsection": "Results by Reportable Segment"
+        },
+        {
+          "text": "For the first quarter of 2018, actual U.S. total housing starts were 288,700, an 8.0% increase compared to the first quarter of 2017. Actual U.S. single-family starts were 193,900 in the first quarter of 2018, a 6.9% increase compared to the same quarter a year ago.",
+          "section": "mda",
+          "subsection": "CURRENT OPERATING CONDITIONS AND OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is improving in key regions, supported by increased housing starts and sales volumes.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "ticker": "LHX",
+  "form": "10-K",
+  "filing_date": "2015-08-31",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 34,
+  "factors": [
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is stable, supported by consistent operating cash flows.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities was consistently high in fiscal 2015, 2014, and 2013, reflecting solid earnings and good working capital management.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company expects to maintain capital expenditures, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Our total capital expenditures in fiscal 2016 are expected to be approximately $200 million.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed with a reserve for excess and obsolete inventory, which increased from $38 million to $83 million, indicating potential risks of obsolescence.",
+      "evidence": [
+        {
+          "text": "As of July\u00a03, 2015, our reserve for excess and obsolete inventory was $83\u00a0million, or 13 percent of our gross inventory balance, which compares with our reserve of $38\u00a0million, or 12\u00a0percent of our gross inventory balance, as of June\u00a027, 2014.",
+          "section": "mda",
+          "subsection": "Provisions for Excess and Obsolete Inventory Losses"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not provided specific forward guidance but has identified risks such as potential changes in demand and technological developments that could impact future results.",
+      "evidence": [
+        {
+          "text": "Although we make reasonable efforts to ensure the accuracy of our forecasts of future product demand, including the impact of planned future product launches, any significant unanticipated changes in demand or technological developments could have a significant impact on the value of our inventory and our reported operating results.",
+          "section": "mda",
+          "subsection": "Provisions for Excess and Obsolete Inventory Losses"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Approximately 4% of the workforce is unionized, and there is a risk of work stoppages which could harm the business.",
+      "evidence": [
+        {
+          "text": "Approximately 900 of our employees are unionized, which represents approximately 4% of our employee-base at the end of fiscal 2015. As a result, we may experience work stoppages, which could adversely affect our business.",
+          "section": "risk_factors",
+          "subsection": "We have significant operations in locations that could be materially and adversely impacted in the event of a natural disaster or other significant\ndisruption."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to environmental laws and regulations, which could result in significant costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "Our operations are subject to and affected by many Federal, state, local and foreign environmental laws and regulations. In addition, we could be affected by future environmental laws or regulations, including, for example, new restrictions on materials used in our operations. Compliance with current and future environmental laws and regulations may require significant operating and capital costs.",
+          "section": "risk_factors",
+          "subsection": "We may not be successful in obtaining the necessary export licenses to conduct certain operations abroad, and Congress may prevent proposed sales to certain foreign governments."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is facing pricing pressure due to increased competition.",
+      "evidence": [
+        {
+          "text": "The U.S. Government has increasingly relied on certain types of contracts that are subject to multiple competitive bidding processes, including multi-vendor IDIQ, GWAC, General Services Administration Schedule and other multi-award contracts, which has resulted in greater competition and increased pricing pressure.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are subject to fluctuations, particularly in raw materials and labor.",
+      "evidence": [
+        {
+          "text": "If our initial estimates are incorrect, we can lose money on these contracts. U.S. Government contracts can expose us to potentially large losses because the U.S. Government can hold us responsible for completing a project or, in certain circumstances, paying the entire cost of its replacement by another provider regardless of the size or foreseeability of any cost overruns that occur over the life of the contract.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining in certain segments, particularly in Integrated Network Solutions, affecting overall revenue growth.",
+      "evidence": [
+        {
+          "text": "The $210 million decrease in revenue in our Integrated Network Solutions segment was primarily due to lower revenue from U.S. Government customers, primarily on the Navy/Marine Corps Intranet and U.S. Air Force Network Centric Solutions programs.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining unit volumes in certain segments negatively impact revenue growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are challenging due to constrained government budgets and sequestration, impacting demand and creating uncertainty.",
+      "evidence": [
+        {
+          "text": "U.S. Government budgets remained constrained in fiscal 2015, and we anticipate a similarly constrained spending environment in fiscal 2016.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenging economic conditions due to constrained budgets and sequestration hinder demand and create uncertainty.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rates are increasing, leading to higher net interest expenses and impacting financial performance.",
+      "evidence": [
+        {
+          "text": "Our net interest expense increased in fiscal 2015 compared with fiscal 2014 primarily due to higher overall debt levels as a result of our issuance of $2.4 billion of new debt securities...",
+          "section": "mda",
+          "subsection": "Net Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising interest rates increase net interest expenses, negatively affecting financial performance.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company is focusing on expanding its presence in international markets and leveraging its technology in new commercial applications, aligning with long-term strategic goals.",
+      "evidence": [
+        {
+          "text": "We believe we can leverage our domain expertise and proven technology provided in the U.S. to further expand our international business. Similarly, we provide turnkey managed satellite communications solutions not only to government customers in remote and harsh locations but also for commercial energy and maritime customers.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Focus on international expansion and new commercial applications aligns with long-term strategic goals, indicating growth opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "A potential catalyst is the successful integration of the Exelis acquisition and leveraging its technology in new markets, which could drive future growth.",
+      "evidence": [
+        {
+          "text": "We are also subject to other risks associated with U.S. Government business, including technological uncertainties, dependence on annual appropriations and allotment of funds, extensive regulations and other risks, which are discussed in \u0093Item 1A. Risk Factors\u0094 of this Report.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Potential catalysts include successful integration of Exelis acquisition and leveraging technology in new markets for future growth.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is increasing, reflecting a focus on innovation despite cost pressures.",
+      "evidence": [
+        {
+          "text": "Overall Company-sponsored research and development costs were $277\u00a0million in fiscal 2015 compared with $264\u00a0million in fiscal 2014.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing R&D investment reflects a commitment to innovation despite cost pressures, which can drive future growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products, such as next-generation LTE solutions, are being developed to capture emerging market opportunities.",
+      "evidence": [
+        {
+          "text": "Future market opportunities include upgrading aging analog infrastructure to new digital standards, as well as opportunities associated with next-generation LTE solutions for high data-rate applications, an emerging market in the early stages of development.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Development of next-generation LTE solutions captures emerging market opportunities, indicating innovation and growth potential.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's order backlog is mixed, with declines in certain segments such as RF Communications and Integrated Network Solutions, while it remains stable in others like Government Communications Systems and overall.",
+      "evidence": [
+        {
+          "text": "Order backlog was $987 million at the end of fiscal 2015, compared to $1.13 billion at the end of fiscal 2014, indicating a decrease.",
+          "section": "mda",
+          "subsection": "General"
+        },
+        {
+          "text": "The $210 million decrease in revenue in our Integrated Network Solutions segment was primarily due to lower revenue from U.S. Government customers...",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "Our segment reporting for fiscal 2016 will consist of the following four business segments...",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        },
+        {
+          "text": "In addition, our business, financial condition, results of operations and cash flows are subject to, and could be materially adversely affected by, various risks and uncertainties...",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining backlog in certain segments suggests reduced future demand and could impact revenue stability.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage is increasing, as evidenced by higher debt levels and new financing activities. While the capital structure is strengthening through deleveraging, the net interest expense has risen due to increased debt.",
+      "evidence": [
+        {
+          "text": "The company completed the optional redemption of its outstanding notes, increasing debt by $448 million and $415 million respectively.",
+          "section": "mda",
+          "subsection": "Capital Structure and Resources"
+        },
+        {
+          "text": "Our consolidated total indebtedness to total capital ratio at July\u00a03, 2015 was 60 percent, below our current 67.5 percent covenant limitation.",
+          "section": "mda",
+          "subsection": "Key Indicators"
+        },
+        {
+          "text": "Our net interest expense increased in fiscal 2015 compared with fiscal 2014 primarily due to higher overall debt levels as a result of our issuance of $2.4 billion of new debt securities and our borrowing of $1.3 billion under a new term loan agreement to finance our acquisition of Exelis.",
+          "section": "mda",
+          "subsection": "Net Interest Expense"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is demonstrating confidence in its future prospects through increased buybacks and dividend hikes, which are positive indicators for shareholder returns. However, the stability of shareholder returns is mentioned in another section, suggesting a mixed perspective.",
+      "evidence": [
+        {
+          "text": "During fiscal 2015, we used $150 million to repurchase 2,136,362 shares of our common stock under our 2013 Repurchase Program at an average price per share of $70.21...",
+          "section": "mda",
+          "subsection": "Dividends"
+        },
+        {
+          "text": "On August\u00a028, 2015, our Board of Directors increased the quarterly cash dividend rate on our common stock from $.47 per share to $.50 per share, for an annualized cash dividend rate of $2.00 per share.",
+          "section": "mda",
+          "subsection": "General"
+        },
+        {
+          "text": "For additional information about our acquisition of Exelis and our divestiture of HCS, see \u0093Item 1. Business-Recent Acquisitions and Divestitures\u0094 of this Report and Note 1: Significant Accounting Policies and Note 4: Business Combinations in the Notes.",
+          "section": "mda",
+          "subsection": "General"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is mixed across different segments, with deceleration in the RF Communications and Integrated Network Solutions segments, and an increase in the Government Communications Systems segment. Overall, organic growth is facing challenges due to lower revenue from U.S. Government customers and uncertain government spending, which could further impact future performance.",
+      "evidence": [
+        {
+          "text": "In fiscal 2015, in connection with the Exelis acquisition, we recorded $281 million of charges at our corporate headquarters, consisting of financing, restructuring, integration, transaction and other costs as follows.",
+          "section": "mda",
+          "subsection": "Key Indicators"
+        },
+        {
+          "text": "Segment revenue in fiscal 2015 included Tactical Communications revenue of $1.315 billion, a 1 percent increase from $1.307 billion in fiscal 2014; and Public Safety and Professional Communications revenue of $460 million, a 12 percent decrease from $521 million in fiscal 2014. The $54 million increase in segment revenue in fiscal 2015 compared with fiscal 2014 was primarily due to higher revenue from the FGCM program, the F-35 program and wireless products, partially offset by lower revenue from the SGSS program for NASA and the NOAA GOES-R Ground and Antenna Segment weather program.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "U.S. Government spending priorities and levels remain uncertain and difficult to predict and are affected by numerous factors, including sequestration (automatic, across-the-board U.S. Government budgetary spending cuts) and potential alternative funding arrangements.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        },
+        {
+          "text": "The decrease in revenue in fiscal 2014 compared with fiscal 2013 was primarily due to lower revenue in our Integrated Network Solutions segment, while modestly lower revenue in our RF Communications segment offset modestly higher revenue in our Government Communications Systems segment.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins are under mixed pressure. While gross margins remain stable, operating margins are facing compression due to higher expenses and unfavorable revenue mix, though some segments show slight improvements. Additionally, competitive and macroeconomic factors are contributing to margin pressures.",
+      "evidence": [
+        {
+          "text": "Gross and operating margins are compressing.",
+          "section": "mda",
+          "subsection": "Key Indicators"
+        },
+        {
+          "text": "The company's gross and operating margins are stable as there are no significant changes in methodologies affecting their calculation.",
+          "section": "mda",
+          "subsection": "Provisions for Excess and Obsolete Inventory Losses"
+        },
+        {
+          "text": "Gross margins are stable, but operating margins are under pressure due to higher engineering, selling, and administrative expenses.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "The decrease in segment operating income and the slight increase in operating margin percentage in fiscal 2015 compared with fiscal 2014 reflected the items discussed above regarding this segment. The increase in segment gross margin percentage in fiscal 2015 compared with fiscal 2014 was primarily due to higher revenue, continued strong program performance and a more favorable mix of revenue.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has been active in M&A, particularly highlighted by the acquisition of Exelis in 2015, which has been partially integrated. While the acquisition is seen as transformative, expanding capabilities and scale, it has also led to increased debt levels and higher ESA expenses.",
+      "evidence": [
+        {
+          "text": "Acquisitions are creating value through integration and capability expansion.",
+          "section": "mda",
+          "subsection": "Value Drivers of Our Business"
+        },
+        {
+          "text": "Our commitment to excellence and innovation carries through to our acquisition of Exelis and the integration process. Our goal is to maximize the benefits of the acquisition, which is transformative for Harris, creating significantly greater scale and bringing together two engineering-driven companies and workforces with similar cultures that value technology leadership.",
+          "section": "mda",
+          "subsection": "Exelis Segment"
+        },
+        {
+          "text": "We acquired Exelis on May 29, 2015 and operated it as a single segment for the approximately one-month period through the end of fiscal 2015.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        },
+        {
+          "text": "The increase in engineering, selling and administrative (\u0093ESA\u0094) expenses and ESA expenses as a percentage of revenue (\u0093ESA percentage\u0094) in fiscal 2015 compared with fiscal 2014 was primarily due to ESA expenses in our new Exelis segment and charges for integration, restructuring and other costs associated with our acquisition of Exelis.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has implemented cost reduction actions, including restructuring and integration costs, which have resulted in measurable savings. However, these savings may be offset by ongoing integration and restructuring expenses.",
+      "evidence": [
+        {
+          "text": "Restructuring and integration costs are delivering measurable savings.",
+          "section": "mda",
+          "subsection": "General"
+        },
+        {
+          "text": "In fiscal 2015, in connection with the Exelis acquisition, we recorded $281 million of charges at our corporate headquarters, consisting of financing, restructuring, integration, transaction and other costs as follows: (1) $146 million of financing costs, (2) $65 million of restructuring costs, (3) $34 million of integration costs, (4) $23 million of transaction costs, and (5) $13 million of other costs.",
+          "section": "mda",
+          "subsection": "Provisions for Excess and Obsolete Inventory Losses"
+        },
+        {
+          "text": "We have not made any material changes in the reserve methodology used to establish our inventory loss reserves during the past three fiscal years. [...] We have not made any material changes in the methodologies used to determine our tax valuation allowances during the past three fiscal years. [...] We have not made any material changes during the past three fiscal years in the methodology used in the assessment of whether or not goodwill is impaired.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        },
+        {
+          "text": "The decrease in ESA expenses and ESA percentage in fiscal 2014 compared with fiscal 2013 was primarily due to $75 million of charges recorded in the fourth quarter of fiscal 2013 for Company-wide restructuring and other actions...",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces near-term risks from potential changes in demand, technological developments, security breaches, government budget uncertainties, and integration challenges from the Exelis acquisition, which could negatively impact its operating results and financial stability.",
+      "evidence": [
+        {
+          "text": "Any significant unanticipated changes in demand or technological developments could have a significant impact on the value of our inventory and our reported operating results. [...] We could be negatively impacted by a security breach, through cyber attack, cyber intrusion or otherwise, or other significant disruption of our IT networks and related systems or of those we operate for certain of our customers.",
+          "section": "mda",
+          "subsection": "Provisions for Excess and Obsolete Inventory Losses"
+        },
+        {
+          "text": "Absent any new legislation modifying the sequester caps, GFY16 will return to full sequestration, and there remains uncertainty regarding how sequester cuts would be applied in GFY 2016 and beyond.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed across different segments. While the RF Communications segment shows stable demand in Tactical Communications, there is a decline in Public Safety and Professional Communications. Additionally, the Government Communications Systems segment experienced modest growth, which was offset by challenges in the RF Communications segment.",
+      "evidence": [
+        {
+          "text": "The increase in Tactical Communications revenue was primarily due to higher revenue in international markets, mostly offset by lower revenue from DoD customers. The decrease in Public Safety and Professional Communications revenue was primarily due to continued market weakness.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "Revenue in our Government Communications Systems segment was modestly higher and mostly offset by lower revenue in our RF Communications segment.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company identifies significant sensitivities to demand changes, technological developments, and U.S. Government spending, which could materially impact its results.",
+      "evidence": [
+        {
+          "text": "The following are some of the factors we believe could cause our actual results to differ materially from our historical results or our current expectations or projections. [...] Any significant unanticipated changes in demand or technological developments could have a significant impact on the value of our inventory and our reported operating results. [...] We depend on U.S.\u00a0Government customers for a significant portion of our revenue, and the loss of these relationships, a reduction in U.S. Government funding, or a change in U.S.\u00a0Government spending priorities could have an adverse impact on our business, financial condition, results of operations, and cash flows.",
+          "section": "mda",
+          "subsection": "Provisions for Excess and Obsolete Inventory Losses"
+        },
+        {
+          "text": "We remain subject to the spending levels, pace and priorities of the U.S. Government as well as international governments and commercial customers, and to general economic conditions that could adversely affect us, our customers and our suppliers.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end market momentum for the factor is mixed. While Tactical Communications is experiencing slow growth, particularly in international markets, Public Safety and Professional Communications are facing declines. Additionally, the public safety market is weak, though there is strong demand for tactical radios internationally.",
+      "evidence": [
+        {
+          "text": "The increase in Tactical Communications revenue was primarily due to higher revenue in international markets, mostly offset by lower revenue from DoD customers. The decrease in Public Safety and Professional Communications revenue was primarily due to continued market weakness.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "The public safety market was highly competitive and relatively weak during fiscal 2015 after having concluded an upgrade cycle primarily related to the Federal Communications Commission\u0092s narrow-banding mandate that drove higher-than-average market demand.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting in both positive and negative directions. On one hand, there is a favorable shift towards higher-margin Tactical Communications in the RF Communications segment, which is beneficial. On the other hand, the revenue mix is also shifting towards international sales, introducing risks related to currency fluctuations and geopolitical factors. Additionally, the Integrated Network Solutions segment experienced a significant decline in revenue, impacting overall margins negatively.",
+      "evidence": [
+        {
+          "text": "The increase in segment gross margin percentage in fiscal 2015 compared with fiscal 2014 was primarily due to a more favorable mix of segment revenue within the RF Communications segment (a higher percentage of higher-margin Tactical Communications revenue compared with Public Safety and Professional Communications revenue) and retirement of risk on a large international program.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "We are dependent on sales to customers outside the U.S. The percentage of our total revenue represented by revenue from products and services exported from the U.S., including foreign military sales, or manufactured or rendered abroad was 31 percent in fiscal 2015, 30 percent in fiscal 2014 and 26 percent in fiscal 2013.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        },
+        {
+          "text": "The $210 million decrease in revenue in our Integrated Network Solutions segment was primarily due to lower revenue from U.S. Government customers, primarily on the Navy/Marine Corps Intranet and U.S. Air Force Network Centric Solutions programs.",
+          "section": "mda",
+          "subsection": "Revenue"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company faces challenges in attracting and retaining skilled personnel, which is critical for its operations.",
+      "evidence": [
+        {
+          "text": "Our business has a continuing need to attract and retain significant numbers of skilled personnel.",
+          "section": "risk_factors",
+          "subsection": "We must attract and retain key employees, and failure to do so could seriously harm us."
+        },
+        {
+          "text": "difficulties in performing under our contracts if our needs for such employees were unmet.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "The defense budget's impact on the company is mixed. While the RF Communications segment saw a decrease in U.S. Government revenue, the Government Communications Systems segment maintained a high level of government dependence. Additionally, there is significant uncertainty surrounding U.S. Government spending priorities and levels, influenced by factors such as sequestration and potential budget cuts, which could affect the company's revenue and operations.",
+      "evidence": [
+        {
+          "text": "The percentage of this segment's revenue that was derived from sales to U.S. Government customers... was approximately 38 percent in fiscal 2015 and 46 percent in fiscal 2014.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "The percentage of this segment's revenue that was derived from sales to U.S. Government customers... was approximately 93 percent in both fiscal 2015 and 2014.",
+          "section": "risk_factors",
+          "subsection": "We may not be successful in obtaining the necessary export licenses to conduct certain operations abroad, and Congress may prevent proposed sales to certain foreign governments."
+        },
+        {
+          "text": "U.S. Government spending priorities and levels remain uncertain and difficult to predict and are affected by numerous factors, including sequestration and potential alternative funding arrangements.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        },
+        {
+          "text": "The Budget Control Act of 2011 resulted in automatic spending reductions, known as sequestration, through budget caps for both defense and non-defense spending.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "The company's contract backlog is mixed, with the RF Communications segment experiencing a decline and the Government Communications Systems segment showing stability. However, the backlog is subject to potential termination or funding reductions, and any impairment in obtaining export licenses or congressional approval could negatively impact it.",
+      "evidence": [
+        {
+          "text": "Segment funded backlog was $987 million at the end of fiscal 2015, including $488 million in Tactical Communications and $499 million in Public Safety and Professional Communications, compared with $1.13 billion at the end of fiscal 2014. Segment funded backlog was $1.13 billion at the end of fiscal 2014, including $564 million in Tactical Communications and $570 million in Public Safety and Professional Communications, compared with $1.34 billion at the end of fiscal 2013.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "We can give no assurance that we will continue to be successful in obtaining the necessary licenses or authorizations or that Congress will not prevent or delay certain sales. Any significant impairment of our ability to sell products or technologies outside of the U.S. could negatively impact our business, financial condition, results of operations and cash flows.",
+          "section": "risk_factors",
+          "subsection": "We may not be successful in obtaining the necessary export licenses to conduct certain operations abroad, and Congress may prevent proposed sales to certain foreign governments."
+        },
+        {
+          "text": "Over its lifetime, a U.S. Government program may be implemented by the award of many different individual contracts and subcontracts. The funding of U.S. Government programs is subject to Congressional appropriations.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International sales present a mixed outlook. While there is growth in Tactical Communications, particularly in international markets, Public Safety and Professional Communications are experiencing declines due to market weakness. Additionally, the company faces regulatory hurdles, including export license requirements and congressional notifications, which could delay or block sales to foreign governments.",
+      "evidence": [
+        {
+          "text": "The increase in Tactical Communications revenue was primarily due to higher revenue in international markets, mostly offset by lower revenue from DoD customers. The decrease in Public Safety and Professional Communications revenue was primarily due to continued market weakness.",
+          "section": "mda",
+          "subsection": "RF Communications Segment"
+        },
+        {
+          "text": "We must first obtain export and other licenses and authorizations from various U.S. Government agencies before we are permitted to sell certain products and technologies outside of the U.S. For example, the U.S. Department of State must notify Congress at least 15 to 60 days, depending on the size and location of the proposed sale, prior to authorizing certain sales of defense equipment and services to foreign governments. During that time, Congress may take action to block the proposed sale.",
+          "section": "risk_factors",
+          "subsection": "We may not be successful in obtaining the necessary export licenses to conduct certain operations abroad, and Congress may prevent proposed sales to certain foreign governments."
+        },
+        {
+          "text": "We believe there is continuing international demand from military and government customers for tactical radios, public safety communications, electronic warfare equipment, air traffic management, electronic attack and release systems, ISR, as well as for turnkey managed satellite communications solutions for government, energy and maritime markets.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company faces challenges due to regulatory changes, including increased costs, budget constraints from government spending pressures, and potential limitations on expansion. These changes could negatively impact the company's financial condition and operations.",
+      "evidence": [
+        {
+          "text": "Changes in the regulatory framework under which our managed satellite and terrestrial communications solutions operations are operated could adversely affect our business, financial condition, results of operations and cash flows.",
+          "section": "risk_factors",
+          "subsection": "We have significant operations in locations that could be materially and adversely impacted in the event of a natural disaster or other significant\ndisruption."
+        },
+        {
+          "text": "Deficit spending has caused U.S. Government budgets to come under significant pressure. In particular, the Budget Control Act of 2011 resulted in automatic spending reductions, known as sequestration, through budget caps for both defense and non-defense spending.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure across multiple areas, including potential liabilities from past spin-offs, intellectual property disputes, and government investigations. These risks could have a material adverse effect on its financial condition and operations.",
+      "evidence": [
+        {
+          "text": "The Vectrus spin-off could be challenged under various state and Federal fraudulent conveyance laws... could impose a number of different remedies, including returning assets or Vectrus shares to Exelis.",
+          "section": "risk_factors",
+          "subsection": "We have significant operations in locations that could be materially and adversely impacted in the event of a natural disaster or other significant\ndisruption."
+        },
+        {
+          "text": "Third parties have claimed in the past and may claim in the future that we are infringing directly or indirectly upon their intellectual property rights, and third parties may infringe upon our intellectual property rights.",
+          "section": "risk_factors",
+          "subsection": "We have made, and may continue to make, strategic acquisitions and divestitures that involve significant risks and uncertainties."
+        },
+        {
+          "text": "As a U.S. Government contractor, we are subject to U.S. Government oversight. The U.S. Government may investigate our business practices and audit our compliance with applicable rules and regulations. Depending on the results of those investigations and audits, the U.S. Government could make claims against us.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant litigation exposure with multiple risks that could materially affect its financial condition and operations.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks pose significant threats to the company's operations and profitability, particularly in regions experiencing military conflicts and unstable governments. However, these risks also present opportunities in international markets for certain products, such as tactical radios and satellite solutions.",
+      "evidence": [
+        {
+          "text": "Ongoing instability and current conflicts in global markets, including in the Middle East and Asia, and the potential for other conflicts and future terrorist activities and other recent geo-political events throughout the world have created economic and political uncertainties that could have a material adverse effect on our business, operations and profitability.",
+          "section": "risk_factors",
+          "subsection": "We may not be successful in obtaining the necessary export licenses to conduct certain operations abroad, and Congress may prevent proposed sales to certain foreign governments."
+        },
+        {
+          "text": "We are subject to risks of doing business internationally, including: [...] Rapid changes in government, economic and political policies, political or civil unrest, acts of terrorism or the threat of international boycotts or U.S. anti-boycott legislation.",
+          "section": "risk_factors",
+          "subsection": "RISK FACTORS."
+        },
+        {
+          "text": "We believe there is continuing international demand from military and government customers for tactical radios, public safety communications, electronic warfare equipment, air traffic management, electronic attack and release systems, ISR, as well as for turnkey managed satellite communications solutions for government, energy and maritime markets.",
+          "section": "mda",
+          "subsection": "Industry-Wide Opportunities, Challenges and Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "While geopolitical risks pose threats to operations, there are limited positive opportunities noted, primarily in international markets for specific products.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

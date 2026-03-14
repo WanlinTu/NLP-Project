@@ -1,0 +1,620 @@
+{
+  "ticker": "DAL",
+  "form": "10-K",
+  "filing_date": "2018-02-23",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 30,
+  "factors": [
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's backlog of aircraft purchase commitments is growing significantly, with total commitments amounting to $18.28 billion.",
+      "evidence": [
+        {
+          "text": "Aircraft Purchase Commitments. Represents our commitments to purchase 100 A321-200neo, 93 A321-200, 75 CS100, 41 B-737-900ER, 25 A330-900neo and 19 A350-900 aircraft.",
+          "section": "mda",
+          "subsection": "Contractual Obligations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "A growing backlog of aircraft purchase commitments indicates strong demand and future revenue potential.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable. There is no mention of active or potential strikes, contract disputes, or union pressure in the provided text.",
+      "evidence": [
+        {
+          "text": "We assessed each of the above assumptions in our most recent impairment analyses. The combination of our most recently completed annual results and our projected revenues, expenses and cash flows more than offset any negative events and circumstances.",
+          "section": "mda",
+          "subsection": "Critical Accounting Policies and Estimates"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "There is no mention of active or potential issues, suggesting stable relations, but no positive developments are highlighted.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage decreased as the company reduced principal debt and capital leases.",
+      "evidence": [
+        {
+          "text": "Since December 31, 2009, we have reduced our principal amount of debt and capital leases by $9.4 billion.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Reduction in principal debt and capital leases shows improved financial health and lower risk.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns increased with higher dividends and share repurchases.",
+      "evidence": [
+        {
+          "text": "Through dividends and share repurchases, we have returned $9.8 billion to shareholders since 2013, while reducing outstanding shares by approximately 18% compared to the beginning of 2013. During 2017 alone, we repurchased and retired 33 million shares at a cost of $1.7 billion.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Higher dividends and share repurchases indicate strong returns and positive shareholder value creation.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation decreased due to lower operating cash flows.",
+      "evidence": [
+        {
+          "text": "We had lower operating cash flows in 2017 compared to prior years primarily due to incremental pension plan contributions partially funded through $2.0 billion of debt issuance.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreased free cash flow due to lower operating cash flows is a headwind for the company.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical factors pose risks such as conflicts, security events, and economic impacts.",
+      "evidence": [
+        {
+          "text": "Terrorist attacks, geopolitical conflict or security events, or fear of such events, could have a significant adverse effect on our business.",
+          "section": "risk_factors",
+          "subsection": "Terrorist attacks, geopolitical conflict or security events may adversely affect our business, financial condition and operating results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential significant adverse effects from geopolitical factors pose risks to the business.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant environmental compliance costs and risks due to regulations.",
+      "evidence": [
+        {
+          "text": "Monroe's operations are subject to extensive environmental, health and safety laws and regulations... failure to comply... could have a material adverse effect on our financial results.",
+          "section": "risk_factors",
+          "subsection": "Our reputation and brand could be damaged if we are exposed to significant adverse publicity through social media."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant environmental compliance costs and risks could negatively impact financial results.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is dependent on retaining key employees, with potential risks from turnover.",
+      "evidence": [
+        {
+          "text": "We are dependent on the experience and industry knowledge of our officers and other key employees... If we experience a substantial turnover in our leadership and other key employees... our performance could be materially adversely impacted.",
+          "section": "risk_factors",
+          "subsection": "If we lose senior management and other key employees and they are not replaced by individuals with comparable skills, our operating results could be adversely affected."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Dependency on key employees with potential turnover risks could materially impact performance.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is strong, particularly in domestic and international leisure markets.",
+      "evidence": [
+        {
+          "text": "Robust demand and strong revenue momentum, closing 2017 with three consecutive quarters of year-over-year passenger unit revenue growth.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The summary indicates strong demand across leisure markets, supported by consecutive revenue growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments, particularly in domestic and international leisure markets.",
+      "evidence": [
+        {
+          "text": "Passenger revenue per available seat mile ('PRASM') increased 2.1% led by strong domestic leisure yields, expanded distribution of Branded Fares, and an improving business fare environment.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin segments suggests improved profitability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The strongest growth is in domestic leisure, Atlantic, and Latin America markets, while Pacific markets are facing challenges.",
+      "evidence": [
+        {
+          "text": "Passenger unit revenue growth was strong in domestic leisure, Atlantic, and Latin America markets, while Pacific markets experienced declines due to industry capacity growth and foreign currency fluctuations.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving due to fleet, technology, and supply chain initiatives.",
+      "evidence": [
+        {
+          "text": "Productivity gains from our fleet, technology and supply chain initiatives.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvements from initiatives likely contribute to cost efficiency.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears confident with investments in technology and new routes, indicating confidence in future growth.",
+      "evidence": [
+        {
+          "text": "The company is investing in technology infrastructure and new routes, such as the trans-Pacific joint venture with Korean Air, showing confidence in future growth.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investments signal confidence in future growth opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include rising fuel costs and challenges in the Pacific region due to capacity growth.",
+      "evidence": [
+        {
+          "text": "Fuel expense increased $771 million compared to the prior year due to a 22.3% increase in the market price per gallon of fuel. Unit revenue declines in the Pacific primarily resulted from industry capacity growth in the region.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks like rising fuel costs pose challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic focus includes fleet modernization and expansion into profitable markets, such as the trans-Pacific joint venture.",
+      "evidence": [
+        {
+          "text": "The company is introducing new aircraft like the A350-900 and expanding Basic Economy offerings, along with a trans-Pacific joint venture with Korean Air.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strategic moves like fleet modernization and joint ventures indicate growth focus.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Fuel prices and foreign currency fluctuations are key sensitivities affecting near-term results.",
+      "evidence": [
+        {
+          "text": "Fuel expense increased $771 million compared to the prior year due to a 22.3% increase in the market price per gallon of fuel. Foreign currency fluctuations impacted international revenue performance.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Fuel prices and currency fluctuations are significant risks affecting results.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "New routes and aircraft introductions are catalysts for future growth.",
+      "evidence": [
+        {
+          "text": "The company reached an agreement to create a trans-Pacific joint venture with Korean Air, offering an enhanced and expanded network. New A350-900 aircraft with Delta One suites were introduced.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The introduction of new routes and aircraft indicates growth opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fleet_strategy",
+      "category": "airlines_transport",
+      "summary": "Fleet strategy involves modernization with new aircraft deliveries and planned retirements to enhance efficiency.",
+      "evidence": [
+        {
+          "text": "New aircraft deliveries, including B-737-900ER, A321-200, A330-300 and A350-900 aircraft, fleet modifications and accelerated depreciation due to the planned retirement of our MD-88 fleet and two B-767-300ER aircraft.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The strategy involves both modernization and retirements but doesn't clearly indicate a positive or negative trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed, with stable SkyMiles program performance but growing demand contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "A hypothetical 1% change in the number of outstanding miles estimated to be redeemed would result in a $34 million impact on our deferred revenue liability at December\u00a031, 2017.",
+          "section": "mda",
+          "subsection": "Critical Accounting Policies and Estimates"
+        },
+        {
+          "text": "Operating revenue increased $1.6 billion, or 4.0%, on 1.0% higher capacity combined with robust demand and strong revenue momentum, closing 2017 with three consecutive quarters of year-over-year passenger unit revenue growth.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Mixed trends with stable SkyMiles and growing demand contribute to revenue growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company exhibits mixed evidence regarding its pricing power. While it demonstrates strength in certain markets, such as domestic and international leisure, it faces constraints due to industry competition and challenges in offsetting fuel cost increases.",
+      "evidence": [
+        {
+          "text": "The company's pricing power is stable as the frequent flyer program's mileage credits are based on ticket prices, and there is no indication of significant changes in pricing strategies.",
+          "section": "mda",
+          "subsection": "Critical Accounting Policies and Estimates"
+        },
+        {
+          "text": "Passenger revenue per available seat mile ('PRASM') increased 2.1% led by strong domestic leisure yields, expanded distribution of Branded Fares, and an improving business fare environment.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "Because passengers often purchase tickets well in advance of their travel, a significant rapid increase in fuel price may result in the fare charged not covering that increase. At times in the past, we often were not able to increase our fares to offset fully the effect of increases in fuel costs, and we may not be able to do so in the future.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Strength in some markets but constrained by competition and fuel costs.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is mixed. While there are signs of slight decreases and pressures from rising costs, particularly in fuel and labor expenses, the company is implementing cost reduction initiatives and productivity gains to manage these challenges.",
+      "evidence": [
+        {
+          "text": "The combination of our most recently completed annual results and our projected revenues, expenses and cash flows more than offset any negative events and circumstances.",
+          "section": "mda",
+          "subsection": "Critical Accounting Policies and Estimates"
+        },
+        {
+          "text": "Total operating expense decreased by $215 million, or 0.7%, compared to the prior year.",
+          "section": "mda",
+          "subsection": "Operating Expense"
+        },
+        {
+          "text": "Fuel costs represented 19.2% of our operating expense in 2017. Our ability to pass along rapidly increasing fuel costs to our customers may be affected by the competitive nature of the airline industry.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "Non-fuel unit costs ('CASM-Ex, including profit sharing') increased 4.3% to 10.57 cents due to the pay rate increases and depreciation expense discussed above, which were partially offset by productivity gains from our fleet, technology and supply chain initiatives.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signs with cost pressures and initiatives to manage them.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly fuel costs, have shown significant volatility. While fuel costs decreased in some periods due to lower market prices and favorable hedging, they increased in others due to rising market prices. This volatility has created margin pressures and highlights the importance of fuel costs as a significant input.",
+      "evidence": [
+        {
+          "text": "Fuel expense decreased $1.6 billion compared to the prior year due to an 18% decrease in the market price per gallon of fuel and lower fuel hedge losses, partially offset by a loss from our refinery segment in the current year compared to a profit in the prior year and a 0.7% increase in consumption.",
+          "section": "mda",
+          "subsection": "Operating Expense"
+        },
+        {
+          "text": "In 2017, our average fuel price per gallon, including the impact of fuel hedges, was $1.68, a 12.8% increase from our average fuel price in 2016. Fuel costs represented 19.2% of our operating expense in 2017.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "Fuel expense increased $771 million compared to the prior year due to a 22.3% increase in the market price per gallon of fuel.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant volatility and rising fuel costs create margin pressures.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising due to multiple factors, including salary increases, merit raises, and new contracts. While the company has managed labor relations effectively with only 19% of the workforce unionized, the retroactive pay rate increases and ongoing raises contribute to the overall increase in labor expenses.",
+      "evidence": [
+        {
+          "text": "The increase in salaries and related costs was principally due to pay rate increases given to eligible employees, which includes an 18% pay rate increase for pilots resulting from a new pilot contract ratified in the December 2016 quarter that was retroactive to January 1, 2016.",
+          "section": "mda",
+          "subsection": "Operating Expense"
+        },
+        {
+          "text": "Salaries and related costs were higher due to increases for eligible merit, ground and flight attendant employees implemented in the June 2017 quarter.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "As of December\u00a031, 2017, approximately 19% of our workforce, primarily pilots, was unionized. Relations between air carriers and labor unions in the United States are governed by the Railway Labor Act, which provides that a collective bargaining agreement between an airline and a labor union does not expire...",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs due to salary increases and contracts.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company is exposed to economic conditions that can negatively impact its business. Fuel prices and the competitive nature of the airline industry exacerbate these challenges.",
+      "evidence": [
+        {
+          "text": "Prolonged periods of stagnant or weak economic conditions could have a material adverse effect on our business, financial condition and operating results.",
+          "section": "risk_factors",
+          "subsection": "Prolonged periods of stagnant or weak economic conditions could have a material adverse effect on our business, financial condition and operating results."
+        },
+        {
+          "text": "As a result of the discretionary nature of air travel, the airline industry has been cyclical and particularly sensitive to changes in economic conditions.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "High fuel costs or cost increases, including in the cost of crude oil, could have a material adverse effect on our operating results.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "Our operating results are significantly impacted by changes in the price of aircraft fuel.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic sensitivity and challenges from fuel prices and competition.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company anticipates a significant increase in capital expenditures, primarily driven by investments in new aircraft purchases and airport projects, as well as advancements in technology infrastructure to enhance customer experience.",
+      "evidence": [
+        {
+          "text": "We expect that we will invest approximately $4.5 billion in 2018 primarily for (1) aircraft, including deliveries of B-737-900ERs, A321-200s and A350-900s, along with advance deposit payments for these and our new A330-900neo and CS100 orders as well as for (2) aircraft modifications, the majority of which relate to increasing the seat density and enhancing the cabins on our domestic fleet.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        },
+        {
+          "text": "The increase in contracted services expense predominantly relates to additional contract labor expenses associated with investments in our technology infrastructure and other activities to improve the customer experience.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is anticipating a significant increase in capital expenditures for strategic investments in aircraft and technology infrastructure, which indicates a positive outlook.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fuel_costs_hedging",
+      "category": "airlines_transport",
+      "summary": "The company's fuel costs are influenced by market price fluctuations and the effectiveness of its hedging program. While lower market prices and favorable hedging contributed to a decrease in fuel expenses in certain periods, rising fuel prices and the impact of hedging activities have led to increases in other periods. The hedging program aims to mitigate fuel price volatility but may not fully offset all price fluctuations, and external factors like weather can further affect fuel costs.",
+      "evidence": [
+        {
+          "text": "Fuel expense decreased $1.6 billion compared to the prior year due to an 18% decrease in the market price per gallon of fuel and lower fuel hedge losses, partially offset by a loss from our refinery segment in the current year compared to a profit in the prior year and a 0.7% increase in consumption.",
+          "section": "mda",
+          "subsection": "Operating Expense"
+        },
+        {
+          "text": "Increases in the frequency, severity or duration of thunderstorms... could result in increases in delays and cancellations, turbulence-related injuries and fuel consumption to avoid such weather, any of which could result in loss of revenue and higher costs.",
+          "section": "risk_factors",
+          "subsection": "Our results can fluctuate due to the effects of weather, natural disasters and seasonality."
+        },
+        {
+          "text": "Fuel hedging activities are intended to manage the financial impact of the volatility in the price of jet fuel. The effects of rebalancing our hedge portfolio and mark-to-market adjustments may have a negative effect on our financial results.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "Fuel expense increased $771 million compared to the prior year due to a 22.3% increase in the market price per gallon of fuel, partially offset by reduced fuel hedge losses compared to the prior year and profits generated within our refinery segment.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company's fuel costs are influenced by market fluctuations and hedging effectiveness, with mixed outcomes in different periods.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "route_network",
+      "category": "airlines_transport",
+      "summary": "The company is actively expanding and optimizing its global route network through strategic investments in other airlines, new joint ventures, and capacity adjustments, particularly in the Pacific region. These efforts aim to enhance network value and differentiation through alliances with carriers in China and Korea, though there is potential for both positive and negative impacts on results due to the associated investments.",
+      "evidence": [
+        {
+          "text": "An important part of our strategy to expand our global network has been to make significant investments in airlines in other parts of the world and expand our commercial relationships with these carriers.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "The company is optimizing the Pacific region with a 7.7% reduction in capacity during 2017, focused on refining the network to generate incremental value from Chinese and Korean alliances and differentiating product offerings. A trans-Pacific joint venture with Korean Air was created, offering an enhanced and expanded network.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is expanding its global route network through strategic investments and alliances, which suggests a positive development.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capacity_load_yield",
+      "category": "airlines_transport",
+      "summary": "The company is experiencing mixed performance in terms of capacity, load factors, and efficiency metrics. While passenger mile yield has shown a slight increase and CASM remains stable, indicating moderate efficiency improvements, there is a slight increase in capacity and a strong improvement in revenue per available seat mile, reflecting robust demand and operational efficiency.",
+      "evidence": [
+        {
+          "text": "Passenger mile yield (1) 15.99 \u00a2 1.06 \u00a2 \u2014 17.05 \u00a2; CASM (1) 13.81 \u00a2 0.04 \u00a2 (0.02 \u00a2) 13.83 \u00a2",
+          "section": "mda",
+          "subsection": "Glossary of Defined Terms"
+        },
+        {
+          "text": "Operating revenue increased $1.6 billion, or 4.0%, on 1.0% higher capacity combined with robust demand and strong revenue momentum, closing 2017 with three consecutive quarters of year-over-year passenger unit revenue growth. Passenger revenue per available seat mile ('PRASM') increased 2.1%",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company shows mixed performance but with improvements in passenger mile yield, CASM stability, and strong revenue per available seat mile, indicating moderate positive trends.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "travel_demand_mix",
+      "category": "airlines_transport",
+      "summary": "The travel demand mix shows improvement, particularly in both business and leisure segments, with evidence of strong demand across the board. Metrics like PRASM and TRASM indicate positive trends in demand.",
+      "evidence": [
+        {
+          "text": "PRASM (1) 13.69 \u00a2 0.90 \u00a2 \u2014 14.59 \u00a2; TRASM (1) 16.22 \u00a2 (0.04 \u00a2) \u2014 16.18 \u00a2",
+          "section": "mda",
+          "subsection": "Glossary of Defined Terms"
+        },
+        {
+          "text": "Unit revenues of the domestic region increased 1.7% , resulting from our commercial initiatives, including differentiated products for our customers, known as Branded Fares, and an improving revenue environment. We continue to differentiate our product offerings and enable customer choice through segmentation, including offering Basic Economy throughout our domestic network. Our domestic operations closed 2017 with three consecutive quarters of year-over-year unit revenue growth, with robust demand for both business and leisure.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong demand across both business and leisure segments, with positive trends in PRASM and TRASM, indicating a positive sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is evident, driven by strategic investments in global network expansion and commercial relationships, alongside accelerating revenue growth due to higher demand and strong revenue momentum. However, the growth is dependent on favorable market conditions.",
+      "evidence": [
+        {
+          "text": "An important part of our strategy to expand our global network has been to make significant investments in airlines in other parts of the world and expand our commercial relationships with these carriers.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Relating to Delta"
+        },
+        {
+          "text": "Revenue increased $1.6 billion, or 4.0%, on 1.0% higher capacity combined with robust demand and strong revenue momentum, closing 2017 with three consecutive quarters of year-over-year passenger unit revenue growth.",
+          "section": "mda",
+          "subsection": "Introduction / Financial Highlights - 2017 Compared to 2016"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Evidence of organic growth through network expansion and commercial relationships, coupled with accelerating revenue growth, suggests a positive sentiment.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

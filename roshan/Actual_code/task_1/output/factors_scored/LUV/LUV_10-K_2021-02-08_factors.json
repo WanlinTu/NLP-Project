@@ -1,0 +1,837 @@
+{
+  "ticker": "LUV",
+  "form": "10-K",
+  "filing_date": "2021-02-08",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 40,
+  "factors": [
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is restructuring its workforce through voluntary programs and layoffs.",
+      "evidence": [
+        {
+          "text": "The Company introduced Voluntary Separation Program 2020 and the Extended Emergency Time Off ('Extended ETO') program which aligned staffing to reduced flight schedules and enabled the Company to avoid involuntary furloughs and layoffs through 2020. Employees had until July 15, 2020, to determine whether to participate in one of these programs, and approximately 15,000 Employees elected to do so.",
+          "section": "mda",
+          "subsection": "COVID-19 Pandemic"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is restructuring its workforce through voluntary programs and layoffs, indicating potential cost-cutting measures but also workforce reduction risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "The company faces significant labor relations risks, particularly due to a high percentage of unionized employees and past conflicts.",
+      "evidence": [
+        {
+          "text": "The Company is currently dependent on a single engine supplier, as well as single suppliers of certain other aircraft parts and equipment; therefore, the Company could be materially adversely affected (i) if it were unable to obtain timely or sufficient delivery of aircraft parts or equipment from Boeing or other suppliers or adequate maintenance or other support from any of these suppliers, or (ii) in the event of a mechanical or regulatory issue associated with the Company's aircraft parts or equipment.",
+          "section": "risk_factors",
+          "subsection": "The Company's business is labor intensive; therefore, the Company could be materially adversely affected in the event of conflict with its Employees or its Employees' representatives."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High unionization and past conflicts pose significant labor relations risks, which could impact company stability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to environmental regulations, particularly those related to climate change and emissions, which may increase costs and require operational changes.",
+      "evidence": [
+        {
+          "text": "The Company is subject to various environmental requirements, including laws and regulations related to the protection of the environment, including those relating to aircraft and ground-based emissions, discharges to water systems, safe drinking water, and the management of hazardous substances and waste materials.",
+          "section": "risk_factors",
+          "subsection": "The Company is subject to extensive FAA regulation that may necessitate modifications to the Company\u2019s operations, business plans, and strategies."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Subject to stringent environmental regulations, which could increase costs and require operational changes, posing financial and operational challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is facing potential material litigation that could affect its operating results.",
+      "evidence": [
+        {
+          "text": "The Company is currently subject to pending litigation, and if judgment were to be rendered against the Company in the litigation, such judgment could adversely affect the Company's operating results.",
+          "section": "risk_factors",
+          "subsection": "The Company's future results will suffer if it is unable to effectively manage its expanded international operations and/or Extended Operations (\"ETOPS\")."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Facing potential material litigation that could adversely affect operating results, indicating legal risks.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes related to international operations and ETOPS are impacting the company's costs and operational requirements.",
+      "evidence": [
+        {
+          "text": "The Company has made significant investments in facilities, equipment, and technologies at certain airports in order to improve the Customer experience and to assist CBP with its inspection and processing duties; however, the Company is not able to predict the impact, if any, that various CBP measures or the lack of CBP resources will have on Company revenues and costs, either in the short-term or the long-term.",
+          "section": "risk_factors",
+          "subsection": "The Company's future results will suffer if it is unable to effectively manage its expanded international operations and/or Extended Operations (\"ETOPS\")."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes impacting costs and operations, with unpredictability in long-term effects, creating operational challenges.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company's market share is likely stable or under slight pressure, but specific data is not provided in the text.",
+      "evidence": [
+        {
+          "text": "The Company continues to assess its immediate and near-term liquidity needs [...] believes that, given current market conditions, it has opportunities to do so.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific data on market share trends, so it's unclear whether there's a significant change or pressure.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration risk is present, with the company having a large unencumbered asset base and significant Air traffic liability, indicating potential dependency on a few large customers.",
+      "evidence": [
+        {
+          "text": "The Company has a large base of unencumbered assets [...] The vast majority of tickets are purchased prior to the day on which travel is provided.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High customer concentration indicates dependency on a few large customers, posing significant business risk.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The Company is experiencing disruptions in its supply chain, particularly with Boeing, which is impacting its ability to obtain aircraft and parts.",
+      "evidence": [
+        {
+          "text": "The Company is also dependent on (i) sole or limited suppliers for aircraft engines and certain other aircraft parts, equipment, and services; (ii) third party vendors; and (iii) service providers. The COVID-19 pandemic could result in delays and other performance issues, ceased operations, or even bankruptcies among these suppliers, third party vendors, and service providers.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain disruptions, especially with Boeing, are causing delays and impacting the ability to obtain aircraft and parts, leading to operational issues.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards lower margins due to increased competition from Ultra-Low Cost Carriers (ULCCs).",
+      "evidence": [
+        {
+          "text": "Competitor cost reduction measures such as accelerated fleet retirements, capacity cuts, and headcount reductions, could have a negative impact on the Company's relative cost position. Even before the pandemic, the Company's low-cost position had been challenged by the significant growth of 'Ultra-Low Cost Carriers' ('ULCCs'), which in some cases have surpassed the Company's cost advantage with larger aircraft, increased seat density, and lower wages.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Revenue mix is shifting towards lower margins due to competition from ULCCs.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End markets, particularly business and leisure travel, are both experiencing significant declines due to the pandemic.",
+      "evidence": [
+        {
+          "text": "The COVID-19 pandemic has caused public health officials to recommend precautions to mitigate the spread of the virus. Since the onset of the COVID-19 pandemic, federal, state, and local authorities have at various times instituted measures such as imposing testing and self-quarantine requirements, issuing directives forcing businesses to reduce operations or temporarily close, restricting international air travel, and issuing shelter-in-place and similar orders limiting the movement of individuals.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Both business and leisure travel are declining due to the pandemic.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is being impacted by reduced flight schedules and operational disruptions.",
+      "evidence": [
+        {
+          "text": "The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Reduced flight schedules and disruptions impact productivity.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is disrupted, particularly with Boeing, which is impacting the Company's ability to maintain its fleet.",
+      "evidence": [
+        {
+          "text": "The Company is currently dependent on Boeing as the sole manufacturer of the Company's aircraft. Prolonged delays completing the FAA\u2019s requirements to return the Boeing 737 MAX aircraft to Customer service, or further regulatory actions by the FAA with respect to the MAX aircraft, could materially and adversely affect the Company\u2019s business plans, strategies, and results of operations.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Disruption with Boeing affects fleet maintenance.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is declining due to reduced flight schedules and aircraft storage.",
+      "evidence": [
+        {
+          "text": "The Company has significantly reduced annual 2020 cash outlays and spending, compared with original plans. The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining utilization due to reduced flights and storage.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed through reduced spending and storage of aircraft.",
+      "evidence": [
+        {
+          "text": "The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Managed through reduced spending and aircraft storage.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Quality and safety incidents related to COVID-19 are causing operational disruptions.",
+      "evidence": [
+        {
+          "text": "Certain Employees of the Company, and employees of its suppliers and service providers, including airport and air traffic personnel, have tested positive for or been suspected of having COVID-19. These cases have resulted in the closure of facilities, reduction in available staffing, and disruptions to the Company\u2019s overall operations.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "COVID-19 incidents disrupt operations.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are being restricted due to government funding agreements.",
+      "evidence": [
+        {
+          "text": "The Company is prohibited from repurchasing its common stock and from paying dividends or making capital contributions with respect to its common stock through March 31, 2022.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Government restrictions limit shareholder returns.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The Company is not actively pursuing meaningful M&A activity, as it is focused on cost reduction and operational efficiency.",
+      "evidence": [
+        {
+          "text": "The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is not pursuing M&A activity, indicating a cautious approach.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Forward guidance is cautious due to the uncertain impact of the pandemic and economic conditions.",
+      "evidence": [
+        {
+          "text": "The extent of the impact of the COVID-19 pandemic on the Company\u2019s business and its financial and operational performance will depend on future developments, including (i) the duration, spread, severity, and any recurrence of the COVID-19 pandemic, including through any new variant strains of the underlying virus; (ii) the effectiveness and availability of vaccines; (iii) the duration and scope of related federal, state, and local government orders and restrictions; (iv) the extent of the impact of the COVID-19 pandemic on overall demand for air travel; and (v) the Company\u2019s access to capital, all of which are highly uncertain and cannot be predicted.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Forward guidance is cautious due to pandemic and economic uncertainty.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management confidence is cautious, with a focus on cost reduction and operational adjustments.",
+      "evidence": [
+        {
+          "text": "The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Management is cautious with focus on cost reduction.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include the potential extension of travel restrictions, economic uncertainty, and supply chain disruptions.",
+      "evidence": [
+        {
+          "text": "The Company expects it will continue to incur COVID-19 related costs as it sanitizes airplanes and implements additional hygiene-related protocol to airplanes, and takes other action to limit infection among its Employees and passengers. In addition, the industry may be subject to enhanced health and hygiene requirements in attempts to counteract future outbreaks, which requirements may be costly and take a significant amount of time to implement.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include travel restrictions and supply chain issues.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The long-term strategic direction is uncertain due to the ongoing impact of the pandemic and economic conditions.",
+      "evidence": [
+        {
+          "text": "The current outbreak and continued spread of COVID-19 could cause a global recession, which would have a further adverse impact on the Company\u2019s medium- and long-term financial condition and operations. Historically, unfavorable U.S. economic conditions have driven changes in travel patterns, including reduced spending for both leisure and business travel.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Long-term strategy is uncertain due to pandemic impact.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company faces significant challenges with rising input costs, particularly fuel expenses, which have led to unfavorable hedging positions and net outflows from fuel derivatives. Fuel prices are volatile, contributing to unpredictability in profitability, and the COVID-19 pandemic has exacerbated these financial pressures.",
+      "evidence": [
+        {
+          "text": "Fuel and oil expense, unhedged $ 1,810 $ 4,299 Add: Premium cost of fuel contracts designated as hedges 64 95 Deduct: Fuel hedge gains included in Fuel and oil expense, net (25) (47) Fuel and oil expense, as reported $ 1,849 $ 4,347 Add: Contracts settling in the current period, but for which losses were reclassified from AOCI (a) 25 \u2014 Add: Premium cost of fuel contracts not designated as hedges 34 \u2014 Fuel and oil expense, excluding special items (economic) $ 1,908 $ 4,347 (56.1) %",
+          "section": "mda",
+          "subsection": "Reconciliation of Reported Amounts to Non-GAAP Financial Measures (excluding special items) (unaudited) (in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "Cash flows associated with entering into new fuel derivatives, which are classified as Other, net, operating cash flows, were net outflows of $129 million in 2020 and $131 million in 2019.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "Airlines are inherently dependent upon energy to operate, and jet fuel and oil represented approximately 14.4 percent of the Company's operating expenses for 2020. The cost of fuel can be extremely volatile and unpredictable, and even a small change in market fuel prices can significantly affect profitability.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs, especially fuel, are pressuring the company.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins are under significant pressure, primarily due to the impact of the COVID-19 pandemic. This includes challenges such as increased costs from capacity reductions, fixed expenses, and cost reduction actions, all of which have negatively affected both gross and operating margins.",
+      "evidence": [
+        {
+          "text": "Operating income (loss), as reported $ (3,816) $ 2,957 Deduct: Payroll support and voluntary Employee programs, net (967) \u2014 Deduct: Contracts settling in the current period, but for which losses were reclassified from AOCI (a) (25) \u2014 Deduct: Premium cost of fuel contracts not designated as hedges (34) \u2014 Deduct: Gain from aircraft sale-leaseback transactions (222) \u2014 Add: Impairment of long-lived assets 32 \u2014 Operating income (loss), excluding special items $ (5,032) $ 2,957 n.m.",
+          "section": "mda",
+          "subsection": "Reconciliation of Reported Amounts to Non-GAAP Financial Measures (excluding special items) (unaudited) (in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "Operating expenses per ASM for 2020 increased by 0.4 percent, compared with 2019. The year-over-year unit cost increase in 2020 was primarily driven by significant capacity reductions as a result of the COVID-19 pandemic.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The Company experienced its first annual net loss in 48 years. The Company's prior trend of 47 consecutive years of profitability was a feat unmatched in the U.S. airline industry.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The operating cash flows for 2020 were affected primarily by the COVID-19 pandemic [...] These net decreases in operating activities were partially offset by a $1.6 billion increase in Air traffic liability.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margins are under significant pressure due to pandemic effects.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has implemented various cost reduction measures, including workforce reductions, operational efficiencies, and expense allocations, which have resulted in measurable savings. However, these actions do not fully offset the challenges posed by the pandemic.",
+      "evidence": [
+        {
+          "text": "The Company recognized a $2.3 billion allocation of Payroll Support Program proceeds as a reduction to 2020 expenses as part of the CARES Act. The Company also recognized a total of $1.4 billion in expense in 2020 associated with the Voluntary Separation Program 2020 and Extended ETO elections.",
+          "section": "mda",
+          "subsection": "Reconciliation of Reported Amounts to Non-GAAP Financial Measures (excluding special items) (unaudited) (in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "The Company recorded a total charge of $1.4 billion in 2020 related to the special termination benefits for Employees who had accepted the Company's offer to participate in its Voluntary Separation Program 2020 and the special benefits for Employees who participated in its Extended ETO program; the accrual is being reduced as program benefits are paid.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Since March 2020, the Company reduced annual 2020 spending by approximately $8 billion, compared with original plans. [...] The Company has also implemented voluntary separation and Extended ETO programs.",
+          "section": "mda",
+          "subsection": "COVID-19 Pandemic"
+        },
+        {
+          "text": "The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Cost reduction actions are insufficient to offset pandemic challenges.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "fuel_costs_hedging",
+      "category": "airlines_transport",
+      "summary": "The company faces rising fuel costs, partially offset by hedging efforts, but its hedging position is unfavorable relative to current market prices. Fuel expenses have decreased due to lower jet fuel prices, but there is a risk that hedging may not fully protect against price volatility, potentially leading to higher effective fuel costs.",
+      "evidence": [
+        {
+          "text": "Fuel and oil expense, unhedged $ 1,810 $ 4,299 Add: Premium cost of fuel contracts designated as hedges 64 95 Deduct: Fuel hedge gains included in Fuel and oil expense, net (25) (47) Fuel and oil expense, as reported $ 1,849 $ 4,347 Add: Contracts settling in the current period, but for which losses were reclassified from AOCI (a) 25 \u2014 Add: Premium cost of fuel contracts not designated as hedges 34 \u2014 Fuel and oil expense, excluding special items (economic) $ 1,908 $ 4,347 (56.1) %",
+          "section": "mda",
+          "subsection": "Reconciliation of Reported Amounts to Non-GAAP Financial Measures (excluding special items) (unaudited) (in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "Fuel and oil expense for 2020 decreased by $2.5 billion, or 57.5 percent, compared with 2019. On a per ASM basis, Fuel and oil expense decreased 35.5 percent, compared with 2019, due to lower market jet fuel prices.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The Company utilizes financial derivative instruments primarily to manage its risk associated with changing jet fuel prices.",
+          "section": "mda",
+          "subsection": "Fair Value Measurements and Financial Derivative Instruments"
+        },
+        {
+          "text": "The Company attempts to manage its risk associated with volatile jet fuel prices by utilizing over-the-counter fuel derivative instruments to hedge a portion of its future jet fuel purchases. However, energy prices can fluctuate significantly in a relatively short amount of time. Because the Company uses a variety of different derivative instruments at different price points, the Company is subject to the risk that the fuel derivatives it uses will not provide adequate protection against significant increases in fuel prices and in some cases could in fact result in hedging losses, which could result in the Company effectively paying higher than market prices for fuel, thus creating additional volatility in the Company's earnings.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces rising fuel costs despite hedging, with risks of higher effective costs due to unfavorable hedging positions.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capacity_load_yield",
+      "category": "airlines_transport",
+      "summary": "The company experienced a mixed impact on load factors in 2020. While capacity reductions due to the COVID-19 pandemic initially led to improvements in fuel efficiency and load factors, subsequent developments indicated a decline in load factors as demand decreased, affecting revenue and liquidity.",
+      "evidence": [
+        {
+          "text": "The Company continued to operate fewer of its oldest, least fuel-efficient Boeing 737-700 aircraft as a result of capacity reductions due to the COVID-19 pandemic, which, combined with lower Load factors, resulted in a year-over-year improvement of 7.4 percent in fuel efficiency in 2020.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating revenues for the year ended December 31, 2020 decreased 59.7 percent as the Company experienced load factors and yields that were considerably lower than historical levels.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        },
+        {
+          "text": "The significant number of Customer trip cancellations associated with the COVID-19 pandemic.",
+          "section": "mda",
+          "subsection": "Revenue Recognition"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Load factors declined due to reduced demand, impacting revenue and liquidity despite initial improvements in fuel efficiency.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs have experienced mixed trends, with decreases due to workforce reductions and government support programs, but face upward pressure from union contract rate increases and operational needs.",
+      "evidence": [
+        {
+          "text": "Salaries, wages, and benefits expense for 2020 decreased by $1.5 billion, or 17.9 percent, compared with 2019. On a per ASM basis, Salaries, wages, and benefits expense for 2020 increased 24.9 percent, compared with 2019.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The Company received $2.4 billion in Payroll Support Program grant proceeds [...] a significant portion of which was used to offset eligible costs.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company's unionized workforce, which makes up approximately 83 percent of its Employees, has had pay scale increases as a result of contractual rate increases, which has put pressure on the Company's labor costs.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are pressured by union contract increases and workforce reductions, with mixed trends affecting expenses.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are negatively impacted by the COVID-19 pandemic, leading to a significant decrease in air travel demand, affecting both business and leisure travel.",
+      "evidence": [
+        {
+          "text": "The COVID-19 pandemic depressed the demand for air travel and negatively impacted both GAAP and non-GAAP results year-over-year.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        },
+        {
+          "text": "The COVID-19 pandemic has materially and adversely affected passenger demand and bookings for both business and leisure travel, thereby materially and adversely affecting operating income and cash flows from operations.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Severe decline in demand due to the pandemic, significantly impacting both business and leisure travel.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage has increased, leading to higher interest expenses and potential concerns about credit ratings and future debt restrictions. Despite this, the company maintains investment-grade credit ratings and has access to liquidity sources.",
+      "evidence": [
+        {
+          "text": "Interest expense for 2020 increased by $231 million, or 195.8 percent, compared with 2019, primarily due to higher debt balances in 2020.",
+          "section": "mda",
+          "subsection": "Other"
+        },
+        {
+          "text": "The Company was able to quickly access additional liquidity during 2020 [...] See Note 2 and Note 7 to the Consolidated Financial Statements for further information regarding the impact of the COVID-19 pandemic, as well as the transactions completed and assistance obtained under the CARES Act.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company continues to evaluate potential sources of additional liquidity in the short-term. The terms of future debt agreements could include more restrictive covenants or require incremental collateral, which could further restrict the Company\u2019s business operations.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased debt leading to higher interest expenses and potential credit issues, despite maintaining ratings.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining significantly across the company's operations, driven by reduced travel demand and the impact of the COVID-19 pandemic. This decline is evident in lower operating revenues, load factors, and yields, as well as increased customer cancellations and reduced sales.",
+      "evidence": [
+        {
+          "text": "Operating revenues for the year ended December 31, 2020 decreased 59.7 percent as the Company experienced load factors and yields that were considerably lower than historical levels.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        },
+        {
+          "text": "Customer cancellations spiked and sales and revenues dropped while the Company continued to experience significant fixed operating expenses.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The cancellations and cash refunds have negatively affected the Company's revenues and liquidity, and the Company expects such negative effects to continue.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant decline in unit volumes across operations, driven by reduced travel demand and the pandemic.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing challenges in maintaining its pricing power due to reduced demand and competitive pressures. Despite efforts to reduce costs and capacity, the fixed cost structure has not been sufficient to offset the decline in revenues, leading to financial strain.",
+      "evidence": [
+        {
+          "text": "The Company took action to reduce capacity and swiftly cut costs, which generated a reduction in operating expenses of 33.9 percent. However, due to the fixed nature of a large portion of the Company's cost structure, especially in the short-term, the reduction in operating expenses was not enough to overcome the dramatic decline in revenues.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        },
+        {
+          "text": "The Company could also be materially adversely affected if the pricing or operational attributes of its aircraft were to become less competitive.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Reduced pricing power due to lower demand and competitive pressures, despite cost-cutting measures.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The airline industry is highly competitive, with various competitors, including major domestic airlines, regional carriers, new entrants, and alternatives like videoconferencing. Additionally, the industry faces a liquidity crisis due to the COVID-19 pandemic, which may lead to consolidation or differentiation among competitors.",
+      "evidence": [
+        {
+          "text": "The airline industry is intensely competitive. The Company's primary competitors include other major domestic airlines, as well as regional and new entrant airlines, surface transportation, and alternatives to transportation such as videoconferencing, business communication platforms, and the Internet.",
+          "section": "risk_factors",
+          "subsection": "The airline industry is intensely competitive."
+        },
+        {
+          "text": "The enormous impact of the COVID-19 pandemic on the U.S. travel industry created an urgent liquidity crisis for the entire airline industry, including the Company.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intense competition and a liquidity crisis in the industry, potentially leading to consolidation or differentiation.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating significantly, primarily due to the impact of the COVID-19 pandemic on travel demand. Passenger revenues have experienced substantial decreases, and the company anticipates a lengthy recovery period with revenues expected to remain below pre-pandemic levels.",
+      "evidence": [
+        {
+          "text": "Passenger revenues for 2020 decreased by $13.1 billion, or 63.1 percent, compared with 2019. On a unit basis, Passenger revenues decreased 43.9 percent, year-over-year.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "Much uncertainty remains about the time it will take for air travel demand to recover [...] The Company expects operating revenues will need to recover to a range of 60 to 70 percent of 2019 levels.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "route_network",
+      "category": "airlines_transport",
+      "summary": "The company is strategically adjusting its route network to enhance profitability by adding profitable routes and reducing capacity in response to decreased demand and the impacts of the COVID-19 pandemic. These changes aim to utilize idle resources and access new destinations while reducing costs.",
+      "evidence": [
+        {
+          "text": "The Company is pursuing additional revenue opportunities that utilize idle aircraft and Employees to provide Southwest's legendary Customer Service to new, popular destinations. The Company is leveraging additional airports in or near cities where its Customer base is large, along with adding easier access to popular leisure-oriented destinations from across its domestic-focused network.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        },
+        {
+          "text": "The Company is making strategic route network changes to add profitable routes and exit unprofitable ones, which is expected to be accretive.",
+          "section": "mda",
+          "subsection": "Revenue Recognition"
+        },
+        {
+          "text": "The Company has significantly reduced annual 2020 cash outlays and spending, compared with original plans. The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "travel_demand_mix",
+      "category": "airlines_transport",
+      "summary": "The travel demand mix is shifting unfavorably with a focus on leisure travel, while business travel remains significantly reduced. Demand is still depressed, impacting the company's capacity, yield, and margins. The company expects a substantial rebound in passenger traffic and revenue to achieve break-even cash burn in 2021, but uncertainty remains about the recovery timeline.",
+      "evidence": [
+        {
+          "text": "The Company estimates its March 2021 capacity to decrease approximately 16 percent, year-over-year, or 31 percent, compared with March 2019. The Company estimates its first quarter 2021 capacity to decrease approximately 35 percent year-over-year, primarily driven by the continued negative effects of the pandemic.",
+          "section": "mda",
+          "subsection": "2021 Outlook"
+        },
+        {
+          "text": "Much uncertainty remains about the time it will take for air travel demand to recover [...] The Company expects to achieve cash burn break even in 2021, which is wholly dependent upon a substantial rebound in passenger traffic and revenue.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company has aggressively evaluated all capital spending, discretionary spending, and non-essential costs to identify opportunities for cost reductions or deferrals and significantly reduced annual 2020 cash outlays and spending, compared with original plans.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditure outlook is negative due to significant reductions in planned spending as a result of the COVID-19 pandemic.",
+      "evidence": [
+        {
+          "text": "The Company has reduced its combined 2020 and 2021 capital spending by approximately $5.5 billion, compared with planning projections prior to the pandemic.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company has significantly reduced annual 2020 cash outlays and spending, compared with original plans. The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow has been negatively impacted, with deteriorated generation and increased cash burn, primarily due to the COVID-19 pandemic's effects on demand and operational costs.",
+      "evidence": [
+        {
+          "text": "Net cash used in operating activities for 2020 was $1.1 billion, [...] The Company expects average core cash burn of approximately $17 million per day in the first quarter of 2021.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company's cost reduction actions have included, among others, (i) cutting or deferring non-essential projects; (ii) reducing the Company's published flight schedule; (iii) placing a significant number of aircraft in storage; (iv) implementing voluntary separation and time-off programs for Employees; (v) substantially suspending all hiring; (vi) reducing the Chief Executive Officer's salary by 20 percent; (vii) reducing the other named executive officer salaries and Board of Director cash retainer fees by 20 percent through December 31, 2020; and (viii) where possible, modifying vendor and supplier payment terms.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company faces several key sensitivities that could impact its performance. These include foreign currency risks and compliance with international regulations affecting its international operations, rising fuel prices and labor costs pressuring its margins, and the ongoing impact of the COVID-19 pandemic on demand, liquidity, and financial health.",
+      "evidence": [
+        {
+          "text": "International flying exposes the Company to certain foreign currency risks to the extent the Company chooses to, or is required to, transact in currencies other than the U.S. dollar. To the extent the Company seeks to serve additional international destinations in the future, or to renew its authority to serve certain routes, it may be required to obtain necessary authority from the DOT and/or approvals from the FAA, as well as any applicable foreign government entity.",
+          "section": "risk_factors",
+          "subsection": "The Company's future results will suffer if it is unable to effectively manage its expanded international operations and/or Extended Operations (\"ETOPS\")."
+        },
+        {
+          "text": "The Company expects average core cash burn of approximately $17 million per day in the first quarter of 2021, as a result of continued softness in demand and a seasonally weaker travel period in January and February 2021, as well as rising fuel prices.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company's ability to effectively address fuel price increases and fuel price volatility and availability is critical. Additionally, the Company's labor costs are subject to contractual rate increases, putting pressure on margins. The duration and spread of the COVID-19 pandemic are also key factors affecting the Company's financial performance.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "fleet_strategy",
+      "category": "airlines_transport",
+      "summary": "The company's fleet strategy involves modernizing with Boeing 737 MAX 8 and MAX 7 aircraft, but this effort is currently hindered by delays and uncertainties stemming from the COVID-19 pandemic, particularly related to Boeing's production and delivery issues. The reliance on Boeing as the sole manufacturer and potential further regulatory actions pose significant risks to the company's business plans and operations.",
+      "evidence": [
+        {
+          "text": "The Company continues its fleet modernization program and expects to retire a significant amount of its Boeing 737-700 fleet over the next 10-15 years.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company is currently dependent on Boeing as the sole manufacturer of the Company's aircraft. Prolonged delays completing the FAA\u2019s requirements to return the Boeing 737 MAX aircraft to Customer service, or further regulatory actions by the FAA with respect to the MAX aircraft, could materially and adversely affect the Company\u2019s business plans, strategies, and results of operations.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The company faces mixed potential catalysts. On one hand, a rebound in passenger traffic and revenue could positively impact cash flow and margins. On the other hand, the successful implementation of cost reduction measures and the distribution of effective vaccines could also be catalysts. However, current booking trends and vaccine distribution uncertainties present challenges, indicating that while there are potential positive developments, there are also significant risks and uncertainties that could impact the company's recovery.",
+      "evidence": [
+        {
+          "text": "Potential catalysts include a rebound in passenger traffic and revenue, which would positively impact cash flow and margins.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "While vaccine availability should mark the beginning of the end of the pandemic, current passenger booking trends do not indicate significant improvement through March 2021.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        },
+        {
+          "text": "Potential catalysts include the successful implementation of cost reduction measures and the distribution of effective vaccines.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        },
+        {
+          "text": "The impact of COVID-19 vaccines on the pandemic, demand for air travel, and the Company\u2019s business remain unknown. While a number of COVID-19 vaccines have received regulatory approval and are available in limited quantities in the United States and other parts of the world, a degree of uncertainty exists with respect to the distribution, utilization, and long-term efficacy of vaccinations among the general population.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has materially and adversely affected, and will likely continue to materially and adversely affect, the Company\u2019s results of operations, financial position, and liquidity."
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

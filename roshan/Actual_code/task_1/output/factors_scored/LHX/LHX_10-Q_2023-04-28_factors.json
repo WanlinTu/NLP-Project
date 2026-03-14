@@ -1,0 +1,43 @@
+{
+  "ticker": "LHX",
+  "form": "10-Q",
+  "filing_date": "2023-04-28",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 2,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is actively repurchasing shares under its repurchase program.",
+      "evidence": [
+        {
+          "text": "On October 21, 2022, we announced that our Board of Directors approved a $3 billion share repurchase authorization under our share repurchase program that was in addition to the remaining unused authorization of 1.5 billion at that time.",
+          "section": "risk_factors",
+          "subsection": "Issuer Purchases of Equity Securities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's active share repurchase indicates confidence in its stock and value for shareholders.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "The company is generating free cash flow as evidenced by its share repurchase activity.",
+      "evidence": [
+        {
+          "text": "Total 2,068,717\u00a0 1,877,299\u00a0 $ 4,056",
+          "section": "risk_factors",
+          "subsection": "Issuer Purchases of Equity Securities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's ability to generate free cash flow supports its share repurchase activity and overall financial health.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

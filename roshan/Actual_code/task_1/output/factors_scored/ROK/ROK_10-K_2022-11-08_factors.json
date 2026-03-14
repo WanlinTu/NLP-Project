@@ -1,0 +1,94 @@
+{
+  "ticker": "ROK",
+  "form": "10-K",
+  "filing_date": "2022-11-08",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 5,
+  "factors": [
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic ARR growth is calculated as the dollar change in ARR, adjusted to exclude the effects of currency translation and acquisitions.",
+      "evidence": [
+        {
+          "text": "Organic ARR growth is calculated as the dollar change in ARR, adjusted to exclude the effects of currency translation and acquisitions, divided by ARR as of the prior period.",
+          "section": "mda",
+          "subsection": "Organic Annual Recurring Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The summary and evidence explain the calculation of organic ARR growth but do not indicate a positive or negative trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow decreased year-over-year due to increases in working capital and higher incentive compensation payments.",
+      "evidence": [
+        {
+          "text": "The year-over-year decreases in cash provided by operating activities and free cash flow were primarily due to increases in working capital, including higher receivables and inventory to support business growth, and higher incentive compensation payments in fiscal 2022 compared to fiscal 2021.",
+          "section": "mda",
+          "subsection": "Financial Condition"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Free cash flow decreased due to increases in working capital and higher incentive compensation payments, indicating a headwind.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are expected to be approximately $190 million in 2023.",
+      "evidence": [
+        {
+          "text": "We expect capital expenditures in 2023 to be approximately $190 million.",
+          "section": "mda",
+          "subsection": "Financial Condition"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The expected capital expenditures are provided without any indication of improvement or decline.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has $1,251.3 million remaining for share repurchases under existing authorizations and expects to manage debt through existing credit facilities.",
+      "evidence": [
+        {
+          "text": "At September\u00a030, 2022, we had approximately $1,251.3 million remaining for share repurchases under our existing board authorizations. We can increase the aggregate amount of this credit facility by up to $750.0 million, subject to the consent of the banks in the credit facility.",
+          "section": "mda",
+          "subsection": "Financial Condition"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is managing debt through existing credit facilities, but there is no clear positive or negative sentiment expressed.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company repurchased shares and paid dividends, signaling confidence in its performance.",
+      "evidence": [
+        {
+          "text": "We repurchased approximately 1.3 million shares of our common stock under our share repurchase program in 2022 at a total cost of $301.1 million and an average cost of $223.05 per share. Cash dividends declared to shareowners were $520.8 million in 2022.",
+          "section": "mda",
+          "subsection": "Financial Condition"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company repurchased shares and paid dividends, signaling confidence in its performance.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

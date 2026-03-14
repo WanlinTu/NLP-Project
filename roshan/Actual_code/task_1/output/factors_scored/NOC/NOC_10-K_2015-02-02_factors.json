@@ -1,0 +1,604 @@
+{
+  "ticker": "NOC",
+  "form": "10-K",
+  "filing_date": "2015-02-02",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 30,
+  "factors": [
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment poses significant risks due to ongoing budget pressures and sequestration.",
+      "evidence": [
+        {
+          "text": "The U.S. Government continues to face substantial fiscal and economic challenges, which affect funding for its discretionary and non-discretionary budgets.",
+          "section": "mda",
+          "subsection": "Political and Economic Environment"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The factor highlights significant fiscal and economic challenges affecting government funding, posing major risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are being managed effectively, contributing to improved margins.",
+      "evidence": [
+        {
+          "text": "Service costs as a percentage of service sales for 2014 were 79.8 percent, as compared to 81.5 percent during 2013. The decrease was mainly due to improved performance across a number of service programs at Information Systems and the continuing benefit of higher margin rates resulting from previous net favorable adjustments at Aerospace Systems.",
+          "section": "mda",
+          "subsection": "Operating Costs and Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Labor costs have decreased as a percentage, indicating effective management and improved margins.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is not forced to discount, with pricing power supporting margin improvements.",
+      "evidence": [
+        {
+          "text": "The decrease was mainly due to improved performance across a number of service programs at Information Systems and the continuing benefit of higher margin rates resulting from previous net favorable adjustments at Aerospace Systems.",
+          "section": "mda",
+          "subsection": "Operating Costs and Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong pricing power supports margin improvements without discounting.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is vulnerable to disruptions from natural disasters, which could impact the ability of subcontractors and suppliers to deliver components, affecting overall operations.",
+      "evidence": [
+        {
+          "text": "Natural and environmental disasters could disrupt our and our subcontractors\u2019 and suppliers\u2019 workforce, electrical and other power distribution networks, including computer and internet operation and accessibility, and the critical industrial infrastructure needed for normal business operations.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Vulnerability to natural disasters threatens supply chain stability and operations.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is a significant cost and risk factor, with potential for additional regulations and cleanup requirements that could impact financial performance.",
+      "evidence": [
+        {
+          "text": "Our operations are subject to and affected by a variety of federal, state, local and foreign environmental laws and regulations. In addition, we could be affected by future laws or regulations, including those imposed in response to climate change concerns and other actions.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant costs and risks from current and potential future environmental regulations.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, including those related to procurement and environmental laws, are increasing costs and risks for Northrop Grumman, potentially affecting profitability.",
+      "evidence": [
+        {
+          "text": "New laws, regulations or procurement requirements or changes to current ones (including, for example, regulations related to limits on recovery of employee compensation costs, counterfeit parts, specialty metals and conflict minerals), can significantly increase our costs and risks and reduce our profitability.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Regulatory changes increase costs and risks, potentially harming profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand appears stable with mixed trends across segments.",
+      "evidence": [
+        {
+          "text": "Higher operating income and margin rate in 2014 were primarily due to the settlements described above and improved performance.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand appears stable with mixed trends across segments, providing no clear direction.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is growing, particularly in funded backlog, with new awards outpacing completions.",
+      "evidence": [
+        {
+          "text": "Total backlog increased from $37.033 billion in 2013 to $38.199 billion in 2014, with significant new awards.",
+          "section": "mda",
+          "subsection": "BACKLOG"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in order backlog, especially in funded backlog, indicates strong demand and future revenue potential.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards lower-margin segments, which is harmful.",
+      "evidence": [
+        {
+          "text": "Information Systems sales decreased due to lower funding and in-theater reductions, impacting revenue mix negatively.",
+          "section": "mda",
+          "subsection": "INFORMATION SYSTEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The shift towards lower-margin segments indicates significant harm to revenue.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining in some areas but increasing in others, with mixed impact on revenue.",
+      "evidence": [
+        {
+          "text": "Volume decreased for unmanned programs but increased for military aircraft programs.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends show both increases and decreases, leading to mixed impact on revenue.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End markets are mixed, with aerospace and technical services showing growth while information systems face challenges.",
+      "evidence": [
+        {
+          "text": "Aerospace Systems had higher sales due to F-35 and B-2 programs, while Information Systems faced declines due to funding cuts.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance across end markets with some growth and some challenges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, contributing to higher margins.",
+      "evidence": [
+        {
+          "text": "Higher operating margin rate reflects additional operating income resulting from improved performance.",
+          "section": "mda",
+          "subsection": "INFORMATION SYSTEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving productivity contributes to higher margins, indicating positive development.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is cautiously confident, with share repurchases indicating confidence.",
+      "evidence": [
+        {
+          "text": "The company repurchased shares under the 2013 and 2014 Repurchase Programs, signaling confidence.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Share repurchases signal management confidence in the company's outlook.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include lower sales volumes and reduced funding levels affecting some segments.",
+      "evidence": [
+        {
+          "text": "Lower sales volumes on certain programs due to in-theater force reductions and sequestration impacts.",
+          "section": "mda",
+          "subsection": "INFORMATION SYSTEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks like lower sales volumes and reduced funding could negatively impact performance.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Government defense budgets and program execution are key sensitivities.",
+      "evidence": [
+        {
+          "text": "Sales are significantly impacted by government defense budgets and program execution outcomes.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Dependency on government budgets and program execution introduces sensitivity but doesn't indicate a clear trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "New product launches and contract decisions are catalysts for growth.",
+      "evidence": [
+        {
+          "text": "Significant new awards include the E-2D Advanced Hawkeye program and F-35 program.",
+          "section": "mda",
+          "subsection": "New Awards"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "New product launches and contract decisions present growth opportunities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "classified_programs",
+      "category": "defense_government",
+      "summary": "Classified programs contribute a significant but stable share of revenue.",
+      "evidence": [
+        {
+          "text": "Restricted programs had an impact on sales and operating income, but were offset by other factors.",
+          "section": "mda",
+          "subsection": "INFORMATION SYSTEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The classified programs contribute a significant but stable share of revenue, indicating no clear positive or negative trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration is significant, particularly with U.S. Government orders.",
+      "evidence": [
+        {
+          "text": "U.S. Government orders comprised 82% of total backlog, indicating high customer concentration.",
+          "section": "mda",
+          "subsection": "BACKLOG"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High customer concentration with the U.S. Government poses a significant risk due to potential funding uncertainties.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "CapEx is expected to increase, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Capital expenditures are expected to increase due to investments in Aerospace Systems' Centers of Excellence.",
+          "section": "mda",
+          "subsection": "Free Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Expected increase in capital expenditures signals confidence in future growth opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is stable, with the company in compliance with credit covenants.",
+      "evidence": [
+        {
+          "text": "The company was in compliance with all covenants under the Credit Agreement, with no balance outstanding.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable debt leverage with compliance on credit covenants suggests no immediate concerns but no significant positive movement.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are active, with share repurchases indicating confidence.",
+      "evidence": [
+        {
+          "text": "The company repurchased shares under the 2013 and 2014 Repurchase Programs, totaling 42.2 million shares by end of 2014.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active share repurchases indicate confidence in the company's future prospects.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow decreased slightly, but remains strong, with investments in growth areas.",
+      "evidence": [
+        {
+          "text": "Free cash flow decreased $87 million in 2014, primarily due to higher capital expenditures.",
+          "section": "mda",
+          "subsection": "Free Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Slight decrease in free cash flow, though still strong, with investments in growth areas suggesting a mixed but stable outlook.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "The U.S. defense budget faces significant pressures, including risks from potential budget cuts, sequestration, and shifting priorities, which could impact affordability and efficiencies. However, there is evidence of stable government support for core defense programs, reflected in a funded backlog.",
+      "evidence": [
+        {
+          "text": "The budget environment, including sequestration as currently mandated, and uncertainty surrounding the appropriations processes, remain significant long-term risks.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "The budget environment, including sequestration as currently mandated, remains a significant long-term risk.",
+          "section": "mda",
+          "subsection": "Political and Economic Environment"
+        },
+        {
+          "text": "As a result of certain of these initiatives, we have experienced and may continue to experience an increased number of audits and/or a lengthened period of time required to close open audits.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Funded backlog reflects continued government support for key programs.",
+          "section": "mda",
+          "subsection": "BACKLOG"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant pressures and risks from potential budget cuts and sequestration pose serious challenges to affordability and efficiencies.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Northrop Grumman's contract backlog is growing, with new awards outpacing completions. However, there are risks related to government funding availability and contract protests, which could potentially impact the stability and growth of the backlog.",
+      "evidence": [
+        {
+          "text": "Total backlog increased from $37.033 billion to $38.199 billion, with significant new awards.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "In the event government funding for our significant programs becomes unavailable, or is reduced or delayed, our contract or subcontract under such programs may be terminated or adjusted by the U.S. Government or the prime contractor.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Bid protests could result in contract modifications or the award decision being reversed and loss of the contract award. Even where a bid protest does not result in the loss of an award, the resolution can extend the time until the contract activity can begin, and delay earnings.",
+          "section": "mda",
+          "subsection": "Operating Income"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Growth in contract backlog is tempered by risks related to government funding and contract protests, indicating a mixed outlook.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "Program execution at Northrop Grumman has shown mixed performance, with some delays and cost overruns impacting margins, though there are signs of stability in recent periods.",
+      "evidence": [
+        {
+          "text": "Our operating income can be adversely affected when we experience increased contract costs. Reasons for contract cost growth may include... natural disasters or environmental matters.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "The decrease in segment operating income was principally due to lower sales. The decrease in operating margin rate reflects lower net favorable adjustments in 2013, partially offset by higher contract margin rates across our portfolio resulting from several factors, including the continuing effect of prior net favorable adjustments.",
+          "section": "mda",
+          "subsection": "Operating Income"
+        },
+        {
+          "text": "Problems and delays in development or delivery, or system failures, as a result of issues with respect to design, technology, intellectual property rights, labor, inability to achieve learning curve assumptions, manufacturing materials or components could prevent us from meeting requirements and create significant risk.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Operating income and margin rate for 2014 were comparable to 2013, reflecting stable execution.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed performance with delays and cost overruns impacting margins, though there are signs of recent stability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance with some improvements in specific segments and slight increases in operating margins, though overall stability is noted.",
+      "evidence": [
+        {
+          "text": "The WACC takes into account the relative weights of each component of our consolidated capital structure (equity and debt) and represents the expected cost of new capital adjusted as appropriate to consider lower risk profiles associated with longer-term contracts and barriers to market entry.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Segment operating income for 2014 increased by $19 million, or 1 percent, as compared with 2013. The increase in segment operating income was principally due to a $75 million benefit realized in connection with agreements reached with the U.S. Government to settle certain claims relating to use of the company's intellectual property and a terminated program and a segment operating margin benefit of approximately $45 million as a result of lower 2014 CAS costs due to the Highway and Transportation Funding Act of 2014 (HATFA) legislation described below, which more than offset the impact of lower sales volume.",
+          "section": "mda",
+          "subsection": "Operating Income"
+        },
+        {
+          "text": "Operating margin rate for Aerospace Systems increased slightly from 12.1% to 13.2%",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance with some improvements but overall stability noted.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is showing mixed performance, with some segments experiencing slight increases while others are decreasing.",
+      "evidence": [
+        {
+          "text": "Sales for 2014 decreased $682 million, or 3 percent, as compared with 2013. Sales for 2013 decreased $557 million, or 2 percent, as compared with 2012.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Aerospace Systems sales were slightly higher in 2014 compared to 2013, while Electronic Systems sales decreased.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is mixed with some segments decreasing and others increasing slightly.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company faces challenges in talent retention, particularly due to risks associated with its international business, subcontractor viability, and the difficulty in attracting and retaining a qualified workforce. While labor costs and wage inflation are manageable, contributing to margin stability, the company's ability to retain talent remains a concern, especially in terms of employee base and security clearances.",
+      "evidence": [
+        {
+          "text": "Budget cuts could adversely affect the viability of our subcontractors and suppliers, and our employee base.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Our operating results are heavily dependent upon our ability to attract and retain sufficient personnel with requisite skills and/or security clearances. If qualified personnel become scarce or difficult to attract or retain in our industry for geographic, compensation-related or other reasons, we could experience higher labor, recruiting or training costs in order to attract and retain necessary employees.",
+          "section": "mda",
+          "subsection": "Operating Costs and Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenges in talent retention, particularly due to risks associated with international business and attracting qualified workforce.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "Northrop Grumman is expanding its international sales, particularly in regions like Australia, the Middle East, Asia, and Europe, which is contributing to backlog growth. However, this expansion exposes the company to various risks, including political and economic factors, as well as challenges from export controls and regulatory requirements that could impact the sales pipeline.",
+      "evidence": [
+        {
+          "text": "Our international business is subject to numerous political and economic factors... which may increase if our international business continues to grow as we anticipate.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "The company is dedicating additional resources to expanding its international sales with emphases on Australia, the Middle East, Asia and Europe.",
+          "section": "mda",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "The U.S. Government is also pursuing alternatives to shift additional responsibility and performance risks to the contractor. We also are subject to and expected to perform in compliance with a vast array of federal laws, including but not limited to the Truth in Negotiations Act, the False Claims Act, the Procurement Integrity Act, CAS, FAR, the International Traffic in Arms Regulations promulgated under the Arms Export Control Act, the Close the Contractor Fraud Loophole Act and the FCPA.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Growth in international sales, particularly in Technical Services segment.",
+          "section": "mda",
+          "subsection": "TECHNICAL SERVICES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Expansion contributing to backlog growth but with significant risks including political and economic factors.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Northrop Grumman faces significant litigation exposure due to various investigations, claims, and legal risks, including potential penalties, damages, and financial impacts from environmental contamination and compliance issues. The company is subject to numerous federal laws and regulations, which could result in penalties or damages if violated, and environmental compliance costs could exceed expectations.",
+      "evidence": [
+        {
+          "text": "We are subject to various investigations, claims and litigation that could ultimately be resolved against us.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "If we are found to have violated the law, or are found not to have acted responsibly as defined by the law, we may be subject to reductions of the value of contracts; contract modifications or termination; the withholding of payments from our customer; the loss of export privileges; the assessment of penalties, fines, or compensatory, treble or other damages; or suspension or debarment.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        },
+        {
+          "text": "Compliance with current and future environmental laws and regulations currently requires, and is expected to continue to require, significant operating and capital costs. We may be required to incur additional costs in excess of those anticipated as a result of, among other things, new laws and regulations, stricter enforcement of existing laws and regulations, imposition of new cleanup requirements, discovery of previously unknown or more extensive contamination, litigation involving environmental impacts or sanctions or penalties or a determination that certain environmental costs are unallowable.",
+          "section": "risk_factors",
+          "subsection": "NORTHROP GRUMMAN CORPORATION"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant litigation exposure with potential for penalties, damages, and financial impacts.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

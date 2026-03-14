@@ -1,0 +1,477 @@
+{
+  "ticker": "EFX",
+  "form": "10-K",
+  "filing_date": "2023-02-23",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining its dividend payments, indicating confidence in its financial position.",
+      "evidence": [
+        {
+          "text": "We anticipate continuing the payment of quarterly cash dividends. The actual amount of such dividends is subject to declaration by our Board of Directors and will depend upon future earnings, results of operations, capital requirements, our financial condition and other relevant factors.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Maintaining dividend payments indicates confidence in financial health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is actively pursuing strategic acquisitions, which have been integrated successfully, expanding its capabilities.",
+      "evidence": [
+        {
+          "text": "During 2022, we acquired Efficient Hire and LawLogix within the Workforce Solutions operating segment. We acquired Midigator within the USIS operating segment. We acquired Data Cr\u00e9dito within the International operating segment. During 2022, we sold multiple equity investments.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Successful integration of acquisitions expands capabilities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "inflation",
+      "category": "unknown",
+      "summary": "Inflation could increase the company's expenses, potentially affecting profitability and the U.S. mortgage market.",
+      "evidence": [
+        {
+          "text": "Inflation in the countries in which we operate may result in increases in the Company\u2019s expenses, which may not be readily recoverable in the price of services offered. To the extent inflation results in rising U.S. interest rates and has other adverse effects upon the U.S. securities markets and upon the value of financial instruments, it may adversely affect the Company\u2019s financial position and profitability.",
+          "section": "mda",
+          "subsection": "Effects of Inflation and Changes in Foreign Currency Exchange Rates"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Inflation risks increasing expenses and affecting profitability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "goodwill_impairment",
+      "category": "unknown",
+      "summary": "The company's Asia Pacific reporting unit has a smaller cushion and is more sensitive to changes in assumptions, making it at risk of future goodwill impairment.",
+      "evidence": [
+        {
+          "text": "Given the relatively smaller excess of fair value over carrying value for the Asia Pacific reporting unit, we believe that it is at risk of a possible future goodwill impairment.",
+          "section": "mda",
+          "subsection": "Goodwill"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Smaller cushion in Asia Pacific makes goodwill impairment more likely.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "tax_strategy",
+      "category": "unknown",
+      "summary": "The company records deferred income taxes and assesses the likelihood of recovering deferred tax assets based on future taxable income.",
+      "evidence": [
+        {
+          "text": "We record deferred income taxes using enacted tax laws and rates for the years in which the taxes are expected to be paid. We assess the likelihood that our deferred tax assets will be recovered from future taxable income or other tax planning strategies.",
+          "section": "mda",
+          "subsection": "Income Taxes"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Standard tax practices without clear positive or negative impact.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "acquisition_accounting",
+      "category": "unknown",
+      "summary": "The company uses purchase accounting for acquisitions, recording assets and liabilities at fair market value and expensing transaction costs.",
+      "evidence": [
+        {
+          "text": "We account for acquisitions under Accounting Standards Codification 805, Business Combinations. In general, the acquisition method of accounting requires companies to record assets acquired and liabilities assumed at their respective fair market values at the date of acquisition.",
+          "section": "mda",
+          "subsection": "Purchase Accounting for Acquisitions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Following accounting standards without indicating positive or negative sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to numerous evolving regulatory requirements, which may increase compliance costs and restrict operations.",
+      "evidence": [
+        {
+          "text": "We are subject to a number of U.S. federal, state, local and foreign laws and regulations relating to consumer privacy, cybersecurity, data and financial protection. These regulations are complex, change frequently, and compliance with them may cause us to incur significant expenses and change our business practices.",
+          "section": "risk_factors",
+          "subsection": "Legal and Regulatory Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Evolving regulations may increase costs and restrict operations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company faces significant geopolitical risks, particularly from the Russia-Ukraine war and global economic uncertainties.",
+      "evidence": [
+        {
+          "text": "Geopolitical instability, including terrorism and war, including the Russia-Ukraine war; foreign currency changes; increased travel, infrastructure, legal and compliance costs of multiple international locations; foreign laws and regulatory requirements; terrorist activity, natural disasters, pandemics and other catastrophic events; restrictions on the import and export of technologies; difficulties in enforcing contracts and collecting accounts receivable; longer payment cycles; failure to meet quality standards for outsourced work; unfavorable tax rules; the presence and acceptance of varying levels of business corruption in international markets; and varying business practices in foreign countries.",
+          "section": "risk_factors",
+          "subsection": "Economic, political and other risks associated with international sales and operations could adversely affect our results of operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant geopolitical risks pose threats to operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is facing challenges in retaining and hiring key personnel, particularly in IT and data security roles.",
+      "evidence": [
+        {
+          "text": "Our future success, including our ability to implement our technology transformation strategy, depends partly on the continued service of our key development, sales, marketing, executive and administrative personnel. Increased retention risk exists in certain key areas of our operations, such as IT and data security, which require specialized skills.",
+          "section": "risk_factors",
+          "subsection": "Our business will suffer if we are not able to retain and hire key personnel."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "The company is undergoing a technology transformation involving cloud-based solutions, which indicates investment in digital automation.",
+      "evidence": [
+        {
+          "text": "As part of our technology transformation strategy, we are transitioning and migrating our data systems from traditional, on-premises data centers to cloud-based platforms. This initiative places significant strain on our management, personnel, operations, systems, technical performance, financial resources, internal financial controls and reporting function.",
+          "section": "risk_factors",
+          "subsection": "Our technology transformation strategy places a significant strain on our management, operational, financial and other limited resources."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "The company is making ESG commitments, including a net-zero greenhouse gas emissions target by 2040, which may incur costs and impact reputation.",
+      "evidence": [
+        {
+          "text": "There is an increasing focus from regulators, certain investors, and other stakeholders concerning environmental, social and governance ('ESG') matters, both in the United States and internationally. We communicate certain ESG-related initiatives, goals, and/or commitments regarding environmental matters, diversity, responsible sourcing and social investments, and other matters, on our website, in our filings with the SEC, and elsewhere.",
+          "section": "risk_factors",
+          "subsection": "Our reputation and/or business could be negatively impacted by ESG matters and/or our reporting of such matters."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are declining.",
+      "evidence": [
+        {
+          "text": "In 2023, we expect U.S. mortgage market originations to decline by approximately 30% compared to 2022. Any weakening in the U.S. mortgage market resulting in a significant reduction in mortgage originations could have a corresponding negative impact on revenue and operating profit for our business, primarily within the Workforce Solutions and USIS operating segments.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company faces risks due to customer concentration.",
+      "evidence": [
+        {
+          "text": "We have long-standing relationships with a number of our customers, many of whom could unilaterally terminate their relationship with us or materially reduce the amount of business they conduct with us at any time.",
+          "section": "risk_factors",
+          "subsection": "If our relationships with key customers are materially diminished or terminated, our business could suffer."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intensifying.",
+      "evidence": [
+        {
+          "text": "Our markets are highly competitive and new product introductions and pricing strategies being offered by our competitors could decrease our sales and market share or require us to enhance our products and services or reduce our prices in a manner that reduces our revenue and operating margins.",
+          "section": "risk_factors",
+          "subsection": "If our relationships with key customers are materially diminished or terminated, our business could suffer."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is facing pressure on pricing.",
+      "evidence": [
+        {
+          "text": "Price reductions by our competitors could negatively impact our revenue and operating margins and results of operations and could also harm our ability to obtain new customers on favorable terms.",
+          "section": "risk_factors",
+          "subsection": "If our relationships with key customers are materially diminished or terminated, our business could suffer."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage is stable, with evidence of deleveraging through lower short-term borrowings and manageable liquidity.",
+      "evidence": [
+        {
+          "text": "The decrease in short-term borrowings in 2022 is due to lower net short-term borrowings on our CP notes during the year as compared to 2021.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        },
+        {
+          "text": "At December\u00a031, 2022, we had $285.2 million in cash balances, as well as $932.8 million available to borrow under our Revolver.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND FINANCIAL CONDITION"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company anticipates that capital expenditures will increase, reflecting investments in technology transformation and infrastructure improvements. This indicates a commitment to future growth and technological advancement.",
+      "evidence": [
+        {
+          "text": "Capital expenditures increased in 2022 and 2021 from 2021 and 2020, respectively, as we are continuing to invest in enhanced technology systems and infrastructure as part of our technology transformation.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        },
+        {
+          "text": "The increase in margin is due to increased revenue, lower purchased intangible asset amortization costs and discretionary expense control, partially offset by increased people costs, royalty costs, production costs and depreciation of capitalized internal-use software and systems costs.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is investing in technology and infrastructure, indicating a commitment to future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is stable, with substantial cash from operating activities being used to fund obligations and commitments. However, there was a decrease in cash provided by operating activities in 2022 compared to 2021, primarily due to decreased net income and a significant consumer class action settlement payment.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities for 2022 decreased by $577.7 million compared to 2021 due to decreased net income and the $345.0 million consumer class action settlement payment that was made in January 2022.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        },
+        {
+          "text": "We continue to generate substantial cash from operating activities, remain in a strong financial position and manage our capital structure to meet short- and long-term objectives including reinvestment in existing businesses and completing strategic acquisitions.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND FINANCIAL CONDITION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While cash flow is stable, a decrease in operating cash flow and specific obligations affect the overall sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are decelerating, particularly in mortgage-related services, and are expected to grow but at a slower rate in 2023. Economic conditions, including inflation and interest rates, are impacting demand, which is also influenced by consumer credit activity and economic growth.",
+      "evidence": [
+        {
+          "text": "U.S. Information Solutions revenue decreased 7% in 2022 compared to 2021 due to the negative impact of declining mortgage inquiry volumes on both online services and mortgage solutions, as well as a decline in marketing solutions.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        },
+        {
+          "text": "Demand for our services tends to be correlated to general levels of economic activity and to consumer credit activity, small commercial credit and marketing activity, identity and fraud, and employee hiring and onboarding activity. Demand is also enhanced by our initiatives to expand our products, capabilities and markets served. For 2023, our planning assumes that U.S. economic activity, as measured by GDP, is expected to grow but at a slower rate of growth than experienced in 2022.",
+          "section": "mda",
+          "subsection": "Recent Events and Company Outlook"
+        },
+        {
+          "text": "Negative changes in general economic conditions, including interest rates, the level of inflation, unemployment rates, income, home prices, investment values and consumer confidence, could adversely affect us.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is decelerating due to economic factors and market conditions.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company has foreign exchange exposure which can affect its net assets, revenues, and expenses. They monitor these risks but generally do not mitigate them unless through specific instruments.",
+      "evidence": [
+        {
+          "text": "Changes in foreign exchange rates relative to the U.S. dollar can therefore affect the value of non-U.S. dollar net assets, revenues and expenses. Potential exposures as a result of these fluctuations in currencies are closely monitored.",
+          "section": "mda",
+          "subsection": "Effects of Inflation and Changes in Foreign Currency Exchange Rates"
+        },
+        {
+          "text": "The effect of foreign exchange rates decreased revenue by $94.9 million, or 2%, in 2022 compared to 2021.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange fluctuations are affecting revenue negatively.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating, primarily due to the decline in U.S. mortgage market originations and slower economic activity. The impact is evident across multiple segments, including U.S. Information Solutions and Workforce Solutions, with mortgage-related services particularly affected.",
+      "evidence": [
+        {
+          "text": "U.S. Information Solutions revenue decreased 7% in 2022 compared to 2021 due to the negative impact of declining mortgage inquiry volumes on both online services and mortgage solutions, as well as a decline in marketing solutions.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        },
+        {
+          "text": "Revenue for 2022 increased by 4% compared to 2021. The increase was primarily due to growth in Workforce Solutions and International, partially offset by a decline in USIS. The significant decline in U.S. mortgage originations negatively impacted the growth in Workforce Solutions and caused the decline in USIS revenue.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        },
+        {
+          "text": "In 2023, we expect U.S. mortgage market originations to decline by approximately 30% compared to 2022. Any weakening in the U.S. mortgage market resulting in a significant reduction in mortgage originations could have a corresponding negative impact on revenue and operating profit for our business, primarily within the Workforce Solutions and USIS operating segments.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic growth is decelerating due to declining mortgage markets and economic activity.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation and regulatory risks, including potential enforcement actions and fines, and is involved in ongoing legal proceedings related to a cybersecurity incident, with expenses net of insurance recoveries.",
+      "evidence": [
+        {
+          "text": "We were subject to proceedings and investigations as a result of the 2017 cybersecurity incident. The amount accrued represents our best estimate of the liability related to these matters.",
+          "section": "mda",
+          "subsection": "Loss Contingencies"
+        },
+        {
+          "text": "The CFPB conducts periodic examinations of us and the consumer credit reporting industry, which could result in new regulations or enforcement actions or proceedings. Actions by the CFPB or other regulators against us could result in financial or reputational harm.",
+          "section": "risk_factors",
+          "subsection": "Regulatory oversight of our contractual relationships with certain of our customers may adversely affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant litigation and regulatory risks pose a threat to the company.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's operating margins are under pressure, facing compression due to various factors including revenue declines, increased costs, and regulatory risks. While specific drivers like decreased revenue and higher depreciation and amortization expenses contribute to margin compression, potential regulatory actions could further strain margins through increased compliance costs and penalties.",
+      "evidence": [
+        {
+          "text": "U.S. Information Solutions operating margin decreased to 24.3% in 2022 compared to 30.9% in 2021, due to the decrease in revenue and increases in depreciation expense related to increased capitalized software development spending and cloud production costs, partially offset by lower production costs.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        },
+        {
+          "text": "Total company operating margin decreased by 2.5 percentage points in 2022 versus 2021. The margin decrease was due to the aforementioned increased operating expenses and amortization expense that outpaced revenue growth during the period.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        },
+        {
+          "text": "Actions by the CFPB or other regulators against us could result in financial or reputational harm. Our compliance costs and legal and regulatory exposure could increase materially if the CFPB or other regulators enact new regulations, change regulations that were previously adopted, modify through supervision or enforcement past regulatory guidance, or interpret existing regulations in a manner different or stricter than have been previously interpreted.",
+          "section": "risk_factors",
+          "subsection": "Regulatory oversight of our contractual relationships with certain of our customers may adversely affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Operating margins are under pressure from various factors including costs and regulatory risks.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is a significant headwind for the company, with slower growth expected in 2023 across various markets, including the U.S. mortgage market and international regions like the U.K. Additionally, potential regulatory changes and consumer privacy concerns pose risks, and the ongoing impacts of the COVID-19 pandemic continue to affect economic conditions negatively.",
+      "evidence": [
+        {
+          "text": "For 2023, our planning assumes that U.S. economic activity, as measured by GDP, is expected to grow but at a slower rate of growth than experienced in 2022. Our plan assumes the U.S. mortgage market, as measured by originations, is expected to decline by about 30% in 2023 versus 2022.",
+          "section": "mda",
+          "subsection": "Recent Events and Company Outlook"
+        },
+        {
+          "text": "The enactment of new laws and how they are interpreted could impact our business. In particular, legislative activity in the privacy area may result in new laws that are applicable to us and that may hinder our business.",
+          "section": "risk_factors",
+          "subsection": "Legal and Regulatory Risks"
+        },
+        {
+          "text": "The COVID-19 pandemic and the mitigation efforts by governments to attempt to control its spread adversely impacted the global economy, leading to reduced consumer spending and lending activities.",
+          "section": "risk_factors",
+          "subsection": "Our business has been and may continue to be negatively impacted by health epidemics, pandemics and similar outbreaks, including the COVID-19 pandemic."
+        },
+        {
+          "text": "Negative changes in general economic conditions, including interest rates, the level of inflation, unemployment rates, income, home prices, investment values and consumer confidence, could adversely affect us.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions are a significant headwind with slower growth and regulatory risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Higher interest rates are negatively impacting the company's demand, particularly in the U.S. mortgage market, leading to declines in originations and revenue growth. Additionally, changes in interest rates could affect the company's ability to access capital markets and increase borrowing costs, potentially limiting its financial flexibility.",
+      "evidence": [
+        {
+          "text": "The significant decline in U.S. mortgage originations negatively impacted the growth in Workforce Solutions and caused the decline in USIS revenue. Any change in the U.S. mortgage market could have a corresponding impact on revenue and operating profit for our business, primarily within the Workforce Solutions and USIS operating segments. Although in recent years activity has been directly related to changes in interest rates, and this trend has been less observed.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        },
+        {
+          "text": "A downgrade in our credit ratings would increase the cost of borrowings under our commercial paper program, $1.5 billion revolving credit facility and $700.0 million delayed draw term loan, and could limit or, in the case of a significant downgrade, preclude our ability to issue commercial paper.",
+          "section": "risk_factors",
+          "subsection": "A downgrade in our credit ratings could increase our cost of borrowing under our credit facilities and have an adverse effect on our ability to access the capital markets."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Higher interest rates are causing significant negative impacts on the company's demand and financial flexibility.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

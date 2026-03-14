@@ -1,0 +1,499 @@
+{
+  "ticker": "FTV",
+  "form": "10-K",
+  "filing_date": "2025-02-25",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 27,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has been repurchasing shares and paying dividends, indicating a commitment to returning value to shareholders.",
+      "evidence": [
+        {
+          "text": "We repurchased 12 million shares of our common stock for approximately $890 million, including excise tax payments, under our share repurchase program. We made dividend payments to common shareholders totaling $111 million.",
+          "section": "mda",
+          "subsection": "Financing Activities and Indebtedness"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is actively repurchasing shares and paying dividends, which indicates strong shareholder value return.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are volatile and may rise, creating margin pressure.",
+      "evidence": [
+        {
+          "text": "Prices for and availability of these components, raw materials, and other commodities have fluctuated significantly in the past.",
+          "section": "risk_factors",
+          "subsection": "Our financial results are subject to fluctuations in the cost and availability of commodities or components that we use in our operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Volatile input costs pose a risk of margin pressure for the company.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is experiencing disruptions, which may lead to longer lead times and potential shortages.",
+      "evidence": [
+        {
+          "text": "Widespread supply chain challenges due to labor, raw material, and component shortages, as well as widespread logistics issues, affected multiple industries.",
+          "section": "risk_factors",
+          "subsection": "Our financial results are subject to fluctuations in the cost and availability of commodities or components that we use in our operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Disruptions in the supply chain could lead to longer lead times and potential shortages, affecting operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is a challenge, particularly in competitive industries.",
+      "evidence": [
+        {
+          "text": "Our success also depends on our ability to attract, develop and retain a talented employee base.",
+          "section": "risk_factors",
+          "subsection": "Our ability to attract, develop, and retain senior leaders and other key employees is critical to our success."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces challenges in retaining talent, which could impact its success.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is a concern due to supply chain disruptions and restructuring activities.",
+      "evidence": [
+        {
+          "text": "Our manufacturing capacity may at times exceed or fall short of our production requirements. Any or all of these problems could result in... inefficiencies.",
+          "section": "risk_factors",
+          "subsection": "Our growth could suffer if the markets into which we sell our products and services decline, do not grow as anticipated, or experience cyclicality."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain issues and restructuring may lead to inefficiencies and lower productivity.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Adoption of digital technologies and AI is present but may face challenges.",
+      "evidence": [
+        {
+          "text": "Increasing use of artificial intelligence may increase these risks.",
+          "section": "risk_factors",
+          "subsection": "Disruptions in, or breaches in security of, our information technology systems have adversely affected, and in the future could adversely affect, our business."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While digital technologies and AI are being adopted, there are potential challenges that may hinder full benefits.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, including trade conflicts and sanctions, pose significant challenges to the company's international operations.",
+      "evidence": [
+        {
+          "text": "There continues to be significant uncertainty about the future relationship between the United States and other countries... Any increased sanctions, tariffs or other trade barriers or restrictions on global trade, especially trade with China, could adversely impact our business and financial results.",
+          "section": "risk_factors",
+          "subsection": "Trade relations between the United States and other countries could have a material adverse effect on our business and financial results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical risks such as trade conflicts and sanctions pose significant challenges to international operations.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is growing, supported by volume increases and price increases.",
+      "evidence": [
+        {
+          "text": "The sales results for 2024 were driven by growth in our existing businesses due to price increases across the segment and volume increases primarily in our sterilization and dosimetry products.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is growing due to both volume increases and price increases, indicating a positive trend.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is growing, with new orders outpacing revenue.",
+      "evidence": [
+        {
+          "text": "Year-over-year price increases in our Advanced Healthcare Solutions segment contributed 3.4% to sales growth during 2024, as compared to 2023, and is reflected as a component of the change in core revenue.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is successfully raising prices, contributing to sales growth.",
+      "evidence": [
+        {
+          "text": "Year-over-year price increases in our Advanced Healthcare Solutions segment contributed 3.4% to sales growth during 2024, as compared to 2023, and is reflected as a component of the change in core revenue.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting favorably, with contributions from acquired businesses and higher volumes in certain segments.",
+      "evidence": [
+        {
+          "text": "Gross profit increased during 2024 as compared to 2023, primarily due to favorable pricing from existing businesses, contributions from our acquired businesses, increased volume from the IOS and AHS segments, benefits from productivity measures and FBS initiatives, partially offset by net volume reductions in the PT segment, higher employee compensation, and unfavorable changes in foreign currency exchange rates.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, driven by favorable pricing and higher volumes.",
+      "evidence": [
+        {
+          "text": "Year-over-year price increases in our Advanced Healthcare Solutions segment contributed 3.4% to sales growth during 2024, as compared to 2023, and is reflected as a component of the change in core revenue.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign currency exchange rates and interest rates are key sensitivities impacting the company's results.",
+      "evidence": [
+        {
+          "text": "Currency exchange rates unfavorably impacted 2024 reported sales by 0.6% as compared to 2023, as the U.S. dollar was, on average, stronger against most major currencies during 2024 as compared to exchange rate levels during 2023. If the exchange rates in effect as of December 31, 2024 were to prevail throughout 2025, currency exchange rates would negatively impact 2025 estimated sales by approximately 1.4% relative to our performance in 2024.",
+          "section": "mda",
+          "subsection": "Foreign Currency Exchange Rate Risk"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Changes in industry standards and regulations could negatively impact demand and increase costs.",
+      "evidence": [
+        {
+          "text": "Any significant change or delay in implementation in any of these regulations or standards (or in the interpretation, application, or enforcement thereof) could reduce or delay demand for our products and services, increase our costs of producing or delay the introduction of new or modified products and services, or restrict our existing activities, products, and services.",
+          "section": "risk_factors",
+          "subsection": "Changes in industry standards and governmental regulations may reduce demand for our products or services or increase our expenses."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "tax_liabilities",
+      "category": "unknown",
+      "summary": "The company faces potential tax liabilities from past separations which could impact financial results.",
+      "evidence": [
+        {
+          "text": "We could incur significant liability if our separation from Danaher, our separation of our Automation and Specialty business, or our separation of Vontier or our pending separation of the PT segment... could be determined to be a taxable transaction.",
+          "section": "risk_factors",
+          "subsection": "Risk Related to Our Tax and Accounting Matters"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "impairment_charges",
+      "category": "unknown",
+      "summary": "The company may need to recognize impairment charges for goodwill and intangible assets which could affect results.",
+      "evidence": [
+        {
+          "text": "Any charges relating to such impairments would adversely affect our results of operations in the periods recognized.",
+          "section": "risk_factors",
+          "subsection": "We may be required to recognize impairment charges for our goodwill and other intangible assets."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Changes in tax laws and interest rates could impact the company's financial results.",
+      "evidence": [
+        {
+          "text": "Our future income tax rates could be volatile and difficult to predict due to changes in business profit by jurisdiction, changes in the amount and recognition of deferred tax assets and liabilities, or by changes in tax laws, regulations, or accounting principles.",
+          "section": "risk_factors",
+          "subsection": "Risk Related to Our Tax and Accounting Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary indicates that changes in tax laws and interest rates could negatively impact the company's financial results, suggesting potential risks.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company anticipates an increase in capital expenditures, reflecting confidence in future growth, though it has not provided specific details on changes in capital expenditure strategies beyond the expected spending range.",
+      "evidence": [
+        {
+          "text": "We expect capital spending to be between approximately $120 million and $150 million in 2025, though actual expenditures will ultimately depend on business conditions.",
+          "section": "mda",
+          "subsection": "Financing Activities and Indebtedness"
+        },
+        {
+          "text": "The company has not explicitly mentioned changes in capital expenditure, focusing instead on meeting cash requirements through existing financing methods.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company anticipates an increase in capital expenditures, but the evidence is mixed as they have not provided specific details on changes beyond the spending range.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "The company has demonstrated positive free cash flow generation, particularly in 2023, and while there was a cash outflow in 2024, operating cash flows have shown improvement and growth.",
+      "evidence": [
+        {
+          "text": "Financing activities used cash of $793 million in 2024, and generated cash of $32 million in 2023.",
+          "section": "mda",
+          "subsection": "Financing Activities and Indebtedness"
+        },
+        {
+          "text": "Operating cash flows were $1.5 billion in 2024, representing an increase of $173 million, or 12.8%, as compared to 2023.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has demonstrated positive free cash flow generation, particularly in 2023, with operating cash flows showing improvement and growth in 2024.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins are mixed, showing expansion in some areas but facing pressure from rising costs and potential inability to pass them on to customers.",
+      "evidence": [
+        {
+          "text": "The carrying value of total debt outstanding as of December 31, 2024 was approximately $3.7 billion. We had $2.0 billion available under the Revolving Credit Facility as of December 31, 2024.",
+          "section": "mda",
+          "subsection": "Financing Activities and Indebtedness"
+        },
+        {
+          "text": "If we are unable to fully recover higher commodity or component costs through price increases or offset these increases through cost reductions, our profitability may suffer.",
+          "section": "risk_factors",
+          "subsection": "Our financial results are subject to fluctuations in the cost and availability of commodities or components that we use in our operations."
+        },
+        {
+          "text": "Operating profit margin increased 380 basis points during 2024 as compared to 2023.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's margins are mixed with expansion in some areas but facing pressure from rising costs and potential inability to pass them on to customers.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage is increasing, leading to higher interest expenses and potential weakening of the balance sheet due to rising debt levels and interest costs. While the company is managing its short-term liquidity effectively, the overall trend indicates growing financial leverage which could pose risks if interest rates rise or credit ratings decline.",
+      "evidence": [
+        {
+          "text": "We generally expect to satisfy any short-term liquidity needs that are not met through operating cash flows and available cash primarily through term loans or issuances of commercial paper under the Commercial Paper Programs, with credit support provided by the Revolving Credit Facility.",
+          "section": "mda",
+          "subsection": "Financing Activities and Indebtedness"
+        },
+        {
+          "text": "We have incurred a significant amount of debt, and our debt obligations, including the cost of such debt, will increase further if we incur additional debt and do not retire existing debt, our credit rating declines, or if the applicable interest rates rise.",
+          "section": "risk_factors",
+          "subsection": "Risk Related to Our Financing Activities"
+        },
+        {
+          "text": "Net interest expense was $152.8 million during 2024, compared to $123.5 million during 2023. The year-over-year interest expense increase was primarily due to higher overall debt balances.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's debt leverage is increasing, leading to higher interest expenses and potential weakening of the balance sheet, posing risks if interest rates rise or credit ratings decline.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The global economy is facing adverse conditions, which are acting as a headwind. Economic conditions could impact the company's ability to comply with regulations and standards, affecting demand and costs.",
+      "evidence": [
+        {
+          "text": "Our business is impacted by general economic conditions, and adverse economic conditions... could result in longer sales cycles and slower adoption of new technologies.",
+          "section": "risk_factors",
+          "subsection": "Conditions in the global economy, the markets we serve, and the financial markets may adversely affect our business and financial results."
+        },
+        {
+          "text": "These are not the only regulations that our businesses must comply with. Generally, regulations we are subject to have tended to become more stringent over time and may be inconsistent across jurisdictions.",
+          "section": "risk_factors",
+          "subsection": "Changes in industry standards and governmental regulations may reduce demand for our products or services or increase our expenses."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Adverse global economic conditions could impact the company's ability to comply with regulations and standards, affecting demand and costs, indicating significant headwinds.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing mixed volume trends. While unit volumes are growing, contributing to revenue growth, particularly in sterilization and dosimetry products, there are uncertainties due to market conditions and customer demand, which make volume trends difficult to forecast.",
+      "evidence": [
+        {
+          "text": "Volume increases primarily in our sterilization and dosimetry products.",
+          "section": "risk_factors",
+          "subsection": "Our growth could suffer if the markets into which we sell our products and services decline, do not grow as anticipated, or experience cyclicality."
+        },
+        {
+          "text": "Our quarterly sales and profits depend substantially on the volume and timing of orders received during the fiscal quarter, which are difficult to forecast.",
+          "section": "mda",
+          "subsection": "2024 COMPARED TO 2023"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company experiences mixed volume trends with growth in some products but uncertainties due to market conditions and customer demand, making it difficult to forecast.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation and legal risks, including potential indemnification liabilities from past separations, improper conduct by employees or partners, and associated legal fees, which could collectively impact its financial results, reputation, and ability to conduct business.",
+      "evidence": [
+        {
+          "text": "We are subject to a variety of litigation and other legal and regulatory proceedings incidental to our business... These lawsuits may include claims for compensatory damages, punitive and consequential damages, and/or injunctive relief.",
+          "section": "risk_factors",
+          "subsection": "We are subject to a variety of litigation and other legal and regulatory proceedings in the course of our business that could adversely affect our financial results."
+        },
+        {
+          "text": "If we are required to indemnify Vontier under the circumstances set forth in these agreements, we may be subject to substantial liabilities.",
+          "section": "risk_factors",
+          "subsection": "Potential indemnification liabilities to Vontier pursuant to the separation agreement could materially and adversely affect our businesses, financial condition, results of operations, and cash flows."
+        },
+        {
+          "text": "Any such improper actions or allegations of such acts could damage our reputation and subject us to civil or criminal investigations in the United States and in other jurisdictions and related shareholder lawsuits, could lead to substantial civil and criminal, monetary and non-monetary penalties and could cause us to incur significant legal and investigatory fees.",
+          "section": "risk_factors",
+          "subsection": "Our reputation, ability to do business, and financial results may be impaired by improper conduct by any of our employees, agents, or business partners."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant litigation and legal risks, including potential liabilities and associated fees, could negatively impact the company's financial results and reputation.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are unfavorably impacting sales and results due to a stronger U.S. dollar.",
+      "evidence": [
+        {
+          "text": "Sales and purchases in currencies other than the U.S. dollar expose us to fluctuations in foreign currencies relative to the U.S. dollar and may adversely affect our financial results.",
+          "section": "risk_factors",
+          "subsection": "Foreign currency exchange rates, including the volatility thereof, may adversely affect our financial results."
+        },
+        {
+          "text": "Currency exchange rates unfavorably impacted 2024 reported sales by 0.6% as compared to 2023, as the U.S. dollar was, on average, stronger against most major currencies during 2024 as compared to exchange rate levels during 2023.",
+          "section": "mda",
+          "subsection": "Foreign Currency Exchange Rate Risk"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant environmental compliance risks, including potential costs, liabilities, and reputational damage due to non-compliance with regulations. The evidence indicates that failure to adhere to environmental laws could result in monetary penalties, damage to reputation, and increased financial obligations.",
+      "evidence": [
+        {
+          "text": "Climate change... may require us to adjust the loss contingency estimates that we have recorded in our financial results, record estimates for liabilities or assets that we were previously unable to estimate, or pay cash settlements or judgments.",
+          "section": "risk_factors",
+          "subsection": "Climate change, or legal or regulatory measures to address climate change, may negatively affect us."
+        },
+        {
+          "text": "Our operations, products, and services expose us to the risk of environmental, health, and safety liabilities, costs, and violations that could adversely affect our reputation and financial results.",
+          "section": "risk_factors",
+          "subsection": "Our operations, products, and services expose us to the risk of environmental, health, and safety liabilities, costs, and violations that could adversely affect our reputation and financial results."
+        },
+        {
+          "text": "Failure to comply with any of these laws could result in civil and criminal, monetary and non-monetary penalties and damage to our reputation.",
+          "section": "risk_factors",
+          "subsection": "Our operations, products, and services expose us to the risk of environmental, health, and safety liabilities, costs, and violations that could adversely affect our reputation and financial results."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is actively engaged in acquisition and divestiture activities, which present both opportunities and risks. While acquisitions are generating significant cash outflows, the planned separation into two independent companies may face delays or complications, potentially impacting the expected benefits. Additionally, the company's history of divestitures indicates a strategic focus on optimizing its portfolio, but this also exposes it to contingent liabilities from disposed businesses.",
+      "evidence": [
+        {
+          "text": "Our plans to separate into two independent, publicly traded companies may not be completed on the currently contemplated timeline or at all and may not achieve the intended benefits, including the anticipated tax treatment.",
+          "section": "risk_factors",
+          "subsection": "Risk Related to Our Acquisitions, Investments, and Dispositions"
+        },
+        {
+          "text": "Cash outflows from investing activities increased by $1.6 billion in 2024 as compared to 2023 with the increase primarily due to a year-over year increase in cash used for acquisitions, net of cash acquired, of approximately $1.6 billion.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        },
+        {
+          "text": "We continually assess the strategic fit of our existing businesses and may divest or otherwise dispose of businesses that are deemed not to fit with our strategic plan or are not achieving the desired return on investment.",
+          "section": "risk_factors",
+          "subsection": "Divestitures or other dispositions could negatively impact our business, and contingent liabilities from businesses that we have sold could adversely affect our financial results."
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "ticker": "ETN",
+  "form": "10-Q",
+  "filing_date": "2015-04-29",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 7,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed with organic growth in some regions offset by declines in others.",
+      "evidence": [
+        {
+          "text": "The decrease in organic sales was primarily due to weakness in the global agricultural equipment market and the China construction equipment market.",
+          "section": "mda",
+          "subsection": "Hydraulics"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand trends with growth in some regions offset by declines in others suggest a stable but not clearly positive or negative direction.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating compared to prior periods.",
+      "evidence": [
+        {
+          "text": "Net sales in the first quarter of 2015 decreased 5% compared to the first quarter of 2014 due to a decrease of 6% from the impact of currency translation, partially offset by an increase of 1% in organic sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is decelerating, indicating a moderate headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing in some segments but declining in others, with overall volume trends mixed.",
+      "evidence": [
+        {
+          "text": "Higher organic sales volumes contributed to the increase in gross profit margin.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Unit volumes are growing in some segments but declining in others, showing mixed signals.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are stable to slightly improving in most segments.",
+      "evidence": [
+        {
+          "text": "The gross profit margin increased from 29.8% in the first quarter of 2014 to 31.2% in the first quarter of 2015.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Gross and operating margins are stable to slightly improving, which is a positive sign.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction actions are delivering measurable savings, particularly in the Aerospace segment.",
+      "evidence": [
+        {
+          "text": "The increase in operating margin in the first quarter of 2015 was primarily due to higher organic sales volumes, as noted above, and favorable mix.",
+          "section": "mda",
+          "subsection": "Aerospace"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction actions are delivering measurable savings, particularly in the Aerospace segment, indicating a positive development.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not provided specific forward guidance in the text.",
+      "evidence": [
+        {
+          "text": "No specific forward guidance is mentioned in the provided text.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management has not provided specific forward guidance, leading to a neutral stance.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign exchange movements and economic conditions in the U.S. and global markets are key sensitivities impacting near-term results.",
+      "evidence": [
+        {
+          "text": "The effective income tax rate for the first quarter of 2015 was expense of 8% compared to expense of 3% for the first quarter of 2014. The increase in the effective income tax rate in the first quarter of 2015 is primarily due to more income earned in higher tax jurisdictions including the United States.",
+          "section": "mda",
+          "subsection": "Income Taxes"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign exchange movements and economic conditions are key sensitivities, but without clear positive or negative signals, the sentiment remains neutral.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

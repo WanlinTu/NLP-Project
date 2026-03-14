@@ -1,0 +1,1317 @@
+{
+  "ticker": "BA",
+  "form": "10-K",
+  "filing_date": "2022-01-31",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 50,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are focused on maintaining production capacity and efficiency, with a cautious approach to new investments.",
+      "evidence": [
+        {
+          "text": "The company is transforming and improving business processes to enhance operational efficiency and resilience.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is maintaining production capacity and efficiency but cautious about new investments, indicating a stable approach.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is being managed through cost reduction and efficiency measures, with interest expense increasing due to higher debt levels.",
+      "evidence": [
+        {
+          "text": "Interest and debt expense increased by $526 million in 2021 and increased by $1,434 million in 2020 as a result of higher average debt balances.",
+          "section": "mda",
+          "subsection": "Other Earnings Items"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Interest expense has significantly increased due to higher debt levels, posing a financial burden.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are focused on maintaining liquidity and capital efficiency, with no explicit mention of buybacks or dividends in the provided text.",
+      "evidence": [
+        {
+          "text": "The company is focused on improving near-term liquidity and long-term cost competitiveness through efficiency measures.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit mention of buybacks or dividends, but focus on liquidity and capital efficiency suggests a stable approach.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is under pressure due to lower revenues and increased costs, leading to net cash outflows.",
+      "evidence": [
+        {
+          "text": "Net loss attributable to Boeing Shareholders ($4,202) ($11,873) ($636) [...] Free cash flow is not explicitly detailed in the provided text.",
+          "section": "mda",
+          "subsection": "Consolidated Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Net cash outflows due to lower revenues and increased costs indicate cash flow pressure.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable as there is no mention of strikes, disputes, or union pressure.",
+      "evidence": [
+        {
+          "text": "The following table summarizes cost of sales: (verbatim table provided)",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "No mention of strikes or disputes, suggesting stable labor relations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are not significantly impacting the company as the evidence does not mention material effects.",
+      "evidence": [
+        {
+          "text": "The following table summarizes cost of sales: (verbatim table provided)",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No evidence of material impact from interest rate changes.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are not significantly impacting the company as the evidence does not mention material effects.",
+      "evidence": [
+        {
+          "text": "The following table summarizes cost of sales: (verbatim table provided)",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No evidence of significant foreign exchange impact.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards lower-margin segments, primarily driven by the impact of the pandemic on commercial airplanes and increased competition in the market. This shift has negatively impacted margins, particularly in government services.",
+      "evidence": [
+        {
+          "text": "BDS earnings from operations includes our share of income or loss from equity method investments of $53 million, $141 million and $128 million primarily from our ULA and non-U.S. joint ventures in 2021, 2020 and 2019, respectively.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        },
+        {
+          "text": "Revenues decreased by $18,401 million in 2020 compared with 2019 primarily due to lower revenues in our commercial airplanes and commercial services businesses. [...] BCA revenues decreased by $16,093 million due to lower deliveries driven by the impacts of the COVID-19 pandemic, 787 production issues and the 737 MAX grounding.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "With government support, Airbus has historically invested heavily to create a family of products to compete with ours. After the acquisition of a majority share of Bombardier\u2019s C Series (now A220) in 2018, Airbus continues to expand in the 100-150 seat transcontinental market...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Revenue mix shift to lower-margin segments and negative impacts from pandemic and competition.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends show signs of improvement but remain uneven and below pre-pandemic levels, primarily due to ongoing impacts from the COVID-19 pandemic. While there is some recovery in commercial services and passenger traffic, the global economy and aerospace industry continue to face challenges, leading to a deceleration in demand for commercial aircraft.",
+      "evidence": [
+        {
+          "text": "BGS revenues in 2021 increased by $785 million compared with 2020 due to higher commercial and government services volume. While commercial services volume is recovering, it remains below pre-pandemic levels.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "The latest International Air Transport Association (IATA) release reported that passenger traffic in 2021 recovered to approximately 40% of 2019 levels, as international markets saw continued reopening challenges. Additionally, global economic activity is improving, but continues to be impacted by COVID-19, and governments continue to restrict travel to contain the spread of the virus.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The global economy continues to experience significant adverse impacts due to the COVID-19 pandemic, including a decline in overall trade in general and in aerospace in particular. There is a great deal of uncertainty regarding the duration, scale and localization of these impacts to the global economy...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        },
+        {
+          "text": "Commercial air traffic has fallen dramatically due to the COVID-19 pandemic. This trend has impacted passenger traffic most severely. Most airlines have significantly reduced their capacity, and many could implement further reductions.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to COVID-19"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The order backlog shows mixed trends, with some evidence of growth due to new orders and reclassifications, but also faces challenges such as production issues, customer deferrals, and potential risks from COVID-19 impacts like reduced demand and possible customer defaults.",
+      "evidence": [
+        {
+          "text": "Total backlog of $59,828 million at December\u00a031, 2021 was $1,019 million lower than December\u00a031, 2020 due to the timing of awards and revenue recognized.",
+          "section": "mda",
+          "subsection": "Backlog / Additional Considerations"
+        },
+        {
+          "text": "While recovery is accelerating, we continue to expect that it will remain uneven as travel restrictions and varying regional travel protocols continue to impact air travel. [...] We continue to expect commercial air travel to return to 2019 levels in 2023 to 2024. [...] We will closely monitor the key factors that affect backlog and future demand for each of our commercial aircraft programs.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The increase in contractual backlog during 2021 was primarily due to new orders, reclassifications from unobligated backlog related to BDS and BGS contracts, increases in price escalation and reductions in the number of existing orders that in our assessment do not meet the accounting requirements of ASC 606 for inclusion in backlog...",
+          "section": "mda",
+          "subsection": "Backlog"
+        },
+        {
+          "text": "If we are unable to successfully remarket these aircraft and/or the narrow-body and wide-body markets do not recover as soon as we are currently assuming, we could experience material reductions in earnings and/or be required to recognize a reach-forward loss on one or more of our programs.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to COVID-19"
+        },
+        {
+          "text": "Significant deterioration [...] could result in [...] a reduction in our contractual backlog. [...] customers may have contractual remedies [...] rights to reject individual airplane deliveries.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is decelerating, primarily due to the lingering effects of the COVID-19 pandemic on commercial airplane sales and lower commercial services revenue. Additionally, production issues, such as those in the 787 program and the 737 MAX grounding, have further constrained growth, leading to revenue shortfalls and operational challenges. The recovery in commercial services volume is slow, and lower airplane deliveries continue to impact future earnings and margins until production rates normalize. These factors collectively hinder the company's ability to achieve sustained organic growth in the near term.",
+      "evidence": [
+        {
+          "text": "BGS revenues in 2021 increased by $785 million compared with 2020 due to higher commercial and government services volume. While commercial services volume is recovering, it remains below pre-pandemic levels.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Revenues decreased by $18,401 million in 2020 compared with 2019 primarily due to lower revenues in our commercial airplanes and commercial services businesses. [...] BCA revenues decreased by $16,093 million due to lower deliveries driven by the impacts of the COVID-19 pandemic, 787 production issues and the 737 MAX grounding.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Lower commercial airplane deliveries and the COVID-19 pandemic will continue to have a significant adverse impact on future earnings and margins until deliveries ramp up and return to historical levels.",
+          "section": "mda",
+          "subsection": "Loss From Operations"
+        },
+        {
+          "text": "The grounding reduced revenues, operating margins and cash flows, and will continue to do so until production rates return to pre-grounding levels. While we have received regulatory approval to return the 737 MAX to service in most jurisdictions, we continue to work with certain non-U.S. civil aviation authorities to complete remaining steps toward certification and readiness for return to service worldwide.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Our Business and Operations"
+        },
+        {
+          "text": "The 787 program\u2019s production issues and delivery pause result in significant uncertainties regarding the revenue and cost estimates for the 787 program. Deliveries have remained paused since May 2021.",
+          "section": "mda",
+          "subsection": "Program Accounting"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end market momentum varies across different sectors, showing mixed performance. Government services and defense and space markets are stable or performing well, while the commercial aerospace and commercial airplane markets are recovering but still facing challenges due to the pandemic and production issues.",
+      "evidence": [
+        {
+          "text": "The demand outlook for our government services business has remained stable in 2021. [...] The pandemic is having a direct impact on our commercial services business.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "At BDS, we continue to see a healthy market with solid demand for our major platforms and programs both domestically and internationally. [...] The demand outlook for our government services business remains stable; government services comprises approximately half of BGS revenue, which is unchanged from pre-pandemic levels.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The commercial airplane market and the airline industry both remain extremely competitive. While the impacts and responses have varied globally, the reduction of demand and disruption in production has adversely impacted most manufacturers in the commercial airplane industry...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "The company faces margin pressure due to labor costs, particularly in the 787 program, which is experiencing production issues and rework. However, labor costs are manageable overall, with the company focusing on efficiency improvements and business process transformation to enhance long-term cost competitiveness and emerge stronger in a recovering market.",
+      "evidence": [
+        {
+          "text": "Labor costs are creating margin pressure due to production issues and associated rework, particularly in the 787 program.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "We continue to transform and improve our business processes. These activities are not intended to constrain our capacity but to enable the Company to emerge stronger and be more resilient when the market recovers. We expect that successful execution of these measures will improve near-term liquidity and long-term cost competitiveness.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Cost of sales, for both products and services, consists primarily of raw materials, parts, sub-assemblies, labor, overhead and subcontracting costs...",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends show mixed performance across programs. While the 737 MAX and 777X programs are experiencing growth, other programs like the 787 are facing production pauses and lower volumes, partly due to production issues and the impact of the pandemic.",
+      "evidence": [
+        {
+          "text": "The accounting quantity for the 737 program increased by 400 units during 2021 due to the program's normal progress of obtaining additional orders and delivering airplanes. [...] The production rate for the combined 777/777X program is expected to increase from 2 per month to 3 per month in 2022.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Revenues increased by $4,128 million in 2021 compared with 2020 driven by higher revenues at BCA, BDS and BGS. [...] BCA revenues increased by $3,331 million primarily driven by higher 737 MAX deliveries due to recertification and return to service in most jurisdictions.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Revenues will continue to be impacted until deliveries of the 737 MAX ramp up, deliveries of the 787 resume and the commercial airline industry recovers from the impacts of COVID-19.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Deliveries have remained paused since May 2021. During the fourth quarter of 2021, we recorded a loss of $3.5 billion on the program primarily due to rework driving longer delivery delays than were previously expected and associated customer considerations.",
+          "section": "mda",
+          "subsection": "Program Accounting"
+        },
+        {
+          "text": "During 2021, we experienced production quality issues, including in our supply chain, which have contributed to lower 787 deliveries, including a pause in 787 deliveries since May 2021.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance, with some programs achieving stable or near break-even gross margins and slight improvements in operating margins, while others face pressure due to declining margins, higher costs, and production challenges.",
+      "evidence": [
+        {
+          "text": "Gross margins are stable or near break-even for some programs, while operating margins have slightly improved.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Operating margins (4.7) % (22.0) % (2.6) % [...] Loss from operations decreased by $9,865 million in 2021 compared with 2020 primarily due to lower losses at BCA and higher earnings at BGS.",
+          "section": "mda",
+          "subsection": "Loss From Operations"
+        },
+        {
+          "text": "Cost of sales as a percentage of Revenues increased in 2020 compared to 2019 primarily due to the reach-forward loss on the 777X program, impacts of the 737 MAX grounding and the COVID-19 pandemic, as well as severance costs.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        },
+        {
+          "text": "Impacts related to our suspension of 737 MAX production from 2019 to 2020 significantly increased costs to produce aircraft included in the current accounting quantity and have resulted in reduced 737 program and overall BCA segment operating margins.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Our Business and Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are being made through various initiatives, but operational efficiency remains challenged by supply chain disruptions and production pauses, impacting overall productivity. Despite efforts to enhance efficiency and reduce costs, ongoing disruptions hinder the full realization of productivity gains.",
+      "evidence": [
+        {
+          "text": "\"We are continuing to implement changes in the production process designed to ensure that newly-built airplanes meet our specifications and do not require further inspections and rework.\"",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "\"These activities are not intended to constrain our capacity but to enable the Company to emerge stronger and be more resilient when the market recovers. We expect that successful execution of these measures will improve near-term liquidity and long-term cost competitiveness.\"",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "\"Research and development expense decreased by $743 million in 2020 compared with 2019 primarily due to lower spending at BCA and at Boeing NeXt on product development.\"",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost reduction programs that have shown measurable savings in some areas, such as R&D expenses, but is also facing significant cost overruns on major programs like the 777X and 787, leading to abnormal production costs and delivery delays. While there is progress, ongoing challenges and delays suggest mixed results in managing costs effectively.",
+      "evidence": [
+        {
+          "text": "We expect to incur approximately $2 billion of abnormal production costs on a cumulative basis with most being incurred by the end of 2023. [...] These impacts have resulted in longer than expected delivery delays and associated customer considerations.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Research and development expense decreased by $227 million in 2021 compared with 2020 primarily due to lower BCA and enterprise investments in product development and lower spending on the 777X program.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The 777X program During the fourth quarter of 2020, we revised the estimated first delivery date of the 777X to late 2023 and recorded a $6.5 billion reach-forward loss on the 777X program. The revised schedule and reach-forward loss reflected a number of factors, including an updated assessment of global certification requirements informed by continued discussions with regulators and a management decision in the fourth quarter of 2020 to make modifications to the aircraft\u2019s design, an updated assessment of COVID-19 impacts on market demand and discussions with our customers with respect to aircraft delivery timing.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is showing mixed results with some cost savings but significant overruns and delays.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is low and expected to remain below target due to production rate reductions, COVID-19 impacts, and delays. The company is adjusting production rates to align with reduced demand and is cautiously managing capacity.",
+      "evidence": [
+        {
+          "text": "We are currently producing at very low rates and expect that to continue until deliveries resume, gradually returning to 5 per month over time.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "To balance the supply and demand given the COVID-19 shock and to preserve our long-term potential and competitiveness, we have reduced the production rates of several of our BCA programs.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Lower commercial airplane deliveries and the COVID-19 pandemic will continue to have a significant adverse impact on future earnings and margins until deliveries ramp up and return to historical levels.",
+          "section": "mda",
+          "subsection": "Loss From Operations"
+        },
+        {
+          "text": "The 787 program is currently producing at very low rates and expects that to continue until deliveries resume.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Low capacity utilization due to production cuts and pandemic impacts suggests operational challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain health is facing significant challenges, primarily affecting the 787 program and leading to production pauses, additional costs, and delivery delays. Ongoing disruptions, including part shortages and supplier liquidity issues, are impacting production and delivery schedules. The company is focused on improving supply chain stability and production quality, but continued challenges in raw material availability and supplier operations remain a concern.",
+      "evidence": [
+        {
+          "text": "We have identified production quality issues, including in our supply chain, which have contributed to the pause in deliveries. [...] The timing of the resumption of deliveries and future production rates will depend upon rework, ongoing customer and supplier engagement, production stability and our activities with the FAA.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "We are experiencing some supply chain shortages. Our suppliers are also experiencing liquidity pressures and disruptions to their operations as a result of COVID-19. We continue to monitor the health and stability of the supply chain as we ramp up production.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The company is focused on improving its products and services and continuing its business transformation efforts, which enhances its ability to compete and positions it for market recovery.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "We experienced part shortages which disrupted our operations and delayed deliveries in 2021, and may face additional disruptions in 2022. Any such disruptions could have severe adverse impacts on our production costs, delivery schedule and/or ability to meet customer commitments.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to COVID-19"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Severe disruptions, part shortages, and supplier issues are causing major delays and costs.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are elevated, particularly in undelivered aircraft, due to production pauses and rework, posing risks of obsolescence or shortage. While management is adjusting inventory based on demand and production changes, the elevated levels indicate ongoing challenges in managing inventory effectively.",
+      "evidence": [
+        {
+          "text": "At December\u00a031, 2021 and 2020 we had approximately 110 and 80 aircraft in inventory.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Deliveries of the 737 MAX resumed in the fourth quarter of 2020 [...] Deliveries of the 787 are currently paused and the production rate has been reduced while we focus on rework of undelivered aircraft and continue to engage in detailed discussions with the FAA regarding required actions for resuming deliveries.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The value of orders in backlog is adjusted as changes to price and schedule are agreed to with customers and is reported in accordance with the requirements of ASC 606.",
+          "section": "mda",
+          "subsection": "Backlog"
+        },
+        {
+          "text": "We continue to conduct inspections and rework on undelivered 787 aircraft and engage in detailed discussions with the FAA regarding required actions for resuming delivery.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High inventory levels pose risks of obsolescence and indicate inefficiencies in managing stock.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is cautiously optimistic overall, with a focus on improving efficiency and managing challenges such as production issues, supply chain disruptions, and geopolitical risks. However, there are signs of caution due to ongoing difficulties in the 787 program, pandemic-related challenges, and U.S.-China relations.",
+      "evidence": [
+        {
+          "text": "The timing of the resumption of deliveries and future production rates will depend upon rework, ongoing customer and supplier engagement, production stability and our activities with the FAA.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "We continue to transform and improve our business processes. These activities are not intended to constrain our capacity but to enable the Company to emerge stronger and be more resilient when the market recovers. We expect that successful execution of these measures will improve near-term liquidity and long-term cost competitiveness.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The current state of U.S.-China relations remains a significant watch item. China is a very significant market for commercial airplanes and represents a significant component of our commercial airplanes backlog...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Overall cautious optimism with some ongoing issues and external risks.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Quality and safety issues are a significant concern, particularly affecting the 737 MAX and 787 programs, leading to production pauses, delivery delays, increased costs, and reputational damage. These issues have also provided competitors with opportunities to gain market share.",
+      "evidence": [
+        {
+          "text": "We have identified production quality issues, including in our supply chain, which have contributed to the pause in deliveries.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Deliveries of the 737 MAX resumed in the fourth quarter of 2020 [...] Deliveries of the 787 are currently paused and the production rate has been reduced while we focus on rework of undelivered aircraft and continue to engage in detailed discussions with the FAA regarding required actions for resuming deliveries.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The grounding of the 737 MAX and the associated suspension of 737 MAX deliveries in multiple jurisdictions significantly reduced our market share with respect to deliveries of single aisle aircraft in 2019, 2020 and 2021 and may provide competitors with an opportunity to obtain more orders and increase market share.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "If our commercial airplanes fail to satisfy performance and reliability requirements, we could face additional costs and/or lower revenues.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Serious quality and safety issues leading to production pauses and reputational harm.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is centered on innovation and capturing growth in aerospace and defense, with a focus on program execution and meeting certification requirements. However, there are uncertainties due to shifting market conditions and competitive pressures, which require cautious execution and strategic adjustments.",
+      "evidence": [
+        {
+          "text": "We are working towards reaching Type Inspection Authorization (TIA) which will enable us to begin FAA certification flight testing. [...] The timing of TIA and certification will ultimately be determined by the regulators.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "The long-term outlook for the industry remains positive due to the fundamental drivers of air travel demand: economic growth, increasing propensity to travel due to increased trade, globalization and improved airline services driven by liberalization of air traffic rights between countries. [...] The company remains committed to its core businesses and is making strategic adjustments to navigate through the challenges.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The company is focused on improving its products and services and continuing its business transformation efforts, which enhances its ability to compete and positions it for market recovery.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Positive long-term outlook but with execution uncertainties and market challenges.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces significant near-term risks, primarily driven by the ongoing impacts of the COVID-19 pandemic, production issues, and delays in certification and delivery of key programs such as the 777X, 787, and 737 MAX. These risks include potential additional losses, production pauses, and order cancellations, which could further strain the backlog and overall business performance.",
+      "evidence": [
+        {
+          "text": "The level of profitability on the 777X program will be subject to a number of factors. [...] One or more of these factors could result in additional reach-forward losses on the 777X program in future periods.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "The global outbreak of COVID-19, 787 production issues and associated rework, and the residual impacts of the 737 MAX grounding continued to have significant adverse impacts on our business in 2021.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "If 787 aircraft deliveries continue to be paused, we remain unable to deliver 737 MAX aircraft in China for an extended period of time, and/or entry into service of the 777X, 737 MAX 7 and/or 737 MAX 10 is further delayed, we may experience additional reductions to backlog and/or significant order cancellations...",
+          "section": "mda",
+          "subsection": "Backlog"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Multiple significant risks including pandemic, production issues, and delays threaten near-term performance.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include delays in certification, supply chain disruptions, and customer demand changes impacting program profitability.",
+      "evidence": [
+        {
+          "text": "The level of profitability on the 777X program will be subject to a number of factors. [...] These factors include continued market uncertainty, the impacts of COVID-19 on our production system as well as impacts on our supply chain and customers, customer negotiations, further production rate adjustments for the 777X or other commercial aircraft programs, contraction of the accounting quantity and potential risks associated with the testing program and the timing of aircraft certification.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "The pace of the commercial market recovery will be heavily dependent on COVID-19 infection rates, vaccination rates, and government travel and other restrictions on trade and commercial activity. [...] The company continues to monitor the health and stability of the supply chain as we ramp up production.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Global Trade We continually monitor the global trade environment in response to geopolitical economic developments, as well as changes in tariffs, trade agreements or sanctions that may impact the company...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The factor highlights significant risks including delays, supply chain issues, and market uncertainties impacting profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The company faces mixed catalysts, with positive developments such as the resumption of 737 MAX deliveries and anticipation of 777X approvals, alongside potential risks like ongoing delays in 777X certification and trade disputes affecting backlog.",
+      "evidence": [
+        {
+          "text": "We are working towards reaching Type Inspection Authorization (TIA) which will enable us to begin FAA certification flight testing. [...] The timing of TIA and certification will ultimately be determined by the regulators.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Deliveries of the 737 MAX resumed in the fourth quarter of 2020 [...] We continue to anticipate that the first 777X delivery will occur in late 2023.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "If 787 aircraft deliveries continue to be paused, we remain unable to deliver 737 MAX aircraft in China for an extended period of time, and/or entry into service of the 777X, 737 MAX 7 and/or 737 MAX 10 is further delayed, we may experience additional reductions to backlog and/or significant order cancellations...",
+          "section": "mda",
+          "subsection": "Backlog"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed developments include both positive catalysts like resumed deliveries and potential risks such as certification delays.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "The U.S. government defense budget is generally stable or growing, with specific areas receiving increased funding. However, there are risks associated with potential budget uncertainties, appropriations challenges, and shifts in national security priorities, which could impact future funding levels.",
+      "evidence": [
+        {
+          "text": "In May 2021, the U.S. government released the President\u2019s budget request for fiscal year 2022 (FY22), which included $715 billion in funding for the United States Department of Defense (U.S. DoD), $25 billion in funding for the National Aeronautics and Space Administration (NASA) and $19 billion for the FAA.",
+          "section": "mda",
+          "subsection": "United States Government Defense Environment Overview"
+        },
+        {
+          "text": "At BDS, we continue to see a healthy market with solid demand for our major platforms and programs both domestically and internationally.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The U.S. and EU have been engaged in two long-running disputes at the World Trade Organization (WTO) relating to large civil aircraft...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        },
+        {
+          "text": "Funding pursuant to our U.S. government contracts may be reduced or withheld as part of the U.S. Congressional appropriations process due to fiscal constraints, changes in U.S. national security strategy and/or priorities or other reasons.",
+          "section": "risk_factors",
+          "subsection": "We conduct a significant portion of our business pursuant to U.S. government contracts, which are subject to unique risks."
+        },
+        {
+          "text": "Levels of U.S. defense spending are very difficult to predict [...] and may be impacted by [...] the ability of the U.S. government to enact relevant legislation such as authorization and appropriations bills.",
+          "section": "risk_factors",
+          "subsection": "Changes in levels of U.S. government defense spending or overall acquisition priorities could negatively impact our financial position and results of operations."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The budget is stable or growing, but there are risks from budget uncertainties and geopolitical factors.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "The company's contract backlog is showing mixed trends, with some evidence of growth due to new orders, but also facing risks from potential delays, cancellations, and reductions in backlog. While the backlog was stable in the most recent period, there are concerns about future pressures from various factors such as production delays, customer deferrals, and the impact of the COVID-19 pandemic on customer demand.",
+      "evidence": [
+        {
+          "text": "Total backlog of $59,828 million at December\u00a031, 2021 was $1,019 million lower than December\u00a031, 2020 due to the timing of awards and revenue recognized.",
+          "section": "mda",
+          "subsection": "Backlog / Additional Considerations"
+        },
+        {
+          "text": "The increase in contractual backlog during 2021 was primarily due to new orders, reclassifications from unobligated backlog related to BDS and BGS contracts, increases in price escalation and reductions in the number of existing orders that in our assessment do not meet the accounting requirements of ASC 606 for inclusion in backlog...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "We will closely monitor the key factors that affect backlog and future demand for each of our commercial aircraft programs, including customers\u2019 evolving fleet plans, the wide-body replacement cycle and the cargo market.",
+          "section": "mda",
+          "subsection": "Backlog"
+        },
+        {
+          "text": "Significant deterioration [...] could result in [...] a reduction in our contractual backlog. [...] customers may have contractual remedies [...] rights to reject individual airplane deliveries.",
+          "section": "risk_factors",
+          "subsection": "We conduct a significant portion of our business pursuant to U.S. government contracts, which are subject to unique risks."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The backlog shows mixed trends with growth and risks from delays and cancellations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International defense sales are expanding, particularly in non-U.S. markets such as Asia, Europe, and the Middle East. However, they face challenges including varying travel restrictions, regulatory approvals, geopolitical tensions, trade restrictions, and uncertain global trade policies, particularly in regions like China. Risks such as tariffs, duties, or penalties imposed by changes in the global trade environment could impact sales and deliveries outside the U.S. Additionally, approximately 80% of the backlog is attributable to non-U.S. customers, indicating significant reliance on international markets despite these risks.",
+      "evidence": [
+        {
+          "text": "Non-U.S. Defense Environment Overview The non-U.S. market continues to be driven by complex and evolving security challenges and the need to modernize aging equipment and inventories. BDS expects that it will continue to have a wide range of opportunities across Asia, Europe and the Middle East given the diverse regional threats. At the end of 2021, 33% of BDS backlog was attributable to non-U.S. customers.",
+          "section": "mda",
+          "subsection": "United States Government Defense Environment Overview"
+        },
+        {
+          "text": "We face aggressive international competitors who are intent on increasing their market share...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Changes in the global trade environment [...] could impact sales and/or delivery of products and services outside the U.S. and/or impose costs on our customers in the form of tariffs, duties or penalties.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Sales are expanding internationally but face challenges like trade restrictions and geopolitical tensions.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics in the industry are intense, driven by pricing pressures, global market competition, and efforts to enhance innovation and efficiency. There is also a notable trend of intensifying competition due to industry consolidation and aggressive international competitors aiming to increase their market share.",
+      "evidence": [
+        {
+          "text": "Industry Competitiveness Aviation services is a competitive market with many domestic and international competitors. [...] This market environment has resulted in intense pressures on pricing, and we expect these pressures to continue or intensify in the coming years.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The company remains committed to producing the products and providing the services that the market demands, and continue to find new ways to improve efficiency and quality to provide a fair return for our shareholders.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        },
+        {
+          "text": "We face aggressive international competitors who are intent on increasing their market share. They offer competitive products and have access to most of the same customers and suppliers...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The markets in which we operate are highly competitive [...] cross-border consolidation of competition. There can be no assurance that we will be able to compete successfully against our current or future competitors.",
+          "section": "risk_factors",
+          "subsection": "Competition within our markets and with respect to the products we sell may reduce our future contracts and sales."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intense competition and industry consolidation pose significant challenges to the company's competitive position.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "The company maintains a strong differentiation through technological leadership and brand strength, but faces challenges from increased competition and market uncertainties, particularly due to the impact of the pandemic and customer negotiations.",
+      "evidence": [
+        {
+          "text": "The level of profitability on the 777X program will be subject to a number of factors. [...] These factors include continued market uncertainty, the impacts of COVID-19 on our production system as well as impacts on our supply chain and customers, customer negotiations, further production rate adjustments for the 777X or other commercial aircraft programs, contraction of the accounting quantity and potential risks associated with the testing program and the timing of aircraft certification.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "We are a global market leader in the design, development, manufacture, sale, service and support of commercial jetliners, military aircraft, satellites, missile defense, human space flight and launch systems and services.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        },
+        {
+          "text": "Some of these competitors have historically enjoyed access to government-provided financial support, including 'launch aid,' which greatly reduces the cost and commercial risks associated with airplane development activities...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Strong differentiation exists, but it's challenged by increased competition and market uncertainties.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "The company is facing significant execution challenges across multiple major programs, including delays, cost overruns, and production issues. Notably, the 737 MAX, 777X, and 787 programs are experiencing difficulties such as paused deliveries, reduced production rates, and substantial financial losses, which have been exacerbated by regulatory hurdles and the impact of the COVID-19 pandemic.",
+      "evidence": [
+        {
+          "text": "The first flight of the 777X was completed during the first quarter of 2020. [...] During the fourth quarter of 2020, we revised the estimated first delivery date of the 777X to late 2023 and recorded a $6.5 billion reach-forward loss on the 777X program.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Deliveries of the 787 are currently paused and the production rate has been reduced while we focus on rework of undelivered aircraft and continue to engage in detailed discussions with the FAA regarding required actions for resuming deliveries. [...] We continue to anticipate that the first 777X delivery will occur in late 2023.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The 2020 loss reflects the reach-forward loss on 777X of $6,493 million, lower deliveries and lower program margins resulting from the COVID-19 pandemic, $2,567 million of abnormal production costs related to 737 MAX, $623 million of severance cost...",
+          "section": "mda",
+          "subsection": "Loss From Operations"
+        },
+        {
+          "text": "The 777X program During the fourth quarter of 2020, we revised the estimated first delivery date of the 777X to late 2023 and recorded a $6.5 billion reach-forward loss on the 777X program. The revised schedule and reach-forward loss reflected a number of factors, including an updated assessment of global certification requirements informed by continued discussions with regulators and a management decision in the fourth quarter of 2020 to make modifications to the aircraft\u2019s design, an updated assessment of COVID-19 impacts on market demand and discussions with our customers with respect to aircraft delivery timing.",
+          "section": "mda",
+          "subsection": "Program Accounting"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant execution challenges including delays, cost overruns, and production issues across major programs.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration remains a significant risk, particularly with reliance on the U.S. government and major commercial customers. However, there is evidence of improvement in diversification, with non-U.S. airlines accounting for a substantial portion of the backlog, which may mitigate some of these risks.",
+      "evidence": [
+        {
+          "text": "BGS\u2019 major customer, the U.S. government, remains subject to the spending limits and uncertainty described on page 39 , which could restrict the execution of certain program activities and delay new programs or competitions.",
+          "section": "mda",
+          "subsection": "Backlog / Additional Considerations"
+        },
+        {
+          "text": "Our principal operations are in the U.S., we conduct operations in an expanding number of countries and rely on an extensive network of non-U.S. partners, key suppliers and subcontractors.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        },
+        {
+          "text": "Approximately 80% of Commercial Airplanes\u2019 total backlog, in dollar terms, is with non-U.S. airlines. We face aggressive international competitors who are intent on increasing their market share...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant risks from customer concentration, though some diversification is noted.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is in the midst of a headcount restructuring, which includes layoffs and workforce reductions. Despite efforts to improve efficiency and production stability, challenges persist, particularly with low production rates and ongoing restructuring activities.",
+      "evidence": [
+        {
+          "text": "In July 2021, we announced that we were reprioritizing production resources to support inspections and rework. [...] We are currently producing at very low rates and expect that to continue until deliveries resume, gradually returning to 5 per month over time.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "$2,567 million of abnormal production costs related to 737 MAX, $623 million of severance cost...",
+          "section": "mda",
+          "subsection": "Loss From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring efforts are ongoing with challenges like low production rates.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is facing significant challenges in talent retention, driven by production quality issues, supply chain disruptions, industry dynamics, and labor union relations. These factors collectively create risks for operational efficiency and may lead to work stoppages, further straining the company's ability to retain talent.",
+      "evidence": [
+        {
+          "text": "We have identified production quality issues, including in our supply chain, which have contributed to the pause in deliveries.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "The company is focused on improving its products and services and continuing its business transformation efforts, which enhances its ability to compete and positions it for market recovery.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Factors that influence these estimates include production rates, internal and subcontractor performance trends, customer and/or supplier claims or assertions, asset utilization, anticipated labor agreements, COVID-19 disruptions, and inflationary or deflationary trends.",
+          "section": "mda",
+          "subsection": "Program Accounting"
+        },
+        {
+          "text": "Approximately 47,000 employees, which constitute 33% of our total workforce, were union represented as of December\u00a031, 2021. [...] Union actions at suppliers can also affect us. Work stoppages and instability in our union relationships could delay the production and/or development of our products, which could strain relationships with customers and cause a loss of revenues which would adversely affect our operations.",
+          "section": "risk_factors",
+          "subsection": "Some of our and our suppliers\u2019 workforces are represented by labor unions, which may lead to work stoppages."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Talent retention issues are driven by multiple operational and relational challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant challenges due to various regulatory changes, including delays in certification processes, increased compliance costs, and potential impacts from environmental and trade regulations. These changes are affecting multiple areas such as aircraft certification, government contracts, and global trade relations.",
+      "evidence": [
+        {
+          "text": "The development schedules shown above are subject to a number of uncertainties, including changes in certification requirements. The timing of certifications will ultimately be determined by the regulators.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "The U.S. and EU have been engaged in two long-running disputes at the WTO relating to large civil aircraft...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        },
+        {
+          "text": "Changes to environmental and climate change laws or regulations could lead to additional operational restrictions and compliance requirements upon us or our products, require new or additional investment in product designs, result in carbon offset investments or otherwise could negatively impact our business and/or competitive position.",
+          "section": "risk_factors",
+          "subsection": "We may be adversely affected by global climate change or by legal, regulatory or market responses to such change."
+        },
+        {
+          "text": "The FAA has been working to implement safety reforms [...] changing the process for certification of commercial aircraft. [...] comparable agencies [...] may adopt similar changes.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes pose significant challenges, including delays and increased compliance costs.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New product launches, including the 777X and 737 MAX, are facing significant challenges such as delays, cost overruns, production issues, and regulatory hurdles, which are negatively impacting their market performance and the company's profitability.",
+      "evidence": [
+        {
+          "text": "In 2013, we launched the 777X-8 and 777X-9, which feature new composite wings, new engines and folding wing-tips. [...] The level of profitability on the 777X program will be subject to a number of factors. [...] These factors include continued market uncertainty, the impacts of COVID-19 on our production system as well as impacts on our supply chain and customers, customer negotiations, further production rate adjustments for the 777X or other commercial aircraft programs, contraction of the accounting quantity and potential risks associated with the testing program and the timing of aircraft certification.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "Deliveries of the 737 MAX resumed in the fourth quarter of 2020 [...] We continue to anticipate that the first 777X delivery will occur in late 2023.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "The reach-forward loss on the 777X program and the 737 MAX grounding have significantly impacted revenues and margins.",
+          "section": "mda",
+          "subsection": "Loss From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "New product launches are facing delays, cost overruns, and regulatory hurdles.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure across multiple areas, including the 737 MAX accidents, potential customer claims due to delivery delays, and ongoing government investigations. While some sections suggest the company is not facing significant litigation risks, other parts highlight substantial legal actions and regulatory risks that could materially impact its financial position.",
+      "evidence": [
+        {
+          "text": "Multiple legal actions have been filed against us related to the 737 MAX. We also are fully cooperating with U.S. government investigations related to the accidents and the 737 MAX, including an ongoing investigation by the Securities and Exchange Commission. We also remain subject to compliance with a Deferred Prosecution Agreement with the U.S. Department of Justice relating to the Department of Justice\u2019s investigation into us regarding the evaluation of the 737 MAX airplane by the FAA.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        },
+        {
+          "text": "The outcome of litigation and of government inquiries and investigations involving our business is unpredictable and an adverse decision in any such matter could have a material effect on our financial position and results of operations.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        },
+        {
+          "text": "Customers may have contractual remedies, including compensation for late deliveries as well as rights to reject individual airplane deliveries if the actual delivery date is significantly later than the contractual delivery date.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Our Business and Operations"
+        },
+        {
+          "text": "These impacts have resulted in longer than expected delivery delays and associated customer considerations.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant litigation exposure with potential material impacts on financial position.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power appears to be negatively impacted due to challenges from the COVID-19 pandemic, increased competition, and cost overruns. There is evidence of pressure to discount, lower demand, and reduced orders, which collectively suggest weakened pricing power.",
+      "evidence": [
+        {
+          "text": "The company has faced challenges in pricing due to the impact of the COVID-19 pandemic and production issues, but there is no explicit mention of successful price increases or discounts.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "These adverse economic impacts have resulted in fewer orders than previously anticipated for our commercial aircraft. Competitors continue to make improvements in efficiency, which may result in funding product development, gaining market share and improving earnings...",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Escalation factors can fluctuate significantly from period to period. Changes in escalation amounts can significantly impact revenues and operating margins.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Pricing power is weakened due to pandemic, competition, and cost issues.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has provided mixed signals regarding forward guidance. While they have not explicitly raised or lowered guidance in the Business Environment and Trends section, they caution about ongoing challenges in production and market recovery. However, in the Loss From Operations section, management explicitly states that they have lowered forward guidance due to the pandemic's impact and production issues, which will continue to affect future earnings and margins until production levels recover.",
+      "evidence": [
+        {
+          "text": "We continue to expect commercial air travel to return to 2019 levels in 2023 to 2024. [...] The current environment is also affecting the financial viability of some airlines.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Lower commercial airplane deliveries and the COVID-19 pandemic will continue to have a significant adverse impact on future earnings and margins until deliveries ramp up and return to historical levels.",
+          "section": "mda",
+          "subsection": "Loss From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Management has lowered guidance due to ongoing challenges affecting future earnings.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "The company's adoption of digital technologies and automation is part of its strategy to improve efficiency and competitiveness, although the specific impact on costs is not explicitly addressed in the available information.",
+      "evidence": [
+        {
+          "text": "\"The company is transforming and improving business processes to enhance operational efficiency and resilience.\"",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "\"The following table summarizes cost of sales: (verbatim table provided)\"",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is adopting digital technologies and automation to improve efficiency, but the impact on costs isn't explicitly clear.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are facing challenges due to supply chain disruptions and component shortages, which are leading to increased production costs and operational difficulties. However, the 'Total Costs and Expenses' subsection indicates that input costs are stable, suggesting no significant changes in raw material or component costs.",
+      "evidence": [
+        {
+          "text": "We are experiencing some supply chain shortages. Our suppliers are also experiencing liquidity pressures and disruptions to their operations as a result of COVID-19. We continue to monitor the health and stability of the supply chain as we ramp up production.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "We experienced part shortages which disrupted our operations and delayed deliveries in 2021, and may face additional disruptions in 2022. Any such disruptions could have severe adverse impacts on our production costs, delivery schedule and/or ability to meet customer commitments.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        },
+        {
+          "text": "Changes in the global trade environment [...] could impact sales and/or delivery of products and services outside the U.S. and/or impose costs on our customers in the form of tariffs, duties or penalties.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to COVID-19"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain disruptions and component shortages are increasing production costs and causing operational difficulties.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "The company's R&D investment is showing a negative trend, with a decrease in spending, particularly on key programs like the 777X. While the company remains committed to innovation and efficiency, the reduction in R&D spending may impact future competitiveness.",
+      "evidence": [
+        {
+          "text": "The company remains committed to producing the products and providing the services that the market demands, and continue to find new ways to improve efficiency and quality to provide a fair return for our shareholders.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        },
+        {
+          "text": "Research and development expense decreased by $227 million in 2021 compared with 2020 primarily due to lower BCA and enterprise investments in product development and lower spending on the 777X program.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decrease in R&D spending, particularly on key programs, may impact future competitiveness.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "classified_programs",
+      "category": "defense_government",
+      "summary": "Classified programs are contributing to revenue, with a stable share, though specific details are limited due to their sensitive nature.",
+      "evidence": [
+        {
+          "text": "BDS integrates its resources in defense, intelligence, communications, security, space and services to deliver capability-driven solutions to customers at reduced costs.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        },
+        {
+          "text": "The following table summarizes cost of sales: (verbatim table provided)",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": " Classified programs contribute to revenue with stable share, but specific details are limited.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company's M&A activity is not explicitly mentioned in the Business Environment and Trends section, as it is focusing on internal efficiency improvements rather than acquisitions. However, the risk factors highlight potential challenges in realizing benefits from mergers and acquisitions, emphasizing integration difficulties.",
+      "evidence": [
+        {
+          "text": "The company is transforming and improving business processes to enhance operational efficiency and resilience.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "Whether we realize the anticipated benefits from these acquisitions and related activities depends [...] on our ability to integrate the operations of the acquired business.",
+          "section": "risk_factors",
+          "subsection": "We may not realize the anticipated benefits of mergers, acquisitions, joint ventures/strategic alliances or divestitures."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit M&A activity mentioned, focusing on internal efficiency, with potential integration challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, particularly U.S.-China trade tensions and sanctions, are creating both challenges and opportunities. While these risks pose significant threats to international sales and could negatively impact the company's financial position, they also present potential opportunities in the commercial airplane market, especially in China.",
+      "evidence": [
+        {
+          "text": "The current state of U.S.-China relations remains a significant watch item. China is a very significant market for commercial airplanes and represents a significant component of our commercial airplanes backlog...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        },
+        {
+          "text": "U.S. and China have imposed tariffs on each other\u2019s imports. [...] Impacts from these or future potential tariffs [...] could have a material adverse impact on our financial position.",
+          "section": "risk_factors",
+          "subsection": "We derive a significant portion of our revenues from non-U.S. sales and are subject to the risks of doing business in other countries."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical tensions pose significant risks to international sales and financial position, despite potential opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is maintaining its market share in defense and space but facing challenges in the commercial segment due to production issues and competition. However, it has experienced a loss of market share, particularly in the single-aisle aircraft segment, due to the grounding of the 737 MAX, which has allowed competitors to gain more orders and sales. Additionally, increased competition from non-U.S. aircraft manufacturers poses a further threat to the company's market share.",
+      "evidence": [
+        {
+          "text": "We are one of the two major manufacturers of 100+ seat airplanes for the worldwide commercial airline industry and one of the largest defense contractors in the U.S.",
+          "section": "mda",
+          "subsection": "Introduction / Overview"
+        },
+        {
+          "text": "The grounding of the 737 MAX and the associated suspension of 737 MAX deliveries in multiple jurisdictions significantly reduced our market share with respect to deliveries of single aisle aircraft in 2019, 2020 and 2021 and may provide competitors with an opportunity to obtain more orders and increase market share.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        },
+        {
+          "text": "In our Commercial Airplanes business, we anticipate increasing competition among non-U.S. aircraft manufacturers of commercial jet aircraft.",
+          "section": "risk_factors",
+          "subsection": "Competition within our markets and with respect to the products we sell may reduce our future contracts and sales."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Loss of market share in commercial segment due to production issues and increased competition.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions present significant headwinds due to the ongoing impact of the COVID-19 pandemic, geopolitical tensions, inflation, and global instability. These factors are affecting production, supply chains, and commercial air traffic, contributing to margin pressures and overall financial challenges.",
+      "evidence": [
+        {
+          "text": "The global economy continues to experience significant adverse impacts due to the COVID-19 pandemic, including a decline in overall trade in general and in aerospace in particular...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        },
+        {
+          "text": "We face significant risks related to the spread of the COVID-19 virus and developments surrounding the global pandemic have had, and will continue to have, significant effects on our business, financial condition, results of operations and cash flows. We also face significant risks related to the global economic downturn and severe reduction in commercial air traffic caused by the pandemic.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to COVID-19"
+        },
+        {
+          "text": "Factors that influence these estimates include production rates, internal and subcontractor performance trends, customer and/or supplier claims or assertions, asset utilization, anticipated labor agreements, COVID-19 disruptions, and inflationary or deflationary trends.",
+          "section": "mda",
+          "subsection": "Program Accounting"
+        },
+        {
+          "text": "The airline industry has been cyclical and very competitive and has experienced significant profit swings and constant challenges to be more cost competitive.",
+          "section": "risk_factors",
+          "subsection": "In addition to the impact of COVID-19 described above, our Commercial Airplanes and Global Services businesses depend heavily on commercial airlines, and are subject to unique risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic challenges from COVID-19, geopolitical tensions, inflation, and global instability are affecting production and margins.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant environmental compliance risks, including potential liabilities and costs associated with environmental regulations. While environmental regulations are not explicitly highlighted as a major cost factor in the 'Total Costs and Expenses' section, the risk factors section explicitly states exposure to substantial costs and liabilities due to environmental laws and regulations.",
+      "evidence": [
+        {
+          "text": "Environmental regulations are not explicitly mentioned as a significant factor impacting the company.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        },
+        {
+          "text": "We are subject to various U.S. federal, state, local and non-U.S. laws and regulations related to environmental protection, including the discharge, treatment, storage, disposal and remediation of hazardous substances and wastes. We could incur substantial costs, including cleanup costs, fines and civil or criminal sanctions, as well as third-party claims for property damage or personal injury, if we were to violate or become liable under environmental laws or regulations.",
+          "section": "risk_factors",
+          "subsection": "Our operations expose us to the risk of material environmental liabilities."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant environmental compliance risks with potential substantial costs and liabilities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tensions, particularly between the U.S. and China, are significantly impacting the company. These tensions are affecting sales, especially in key markets like China, and pose a material adverse risk to the company's financial position.",
+      "evidence": [
+        {
+          "text": "The current state of U.S.-China relations remains a significant watch item. China is a very significant market for commercial airplanes and represents a significant component of our commercial airplanes backlog...",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        },
+        {
+          "text": "Impacts from these or future potential tariffs, or deterioration in trade relations between the U.S. and one or more other countries, could have a material adverse impact on our financial position.",
+          "section": "risk_factors",
+          "subsection": "We derive a significant portion of our revenues from non-U.S. sales and are subject to the risks of doing business in other countries."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Trade tensions, particularly between the U.S. and China, are significantly impacting the company and pose a material adverse risk.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "ticker": "GD",
+  "form": "10-Q",
+  "filing_date": "2023-04-26",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditures increased slightly from $141 million in 2022 to $161 million in 2023, indicating a cautious approach to future growth.",
+      "evidence": [
+        {
+          "text": "Capital expenditures were $161 in the first three months of 2023 compared with $141 in the same period in 2022.",
+          "section": "mda",
+          "subsection": "INVESTING ACTIVITIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The slight increase in capital expenditures suggests a cautious approach rather than a clear positive or negative trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company increased its dividend by $0.06 per share, showing confidence in its financial health, and repurchased fewer shares in 2023 compared to 2022, indicating a shift towards capital preservation.",
+      "evidence": [
+        {
+          "text": "Our Board from time to time authorizes management to repurchase outstanding shares of our common stock on the open market. We paid $90 and $294 in the first three months of 2023 and 2022, respectively, to repurchase our outstanding shares. [...] On March\u00a08, 2023, our board of directors (Board) declared an increased quarterly dividend of $1.32 per share, the 26th consecutive annual increase.",
+          "section": "mda",
+          "subsection": "FINANCING ACTIVITIES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company increased dividends and shifted to capital preservation, indicating confidence in financial health.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand for the Aerospace segment's services is stable due to elevated customer flight activity.",
+      "evidence": [
+        {
+          "text": "Aircraft services revenue increased due to additional maintenance work and fixed-base operator (FBO) activity, as customer flight activity remained at elevated levels during the quarter.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable demand with elevated customer flight activity supports a positive sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is stable, with a slight decrease in the Aerospace segment.",
+      "evidence": [
+        {
+          "text": "Aerospace funded backlog was $18,853 million, a slight decrease from $19,077 million in the previous quarter.",
+          "section": "mda",
+          "subsection": "AEROSPACE"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "A slight decrease in backlog is minor and doesn't indicate a significant trend.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards defense segments, particularly due to higher demand for military vehicles and weapons systems.",
+      "evidence": [
+        {
+          "text": "Revenue increased in the Combat Systems segment due to higher volume on Mobile Protected Firepower (MPF) and Stryker vehicles, particularly the maneuver short-range air defense (M-SHORAD) variant, and increased artillery production.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shifting towards defense segments with higher demand signals a positive trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, particularly in the defense segments.",
+      "evidence": [
+        {
+          "text": "Revenue increased in the first quarter of 2023 due to higher volume across our defense segments, primarily in U.S. Navy ship construction.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Acceleration in organic revenue growth, especially in defense, indicates a positive sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed; while some segments like Aerospace saw a decrease in deliveries, others like Marine Systems and Combat Systems experienced volume increases.",
+      "evidence": [
+        {
+          "text": "Aerospace segment deliveries decreased by 4 units, while Marine Systems and Combat Systems saw increases in revenue due to higher volume on specific programs.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed volume trends across segments suggest a neutral sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The fastest-growing end markets are defense and military, driven by increased demand for products like military vehicles and submarines.",
+      "evidence": [
+        {
+          "text": "Revenue from U.S. military vehicles increased in the first quarter of 2023 due to higher volume on Mobile Protected Firepower (MPF) and Stryker vehicles.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong growth in defense and military markets indicates a positive sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Supply chain challenges are causing inflationary pressures, impacting costs, particularly in Aerospace and Marine Systems.",
+      "evidence": [
+        {
+          "text": "Supply chain challenges have paced our ability to ramp up production in response to strong customer demand for our aircraft. Within our defense segments, the COVID-19 pandemic resulted in supply chain challenges, which we continue to experience, particularly in our Marine Systems (especially in the submarine supply chain) and Technologies segments.",
+          "section": "mda",
+          "subsection": "BUSINESS ENVIRONMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain challenges are causing inflationary pressures, leading to increased costs.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Operating margins are compressing due to supply chain-driven cost pressures and program mix issues.",
+      "evidence": [
+        {
+          "text": "Operating margin decreased 20 basis points in the first quarter of 2023 compared with the prior-year period.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Operating margins are decreasing due to supply chain-driven cost pressures.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is still disrupted, particularly affecting production ramp-ups and submarine schedules.",
+      "evidence": [
+        {
+          "text": "Supply chain challenges have paced our ability to ramp up production in response to strong customer demand for our aircraft. Within our defense segments, the COVID-19 pandemic resulted in supply chain challenges, which we continue to experience, particularly in our Marine Systems (especially in the submarine supply chain) and Technologies segments.",
+          "section": "mda",
+          "subsection": "BUSINESS ENVIRONMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The supply chain is disrupted, affecting production ramp-ups and schedules.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include ongoing supply chain disruptions and geopolitical factors such as the Russia-Ukraine conflict.",
+      "evidence": [
+        {
+          "text": "The disruptions caused by the coronavirus (COVID-19) pandemic and the ongoing conflict in Ukraine continue to impact global economies and businesses. The impact primarily affecting our business is supply chain challenges, including inflationary pressures.",
+          "section": "mda",
+          "subsection": "BUSINESS ENVIRONMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Ongoing supply chain disruptions and geopolitical risks pose significant near-term challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include geopolitical factors, foreign exchange movements, and government defense budgets.",
+      "evidence": [
+        {
+          "text": "The Russia-Ukraine conflict has created additional demand for our products and services, particularly in our Combat Systems segment, though the timing and extent of incremental contract activity resulting from that demand remains uncertain. The strengthening of the U.S. dollar against the Canadian dollar, euro, and British pound compared with the prior-year period has negatively impacted the Combat Systems segment\u2019s results.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Geopolitical factors and foreign exchange movements are sensitivities, but their impact is mixed.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "New contract wins and increased demand due to geopolitical factors are catalysts for growth.",
+      "evidence": [
+        {
+          "text": "We received the following significant contract awards during the first quarter of 2023: $285 from the U.S. Army to establish additional capacity for 155mm artillery projectile metal parts production. The contract has a maximum potential value of $1.3 billion. $350 from the Army to upgrade Abrams main battle tanks to the system enhancement package version 3 (SEPv3) configuration and provide system and sustainment technical support services for the Abrams program.",
+          "section": "mda",
+          "subsection": "DEFENSE SEGMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "New contract wins and increased demand due to geopolitical factors are driving growth opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Government defense budgets are a significant driver of demand, particularly in the U.S. and international markets.",
+      "evidence": [
+        {
+          "text": "Our primary customer is the U.S. government, including the Department of Defense (DoD), the intelligence community and other U.S. government customers. We also have significant business with non-U.S. governments.",
+          "section": "mda",
+          "subsection": "BUSINESS ENVIRONMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Government defense budgets are a significant driver of demand, supporting growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Contract backlog is stable, with slight variations across segments.",
+      "evidence": [
+        {
+          "text": "Our total backlog, including funded and unfunded portions, was $89.8 billion at the end of the first quarter of 2023 compared with $91.1 billion on December 31, 2022.",
+          "section": "mda",
+          "subsection": "BACKLOG AND ESTIMATED POTENTIAL CONTRACT VALUE"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Contract backlog is stable, indicating consistent demand but no immediate growth spurt.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "Program execution is facing delays, particularly in the Virginia-class submarine schedule.",
+      "evidence": [
+        {
+          "text": "Overall, the Marine Systems segment\u2019s operating margin decreased 90 basis points due to supply chain impacts to the Virginia-class submarine schedule.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Program execution delays in the Virginia-class submarine schedule indicate operational challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International sales are growing, particularly in the Combat Systems segment, though affected by foreign exchange movements.",
+      "evidence": [
+        {
+          "text": "Had foreign exchange rates in the first quarter of 2023 held constant from the same period in 2022, the Combat Systems segment\u2019s revenue would have increased 7.1% in the first quarter of 2023 compared to the prior-year period.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in international sales, despite foreign exchange effects, suggests expansion opportunities.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind due to inflationary pressures and supply chain disruptions.",
+      "evidence": [
+        {
+          "text": "The disruptions caused by the coronavirus (COVID-19) pandemic and the ongoing conflict in Ukraine continue to impact global economies and businesses. The impact primarily affecting our business is supply chain challenges, including inflationary pressures.",
+          "section": "mda",
+          "subsection": "BUSINESS ENVIRONMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Inflationary pressures and supply chain disruptions pose significant challenges to business operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are impacting the company through higher net interest expense but also providing opportunities for capital deployment.",
+      "evidence": [
+        {
+          "text": "Net interest expense was $91 in the first three months of 2023 compared with $98 in the prior-year period, reflecting the repayment of debt in the fourth quarter of 2022.",
+          "section": "mda",
+          "subsection": "INTEREST, NET"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Net interest expense decreased, but the impact on the company is mixed due to both costs and opportunities.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are negatively impacting margins, particularly in the Combat Systems segment.",
+      "evidence": [
+        {
+          "text": "The strengthening of the U.S. dollar against the Canadian dollar, euro, and British pound compared with the prior-year period has negatively impacted the Combat Systems segment\u2019s results.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Negative impact on margins from foreign exchange movements indicates financial strain.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, such as the Russia-Ukraine conflict, are creating both risks and opportunities, particularly in the defense segments.",
+      "evidence": [
+        {
+          "text": "The Russia-Ukraine conflict has created additional demand for our products and services, particularly in our Combat Systems segment, though the timing and extent of incremental contract activity resulting from that demand remains uncertain.",
+          "section": "mda",
+          "subsection": "BUSINESS ENVIRONMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Geopolitical tensions are creating demand for defense products, presenting business opportunities.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisition activity is contributing to revenue growth, particularly in the Technologies segment.",
+      "evidence": [
+        {
+          "text": "The Technologies segment\u2019s revenue was up due to increased demand across the business and the acquisition of a C5ISR solutions business in the third quarter of 2022.",
+          "section": "mda",
+          "subsection": "Operating Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Acquisition activity is driving revenue growth in the Technologies segment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage appears stable with long-term debt remaining unchanged at $9,189 million from 2022 to 2023. However, there are signs of improvement as cash and equivalents increased to $2 billion in the first quarter of 2023 from $1.2 billion at the end of 2022, indicating better liquidity and potentially supporting debt repayment efforts.",
+      "evidence": [
+        {
+          "text": "Long-term debt 9,189 9,189",
+          "section": "mda",
+          "subsection": "STATEMENT OF EARNINGS INFORMATION / BALANCE SHEET INFORMATION"
+        },
+        {
+          "text": "We ended the first quarter of 2023 with a cash and equivalents balance of $2 billion compared with $1.2 billion at the end of 2022.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Debt levels are stable, with improved liquidity suggesting potential for debt repayment, but no clear trend.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow for the company showed a mixed performance in the first three months of 2023. While there was a decrease from $1,827 million in 2022 to $1,301 million, the operating activities generated $1.5 billion in cash, which was supported by net earnings. This indicates a decline in overall cash generation but also reflects strong operating cash flows.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities $ 1,462 $ 1,968 Capital expenditures (161) (141) Free cash flow $ 1,301 $ 1,827",
+          "section": "mda",
+          "subsection": "NON-GAAP FINANCIAL MEASURE - FREE CASH FLOW"
+        },
+        {
+          "text": "Cash provided by operating activities was $1.5 billion in the first three months of 2023 compared with $2 billion in the same period in 2022. The primary driver of cash inflows in both periods was net earnings.",
+          "section": "mda",
+          "subsection": "OPERATING ACTIVITIES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's free cash flow decreased slightly, but strong operating cash flows indicate positive fundamentals.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

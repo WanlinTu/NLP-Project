@@ -1,0 +1,751 @@
+{
+  "ticker": "ALLE",
+  "form": "10-Q",
+  "filing_date": "2015-07-30",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 41,
+  "factors": [
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog or book-to-bill information is not explicitly provided in the text.",
+      "evidence": [
+        {
+          "text": "No specific information on backlog or book-to-bill is mentioned.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information on backlog or book-to-bill is mentioned, making it impossible to determine a sentiment.",
+        "confidence": 0.2
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix in EMEIA is negatively impacted by unfavorable foreign currency and lower volume, while Asia Pacific benefits from acquisitions and volume growth.",
+      "evidence": [
+        {
+          "text": "Net revenues for the three months ended June\u00a030, 2015 decreased... primarily due to unfavorable foreign currency exchange rate movements (17.8%) and lower volume (1.7%).",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Revenue mix in EMEIA is negatively impacted by unfavorable foreign currency and lower volume.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "EMEIA's end markets are weakening due to foreign exchange and volume decline, while Asia Pacific's are strengthening with volume and pricing improvements.",
+      "evidence": [
+        {
+          "text": "Net revenues... decreased... primarily due to unfavorable foreign currency exchange rate movements (17.8%) and lower volume (1.7%).",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "End markets in EMEIA are weakening due to foreign exchange and volume decline.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are not explicitly mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "No specific mention of raw material or commodity costs.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific mention of input costs, so no sentiment can be assigned.",
+        "confidence": 0.1
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are not explicitly discussed in the text.",
+      "evidence": [
+        {
+          "text": "No information on wage inflation or benefit expenses.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No discussion on labor costs, making it impossible to determine a sentiment.",
+        "confidence": 0.1
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are evident, supporting margin expansion.",
+      "evidence": [
+        {
+          "text": "Productivity resulting from 2014 restructuring actions in excess of inflation.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improvements support margin expansion, indicating a positive sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring has occurred, particularly in exiting unprofitable markets.",
+      "evidence": [
+        {
+          "text": "managements' actions to exit certain unprofitable market segments in 2014.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Restructuring has occurred, but it's related to exiting unprofitable markets, which doesn't directly indicate a positive or negative sentiment.",
+        "confidence": 0.3
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable; no strikes or disputes are mentioned.",
+      "evidence": [
+        {
+          "text": "None of our defined benefit pension plans have experienced a significant impact on their liquidity due to the volatility in the markets.",
+          "section": "mda",
+          "subsection": "Pensions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No strikes or disputes are mentioned, but there's no indication of positive labor relations either.",
+        "confidence": 0.2
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is not explicitly addressed in the text.",
+      "evidence": [
+        {
+          "text": "No information provided on attracting or retaining critical talent.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No information provided on talent retention.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears cautious due to unfavorable foreign exchange and market conditions.",
+      "evidence": [
+        {
+          "text": "Net revenues... decreased... primarily due to unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Management is cautious due to unfavorable foreign exchange and market conditions.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include unfavorable foreign currency exchange and economic conditions in certain regions.",
+      "evidence": [
+        {
+          "text": "Unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include unfavorable foreign currency exchange and economic conditions.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic direction is focused on acquisitions and market expansion.",
+      "evidence": [
+        {
+          "text": "funding some acquisitions and share repurchases.",
+          "section": "mda",
+          "subsection": "Sources and uses of liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Focus on acquisitions and market expansion indicates a strategic direction for growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include foreign currency exchange rates and economic conditions.",
+      "evidence": [
+        {
+          "text": "Unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Key sensitivities include foreign currency exchange rates and economic conditions, which pose risks.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Catalysts include successful integration of acquisitions and productivity improvements.",
+      "evidence": [
+        {
+          "text": "The increase was primarily due to pricing improvements and productivity resulting from 2014 restructuring actions in excess of inflation.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Successful integration of acquisitions and productivity improvements are positive catalysts for growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are part of investing activities but specifics on outlook are not provided.",
+      "evidence": [
+        {
+          "text": "Increased investment spending.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capital expenditures are part of investing activities, but specifics on outlook are not provided.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is stable with ongoing repayments and manageable covenants.",
+      "evidence": [
+        {
+          "text": "Repaid $24.4 million in total on the Term Loan Facility as of the six months ended June\u00a030, 2015.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Debt leverage is stable with ongoing repayments and manageable covenants.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow decreased due to working capital and investing activities.",
+      "evidence": [
+        {
+          "text": "Net cash provided by continuing operating activities... partially offset by higher earnings from continuing operations.",
+          "section": "mda",
+          "subsection": "Sources and uses of liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decrease in free cash flow indicates a headwind for capital allocation.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is not explicitly mentioned in the text.",
+      "evidence": [
+        {
+          "text": "No specific information on R&D spending.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit information on R&D spending suggests uncertainty.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Digital automation is not explicitly discussed in the text.",
+      "evidence": [
+        {
+          "text": "No information provided on digital technologies or AI adoption.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Lack of discussion on digital technologies indicates no clear direction.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products like video analytics are being introduced in Asia Pacific.",
+      "evidence": [
+        {
+          "text": "video analytics solutions.",
+          "section": "mda",
+          "subsection": "Asia Pacific"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Introduction of new products like video analytics presents growth opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain health is not explicitly addressed in the text.",
+      "evidence": [
+        {
+          "text": "No information provided on supply chain disruptions or lead times.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No information available on supply chain status.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is not explicitly mentioned in the text.",
+      "evidence": [
+        {
+          "text": "No specific information on manufacturing utilization.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific data on manufacturing utilization.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are not explicitly discussed in the text.",
+      "evidence": [
+        {
+          "text": "No information provided on inventory trends.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Insufficient data to assess inventory trends.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Product quality and safety are not explicitly addressed in the text.",
+      "evidence": [
+        {
+          "text": "No information on product quality incidents or recalls.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No information on product quality or safety incidents.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes are not explicitly mentioned in the text.",
+      "evidence": [
+        {
+          "text": "No specific information on regulatory impacts.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit mention of regulatory changes suggests no immediate impact.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is not explicitly addressed in the text.",
+      "evidence": [
+        {
+          "text": "No information provided on environmental regulations.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Lack of information means no clear sentiment can be inferred.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs are not explicitly mentioned in the text.",
+      "evidence": [
+        {
+          "text": "No information on tariffs or trade restrictions.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No mention of tariffs implies no current effect.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Litigation exposure is not explicitly discussed in the text.",
+      "evidence": [
+        {
+          "text": "No mention of material litigation or investigations.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No indication of ongoing litigation suggests stability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind, particularly in EMEIA due to foreign exchange and volume decline.",
+      "evidence": [
+        {
+          "text": "Net revenues... decreased... primarily due to unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic challenges in EMEIA are affecting performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate impact is not explicitly mentioned in the text.",
+      "evidence": [
+        {
+          "text": "No information on interest rate changes affecting the company.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No data on interest rates means no sentiment can be determined.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are negatively impacting margins and revenues.",
+      "evidence": [
+        {
+          "text": "Unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange issues are harming margins and revenues.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks are not explicitly addressed in the text.",
+      "evidence": [
+        {
+          "text": "No information on geopolitical factors affecting the company.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No information on geopolitical factors indicates no current risk.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Overall, volume trends show mixed performance across different regions. While there is growth in certain areas, other regions are experiencing declines.",
+      "evidence": [
+        {
+          "text": "The decrease in net revenues was partially offset by higher volumes, the acquisitions of Zero in April 2015 and Brio in May 2015 and improved pricing.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Lower volume (0.9%)... increased volume (7.4%).",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends are mixed with growth in some regions and declines in others.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has a share repurchase program in place, reflecting management confidence. However, there is no explicit information provided regarding shareholder returns through dividends.",
+      "evidence": [
+        {
+          "text": "In February 2014, our Board of Directors authorized the repurchase of up to $200 million of our ordinary shares. Based on market conditions, share repurchases are made from time to time in the open market at the discretion of management.",
+          "section": "risk_factors",
+          "subsection": "Issuer Purchases of Equity Securities"
+        },
+        {
+          "text": "No specific information on buybacks or dividends.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The share repurchase program indicates management confidence, despite no dividend information.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is mixed across different regions. While the Asia Pacific region shows positive organic growth driven by volume and pricing, there are challenges in EMEIA due to volume decline and unfavorable foreign exchange effects.",
+      "evidence": [
+        {
+          "text": "The decrease in net revenues was primarily driven by unfavorable foreign currency exchange rate movements due to the strengthening of the US dollar against currencies in EMEIA and Asia-Pacific as well as the devaluation of the Venezuelan bolivar in the fourth quarter of 2014 and first quarter of 2015.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Net revenues for the three months ended June\u00a030, 2015 increased by 13.2 %... primarily due to revenue provided by the acquisitions of Brio... offset by unfavorable foreign currency exchange rate movements (4.7%).",
+          "section": "mda",
+          "subsection": "Asia Pacific"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Organic growth is mixed with positive trends in Asia-Pacific but challenges in EMEIA.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company has demonstrated consistent improvement in pricing, which has contributed to both revenue growth and margin expansion. However, there is a slight indication of a decrease in net revenues, partially offset by these pricing improvements.",
+      "evidence": [
+        {
+          "text": "The decrease in net revenues was partially offset by... improved pricing.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "The increase in operating margin was primarily due to pricing improvements and productivity in excess of inflation (6.6%).",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Consistent improvement in pricing has contributed to revenue growth and margin expansion.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed across different regions and segments. While there are positive factors such as higher volumes and acquisitions contributing to net revenues, there are also negative impacts from unfavorable foreign currency exchange rate movements and lower volumes in certain regions like EMEIA.",
+      "evidence": [
+        {
+          "text": "The decrease in net revenues was primarily driven by unfavorable foreign currency exchange rate movements due to the strengthening of the US dollar against currencies in EMEIA and Asia-Pacific as well as the devaluation of the Venezuelan bolivar in the fourth quarter of 2014 and first quarter of 2015. These decreases were partially offset by higher volumes, the acquisitions of Zero in April 2015 and Brio in May 2015 and improved pricing.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Net revenues for the three months ended June\u00a030, 2015 decreased by 17.1 %... primarily due to unfavorable foreign currency exchange rate movements (17.8%) and lower volume (1.7%).",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand trends are mixed with positive factors and negative impacts across regions.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not provided explicit forward guidance across the examined subsections, indicating a cautious approach to future projections.",
+      "evidence": [
+        {
+          "text": "The discussions that follow describe the significant factors contributing to the changes in our results of operations for the periods presented.",
+          "section": "mda",
+          "subsection": "Results of Operations \u2013 Three months ended June\u00a030"
+        },
+        {
+          "text": "No explicit forward guidance is mentioned.",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit forward guidance provided, indicating a cautious approach.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are improving across multiple regions, driven by favorable factors such as lower restructuring costs, favorable volume/product mix, pricing improvements, and productivity gains that outpace inflation.",
+      "evidence": [
+        {
+          "text": "Operating margin for the three months ended June\u00a030, 2015 increased to 18.4% from 16.8% for the same period in 2014 primarily due to lower spin-related and restructuring costs compared to the prior year offset by costs incurred related to acquisitions in the current year (1.2%), favorable volume/product mix (1.0%) and pricing improvements and productivity in excess of inflation (1.0%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        },
+        {
+          "text": "Segment operating margin increased to 0.6 %... primarily due to pricing improvements and productivity in excess of inflation (6.6%).",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Margins are improving due to lower costs, favorable volume mix, pricing, and productivity.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring cost actions have positively impacted the company's margins, with both the Operating Income/Margin and EMEIA subsections highlighting successful cost reductions leading to margin improvements.",
+      "evidence": [
+        {
+          "text": "Operating income for the three months ended June\u00a030, 2015 increased $6.4 million compared to the same period in 2014 primarily due to... lower restructuring costs compared to the prior year...",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        },
+        {
+          "text": "The increase was primarily due to pricing improvements and productivity resulting from 2014 restructuring actions in excess of inflation ($5.2 million).",
+          "section": "mda",
+          "subsection": "EMEIA"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Successful restructuring actions have led to margin improvements.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has demonstrated significant acquisition activity, which has contributed to revenue growth and is expected to continue.",
+      "evidence": [
+        {
+          "text": "In February 2015 we made an investment in iDevices... In April 2015 we completed the acquisition of certain assets of Zero International, Inc.... In May 2015 we completed the acquisition of the assets of Brio... In June 2015 we signed a definitive agreement to acquire SimonsVoss Technologies GmbH...",
+          "section": "mda",
+          "subsection": "Acquisitions"
+        },
+        {
+          "text": "Cash payments related to the acquisitions of Zero and Brio.",
+          "section": "mda",
+          "subsection": "Sources and uses of liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has shown significant acquisition activity leading to revenue growth and expects to continue this trend.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "ticker": "MMM",
+  "form": "10-Q",
+  "filing_date": "2023-07-25",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 26,
+  "factors": [
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "3M's backlog or book-to-bill situation is not explicitly mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not provide specific information regarding order backlog or book-to-bill metrics.",
+          "section": "mda",
+          "subsection": "Earnings (loss) per share attributable to 3M common shareholders \u2013 diluted:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information is provided about the backlog orders or book-to-bill metrics.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "3M is facing headwinds from higher raw material costs and inflation, which are impacting their pricing power.",
+      "evidence": [
+        {
+          "text": "3M continued to experience headwinds year-on-year from the carryover impact of higher raw material, logistics and energy cost inflation.",
+          "section": "mda",
+          "subsection": "Earnings (loss) per share attributable to 3M common shareholders \u2013 diluted:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher raw material costs and inflation are impacting 3M's pricing power, indicating a moderate headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining its dividend payments but has reduced stock repurchases.",
+      "evidence": [
+        {
+          "text": "Dividends paid to shareholders (1,655) (1,700) Other \u2014 net (9) (22) Net cash provided by (used in) financing activities $ (1,519) $ (3,102). Repurchases of common stock are made to support the Company\u2019s stock-based employee compensation plans and for other corporate purposes. In the first six months of 2023, the Company purchased $29 million of its own stock.",
+          "section": "mda",
+          "subsection": "Cash Flows from Financing Activities:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is maintaining dividends but reducing stock repurchases, which is a mixed signal regarding shareholder returns.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, such as conflicts between Russia and Ukraine, are impacting the company's operations and supply chain.",
+      "evidence": [
+        {
+          "text": "The global economy has been impacted by the military conflict between Russia and Ukraine. 3M suspended operations of its subsidiaries in Russia in March 2022 and completed a sale of the related assets in June 2023.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to the Global Economy and Public Health Crises"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical conflicts and associated operational disruptions pose a moderate risk to the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company is facing significant environmental compliance costs due to PFAS-related settlements.",
+      "evidence": [
+        {
+          "text": "The Company expects to pay up to $12.5 billion in the aggregate from 2024 through 2036 pursuant to the terms of a proposed settlement agreement with public water systems in the United States related to PFAS.",
+          "section": "mda",
+          "subsection": "Material Cash Requirements from Known Contractual and Other Obligations:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant environmental compliance costs from PFAS settlements represent a clear financial burden, indicating a negative sentiment.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rates are a factor, but specific impacts are not detailed in the provided text.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s results are impacted by the effects of, and changes in, worldwide economic, political, regulatory, international trade, geopolitical, and other external conditions.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to the Global Economy and Public Health Crises"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The impact of interest rates is mentioned, but specific details are lacking to determine a directional sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company is exposed to foreign exchange rate fluctuations which could impact its financial performance.",
+      "evidence": [
+        {
+          "text": "Foreign currency exchange rates and fluctuations in those rates may affect the Company\u2019s ability to realize projected growth rates in its sales and earnings.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to the Global Economy and Public Health Crises"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange rate fluctuations pose a risk to the company's financial performance, indicating a moderate headwind.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End-market demand is softening, particularly in electronics, consumer, and healthcare sectors, while automotive and aerospace show growth.",
+      "evidence": [
+        {
+          "text": "Growth continued to be held back by soft end-market demand for electronics partially offset by growth in automotive and aerospace, which outpaced global car and light truck builds. ... Growth was held back by declines in separation and purification and health information systems, which continued to be negatively impacted by lower post-COVID-related biopharma demand and ongoing stress on hospital budgets. ... Growth was negatively impacted as discretionary spending trends on hardline categories remains soft.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Softening demand in key sectors, despite growth in automotive and aerospace, suggests an overall negative sentiment towards end-market momentum.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are expected to remain steady, signaling cautious confidence in future growth.",
+      "evidence": [
+        {
+          "text": "The Company expects 2023 capital spending to be approximately $1.5 billion to $1.8 billion as 3M continues to invest in growth, productivity and sustainability.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company expects steady capital expenditures, indicating a cautious but stable approach to future growth.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are decelerating, particularly in key segments.",
+      "evidence": [
+        {
+          "text": "Sales in Safety and Industrial were down 5.5 percent in U.S. dollars... Declines in closure and masking systems due to slowdown in packaging and shipping activity; and declines within industrial adhesives and tapes from continued end-market softness in electronics.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is decelerating in key segments, leading to a decline in sales.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining in several product categories.",
+      "evidence": [
+        {
+          "text": "Declines in closure and masking systems due to slowdown in packaging and shipping activity; and declines within industrial adhesives and tapes from continued end-market softness in electronics.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Unit volumes are declining across several product categories, indicating weaker demand.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are being made but are offset by other challenges.",
+      "evidence": [
+        {
+          "text": "Decreases were primarily due to lower year-on-year net costs for significant litigation to address certain PFAS-related matters at 3M's Zwijndrecht, Belgium site, higher selling prices, spending discipline and restructuring benefits. These decreases were partially offset by higher raw materials and energy costs; manufacturing productivity headwinds; investments in growth, productivity and sustainability; and restructuring charges.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While productivity improvements are being made, they are offset by other challenges, resulting in a balanced view.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Forward guidance indicates cautious expectations.",
+      "evidence": [
+        {
+          "text": "3M expects global defined benefit pension and postretirement service cost expense in 2023 to decrease by approximately $160 million pre-tax when compared to 2022.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Forward guidance shows cautious expectations, which doesn't indicate a clear positive or negative trend.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include foreign exchange and raw material costs.",
+      "evidence": [
+        {
+          "text": "The stronger U.S. dollar had a negative impact on sales in the second quarter and first six months of 2023 compared to the same period last year... partially offset by higher raw materials and energy costs; manufacturing productivity headwinds; investments in growth, productivity and sustainability; and restructuring charges.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant headwinds from foreign exchange and raw material costs, which could negatively impact performance.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is increasing, focusing on innovation.",
+      "evidence": [
+        {
+          "text": "3M continues to invest in a range of R&D activities from application development, product and manufacturing support, product development and technology development aimed at disruptive innovations.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing R&D investment suggests a focus on innovation, which could drive future growth and opportunities.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction and infrastructure spending is not a significant driver of demand.",
+      "evidence": [
+        {
+          "text": "Construction activity and infrastructure spending creating growing or declining demand for the company's products?",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Construction and infrastructure spending is not identified as a significant driver of demand, indicating no clear impact on the company's performance.",
+        "confidence": 0.4
+      }
+    },
+    {
+      "key": "dealer_channel",
+      "category": "industrial_infrastructure",
+      "summary": "Dealer inventory levels are healthy but orders may signal weakening demand.",
+      "evidence": [
+        {
+          "text": "In Canada, total sales decreased 16 percent which included decreased organic sales of 11 percent. In Brazil, total sales decreased 2 percent which included increased organic sales of 2 percent.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Dealer inventory levels are healthy, but weakening demand signals from orders indicate a potential downside risk.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, particularly in raw materials, logistics, and energy, which are pressuring margins. Despite efforts to offset through pricing and productivity, inflationary pressures continue to negatively impact margins.",
+      "evidence": [
+        {
+          "text": "3M continued to experience headwinds year-on-year from the carryover impact of higher raw material, logistics and energy cost inflation.",
+          "section": "mda",
+          "subsection": "Earnings (loss) per share attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "Business segment operating income margins decreased year-on-year from sales volume declines, restructuring costs, and inflation impacts partially offset by benefits from strong spending discipline, productivity actions, and pricing.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        },
+        {
+          "text": "Decreases were primarily due to lower year-on-year net costs for certain matters... partially offset by higher raw materials and energy costs; manufacturing productivity headwinds; investments in growth, productivity and sustainability; and restructuring charges.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Rising input costs across raw materials, logistics, and energy are pressuring margins despite efforts to offset, indicating significant challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are under pressure due to lower sales volumes, inflation, and restructuring costs, with some offsets from productivity actions. The transportation and electronics segments are particularly affected, facing challenges such as raw material costs and supply chain issues.",
+      "evidence": [
+        {
+          "text": "Gross and operating margins are under pressure, particularly in the transportation and electronics segments, due to various factors including raw material costs and lower sales volumes.",
+          "section": "mda",
+          "subsection": "Earnings (loss) per share attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "Business segment operating income margins decreased year-on-year from lower sales volumes, inflation impacts, investments in the business, restructuring costs, manufacturing and supply chain headwinds and China COVID-related challenges partially offset by benefits from aggressive spending discipline, pricing and productivity actions.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        },
+        {
+          "text": "SG&A, measured as a percent of sales, increased in the second quarter and first six months of 2023 when compared to the same period last year.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margins are under pressure due to lower sales volumes, inflation, and restructuring costs, with only partial offsets from productivity actions.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing restructuring and productivity actions to address cost pressures, but these efforts are being partially offset by inflation, and their impact on reducing costs may not meet expectations in the short term.",
+      "evidence": [
+        {
+          "text": "3M recorded restructuring pre-tax charges of $212 million and $264 million in the second quarter and first six months of 2023, respectively, compared to no charges and $18 million in the same periods last year, respectively, (refer to Note 5 for additional discussion).",
+          "section": "mda",
+          "subsection": "Earnings (loss) per share attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "Restructuring costs, and inflation impacts, partially offset by benefits from strong spending discipline, productivity actions, and pricing.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        },
+        {
+          "text": "Corporate and Unallocated operating expenses increased in the second quarter and first six months of 2023, when compared to the same period last year. The subsections below provide additional information.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While restructuring and productivity actions are being implemented, their effectiveness is being partially offset by inflation, making the impact uncertain in the short term.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is decelerating across multiple business segments, particularly in transportation, electronics, and certain industrial markets. The evidence indicates a net year-on-year increase in earnings per share, but this is tempered by lower sales volumes, inflation impacts, and investments in growth areas.",
+      "evidence": [
+        {
+          "text": "For the second quarter of 2023, organic growth/productivity and other impacts resulted in a net year-on-year increase of $0.15 per share which was impacted by... lower sales volumes (particularly electronics/consumer retail), inflation impacts and investments in growth, productivity, and sustainability.",
+          "section": "mda",
+          "subsection": "Earnings (loss) per share attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "Sales change analysis: Organic sales (1.3) % (4.7) % Adjusted sales (millions) (non-GAAP measure)... Adjusting for special item PFAS manufactured products (non-GAAP measure), sales were down 4.7 percent in U.S. dollars. ... On an organic sales basis: \u2022 Sales increased in automotive and aerospace, transportation safety, and commercial solutions, were flat in advanced materials and decreased in electronics.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        },
+        {
+          "text": "On an organic sales basis: Sales increased in roofing granules, and automotive aftermarket and decreased in closure and masking systems, personal safety, industrial adhesives and tapes, abrasives and electrical markets.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic growth is decelerating across multiple segments, with lower sales volumes and inflation impacts tempering growth prospects.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, with both an increase in free cash flow year-over-year and a significant rise in cash flows from operating activities, driven by better management of accounts receivable, inventories, and accounts payable.",
+      "evidence": [
+        {
+          "text": "Free cash flow 1,932 \u00a0 1,330",
+          "section": "mda",
+          "subsection": "Free Cash Flow (non-GAAP measure):"
+        },
+        {
+          "text": "Cash flows provided by operating activities increased $646 million compared to the same period last year, primarily driven by the combination of accounts receivable, inventories and accounts payable.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving free cash flow and significant increases in operating cash flows indicate strong cash generation capabilities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt levels are stable with a slight decrease in net debt, indicating manageable leverage. Total debt shows a minimal decline, reflecting a strengthening balance sheet.",
+      "evidence": [
+        {
+          "text": "Total debt was approximately $16.0 billion at June\u00a030, 2023 and $15.9 billion at December\u00a031, 2022.",
+          "section": "mda",
+          "subsection": "Cash Flows from Financing Activities:"
+        },
+        {
+          "text": "Net debt (non-GAAP measure) $ 11,650 $ 12,023 $ (373) ... Total debt at June\u00a030, 2023 was consistent when compared to December\u00a031, 2022 as maturities of $1.8 billion of fixed-rate notes were offset by issuances of commercial paper of $1.8 billion.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable debt levels with a slight decrease in net debt suggest manageable leverage, but no significant improvement or decline is evident.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "3M faces significant litigation exposure, particularly related to PFAS products and respirator mask/asbestos matters, which is negatively impacting its financial results. The company anticipates paying up to $12.5 billion over the next 12 years as part of a proposed settlement related to PFAS.",
+      "evidence": [
+        {
+          "text": "Net costs for significant litigation include the impacts of changes in accrued liabilities (including interest imputation on contractual settlement obligations), external legal fees, and insurance recoveries, along with the associated tax impacts. Net costs related to respirator mask/asbestos are reflected as special items in the Safety and Industrial business segment while those impacting operating income (loss) associated with PFAS-related other environmental and Combat Arms Earplugs matters are reflected as corporate special items in Corporate and Unallocated.",
+          "section": "mda",
+          "subsection": "Certain amounts adjusted for special items - (non-GAAP measures):"
+        },
+        {
+          "text": "The Company expects to pay up to $12.5 billion in the aggregate from 2024 through 2036 pursuant to the terms of a proposed settlement agreement with public water systems in the United States related to PFAS.",
+          "section": "mda",
+          "subsection": "Material Cash Requirements from Known Contractual and Other Obligations:"
+        },
+        {
+          "text": "Corporate special items include net costs related to significant litigation impacting operating income (loss) associated with PFAS-related other environmental and Combat Arms Earplugs matters.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant litigation exposure, including a proposed $12.5 billion settlement, poses a major risk to the company's financial stability.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has shown mixed activity in M&A, with some evidence of ongoing acquisition and divestiture impacts affecting sales and operating income, while other data suggests limited M&A activity with only minor acquisitions and divestitures.",
+      "evidence": [
+        {
+          "text": "Acquisition and divestiture activities are ongoing, with impacts reflected in sales and operating income.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        },
+        {
+          "text": "The Company is actively considering additional acquisitions, investments and strategic alliances, and from time to time may also divest certain businesses.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        },
+        {
+          "text": "Acquisitions 0.1 \u00a0 \u2014 \u00a0 \u2014 \u00a0 0.1",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        },
+        {
+          "text": "Divestitures (1.6) (1.0) (0.8) (1.3)",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed M&A activity with ongoing impacts but limited major acquisitions suggests a stable but not clearly positive or negative trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are acting as a headwind for the company, with negative impacts from a stronger U.S. dollar, soft discretionary spending, and normalization of post-COVID demand in certain sectors. However, there are some areas of growth, particularly in automotive and aerospace, despite overall challenges.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s results are impacted by the effects of, and changes in, worldwide economic, political, regulatory, international trade, geopolitical, and other external conditions.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to the Global Economy and Public Health Crises"
+        },
+        {
+          "text": "Growth was negatively impacted as discretionary spending trends on hardline categories remains soft.",
+          "section": "mda",
+          "subsection": "Transportation and Electronics Business:"
+        },
+        {
+          "text": "Growth was held back by declines in separation and purification due to the normalization of post-COVID-related biopharma demand, declines in health information systems from ongoing stress on hospital budgets along with overall headwinds from the exit of Russia.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        },
+        {
+          "text": "The stronger U.S. dollar had a negative impact on sales in the second quarter and first six months of 2023 compared to the same period last year.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Multiple external factors like a stronger dollar, soft spending, and post-COVID normalization are negatively impacting growth, despite some sector growth.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

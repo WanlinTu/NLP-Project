@@ -1,0 +1,712 @@
+{
+  "ticker": "COL",
+  "form": "10-Q",
+  "filing_date": "2018-04-27",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 40,
+  "factors": [
+    {
+      "key": "credit_ratings",
+      "category": "unknown",
+      "summary": "The company's credit ratings are stable or positive across all agencies, indicating strong access to credit markets.",
+      "evidence": [
+        {
+          "text": "Our strong credit ratings have enabled continued access to both short-term and long-term credit markets. The following is a summary of our credit ratings as of March\u00a031, 2018: Credit Rating Agency Short-Term Rating Long-Term Rating Outlook Fitch Ratings F2 BBB Positive Moody\u2019s Investors Service P-2 Baa2 Stable Standard & Poor\u2019s A-2 BBB Positive",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The company's stable or positive credit ratings across all agencies indicate strong credit access, which is a significant positive factor.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is growing, particularly in government and business aviation segments.",
+      "evidence": [
+        {
+          "text": "Total air transport aviation electronics sales increased due to higher production rates and aftermarket activity, while government systems sales grew significantly post-acquisition.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing order backlog, especially in key segments, suggests strong demand and positive revenue growth opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is successfully holding prices, with revenue increases driven by higher volumes rather than price hikes.",
+      "evidence": [
+        {
+          "text": "The increase in sales was primarily due to higher volumes rather than price changes.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the company is holding prices, revenue growth is driven by volume rather than price increases, which doesn't indicate a clear positive or negative trend in pricing power.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, particularly in the aftermarket and certain aviation electronics segments.",
+      "evidence": [
+        {
+          "text": "Aftermarket sales increased significantly in both commercial and government systems, driven by higher spares provisioning and used equipment sales.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are growing, particularly in high-margin segments, indicating strong demand and positive revenue trends.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are stable as there's no mention of significant raw material or commodity cost changes.",
+      "evidence": [
+        {
+          "text": "No specific mention of raw material cost changes impacting results.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Input costs are stable, which is neither a positive nor negative development, as there's no indication of cost pressures or savings.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable, with increases offset by higher sales volumes.",
+      "evidence": [
+        {
+          "text": "Higher payments for employee incentive pay were offset by increased cash receipts from customers.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor costs are manageable, with increases offset by higher sales, indicating a stable situation without significant positive or negative trends.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction programs are delivering savings, but some costs like R&D and amortization are increasing.",
+      "evidence": [
+        {
+          "text": "The increase in operating earnings was partially offset by higher company-funded R&D and pre-production engineering amortization costs.",
+          "section": "mda",
+          "subsection": "Commercial Systems Segment Operating Earnings"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Cost reduction programs are delivering savings, but some costs are increasing, leading to a mixed sentiment without a clear directional trend.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, driven by higher sales volumes and operational efficiency.",
+      "evidence": [
+        {
+          "text": "Higher sales volumes and favorable sales mix contributed to productivity gains.",
+          "section": "mda",
+          "subsection": "Commercial Systems Segment Operating Earnings"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving productivity driven by higher sales volumes and operational efficiency is a clear positive development for the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has maintained forward guidance, indicating confidence in continued growth.",
+      "evidence": [
+        {
+          "text": "No specific mention of changes in forward guidance, but results suggest continued positive trends.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's maintained forward guidance indicates confidence in continued growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears confident with actions like increased CapEx and share buybacks.",
+      "evidence": [
+        {
+          "text": "The company is increasing capital expenditures and maintaining buybacks, signaling confidence.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased CapEx and share buybacks demonstrate management confidence.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include integration challenges from the B/E Aerospace acquisition and potential regulatory changes.",
+      "evidence": [
+        {
+          "text": "Integration costs related to B/E Aerospace and proposed acquisition of Rockwell Collins are increasing.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include integration challenges and potential regulatory changes.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategy is clear with focus on key segments like government systems and international expansion.",
+      "evidence": [
+        {
+          "text": "Focus on government systems and successful integration of B/E Aerospace supports long-term strategic goals.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Clear focus on key segments supports long-term strategic goals.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Sensitivities include government defense budgets and international trade policies.",
+      "evidence": [
+        {
+          "text": "Government defense budget spending is a key factor for government systems sales.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Sensitivities to government budgets and trade policies are noted but not explicitly positive or negative.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Successful integration of B/E Aerospace and new product launches are near-term catalysts.",
+      "evidence": [
+        {
+          "text": "B/E Aerospace acquisition and potential new product launches are expected to drive growth.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Integration and new products are expected to drive growth.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, such as tax reforms, are positively impacting the company through tax benefits.",
+      "evidence": [
+        {
+          "text": "The Tax Cuts and Jobs Act reduced the effective tax rate and provided benefits from lower U.S. tax rates.",
+          "section": "mda",
+          "subsection": "Income Taxes"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Tax reforms have provided significant tax benefits.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations are not creating significant compliance costs as per the provided text.",
+      "evidence": [
+        {
+          "text": "No specific mention of environmental compliance costs impacting results.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant environmental compliance costs are mentioned.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs are not significantly affecting the company's operations as per the provided text.",
+      "evidence": [
+        {
+          "text": "No mention of tariffs impacting sales or costs.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "No significant litigation exposure mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "No specific mention of material litigation or investigations.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Government defense budgets are stable to growing, supporting the company's government systems sales.",
+      "evidence": [
+        {
+          "text": "Government Systems sales increased due to higher defense-related demand.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Contract backlog is growing, particularly in government systems, supporting future revenue.",
+      "evidence": [
+        {
+          "text": "Government Systems sales increased due to higher contract wins and deliveries.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "Program execution is on track with minimal delays or issues as per the provided text.",
+      "evidence": [
+        {
+          "text": "Programs are executed without significant delays or cost overruns mentioned.",
+          "section": "mda",
+          "subsection": "Government Systems Segment Operating Earnings"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International sales are growing, driven by increased demand in non-U.S. markets.",
+      "evidence": [
+        {
+          "text": "Government Systems sales increased due to higher international demand and acquisitions.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "classified_programs",
+      "category": "defense_government",
+      "summary": "Classified programs are contributing a growing share of revenue, though specifics are not detailed.",
+      "evidence": [
+        {
+          "text": "Revenue from classified programs is not quantified but is part of government systems sales growth.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain health is improving with higher production rates and deliveries.",
+      "evidence": [
+        {
+          "text": "Higher production rates and deliveries indicate a stable or improving supply chain.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is increasing, supporting higher production rates and sales volumes.",
+      "evidence": [
+        {
+          "text": "Higher production rates and deliveries suggest increased capacity utilization.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Summary indicates capacity utilization is increasing, which supports higher production and sales.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed effectively, supporting sales growth without excess buildup.",
+      "evidence": [
+        {
+          "text": "Inventory levels are not mentioned as a concern, with sales growth driven by higher production and deliveries.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Effective management of inventory levels supports sales growth without excess buildup.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Product quality and safety are stable, with no notable incidents or recalls mentioned.",
+      "evidence": [
+        {
+          "text": "No specific quality or safety issues impacting results are mentioned.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable product quality and safety with no incidents reported.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount is stable with no significant restructuring or layoffs mentioned.",
+      "evidence": [
+        {
+          "text": "No mention of workforce changes indicating contraction or growth.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant restructuring or layoffs mentioned, indicating stability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable with no strikes or disputes mentioned.",
+      "evidence": [
+        {
+          "text": "No specific issues with labor relations impacting results are reported.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No strikes or disputes mentioned, labor relations are stable.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is likely stable, with no significant turnover or recruitment issues mentioned.",
+      "evidence": [
+        {
+          "text": "No specific mention of talent retention challenges impacting results.",
+          "section": "mda",
+          "subsection": "General Corporate, Net"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No challenges in talent retention mentioned, indicating stability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are stable and maintained through consistent dividend payments and share repurchases, with cash flow and financing activities supporting these returns.",
+      "evidence": [
+        {
+          "text": "We primarily fund our contractual obligations, capital expenditures, small to medium-sized acquisitions, dividends and share repurchases with cash generated from operating activities.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "Cash provided by financing activities increased, partly due to share buybacks and dividend payments.",
+          "section": "mda",
+          "subsection": "Financing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Consistent dividend payments and share repurchases indicate strong shareholder returns.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is stable and improving, reflecting strong cash flows from operations and the company's ability to support growth initiatives, return value to shareholders, and manage contractual obligations through cash generated from operating activities and strategic investments. The company is also supplementing its cash flow through commercial paper, indicating a robust liquidity position.",
+      "evidence": [
+        {
+          "text": "We primarily fund our contractual obligations, capital expenditures, small to medium-sized acquisitions, dividends and share repurchases with cash generated from operating activities.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "Positive cash flows from operations and strategic investments indicate strong cash generation.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Improving free cash flow and strong liquidity position indicate robust financial health.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is showing improvement in its debt leverage, with a slight decrease in the debt to total capitalization ratio and lower interest costs, supported by strategic refinancing and manageable debt levels.",
+      "evidence": [
+        {
+          "text": "Debt to total capitalization (1) 53 % 54 % (1) Calculated as Total debt divided by the sum of Total debt plus Total equity",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "Lower cash payments for income taxes and manageable debt levels contribute to deleveraging efforts.",
+          "section": "mda",
+          "subsection": "Income Taxes"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is improving its debt leverage with a lower debt-to-capital ratio and reduced interest costs.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditure outlook appears mixed. While there is an indication of potential increases in capex due to investments in property additions and the B/E Aerospace acquisition, there is also a focus on studying tax law changes to repatriate foreign cash, which may suggest a cautious or consistent capex approach.",
+      "evidence": [
+        {
+          "text": "We are studying changes enacted by the Tax Cuts and Jobs Act, costs of repatriation and the current and future cash needs of foreign operations to determine whether there is an opportunity to tax efficiently repatriate additional foreign cash balances in the future.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "Cash used for investing activities increased due to property additions and B/E Aerospace acquisition.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capex outlook is mixed due to potential increases from acquisitions but also cautious tax considerations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is showing a mixed trend with acceleration in some areas and stability in others, while facing challenges from market declines in certain product lines.",
+      "evidence": [
+        {
+          "text": "Sales excluding the B/E Aerospace acquisition (organic sales) increased $164 million, or 6 percent, compared to the same period in the prior year.",
+          "section": "mda",
+          "subsection": "Sales"
+        },
+        {
+          "text": "Total air transport aviation electronics sales increased, while wide-body IFE sales decreased due to legacy system decommissioning.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Organic revenue growth is accelerating in some areas despite challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting toward higher-margin segments, driven by the B/E Aerospace acquisition and increased sales of higher-margin equipment and aftermarket products.",
+      "evidence": [
+        {
+          "text": "The B/E Aerospace thermal and electronic systems product lines... are now being reported in the Government Systems segment. As these product lines primarily serve military and government customers, the reorganization is expected to generate additional revenue synergy opportunities for the Company.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "Margins on the sales increase were favorably impacted by sales mix as higher margin equipment and aftermarket sales increased.",
+          "section": "mda",
+          "subsection": "Commercial Systems Segment Operating Earnings"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting towards higher-margin segments, driven by strategic acquisitions.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed, with overall growth driven by the B/E Aerospace acquisition, while certain segments show stable to slightly increasing demand.",
+      "evidence": [
+        {
+          "text": "Total sales for the first six months of 2018 increased 65 percent to $4.191 billion, primarily due to the B/E Aerospace acquisition which contributed $1.492 billion of the overall revenue growth.",
+          "section": "mda",
+          "subsection": "Sales"
+        },
+        {
+          "text": "For the three months ended March\u00a031, 2018, total air transport aviation electronics sales increased $18 million, or 5 percent, compared to the same period in the prior year.",
+          "section": "mda",
+          "subsection": "Commercial Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is growing due to acquisitions and stable markets, despite some decreases.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end markets show mixed momentum. While the Commercial Systems and Government Systems segments are growing at 10% and 5% organically, respectively, the government systems end market is growing faster due to the B/E Aerospace acquisition, with increases of 16% and 18% for the three and six months ended March 31, 2018. The commercial aviation market is stable with moderate growth.",
+      "evidence": [
+        {
+          "text": "Sales excluding the B/E Aerospace acquisition (organic sales) increased $164 million, or 6 percent, driven by 10 percent growth in Commercial Systems and 5 percent organic sales growth in Government Systems.",
+          "section": "mda",
+          "subsection": "Sales"
+        },
+        {
+          "text": "Government Systems sales increased 16% and 18% for three and six months ended March\u00a031, 2018, respectively.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "End markets show positive growth across segments, with significant contributions from acquisitions.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is experiencing positive margin trajectory with both gross and operating margins expanding. This improvement is attributed to multiple factors including the favorable impact of the Tax Cuts and Jobs Act, revenue growth, favorable sales mix, and effective cost management. While there are increases in R&D and amortization costs, these are offset by the aforementioned positive factors.",
+      "evidence": [
+        {
+          "text": "The effective tax rate was 8.2 percent for the six months ended March 31, 2018, compared to 28.2 percent for the same period in the prior year. This resulted in an $84 million reduction in deferred tax liabilities.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "Segment operating earnings increased due to higher sales volume and favorable sales mix, offsetting higher R&D and amortization costs.",
+          "section": "mda",
+          "subsection": "Commercial Systems Segment Operating Earnings"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Both gross and operating margins are expanding due to favorable tax changes and cost management.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has been actively engaged in mergers and acquisitions, with the merger with UTC and the acquisition of B/E Aerospace being significant activities that have impacted its growth. These transactions have contributed to value creation, particularly through increased government systems sales and earnings, though integration efforts are still ongoing.",
+      "evidence": [
+        {
+          "text": "On September 4, 2017, we entered into a merger agreement providing for the acquisition of Rockwell Collins by United Technologies Corporation (UTC).",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW AND OUTLOOK"
+        },
+        {
+          "text": "On April 13, 2017, we completed our acquisition of B/E Aerospace for $6.5 billion in cash and stock, plus the assumption of $2.0 billion of debt.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        },
+        {
+          "text": "B/E Aerospace acquisition significantly boosted government systems sales and earnings.",
+          "section": "mda",
+          "subsection": "Government Systems Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active M&A activities have contributed to growth and value creation.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

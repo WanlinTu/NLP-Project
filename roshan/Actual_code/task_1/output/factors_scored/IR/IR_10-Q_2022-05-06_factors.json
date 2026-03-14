@@ -1,0 +1,764 @@
+{
+  "ticker": "IR",
+  "form": "10-Q",
+  "filing_date": "2022-05-06",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 39,
+  "factors": [
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain is still disrupted, with component shortages and production interruptions.",
+      "evidence": [
+        {
+          "text": "The substantial majority of our production sites have remained fully operational this year. [...] component shortages and other supply chain constraints that may limit our ability to fulfill customer orders within desired lead times.",
+          "section": "mda",
+          "subsection": "The COVID-19 Pandemic and Related Supply Chain Disruptions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The supply chain is disrupted due to component shortages and production interruptions.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Manufacturing utilization is high, with most sites fully operational.",
+      "evidence": [
+        {
+          "text": "The substantial majority of our production sites have remained fully operational this year.",
+          "section": "mda",
+          "subsection": "The COVID-19 Pandemic and Related Supply Chain Disruptions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "High manufacturing utilization with most sites operational indicates efficient production.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed, with no specific mention of excessive buildup or shortage.",
+      "evidence": [
+        {
+          "text": "The substantial majority of our production sites have remained fully operational this year. [...] component shortages and other supply chain constraints that may limit our ability to fulfill customer orders within desired lead times.",
+          "section": "mda",
+          "subsection": "The COVID-19 Pandemic and Related Supply Chain Disruptions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific mention of excessive buildup or shortage, making it unclear.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Product quality is maintained, with no notable incidents or recalls mentioned.",
+      "evidence": [
+        {
+          "text": "Our products are sold under a collection of premier, market-leading brands, including [...] known for product quality, reliability, efficiency and superior customer service.",
+          "section": "mda",
+          "subsection": "Our Company"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Product quality is maintained with no notable incidents.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Restructuring programs and successful integration of acquisitions are catalysts for improving results.",
+      "evidence": [
+        {
+          "text": "We continue to execute business transformation initiatives. [...] Restructuring charges, program related facility reorganization, relocation and other costs, and related capital expenditures were impacted most significantly.",
+          "section": "mda",
+          "subsection": "Restructuring and Other Business Transformation Initiatives"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring and integration are catalysts for improving results.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "Competitive advantages include technology, scale, and strong customer relationships, which are strengthening.",
+      "evidence": [
+        {
+          "text": "Ingersoll Rand is a global market leader [...] providing services and solutions to increase industrial productivity and efficiency. [...] known for product quality, reliability, efficiency and superior customer service.",
+          "section": "mda",
+          "subsection": "Our Company"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong competitive advantages like technology and customer relationships.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are focused on cash flow generation and may indicate confidence in future growth.",
+      "evidence": [
+        {
+          "text": "We use Free Cash Flow to review the liquidity of our operations. [...] ability to pursue business opportunities and investments and to service our debt.",
+          "section": "mda",
+          "subsection": "How We Assess the Performance of Our Business"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Focus on cash flow generation without clear indication of returns.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind due to geopolitical conflicts and supply chain issues.",
+      "evidence": [
+        {
+          "text": "The ongoing conflict between Russia and Ukraine [...] have limited operations in Russia and Ukraine and [...] may amplify several of the risks identified in Part I, Item 1A. \u201cRisk Factors\u201d [...]",
+          "section": "mda",
+          "subsection": "General Economic Conditions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical conflicts and supply chain issues are headwinds.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are having a limited impact, with a slight decrease in interest expense.",
+      "evidence": [
+        {
+          "text": "Interest expense was $19.0 million for the three month period ended March\u00a031, 2022, a decrease of $4.1 million, compared to $23.1 million in the same three month period in 2021.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Interest expense decreased, indicating a positive impact from rate changes.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange fluctuations are creating challenges, with an unfavorable impact on results.",
+      "evidence": [
+        {
+          "text": "The increase in revenues was primarily due to [...] higher pricing of $66.4 million, partially offset by unfavorable impact of foreign currencies of $26.3 million.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange had an unfavorable impact on results.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is part of ongoing initiatives to reduce costs and improve efficiency.",
+      "evidence": [
+        {
+          "text": "Restructuring charges, program related facility reorganization, relocation and other costs, and related capital expenditures were impacted most significantly.",
+          "section": "mda",
+          "subsection": "Restructuring and Other Business Transformation Initiatives"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Restructuring is ongoing but no clear positive or negative sentiment expressed.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable, with no mention of strikes or disputes.",
+      "evidence": [
+        {
+          "text": "We continue to execute business transformation initiatives. [...] See Note 3 \u201c Business Combinations \u201d [...]",
+          "section": "mda",
+          "subsection": "Restructuring and Other Business Transformation Initiatives"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "No strikes or disputes mentioned, indicating stable labor relations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is not explicitly addressed, but the company is focused on operational efficiency and restructuring.",
+      "evidence": [
+        {
+          "text": "We continue to execute business transformation initiatives. [...] Restructuring charges, program related facility reorganization, relocation and other costs, and related capital expenditures were impacted most significantly.",
+          "section": "mda",
+          "subsection": "Restructuring and Other Business Transformation Initiatives"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Talent retention isn't explicitly addressed, focus is on restructuring.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes are not explicitly mentioned as creating significant impacts, though environmental compliance is noted as a consideration.",
+      "evidence": [
+        {
+          "text": "Information with respect to the effect of compliance with environmental protection requirements and resolution of environmental claims on us and our manufacturing operations is contained in Note 16 'Contingencies' to the condensed consolidated financial statements included elsewhere in this Form 10-Q. We believe that as of March 31, 2022, there have been no material changes to the environmental matters disclosed in our annual report on Form 10-K for the fiscal year ended December 31, 2021.",
+          "section": "mda",
+          "subsection": "Environmental Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant regulatory impacts mentioned.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is a consideration, but there are no material changes in environmental matters.",
+      "evidence": [
+        {
+          "text": "Information with respect to the effect of compliance with environmental protection requirements and resolution of environmental claims on us and our manufacturing operations is contained in Note 16 'Contingencies' to the condensed consolidated financial statements included elsewhere in this Form 10-Q. We believe that as of March 31, 2022, there have been no material changes to the environmental matters disclosed in our annual report on Form 10-K for the fiscal year ended December 31, 2021.",
+          "section": "mda",
+          "subsection": "Environmental Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No material changes in environmental matters.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are positive, with overall increasing demand supported by higher organic volumes, acquisitions, and pricing. Additionally, the Precision and Science Technologies segment has experienced accelerating demand, particularly in life science and specialty applications.",
+      "evidence": [
+        {
+          "text": "The increase in revenues was primarily due to higher organic volumes of $90.1 million, acquisitions of $77.3 million, and higher pricing of $66.4 million, partially offset by unfavorable impact of foreign currencies of $26.3 million.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "During 2021 and into 2022, the Precision and Science Technologies segment has seen increased demand for our products, particularly related to life science and specialty applications.",
+          "section": "mda",
+          "subsection": "Precision and Science Technologies Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive demand trends with increases in organic volumes, acquisitions, and pricing.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power, successfully raising prices which have contributed to both revenue growth and margin expansion across its segments. The evidence highlights the positive impact of higher pricing on revenues and adjusted EBITDA.",
+      "evidence": [
+        {
+          "text": "The increase in revenues was primarily due to [...] higher pricing of $66.4 million, partially offset by unfavorable impact of foreign currencies of $26.3 million.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "The increase in Segment Revenues was due to higher organic volumes of $75.3 million or 8.2%, higher pricing of $56.4 million or 6.2%, and acquisitions of $13.3 million or 1.5%. Segment Adjusted EBITDA increased 17.0% due to higher pricing of $56.4 million or 26.7%, higher organic sales volume of $29.7 million or 14.0%, and acquisitions of $2.8 million or 1.3%.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The company shows strong pricing power with significant revenue and margin expansion.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing growth in its order backlog, as both the Industrial Technologies and Services segment and the Precision and Science Technologies segment have shown significant year-over-year increases in orders. This growth is supported by higher organic volumes, acquisitions, and pricing, although there are some unfavorable impacts from foreign currencies.",
+      "evidence": [
+        {
+          "text": "The increase in revenues was primarily due to higher organic volumes of $90.1 million, acquisitions of $77.3 million, and higher pricing of $66.4 million, partially offset by unfavorable impact of foreign currencies of $26.3 million.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "In the first quarter of 2022, we had $1,292.8 million of orders in our Industrial Technologies and Services segment, an increase of 24.0% over the first quarter of 2021. In the first quarter of 2022, we had $337.1 million of orders in our Precision and Science Technologies segment, an increase of 30.6% over the first quarter of 2021.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in backlog orders across segments indicates strong demand.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, which has positively impacted the company's financial performance. However, despite this shift, the Precision and Science Technologies segment experienced a slight decrease in its adjusted EBITDA margin due to factors such as unfavorable cost inflation and product mix.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA as a percentage of revenues increased 110 basis points to 22.7% [...] primarily attributable to higher pricing and volume, partially offset by unfavorable cost inflation and product mix.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "Segment Adjusted EBITDA Margin decreased 260 basis points to 28.6% from 31.2% in 2021. The increase in Segment Adjusted EBITDA was primarily due to acquisitions of $15.4 million or 22.9%, higher pricing of $10.0 million or 14.9%, and higher organic sales volume of $6.8 million or 10.1%, partially offset by unfavorable cost inflation and product mix of $10.2 million or 15.2%, unfavorable impact of foreign currencies of $2.1 million or 3.1% and higher selling and administrative costs of $1.4 million or 2.1%.",
+          "section": "mda",
+          "subsection": "Precision and Science Technologies Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin segments despite some margin decline.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end markets are experiencing positive momentum, with growth particularly noted in the Industrial Technologies and Services segment and the Precision and Science Technologies segment, which is growing the fastest due to increased demand in life science and specialty applications.",
+      "evidence": [
+        {
+          "text": "The increase in gross profit is primarily due to higher organic volumes, acquisitions, and higher pricing discussed above.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "During 2021 and into 2022, the Precision and Science Technologies segment has seen increased demand for our products, particularly related to life science and specialty applications.",
+          "section": "mda",
+          "subsection": "Precision and Science Technologies Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive momentum in end markets, especially in key segments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, driven by higher organic volumes and pricing across both segments, with some contribution from acquisitions and unfavorable foreign currency impacts.",
+      "evidence": [
+        {
+          "text": "The increase in revenues was primarily due to higher organic volumes of $90.1 million, acquisitions of $77.3 million, and higher pricing of $66.4 million, partially offset by unfavorable impact of foreign currencies of $26.3 million.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "The increase in Segment Revenues for the three month period ended March 31, 2022 was due to higher organic volumes of $75.3 million or 8.2%, higher pricing of $56.4 million or 6.2%, and acquisitions of $13.3 million or 1.5%. The increase in Segment Revenues was primarily due to acquisitions of $64.0 million or 29.7%, higher organic volume of $14.8 million or 6.9%, higher pricing of $10.0 million or 4.6%, partially offset by unfavorable impact of foreign currencies of $7.1 million or 3.3%.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Acceleration in organic growth driven by volumes and pricing.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, contributing to revenue growth across both segments. The growth is driven by higher organic volumes, with additional contributions from acquisitions, though there are partial offsets from unfavorable foreign currency impacts.",
+      "evidence": [
+        {
+          "text": "The increase in revenues was primarily due to higher organic volumes of $90.1 million, acquisitions of $77.3 million, and higher pricing of $66.4 million, partially offset by unfavorable impact of foreign currencies of $26.3 million.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "The increase in Segment Revenues was due to higher organic volumes of $75.3 million or 8.2%, higher pricing of $56.4 million or 6.2%, and acquisitions of $13.3 million or 1.5%. The increase in Segment Revenues was primarily due to acquisitions of $64.0 million or 29.7%, higher organic volume of $14.8 million or 6.9%, higher pricing of $10.0 million or 4.6%, partially offset by unfavorable impact of foreign currencies of $7.1 million or 3.3%.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing unit volumes contributing to revenue growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, leading to margin pressure, although the company is partially offsetting these increases through pricing and productivity improvements.",
+      "evidence": [
+        {
+          "text": "The increase in gross profit is primarily due to higher organic volumes, acquisitions, and higher pricing discussed above. [...] unfavorable cost inflation and product mix of $52.7 million and the unfavorable impact of foreign currencies of $6.3 million.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "The increase in Segment Adjusted EBITDA was primarily due to higher pricing of $56.4 million or 26.7%, higher organic sales volume of $29.7 million or 14.0%, and acquisitions of $2.8 million or 1.3%, partially offset by unfavorable cost inflation and product mix of $42.0 million or 19.9%, higher selling and administrative costs of $6.1 million or 2.9% and unfavorable impact of foreign currencies of $4.5 million or 2.1%.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs causing margin pressure despite some offsets.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Overall, the company is experiencing a mixed margin trajectory. While gross and operating margins are expanding due to higher pricing and volumes, certain segments are seeing margin contraction. Specifically, the Industrial Technologies and Services segment is expanding its margins, but the Precision and Science Technologies segment is experiencing a significant decline in its margin.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA as a percentage of revenues increased 110 basis points to 22.7% [...] primarily attributable to higher pricing and volume, partially offset by unfavorable cost inflation and product mix.",
+          "section": "mda",
+          "subsection": "Results of Continuing Operations"
+        },
+        {
+          "text": "Segment Adjusted EBITDA Margin increased 70 basis points to 23.8% from 23.1% in 2021. Segment Adjusted EBITDA Margin decreased 260 basis points to 28.6% from 31.2% in 2021.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed margin performance across segments.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are contributing to margin expansion in the Industrial Technologies and Services segment, while operational efficiency is also improving due to restructuring initiatives.",
+      "evidence": [
+        {
+          "text": "The increase in Segment Adjusted EBITDA was primarily due to higher pricing of $56.4 million or 26.7%, higher organic sales volume of $29.7 million or 14.0%, and acquisitions of $2.8 million or 1.3%, partially offset by unfavorable cost inflation and product mix of $42.0 million or 19.9%, higher selling and administrative costs of $6.1 million or 2.9% and unfavorable impact of foreign currencies of $4.5 million or 2.1%",
+          "section": "mda",
+          "subsection": "Restructuring and Other Business Transformation Initiatives"
+        },
+        {
+          "text": "We continue to execute business transformation initiatives. [...] Restructuring charges, program related facility reorganization, relocation and other costs, and related capital expenditures were impacted most significantly.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improvements are contributing to margin expansion, indicating a positive trend.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost actions are being implemented, but their impact is partially offset by cost inflation and other factors. Restructuring programs are delivering measurable savings, on track with expectations.",
+      "evidence": [
+        {
+          "text": "Restructuring charges, program related facility reorganization, relocation and other costs, and related capital expenditures were impacted most significantly. [...] $12.5 million and $2.4 million, respectively, were charged to expense related to this restructuring program.",
+          "section": "mda",
+          "subsection": "Restructuring and Other Business Transformation Initiatives"
+        },
+        {
+          "text": "The increase in Segment Adjusted EBITDA was primarily due to higher pricing of $56.4 million or 26.7%, higher organic sales volume of $29.7 million or 14.0%, and acquisitions of $2.8 million or 1.3%, partially offset by unfavorable cost inflation and product mix of $42.0 million or 19.9%, higher selling and administrative costs of $6.1 million or 2.9% and unfavorable impact of foreign currencies of $4.5 million or 2.1%. The increase in Segment Adjusted EBITDA was primarily due to acquisitions of $15.4 million or 22.9%, higher pricing of $10.0 million or 14.9%, and higher organic sales volume of $6.8 million or 10.1%, partially offset by unfavorable cost inflation and product mix of $10.2 million or 15.2%, unfavorable impact of foreign currencies of $2.1 million or 3.1% and higher selling and administrative costs of $1.4 million or 2.1%.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring programs are delivering measurable savings, indicating effective cost management.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces near-term risks primarily from geopolitical tensions, supply chain constraints, and unfavorable foreign currency impacts. These risks are particularly acute in regions like Russia, Ukraine, and China, where the company has significant operations and cash holdings.",
+      "evidence": [
+        {
+          "text": "The ongoing conflict between Russia and Ukraine [...] have limited operations in Russia and Ukraine and [...] may amplify several of the risks identified in Part I, Item 1A. \u201cRisk Factors\u201d [...]",
+          "section": "mda",
+          "subsection": "General Economic Conditions"
+        },
+        {
+          "text": "More than half of our sales and operations are in non-U.S. jurisdictions and we are subject to the economic, political, regulatory and other risks of international operations.",
+          "section": "mda",
+          "subsection": "Results of Discontinued Operations - SVT"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks from geopolitical tensions and supply chain constraints pose significant challenges.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not explicitly adjusted forward guidance, maintaining a cautious stance due to ongoing challenges from the COVID-19 pandemic and supply chain disruptions, while expressing confidence in future performance driven by strong demand and order growth in key segments.",
+      "evidence": [
+        {
+          "text": "We continue to assess and actively manage the impact of the COVID-19 pandemic on our global operations [...] See \u201cThe COVID-19 pandemic could have a material and adverse effect on our business, results of operations and financial condition in the future\u201d in Part I, Item 1A. \u201cRisk Factors\u201d in our Annual Report on Form 10-K for the year ended December 31, 2021 and this Form 10-Q.",
+          "section": "mda",
+          "subsection": "The COVID-19 Pandemic and Related Supply Chain Disruptions"
+        },
+        {
+          "text": "The mission-critical nature of our Industrial Technologies and Services segment products across manufacturing processes drives a demand environment and outlook that are correlated with global and regional industrial production, capacity utilization and long-term GDP growth. In the first quarter of 2022, we had $1,292.8 million of orders in our Industrial Technologies and Services segment, an increase of 24.0% over the first quarter of 2021. During 2021 and into 2022, the Precision and Science Technologies segment has seen increased demand for our products, particularly related to life science and specialty applications. In the first quarter of 2022, we had $337.1 million of orders in our Precision and Science Technologies segment, an increase of 30.6% over the first quarter of 2021.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management has not adjusted guidance, maintaining a cautious stance despite strong demand.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management exhibits mixed confidence, with caution due to supply chain disruptions and economic conditions, yet shows optimism through increased orders and strong demand across key segments.",
+      "evidence": [
+        {
+          "text": "We continue to assess and actively manage the impact of the COVID-19 pandemic on our global operations [...] See [...] in our Annual Report on Form 10-K for the year ended December 31, 2021 and this Form 10-Q.",
+          "section": "mda",
+          "subsection": "The COVID-19 Pandemic and Related Supply Chain Disruptions"
+        },
+        {
+          "text": "The mission-critical nature of our Industrial Technologies and Services segment products across manufacturing processes drives a demand environment and outlook that are correlated with global and regional industrial production, capacity utilization and long-term GDP growth. In the first quarter of 2022, we had $1,292.8 million of orders in our Industrial Technologies and Services segment, an increase of 24.0% over the first quarter of 2021. During 2021 and into 2022, the Precision and Science Technologies segment has seen increased demand for our products, particularly related to life science and specialty applications. In the first quarter of 2022, we had $337.1 million of orders in our Precision and Science Technologies segment, an increase of 30.6% over the first quarter of 2021.",
+          "section": "mda",
+          "subsection": "Industrial Technologies and Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed confidence due to ongoing challenges and optimism from increased orders.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company is sensitive to foreign currency fluctuations and geopolitical risks, particularly in regions like Russia-Ukraine and China, which can impact its results of operations and financial performance.",
+      "evidence": [
+        {
+          "text": "A significant portion of our revenues, approximately 56% [...] Changes in foreign exchange rates can therefore impact our results of operations [...] The ongoing conflict between Russia and Ukraine [...]",
+          "section": "mda",
+          "subsection": "Foreign Currency Fluctuations"
+        },
+        {
+          "text": "More than half of our sales and operations are in non-U.S. jurisdictions and we are subject to the economic, political, regulatory and other risks of international operations.",
+          "section": "mda",
+          "subsection": "Results of Discontinued Operations - SVT"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Sensitivity to foreign currency fluctuations and geopolitical risks presents significant challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is maintaining its market share with strong brand recognition, and there are potential gains in high-growth segments like life science and specialty applications. However, market share specifics for the Precision and Science Technologies segment are not explicitly discussed, which introduces some uncertainty regarding actual gains in this area.",
+      "evidence": [
+        {
+          "text": "Our products are sold under a collection of premier, market-leading brands [...] known for product quality, reliability, efficiency and superior customer service.",
+          "section": "mda",
+          "subsection": "Our Company"
+        },
+        {
+          "text": "During 2021 and into 2022, the Precision and Science Technologies segment has seen increased demand for our products, particularly related to life science and specialty applications.",
+          "section": "mda",
+          "subsection": "Precision and Science Technologies Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong brand recognition and potential gains in high-growth segments suggest positive market position.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The company is maintaining its market-leading position with a stable competitive environment and is focusing on high-growth areas to differentiate through product offerings.",
+      "evidence": [
+        {
+          "text": "Ingersoll Rand is a global market leader with a broad range of innovative and mission-critical air, fluid, energy and medical technologies, providing services and solutions to increase industrial productivity and efficiency.",
+          "section": "mda",
+          "subsection": "Our Company"
+        },
+        {
+          "text": "During 2021 and into 2022, the Precision and Science Technologies segment has seen increased demand for our products, particularly related to life science and specialty applications.",
+          "section": "mda",
+          "subsection": "Precision and Science Technologies Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Maintaining market leadership and focusing on high-growth areas indicates strong competitive positioning.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company anticipates ongoing capital expenditures, primarily driven by investments in operations and capacity expansion, as part of its restructuring and efficiency initiatives.",
+      "evidence": [
+        {
+          "text": "Restructuring charges, program related facility reorganization, relocation and other costs, and related capital expenditures were impacted most significantly.",
+          "section": "mda",
+          "subsection": "Restructuring and Other Business Transformation Initiatives"
+        },
+        {
+          "text": "Cash used in investing activities included capital expenditures of $17.9 million and $14.3 million for the three month periods ended March 31, 2022 and 2021, respectively. Net cash paid in a business combination was $30.3 million and $202.5 million in the three month periods ended March 31, 2022 and 2021, respectively.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company has a clear long-term strategic focus on growth through acquisitions and business transformation, with a significant emphasis on expanding international operations, particularly in high-demand segments like life sciences. However, this strategy is accompanied by substantial risks, including economic, political, regulatory, and other challenges associated with international expansion.",
+      "evidence": [
+        {
+          "text": "Key factors affecting the comparability of our results of operations are summarized below. [...] See Note 3 \u201c Business Combinations \u201d [...]",
+          "section": "mda",
+          "subsection": "Factors Affecting the Comparability of our Results of Operations / Acquisitions"
+        },
+        {
+          "text": "We intend to continue to expand our international operations to the extent that suitable opportunities become available. Non-U.S. operations and United States export sales could be adversely affected as a result of: political or economic instability in certain countries; differences in foreign laws, including increased difficulties in protecting intellectual property and uncertainty in enforcement of contract rights; credit risks; currency fluctuations, in particular, changes in currency exchange rates between the U.S. dollar, Euro, British Pound and the Chinese Renminbi; exchange controls; changes in and uncertainties with respect to tariffs and import/export trade restrictions (including changes in United States trade policy toward other countries, such as the imposition of tariffs and the resulting consequences), as well as other changes in political policy in the United States, China, the U.K. and certain European countries (including the impacts of the U.K.'s national referendum resulting in the U.K.'s withdrawal from the European Union); royalty and tax increases; nationalization of private enterprises, especially in China where we hold material cash balances; civil unrest and protests, strikes, acts of terrorism, war or other armed conflict; shipping products during times of crisis or war; and other factors inherent in foreign operations. In addition, our expansion into new countries may require significant resources and the efforts and attention of our management and other personnel, which will divert resources from our existing business operations. As we expand our business globally, our success will depend, in large part, on our ability to anticipate and effectively manage these risks associated with our international operations.",
+          "section": "risk_factors",
+          "subsection": "More than half of our sales and operations are in non-U.S. jurisdictions and we are subject to the economic, political, regulatory and other risks of international operations."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is being managed through restructuring and cost reduction efforts, with slight decreases in total debt from December 31, 2021 to March 31, 2022, indicating stability.",
+      "evidence": [
+        {
+          "text": "\"We continue to assess and actively manage the impact of the COVID-19 pandemic on our global operations [...] See [...] in our Annual Report on Form 10-K for the year ended December 31, 2021 and this Form 10-Q.\"",
+          "section": "mda",
+          "subsection": "The COVID-19 Pandemic and Related Supply Chain Disruptions"
+        },
+        {
+          "text": "\"March 31, 2022 December 31, 2021 Cash and cash equivalents $ 1,990.2\u00a0 $ 2,109.6\u00a0 Short-term borrowings and current maturities of long-term debt $ 40.1\u00a0 $ 38.8\u00a0 Long-term debt 3,375.6\u00a0 3,401.8\u00a0 Total debt $ 3,415.7\u00a0 $ 3,440.6\"",
+          "section": "mda",
+          "subsection": "Working Capital"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is actively engaging in acquisitions to expand its capabilities and market reach, with a strategic shift towards smaller deals instead of larger ones.",
+      "evidence": [
+        {
+          "text": "Acquisitions are creating value through expansion of capabilities and market reach.",
+          "section": "mda",
+          "subsection": "Factors Affecting the Comparability of our Results of Operations / Acquisitions"
+        },
+        {
+          "text": "Net cash paid in a business combination was $30.3 million and $202.5 million in the three month periods ended March 31, 2022 and 2011, respectively.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company exhibits customer diversification across multiple industries and reportable segments, suggesting reduced reliance on a single customer or industry. However, the expansion into new international markets introduces potential risks that could affect customer concentration dynamics.",
+      "evidence": [
+        {
+          "text": "We operate with two reportable segments: Industrial Technologies and Services and Precision and Science Technologies. [...] providing differentiated product and service offerings to our customers.",
+          "section": "mda",
+          "subsection": "Our Company"
+        },
+        {
+          "text": "We intend to continue to expand our international operations to the extent that suitable opportunities become available. Non-U.S. operations and United States export sales could be adversely affected as a result of: political or economic instability in certain countries; differences in foreign laws, including increased difficulties in protecting intellectual property and uncertainty in enforcement of contract rights; credit risks; currency fluctuations, in particular, changes in currency exchange rates between the U.S. dollar, Euro, British Pound and the Chinese Renminbi; exchange controls; changes in and uncertainties with respect to tariffs and import/export trade restrictions (including changes in United States trade policy toward other countries, such as the imposition of tariffs and the resulting consequences), as well as other changes in political policy in the United States, China, the U.K. and certain European countries (including the impacts of the U.K.'s national referendum resulting in the U.K.'s withdrawal from the European Union); royalty and tax increases; nationalization of private enterprises, especially in China where we hold material cash balances; civil unrest and protests, strikes, acts of terrorism, war or other armed conflict; shipping products during times of crisis or war; and other factors inherent in foreign operations.",
+          "section": "risk_factors",
+          "subsection": "More than half of our sales and operations are in non-U.S. jurisdictions and we are subject to the economic, political, regulatory and other risks of international operations."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow has shown mixed performance. While it has decreased compared to the previous year, it remains positive and supports business opportunities and debt servicing.",
+      "evidence": [
+        {
+          "text": "Free Cash Flow from Continuing Operations: Cash flows from operating activities from continuing operations $ 50.1\u00a0 $ 87.5\u00a0 Minus: Capital expenditures 17.9\u00a0 14.3\u00a0 Free Cash Flow from Continuing Operations $ 32.2\u00a0 $ 73.2",
+          "section": "mda",
+          "subsection": "Non-GAAP Financial Measures"
+        },
+        {
+          "text": "Free cash flow decreased $41.0 million to $32.2 million in the three month period ended March 31, 2022 from $73.2 million in the same three month period in 2021 due to decreased cash provided by operating activities and higher capital expenditures.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company faces significant geopolitical risks, particularly in regions like Russia-Ukraine and China. These risks include economic, political, and regulatory challenges, as well as potential disruptions to operations and cash balances.",
+      "evidence": [
+        {
+          "text": "The ongoing conflict between Russia and Ukraine [...] have limited operations in Russia and Ukraine and [...] may amplify several of the risks identified in Part I, Item 1A. 'Risk Factors'",
+          "section": "mda",
+          "subsection": "General Economic Conditions"
+        },
+        {
+          "text": "More than half of our sales and operations are in non-U.S. jurisdictions and we are subject to the economic, political, regulatory and other risks of international operations. [...] In light of escalating geopolitical tensions occurring subsequent to the filing of our Annual Report, we are supplementing the risk factors discussed in our Annual Report by expanding the following risk factor to emphasize our material cash balances in China.",
+          "section": "risk_factors",
+          "subsection": "More than half of our sales and operations are in non-U.S. jurisdictions and we are subject to the economic, political, regulatory and other risks of international operations."
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

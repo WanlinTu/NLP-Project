@@ -1,0 +1,179 @@
+{
+  "ticker": "ETN",
+  "form": "10-Q",
+  "filing_date": "2016-04-29",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 10,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is decelerating, particularly in several of the Company's end markets.",
+      "evidence": [
+        {
+          "text": "The decrease in organic sales is primarily due to weakening demand in several of the Company's end markets.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is decelerating in several end markets, indicating a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating.",
+      "evidence": [
+        {
+          "text": "The decrease in organic sales is primarily due to weakening demand in several of the Company's end markets.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is decelerating, pointing to a moderate decline.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining, driven by lower sales in key end markets.",
+      "evidence": [
+        {
+          "text": "Net sales decreased 8% in the first quarter of 2016 compared to the first quarter of 2015 due to a decrease of 6% in organic sales and a decrease of 2% from the impact of currency translation. The decrease in organic sales is primarily due to weakening demand in several of the Company's end markets.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining unit volumes suggest a weakening demand environment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross profit margin increased slightly, but operating margins declined due to restructuring charges and a higher tax rate.",
+      "evidence": [
+        {
+          "text": "Gross profit margin increased from 31.2% in the first quarter of 2015 to 31.6% in the first quarter of 2016. The increase in gross margin is primarily due to cost savings from restructuring actions and other cost control measures, partially offset by lower volumes, unfavorable product mix, and current year restructuring charges.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Gross profit margin improved slightly, but operating margins declined due to restructuring charges and tax rate changes, showing mixed signals.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring actions are delivering measurable savings, with annualized savings expected to be $418 by 2018.",
+      "evidence": [
+        {
+          "text": "The restructuring charges related to this initiative were $63 and $10 in the first quarter of 2016 and 2015, respectively, and were primarily comprised of severance costs. Restructuring charges are anticipated to be $140 in 2016 and $130 in 2017. The projected annualized savings from these restructuring actions are expected to be $418, fully realized in 2018.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring actions are delivering measurable savings with clear future benefits, indicating a positive development.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not explicitly raised or lowered forward guidance, but restructuring charges and market conditions suggest cautious expectations.",
+      "evidence": [
+        {
+          "text": "Restructuring charges are anticipated to be $140 in 2016 and $130 in 2017. The projected annualized savings from these restructuring actions are expected to be $418, fully realized in 2018.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management has not explicitly changed forward guidance, though restructuring charges and market conditions suggest cautious expectations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears cautious due to restructuring actions and market conditions.",
+      "evidence": [
+        {
+          "text": "Eaton took actions to reduce its cost structure and gain efficiencies in all business segments and at corporate in order to respond to declining market conditions and announced a multi-year restructuring initiative.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Management appears cautious due to restructuring actions and market conditions, indicating a negative sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are not explicitly mentioned as a significant factor, but cost savings from restructuring are noted.",
+      "evidence": [
+        {
+          "text": "The increase in gross margin is primarily due to cost savings from restructuring actions and other cost control measures, partially offset by lower volumes, unfavorable product mix, and current year restructuring charges.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While cost savings from restructuring are noted, there's no explicit mention of input costs as a significant factor, leading to a neutral assessment.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is managing workforce changes through restructuring, which may indicate defensive actions.",
+      "evidence": [
+        {
+          "text": "Restructuring charges related to this initiative were $63 and $10 in the first quarter of 2016 and 2015, respectively, and were primarily comprised of severance costs.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring and severance costs indicate workforce management challenges, suggesting a defensive approach.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind, with weakening demand in several end markets.",
+      "evidence": [
+        {
+          "text": "The decrease in organic sales is primarily due to weakening demand in several of the Company's end markets.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Weakening demand across multiple end markets points to unfavorable economic conditions.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

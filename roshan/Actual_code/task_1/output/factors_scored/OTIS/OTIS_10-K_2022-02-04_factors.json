@@ -1,0 +1,43 @@
+{
+  "ticker": "OTIS",
+  "form": "10-K",
+  "filing_date": "2022-02-04",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 2,
+  "factors": [
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Raw material and energy costs are mentioned as potential risks.",
+      "evidence": [
+        {
+          "text": "Our business, financial condition, operating results and cash flows may be adversely affected by changes in global economic conditions and geopolitical risks, including global credit market conditions, levels of consumer and business confidence, commodity prices, raw material and energy costs, supply chain issues, foreign currency exchange rates, interest rates, labor costs, levels of government spending and deficits, trade policies, tariffs and trade barriers, political conditions, regulatory changes, fluctuations in residential and commercial construction activity, pandemic health issues (see discussion of COVID-19 below), natural disasters, actual or anticipated default on sovereign debt and other challenges that could affect the global economy.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary indicates that raw material and energy costs are potential risks, which could negatively impact the business.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs and wage inflation are creating margin pressure.",
+      "evidence": [
+        {
+          "text": "Pension expense is also sensitive to changes in the expected long-term rate of asset return. An increase or decrease of 25 basis points in the expected long-term rate of asset return would have decreased or increased 2021 pension expense by approximately $2 million.",
+          "section": "mda",
+          "subsection": "Employee Benefit Plans"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs and wage inflation are creating margin pressure, as evidenced by the specific impact on pension expenses.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

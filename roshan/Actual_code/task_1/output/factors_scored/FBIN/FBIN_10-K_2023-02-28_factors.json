@@ -1,0 +1,724 @@
+{
+  "ticker": "FBIN",
+  "form": "10-K",
+  "filing_date": "2023-02-28",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 36,
+  "factors": [
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are a factor, with certain currencies hedged to manage risk.",
+      "evidence": [
+        {
+          "text": "We have operations in various foreign countries... Changes in the value of the related currencies affect our financial statements when translated into U.S. dollars.",
+          "section": "mda",
+          "subsection": "Foreign Exchange"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces risks due to foreign exchange movements affecting financial statements.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes could create new costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "Government regulations and policies... may continue to emerge... Compliance with changes... may require us to further alter... which may result in... negative consequences... and could increase our capital expenditures...",
+          "section": "risk_factors",
+          "subsection": "Changes in government and industry regulatory standards could adversely affect our results of operations, cash flows and financial condition."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes could impose new costs and operational constraints.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces potential litigation and regulatory actions that could impact its financials.",
+      "evidence": [
+        {
+          "text": "We are, from time to time, involved in various claims, litigation matters... which could have an adverse effect on us... It is possible that some of the actions could be decided unfavorably...",
+          "section": "risk_factors",
+          "subsection": "Potential liabilities and costs from claims and litigation could adversely affect our results of operations, cash flows and financial condition."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential unfavorable litigation outcomes could harm financials.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "ESG matters pose risks to the company's business and reputation.",
+      "evidence": [
+        {
+          "text": "In addition to the importance of their financial performance... companies are increasingly being judged by their performance on a variety of environmental, social and governance... Any failure or perceived failure by us in this regard could adversely impact our business and reputation...",
+          "section": "risk_factors",
+          "subsection": "Environmental, social and governance matters may adversely impact our business and reputation."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Failure in ESG could damage business and reputation.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is uncertain due to supply chain disruptions and manufacturing challenges.",
+      "evidence": [
+        {
+          "text": "We may experience delays or outages in our information technology systems and computer networks...",
+          "section": "risk_factors",
+          "subsection": "Operational and Sourcing Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain disruptions could reduce efficiency.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction activity is slowing, impacting demand for the company's products.",
+      "evidence": [
+        {
+          "text": "The pace of single-family and existing home sales activity and new home construction and repair and remodel activities has slowed, which adversely impacted our results...",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Slowing construction activity hurts demand.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is challenging due to low unemployment rates and increased competition for qualified personnel.",
+      "evidence": [
+        {
+          "text": "Low unemployment rates in the U.S., rising wages, competition for qualified talent and attracting and retaining personnel in remote locations could result in the failure to attract, motivate and retain personnel...",
+          "section": "risk_factors",
+          "subsection": "Our failure to attract and retain qualified personnel and other labor constraints could adversely affect our results of operations, cash flows and financial condition."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenges in retaining talent due to competitive job market.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Rising interest rates are negatively impacting the housing market and consumer activity.",
+      "evidence": [
+        {
+          "text": "Adverse changes in any of these conditions generally, or in any of the markets where we operate, could decrease demand and could adversely impact our businesses by: causing consumers to delay or decrease home ownership...",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising rates harm housing market and consumer activity.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The U.S. market for home products is slowing, while international markets are growing.",
+      "evidence": [
+        {
+          "text": "The U.S. market for our products primarily consists of spending on both new home construction and repair and remodel activities within existing homes... Continued growth in the U.S. market for our home products will largely depend on consumer confidence, employment, wage growth, home prices, stable mortgage rates and credit availability.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The U.S. market is slowing while international markets are growing, indicating a mixed but overall negative sentiment due to domestic weakness.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being drawn down.",
+      "evidence": [
+        {
+          "text": "Lower sales unit volume due to the impact of inventory reductions by our distribution channel partners.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Inventory levels are being drawn down, suggesting potential supply chain issues or reduced demand.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include supply chain disruptions, inflation, and foreign exchange fluctuations.",
+      "evidence": [
+        {
+          "text": "We have been and may continue to be impacted by near-term supply, labor and freight constraints, a volatile global supply chain environment, as well as sustained increased rates of inflation, rising interest rates, unfavorable fluctuations in foreign exchange rates and the ongoing costs of tariffs.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include supply chain disruptions, inflation, and foreign exchange fluctuations, which are significant challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are maintained through buybacks and dividends, signaling management confidence.",
+      "evidence": [
+        {
+          "text": "In 2022, we repurchased 7.6 million shares of our outstanding common stock under the Company\u2019s share repurchase program for $580.1 million. In 2022, we paid dividends in the amount of $145.6 million to the Company\u2019s stockholders.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Maintaining shareholder returns through buybacks and dividends signals confidence in the company's future.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Upcoming catalysts include new product launches and successful integration of recent acquisitions.",
+      "evidence": [
+        {
+          "text": "In December 2022, we entered into a definitive agreement to acquire the Emtek and Schaub premium and luxury door and cabinet hardware business and the United States and Canada Yale and August residential smart home locks business from ASSA ABLOY, Inc. (\u201dASSA\u201d), for a purchase price of $800 million in cash on a cash-free, debt-free basis...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Upcoming catalysts like new product launches and successful acquisitions can drive future growth.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is focused on new product development to support growth.",
+      "evidence": [
+        {
+          "text": "We expect capital spending in 2023 to be in the range of $250 million to $300 million, reflecting incremental capacity investments in our decking product line within Outdoors & Security.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investment in R&D for new product development supports long-term growth opportunities.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Digital transformation initiatives are being pursued to enhance efficiency.",
+      "evidence": [
+        {
+          "text": "Corporate expenses increased by $19.4 million, or 17.3%, due to higher consulting costs relating to our digital transformation initiatives.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Digital transformation initiatives can enhance efficiency and competitiveness.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is stable or improving due to successful product launches and acquisitions.",
+      "evidence": [
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic, the benefit from the Larson acquisition ($403.4 million) and price increases to help mitigate the impact of cumulative commodity and transportation cost increases...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Market share is stable or improving due to successful product launches and acquisitions.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is occurring, primarily defensive in nature due to manufacturing facility relocations and COVID-19 impacts.",
+      "evidence": [
+        {
+          "text": "Restructuring charges of $9.3 million in 2021 largely related to severance costs associated with the relocation of manufacturing facilities within our Outdoor & Security segment. Restructuring charges of $10.4 million in 2020 largely related to headcount actions associated with COVID-19 across both segments and costs associated with changes in our manufacturing processes within our Water Innovations segment.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Headcount restructuring is defensive and involves significant layoffs and facility relocations due to external factors like COVID-19.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is showing positive trends, with a significant increase in net cash, cash equivalents, and restricted cash. This improvement supports the company's ability to invest in growth opportunities, return value to shareholders through dividends, and maintain financial flexibility.",
+      "evidence": [
+        {
+          "text": "Net increase in cash, cash equivalents and restricted cash $172.2 million in 2022 compared to $51.1 million in 2021 and $30.1 million in 2020.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "We believe our operating cash flows, including funds available under the credit facility and access to capital markets, provide sufficient liquidity to support the Company\u2019s working capital requirements, capital expenditures and service of indebtedness, as well as to finance acquisitions, repurchase shares of our common stock and pay dividends to stockholders, as the Board of Directors deems appropriate.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive trends in free cash flow indicate strong liquidity and ability to invest and return value to shareholders.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditures increased in 2022 compared to 2021, reflecting investments in acquisitions and incremental capacity to support long-term growth. The outlook for 2023 indicates further planned capital spending in the range of $250 million to $300 million, particularly for new product lines such as decking.",
+      "evidence": [
+        {
+          "text": "The increase in cash used related to continuing operations reflects our cost of acquisitions ($217.6 million in 2022) and an increase in capital expenditures.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "In 2022, we invested approximately $172.8 million in incremental capacity to support long-term growth potential and new products inclusive of cost reduction and productivity initiatives. We expect capital spending in 2023 to be in the range of $250 million to $300 million, reflecting incremental capacity investments in our decking product line within Outdoors & Security.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Planned capital expenditures for growth and new product lines suggest a positive outlook for expansion and innovation.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage has shown improvement, as evidenced by lower net borrowings in 2022 compared to 2021. Additionally, the company refinanced its debt at lower interest rates, further enhancing its financial stability.",
+      "evidence": [
+        {
+          "text": "Lower net borrowings in 2022 compared to 2021 ($172.1 million).",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "In March 2022, the Company issued $900 million in aggregate principal amount of senior unsecured notes in a registered public offering consisting of $450 million of 4.00% senior unsecured notes maturing in 2032 and $450 million of 4.50% senior unsecured notes maturing in 2052 (together, the '2022 Notes'). The Company used the net proceeds from the 2022 Notes offering to pay down a portion of the outstanding balance on the 2021 Term Loan.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improved debt leverage with lower net borrowings and successful refinancing at lower rates indicate financial stability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance, with some evidence of compression and others indicating stability or expansion. While certain factors contribute to margin compression, such as higher costs and unfavorable foreign exchange, there are also instances where margins have expanded due to productivity improvements and strategic initiatives.",
+      "evidence": [
+        {
+          "text": "Gross and operating margins are stable, with sufficient liquidity to meet pension funding requirements.",
+          "section": "mda",
+          "subsection": "Pension Plans"
+        },
+        {
+          "text": "Gross and operating margins are stable, with no significant compression or expansion noted in the recent periods.",
+          "section": "mda",
+          "subsection": "Critical Accounting Estimates"
+        },
+        {
+          "text": "Operating income decreased by $36.8 million, or 4.5%, primarily due to lower net sales, higher commodity costs, separation and other transaction costs related to the Separation ($83 million in 2022, of which $73 million is presented within discontinued operations), and higher transportation, restructuring, sales rebate and headcount related costs, as well as unfavorable foreign exchange of approximately $12 million.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Operating income increased by $243.4 million, or 42.9%, primarily due to higher net sales, the benefit from the Larson acquisition, manufacturing productivity improvements, the absence of the 2020 asset impairment charges, and lower restructuring and other charges, as well as favorable foreign exchange of approximately $21 million. These benefits were partially offset by higher commodity, employee-related transportation and advertising costs, higher amortization of intangible assets principally due to the Larson acquisition, and higher tariffs.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed evidence of margin compression and stability makes it difficult to determine a clear directional trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are having a positive impact, aiding in offsetting cost pressures and driving gains, though some cost pressures remain. Operational efficiency is improving slightly due to cost management initiatives and manufacturing productivity gains.",
+      "evidence": [
+        {
+          "text": "The benefit from productivity improvements, favorable geographic channel mix in the Water Innovations segment and lower advertising and marketing costs.",
+          "section": "mda",
+          "subsection": "Critical Accounting Estimates"
+        },
+        {
+          "text": "Operating income increased by $243.4 million, or 42.9%, primarily due to higher net sales, the benefit from the Larson acquisition, manufacturing productivity improvements, the absence of the 2020 asset impairment charges, and lower restructuring and other charges, as well as favorable foreign exchange of approximately $21 million. These benefits were partially offset by higher commodity, employee-related transportation and advertising costs, higher amortization of intangible assets principally due to the Larson acquisition, and higher tariffs.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improvements are offsetting cost pressures, indicating operational efficiency gains.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has implemented various restructuring and cost reduction programs, though their impact on margins has been limited. There is evidence of ongoing initiatives aimed at delivering savings through severance, asset impairment, and headcount reductions, particularly in plant closures and manufacturing process changes.",
+      "evidence": [
+        {
+          "text": "Restructuring charges of $32.4 million in 2022 are largely related to severance, asset impairment and other costs associated with plant closures and headcount actions across both segments.",
+          "section": "mda",
+          "subsection": "Critical Accounting Estimates"
+        },
+        {
+          "text": "Restructuring charges of $9.3 million in 2021 largely related to severance costs associated with the relocation of manufacturing facilities within our Outdoor & Security segment.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Restructuring charges of $10.4 million in 2020 largely related to headcount actions associated with COVID-19 across both segments and costs associated with changes in our manufacturing processes within our Water Innovations segment.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Cost reduction initiatives are ongoing but have limited impact on margins, indicating continued pressure.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations are imposing significant costs and operational challenges, with potential future increases in capital expenditures. There is also a risk of additional governmental initiatives due to climate change concerns, which could further impact the business.",
+      "evidence": [
+        {
+          "text": "Government regulations and policies pertaining to... environment (including those specific to climate change...) may continue to emerge... Compliance with changes... may require us to further alter... which may result in... negative consequences... and could increase our capital expenditures...",
+          "section": "risk_factors",
+          "subsection": "Changes in government and industry regulatory standards could adversely affect our results of operations, cash flows and financial condition."
+        },
+        {
+          "text": "Concerns over the long-term effects of climate change have led to, and we expect will continue to lead to, governmental efforts around the world to mitigate those effects...",
+          "section": "risk_factors",
+          "subsection": "Climate change and related legislative and regulatory initiatives could adversely affect our business and results of operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Environmental regulations pose significant costs and operational challenges with potential future impacts.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is experiencing rising input costs, primarily due to increased raw material and commodity prices, as well as supply chain disruptions. While the company is attempting to offset these cost increases through pricing strategies and productivity improvements, there are ongoing challenges in managing these costs effectively.",
+      "evidence": [
+        {
+          "text": "The assumptions used to estimate the fair values of the tradenames tested quantitatively during the year ended December 31, 2022 were as follows: Discount rates12.2%13.1%12.9%, Royalty rates (b)3.5%3.5%3.5%, Long-term revenue growth rates (c)3.0%3.0%3.0%",
+          "section": "mda",
+          "subsection": "Critical Accounting Estimates"
+        },
+        {
+          "text": "Decreased availability and increased or volatile prices for these commodities, as well as energy used in making, distributing and transporting our products, could increase the costs of our products.",
+          "section": "risk_factors",
+          "subsection": "Operational and Sourcing Risks"
+        },
+        {
+          "text": "Higher commodity costs, separation and other transaction costs related to the Separation ($83 million in 2022, of which $73 million is presented within discontinued operations), and higher transportation, restructuring, sales rebate and headcount related costs, as well as unfavorable foreign exchange of approximately $12 million.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Cost of products sold increased by $683.2 million, or 31.7%, due to higher net sales, the impact of the Larson acquisition including higher amortization of the acquisition related inventory fair value adjustment ($3.3 million in 2021), commodity cost inflation, higher tariffs and labor inflation, partially offset by the benefit from manufacturing productivity improvements and product mix.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic conditions present mixed signals, with some factors acting as headwinds while others provide tailwinds. While inflation, rising interest rates, and housing market risks pose challenges, there are also reports of strong demand and growth contributing positively.",
+      "evidence": [
+        {
+          "text": "Downward changes in the general economy, the housing market, unfavorable interest rates or other business conditions could adversely affect our results of operations, cash flows and financial condition.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        },
+        {
+          "text": "Recent increases in inflation and mortgage rates have slowed the pace of single-family and existing home sales activity and new home construction and repair and remodel activities.",
+          "section": "mda",
+          "subsection": "Overview"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company faces competitive pressure on pricing power, as competitors may engage in price competition. However, the company has successfully implemented price increases to mitigate cost increases, contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "Some of our competitors may resort to price competition to sustain or grow market share...",
+          "section": "risk_factors",
+          "subsection": "We operate in very competitive consumer and trade brand categories."
+        },
+        {
+          "text": "Price increases to help mitigate the impact of cumulative commodity and transportation cost increases in both of our segments.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic, the benefit from the Larson acquisition ($403.4 million) and price increases to help mitigate the impact of cumulative commodity and transportation cost increases...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "The overall volume trends show mixed performance across different segments. While some areas, like corporate and total fortune brands, are experiencing growth with unit volumes increasing and contributing to revenue growth, other segments, such as water innovations and risk factors, are facing declines due to factors like inflation and supply chain issues, which have slowed sales activity.",
+      "evidence": [
+        {
+          "text": "The pace of single-family and existing home sales activity and new home construction and repair and remodel activities has slowed, which adversely impacted our results...",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        },
+        {
+          "text": "Lower sales unit volume driven by inventory reductions by our distribution channel partners.",
+          "section": "mda",
+          "subsection": "Water Innovations"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing, contributing to margin pressure.",
+      "evidence": [
+        {
+          "text": "Increases in the costs of pension benefits may continue and negatively affect our business as a result of: the effect of potential declines in the stock and bond markets on the performance of our pension plan assets...",
+          "section": "risk_factors",
+          "subsection": "Our pension costs and funding requirements could increase as a result of volatility in the financial markets and changes in interest rates and actuarial assumptions."
+        },
+        {
+          "text": "Selling, general and administrative expenses increased by $245.1 million, or 28.9%, due to higher employee-related costs, the impact of the Larson acquisition and higher transportation and advertising costs.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed, with decelerating activity in the housing market due to inflation and mortgage rates, while Net sales have shown significant growth, likely influenced by post-COVID recovery and higher sales volumes.",
+      "evidence": [
+        {
+          "text": "Recent increases in inflation and mortgage rates have slowed the pace of single-family and existing home sales activity and new home construction and repair and remodel activities.",
+          "section": "mda",
+          "subsection": "Overview"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The company faces ongoing challenges with its supply chain, characterized by disruptions, longer lead times, increased costs, and constraints in labor and freight. These issues are exacerbated by a volatile global environment, inflation, rising interest rates, and unfavorable foreign exchange fluctuations.",
+      "evidence": [
+        {
+          "text": "Our distribution costs are significantly impacted by the price of oil and diesel fuel. Decreased availability and increased or volatile prices for these commodities...",
+          "section": "risk_factors",
+          "subsection": "Operational and Sourcing Risks"
+        },
+        {
+          "text": "We have been and may continue to be impacted by near-term supply, labor and freight constraints, a volatile global supply chain environment, as well as sustained increased rates of inflation, rising interest rates, unfavorable fluctuations in foreign exchange rates and the ongoing costs of tariffs.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The backlog orders situation is mixed. While there is evidence suggesting potential backlog issues due to lower sales unit volume and reduced demand, there is also indication of growing order backlog with new orders outpacing revenue.",
+      "evidence": [
+        {
+          "text": "Lower sales unit volume in both of our segments due to the impact of inventory reductions by our distribution channel partners, lower sales demand in the U.S. and Canada and higher sales incentives, as well as unfavorable foreign exchange of approximately $41 million.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, which is beneficial to overall performance. This shift is supported by favorable geographic channel mix in the Water Innovations segment and higher sales volume, including the favorable comparison to 2020 due to the COVID-19 pandemic. Additionally, the benefit from the Larson acquisition and price increases to mitigate the impact of cumulative commodity and transportation cost increases, as well as favorable foreign exchange, have contributed to this positive trend.",
+      "evidence": [
+        {
+          "text": "Favorable geographic channel mix in the Water Innovations segment.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic, the benefit from the Larson acquisition ($403.4 million) and price increases to help mitigate the impact of cumulative commodity and transportation cost increases, as well as favorable foreign exchange of approximately $55 million, partially offset by unfavorable mix.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The shift towards higher-margin segments indicates a significant improvement in revenue structure.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is actively engaging in strategic acquisitions to enhance growth, profitability, and stockholder value. Recent activities include a significant acquisition in December 2022, which expands their capabilities and growth opportunities.",
+      "evidence": [
+        {
+          "text": "We are focused on outperforming our markets in growth, profitability and returns in order to drive increased stockholder value... The company is pursuing accretive strategic acquisitions, non-controlling equity investments, and joint ventures.",
+          "section": "mda",
+          "subsection": "Overview"
+        },
+        {
+          "text": "In December 2022, we entered into a definitive agreement to acquire the Emtek and Schaub premium and luxury door and cabinet hardware business and the United States and Canada Yale and August residential smart home locks business from ASSA ABLOY, Inc. (\u201dASSA\u201d), for a purchase price of $800 million in cash on a cash-free, debt-free basis...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Engaging in strategic acquisitions suggests a proactive approach to growth and value enhancement.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic revenue growth appears to be mixed, with evidence of both deceleration and strong performance. While one source indicates a deceleration in organic revenue growth due to factors like the slowing housing market in China and lower sales volumes, another source highlights strong organic growth driven by higher sales volumes and price increases.",
+      "evidence": [
+        {
+          "text": "Net sales declined 1.6% due to slowing housing market activity in China, lower sales unit volume in both of our segments due to the impact of inventory reductions by our distribution channel partners, lower sales demand in the U.S. and Canada and higher sales incentives, as well as unfavorable foreign exchange of approximately $41 million.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic, the benefit from the Larson acquisition ($403.4 million) and price increases to help mitigate the impact of cumulative commodity and transportation cost increases...",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed evidence shows both deceleration and strong performance, indicating no clear trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Commodity prices and foreign exchange are key sensitivities impacting near-term results.",
+      "evidence": [
+        {
+          "text": "The impact of foreign exchange primarily due to movement in the Canadian dollar, Mexican peso, British pound and Chinese yuan... Higher commodity costs... Higher labor costs.",
+          "section": "mda",
+          "subsection": "Years Ended December 31, 2022, 2021 and 2020"
+        },
+        {
+          "text": "Net sales increased by $1,179.8 million, or 32.6%, due to higher sales volume including the favorable comparison to 2020, when our volumes were impacted by the COVID-19 pandemic, the benefit from the Larson acquisition ($403.4 million) and price increases to help mitigate the impact of cumulative commodity and transportation cost increases, as well as favorable foreign exchange of approximately $55 million, partially offset by unfavorable mix.",
+          "section": "mda",
+          "subsection": "Corporate / Total Fortune Brands"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Focus on commodity prices and foreign exchange highlights risks but doesn't indicate overall positive or negative trend.",
+        "confidence": 0.55
+      }
+    }
+  ]
+}

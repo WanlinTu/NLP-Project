@@ -1,0 +1,225 @@
+{
+  "ticker": "FLR",
+  "form": "10-Q",
+  "filing_date": "2020-10-22",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 13,
+  "factors": [
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is negative, with significant operating cash outflows.",
+      "evidence": [
+        {
+          "text": "The decline in operating cash flow resulted primarily from a higher level of working capital outflows in 2020 compared to 2019.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Negative free cash flow indicates financial strain and significant operating outflows.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are creating translation gains and losses, affecting cash held by foreign subsidiaries.",
+      "evidence": [
+        {
+          "text": "During the three months ended March\u00a031, 2020, most major foreign currencies weakened against the U.S. dollar resulting in unrealized translation losses of $111\u00a0million, of which $63\u00a0million related to cash held by foreign subsidiaries.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Translation losses from currency movements affect cash held by foreign subsidiaries, indicating financial instability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is decelerating due to the economic impacts of COVID-19 and commodity price declines.",
+      "evidence": [
+        {
+          "text": "Our business has been adversely affected by the economic impacts of the outbreak of COVID-19 and the steep decline in commodity prices that occurred in the early part of 2020. Both of these events have created significant uncertainty and economic volatility and disruption, which have impacted and may continue to impact our business.",
+          "section": "mda",
+          "subsection": "Results of Operations - Comparison of First Quarter 2020 to First Quarter 2019"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Decelerating demand due to economic impacts of COVID-19 and commodity price declines poses significant risks.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards lower-margin segments, negatively impacting overall margins.",
+      "evidence": [
+        {
+          "text": "The change in segment profit margin was primarily attributable to the same factors affecting segment profit. Segment profit in 2020 was adversely affected by the recognition of reserves totaling $55 million for expected credit losses on clients whose credit worthiness deteriorated in 2020, as well as margin diminution on a percentage-of-completion basis of $40 million resulting from project positions taken with respect to COVID-19 related schedule delays and associated cost growth.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Shift towards lower-margin segments negatively impacts overall margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating, particularly in the Energy & Chemicals segment, due to reduced project execution activities.",
+      "evidence": [
+        {
+          "text": "The revenue decline in 2020 was partially offset by the ramp up of project execution activity for a liquefied natural gas project. Segment profit in 2020 was adversely affected by the recognition of reserves totaling $55 million for expected credit losses on clients whose credit worthiness deteriorated in 2020, as well as margin diminution on a percentage-of-completion basis of $40 million resulting from project positions taken with respect to COVID-19 related schedule delays and associated cost growth.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Deceleration in organic growth, particularly in key segments, indicates challenges in expansion.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining in certain segments, particularly Energy & Chemicals, due to reduced project activities.",
+      "evidence": [
+        {
+          "text": "Revenue in 2020 decreased compared to 2019 due to a decline in the volume of project execution activities for certain upstream, downstream and chemicals projects, some nearing completion.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining unit volumes in certain segments due to reduced project activities suggest operational difficulties.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The mining and advanced technologies end markets are growing, while energy and chemicals, infrastructure, and government segments are facing challenges due to reduced demand and project delays.",
+      "evidence": [
+        {
+          "text": "Revenue in 2020 increased compared to 2019 primarily due to increased project execution activities for several mining and advanced technologies projects, partially offset by a decline in a large life sciences project nearing completion. The increase in segment profit margin was the result of an increase in higher margin front-end study work in our mining business, partially offset by a shift in project execution activities for advanced technologies projects to lower margin construction management activities compared to 2019.",
+          "section": "mda",
+          "subsection": "Mining & Industrial"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "While some end markets are growing, others face challenges due to reduced demand and delays, creating an overall negative sentiment.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are creating margin pressure due to project delays and associated cost growth.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2020 was adversely affected by the recognition of reserves totaling $55 million for expected credit losses on clients whose credit worthiness deteriorated in 2020, as well as margin diminution on a percentage-of-completion basis of $40 million resulting from project positions taken with respect to COVID-19 related schedule delays and associated cost growth.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor cost pressures from project delays and cost growth negatively impact margins.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include continued impacts from COVID-19, project cancellations, and economic uncertainty.",
+      "evidence": [
+        {
+          "text": "The impacts are expected to continue or worsen if stay-at-home, social distancing, travel restrictions and other similar orders or restrictions remain in place for an extended period of time or are re-imposed after being relaxed. Significant uncertainty still exists concerning the magnitude of the impact and duration of these events.",
+          "section": "mda",
+          "subsection": "Results of Operations - Comparison of First Quarter 2020 to First Quarter 2019"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include commodity prices, government budgets, and foreign exchange risks.",
+      "evidence": [
+        {
+          "text": "The severity and duration of the COVID-19 pandemic and actions by governments, businesses and individuals in response to the pandemic; The cyclical nature of many of the markets we serve, including our commodity-based business lines, and our clients' vulnerability to downturns, which may result in decreased capital investment or expenditures and reduced demand for our services; Foreign exchange risks.",
+          "section": "mda",
+          "subsection": "CAUTIONARY STATEMENT REGARDING FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The backlog of projects shows mixed trends, with a stable backlog overall but a shrinking backlog in the Energy & Chemicals segment due to project cancellations and scope adjustments.",
+      "evidence": [
+        {
+          "text": "Revenue during 2020 increased compared to 2019 primarily due to increased project execution activities for both the Radford and Warren projects.",
+          "section": "mda",
+          "subsection": "Other"
+        },
+        {
+          "text": "The decrease in backlog during 2020 primarily resulted from the suspension of an Energy & Chemicals project and scope adjustments on two mining projects. As of March 31, 2020, 53% of our backlog consisted of fixed-price or lump-sum contracts compared to 52% as of December 31, 2019.",
+          "section": "mda",
+          "subsection": "Results of Operations - Comparison of First Quarter 2020 to First Quarter 2019"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has implemented cost reduction efforts, including lower compensation expenses and foreign currency gains, but the full impact of these actions is still uncertain due to ongoing challenges.",
+      "evidence": [
+        {
+          "text": "Lower levels of compensation expense were recognized during 2020 primarily due to the deferral of long-term incentive award issuances until the latter half of 2020, as compared to the first quarter of 2019. During 2020, most major foreign currencies weakened against the U.S. dollar resulting in foreign currency exchange gains.",
+          "section": "mda",
+          "subsection": "Other"
+        },
+        {
+          "text": "The company performed interim impairment testing of its goodwill, intangible assets, and investments, recognizing significant charges during the first quarter of 2020, including $298 million for impairments of goodwill, intangible assets, investments, and other assets.",
+          "section": "mda",
+          "subsection": "Results of Operations - Comparison of First Quarter 2020 to First Quarter 2019"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are under pressure and compressing due to multiple factors including impairment charges, project delays, cost growth, and reduced demand.",
+      "evidence": [
+        {
+          "text": "Due to the impact of COVID-19 and decline in commodity prices on our operations through the date of this filing, we performed interim impairment testing of our goodwill, intangibles and certain other investments and recognized impairment charges during the first quarter of 2020 of $169 million, $27 million and $86 million, respectively.",
+          "section": "mda",
+          "subsection": "Critical Accounting Policies and Estimates"
+        },
+        {
+          "text": "The change in segment profit margin was primarily attributable to the same factors affecting segment profit. Segment profit in 2020 was adversely affected by the recognition of reserves totaling $55 million for expected credit losses on clients whose credit worthiness deteriorated in 2020, as well as margin diminution on a percentage-of-completion basis of $40 million resulting from project positions taken with respect to COVID-19 related schedule delays and associated cost growth.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "ticker": "NSC",
+  "form": "10-Q",
+  "filing_date": "2022-10-26",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 10,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed with some areas showing growth and others decline.",
+      "evidence": [
+        {
+          "text": "Volumes fell in both periods as declines in metals and construction and agriculture, forest, and consumer products shipments more than offset higher automotive shipments in the third quarter and chemicals shipments in the first nine months.",
+          "section": "mda",
+          "subsection": "Merchandise"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand trends are mixed with some areas showing growth and others decline.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining slightly, with specific decreases in certain commodity groups.",
+      "evidence": [
+        {
+          "text": "Units decreased in both periods for Merchandise, Intermodal, and Metals and Construction, though Coal saw an increase.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Unit volumes are declining slightly, with specific decreases in certain commodity groups.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is successfully raising prices, supported by higher fuel surcharge revenues and pricing gains.",
+      "evidence": [
+        {
+          "text": "Higher fuel surcharge revenues, resulting from higher fuel commodity prices, and pricing gains led to revenue per unit growth that more than offset the impact of lower volume.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is successfully raising prices, supported by higher fuel surcharge revenues and pricing gains.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly fuel expenses, are rising significantly due to higher fuel prices.",
+      "evidence": [
+        {
+          "text": "Fuel expense increased in both periods due to higher locomotive fuel prices, up 88% in the third quarter and 91% in the first nine months.",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Input costs, particularly fuel expenses, are rising significantly due to higher fuel prices.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing due to higher wages and benefits, putting pressure on margins.",
+      "evidence": [
+        {
+          "text": "Compensation and benefits expense increased in both periods, driven by higher pay rates, employee activity levels, overtime, and other factors.",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing due to higher wages and benefits, putting pressure on margins.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are under pressure due to higher input and labor costs, despite revenue growth.",
+      "evidence": [
+        {
+          "text": "The rise in revenues was partly offset by increased railway operating expenses, driven by higher fuel prices, increased labor-related costs, and other inflationary pressures.",
+          "section": "mda",
+          "subsection": "SUMMARIZED RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Gross and operating margins are under pressure due to higher input and labor costs, despite revenue growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions present a mixed environment with strong consumer demand in some areas but challenges like inflation and supply chain constraints.",
+      "evidence": [
+        {
+          "text": "The U.S. economy is being driven by transportation of goods, but the company faces higher inflation-related operating expenses and service-related costs.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Economic conditions present a mixed environment with strong consumer demand in some areas but challenges like inflation and supply chain constraints.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are tense with ongoing negotiations and potential strike risks.",
+      "evidence": [
+        {
+          "text": "Approximately 80% of our railroad employees are covered by collective bargaining agreements... Some of these agreements have since been finalized through ratification by union membership, but others are still subject to ratification. Two labor unions did not initially ratify their tentative agreements...",
+          "section": "mda",
+          "subsection": "Labor Agreements"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor relations are tense with ongoing negotiations and potential strike risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is likely facing challenges in talent retention due to labor union pressures and potential disruptions.",
+      "evidence": [
+        {
+          "text": "Labor relations are tense with ongoing negotiations and potential strike risks, which could impact the company's ability to retain talent.",
+          "section": "mda",
+          "subsection": "Labor Agreements"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant challenges in talent retention due to labor union pressures and potential disruptions, indicating a major risk.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization may be fluctuating due to service disruptions and equipment cycle times.",
+      "evidence": [
+        {
+          "text": "Domestic volume declined in both periods due to service disruptions and terminal congestion. International volume decreased in both periods as supply chain constraints, equipment shortages, as well as excess retail inventory which more than offset strong consumer demand.",
+          "section": "mda",
+          "subsection": "Intermodal"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Capacity utilization is negatively impacted by service disruptions, equipment shortages, and supply chain constraints, leading to declining trends.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

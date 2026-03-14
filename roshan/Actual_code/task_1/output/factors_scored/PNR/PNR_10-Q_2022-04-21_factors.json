@@ -1,0 +1,128 @@
+{
+  "ticker": "PNR",
+  "form": "10-Q",
+  "filing_date": "2022-04-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 7,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is seasonal with peaks in certain markets, particularly influenced by weather patterns.",
+      "evidence": [
+        {
+          "text": "End-user demand for pool and certain pumping equipment follows warm weather trends and historically has been at seasonal highs from April to August.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Seasonal demand patterns indicate stability rather than significant positive or negative trends.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "Seasonal demand patterns and weather impacts certain end markets, particularly pool and water systems.",
+      "evidence": [
+        {
+          "text": "Demand for residential and agricultural water systems is also impacted by weather patterns, particularly by heavy flooding and droughts.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Weather impacts end markets, but this is a predictable and recurring factor without clear directional signal.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has increased leverage due to the Manitowoc Ice acquisition, raising concerns about financial stability.",
+      "evidence": [
+        {
+          "text": "As of March 31, 2022, we had $1,091.1 million of total debt on a consolidated basis. We expect our indebtedness to increase materially in connection with our acquisition of Manitowoc Ice.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased leverage due to acquisition raises concerns about financial stability.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company continues to pay dividends but has not repurchased shares recently.",
+      "evidence": [
+        {
+          "text": "During the three months ended March 31, 2022, no ordinary shares were repurchased. We paid dividends in the first three months of 2022 of $34.7 million.",
+          "section": "mda",
+          "subsection": "Debt and Capital"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Dividends are paid, but no recent share repurchases indicate no strong positive or negative trend.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is negative but expected to improve.",
+      "evidence": [
+        {
+          "text": "Free cash flow from continuing operations was (149.2) million in the first quarter of 2022.",
+          "section": "mda",
+          "subsection": "Free Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Negative free cash flow is expected to improve, indicating a positive outlook.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is pursuing the Manitowoc Ice acquisition, which carries integration and financial risks.",
+      "evidence": [
+        {
+          "text": "We may not realize the anticipated benefits of the Manitowoc Ice acquisition and any benefit may take longer to realize than we expect.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Acquisition carries integration and financial risks, posing a headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Increased leverage and integration challenges pose risks to the company's financial health.",
+      "evidence": [
+        {
+          "text": "Increased leverage may harm our financial condition and results of operations.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased leverage and integration challenges pose significant risks to financial health.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "ticker": "LDOS",
+  "form": "10-Q",
+  "filing_date": "2022-11-01",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 24,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining its shareholder returns through consistent dividend payments and stock repurchases.",
+      "evidence": [
+        {
+          "text": "We paid dividends of $49 million and $149 million during the three and nine months ended September\u00a030, 2022, respectively, and $51 million and $149 million during the three and nine months ended October\u00a01, 2021, respectively. Stock repurchases of Leidos common stock may be made on the open market or in privately negotiated transactions with third parties including through accelerated share repurchase agreements.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is consistently paying dividends and repurchasing stock, indicating strong shareholder value management.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is improving as net cash provided by operating activities has increased compared to the prior year.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities increased $183\u00a0million and $60\u00a0million during the three and nine months ended September\u00a030, 2022, respectively, when compared to the prior year.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Net cash from operating activities has increased, showing improved cash generation.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is not significantly increasing capital expenditures, as there is no mention of substantial CapEx plans in the provided text.",
+      "evidence": [
+        {
+          "text": "Net cash used in investing activities decreased $27\u00a0million for the three months ended September\u00a030, 2022, when compared to the prior year quarter, primarily due to net cash paid used to acquire an immaterial strategic business in the prior year quarter.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant CapEx plans are mentioned, suggesting stable investment levels.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company is facing challenges due to the overall economic environment, particularly concerning the uncertainty around the TCJA provision and the potential impact of COVID-19 on the financial markets.",
+      "evidence": [
+        {
+          "text": "The uncertainty surrounding the TCJA provision and the potential for COVID-19 to continue to affect the financial markets may impact our liquidity. If the 2022 effective date of the TCJA research cost capitalization provision remains in place, our initial assessment indicates our income taxes payable and net deferred tax assets will each increase by approximately $150 million in fiscal 2022, and the related negative impact to cash will be realized in fiscal 2023.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Uncertainty around tax provisions and COVID-19 impacts pose risks to liquidity.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The company's interest expense may increase due to the transition away from LIBOR to an alternative benchmark rate.",
+      "evidence": [
+        {
+          "text": "Although our Credit Facilities include mechanics to facilitate the adoption by us and our lenders of an alternative benchmark rate for use in place of LIBOR, no assurance can be made that such alternative benchmark rate will perform in a manner similar to LIBOR or result in interest rates that are at least as favorable to us as those that would have resulted had LIBOR remained in effect, which could result in an increase in our interest expense and other debt service obligations.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential increase in interest expense due to LIBOR transition could strain financials.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company has exposure to foreign exchange movements, particularly related to LIBOR's discontinuation and the transition to an alternative benchmark rate.",
+      "evidence": [
+        {
+          "text": "On July 27, 2017, the U.K.\u2019s Financial Conduct Authority announced that LIBOR would be discontinued or become unavailable as a reference rate by the end of 2021 and LIBOR will be fully discontinued or become unavailable as a benchmark rate by June 2023.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "LIBOR discontinuation may affect benchmark rates, but no direct FX impact is evident.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand appears stable with slight growth in certain areas.",
+      "evidence": [
+        {
+          "text": "The increase in revenues for the three and nine months ended September 30, 2022, was primarily attributable to program wins and a net increase in volumes on certain programs.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Slight growth in demand with program wins and volume increases.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Backlog is growing, with new orders outpacing revenue.",
+      "evidence": [
+        {
+          "text": "We recorded net bookings worth an estimated $4.1 billion and $11.6 billion during the three and nine months ended September 30, 2022.",
+          "section": "mda",
+          "subsection": "Bookings and Backlog"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing backlog suggests strong future revenue potential.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments in Civil and lower-margin in Health.",
+      "evidence": [
+        {
+          "text": "The increase in operating margin for the Civil segment was primarily due to a net increase in program volumes, while the Health segment saw a decrease in operating margin due to lower volumes on higher margin programs.",
+          "section": "mda",
+          "subsection": "Item\u00a02. Management's Discussion and Analysis of Financial Condition and Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting towards higher-margin segments, indicating improved profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is stable with slight acceleration in certain areas.",
+      "evidence": [
+        {
+          "text": "The increase in revenues for the three and nine months ended September 30, 2022, was primarily attributable to program wins and a net increase in volumes on certain programs.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Organic growth is stable with slight acceleration, suggesting a positive trend in business performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volumes are growing across most segments, contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "The increase in revenues for the three and nine months ended September 30, 2022, was primarily attributable to a net increase in program volumes on certain programs.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Volumes are growing across most segments, contributing to overall revenue growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The Civil segment is growing fastest, while Health is experiencing some decline.",
+      "evidence": [
+        {
+          "text": "The Civil segment experienced a significant increase in operating income, while the Health segment saw a decrease in operating margin due to lower volumes on higher margin programs.",
+          "section": "mda",
+          "subsection": "Item\u00a02. Management's Discussion and Analysis of Financial Condition and Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The Civil segment is growing fastest, driving overall momentum despite Health's decline.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are stable, with some impact from tariffs which are partially recoverable.",
+      "evidence": [
+        {
+          "text": "Changes in international trade policies, including higher tariffs on imported goods and materials, may increase our procurement costs... However, we expect to recover certain portions of these higher tariffs through our cost-plus contracts.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Input costs are stable, with partial recoverability from tariffs, indicating no significant impact.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include ongoing impacts from the COVID-19 pandemic and potential government budget delays.",
+      "evidence": [
+        {
+          "text": "The COVID-19 pandemic did not have a material impact on revenues and operating income... However, the full extent of the impact... cannot be predicted.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include ongoing COVID-19 impacts and potential budget delays, posing challenges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include government budgets, international trade policies, and tariffs.",
+      "evidence": [
+        {
+          "text": "Our business performance is affected by the overall level of U.S. government spending... Changes in international trade policies... may increase our procurement costs.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Key sensitivities are present but not clearly positive or negative without further context.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Government defense budgets are a significant factor, with the U.S. government being the primary customer.",
+      "evidence": [
+        {
+          "text": "Our business performance is affected by the overall level of U.S. government spending, especially on national security, homeland security, and intelligence.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Government defense budgets are significant but without specific trends, sentiment is neutral.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Contract backlog is growing, with new wins outpacing completions.",
+      "evidence": [
+        {
+          "text": "We recorded net bookings worth an estimated $4.1 billion and $11.6 billion during the three and nine months ended September 30, 2022.",
+          "section": "mda",
+          "subsection": "Bookings and Backlog"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The contract backlog is growing, indicating increased business activity and potential future revenue.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "International sales are stable, with some exposure to geopolitical risks.",
+      "evidence": [
+        {
+          "text": "Sales to customers in international markets represented approximately 8% of total revenues... Our international business increases our exposure to international markets and the associated international regulatory and geopolitical risks.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "International sales are stable but come with geopolitical risks, which do not clearly indicate a positive or negative trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, such as vaccine mandates and tax legislation, are impacting operations.",
+      "evidence": [
+        {
+          "text": "On September 9, 2021, President Biden issued a series of executive orders to combat COVID-19... These are currently under a nationwide injunction... We are prepared to comply... Additionally, regulatory changes related to tax legislation are affecting our financial planning.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes like vaccine mandates and tax legislation are creating challenges and impacting operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs are increasing procurement costs but partially recoverable through cost-plus contracts.",
+      "evidence": [
+        {
+          "text": "Changes in international trade policies, including higher tariffs on imported goods and materials, may increase our procurement costs... However, we expect to recover certain portions of these higher tariffs through our cost-plus contracts.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While trade tariffs increase procurement costs, partial recovery through cost-plus contracts mitigates the negative impact.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisition activity is contributing to growth, with some impact from integration costs.",
+      "evidence": [
+        {
+          "text": "The increase in revenues for the nine months ended September 30, 2022, was partially attributable to a $42 million net increase in revenue related to our acquisitions made in the second and third quarters of the prior year.",
+          "section": "mda",
+          "subsection": "Item\u00a02. Management's Discussion and Analysis of Financial Condition and Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Acquisition activity is contributing to growth, despite some integration costs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is mixed, with stable operating margins reported in the Statements of Income section, while the Results of Operations indicate compressing margins due to factors such as net write-downs and higher costs.",
+      "evidence": [
+        {
+          "text": "Net income attributable to Leidos common stockholders 165",
+          "section": "mda",
+          "subsection": "Statements of Income / Contractual Obligations and Commitments"
+        },
+        {
+          "text": "The decrease in operating income for the three and nine months ended September 30, 2022, was primarily attributable to net write-downs, the completion of certain contracts, and additional general and administrative expenses.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Operating margins are stable, but other factors like net write-downs and higher costs are compressing margins, indicating a negative trend.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Leidos Holdings, Inc. faces significant litigation exposure primarily from an adverse arbitration ruling related to its 2016 acquisition of the IS&GS Business. This exposure has resulted in substantial financial impacts, including payments and increased legal fees, affecting the company's operating income.",
+      "evidence": [
+        {
+          "text": "During the three and nine months ended September\u00a030, 2022, we made a $25 million payment in connection with the adverse arbitration ruling related to the 2016 acquisition of the IS&GS Business from Lockheed Martin, which occurred during the second quarter of fiscal 2022.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        },
+        {
+          "text": "The decrease in operating income for the nine months ended September 30, 2022, was primarily due to a $19 million increase in legal fees and settlement costs resulting from an adverse arbitration ruling related to the 2016 acquisition of the Information Systems & Global Solutions business.",
+          "section": "mda",
+          "subsection": "Item\u00a02. Management's Discussion and Analysis of Financial Condition and Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant litigation exposure from an arbitration ruling has resulted in substantial financial impacts, including payments and increased legal fees, severely affecting operating income.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is showing a trend of deleveraging, as evidenced by decreasing principal payments on long-term debt and a reduction in total long-term debt over the periods reported. However, the liquidity and capital resources section indicates that debt leverage remains stable with no significant changes in the balance sheet, showing a slight decrease from $5.1 billion to $5.0 billion.",
+      "evidence": [
+        {
+          "text": "We made principal payments on our long-term debt of $25 million and $459 million during the three and nine months ended September\u00a030, 2022, respectively, and $27 million and $80 million during the three and nine months ended October\u00a01, 2021, respectively.",
+          "section": "risk_factors",
+          "subsection": "Table of Contents LEIDOS HOLDINGS, INC."
+        },
+        {
+          "text": "Outstanding debt of $5.0 billion and $5.1 billion at September 30, 2022, and December 31, 2021, respectively.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is deleveraging, but debt leverage remains stable, showing only a slight decrease, which is not a clear positive or negative trend.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

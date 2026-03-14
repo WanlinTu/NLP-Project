@@ -1,0 +1,201 @@
+{
+  "ticker": "PWR",
+  "form": "10-K",
+  "filing_date": "2019-02-28",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 11,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are increasing due to higher spending on property, plant, and equipment.",
+      "evidence": [
+        {
+          "text": "Net cash used in investing activities of continuing operations during 2018 included $293.6 million used for capital expenditures; $94.9 million used for acquisitions; $36.9 million of cash paid for investments in unconsolidated affiliates and other entities...",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased capital expenditures indicate investment in growth opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is increasing with higher borrowings under the senior secured credit facility.",
+      "evidence": [
+        {
+          "text": "As of December\u00a031, 2018, we had cash and cash equivalents of $78.7 million and working capital of $1.52 billion. We had $1.07 billion of outstanding loans under our senior secured credit facility...",
+          "section": "mda",
+          "subsection": "Debt Instruments"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher borrowings suggest increased financial risk.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are active with significant stock repurchases and dividend payments.",
+      "evidence": [
+        {
+          "text": "During the years ended December\u00a031, 2018 and 2017, we repurchased 13.9 million and 1.4 million shares of our common stock in the open market at a cost of $451.3 million and $50.0 million, respectively...",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant repurchases and dividends indicate strong shareholder value focus.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is decreasing due to higher operating and investing activities.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities of continuing operations was $358,789 thousand in 2018, down from $371,891 thousand in 2017. Net cash used in investing activities increased to $402,670 thousand in 2018 from $572,084 thousand in 2017...",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreasing free cash flow may limit financial flexibility.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Backlog is growing, particularly in the Electric Power Infrastructure Services segment.",
+      "evidence": [
+        {
+          "text": "We expect this segment\u2019s backlog to remain strong during 2019.",
+          "section": "mda",
+          "subsection": "Electric Power Infrastructure Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing backlog suggests strong demand and future revenue.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End markets are growing, particularly in natural gas distribution and pipeline integrity services.",
+      "evidence": [
+        {
+          "text": "We continue to see growth opportunities in our Pipeline and Industrial Infrastructure Services segment, primarily with respect to services related to natural gas distribution, pipeline integrity, rehabilitation and replacement services.",
+          "section": "mda",
+          "subsection": "Pipeline and Industrial Infrastructure Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Market growth opportunities support positive revenue outlook.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are a challenge due to workforce aging and labor availability issues.",
+      "evidence": [
+        {
+          "text": "Our customers are also seeking additional specialized labor resources to address an aging utility workforce and labor availability issues, increasing pressure to reduce costs and improve reliability, and increasing duration and complexity of customer capital programs.",
+          "section": "mda",
+          "subsection": "Electric Power Infrastructure Services Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor challenges may negatively impact operations and margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic direction is clear and focused on growth opportunities.",
+      "evidence": [
+        {
+          "text": "We believe there are growth opportunities across the industries we serve and continue to have a positive long-term outlook.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Clear, positive long-term strategic focus on growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Strategic acquisitions are being pursued to expand capabilities.",
+      "evidence": [
+        {
+          "text": "We continue to evaluate potential strategic acquisitions and investments to broaden our customer base, expand our geographic area of operations, grow our portfolio of services and increase opportunities across our operations.",
+          "section": "mda",
+          "subsection": "Strategic Acquisitions and Investments"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Evidence shows strategic acquisitions to expand capabilities, indicating growth opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction infrastructure spending is creating growing demand.",
+      "evidence": [
+        {
+          "text": "We believe there are growth opportunities across the industries we serve and continue to have a positive long-term outlook. Favorable end-market drivers have spurred demand for infrastructure services in both our Electric Power Infrastructure Services and Pipeline and Industrial Infrastructure Services segments, and we believe both segments are generally in a multi-year up-cycle.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Favorable end-market drivers and multi-year up-cycle suggest sustained growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is accelerating across multiple segments, driven by increased revenues and higher working capital requirements. The outlook remains positive, with favorable end-market drivers supporting growth opportunities in key industries.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities during 2018 and 2017 were favorably impacted by increases in earnings from continuing operations. However, we had higher working capital requirements during 2018 driven by the increase in 2018 revenues, particularly the increased activity in the fourth quarter of 2018 when compared to the fourth quarter of 2017.",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        },
+        {
+          "text": "We believe there are growth opportunities across the industries we serve and continue to have a positive long-term outlook. Favorable end-market drivers have spurred demand for infrastructure services in both our Electric Power Infrastructure Services and Pipeline and Industrial Infrastructure Services segments, and we believe both segments are generally in a multi-year up-cycle.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Accelerating demand and positive outlook driven by revenue growth and favorable market conditions.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

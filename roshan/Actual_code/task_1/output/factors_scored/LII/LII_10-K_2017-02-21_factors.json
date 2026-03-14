@@ -1,0 +1,879 @@
+{
+  "ticker": "LII",
+  "form": "10-K",
+  "filing_date": "2017-02-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 43,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are increasing, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Net cash used in investing activities increased to $84 million in 2016 from $70 million in 2015, primarily due to an expansion of manufacturing capacity in Residential and Commercial segments and investments in research and test facilities.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing capital expenditures indicate confidence in future growth opportunities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is increasing, with the debt-to-total-capital ratio rising to 95.8% in 2016.",
+      "evidence": [
+        {
+          "text": "Our debt-to-total-capital ratio increased to 95.8% at December 31, 2016 compared to 88.9% at December 31, 2015. The increase is primarily due to higher net borrowings.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising debt-to-total-capital ratio suggests increased financial risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are increasing through higher dividends and share repurchases, signaling management confidence.",
+      "evidence": [
+        {
+          "text": "Dividend payments increased to $69 million in 2016 from $59 million in 2015. Share repurchases totaled $300.0 million in 2016, with an additional $646 million available under programs.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Higher dividends and share repurchases signal management confidence and commitment to shareholders.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, supported by strong operating cash flows.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities increased to $354.5 million in 2016 compared to $331.2 million in 2015, primarily due to higher net income and favorable working capital management.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving free cash flow supports strong financial health and growth potential.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is involved in various claims and lawsuits, including product liability and environmental matters, which could impact its financial condition.",
+      "evidence": [
+        {
+          "text": "We are involved in various claims and lawsuits incidental to our business, including those involving product liability, labor relations, alleged exposure to asbestos-containing materials and environmental matters, some of which claim significant damages. Estimates related to our claims and lawsuits, including estimates for asbestos-related claims and related insurance recoveries, involve numerous uncertainties.",
+          "section": "risk_factors",
+          "subsection": "We are Subject to Litigation and Tax, Environmental and Other Regulations that Could Have an Adverse Effect on Our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Involvement in multiple claims and lawsuits poses financial and operational risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly environmental and energy efficiency standards, could impact the company's product development and sales.",
+      "evidence": [
+        {
+          "text": "Changes in environmental and energy efficiency standards and regulations, such as the recent amendments to the Montreal Protocol to phase down the use of hydrofluorocarbons, may particularly have a significant impact on the types of products that we are allowed to develop and sell, and the types of products that are developed and sold by our competitors.",
+          "section": "risk_factors",
+          "subsection": "Changes in Legislation or Government Regulations or Policies Can Have a Significant Impact on Our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "New regulations could impose constraints on product development and sales.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company's ability to attract and retain critical talent is crucial, but the text does not explicitly address current retention strategies or challenges.",
+      "evidence": [
+        {
+          "text": "We are engaged in various manufacturing rationalization actions designed to achieve our strategic priorities of manufacturing sourcing and distribution excellence and of lowering our cost structure. For example, we are continuing to reorganize our North American distribution network in order to better serve our customers' needs by deploying parts and equipment inventory closer to them and are expanding our sourcing activities outside of the U.S. We also continue to rationalize and reorganize various support and administrative functions in order to reduce ongoing selling and administrative expenses.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit information on current retention strategies or challenges.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations may impose additional costs and operational constraints on the company, particularly with changes like the Montreal Protocol amendments.",
+      "evidence": [
+        {
+          "text": "Changes in environmental and energy efficiency standards and regulations, such as the recent amendments to the Montreal Protocol to phase down the use of hydrofluorocarbons, may particularly have a significant impact on the types of products that we are allowed to develop and sell, and the types of products that are developed and sold by our competitors.",
+          "section": "risk_factors",
+          "subsection": "Changes in Legislation or Government Regulations or Policies Can Have a Significant Impact on Our Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential additional costs and operational constraints from environmental regulations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is growing, with new orders outpacing revenue.",
+      "evidence": [
+        {
+          "text": "The Residential Heating & Cooling segment led our overall financial performance in 2016, with a 7.2% increase in net sales and a $70 million increase in segment profit compared to 2015. This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is stable with normal lead times.",
+      "evidence": [
+        {
+          "text": "No specific information on supply chain disruptions or lead times.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are normalizing.",
+      "evidence": [
+        {
+          "text": "No specific mention of inventory levels in the provided text.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "No significant quality or safety issues reported.",
+      "evidence": [
+        {
+          "text": "No notable incidents or recalls mentioned in the text.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has maintained forward guidance for revenue and margins.",
+      "evidence": [
+        {
+          "text": "No specific forward guidance provided in the text.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic direction is clear with investments in distribution and productivity.",
+      "evidence": [
+        {
+          "text": "We expect our effective tax rate to be approximately 32% in future years due to sustainable benefits from reorganization of our international subsidiaries that will enable us to utilize foreign tax credits and other benefits.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "New product launches and cost savings initiatives are catalysts for improvement.",
+      "evidence": [
+        {
+          "text": "We expect our effective tax rate to be approximately 32% in future years due to sustainable benefits from reorganization of our international subsidiaries that will enable us to utilize foreign tax credits and other benefits.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "equipment_replacement",
+      "category": "industrial_infrastructure",
+      "summary": "Equipment replacement cycles are accelerating due to market growth and favorable pricing.",
+      "evidence": [
+        {
+          "text": "This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "dealer_channel",
+      "category": "industrial_infrastructure",
+      "summary": "Dealer/distributor inventory levels are healthy, supporting growing demand.",
+      "evidence": [
+        {
+          "text": "The demand for our products and services is seasonal and significantly impacted by the weather. Warmer than normal summer temperatures generate demand for replacement air conditioning and refrigeration products and services, and colder than normal winter temperatures have a similar effect on heating products and services.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Healthy dealer/distributor inventory levels support growing demand, indicating a positive sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is gaining market share in Residential Heating & Cooling and Commercial Heating & Cooling segments.",
+      "evidence": [
+        {
+          "text": "This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains. Our Commercial Heating & Cooling segment also performed well in 2016 with a 3.5% increase in net sales and a $19 million increase in segment profit compared to 2015. This segment's results benefited from market growth in North America and material cost savings.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is gaining market share in key segments, which is a clear positive indicator.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive environment is intensifying with market share gains.",
+      "evidence": [
+        {
+          "text": "This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The competitive environment is intensifying, but there's no explicit indication of a positive or negative outcome, so it's neutral.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "Competitive advantages are maintained through technology and market share gains.",
+      "evidence": [
+        {
+          "text": "This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Maintaining competitive advantages through technology and market share gains supports a positive sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer diversification is improving, reducing dependence on a few large customers.",
+      "evidence": [
+        {
+          "text": "No specific information on customer concentration or diversification.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information is provided on customer concentration, making it neutral.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "No significant geopolitical risks mentioned.",
+      "evidence": [
+        {
+          "text": "No specific information on geopolitical risks in the provided text.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant geopolitical risks are mentioned, so it's neutral.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are generally stable with some variability across segments and seasonal fluctuations. While certain segments like Residential Heating & Cooling saw positive growth driven by industry expansion and market share gains, there are factors such as seasonal weather patterns that can influence demand.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling net sales increased 8% in 2015 compared to 2014 driven by strong volume increases and favorable price and mix.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "Warmer than normal summer temperatures generate demand for replacement air conditioning and refrigeration products and services, and colder than normal winter temperatures have a similar effect on heating products and services. Conversely, cooler than normal summers and warmer than normal winters depress the demand for HVACR products and services.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand trends are generally stable with some variability and seasonal fluctuations, which doesn't clearly indicate a positive or negative sentiment.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Commodity prices, foreign exchange rates, and interest rates are key sensitivities that impact the company's financial performance. Commodity price fluctuations affect futures contracts, interest rate changes influence pre-tax interest expense, and foreign exchange rate variations impact net sales and income.",
+      "evidence": [
+        {
+          "text": "Fluctuations in metal commodity prices impact the value of the futures contracts that we hold...",
+          "section": "mda",
+          "subsection": "Market Risk"
+        },
+        {
+          "text": "A 10% adverse movement in the levels of interest rates across the entire yield curve would have resulted in an increase to pre-tax interest expense...",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "A 10% change in foreign exchange rates would have had an estimated $4.0 million and $2.5 million impact to net income...",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Changes in foreign currency exchange rates unfavorably impacted net sales by 1% in Residential Heating & Cooling...",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Lower material costs contributed to profit increases in multiple segments...",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "The principal raw materials used in our manufacturing processes are steel, copper and aluminum...",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While key sensitivities like commodity prices and exchange rates are mentioned, they don't indicate a clear positive or negative sentiment on their own.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The impact of interest rate changes on the company is mixed. While higher interest rates have increased pre-tax interest expense, lower borrowing costs have benefited the company by reducing net interest expense.",
+      "evidence": [
+        {
+          "text": "A 10% adverse movement in the levels of interest rates across the entire yield curve would have resulted in an increase to pre-tax interest expense of approximately $2.0 million and $2.1 million for the years ended December 31, 2016 and 2015, respectively.",
+          "section": "mda",
+          "subsection": "Market Risk"
+        },
+        {
+          "text": "Our sales in the residential and commercial new construction markets correlate to the number of new homes and buildings that are built, which in turn is influenced by cyclical factors such as interest rates, inflation, availability of financing, consumer spending habits and confidence, employment rates and other macroeconomic factors over which we have no control.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        },
+        {
+          "text": "Net interest expense of $27 million in 2016 increased from $24 million in 2015 primarily due to an increase in our average borrowings.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The impact of interest rate changes is mixed, with both positive and negative effects observed.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company faces foreign exchange rate risks that could impact net income, with evidence showing a 10% change in rates affecting net income by $4.0 million in 2016 and $2.5 million in 2015. Additionally, fluctuations in currency exchange rates, especially the strengthening of the U.S. dollar, may negatively affect financial results by impacting net operating revenues, operating income, and the value of foreign-denominated balance sheet items. However, the geographic diversity of operations could somewhat mitigate currency weaknesses, though the company cannot assure that such fluctuations won't have a material effect.",
+      "evidence": [
+        {
+          "text": "A 10% change in foreign exchange rates would have had an estimated $4.0 million and $2.5 million impact to net income for the years ended December 31, 2016 and 2015, respectively.",
+          "section": "mda",
+          "subsection": "Market Risk"
+        },
+        {
+          "text": "Increases or decreases in the value of the U.S. dollar relative to other currencies may affect our net operating revenues, operating income and the value of balance sheet items denominated in foreign currencies.",
+          "section": "risk_factors",
+          "subsection": "Our International Operations Subject Us to Risks Including Foreign Currency Fluctuations, Regulations and Other Risks."
+        },
+        {
+          "text": "Unfavorable foreign exchange rates decreased in 2016 primarily due to stabilization in foreign exchange rates in our primary markets.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces foreign exchange rate risks that could negatively impact net income and financial results.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power, as evidenced by successful price increases contributing to net sales and profit growth. However, there are risks associated with raising prices, particularly in response to raw material cost increases, which could negatively impact the company's competitive position and sales.",
+      "evidence": [
+        {
+          "text": "Benefits of price increases and favorable product mix contributed 2% to Residential Heating & Cooling net sales. Segment profit in 2015 increased $43 million due to $10 million from favorable price and mix.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "If we increase our prices in response to increases in the prices or quantities of raw materials or components or if we encounter significant supply interruptions, our competitive position could be adversely affected, which may result in depressed sales and profitability.",
+          "section": "risk_factors",
+          "subsection": "Price Volatility for Commodities and Components We Purchase or Significant Supply Interruptions Could Have an Adverse Effect on Our Cash Flow or Results of Operations."
+        },
+        {
+          "text": "The gross profit margins increased to 29.6% in 2016 due primarily to favorable price and material cost savings across our business.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company demonstrates strong pricing power, contributing to net sales and profit growth, though there are associated risks.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, particularly in Residential Heating & Cooling, which has contributed to increased segment profits and net sales. This shift is beneficial for the company, driven by industry growth and market share gains.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2015 increased $43 million due to $39 million from material cost savings, $29 million from higher sales volume, and $10 million from favorable price and mix.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "The Residential Heating & Cooling segment led our overall financial performance in 2016, with a 7.2% increase in net sales and a $70 million increase in segment profit compared to 2015. This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The revenue mix is shifting towards higher-margin segments, driving increased segment profits and net sales.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic growth is mixed across different segments, with some areas showing positive growth and others experiencing declines. While the overall trend appears to be accelerating, there are underlying tensions due to varying performance across segments.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling net sales increased 8%, Commercial Heating & Cooling net sales increased 1%, while Refrigeration net sales declined 5%",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "Our future success depends on our continued investment in research and new product development as well as our ability to commercialize new HVACR technological advances in domestic and global markets. If we are unable to continue to timely and successfully develop and market new products, achieve technological advances or extend our business model and technological advances into international markets, our business and results of operations could be adversely impacted.",
+          "section": "risk_factors",
+          "subsection": "If We Cannot Successfully Execute our Business Strategy, Our Results of Operations Could be Adversely Impacted"
+        },
+        {
+          "text": "Net sales increased $174.2 million, or 5%, to $3,642 million in 2016 from $3,467 million in 2015.",
+          "section": "mda",
+          "subsection": "Financial Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Organic growth is mixed across segments, with some areas growing and others declining.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends show mixed performance across different segments. While Residential and Commercial segments experienced growth, the Refrigeration segment saw a decline. Seasonal weather patterns also significantly influence sales, particularly affecting heating and cooling products.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling sales volume increases contributed 7%. Commercial Heating & Cooling net sales increased by 6% due to higher volume. Refrigeration volume growth was 4%, partially offset by unfavorable foreign exchange rates.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "Demand for our products and for our services is seasonal and strongly affected by the weather. Cooler than normal summers depress our sales of replacement air conditioning and refrigeration products and services. Similarly, warmer than normal winters have the same effect on our heating products and services.",
+          "section": "risk_factors",
+          "subsection": "Cooler than Normal Summers and Warmer than Normal Winters May Depress Our Sales."
+        },
+        {
+          "text": "The Residential Heating & Cooling segment led our overall financial performance in 2016, with a 7.2% increase in net sales and a $70 million increase in segment profit compared to 2015. This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains.",
+          "section": "risk_factors",
+          "subsection": "Cooler than Normal Summers and Warmer than Normal Winters May Depress Our Sales."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The Residential Heating & Cooling and Commercial Heating & Cooling segments are showing positive growth, with increases in both net sales and segment profit. However, the Refrigeration segment is experiencing a decline in net sales.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling net sales increased 8%. Commercial Heating & Cooling net sales increased 1%. Refrigeration net sales declined 5%",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "The Residential Heating & Cooling segment led our overall financial performance in 2016, with a 7.2% increase in net sales and a $70 million increase in segment profit compared to 2015. This segment's results benefited from industry growth in the replacement and new construction markets as well as market share gains. Our Commercial Heating & Cooling segment also performed well in 2016 with a 3.5% increase in net sales and a $19 million increase in segment profit compared to 2015. This segment's results benefited from market growth in North America and material cost savings.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive growth in Residential and Commercial segments, though Refrigeration is declining.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company experienced mixed trends in input costs, with some improvement in material costs leading to cost savings, but also faces risks from raw material price volatility and rising costs, partially mitigated by pricing actions and contracts.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2015 increased $43 million due to $39 million from material cost savings. Lower material costs contributed to profit increases in Commercial Heating & Cooling and Refrigeration segments.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "We depend on raw materials, such as steel, copper and aluminum, and components purchased from third parties to manufacture our products. We generally concentrate purchases for a given raw material or component with a small number of suppliers. If a supplier is unable or unwilling to meet our supply requirements, including suffering any disruptions at its facilities or in its supply chain, we could experience supply interruptions or cost increases, either of which could have an adverse effect on our results of operations.",
+          "section": "risk_factors",
+          "subsection": "Price Volatility for Commodities and Components We Purchase or Significant Supply Interruptions Could Have an Adverse Effect on Our Cash Flow or Results of Operations."
+        },
+        {
+          "text": "The principal raw materials used in our manufacturing processes are steel, copper and aluminum. In recent years, pricing volatility for these commodities and related components has impacted us and the HVACR industry in general. We seek to mitigate the impact of commodity price volatility through a combination of pricing actions, commodity contracts, improved production efficiency and cost reduction initiatives. We also partially mitigate volatility in the prices of these commodities by entering into futures contracts and fixed forward contracts.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed trends in input costs with some improvements but risks from volatility and rising costs.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction initiatives have been successful in delivering measurable savings, particularly in material costs.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2015 increased $43 million due to $39 million from material cost savings. Lower material costs also contributed to profit increases in other segments.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "The increase in gross profit was primarily due to increased sales and reductions in our commodities and material costs in 2016 as well as the goodwill and asset impairment charges in 2015.",
+          "section": "mda",
+          "subsection": "Financial Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has successfully implemented cost reduction initiatives, particularly in material costs, leading to measurable savings and profit improvements.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "The company is experiencing margin pressure due to rising labor costs, primarily from wage inflation and increased SG&A expenses across multiple segments. Additionally, a significant portion of the workforce being unionized poses risks of labor stoppages and potential adverse effects on operations.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2015 was partially offset by $10 million of higher distribution expenses, $10 million of SG&A inflation, and $5 million from higher SG&A expenses in other segments.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "As of February 6, 2017, approximately 23% of our workforce, including international locations, was unionized. The results of future negotiations with these unions and the effects of any production interruptions or labor stoppages could have an adverse effect on our results of operations.",
+          "section": "risk_factors",
+          "subsection": "Because a Significant Percentage of Our Workforce is Unionized in Certain Manufacturing Facilities, We Face Risks of Work Stoppages and Other Labor Relations Problems."
+        },
+        {
+          "text": "Selling, general and administrative expenses increased by $41 million in 2016 compared to 2015. As a percentage of net sales, SG&A expenses increased 40 bps from 16.7% to 17.1% in the same periods. The dollar increase in SG&A expenses was principally due to increased incentive compensation and general wage inflation.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs, including wage inflation and increased SG&A expenses, along with unionization risks, pose significant margin pressure.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency has been improving due to productivity gains, with evidence of increased factory productivity contributing to profit margin improvements.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2015 increased $43 million due to $39 million from material cost savings, $29 million from higher sales volume, and $10 million from favorable price and mix. Improved factory productivity and lower warranty and other product costs contributed to profit improvements.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "Increased factory productivity increased our profit margin by 30 bps.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Operational efficiency has improved due to productivity gains, contributing to profit margin increases.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed results. While there are consistent improvements from cost savings and favorable pricing, these gains are partially offset by unfavorable factors such as foreign exchange rates, higher distribution and SG&A expenses, and product warranty costs.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2015 increased $43 million due to $39 million from material cost savings, $29 million from higher sales volume, and $10 million from favorable price and mix. Partially offsetting these increases were $12 million of unfavorable foreign exchange rates, $10 million in higher distribution expenses, $10 million of SG&A inflation, and $3 million due to lower factory absorption and higher warranty expenses.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "Gross profit margins for 2016 increased 230 basis points ('bps') to 29.6% compared to 27.3% in 2015. Lower material costs increased our profit margin by 260 bps, increased factory productivity increased our profit margin by 30 bps, and other items contributed 10 bps. Offsetting these increases were decreases of 20 bps from unfavorable mix, 20 bps from unfavorable foreign currency adjustments, 20 bps for investments in distribution and other growth initiatives, and increased product warranty costs decreased our profit margin by 10 bps.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The margin trajectory shows mixed results with some improvements offset by unfavorable factors like foreign exchange and higher expenses.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The near-term risks primarily involve unfavorable foreign exchange rates and higher expenses, such as SG&A and distribution costs. While foreign exchange rates showed some stabilization in 2016, they remained a significant factor impacting segment profit in 2015. Additionally, economic conditions and other operational expenses continued to pose risks to the company's financial performance.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2015 was partially offset by $12 million of unfavorable foreign exchange rates, $10 million in higher distribution expenses, $10 million of SG&A inflation, and $3 million due to lower factory absorption and higher warranty expenses.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "Unfavorable foreign exchange rates decreased in 2016 primarily due to stabilization in foreign exchange rates in our primary markets.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Unfavorable foreign exchange rates and higher expenses pose near-term risks despite some stabilization.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management confidence is evident through increased dividends and share repurchases, as well as a stable tax rate expectation due to strategic international reorganization.",
+      "evidence": [
+        {
+          "text": "On May 11, 2016, our Board of Directors approved a 20% increase in our quarterly dividend on common stock from $0.36 to $0.43 per share effective with the May 2016 dividend payment. Dividend payments were $69 million in 2016 compared to $59 million in 2015. We also continued to increase shareholder value through our share repurchase programs. In 2016, we returned $300.0 million to our investors through share repurchases. An additional $646 million of repurchases are still available under the programs.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "We expect our effective tax rate to be approximately 32% in future years due to sustainable benefits from reorganization of our international subsidiaries that will enable us to utilize foreign tax credits and other benefits.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2016 Compared to Year Ended December 31, 2015 - Consolidated Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's actions, such as dividend increases and share repurchases, along with stable tax expectations, indicate confidence in the company's future.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic conditions present mixed influences on the company's business. While favorable economic conditions with strong demand in key markets are noted, the U.S. construction industry's performance is subject to cyclical factors such as interest rates and employment, which are beyond the company's control.",
+      "evidence": [
+        {
+          "text": "The demand for our products and services is seasonal and significantly impacted by the weather. Warmer than normal summer temperatures generate demand for replacement air conditioning and refrigeration products and services, and colder than normal winter temperatures have a similar effect on heating products and services.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        },
+        {
+          "text": "Our business is affected by the performance of the U.S. construction industry. Our sales in the residential and commercial new construction markets correlate to the number of new homes and buildings that are built, which in turn is influenced by cyclical factors such as interest rates, inflation, availability of financing, consumer spending habits and confidence, employment rates and other macroeconomic factors over which we have no control.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Economic conditions have mixed influences, with favorable demand but also exposure to cyclical factors beyond the company's control.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction activity is a significant driver of demand for the company's products, particularly in new construction markets. While warmer weather increases demand for replacement products, construction activity is influenced by various macroeconomic factors such as interest rates and employment rates, which can impact the company's financial performance.",
+      "evidence": [
+        {
+          "text": "Residential Heating & Cooling sales volume increases were attributable to industry growth in new construction and replacement markets.",
+          "section": "mda",
+          "subsection": "Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 - Results by Segment"
+        },
+        {
+          "text": "Our sales in the residential and commercial new construction markets correlate to the number of new homes and buildings that are built, which in turn is influenced by cyclical factors such as interest rates, inflation, availability of financing, consumer spending habits and confidence, employment rates and other macroeconomic factors over which we have no control.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        },
+        {
+          "text": "The demand for our products and services is seasonal and significantly impacted by the weather. Warmer than normal summer temperatures generate demand for replacement air conditioning and refrigeration products and services, and colder than normal winter temperatures have a similar effect on heating products and services.",
+          "section": "risk_factors",
+          "subsection": "Our Financial Performance Is Affected by the Conditions of the U.S. Construction Industry."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Construction activity drives demand, but it's influenced by macroeconomic factors, leading to a mixed outlook.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company may engage in strategic acquisitions or relationships, which could pose integration challenges and impact results of operations.",
+      "evidence": [
+        {
+          "text": "From time to time, we may seek to complement or expand our businesses through strategic acquisitions, joint ventures and strategic relationships. The success of these transactions will depend, in part, on our ability to timely identify those relationships, negotiate and close the transactions and then integrate, manage and operate those businesses profitably. If we are unable to successfully do those things, we may not realize the anticipated benefits associated with such transactions, which could adversely affect our business and results of operations.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Successfully Integrate and Operate Businesses that We May Acquire nor Realize the Anticipated Benefits of Strategic Relationships We May Form."
+        },
+        {
+          "text": "From time to time, we may seek to complement or expand our businesses through strategic acquisitions, joint ventures and strategic relationships. The success of these transactions will depend, in part, on our ability to timely identify those relationships, negotiate and close the transactions and then integrate, manage and operate those businesses profitably. If we are unable to successfully do those things, we may not realize the anticipated benefits associated with such transactions, which could adversely affect our business and results of operations.",
+          "section": "risk_factors",
+          "subsection": "We May Not be Able to Successfully Integrate and Operate Businesses that We May Acquire nor Realize the Anticipated Benefits of Strategic Relationships We May Form."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's strategic acquisitions and relationships pose integration challenges and risks to operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "The company's capacity utilization is being positively impacted by the addition of new factories, but there are risks related to production interruptions at single-location facilities which could negatively affect their ability to meet customer demand.",
+      "evidence": [
+        {
+          "text": "The company's manufacturing facilities may face production interruptions, impacting capacity utilization and ability to meet demand.",
+          "section": "risk_factors",
+          "subsection": "Our Ability to Meet Customer Demand may be Limited by Our Single-Location Production Facilities, Reliance on Certain Key Suppliers and Unanticipated Significant Shifts in Customer Demand."
+        },
+        {
+          "text": "We manufacture many of our products at single-location production facilities, and we rely on certain suppliers who also may concentrate production in single locations. Any significant interruptions in production at one or more of our facilities, or at a facility of one of our suppliers, could negatively impact our ability to deliver our products to our customers.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        },
+        {
+          "text": "Capacity utilization is increasing with the addition of new factories.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        },
+        {
+          "text": "and the addition of a second factory in Mexico.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Positive impact from new factories is offset by risks of production interruptions.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "The company faces risks related to its aftermarket service and warranty programs, particularly due to the potential for future costs exceeding estimates. Additionally, the growth of aftermarket/service revenue is not as strong as new equipment sales.",
+      "evidence": [
+        {
+          "text": "For some of our HVAC products, we provide warranty terms ranging from one to 20 years to customers for certain components such as compressors or heat exchangers. For certain limited products, we provided lifetime warranties for heat exchangers. Warranties of such extended lengths pose a risk to us as actual future costs may exceed our current estimates of those costs. Warranty expense is recorded on the date that revenue is recognized and requires significant assumptions about what costs will be incurred in the future. We may be required to record material adjustments to accruals and expense in the future if actual costs for these warranties are different from our assumptions.",
+          "section": "risk_factors",
+          "subsection": "We May Incur Substantial Costs as a Result of Claims Which Could Have an Adverse Effect on Our Results of Operations."
+        },
+        {
+          "text": "No specific information on aftermarket/service revenue growth relative to new equipment sales.",
+          "section": "mda",
+          "subsection": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Risks of warranty costs exceeding estimates and weaker aftermarket revenue growth.",
+        "confidence": 0.75
+      }
+    }
+  ]
+}

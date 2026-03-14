@@ -1,0 +1,613 @@
+{
+  "ticker": "EFX",
+  "form": "10-Q",
+  "filing_date": "2021-07-22",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 32,
+  "factors": [
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is deteriorating due to significant cash outflows from operations and investments.",
+      "evidence": [
+        {
+          "text": "Net cash provided by (used in): Operating activities $ 551.1 $ 282.0 $ 269.1 Investing activities $ (1,095.6) $ (250.9) $ (844.7) Financing activities $ (680.3) $ 916.3 $ (1,596.6)",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Free cash flow is deteriorating significantly due to large outflows from operations and investments.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has a stable debt structure with fixed-rate debt comprising the majority, but there are risks related to variable-rate debt.",
+      "evidence": [
+        {
+          "text": "At June\u00a030, 2021, 92% of our debt was fixed-rate debt and 8% was effectively variable debt. Our variable-rate debt consists of our floating rate notes due in 2021.",
+          "section": "mda",
+          "subsection": "Credit Facility Availability"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "While debt structure is stable, there is notable risk from variable-rate debt.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog or book-to-bill is growing, supported by strong demand in the U.S. mortgage market and international recovery.",
+      "evidence": [
+        {
+          "text": "In the second quarter and first six months of 2021, as efforts to minimize the spread of COVID-19 have been more successful and access to vaccinations has increased, our consolidated revenue grew when compared to 2020, reflecting the continuing strong U.S. mortgage market demand, recovering country economies, Equifax-initiative growth and, to a lesser extent, revenue from acquired companies.",
+          "section": "mda",
+          "subsection": "Recent Events and Company Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Order backlog is growing due to strong demand and market recovery.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has maintained forward guidance, indicating confidence in future growth despite ongoing uncertainties.",
+      "evidence": [
+        {
+          "text": "We expect to continue to incur additional expenses and capital expenditures in the remainder of 2021 related to these initiatives, although at reduced levels compared to those incurred in 2020. We will recognize the expenses and capital expenditures referenced herein as they are incurred.",
+          "section": "mda",
+          "subsection": "Future Costs"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management maintains guidance despite uncertainties, but there's no indication of upward or downward revision.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is confident, as indicated by their commitment to technology transformation and maintaining buybacks and dividends.",
+      "evidence": [
+        {
+          "text": "We repurchased 0.4 million shares of our common stock on the open market for $69.9 million during the first six months of 2021. At June\u00a030, 2021, $520.2 million was available for future purchases of common stock under our share repurchase authorization. We paid out $95.0 million or $0.78 per share in dividends to our shareholders during the first six months of 2021.",
+          "section": "mda",
+          "subsection": "Operational and Financial Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management shows confidence through buybacks and dividend payouts.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, including royalty costs, production costs, and depreciation expenses, which are partially offset by pricing increases.",
+      "evidence": [
+        {
+          "text": "The increases for both periods were primarily due to higher royalty costs, production costs, which include third party cloud usage fees, and people costs, partially offset by lower incremental technology and data security costs.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Input costs are rising, causing margin pressure despite partial offset by pricing.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction and efficiency programs are delivering measurable savings, particularly in technology and data security costs.",
+      "evidence": [
+        {
+          "text": "The impact of changes in foreign exchange rates on costs of services led to an increase of $13.7 million and $24.3 million in the second quarter and first six months of 2021, respectively, compared to the same periods in 2020.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction programs are successfully delivering savings.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing, creating some margin pressure, but are manageable.",
+      "evidence": [
+        {
+          "text": "The increases for both periods were due to increases in people and advertising costs, partially offset by lower incremental technology and data security costs, as well as lower business travel costs for the first six months of 2021.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing, leading to margin pressure.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving due to cost management and operational efficiency gains.",
+      "evidence": [
+        {
+          "text": "The margin increase is due to increased revenue and decreased incremental technology and data security costs, partially offset by increased royalty and production costs, people costs, and depreciation expense.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity is improving due to cost management and operational efficiency gains.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is improving, with recovery from the impacts of COVID-19, particularly in the U.S. and international markets.",
+      "evidence": [
+        {
+          "text": "Local economies continue to recover from negative impacts of COVID-19. The U.S. economy continues its recovery from the economic impact of COVID-19.",
+          "section": "mda",
+          "subsection": "International Operating Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Economic recovery from COVID-19, particularly in the U.S. and international markets, is improving the environment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are slightly benefiting the company with lower average cost of debt.",
+      "evidence": [
+        {
+          "text": "Average cost of debt decreased slightly to 3.4% in 2021 compared to 3.5% in 2020.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Lower average cost of debt due to interest rate changes is benefiting the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are favorably impacting revenue, particularly in international regions.",
+      "evidence": [
+        {
+          "text": "Total revenue was positively impacted by foreign exchange rates, which increased revenue by $26.2 million and $45.4 million, or 3% and 2%, for the second quarter and first six months of 2021, respectively, compared to the same periods in 2020.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Foreign exchange movements are favorably impacting revenue in international regions.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "No significant geopolitical risks are mentioned as impacting the company's results.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant geopolitical risks are mentioned as impacting the company's results.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain health is improving, with no significant disruptions mentioned.",
+      "evidence": [
+        {
+          "text": "No specific mention of supply chain issues or disruptions in the provided text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Supply chain health is improving with no significant disruptions mentioned.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is not explicitly addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capacity utilization is not explicitly addressed in the provided text.",
+        "confidence": 0.3
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are not explicitly addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory levels are not explicitly addressed in the provided text.",
+        "confidence": 0.3
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Product quality and safety are not explicitly mentioned as issues in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No issues mentioned, but no positive information either.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share information is not explicitly provided in the text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit data on market share.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics are not explicitly addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Competitive dynamics not addressed.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "Competitive advantages are not explicitly discussed in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No discussion on competitive advantages.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration is not explicitly mentioned in the text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No mention of customer concentration.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is not explicitly discussed in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No information on R&D investment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Digital technology adoption is not explicitly addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit information on digital technology adoption.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products, such as those from acquisitions, are contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "The increase in the second quarter of 2021 is due to improvements in our core credit decisioning services, acquisition revenue and financial marketing services, partially offset by a slight decrease in mortgage solutions due to declining mortgage inquiry volumes.",
+          "section": "mda",
+          "subsection": "USIS Operating Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "New products are contributing to revenue growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditures are increasing, indicating investment in technology and infrastructure, but are expected to continue at reduced levels compared to 2020, signaling confidence in future growth opportunities.",
+      "evidence": [
+        {
+          "text": "Capital expenditures paid in the first six months of 2021 increased by $42.7 million from the same period in 2020. We are continuing to invest in enhanced technology systems and infrastructure as part of our technology transformation.",
+          "section": "mda",
+          "subsection": "Operating Activities / Capital Expenditures"
+        },
+        {
+          "text": "We expect to continue to incur additional expenses and capital expenditures in the remainder of 2021 related to these initiatives, although at reduced levels compared to those incurred in 2020. We will recognize the expenses and capital expenditures referenced herein as they are incurred.",
+          "section": "mda",
+          "subsection": "Future Costs"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is investing in technology and infrastructure, indicating confidence in future growth despite reduced spending compared to 2020.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is consistently returning capital to shareholders through a combination of share repurchases and dividend payouts, demonstrating confidence in its financial health and commitment to enhancing shareholder value.",
+      "evidence": [
+        {
+          "text": "Treasury stock repurchases $ (69.9) $ \u2014 $ (69.9)",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        },
+        {
+          "text": "Dividends paid to Equifax shareholders $ (95.0) $ (94.6) $ (0.4)",
+          "section": "mda",
+          "subsection": "Operational and Financial Highlights"
+        },
+        {
+          "text": "We repurchased 0.4 million shares of our common stock on the open market for $69.9 million during the first six months of 2021.",
+          "section": "mda",
+          "subsection": "Operational and Financial Highlights"
+        },
+        {
+          "text": "At June\u00a030, 2021, $520.2 million was available for future purchases of common stock under our share repurchase authorization.",
+          "section": "mda",
+          "subsection": "Operational and Financial Highlights"
+        },
+        {
+          "text": "We paid out $95.0 million or $0.78 per share in dividends to our shareholders during the first six months of 2021.",
+          "section": "mda",
+          "subsection": "Operational and Financial Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is consistently returning capital through share repurchases and dividends, showing financial health and commitment to shareholders.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure related to the 2017 cybersecurity incident, with substantial payments already made and more expected. The total recorded legal settlement expenses, net of insurance recoveries, amount to $800.9 million, with $443.6 million already paid and $345.0 million remaining pending final adjudication or dismissal of appeals.",
+      "evidence": [
+        {
+          "text": "Through June\u00a030, 2021, the Company has made payments of $443.6\u00a0million for legal settlements related to the 2017 cybersecurity incident. The remaining $345.0\u00a0million to be paid to the Consumer Restitution Fund will be made after a final adjudication affirming the U.S. Consumer MDL Litigation settlement or dismissal of the pending appeals.",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        },
+        {
+          "text": "As a result of the 2017 cybersecurity incident, we were subject to a significant number of proceedings and investigations as described in Part II, 'Item 1. Legal Proceedings' in this Form 10-Q. To date, we have recorded legal settlement expenses, net of insurance recoveries, of $800.9 million in selling, general, and administrative expenses in our Consolidated Statements of Income (Loss).",
+          "section": "mda",
+          "subsection": "2017 Cybersecurity Incident"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant ongoing legal costs from the 2017 incident pose a substantial financial burden and risk.",
+        "confidence": 0.88
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is accelerating, particularly in the U.S. mortgage market and talent solutions verticals, as economies recover from the impact of the pandemic. This growth is supported by strong performance in Equifax-initiative growth and to a lesser extent, revenue from acquired companies.",
+      "evidence": [
+        {
+          "text": "During 2020, the impact on the operating results in each country in which we operate differed based on the conditions and the vertical markets we serve in that country with the impact of the pandemic experienced most severely by our International business.",
+          "section": "mda",
+          "subsection": "Recent Events and Company Outlook"
+        },
+        {
+          "text": "In the second quarter and first six months of 2021, as efforts to minimize the spread of COVID-19 have been more successful and access to vaccinations has increased, our consolidated revenue grew when compared to 2020, reflecting the continuing strong U.S. mortgage market demand, recovering country economies, Equifax-initiative growth and, to a lesser extent, revenue from acquired companies.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        },
+        {
+          "text": "Revenue increased by $252.0 million, or 26%, and by $507.0 million, or 26%, for the second quarter and first six months of 2021, respectively, compared to the same periods in 2020.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Acceleration in demand across key markets and verticals supports revenue growth and economic recovery.",
+        "confidence": 0.87
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, driven by demand recovery and company initiatives, particularly in the Workforce Solutions, USIS, and International businesses. However, there is a partial offset due to a decline in the GCS segment.",
+      "evidence": [
+        {
+          "text": "In the second quarter and first six months of 2021, as efforts to minimize the spread of COVID-19 have been more successful and access to vaccinations has increased, our consolidated revenue grew when compared to 2020, reflecting the continuing strong U.S. mortgage market demand, recovering country economies, Equifax-initiative growth and, to a lesser extent, revenue from acquired companies.",
+          "section": "mda",
+          "subsection": "Recent Events and Company Outlook"
+        },
+        {
+          "text": "Revenue in the second quarter and first six months of 2021 increased primarily due to growth in Workforce Solutions, USIS and International businesses, partially offset by a decline in GCS.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Organic growth is accelerating across multiple business units, despite some segment declines.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are positive, with growth in transaction counts and unit volumes driven by strong U.S. mortgage market demand and economic recovery. The mortgage vertical has been a key contributor to this growth.",
+      "evidence": [
+        {
+          "text": "In the second quarter and first six months of 2021, as efforts to minimize the spread of COVID-19 have been more successful and access to vaccinations has increased, our consolidated revenue grew when compared to 2020, reflecting the continuing strong U.S. mortgage market demand, recovering country economies, Equifax-initiative growth and, to a lesser extent, revenue from acquired companies.",
+          "section": "mda",
+          "subsection": "Recent Events and Company Outlook"
+        },
+        {
+          "text": "Revenue increased by 57% and 65% in the second quarter and the first six months of 2021, respectively, compared to the same periods in 2020. The increase for both periods is due to strong growth in the mortgage vertical and, to a lesser extent, the talent solutions vertical despite the reduction in mortgage inquiries beginning during the second quarter of 2021.",
+          "section": "mda",
+          "subsection": "Verification Services"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive volume trends driven by strong mortgage market demand and economic recovery indicate growth.",
+        "confidence": 0.89
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is experiencing positive margin expansion, with both gross and operating margins increasing significantly. This improvement is driven by strong revenue growth and effective cost management strategies.",
+      "evidence": [
+        {
+          "text": "Operating margin for the three months ended June 30, 2021 was 24.8% compared to 17.0% in the same period in 2020. Similarly, operating margin for the six months ended June 30, 2021 was 25.0% compared to 15.6% in 2020.",
+          "section": "mda",
+          "subsection": "ITEM 2.\u00a0 MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        },
+        {
+          "text": "Total company operating margin increased by 7.8 percentage points and 9.4 percentage points in the second quarter and first six months of 2021, respectively, compared to the same periods in 2020. The margin increase is due to increased revenue and decreased incremental technology and data security costs, partially offset by increased royalty and production costs, people costs, and depreciation expense.",
+          "section": "mda",
+          "subsection": "Consolidated Financial Results"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant margin expansion due to revenue growth and cost management shows improving profitability.",
+        "confidence": 0.92
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The U.S. market is the fastest-growing end market, contributing significantly to revenue growth. The fastest-growing end markets include the mortgage and talent solutions verticals within Workforce Solutions, as well as the U.S. mortgage market within USIS. These sectors have shown strong growth, particularly in Verification Services, driving overall revenue increases.",
+      "evidence": [
+        {
+          "text": "Approximately 79% and 78% of our revenue was generated in the U.S. during the three months ended June\u00a030, 2021 and 2020, respectively. Approximately 79% and 78% of our revenue was generated in the U.S. during the six months ended June\u00a030, 2021 and 2020, respectively.",
+          "section": "mda",
+          "subsection": "Segment and Geographic Information"
+        },
+        {
+          "text": "Workforce Solutions revenue increased by 40% and 49% in the second quarter and the first six months of 2021, respectively, compared to the same periods in 2020. The increases were due to strong growth in Verification Services driven by growth in both mortgage and non-mortgage verticals.",
+          "section": "mda",
+          "subsection": "Workforce Solutions Operating Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong growth in key U.S. markets and verticals drives overall revenue increases.",
+        "confidence": 0.86
+      }
+    }
+  ]
+}

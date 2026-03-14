@@ -1,0 +1,230 @@
+{
+  "ticker": "HUBB",
+  "form": "10-Q",
+  "filing_date": "2015-04-24",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 13,
+  "factors": [
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management did not provide specific forward guidance in the text.",
+      "evidence": [
+        {
+          "text": "Some of the information included in this Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations, and elsewhere in this Form 10-Q, contain \u201cforward-looking statements\u201d as defined by the Private Securities Litigation Reform Act of 1995.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company mentions forward-looking statements but does not provide specific guidance.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company identifies several key sensitivities including demand trends, market conditions, raw material costs, regulatory changes, and economic conditions.",
+      "evidence": [
+        {
+          "text": "Important factors [...] include changes in demand for our products, market conditions, product quality, or product availability adversely affecting sales levels. [...] Changes in markets or competition [...] Changes in raw materials, purchased components, energy and freight. [...] Regulatory issues, changes in tax laws or changes in geographic profit mix affecting tax rates and availability of tax incentives. [...] General economic and business conditions in particular industries, markets or geographic regions, as well as inflationary trends.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Multiple sensitivities like raw material costs and economic conditions pose risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is expected to improve in some end markets but weaken in others.",
+      "evidence": [
+        {
+          "text": "The aggregate growth for our end markets could range from flat to approximately two percent growth in 2015 led by high single digit growth in the residential market. The non-residential market is expected to grow in the mid-single digit range, industrial market growth is expected to be in the low single digit range, while transmission and distribution products in the utility market are anticipated to grow by one to two percent.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed trends across different end markets.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is expected to increase, driven by higher volumes and market share gains.",
+      "evidence": [
+        {
+          "text": "For 2015, we expect our overall net sales to increase by five to seven percent compared to 2014, with acquisitions contributing mid-single digits. The increase in net sales was due to higher organic volume, contributing four percentage points, and completed acquisitions, contributing four percentage points, offset partially by the impact of foreign currency translation.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Expected increase in organic revenue growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, and the company is facing challenges in offsetting them.",
+      "evidence": [
+        {
+          "text": "Material costs represent a significant portion of our cost of goods sold; therefore volatility in this area can significantly impact profitability. Our goal is to have pricing and productivity programs that offset material and other inflationary cost increases as well as pay for investments in key growth areas.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs pose challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are under pressure and declining due to various factors.",
+      "evidence": [
+        {
+          "text": "The consolidated gross profit margin in the first quarter of 2015 was 31.2% compared to 32.3% in the first quarter of 2014. Gross profit margin for the three months ended March 31, 2015 includes restructuring and related costs in the first quarter of 2015, unfavorable product and business mix, and the unfavorable impact of net pricing, cost increases, and productivity.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margins are declining due to various factors.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring and cost reduction actions are ongoing but are contributing to margin compression.",
+      "evidence": [
+        {
+          "text": "Restructuring actions support our cost reduction efforts involving the consolidation of manufacturing and distribution facilities and workforce reductions. Restructuring-related costs are one-time costs associated with our business transformation initiatives, including the consolidation of back-office functions and streamlining our processes.",
+          "section": "mda",
+          "subsection": "SUMMARY OF CONSOLIDATED RESULTS (IN MILLIONS, EXCEPT PER SHARE DATA):"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring actions are causing margin compression.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity initiatives are being implemented but are not yet showing significant benefits.",
+      "evidence": [
+        {
+          "text": "Value engineering efforts, product transfers and the use of lean process improvement techniques are expected to continue to increase manufacturing efficiency. In addition, we continue to build upon the benefits of our enterprise resource planning system across all functions and have also implemented a sustainability program across the organization.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Productivity initiatives are ongoing but not yet showing significant benefits.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction and infrastructure spending is expected to drive demand growth.",
+      "evidence": [
+        {
+          "text": "The non-residential market is expected to grow in the mid-single digit range, industrial market growth is expected to be in the low single digit range, while transmission and distribution products in the utility market are anticipated to grow by one to two percent.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Construction and infrastructure spending is expected to drive demand growth, indicating a positive outlook.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisition activity is ongoing and contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "During the first three months of 2015, the Company completed the acquisitions of Acme,Turner and EC&M for $ 126.5 million, net of cash received. The Company continues to assess opportunities to expand sales through acquisitions of businesses that fill product line gaps or allow for expansion into new markets.",
+          "section": "mda",
+          "subsection": "Investments in the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Ongoing acquisition activity is contributing to revenue growth, which is a positive sign.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt levels are stable, with net debt showing improvement.",
+      "evidence": [
+        {
+          "text": "Net debt to total capital was 5% at March 31, 2015, compared to (4)% at December 31, 2014. Total debt to total capital remained stable at 24%.",
+          "section": "mda",
+          "subsection": "Debt to Capital"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Net debt to total capital improved slightly, but total debt remained stable, showing no clear positive or negative trend.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are being prioritized with a stock repurchase program.",
+      "evidence": [
+        {
+          "text": "Depending upon numerous factors, including market conditions and alternative uses of cash, we may conduct discretionary repurchases through open market and privately negotiated transactions during our normal trading windows.",
+          "section": "mda",
+          "subsection": "Stock Repurchase Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "A stock repurchase program indicates prioritization of shareholder returns, which is positive.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is expected to be strong, supporting future investments and returns.",
+      "evidence": [
+        {
+          "text": "We anticipate that our free cash flow (defined as cash flows from operations less capital expenditures) to be approximately 90% of net income and will include the impact of increased spending in 2015 on restructuring and related activities as well as higher capital spending on new product development.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong free cash flow generation supports future investments and returns, signaling a positive outlook.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

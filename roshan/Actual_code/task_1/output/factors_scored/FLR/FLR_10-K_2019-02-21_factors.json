@@ -1,0 +1,687 @@
+{
+  "ticker": "FLR",
+  "form": "10-K",
+  "filing_date": "2019-02-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 29,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are increasing.",
+      "evidence": [
+        {
+          "text": "Capital expenditures of $211 million, $283 million, and $236 million during 2018, 2017, and 2016, respectively, primarily related to construction equipment associated with equipment operations in the Diversified Services segment, as well as expenditures for land, facilities, and investments in information technology.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing capital expenditures indicate investment in growth and expansion.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are maintained through consistent dividend payments.",
+      "evidence": [
+        {
+          "text": "Quarterly cash dividends of $0.21 per share were declared in 2018, 2017, and 2016. Dividends of $119 million were paid during 2018. Dividends of $118 million were paid during both 2017 and 2016.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Consistent dividend payments show a commitment to returning value to shareholders.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is facing intense competition which could potentially lead to a loss in market share.",
+      "evidence": [
+        {
+          "text": "Intense competition in the global engineering, procurement and construction industry could reduce our market share and profits.",
+          "section": "risk_factors",
+          "subsection": "Intense competition in the global engineering, procurement and construction industry could reduce our market share and profits."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intense competition poses a significant risk to market share and profits.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is facing pressure on pricing due to reduced revenue and project execution activity.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2018 and 2017 was adversely affected by charges totaling $133 million and $44 million , respectively, for estimated cost and schedule impacts on a fixed-price, downstream project.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Pressure on pricing due to reduced revenue and project execution indicates weakened pricing power.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are creating pressure with cost growth on projects leading to margin issues.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2018 and 2017 was adversely affected by charges totaling $133 million and $44 million , respectively, for estimated cost and schedule impacts on a fixed-price, downstream project.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Cost growth on projects is causing margin issues, indicating pressure from input costs.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company may incur additional costs to respond to evolving security threats.",
+      "evidence": [
+        {
+          "text": "As these security threats continue to evolve, we may be required to devote additional resources to protect, prevent, detect and respond against such threats.",
+          "section": "risk_factors",
+          "subsection": "Cyber-security breaches of our systems and information technology could adversely impact our ability to operate."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While potential additional costs are a concern, there's no clear indication of immediate impact.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company is dependent on a few significant clients, which poses a risk to its business.",
+      "evidence": [
+        {
+          "text": "A few clients, including the U.S. government, state governments and U.S. and state government agencies, have in the past, and may in the future, account for a significant portion of our revenues in any one year or over a period of several consecutive years, either directly or through participation in a joint venture that serves as a client.",
+          "section": "risk_factors",
+          "subsection": "The loss of one or a few clients could have an adverse effect on us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Dependency on a few significant clients poses a significant business risk.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly related to climate change and trade, could impact the company's operations and market opportunities.",
+      "evidence": [
+        {
+          "text": "New or changing legal requirements, including those relating to climate change, could adversely affect our operating results.",
+          "section": "risk_factors",
+          "subsection": "New or changing legal requirements, including those relating to climate change, could adversely affect our operating results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential adverse effects from regulatory changes could negatively impact operations and opportunities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations and compliance requirements could impose significant costs on the company, affecting its financial performance.",
+      "evidence": [
+        {
+          "text": "Past and future environmental, safety and health regulations could impose significant additional cost on us that reduce our profits.",
+          "section": "risk_factors",
+          "subsection": "Past and future environmental, safety and health regulations could impose significant additional cost on us that reduce our profits."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary indicates that environmental regulations could impose significant costs, which would negatively impact financial performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management confidence is cautious, particularly in the Mining, Industrial, Infrastructure & Power segment due to project cancellations and cost overruns, while the government segment shows more stability.",
+      "evidence": [
+        {
+          "text": "The company does not expect the close-out of these projects to have a material impact on the company's results of operations. The company believes that certain of the customer\u2019s claims are without merit and is vigorously pursuing recovery of the amounts from the customer. Based upon its evaluation as of December 31, 2018, the company does not believe it is probable that a loss will be incurred in excess of amounts reserved for this matter.",
+          "section": "mda",
+          "subsection": "Mining, Industrial, Infrastructure\u00a0& Power"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management is cautious in some segments but shows stability in others, leading to mixed signals.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include potential disputes over costs in power plant projects and foreign currency exchange impacts.",
+      "evidence": [
+        {
+          "text": "The company is currently in a dispute with a customer over costs totaling approximately $110 million that were allegedly incurred by the customer in connection with one of the gas-fired power plant projects discussed above. The customer has withheld payment of certain invoices outstanding as of December 31, 2018 and drew down in January 2019 on a letter of credit issued on behalf of the company. The company believes that certain of the customer\u2019s claims are without merit and is vigorously pursuing recovery of the amounts from the customer. Based upon its evaluation as of December 31, 2018, the company does not believe it is probable that a loss will be incurred in excess of amounts reserved for this matter. During 2017, the company incurred foreign currency exchange losses, while recognizing foreign currency exchange gains in 2016.",
+          "section": "mda",
+          "subsection": "Government"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include disputes and foreign exchange impacts, which could harm financial performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes have had a mixed impact, with lower rates benefiting the company through reduced borrowing costs and increased interest income.",
+      "evidence": [
+        {
+          "text": "Net interest expense was $40 million, $40 million, and $53 million for the years ended December 31, 2018, 2017, and 2016, respectively. An increase in interest expense related to the issuance of $600 million of 4.250% Senior Notes in August 2018 and the payment of a make-whole premium associated with the redemption of $500 million of 3.375% Senior Notes in September 2018 was offset by an increase in interest income from time deposits. The decrease in 2017 was primarily due to an increase in interest income resulting from time deposits entered into during the year as well as a decrease in interest expense resulting from the repayment of Stork's 11.0% Super Senior Notes and borrowings under a revolving line of credit.",
+          "section": "mda",
+          "subsection": "Corporate, Tax and Other Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Lower interest rates have reduced borrowing costs and increased interest income, providing a beneficial tailwind.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation has shown improvement, but there are cautious expectations for future performance. While liquidity is supported by operations and credit facilities, management remains mindful of potential challenges ahead.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities was $162 million, $602 million, and $706 million in 2018, 2017, and 2016, respectively. The decrease in cash provided by operating activities in 2018 resulted primarily from a higher level of working capital outflows during 2018 as compared to the prior year.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "Liquidity is provided by available cash and cash equivalents and marketable securities, cash generated from operations, credit facilities and access to capital markets, including the use of commercial paper. The company has both committed and uncommitted lines of credit available to be used for revolving loans and letters of credit. The company believes that for at least the next 12 months, cash generated from operations, along with its unused credit capacity and cash position, is sufficient to support operating requirements. However, the company regularly reviews its sources and uses of liquidity and may pursue opportunities to increase its liquidity position.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / Liquidity and Financial Condition"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While there's improvement, cautious expectations and potential challenges ahead make the sentiment neutral.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is actively managing its investments in joint ventures and partnerships, with a focus on selective acquisitions and dispositions. However, this activity exposes the company to risks, including challenges in identifying suitable opportunities, successfully integrating acquisitions, and potential unknown liabilities, which could impact the company's ability to realize benefits from these transactions.",
+      "evidence": [
+        {
+          "text": "Investments in unconsolidated partnerships and joint ventures were $73 million, $273 million, and $518 million in 2018, 2017, and 2016, respectively. Investments in 2018 included capital contributions to an infrastructure joint venture in the United States as well as investments in CFHI.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "We have made and expect to continue to pursue selective acquisitions or dispositions of businesses, or investments in strategic business opportunities.",
+          "section": "risk_factors",
+          "subsection": "Any acquisitions, dispositions or other investments may present risks or uncertainties."
+        },
+        {
+          "text": "We cannot provide assurances that we will be able to locate suitable acquisitions or investments, or that we will be able to consummate any such transactions on terms and conditions acceptable to us, or that such transactions will be successful.",
+          "section": "risk_factors",
+          "subsection": "Any acquisitions, dispositions or other investments may present risks or uncertainties."
+        },
+        {
+          "text": "Difficulties we may encounter in the integration/alignment process include [...] potential unknown liabilities and unforeseen increased expenses or delays associated with the acquisition or investment, including the costs to integrate or consolidate beyond current estimates.",
+          "section": "risk_factors",
+          "subsection": "Our results of operations could be adversely affected as a result of asset impairments."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Active management with risks and opportunities suggests a mixed sentiment, hence neutral.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed across the company's segments, with some areas experiencing growth and others facing challenges. The Energy & Chemicals segment saw a revenue decline due to reduced project activity, while the Government and Diversified Services segments showed growth. The Mining, Industrial, Infrastructure & Power segment maintained flat revenue despite fluctuations in project execution. Overall, demand appears stable but is subject to economic and commodity price uncertainties.",
+      "evidence": [
+        {
+          "text": "During 2018, a revenue decline in the Energy & Chemicals segment was partially offset by revenue growth in the Government segment. Revenue in the Mining, Industrial, Infrastructure & Power and Diversified Services segments remained flat compared to 2017.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Revenue in 2018 decreased 10 percent compared to 2017, primarily due to reduced volume of project execution activity for several chemicals and downstream projects that were nearing completion in 2017. This revenue decline was partially offset by an increase in project execution activities for a large upstream project.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "Our backlog is subject to unexpected adjustments and cancellations and, therefore, may not be a reliable indicator of our future revenue or earnings.",
+          "section": "risk_factors",
+          "subsection": "Our backlog is subject to unexpected adjustments and cancellations and, therefore, may not be a reliable indicator of our future revenue or earnings."
+        },
+        {
+          "text": "Revenue in 2018 remained flat compared to 2017. Revenue growth from increased project execution activity for certain existing and recently awarded mining & metals and infrastructure projects was offset by reduced levels of project execution activity for several power projects, including two nuclear projects that were canceled during 2017.",
+          "section": "mda",
+          "subsection": "Mining, Industrial, Infrastructure\u00a0& Power"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand trends across segments indicate a neutral sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is effectively managing its debt leverage through various strategies, including stock repurchase programs, refinancing activities, and maintaining multiple lines of credit. These actions indicate a stable and strategic approach to debt management.",
+      "evidence": [
+        {
+          "text": "The company has a common stock repurchase program... As of December 31, 2018, 10,513,093 shares could still be purchased under the existing stock repurchase program.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "As of December\u00a031, 2018 , the company had both committed and uncommitted lines of credit available to be used for revolving loans and letters of credit. The committed lines of credit include a $1.7\u00a0billion Revolving Loan and Letter of Credit Facility and a $1.8\u00a0billion Revolving Loan and Letter of Credit Facility. Both facilities mature in February 2022.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements"
+        },
+        {
+          "text": "Net interest expense was $40 million, $40 million, and $53 million for the years ended December 31, 2018, 2017, and 2016, respectively. An increase in interest expense related to the issuance of $600 million of 4.250% Senior Notes in August 2018 and the payment of a make-whole premium associated with the redemption of $500 million of 3.375% Senior Notes in September 2018 was offset by an increase in interest income from time deposits. The decrease in 2017 was primarily due to an increase in interest income resulting from time deposits entered into during the year as well as a decrease in interest expense resulting from the repayment of Stork's 11.0% Super Senior Notes and borrowings under a revolving line of credit.",
+          "section": "mda",
+          "subsection": "Corporate, Tax and Other Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Effective management strategies like stock repurchases and refinancing indicate a positive sentiment towards debt leverage.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's backlog orders show mixed trends across different segments. While the Energy & Chemicals segment experienced a growth in backlog orders, driven by new award activity, other segments like Diversified Services saw a decrease. The overall backlog is subject to unexpected adjustments and cancellations, which can make it an unreliable indicator of future revenue.",
+      "evidence": [
+        {
+          "text": "The increase in backlog in 2018 primarily resulted from the new award activity discussed above.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Backlog for the Energy & Chemicals segment was $17.8 billion as of December\u00a031, 2018, $15.1 billion as of December\u00a031, 2017, and $20.5 billion as of December\u00a031, 2016. The increase in backlog during 2018 resulted from the new award activity discussed above.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "Our backlog generally consists of projects for which we have an executed contract or commitment with a client and reflects our expected revenue from the contract or commitment, which is often subject to revision over time.",
+          "section": "risk_factors",
+          "subsection": "Our backlog is subject to unexpected adjustments and cancellations and, therefore, may not be a reliable indicator of our future revenue or earnings."
+        },
+        {
+          "text": "The reduction in backlog during 2018 resulted from scope changes on certain power services projects and the cancellation of the large operations and maintenance project in North America.",
+          "section": "mda",
+          "subsection": "Government"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed trends with growth in one segment offset by declines in others, and potential for adjustments and cancellations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic revenue growth is mixed across different segments. While the Government segment showed strong growth, other segments like Energy & Chemicals and Mining, Industrial, Infrastructure & Power experienced declines or flat performance. External factors and project completions also contributed to the variability in growth.",
+      "evidence": [
+        {
+          "text": "During 2018, a revenue decline in the Energy & Chemicals segment was partially offset by revenue growth in the Government segment. Revenue in the Mining, Industrial, Infrastructure & Power and Diversified Services segments remained flat compared to 2017.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Segment profit in 2018 and 2017 was adversely affected by charges totaling $133 million and $44 million , respectively, for estimated cost and schedule impacts on a fixed-price, downstream project.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "A significant portion of our revenue and profits will continue to come from international projects for the foreseeable future.",
+          "section": "risk_factors",
+          "subsection": "Our businesses could be materially and adversely affected by events outside of our control."
+        },
+        {
+          "text": "Revenue in 2018 increased 17 percent compared to 2017, substantially driven by increased volume of project execution activities for a power restoration project in Puerto Rico, which commenced in the fourth quarter of 2017 and was substantially completed in the first half of 2018.",
+          "section": "mda",
+          "subsection": "Government"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic growth is mixed with some segments declining or flat, indicating moderate headwinds.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end market momentum is mixed across different segments. While the Government segment experienced strong growth driven by power restoration and hurricane relief projects, the Energy & Chemicals segment faced slower growth and a revenue decline due to reduced project execution activity.",
+      "evidence": [
+        {
+          "text": "During 2018, a revenue decline in the Energy & Chemicals segment was partially offset by revenue growth in the Government segment.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Revenue in 2018 decreased 10 percent compared to 2017, primarily due to reduced volume of project execution activity for several chemicals and downstream projects that were nearing completion in 2017.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "Revenue in 2018 increased 17 percent compared to 2017, substantially driven by increased volume of project execution activities for a power restoration project in Puerto Rico, which commenced in the fourth quarter of 2017 and was substantially completed in the first half of 2018. Revenue growth in 2018 also resulted from an increase in hurricane relief efforts for the United States Federal Emergency Management Agency. These increases in revenue in 2018 were partially offset by lower revenue resulting from the substantial completion of the Paducah Gaseous Diffusion Plant project in late 2017.",
+          "section": "mda",
+          "subsection": "Government"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Strong growth in some areas but offset by declines in others, indicating a mixed but slightly negative trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The company's revenue mix is shifting, with evidence indicating a move towards lower-margin segments such as construction activities and power projects, which negatively impacts profitability. However, there are also signs of increased contributions from higher-margin government projects, which partially offsets this trend.",
+      "evidence": [
+        {
+          "text": "As a result of adopting ASC 606 on January 1, 2018, engineering and construction contracts are now generally accounted for as a single unit of account (a single performance obligation), resulting in a more constant recognition of revenue and margin over the term of the contract than under the previous guidance in which the company typically segmented revenue and margin recognition between the engineering and construction phases of its contracts.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Segment profit in 2016 was adversely affected by charges totaling $265 million resulting from cost growth on a petrochemicals project. Normalizing for the adverse effects of the forecast revisions in 2017 and 2016, segment profit declined in 2017 due to lower volume of project execution activity for chemicals projects nearing completion and a continued shift in mix from higher margin engineering to lower margin construction activities.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "Segment profit in 2018 was adversely affected by charges totaling $188 million resulting from forecast revisions for estimated cost growth at a fixed-price, gas-fired power plant project. These charges were largely offset by a gain of $125 million associated with the sale of the company\u2019s interest in a joint venture in the United Kingdom. Segment profit in 2017 was adversely affected by charges totaling $260 million resulting from forecast revisions for estimated cost growth at three fixed-price, gas-fired power plant projects. Excluding the adverse effects of forecast revisions in both 2018 and 2017 and the gain on the sale of the joint venture interest in 2018, segment profit in 2018 declined when compared to 2017. This decline resulted primarily from the reduced volume of project execution activity for the power projects mentioned above, partially offset by the increased project execution activity for the mining & metals and infrastructure projects mentioned above. Segment profit in 2017, excluding the impact of the forecast revisions mentioned above, declined when compared to 2016, primarily due to lower contributions from infrastructure projects.",
+          "section": "mda",
+          "subsection": "Mining, Industrial, Infrastructure\u00a0& Power"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Shift towards lower-margin segments negatively impacts profitability despite some higher-margin contributions.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance across different segments. While some segments experienced stable margins with minor fluctuations, others faced pressures due to project execution challenges, valuation allowances, and potential external factors that could negatively impact profitability.",
+      "evidence": [
+        {
+          "text": "The 2018 effective tax rate was unfavorably impacted due to a $79 million increase in valuation allowances to reduce certain deferred tax assets.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Segment profit margins were (0.3) percent, (2.7) percent, and 3.7 percent in 2018, 2017, and 2016, respectively. The change in segment profit margins in 2018 and 2017 were primarily attributable to the same factors impacting segment profit in those years.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "These developments could have a material adverse effect on our business and our profits.",
+          "section": "risk_factors",
+          "subsection": "Our businesses could be materially and adversely affected by events outside of our control."
+        },
+        {
+          "text": "Segment profit margins were 4.7 percent, 4.0 percent, and 3.1 percent in 2018, 2017, and 2016, respectively. The increases in segment profit margin in both 2018 and 2017 were primarily driven by the same factors that drove the increases in segment profit in both years.",
+          "section": "mda",
+          "subsection": "Government"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance with some stable margins but also pressures from project challenges and valuation changes.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include foreign currency exchange impacts and the resolution of disputes over project costs.",
+      "evidence": [
+        {
+          "text": "Segment profit in 2018 and 2017 was adversely affected by charges totaling $133 million and $44 million , respectively, for estimated cost and schedule impacts on a fixed-price, downstream project.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "Our business is subject to international economic and political conditions that change (sometimes frequently) for reasons which are beyond our control.",
+          "section": "risk_factors",
+          "subsection": "Our businesses could be materially and adversely affected by events outside of our control."
+        },
+        {
+          "text": "The decrease in corporate general and administrative expenses during 2018 was primarily due to foreign currency exchange gains in the 2018 period compared to foreign currency exchange losses in the 2017 period, partially offset by a partial pension settlement charge of $22 million in 2018. During 2017, the company incurred foreign currency exchange losses, while recognizing foreign currency exchange gains in 2016. The impact of the foreign currency losses was substantially offset by lower levels of organizational realignment expenses and compensation during 2017, as well as the inclusion of transaction and integration costs in 2016 associated with the Stork acquisition. The company is currently in a dispute with a customer over costs totaling approximately $110 million that were allegedly incurred by the customer in connection with one of the gas-fired power plant projects discussed above.",
+          "section": "mda",
+          "subsection": "Corporate, Tax and Other Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign currency exchange impacts and unresolved disputes pose risks that could negatively affect profitability.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure across multiple areas, including potential disputes over project costs, contractual issues, cybersecurity risks, and violations of anti-bribery laws. These risks could lead to substantial financial losses, reputational damage, regulatory fines, and operational disruptions.",
+      "evidence": [
+        {
+          "text": "The company faces potential litigation risks, particularly from claims related to project execution and contractual disputes.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements"
+        },
+        {
+          "text": "We may be subject to a variety of legal proceedings, liability claims or contract disputes in virtually every part of the world. We engage in engineering and construction activities for large facilities where design, construction or systems failures can result in substantial injury or damage.",
+          "section": "risk_factors",
+          "subsection": "Cyber-security breaches of our systems and information technology could adversely impact our ability to operate."
+        },
+        {
+          "text": "Any of these events could damage our reputation, result in litigation and regulatory fines and penalties, or have a material adverse effect on our business, financial condition, results of operations or cash flows.",
+          "section": "risk_factors",
+          "subsection": "We could be adversely affected by violations of the U.S. Foreign Corrupt Practices Act and similar worldwide anti-bribery laws."
+        },
+        {
+          "text": "If we are found to be liable for anti-bribery law violations... we could suffer from criminal or civil penalties or other sanctions... which could have a material adverse effect on our business. Litigation or investigations... could be costly and could divert management's attention away from other aspects of our business.",
+          "section": "mda",
+          "subsection": "Mining, Industrial, Infrastructure\u00a0& Power"
+        },
+        {
+          "text": "The company is currently in a dispute with a customer over costs totaling approximately $110 million that were allegedly incurred by the customer in connection with one of the gas-fired power plant projects discussed above. The customer has withheld payment of certain invoices outstanding as of December 31, 2018 and drew down in January 2019 on a letter of credit issued on behalf of the company. The company believes that certain of the customer\u2019s claims are without merit and is vigorously pursuing recovery of the amounts from the customer. Based upon its evaluation as of December 31, 2018, the company does not believe it is probable that a loss will be incurred in excess of amounts reserved for this matter.",
+          "section": "mda",
+          "subsection": "Mining, Industrial, Infrastructure\u00a0& Power"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant exposure to multiple legal risks with potential for substantial financial and reputational damage.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends across different segments show mixed performance, with some areas experiencing increases and others facing declines. The Energy & Chemicals sector saw a 10% revenue decrease due to reduced project activity, while the Mining, Industrial, Infrastructure & Power sector maintained flat revenue despite fluctuations in project execution across various segments.",
+      "evidence": [
+        {
+          "text": "Revenue in 2018 decreased 10 percent compared to 2017, primarily due to reduced volume of project execution activity for several chemicals and downstream projects that were nearing completion in 2017. This revenue decline was partially offset by an increase in project execution activities for a large upstream project.",
+          "section": "mda",
+          "subsection": "Energy & Chemicals"
+        },
+        {
+          "text": "Revenue in 2018 remained flat compared to 2017. Revenue growth from increased project execution activity for certain existing and recently awarded mining & metals and infrastructure projects was offset by reduced levels of project execution activity for several power projects, including two nuclear projects that were canceled during 2017. Revenue in 2017 increased 13 percent compared to 2016 primarily due to increased project execution activity for several life sciences and advanced manufacturing projects and mining & metals projects, partially offset by reduced levels of project execution for the two nuclear projects.",
+          "section": "mda",
+          "subsection": "Mining, Industrial, Infrastructure\u00a0& Power"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed volume trends with declines in some sectors and flat performance in others, indicating a challenging environment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company faces mixed economic conditions, with government projects benefiting from increased activity, particularly in areas like power restoration and hurricane relief, while other segments experience challenges due to project cancellations and reduced demand. Economic instability, including low commodity prices, political uncertainties, and adverse credit conditions, poses risks to the company's operations, demand, and revenue. These factors can lead to project delays, cancellations, and reduced backlog, impacting future revenue and profits.",
+      "evidence": [
+        {
+          "text": "The demand for our services is dependent upon the existence of projects with engineering, procurement, construction, fabrication, maintenance and management needs. Our clients' interest in approving new projects... may in the future, be adversely affected by, among other things, poor economic conditions, low commodity prices, political uncertainties and currency devaluations.",
+          "section": "risk_factors",
+          "subsection": "We are vulnerable to the cyclical nature of the markets we serve."
+        },
+        {
+          "text": "During periods of economic slowdown, or decreases and/or instability in commodity prices, the risk of backlog projects being suspended, delayed or canceled generally increases.",
+          "section": "risk_factors",
+          "subsection": "Our backlog is subject to unexpected adjustments and cancellations and, therefore, may not be a reliable indicator of our future revenue or earnings."
+        },
+        {
+          "text": "Adverse credit and financial market conditions could impair our, our clients' and our partners' borrowing capacity, which could negatively affect our business operations, profits and growth objectives.",
+          "section": "risk_factors",
+          "subsection": "Employee, agent or partner misconduct or our overall failure to comply with laws or regulations could weaken our ability to win contracts, which could result in reduced revenues and profits."
+        },
+        {
+          "text": "Revenue in 2018 increased 17 percent compared to 2017, substantially driven by increased volume of project execution activities for a power restoration project in Puerto Rico, which commenced in the fourth quarter of 2017 and was substantially completed in the first half of 2018. Revenue growth in 2018 also resulted from an increase in hurricane relief efforts for the United States Federal Emergency Management Agency. These increases in revenue in 2018 were partially offset by lower revenue resulting from the substantial completion of the Paducah Gaseous Diffusion Plant project in late 2017. Revenue in 2017 increased 19 percent compared to 2016 primarily due to increases in project execution activities for several large multi-year decommissioning and cleanup projects, as well as the commencement of the power restoration project in Puerto Rico.",
+          "section": "mda",
+          "subsection": "Government"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant risks from mixed economic conditions, including low commodity prices, political uncertainties, and adverse credit conditions, which pose clear threats to operations and revenue.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The company faces risks related to supply chain disruptions, including potential impacts from geopolitical risks, economic instability, and compliance challenges with import and export laws. These factors could lead to operational disruptions and increased security costs, posing significant risks to the company's operations.",
+      "evidence": [
+        {
+          "text": "Operating in the international marketplace exposes us to a number of risks including... disruptions to our operations in the region and elsewhere, and increase our security costs.",
+          "section": "risk_factors",
+          "subsection": "Our businesses could be materially and adversely affected by events outside of our control."
+        },
+        {
+          "text": "We could be adversely impacted if we fail to comply with domestic and international import and export laws.",
+          "section": "risk_factors",
+          "subsection": "We could be adversely impacted if we fail to comply with domestic and international import and export laws."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical risks and compliance challenges threaten supply chain stability, increasing operational disruptions and security costs.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is facing significant challenges in talent retention due to safety risks, high turnover, and difficulties in attracting and retaining qualified personnel, particularly in leadership roles. These issues could impact project execution and operational costs.",
+      "evidence": [
+        {
+          "text": "Unsafe work conditions also have the potential of increasing employee turnover, increasing project costs and raising our operating costs.",
+          "section": "risk_factors",
+          "subsection": "Our employees work on projects that are inherently dangerous and in locations where there are high security risks, and a failure to maintain a safe work site could result in significant losses."
+        },
+        {
+          "text": "The success of our business is dependent upon being able to attract and retain personnel, including engineers, project management and craft employees around the globe, who have the necessary and required experience and expertise, and who will perform these services at a reasonable and competitive rate.",
+          "section": "risk_factors",
+          "subsection": "Our continued success requires us to hire and retain qualified personnel."
+        },
+        {
+          "text": "As some of our executives and other key personnel approach retirement age, we need to provide for smooth transitions, which may require that we devote time and resources to identify and integrate new personnel into these leadership roles and other key positions.",
+          "section": "risk_factors",
+          "subsection": "Our continued success requires us to hire and retain qualified personnel."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Safety risks and high turnover, especially in leadership roles, pose challenges to project execution and operational costs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company faces significant geopolitical risks, including political instability, economic uncertainties, and the impact of changing legal and trade policies in foreign countries, which could adversely affect its operations and supply chain.",
+      "evidence": [
+        {
+          "text": "Our business is subject to international economic and political conditions that change (sometimes frequently) for reasons which are beyond our control. As of December\u00a031, 2018 , approximately 71\u00a0percent of our backlog consisted of revenue to be derived from projects and services to be completed outside the United States.",
+          "section": "risk_factors",
+          "subsection": "Our businesses could be materially and adversely affected by events outside of our control."
+        },
+        {
+          "text": "The implementation of trade barriers, countervailing duties, or border taxes, or the addition, relaxation or repeal of laws, policies and regulations regarding the industries and sectors in which we work could result in a decline in demand for our services, or may make the manner in which we perform our services, especially from outside the United States, less cost efficient.",
+          "section": "risk_factors",
+          "subsection": "New or changing legal requirements, including those relating to climate change, could adversely affect our operating results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant geopolitical risks, including political instability and changing trade policies, could adversely affect operations and supply chain efficiency.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company faces foreign currency risks that could negatively impact its revenue, earnings, and backlog. Additionally, fluctuations in foreign exchange rates have historically affected the company's expenses and profitability, with gains and losses varying year over year.",
+      "evidence": [
+        {
+          "text": "Foreign currency risks could have an adverse impact on company revenue, earnings and/or backlog.",
+          "section": "risk_factors",
+          "subsection": "Foreign currency risks could have an adverse impact on company revenue, earnings and/or backlog."
+        },
+        {
+          "text": "The decrease in corporate general and administrative expenses during 2018 was primarily due to foreign currency exchange gains in the 2018 period compared to foreign currency exchange losses in the 2017 period, partially offset by a partial pension settlement charge of $22 million in 2018. During 2017, the company incurred foreign currency exchange losses, while recognizing foreign currency exchange gains in 2016. The impact of the foreign currency losses was substantially offset by lower levels of organizational realignment expenses and compensation during 2017, as well as the inclusion of transaction and integration costs in 2016 associated with the Stork acquisition.",
+          "section": "mda",
+          "subsection": "Corporate, Tax and Other Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign currency risks negatively impact revenue, earnings, and backlog, with historical fluctuations affecting profitability.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

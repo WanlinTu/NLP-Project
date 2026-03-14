@@ -1,0 +1,262 @@
+{
+  "ticker": "FLR",
+  "form": "10-Q",
+  "filing_date": "2019-10-31",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 15,
+  "factors": [
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation improved compared to the prior year period.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities was $67 million for the nine months ended September 30, 2019 compared to cash utilized by operating activities of $11 million for the corresponding period of the prior year. The increase in cash provided by operating activities resulted from a higher level of working capital inflows in 2019 compared to the prior year period.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow generation improved compared to the prior year period, indicating strong cash flow health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "working_capital",
+      "category": "unknown",
+      "summary": "Working capital decreased significantly during the nine months ended September 30, 2019.",
+      "evidence": [
+        {
+          "text": "During the nine months ended September 30, 2019, working capital significantly decreased. Specific factors related to the change in working capital include: Decreases in accounts receivable, decreases in contract assets, increases in contract liabilities, and decreases in accounts payable.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Working capital decreased significantly, which could signal potential liquidity issues or operational inefficiencies.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capital_expenditure",
+      "category": "unknown",
+      "summary": "Capital expenditures decreased slightly compared to the prior year.",
+      "evidence": [
+        {
+          "text": "Capital expenditures of $140 million and $149 million for the nine months ended September 30, 2019 and 2018, respectively, primarily related to construction equipment associated with equipment operations now included in discontinued operations, as well as expenditures for facilities and investments in information technology.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capital expenditures decreased slightly, but without context on the impact, it's unclear if this is positive or negative.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has committed lines of credit available, with borrowings under these facilities bearing interest at variable rates. There was a reduction in outstanding debt through the redemption of certain senior notes.",
+      "evidence": [
+        {
+          "text": "In September 2018, the company used a portion of the proceeds from the 2018 Notes to fully redeem its $500 million 3.375% Senior Notes (the '2011 Notes') due September 15, 2021. The redemption price of $503 million was equal to 100 percent of the principal amount of the 2011 Notes plus a 'make-whole' premium of $3 million.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Reduction in outstanding debt is positive, but reliance on variable-rate borrowings introduces risk.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "guarantees_commitments",
+      "category": "unknown",
+      "summary": "The company has both committed and uncommitted lines of credit available, with letters of credit and borrowings totaling $1.5 billion outstanding as of September 30, 2019.",
+      "evidence": [
+        {
+          "text": "As of September 30, 2019, the company had both committed and uncommitted lines of credit available to be used for revolving loans and letters of credit. As of September 30, 2019, letters of credit and borrowings totaling $1.5 billion were outstanding under these committed and uncommitted lines of credit.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Having available lines of credit is stable, but significant outstanding borrowings may pose a risk.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring activities are ongoing and expected to deliver savings.",
+      "evidence": [
+        {
+          "text": "The company expects that its restructuring activities will be substantially completed in 2020. Total restructuring and other exit costs of approximately $250 million are expected to be incurred as part of the restructuring plan.",
+          "section": "mda",
+          "subsection": "Impairment, Restructuring and Other Exit Costs"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Restructuring activities are ongoing and expected to deliver savings, but the impact on margins is uncertain.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are under pressure due to various factors, including restructuring costs and project charges.",
+      "evidence": [
+        {
+          "text": "The effective tax rates on earnings (loss) from continuing operations for the three and nine months ended September\u00a030, 2019 were (174.2) percent and (34.3) percent, respectively, compared to 25.8 percent and 27.9 percent for the corresponding periods of 2018. The effective rates for all periods were unfavorably impacted by foreign income tax rates that exceed the U.S. statutory rate of 21% and foreign losses for which no tax benefit could be recognized.",
+          "section": "mda",
+          "subsection": "Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margins are under pressure due to restructuring costs and tax issues, indicating potential profitability challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces risks such as cyclical market downturns, project cancellations, and geopolitical issues.",
+      "evidence": [
+        {
+          "text": "Factors potentially contributing to such differences include, among others: The cyclical nature of many of the markets the company serves, including our commodity-based business lines, and our client\u2019s vulnerability to downturns, which may result in decreased capital investment or expenditures and reduced demand for our services; Project cancellations, scope adjustments or deferrals, or foreign currency fluctuations, that could reduce the amount of our backlog and the revenue and profits that the company earns; Civil unrest, security issues, labor conditions and other unforeseeable events in the countries in which we do business, resulting in unanticipated losses;",
+          "section": "mda",
+          "subsection": "CAUTIONARY STATEMENT REGARDING FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces multiple risks including market downturns and geopolitical issues, which could impact performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is decelerating, particularly in the Energy & Chemicals segment, due to lower volumes of project execution activities and new awards.",
+      "evidence": [
+        {
+          "text": "Revenue for the three and nine months ended September\u00a030, 2019 decreased by 15 percent and 23 percent, respectively, compared to the corresponding periods in 2018, primarily due to a significant decline in the volume of project execution activities combined with the impact of a lower volume of broad based new awards in both years.",
+          "section": "mda",
+          "subsection": "Energy\u00a0& Chemicals"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is decelerating in the Energy & Chemicals segment, indicating a potential slowdown.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "Pricing power does not appear to be a significant factor as revenue changes are more attributed to volume changes rather than pricing.",
+      "evidence": [
+        {
+          "text": "The revenue declines in both periods were partially offset by increased project execution activity for a liquefied natural gas project in Canada. Revenue for the three and nine months ended September\u00a030, 2019 increased by 41 percent and 56 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to increased project execution activities for several large mining projects.",
+          "section": "mda",
+          "subsection": "Mining & Industrial"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Revenue changes are more due to volume than pricing, so no clear trend on pricing power.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments such as Mining & Industrial, which saw significant revenue and profit growth, while lower-margin segments like Infrastructure & Power are facing challenges.",
+      "evidence": [
+        {
+          "text": "Revenue for the three and nine months ended September\u00a030, 2019 increased by 41 percent and 56 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to increased project execution activities for several large mining projects. Revenue for the three and nine months ended September\u00a030, 2019 decreased by 5 percent and 24 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to the substantial completion of certain large power projects during 2019.",
+          "section": "mda",
+          "subsection": "Mining & Industrial"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin segments like Mining & Industrial suggests improved profitability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed. The Mining & Industrial segment reports increased project execution volumes, while Energy & Chemicals and Infrastructure & Power face volume declines.",
+      "evidence": [
+        {
+          "text": "Revenue for the three and nine months ended September\u00a030, 2019 increased by 41 percent and 56 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to increased project execution activities for several large mining projects. Revenue for the three and nine months ended September\u00a030, 2019 decreased by 5 percent and 24 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to the substantial completion of certain large power projects during 2019.",
+          "section": "mda",
+          "subsection": "Mining & Industrial"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The Mining & Industrial end market is growing fastest, while Energy & Chemicals and Infrastructure & Power are facing slower momentum due to project completions and reduced activity.",
+      "evidence": [
+        {
+          "text": "Revenue for the three and nine months ended September\u00a030, 2019 increased by 41 percent and 56 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to increased project execution activities for several large mining projects. Revenue for the three and nine months ended September\u00a030, 2019 decreased by 5 percent and 24 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to the substantial completion of certain large power projects during 2019.",
+          "section": "mda",
+          "subsection": "Mining & Industrial"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The backlog orders remained stable overall, with a slight increase in the Mining & Industrial segment offset by a decrease in the Energy & Chemicals segment. New orders showed mixed performance, with some segments experiencing decreases despite overall stability.",
+      "evidence": [
+        {
+          "text": "\"Consolidated backlog as of September\u00a030, 2019 was $30.3\u00a0billion compared to $30.0\u00a0billion as of September\u00a030, 2018. Approximately 71 percent of consolidated backlog related to projects outside of the United States.\"",
+          "section": "mda",
+          "subsection": "Summary"
+        },
+        {
+          "text": "\"Backlog of $13.7 billion as of September\u00a030, 2019 increased from $11.4 billion as of September\u00a030, 2018. The increase in backlog resulted primarily from the award of the liquefied natural gas export facility in Canada which was booked in the fourth quarter of 2018, offset by the removal of certain contracts associated with the company\u2019s joint venture in Mexico that were suspended during the second quarter of 2019. Backlog decreased to $6.2 billion as of September\u00a030, 2019 from $9.8 billion as of September\u00a030, 2018, primarily due to new award activity being outpaced by work performed.\"",
+          "section": "mda",
+          "subsection": "Mining & Industrial"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Backlog remained stable, with slight increases offset by decreases in some segments.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth was mixed across the company's segments. While the Mining & Industrial segment experienced strong growth, other segments such as Energy & Chemicals, Infrastructure & Power, and Diversified Services saw declines due to reduced project activities and completion of large projects.",
+      "evidence": [
+        {
+          "text": "Consolidated revenue of $3.9 billion for the three months ended September\u00a030, 2019 increased 2 percent compared to $3.8\u00a0billion for the three months ended September\u00a030, 2018. Revenue growth in the Mining & Industrial\u00a0segment was partially offset by lower levels of project execution activities in the Energy\u00a0& Chemicals, Infrastructure & Power and Diversified Services segments during the three months ended September\u00a030, 2019.",
+          "section": "mda",
+          "subsection": "Summary"
+        },
+        {
+          "text": "Revenue for the three and nine months ended September\u00a030, 2019 increased by 41 percent and 56 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to increased project execution activities for several large mining projects. Revenue for the three and nine months ended September\u00a030, 2019 decreased by 5 percent and 24 percent, respectively, compared to the three and nine months ended September\u00a030, 2018, primarily due to the substantial completion of certain large power projects during 2019.",
+          "section": "mda",
+          "subsection": "Mining & Industrial"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

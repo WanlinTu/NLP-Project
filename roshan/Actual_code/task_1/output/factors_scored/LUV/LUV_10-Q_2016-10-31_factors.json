@@ -1,0 +1,241 @@
+{
+  "ticker": "LUV",
+  "form": "10-Q",
+  "filing_date": "2016-10-31",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 11,
+  "factors": [
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization, measured by load factor, is stable at 85.3% for the quarter, slightly down from 85.4% year-over-year.",
+      "evidence": [
+        {
+          "text": "Load factor (3) \u00a0 85.3 % \u00a0 85.4 % \u00a0 (0.1 ) pts",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capacity utilization is stable with a slight year-over-year decrease, indicating no significant change.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "route_network",
+      "category": "airlines_transport",
+      "summary": "The company is expanding its route network with new international services and expects a 5-6% increase in ASMs year-over-year.",
+      "evidence": [
+        {
+          "text": "The Company plans to grow its 2017 available seat miles approximately 3.5 percent, year-over-year, with approximately 2.0 points of the increase relating to domestic growth.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Expansion of route network with new international services expected to increase ASMs by 5-6%, indicating growth opportunity.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fleet_strategy",
+      "category": "airlines_transport",
+      "summary": "The company is modernizing its fleet by retiring older aircraft and taking delivery of new Boeing 737-800 models, enhancing efficiency.",
+      "evidence": [
+        {
+          "text": "The Company took delivery of 11 new Boeing 737-800 aircraft. ... Also retired 16 Boeing 737-300 and 737-500 aircraft.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Modernizing fleet by retiring older aircraft and adding new, efficient models enhances operational efficiency.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "travel_demand_mix",
+      "category": "airlines_transport",
+      "summary": "The demand mix is shifting towards leisure travel, with strong domestic demand and expansion into international markets.",
+      "evidence": [
+        {
+          "text": "The Company is adding new international routes, such as service to Cuba and Mexico, indicating a shift towards international leisure travel.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards leisure travel with strong domestic and international demand suggests favorable market positioning.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand for low-fare air travel remained strong, as indicated by consistently high load factors despite a slight decrease in passenger revenue yield.",
+      "evidence": [
+        {
+          "text": "Customer demand for low-fare air travel remained strong, which was evidenced by a Company third quarter Load factor of 85.3 percent on a 4.2 percent increase in capacity.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "Strong Customer demand for low-fare air travel enabled the Company to fill the additional seats, which was evidenced by an 83.9 percent Load factor.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong demand for low-fare travel with high load factors despite revenue yield decrease indicates resilient demand.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Fuel costs are decreasing due to lower market jet fuel prices, but the company faces mark-to-market losses from its hedging program.",
+      "evidence": [
+        {
+          "text": "Historically, except for changes in the price of fuel, changes in Operating expenses for airlines have been largely driven by changes in capacity, or ASMs. [...] The Company's average economic jet fuel cost per gallon decrease d 10.1 percent, on a year-over-year basis, from $2.08 during the first nine months of 2015 to $1.87 during the first nine months of 2016.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The Company's average economic jet fuel cost per gallon decrease d 8.2 percent year-over-year, from $ 2.20 for third quarter 2015 to $ 2.02 for third quarter 2016. Fuel gallons consumed increase d 4.1 percent as compared with third quarter 2015, while year-over-year capacity increase d 4.2 percent.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Lower fuel costs benefit margins, but mark-to-market losses from hedging complicate the cost picture.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's operating margins are under pressure, with GAAP operating income decreasing significantly year-over-year. While non-GAAP operating income showed a smaller decrease, other factors like rising labor costs and lower fuel prices have contributed to mixed results in operating expenses.",
+      "evidence": [
+        {
+          "text": "Operating expenses per ASM decrease d 0.1 percent for the first nine months of 2016 compared with the first nine months of 2015, primarily due to lower jet fuel prices.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "GAAP operating income \u00a0 $ 695 \u00a0 $ 1,225 \u00a0 (43.3 )%",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        },
+        {
+          "text": "Operating expenses per ASM for third quarter 2016 increase d 4.2 percent compared with third quarter 2015, primarily due to increased Salaries, wages, and benefits driven by the accrual of proposed union contract signing bonuses.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant decrease in GAAP operating income and rising labor costs pressure margins, indicating challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fuel_costs_hedging",
+      "category": "airlines_transport",
+      "summary": "Fuel costs are decreasing, with favorable economic fuel prices, but the company's hedging position may be impacted by market changes.",
+      "evidence": [
+        {
+          "text": "The Company recognized net losses totaling $652 million in Fuel and oil expense for the first nine months of 2016, compared with net losses totaling $184 million for the first nine months of 2015. [...] These totals include cash settlements realized from the settlement of fuel derivative contracts totaling $772 million paid to counterparties for the first nine months of 2016, compared with $326 million paid to counterparties in the first nine months of 2015.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Fuel costs per gallon, including fuel tax, economic \u00a0 $ 2.02 \u00a0 $ 2.20 \u00a0 (8.2 )%",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Decreasing fuel costs provide some benefit, but hedging losses create uncertainty.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power is mixed. While there has been a decline in passenger revenue yield and unit revenues, indicating reduced pricing power, the company has managed to increase seat fill rates due to higher demand. Freight revenues have also seen a decrease, partly due to lower demand.",
+      "evidence": [
+        {
+          "text": "the decrease was primarily attributable to the 4.9 percent decrease in passenger revenue yield, due to lower year-over-year fares.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "On a unit basis, Passenger revenues decrease d 4.1 percent, year-over-year, largely driven by a 4.5 percent decrease in Passenger revenue yield, year-over-year...",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "Freight revenues for the nine months ended September\u00a030, 2016, decrease d $5 million, or 3.7 percent, compared with the first nine months of 2015, primarily due to sluggish demand.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's pricing power is mixed but shows a decline in passenger and freight revenues.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising significantly, driven by both union contract signing bonuses and wage inflation. The increase is notable across different periods and metrics, reflecting a substantial financial impact.",
+      "evidence": [
+        {
+          "text": "a 12.4 percent increase in Salaries, wages, and benefits expense, driven by the accrual for proposed union contract signing bonuses.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        },
+        {
+          "text": "Salaries, wages, and benefits expense for third quarter 2016 increased $210 million, or 12.4 percent, compared with third quarter 2015. On a per ASM basis, third quarter 2016 Salaries, wages, and benefits expense increased 7.9 percent, compared with third quarter 2015.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Labor costs are rising significantly, driven by union contract bonuses and wage inflation.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, with a 4.2 percent increase in available seat miles and a 4.0 percent increase in revenue passengers carried. However, revenue per available seat mile is declining, driven by increased capacity and demand.",
+      "evidence": [
+        {
+          "text": "Available seat miles (ASMs) (000s) (2) \u00a0 37,881,510 \u00a0 36,360,340 \u00a0 4.2 \u00a0% \u00a0 ... Revenue passengers carried \u00a0 31,768,550 \u00a0 30,559,019 \u00a0 4.0 \u00a0%",
+          "section": "mda",
+          "subsection": "Introduction"
+        },
+        {
+          "text": "Capacity increase d 4.2 percent over the same period. Historically, except for changes in the price of fuel, changes in Operating expenses for airlines have been largely driven by changes in capacity, or ASMs. [...] Passenger revenues for the nine months ended September\u00a030, 2016, increase d $225 million, or 1.6 percent, compared with the first nine months of 2015, largely driven by a 5.9 percent increase in capacity.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Unit volumes are growing, but revenue per available seat mile is declining, indicating mixed performance.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

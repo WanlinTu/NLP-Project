@@ -1,0 +1,483 @@
+{
+  "ticker": "HUBB",
+  "form": "10-Q",
+  "filing_date": "2022-07-27",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 22,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's balance sheet is strengthening through deleveraging and maintaining reasonable borrowing costs.",
+      "evidence": [
+        {
+          "text": "Net debt to total capital decreased from 29% to 25%, indicating deleveraging. The company has a $750 million revolving credit facility available at reasonable rates.",
+          "section": "mda",
+          "subsection": "Short-term Debt"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is deleveraging and maintaining reasonable borrowing costs, which strengthens its financial position.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is returning capital to shareholders through dividends and share repurchases, signaling management confidence.",
+      "evidence": [
+        {
+          "text": "In the first six months of 2022, the company paid $113.3 million in dividends and used $150.0 million for share repurchases.",
+          "section": "mda",
+          "subsection": "Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Returning capital through dividends and share repurchases indicates management confidence and could boost shareholder value.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is growing, with the company investing in working capital to serve customer demand and a growth in order backlog.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities from continuing operations for the six months ended June 30, 2022 was $174.2 million compared to cash provided by operating activities from continuing operations of $189.8 million for the same period in 2021. The decrease was primarily due to changes in the components of working capital, as we invested in working capital to serve customer demand and growth in our order backlog, partially offset by higher net income during the first six months of 2022 compared to the same period in the prior year.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in order backlog suggests increased customer demand and a healthy business outlook.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing, contributing to cost pressures.",
+      "evidence": [
+        {
+          "text": "Additionally, as economies have re-opened, global supply chains have struggled to keep up with increasing demand, and the resulting supply chain disruptions have, in certain cases, affected our ability to ship finished products in a timely manner. These supply chain disruptions and the increase in demand have also led to increased freight, labor and commodity cost that may persist through 2022.",
+          "section": "mda",
+          "subsection": "Impact of the COVID-19 Pandemic"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increasing labor costs create cost pressures that could negatively impact margins.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is still experiencing disruptions, particularly with increased demand leading to higher freight and logistics costs.",
+      "evidence": [
+        {
+          "text": "Additionally, as economies have re-opened, global supply chains have struggled to keep up with increasing demand, and the resulting supply chain disruptions have, in certain cases, affected our ability to ship finished products in a timely manner. These supply chain disruptions and the increase in demand have also led to increased freight, labor and commodity cost that may persist through 2022.",
+          "section": "mda",
+          "subsection": "Impact of the COVID-19 Pandemic"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain disruptions and increased costs are ongoing challenges affecting operations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions present both opportunities and risks, with inflationary pressures and supply chain disruptions affecting the company's operations.",
+      "evidence": [
+        {
+          "text": "Because we expect inflation to remain a factor for the foreseeable future, we expect to continue these pricing actions subject, however, to demand and market conditions. Accordingly, there can be no assurance that we will be able to maintain our margins if inflation persists or accelerates. In addition, macroeconomic effects such as increases in interest rates and other measures taken by central banks and other policy makers could have a negative effect on overall economic activity that could reduce our customers\u2019 demand for our products.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Economic conditions present both opportunities and risks without a clear dominant trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes could negatively impact demand and the company's financial performance.",
+      "evidence": [
+        {
+          "text": "In addition, macroeconomic effects such as increases in interest rates and other measures taken by central banks and other policy makers could have a negative effect on overall economic activity that could reduce our customers\u2019 demand for our products.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential negative impact from interest rate changes on demand and financial performance.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company is exposed to foreign exchange risks, which had a minor negative impact on net sales growth in the second quarter of 2022.",
+      "evidence": [
+        {
+          "text": "Organic net sales increased by 19.6% primarily due to favorable price realization, and higher unit volume, which was partially offset by 0.4% due to foreign exchange and 0.1% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange risks had a minor negative impact on net sales growth.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is increasing capital expenditures, reflecting confidence in future growth through investments in automation and productivity initiatives.",
+      "evidence": [
+        {
+          "text": "Cash outlays are required for operations, capital expenditures, and working capital. The company has not specified any cuts in CapEx.",
+          "section": "mda",
+          "subsection": "Liquidity"
+        },
+        {
+          "text": "During the first six months of 2022, we invested $41.9 million in capital expenditures, an increase of $5.0 million from the comparable period of 2021 as we continue to invest in automation and productivity initiatives.",
+          "section": "mda",
+          "subsection": "Investments in the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is increasing capital expenditures, indicating confidence in future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is showing improvement, supported by positive cash flows from operating activities and strong liquidity positions. However, there is a slight decrease in cash provided by operating activities compared to the previous year, primarily due to changes in working capital and increased investments to meet customer demand and support growth.",
+      "evidence": [
+        {
+          "text": "Cash flows from operating activities are a significant source of liquidity. The company had $424.2 million of cash and cash equivalents at June 30, 2022.",
+          "section": "mda",
+          "subsection": "Liquidity"
+        },
+        {
+          "text": "Cash provided by operating activities from continuing operations for the six months ended June 30, 2022 was $174.2 million compared to cash provided by operating activities from continuing operations of $189.8 million for the same period in 2021. The decrease was primarily due to changes in the components of working capital, as we invested in working capital to serve customer demand and growth in our order backlog, partially offset by higher net income during the first six months of 2022 compared to the same period in the prior year.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in free cash flow despite slight decrease in operating cash flows.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has demonstrated active M&A activity, successfully integrating recent acquisitions and divesting non-core businesses, which has contributed to growth and margin expansion. However, there are mentions of cost increases associated with these activities.",
+      "evidence": [
+        {
+          "text": "The company has completed acquisitions and is integrating them, expecting synergies and benefits. There are no mentions of integration challenges or write-downs.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "In July 2022, the Company acquired all of the issued and outstanding membership interests of PCX Holdings LLC (''PCX'') for a cash purchase price of approximately $128 million... This business will be reported in the Electrical Solutions segment.",
+          "section": "mda",
+          "subsection": "Investments in the Business"
+        },
+        {
+          "text": "In July 2022, the Company also acquired all of the issued and outstanding membership interests of Ripley Tools, LLC and Nooks Hill Road, LLC, collectively referred to as Ripley Tools, for a cash purchase price of approximately $50 million... This business will be reported in the Utility Solutions segment.",
+          "section": "mda",
+          "subsection": "Discontinued Operations"
+        },
+        {
+          "text": "On February 1, 2022, the Company completed the sale of the Commercial and Industrial Lighting business... to GE Current, a Daintree Company, for total cash consideration of $350 million...",
+          "section": "mda",
+          "subsection": "Discontinued Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active M&A contributing to growth and margin expansion.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is experiencing an expansion in both gross and operating margins, driven by favorable price realization and higher unit volumes, despite facing challenges such as cost increases and higher freight, logistics, and manufacturing expenses.",
+      "evidence": [
+        {
+          "text": "Net debt to total capital decreased, indicating efficient use of capital. The company is managing liquidity through various sources, which supports stable margins.",
+          "section": "mda",
+          "subsection": "Liquidity"
+        },
+        {
+          "text": "The gross profit margin in the first six months of 2022 increased by 140 basis points to 29.3% as compared to 27.9% in the first six months of 2021. Excluding amortization of acquisition-related intangible assets, the adjusted gross profit margin was 29.7% in the first six months of 2022 as compared to 28.6% in the same period of the prior year. The increase in the adjusted gross profit margin primarily reflects favorable price realization that was in excess of material cost inflation and higher unit volume, partially offset by higher freight, logistics and manufacturing costs and cost increases in excess of productivity.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        },
+        {
+          "text": "The gross profit margin in the second quarter of 2022 increased by 220 basis points to 30.5% as compared to 28.3% in the second quarter of 2021. Excluding amortization of acquisition-related intangible assets, the adjusted gross profit margin was 31.0% in the second quarter of 2022 as compared to 28.9% in the same period of the prior year. The increase in the adjusted gross profit margin primarily reflects favorable price realization that was in excess of material cost inflation, and higher unit volume, partially offset by higher freight, logistics and manufacturing costs, and cost increases in excess of productivity.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Expansion in both gross and operating margins despite cost challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, but the company has managed to partially offset these increases through favorable price realization and higher unit volumes. While there is evidence of cost inflation, the company's ability to adjust pricing and improve productivity has mitigated some of the negative impacts on profitability.",
+      "evidence": [
+        {
+          "text": "Significant factors affecting liquidity include cash flows from operating activities, capital expenditures, and access to bank lines of credit. The company mentions the impact of global economic activity recovering from the COVID-19 pandemic on raw material costs.",
+          "section": "mda",
+          "subsection": "Liquidity"
+        },
+        {
+          "text": "The gross profit margin in the first six months of 2022 increased by 140 basis points to 29.3% as compared to 27.9% in the first six months of 2021. Excluding amortization of acquisition-related intangible assets, the adjusted gross profit margin was 29.7% in the first six months of 2022 as compared to 28.6% in the same period of the prior year. The increase in the adjusted gross profit margin primarily reflects favorable price realization that was in excess of material cost inflation and higher unit volume, partially offset by higher freight, logistics and manufacturing costs and cost increases in excess of productivity.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        },
+        {
+          "text": "The gross profit margin in the second quarter of 2022 increased by 220 basis points to 30.5% as compared to 28.3% in the second quarter of 2021. Excluding amortization of acquisition-related intangible assets, the adjusted gross profit margin was 31.0% in the second quarter of 2022 as compared to 28.9% in the same period of the prior year. The increase in the adjusted gross profit margin primarily reflects favorable price realization that was in excess of material cost inflation, and higher unit volume, partially offset by higher freight, logistics and manufacturing costs, and cost increases in excess of productivity.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Costs are rising but partially offset by favorable price realization.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include supply chain disruptions, economic uncertainties due to global factors and the pandemic, persisting supply chain issues, and macroeconomic factors such as inflation and interest rate changes. There is uncertainty regarding the ability to maintain margins due to inflation and potential negative effects on customer demand from macroeconomic measures.",
+      "evidence": [
+        {
+          "text": "Risks include global economic activity recovery affecting raw material costs, potential disruptions from the COVID-19 pandemic, and geopolitical factors.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "Because we expect inflation to remain a factor for the foreseeable future, we expect to continue these pricing actions subject, however, to demand and market conditions. Accordingly, there can be no assurance that we will be able to maintain our margins if inflation persists or accelerates. In addition, macroeconomic effects such as increases in interest rates and other measures taken by central banks and other policy makers could have a negative effect on overall economic activity that could reduce our customers\u2019 demand for our products.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include supply chain issues, inflation, and macroeconomic uncertainties.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company is sensitive to material costs, which make up two-thirds of cost of goods sold, and macroeconomic factors such as inflation and interest rates.",
+      "evidence": [
+        {
+          "text": "Factors include availability and costs of raw materials, global economic activity recovery, and changes in trade policies affecting sales and costs.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "Because material costs are approximately two thirds of our cost of goods sold, volatility in this area can significantly impact profitability. Our goal is to have pricing and productivity programs that offset material and other inflationary cost increases as well as pay for investments in key growth areas.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Sensitivity to material costs and macroeconomic factors is noted but no clear impact direction.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company has a clear long-term strategy centered on growth through strategic investments, acquisitions, and operational efficiency. The strategy emphasizes serving customers with reliable and innovative solutions, complementing organic growth with acquisitions, and optimizing its cost structure to create shareholder value.",
+      "evidence": [
+        {
+          "text": "The company continues to make strategic investments in core businesses and successfully integrates acquisitions, indicating a clear long-term direction.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "The Company's long-term strategy is to serve its customers with reliable and innovative electrical and related infrastructure solutions with desired brands and high-quality service, delivered through a competitive cost structure; to complement organic revenue growth with acquisitions that enhance its product offerings; and to allocate capital effectively to create shareholder value.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Clear long-term strategy with focus on growth and shareholder value creation.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are positive, with both the Utility Solutions segment and overall net sales showing significant increases. The growth is driven by higher unit volumes and favorable price realization, though there are slight offsets from divestitures and foreign exchange effects.",
+      "evidence": [
+        {
+          "text": "Net sales in the Utility Solutions segment in the second quarter of 2022 were $728.5 million, an increase of $139.7 million, or 23.7%, as compared to the second quarter of 2021. This increase was due to a 23.9% increase in organic net sales in the second quarter of 2022 as compared to the same prior year period, driven by favorable price realization, and higher unit volumes, partially offset by 0.3% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "UTILITY SOLUTIONS"
+        },
+        {
+          "text": "Net sales of $1,256.0 million in the second quarter of 2022 increased by $201.7 million compared to the second quarter of 2021. Organic net sales increased by 19.6% primarily due to favorable price realization, and higher unit volume, which was partially offset by 0.4% due to foreign exchange and 0.1% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand trends show significant increases in net sales across segments, driven by higher unit volumes and favorable pricing.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power, with favorable price realization outpacing material cost inflation and driving revenue growth through higher unit volumes.",
+      "evidence": [
+        {
+          "text": "Net sales in the Utility Solutions segment in the second quarter of 2022 were $728.5 million, an increase of $139.7 million, or 23.7%, as compared to the second quarter of 2021. This increase was due to a 23.9% increase in organic net sales in the second quarter of 2022 as compared to the same prior year period, driven by favorable price realization, and higher unit volumes, partially offset by 0.3% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "UTILITY SOLUTIONS"
+        },
+        {
+          "text": "Net sales of $1,256.0 million in the second quarter of 2022 increased by $201.7 million compared to the second quarter of 2021. Organic net sales increased by 19.6% primarily due to favorable price realization, and higher unit volume, which was partially offset by 0.4% due to foreign exchange and 0.1% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong pricing power evident as favorable price realization outpaces material cost inflation, contributing to revenue growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, contributing to revenue growth in both segments. The growth is driven by favorable price realization and higher unit volumes, though slightly offset by divestitures and foreign exchange impacts.",
+      "evidence": [
+        {
+          "text": "Net sales in the Utility Solutions segment in the second quarter of 2022 were $728.5 million, an increase of $139.7 million, or 23.7%, as compared to the second quarter of 2021. This increase was due to a 23.9% increase in organic net sales in the second quarter of 2022 as compared to the same prior year period, driven by favorable price realization, and higher unit volumes, partially offset by 0.3% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "UTILITY SOLUTIONS"
+        },
+        {
+          "text": "Net sales of $1,256.0 million in the second quarter of 2022 increased by $201.7 million compared to the second quarter of 2021. Organic net sales increased by 19.6% primarily due to favorable price realization, and higher unit volume, which was partially offset by 0.4% due to foreign exchange and 0.1% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are growing, supporting revenue growth despite minor offsets from divestitures and foreign exchange.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating significantly, with both the Utility Solutions and Electrical Solutions segments contributing to this increase. The evidence highlights a 23.7% year-over-year increase in net sales for the Utility Solutions segment, driven by a 23.9% organic growth in the second quarter of 2022. Additionally, overall organic net sales increased by 19.6% in the same period, primarily due to favorable price realization and higher unit volumes, despite minor offsets from foreign exchange and divestitures.",
+      "evidence": [
+        {
+          "text": "Net sales in the Utility Solutions segment in the second quarter of 2022 were $728.5 million, an increase of $139.7 million, or 23.7%, as compared to the second quarter of 2021. This increase was due to a 23.9% increase in organic net sales in the second quarter of 2022 as compared to the same prior year period, driven by favorable price realization, and higher unit volumes, partially offset by 0.3% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "UTILITY SOLUTIONS"
+        },
+        {
+          "text": "Organic net sales increased by 19.6% primarily due to favorable price realization, and higher unit volume, which was partially offset by 0.4% due to foreign exchange and 0.1% due to the impact of divestitures.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Organic revenue growth is accelerating significantly across segments, driven by favorable pricing and higher volumes.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "The company is implementing productivity initiatives alongside restructuring efforts, which have contributed to a mixed outcome. While operational efficiency has improved, cost increases, particularly in freight, logistics, and manufacturing, have partially offset the benefits. Productivity efforts are ongoing but have not yet led to a clear positive or negative trend overall.",
+      "evidence": [
+        {
+          "text": "The gross profit margin in the first six months of 2022 increased by 140 basis points to 29.3% as compared to 27.9% in the first six months of 2021. Excluding amortization of acquisition-related intangible assets, the adjusted gross profit margin was 29.7% in the first six months of 2022 as compared to 28.6% in the same period of the prior year. The increase in the adjusted gross profit margin primarily reflects favorable price realization that was in excess of material cost inflation and higher unit volume, partially offset by higher freight, logistics and manufacturing costs and cost increases in excess of productivity.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        },
+        {
+          "text": "Productivity improvement also continues to be a key area of focus for the Company and efforts to drive productivity complement our restructuring and related activities to minimize the impact of rising material costs and other administrative cost inflation.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed outcomes from productivity initiatives due to ongoing challenges with cost increases in freight, logistics, and manufacturing.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company has implemented restructuring and productivity programs, with some evidence of measurable savings in the investment section but no explicit mention of savings in the executive overview. While restructuring costs are settled within a year and support margins, ongoing productivity efforts aim to offset material and administrative cost increases, though material cost volatility remains a significant factor.",
+      "evidence": [
+        {
+          "text": "Restructuring and cost reduction programs are delivering measurable savings, with restructuring costs settled within one year, supporting the company's margins.",
+          "section": "mda",
+          "subsection": "Investments in the Business"
+        },
+        {
+          "text": "The table below presents the restructuring and related costs incurred in the first six months of 2022, additional expected costs, and the expected completion date of restructuring actions that have been initiated as of June 30, 2022 and in prior years (in millions): Costs incurred in the six months ended June 30, 2022 Additional expected costs Expected completion date 2022 Restructuring Actions $ 2.8 $ 1.4 2022 2021 and Prior Restructuring Actions 0.4 5.2 2022 Total Restructuring cost (GAAP measure) $ 3.2 $ 6.6 Restructuring-related costs 4.1 0.3 Restructuring and related costs (Non-GAAP) $ 7.3 $ 6.9",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        },
+        {
+          "text": "Productivity improvement also continues to be a key area of focus for the Company and efforts to drive productivity complement our restructuring and related activities to minimize the impact of rising material costs and other administrative cost inflation.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        },
+        {
+          "text": "Because material costs are approximately two thirds of our cost of goods sold, volatility in this area can significantly impact profitability. Our goal is to have pricing and productivity programs that offset material and other inflationary cost increases as well as pay for investments in key growth areas.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Measurable savings from restructuring programs and ongoing efforts to drive productivity to offset cost increases.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

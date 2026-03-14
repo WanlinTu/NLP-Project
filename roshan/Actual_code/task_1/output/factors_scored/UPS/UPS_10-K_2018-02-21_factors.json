@@ -1,0 +1,94 @@
+{
+  "ticker": "UPS",
+  "form": "10-K",
+  "filing_date": "2018-02-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 5,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is increasing capital expenditures, particularly for aircraft.",
+      "evidence": [
+        {
+          "text": "Purchase commitments include our announcement on February 1, 2018 for 14 new Boeing 747-8 freighters and four new Boeing 767 aircraft.",
+          "section": "mda",
+          "subsection": "UNITED PARCEL SERVICE, INC. AND SUBSIDIARIES MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing capital expenditures for aircraft indicates investment and expansion.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage is stable with manageable interest rates.",
+      "evidence": [
+        {
+          "text": "The average interest rate on commercial paper was 0.88% in 2017, indicating stable debt conditions.",
+          "section": "mda",
+          "subsection": "UNITED PARCEL SERVICE, INC. AND SUBSIDIARIES MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable debt leverage with manageable interest rates suggests no immediate concern or positive trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are manageable as the company has stable debt conditions.",
+      "evidence": [
+        {
+          "text": "The average interest rate on commercial paper was 0.88% in 2017, indicating stable debt conditions.",
+          "section": "mda",
+          "subsection": "UNITED PARCEL SERVICE, INC. AND SUBSIDIARIES MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable debt conditions indicate that interest rate changes are manageable, supporting financial stability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable with collective bargaining agreements in place.",
+      "evidence": [
+        {
+          "text": "We had approximately 280,000 employees employed under a national master agreement and various supplemental agreements with local unions affiliated with the Teamsters.",
+          "section": "mda",
+          "subsection": "Collective Bargaining Agreements"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable labor relations with collective agreements suggest a harmonious workforce, which is beneficial for operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving with funds from operations and borrowing programs.",
+      "evidence": [
+        {
+          "text": "We believe that funds from operations and borrowing programs will provide adequate sources of liquidity and capital resources to meet our expected long-term needs for the operation of our business, including anticipated capital expenditures, for the foreseeable future.",
+          "section": "mda",
+          "subsection": "Contingencies"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving free cash flow indicates strong financial health and ability to meet long-term needs.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

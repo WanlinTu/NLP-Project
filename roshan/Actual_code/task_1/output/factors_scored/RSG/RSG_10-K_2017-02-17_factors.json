@@ -1,0 +1,94 @@
+{
+  "ticker": "RSG",
+  "form": "10-K",
+  "filing_date": "2017-02-17",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 5,
+  "factors": [
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces material litigation or investigations that could result in significant financial or operational impact.",
+      "evidence": [
+        {
+          "text": "We are subject to various legal proceedings, claims and regulatory matters, the outcomes of which are subject to significant uncertainty. If a loss contingency results in an adverse judgment or is settled for a significant amount, it could have a material adverse effect on our consolidated financial position, results of operations and cash flows in the period in which such judgment or settlement occurs.",
+          "section": "mda",
+          "subsection": "Loss Contingencies"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant legal risks that could materially impact its financial position.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "General economic conditions are a significant factor affecting the company's operating results.",
+      "evidence": [
+        {
+          "text": "A weak economy generally results in decreases in volumes of waste generated, which adversely affects our revenues. Recovery in the solid waste industry historically has lagged behind recovery in the general economy.",
+          "section": "risk_factors",
+          "subsection": "General economic conditions can directly and adversely affect our operating results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic weakness is causing decreased waste volumes and adverse effects on revenues.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Decreased waste volumes due to economic conditions are impacting revenue.",
+      "evidence": [
+        {
+          "text": "A weak economy generally results in decreases in volumes of waste generated, which adversely affects our revenues.",
+          "section": "risk_factors",
+          "subsection": "General economic conditions can directly and adversely affect our operating results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreased waste volumes due to economic conditions are impacting revenue.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company may face challenges in raising prices due to economic conditions and competitive pressures.",
+      "evidence": [
+        {
+          "text": "We seek to secure price increases necessary to offset increased costs... particularly in a weak U.S. economy, our costs may increase in excess of the increase, if any, in the consumer price index. This may continue to be the case even when the U.S. economy recovers because a recovery in the solid waste industry historically has lagged behind a recovery in the general economy.",
+          "section": "risk_factors",
+          "subsection": "Price increases may not be adequate to offset the effect of increased costs and may cause us to lose volume."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces challenges in raising prices due to economic conditions and competition.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company is sensitive to economic conditions, interest rates, and changes in waste volume.",
+      "evidence": [
+        {
+          "text": "Our business is directly affected by changes in national and general economic factors and overall economic activity that are outside of our control, including consumer confidence and interest rates. A weak economy generally results in decreases in volumes of waste generated, which adversely affects our revenues.",
+          "section": "risk_factors",
+          "subsection": "General economic conditions can directly and adversely affect our operating results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is sensitive to external economic factors, which could negatively impact its performance.",
+        "confidence": 0.6
+      }
+    }
+  ]
+}

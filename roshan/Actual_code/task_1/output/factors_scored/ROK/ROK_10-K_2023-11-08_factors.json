@@ -1,0 +1,179 @@
+{
+  "ticker": "ROK",
+  "form": "10-K",
+  "filing_date": "2023-11-08",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 10,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand for hardware and software products, solutions, and services is sensitive to macroeconomic and industry conditions, which could result in decreased demand.",
+      "evidence": [
+        {
+          "text": "Demand for our hardware and software products, solutions, and services is sensitive to changes in levels of production and the financial performance of major industries that we serve.",
+          "section": "risk_factors",
+          "subsection": "Adverse changes in macroeconomic or industry conditions may result in decreases in our sales and profitability."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is sensitive to macroeconomic conditions, indicating a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting due to customer incentives and rebates, which could impact margins.",
+      "evidence": [
+        {
+          "text": "Customer incentives are recognized as a reduction of sales if distributed in cash or customer account credits. We record accruals at the time of revenue recognition as a current liability within Customer returns, rebates, and incentives in our Consolidated Balance Sheet or, where a right of setoff exists, as a reduction of Receivables.",
+          "section": "mda",
+          "subsection": "Pension Benefits Change in Projected Benefit Obligation Change in Net Periodic Benefit Cost (1) Discount rate $ 52.4\u00a0 $ 0.2 / Revenue Recognition - Customer Incentives"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Shifts in revenue mix due to incentives may pressure margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End markets are facing challenges due to macroeconomic conditions and industry volatility.",
+      "evidence": [
+        {
+          "text": "Demand for Sensia hardware and software products, solutions, and services is sensitive to industry volatility and risks, including those related to commodity prices, supply and demand dynamics, production costs, geological activity, and political activities.",
+          "section": "mda",
+          "subsection": "Goodwill - Sensia Reporting Unit"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "End markets face significant challenges from macroeconomic and industry factors.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are under pressure due to higher pension costs and potential goodwill impairment.",
+      "evidence": [
+        {
+          "text": "Our global pension expense in 2023 was $122.0 million compared to $74.4 million in 2022. [...] The fair value of the Sensia reporting unit could decrease, which may result in an additional impairment of the remaining goodwill balance.",
+          "section": "mda",
+          "subsection": "Goodwill - Sensia Reporting Unit"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Higher pension costs and potential goodwill impairment threaten margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind due to macroeconomic cycles and potential recessions.",
+      "evidence": [
+        {
+          "text": "We are subject to macroeconomic cycles and when recessions occur, we may experience reduced, canceled or delayed orders, payment delays or defaults, supply chain disruptions, or other adverse events as a result of the economic challenges faced by our customers, prospective customers, and suppliers.",
+          "section": "risk_factors",
+          "subsection": "Adverse changes in macroeconomic or industry conditions may result in decreases in our sales and profitability."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions pose a headwind through recessions and supply chain issues.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, such as conflicts and sanctions, pose significant risks to the business.",
+      "evidence": [
+        {
+          "text": "Oil & Gas is a major industry that we serve, including through our Sensia joint venture. [...] Companies may reduce their levels of spending, which could result in decreased demand for our hardware and software products, solutions, and services.",
+          "section": "risk_factors",
+          "subsection": "Adverse changes in macroeconomic or industry conditions may result in decreases in our sales and profitability."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Geopolitical risks significantly impact demand, particularly in oil and gas.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include macroeconomic challenges, supply chain disruptions, and geopolitical instability.",
+      "evidence": [
+        {
+          "text": "Our business is subject to macroeconomic cycles [...] supply chain disruptions, or other adverse events as a result of the economic challenges faced by our customers, prospective customers, and suppliers.",
+          "section": "risk_factors",
+          "subsection": "Adverse changes in macroeconomic or industry conditions may result in decreases in our sales and profitability."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include macroeconomic and supply chain challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include changes in revenue growth rates, margins, discount rates, and market multiples.",
+      "evidence": [
+        {
+          "text": "Critical assumptions used in this approach included management\u2019s estimated future revenue growth rates and margins, a discount rate, and a market multiple.",
+          "section": "mda",
+          "subsection": "Goodwill - Sensia Reporting Unit"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Factors like revenue growth and margins are important but not clearly directional.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisition activity involves significant assumptions and risks, particularly in valuing intangible assets.",
+      "evidence": [
+        {
+          "text": "We engaged an independent third-party valuation specialist to assist with the fair value allocation of the purchase price paid for the acquisition of Plex to intangible assets. This required the use of several assumptions and estimates including the customer attrition rate, forecasted cash flows attributable to existing customers, and the discount rate for the customer relationship intangible asset and the royalty rate, forecasted revenue growth rates, and the discount rate for the technology intangible asset.",
+          "section": "mda",
+          "subsection": "Acquisitions - Plex Intangible Assets Valuation"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary highlights significant risks and assumptions in acquisition activity, particularly in valuing intangible assets, indicating challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics are intensifying, with strong competition across all market segments.",
+      "evidence": [
+        {
+          "text": "We face strong competition in all of our market segments in several significant respects.",
+          "section": "risk_factors",
+          "subsection": "Our industry is highly competitive."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Evidence shows strong competition across all market segments, which is a moderate headwind.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

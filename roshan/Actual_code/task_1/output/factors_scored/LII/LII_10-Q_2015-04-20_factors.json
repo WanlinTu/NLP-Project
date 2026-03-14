@@ -1,0 +1,128 @@
+{
+  "ticker": "LII",
+  "form": "10-Q",
+  "filing_date": "2015-04-20",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 7,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is influenced by seasonal weather and economic factors, with warmer weather increasing demand for HVACR products.",
+      "evidence": [
+        {
+          "text": "Warmer than normal summer temperatures generate demand for replacement air conditioning and refrigeration products and services, and colder than normal winter temperatures have a similar effect on heating products and services. Conversely, cooler than normal summers and warmer than normal winters depress the demand for HVACR products and services.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Warmer weather increases demand for HVACR products, indicating a positive trend.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing in the Residential Heating & Cooling segment, driven by market growth and favorable price and mix.",
+      "evidence": [
+        {
+          "text": "Net sales increased by 6% in the first quarter of 2015 compared to the first quarter of 2014. Volume increased by 6% due to industry growth and favorable price and mix increased net sales by 1%, offset by a 1% reduction from unfavorable foreign currency exchange rates.",
+          "section": "mda",
+          "subsection": "First Quarter of 2015 Compared to First Quarter of 2014 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are growing in Residential Heating & Cooling, driven by market growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Raw material costs are volatile, primarily due to commodities like steel, copper, and aluminum, but the company is mitigating these through price increases, contracts, and futures.",
+      "evidence": [
+        {
+          "text": "The principal raw materials used in our manufacturing processes are steel, copper and aluminum. Pricing volatility for these commodities and related components impact us and the HVACR industry in general. We seek to mitigate the impact of higher commodity prices through a combination of price increases, commodity contracts, improved production efficiency and cost reduction initiatives. We also partially mitigate volatility in the prices of these commodities by entering into futures contracts and fixed forward contracts.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Costs are volatile but partially mitigated by strategies like futures and contracts.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross profit margins are declining due to unfavorable mix, pricing, and distribution investments, despite material cost savings.",
+      "evidence": [
+        {
+          "text": "Gross profit margin decreased from 24.2% as of March 31, 2014 to 23.8% as of March 31, 2015. Lower material costs increased our profit margin by 240 bps. The decline in gross profit margin was due to 90 bps of unfavorable mix and price, 60 bps from lower refrigerant pricing on our Australia wholesale business when compared to the prior year quarter, 70 bps for investments in distribution and other growth initiatives, and 60 bps from increased total other product costs.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining gross profit margins due to unfavorable factors despite cost savings.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign currency exchange rates are a significant sensitivity impacting both revenue and profitability.",
+      "evidence": [
+        {
+          "text": "Net sales decreased 1% primarily due to unfavorable foreign currency exchange rates, partially offset by increased volume and improved price and mix. Operational income from continuing operations decreased $7 million quarter over quarter due primarily to investments in distribution, lower refrigerant pricing on our Australia wholesale business and unfavorable mix, partially offset by increased material cost savings.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign currency exchange rates pose a significant risk to revenue and profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears cautious due to investments in distribution and lower refrigerant pricing, despite material cost savings.",
+      "evidence": [
+        {
+          "text": "Operational income from continuing operations decreased $7 million quarter over quarter due primarily to investments in distribution, lower refrigerant pricing on our Australia wholesale business and unfavorable mix, partially offset by increased material cost savings.",
+          "section": "mda",
+          "subsection": "Overview of Results"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Management is cautious due to distribution investments and lower pricing.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is being used for operating activities, capital expenditures, and financing activities, with liquidity maintained through various credit facilities.",
+      "evidence": [
+        {
+          "text": "Our working capital and capital expenditure requirements are generally met through internally generated funds, bank lines of credit and an asset securitization arrangement. Working capital needs are generally greater in the first and second quarters due to the seasonal nature of our business cycle.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Free cash flow is being managed for operations and capital expenditures without clear positive or negative trend.",
+        "confidence": 0.6
+      }
+    }
+  ]
+}

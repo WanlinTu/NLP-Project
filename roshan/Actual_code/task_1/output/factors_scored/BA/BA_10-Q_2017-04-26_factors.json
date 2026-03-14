@@ -1,0 +1,523 @@
+{
+  "ticker": "BA",
+  "form": "10-Q",
+  "filing_date": "2017-04-26",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 27,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "CapEx is expected to decrease, signaling caution about future growth.",
+      "evidence": [
+        {
+          "text": "We expect capital expenditures in 2017 to be lower than 2016.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Expected decrease in CapEx indicates caution about future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is increasing as the debt-to-equity ratio rose slightly from 4.9-to-1 to 5.0-to-1.",
+      "evidence": [
+        {
+          "text": "Debt-to-equity ratio 5.0-to-1 4.9-to-1",
+          "section": "mda",
+          "subsection": "Financial Position"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increase in debt-to-equity ratio suggests higher financial leverage and potential risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are increasing as the company is actively repurchasing shares.",
+      "evidence": [
+        {
+          "text": "During the three months ended March 31, 2017, we repurchased 14.9 million shares totaling $2.5 billion through our open market share repurchase program.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active share repurchase indicates commitment to returning value to shareholders.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving as net cash provided by operating activities increased.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities was $2.1 billion during the three months ended March 31, 2017, compared with $1.3 billion during the same period in 2016.",
+          "section": "mda",
+          "subsection": "Cash Flow Summary"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in free cash flow shows stronger cash generation capability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is a significant contingent obligation with a recorded liability of $525 million.",
+      "evidence": [
+        {
+          "text": "We are involved with various environmental remediation activities and have recorded a liability of $525 million at March 31, 2017.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements / Contingent Obligations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant contingent liability of $525 million poses a financial risk.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Litigation exposure exists with various legal proceedings pending, creating potential financial or operational impact.",
+      "evidence": [
+        {
+          "text": "We are a party to certain off-balance sheet arrangements including certain guarantees. For discussion of these arrangements, see Note 9 to our Condensed Consolidated Financial Statements.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements / Contingent Obligations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Pending legal proceedings could lead to financial or operational impacts.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The Commercial Airplanes segment is performing well with increased earnings, while the Defense, Space & Security segment is underperforming with decreased revenues.",
+      "evidence": [
+        {
+          "text": "Earnings from operations for the three months ended March 31, 2017 increased by $236 million compared with the same period in 2016, primarily due to Commercial Airplanes' earnings and higher unallocated pension income, which more than offset the impact of other unallocated items and eliminations and lower earnings at BDS.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance across different segments without a clear overall trend.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable, with a slight decrease in share-based plans and deferred compensation expenses.",
+      "evidence": [
+        {
+          "text": "Deferred compensation expense increased by $66 million for the three months ended March 31, 2017 compared with the same period in 2016 primarily driven by changes in broad stock market conditions and our stock price.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Slight decrease in share-based expenses but mixed impact on overall labor costs.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction programs are delivering measurable savings, particularly in the pension benefit costs.",
+      "evidence": [
+        {
+          "text": "The decrease in net periodic pension benefit cost for the three months ended March 31, 2017 of $70 million compared with the same period in 2016 is primarily due to lower service costs due to the transition of additional employees to defined contribution retirement savings plans.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction programs are successfully delivering measurable savings, particularly in pension benefit costs.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, particularly in the Commercial Airplanes segment, contributing to higher earnings.",
+      "evidence": [
+        {
+          "text": "Earnings from operations for the three months ended March 31, 2017 increased by $236 million compared with the same period in 2016, primarily due to Commercial Airplanes' earnings and higher unallocated pension income.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving productivity, especially in the Commercial Airplanes segment, is contributing to higher earnings.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is mixed, with production rates increasing in some segments but decreasing in others due to lower orders.",
+      "evidence": [
+        {
+          "text": "The 777 program implemented a planned production rate decrease from 8.3 per month to 7 per month. The 737 program is increasing production rates, while the 747 program is experiencing slower growth.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capacity utilization is mixed, with some segments increasing production while others decrease due to lower orders.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears cautious due to risks associated with major programs and potential defense budget uncertainties.",
+      "evidence": [
+        {
+          "text": "The company continues to monitor political unrest involving Russia and Ukraine, where it sources titanium products. There are also risks related to the Export-Import Bank of the United States and potential budget cuts affecting defense contracts.",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Management appears cautious due to risks related to major programs and potential defense budget uncertainties.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include potential government budget cuts, delays in major programs, and supply chain disruptions.",
+      "evidence": [
+        {
+          "text": "The U.S. government is operating under a continuing resolution that expires on April 28, 2017. If Congress is unable to pass appropriations bills, a government shutdown could result, impacting future orders and payments.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include potential government budget cuts and supply chain disruptions, which could impact future orders and payments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategic direction is clear, with investments in new programs like the 737 MAX and 777X, though there are execution risks.",
+      "evidence": [
+        {
+          "text": "The company plans to increase production rates for the 737 and 787 programs and is launching new derivatives like the 777X, which features advanced technologies.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has a clear long-term strategic direction with investments in new programs like the 737 MAX and 777X, despite execution risks.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Sensitivities include government defense budgets, commodity prices, and production delays impacting margins and growth.",
+      "evidence": [
+        {
+          "text": "The company is exposed to risks related to government defense budgets and the technical complexity of its programs, which could affect profitability.",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is exposed to significant sensitivities such as government defense budgets and production delays, which could negatively impact profitability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Key catalysts include contract wins for the KC-46A Tanker program and potential improvements in the 747 program.",
+      "evidence": [
+        {
+          "text": "The KC-46A Tanker program is a significant contract with potential for further growth if all options are exercised. The 747 program is facing challenges but could recover with additional orders.",
+          "section": "mda",
+          "subsection": "Additional Considerations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Key catalysts include potential contract wins and program recoveries, which could drive growth.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is decreasing, particularly in the Defense, Space & Security segment.",
+      "evidence": [
+        {
+          "text": "Research and development expense for the three months ended March 31, 2017 decreased by $79 million compared with the same period in 2016 primarily due to lower spending at BDS and at Commercial Airplanes on the 737 MAX and 787-10.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decrease in R&D spending suggests potential innovation slowdown.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards lower-margin segments, as indicated by the decrease in operating margins. However, there is evidence of improved margins in specific segments such as Core operating margins, which increased to 8.1% from 7.5%.",
+      "evidence": [
+        {
+          "text": "Operating margins 11.3% 10.3%",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Operating margins for Commercial Airplanes were 8.5% in 2017 compared to 7.2% in 2016. Core operating margins increased to 8.1% from 7.5%.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed margins with some improvement but overall shift to lower-margin segments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The backlog orders are growing, both in contractual and unobligated categories, driven by increased contract awards.",
+      "evidence": [
+        {
+          "text": "Contractual backlog $46,463 $42,079 Unobligated backlog 16,145 15,055",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "The increase in contractual backlog during the three months ended March 31, 2017 compared with December 31, 2016 was primarily due to orders in excess of deliveries. The unobligated backlog of $17,955 million at March 31, 2017 increased from December 31, 2016 primarily due to contract awards, partially offset by reclassifications to contractual backlog related to BDS contracts.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in both contractual and unobligated backlogs indicates strong demand.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is decelerating, with significant decreases in revenues across multiple segments, particularly the Defense, Space & Security segment, which experienced a $1,424 million decline. Additionally, the Commercial Airplanes segment saw a $94 million decrease due to lower volume and delivery mix.",
+      "evidence": [
+        {
+          "text": "BDS revenues for the three months ended March 31, 2017 decreased by $1,424 million compared with the same period in 2016.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Revenues for the three months ended March 31, 2017 decreased by $1,656 million compared with the same period in 2016. Commercial Airplanes revenues decreased by $94 million primarily due to lower volume and delivery mix. Defense, Space & Security revenues decreased by $1,424 million due to lower revenues in all three segments.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant revenue declines across major segments indicate growth deceleration.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends appear to be mixed. While the backlog has increased, indicating some stability or growth in demand, the revenues have shown a slight decrease, with declines across multiple segments. This suggests a potential discrepancy between the company's current revenue performance and its backlog, which may indicate underlying issues or market dynamics affecting demand.",
+      "evidence": [
+        {
+          "text": "BDS total backlog was $62,608 million at March 31, 2017, reflecting an increase of 10% from December 31, 2016.",
+          "section": "mda",
+          "subsection": "Backlog"
+        },
+        {
+          "text": "Revenues for the three months ended March 31, 2017 decreased by $1,656 million compared with the same period in 2016. Commercial Airplanes revenues decreased by $94 million primarily due to lower volume and delivery mix. Defense, Space & Security revenues decreased by $1,424 million due to lower revenues in all three segments.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals with increased backlog but revenue decline.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining across the company, as evidenced by lower deliveries in new-build production aircraft and significant decreases in both Commercial Airplanes and Defense, Space & Security segments.",
+      "evidence": [
+        {
+          "text": "Deliveries of units for new-build production aircraft, including remanufactures and modifications, were as follows: Total 41 49",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Commercial Airplanes unit volumes decreased by $94 million. Defense, Space & Security revenues decreased by $1,424 million, due to lower revenues in all three segments.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining unit volumes across segments point to reduced production.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed results. While the Results of Operations subsection indicates compression in gross and operating margins, the Earnings From Operations subsection suggests improvement driven by higher unallocated pension income and cost reductions.",
+      "evidence": [
+        {
+          "text": "Gross and operating margins are compressing as both decreased compared to the prior period.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Operating margins 11.3% 10.3%",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        },
+        {
+          "text": "Operating margins increased to 9.6% in 2017 from 7.9% in 2016. Core operating margins also improved to 8.1% from 7.5%.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed margin performance with some improvements and compressions.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products are showing mixed performance. While the 737 MAX and 777X programs are on track and expected to contribute to future growth, the Commercial Crew program is underperforming, leading to decreased revenues.",
+      "evidence": [
+        {
+          "text": "N&SS revenues for the three months ended March 31, 2017 decreased by $171 million compared with the same period in 2016 primarily due to lower volume on the Commercial Crew program.",
+          "section": "mda",
+          "subsection": "Revenues / Earnings From Operations"
+        },
+        {
+          "text": "The 737 MAX is expected to first deliver in the second quarter of 2017. The 777X will have a separate program accounting quantity, targeted for delivery in 2020.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance with some programs on track and others underperforming.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "The government defense budgets present a mixed outlook, with signs of potential growth alongside lingering risks of sequestration and budget cuts. While there is evidence of increased funding, such as the $30 billion addition to the Defense Department budget, there are also concerns about budgetary instability and the possibility of future reductions.",
+      "evidence": [
+        {
+          "text": "BDS total backlog was $62,608 million at March 31, 2017, reflecting an increase of 10% from December 31, 2016.",
+          "section": "mda",
+          "subsection": "Backlog"
+        },
+        {
+          "text": "The U.S. administration submitted a budget amendment adding $30 billion to the Defense Department budget for government fiscal year 2017. However, continued budget uncertainty and the risk of future sequestration cuts remain.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The defense budget has mixed signals with potential growth but risks of sequestration and cuts.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "The contract backlog is growing, with both contractual and unobligated backlogs increasing. The growth is driven by orders exceeding deliveries and new contract awards.",
+      "evidence": [
+        {
+          "text": "Contractual backlog $46,463 $42,079 Unobligated backlog 16,145 15,055",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "The increase in contractual backlog during the three months ended March 31, 2017 compared with December 31, 2016 was primarily due to orders in excess of deliveries. The unobligated backlog increased due to contract awards.",
+          "section": "mda",
+          "subsection": "Total Costs and Expenses (\u201cCost of Sales\u201d)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Both contractual and unobligated backlogs are growing, driven by increased orders and new contracts.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "The company is encountering mixed execution challenges across its major programs. While the KC-46A Tanker program is making progress with certification and flight testing, it faced significant execution challenges in the first quarter of 2017, with charges increasing compared to the previous year. On the other hand, the 747 and 777 programs are also facing execution difficulties, with the 747 experiencing lower demand and production challenges and the 777 program having reduced production rates due to lower orders.",
+      "evidence": [
+        {
+          "text": "BMA recorded charges related to the KC-46A Tanker contract of $22 million in the first quarter of 2017 compared with $81 million in the first quarter of 2016.",
+          "section": "mda",
+          "subsection": "Earnings From Operations"
+        },
+        {
+          "text": "The KC-46A Tanker program is in the certification and flight testing phases. The 747 program is experiencing lower demand and production challenges, while the 777 program has reduced production rates due to lower orders.",
+          "section": "mda",
+          "subsection": "Program Highlights"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed execution challenges across major programs with significant charges and production issues.",
+        "confidence": 0.75
+      }
+    }
+  ]
+}

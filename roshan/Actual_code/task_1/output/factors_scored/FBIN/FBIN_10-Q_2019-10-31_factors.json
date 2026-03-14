@@ -1,0 +1,111 @@
+{
+  "ticker": "FBIN",
+  "form": "10-Q",
+  "filing_date": "2019-10-31",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 6,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has a stable debt structure with no significant changes in leverage.",
+      "evidence": [
+        {
+          "text": "At September 30, 2019, the Company had aggregate outstanding notes in the amount of $2.2 billion, with varying maturities (the \u201cNotes\u201d)",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company has a stable debt structure with no significant changes in leverage.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining its shareholder returns through dividends and share repurchases.",
+      "evidence": [
+        {
+          "text": "In the first nine months of 2019, we paid dividends in the amount of $92.3 million to the Company\u2019s shareholders. [...] The Company repurchased 2.0 million shares of our outstanding common stock under the Company\u2019s share repurchase programs for $100.0 million.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is actively returning value to shareholders through consistent dividends and share repurchases.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has recently completed an acquisition which is expected to provide strategic value.",
+      "evidence": [
+        {
+          "text": "In September 2018, we acquired 100% of the membership interests of Fiberon, a leading U.S. manufacturer of outdoor performance materials [...] The acquisition of Fiberon provided category expansion and product extension opportunities into the outdoor living space for our Doors & Security segment.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company has completed an acquisition that is expected to provide strategic value and expand product offerings.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces normal litigation risks, but believes the likelihood of material loss is remote.",
+      "evidence": [
+        {
+          "text": "We are defendants in lawsuits associated with the normal conduct of our businesses and operations. [...] The Company believes the likelihood of material loss is remote.",
+          "section": "risk_factors",
+          "subsection": "Item 1.\n\nLEGAL PROCEEDINGS."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company faces normal litigation risks, but the likelihood of material loss is considered remote.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is manageable and does not pose significant risks.",
+      "evidence": [
+        {
+          "text": "Compliance with federal, state and local laws regulating the discharge of materials into the environment [...] did not have a material effect on capital expenditures, earnings or the competitive position of Fortune Brands.",
+          "section": "risk_factors",
+          "subsection": "(b)\n\nEnvironmental Matters."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Environmental compliance is manageable and does not pose significant risks to the company.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company is sensitive to foreign exchange movements and geopolitical risks.",
+      "evidence": [
+        {
+          "text": "Foreign Exchange [...] We have operations in various foreign countries [...] Changes in the value of the related currencies affect our financial statements when translated into U.S. dollars. [...] Geopolitical factors [...] creating material risks, disruptions, or opportunities?",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is aware of potential risks from foreign exchange movements and geopolitical factors but has not indicated significant concerns.",
+        "confidence": 0.65
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "RSG",
+  "form": "10-Q",
+  "filing_date": "2018-05-03",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 4,
+  "factors": [
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Fuel costs decreased due to CNG tax credits but were partially offset by higher diesel prices.",
+      "evidence": [
+        {
+          "text": "Fuel costs decreased due to compressed natural gas ('CNG') tax credits that were enacted in 2018 and recognized during the three months ended March\u00a031, 2018, which were partially offset by an increase in the average diesel fuel cost per gallon.",
+          "section": "mda",
+          "subsection": "Cost of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed impact from decreased fuel costs due to CNG tax credits offset by higher diesel prices.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs increased due to merit increases, higher headcount, and collection volumes.",
+      "evidence": [
+        {
+          "text": "Labor and related benefits increased due to increased hourly and salaried wages as a result of merit increases, increased headcount and higher collection volumes.",
+          "section": "mda",
+          "subsection": "Cost of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs increased due to merit increases, higher headcount, and collection volumes, indicating a moderate headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Operating margins decreased in Group 2 but remained stable in Group 1.",
+      "evidence": [
+        {
+          "text": "Operating income margin for Group 1 increased slightly, while Group 2's margin decreased due to higher labor and fuel costs.",
+          "section": "mda",
+          "subsection": "Group 1"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance with Group 1 margins increasing slightly and Group 2 margins decreasing, resulting in an unclear overall trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring charges were incurred in both 2017 and 2018, with savings reinvested in customer-focused programs.",
+      "evidence": [
+        {
+          "text": "Restructuring charges were incurred in both 2017 and 2018, with savings realized from these efforts reinvested in customer-focused programs.",
+          "section": "mda",
+          "subsection": "Restructuring Charges"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring charges incurred despite savings reinvested in customer programs, indicating a negative short-term impact.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

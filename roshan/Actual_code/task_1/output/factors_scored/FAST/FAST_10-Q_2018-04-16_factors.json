@@ -1,0 +1,283 @@
+{
+  "ticker": "FAST",
+  "form": "10-Q",
+  "filing_date": "2018-04-16",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 18,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is managing its debt by issuing senior unsecured promissory notes, which are due in 2024 and were used to fund an acquisition. There is no mention of deleveraging or refinancing at lower rates.",
+      "evidence": [
+        {
+          "text": "The notes bear interest at a fixed rate of 3.22% per annum, are due and payable in full on March 1, 2024, and were issued to fund the purchase price of the Mansco acquisition.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Financing Activities"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has authority to purchase up to 4,400,000 shares of its common stock but did not purchase any shares in the first quarters of 2018 and 2017. Dividend payments are consistent, but no specific increase or decrease is mentioned.",
+      "evidence": [
+        {
+          "text": "We currently have authority to purchase up to 4,400,000 shares of our common stock. During the first quarters of 2018 and 2017, we did not purchase any shares of our common stock.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Financing Activities"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not provided specific forward guidance in the text provided.",
+      "evidence": [
+        {
+          "text": "There has been no material change in those risk factors.",
+          "section": "risk_factors",
+          "subsection": "ITEM 1A \u2014 RISK FACTORS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The text mentions risks such as economic downturns and weakness in manufacturing and commercial construction industries, indicating that economic conditions could be a headwind.",
+      "evidence": [
+        {
+          "text": "economic downturns, weakness in the manufacturing or commercial construction industries",
+          "section": "risk_factors",
+          "subsection": "ITEM 1A \u2014 RISK FACTORS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The company has fixed-rate debt, so changes in interest rates may not directly impact its borrowing costs, but higher rates could affect overall economic conditions.",
+      "evidence": [
+        {
+          "text": "The notes bear interest at a fixed rate of 3.22% per annum...",
+          "section": "mda",
+          "subsection": "Net Cash Used in Financing Activities"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "There is no mention of significant litigation or investigations affecting the company.",
+      "evidence": [
+        {
+          "text": "No specific mention of litigation or investigations.",
+          "section": "risk_factors",
+          "subsection": "ITEM 1A \u2014 RISK FACTORS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company completed the Mansco acquisition, funded by the issuance of senior unsecured promissory notes.",
+      "evidence": [
+        {
+          "text": "funded the purchase price of the Mansco acquisition.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Financing Activities"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company identifies several key sensitivities, including economic downturns, competitive pressure, fuel and commodity prices, and geopolitical risks.",
+      "evidence": [
+        {
+          "text": "economic downturns, weakness in the manufacturing or commercial construction industries, competitive pressure on selling prices, changes in our current mix of products, customers, or geographic locations, changes in our average branch size, changes in our purchasing patterns, changes in customer needs, changes in fuel or commodity prices, inclement weather, changes in foreign currency exchange rates, difficulty in adapting our business model to different foreign business environments, failure to accurately predict the market potential of our business strategies, the introduction or expansion of new business strategies, weak acceptance or adoption of our vending or Onsite business models, increased competition in industrial vending or Onsite, difficulty in maintaining installation quality as our industrial vending business expands, the leasing to customers of a significant number of additional industrial vending devices, the failure to meet our goals and expectations regarding branch openings, branch closings, or expansion of our industrial vending or Onsite operations, changes in the implementation objectives of our business strategies, difficulty in hiring, relocating, training, or retaining qualified personnel, difficulty in controlling operating expenses, difficulty in collecting receivables or accurately predicting future inventory needs, dramatic changes in sales trends, changes in supplier production lead times, changes in our cash position or our need to make capital expenditures, credit market volatility, changes in tax law or the impact of any such changes on future tax rates, changes in the availability or price of commercial real estate, changes in the nature, price, or availability of distribution, supply chain, or other technology (including software licensed from third parties) and services related to that technology, cyber-security incidents, potential liability and reputational damage that can arise if our products are defective, and other risks and uncertainties detailed in our filings with the Securities and Exchange Commission, including our most recent annual and quarterly reports.",
+          "section": "risk_factors",
+          "subsection": "ITEM 1A \u2014 RISK FACTORS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is accelerating, supported by strong market activity and customer growth.",
+      "evidence": [
+        {
+          "text": "The Purchasing Managers Index, published by the Institute for Supply Chain Management, averaged 59.7 in the first quarter of 2018 and 57.0 in the first quarter of 2017. Readings above 50 are indicative of growing demand, and we believe this favorably influenced our unit sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is accelerating with strong market activity and customer growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company successfully raised prices to mitigate marketplace inflation, with a minor impact on sales growth.",
+      "evidence": [
+        {
+          "text": "A lesser contributor to our sales growth in the first quarter of 2018 was higher pricing instituted to mitigate inflation in the marketplace. However, price increases were not a material factor impacting sales growth in the first quarter of 2018, contributing 50-100 basis-points to our sales growth.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Successfully raised prices to mitigate inflation, with minor impact on sales growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards lower-margin products due to the integration of Mansco, which has a lower gross profit margin product mix.",
+      "evidence": [
+        {
+          "text": "Second, blending Mansco\u2019s operations with the company's operations had the effect of reducing our gross profit margin in the first quarter of 2018 by 10-20 basis-points. This is because products carried by Mansco tend to carry a lower gross profit margin product mix than products historically carried by the company.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Revenue mix shifting towards lower-margin products due to integration of Mansco.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, driven by strong unit sales and customer growth.",
+      "evidence": [
+        {
+          "text": "The increase in net sales noted above for 2018 was driven primarily by higher unit sales and, to a lesser degree, higher prices to mitigate marketplace inflation. The increase in net sales noted above for 2017 was driven primarily by higher unit sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Organic revenue growth is accelerating, driven by strong unit sales and customer growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, with revenue growth driven by real demand rather than price increases.",
+      "evidence": [
+        {
+          "text": "The increase in net sales noted above for 2018 was driven primarily by higher unit sales and, to a lesser degree, higher prices to mitigate marketplace inflation. The increase in net sales noted above for 2017 was driven primarily by higher unit sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are growing, driven by real demand rather than price increases.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The manufacturing and non-residential construction markets are growing fastest, supported by strong business activity.",
+      "evidence": [
+        {
+          "text": "We believe the strength in general business activity is reflected in a number of metrics. For instance, the Purchasing Managers Index, published by the Institute for Supply Chain Management, averaged 59.7 in the first quarter of 2018 and 57.0 in the first quarter of 2017. Readings above 50 are indicative of growing demand, and we believe this favorably influenced our unit sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Manufacturing and non-residential construction markets are growing fastest, supported by strong business activity.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are compressing, primarily due to lower gross profit margins and higher operating expenses.",
+      "evidence": [
+        {
+          "text": "Our gross profit, as a percentage of net sales, was 48.7% in the first quarter of 2018 and 49.4% in the first quarter of 2017. [...] Our operating and administrative expenses (including a loss (gain) on the sale of property and equipment), as a percentage of net sales, improved to 28.9% in the first quarter of 2018 from 29.2% in the first quarter of 2017.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Gross and operating margins are compressing due to lower gross profit margins and higher operating expenses.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are increasing to support healthy business activity and sales growth.",
+      "evidence": [
+        {
+          "text": "The increase in inventory from March 31, 2017 to March 31, 2018 was primarily to support healthy business activity and sales growth.",
+          "section": "mda",
+          "subsection": "Net Cash Provided by Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory levels are increasing to support healthy business activity and sales growth, which is a positive but not a direct indicator of margin or revenue health.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are increasing, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Our 2018 net capital expenditures spend expectation remains at approximately $149.0, an increase of $36.5, or 32.4% from 2017. This increase primarily relates to upgrading and adding capacity to our existing hub network and to the purchase of property for potential future expansion.",
+          "section": "mda",
+          "subsection": "Net Cash Used in Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is increasing capital expenditures, indicating confidence in future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "The company is gaining market share through growth initiatives and customer focus.",
+      "evidence": [
+        {
+          "text": "We are a growth-centric organization focused on identifying 'drivers' that will allow us to get closer to our customers and gain market share in what we believe remains a fragmented industrial distribution market.",
+          "section": "mda",
+          "subsection": "Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is gaining market share through growth initiatives and customer focus.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

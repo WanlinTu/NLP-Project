@@ -1,0 +1,626 @@
+{
+  "ticker": "EFX",
+  "form": "10-K",
+  "filing_date": "2016-02-24",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 31,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining buybacks and dividends, signaling confidence.",
+      "evidence": [
+        {
+          "text": "Treasury stock purchases... at an average price per common share of $94.97, $76.55 and $59.74, respectively. As of December 31, 2015, under the existing board authorization, the Company is approved for additional stock repurchases valued at $667.2 million.",
+          "section": "mda",
+          "subsection": "Equity Transactions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is maintaining buybacks and dividends, signaling confidence.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical factors, such as conflicts and economic issues in various countries, pose risks to international operations.",
+      "evidence": [
+        {
+          "text": "Internationally, the environment continues to be challenging as various countries address their particular political, fiscal and economic issues.",
+          "section": "mda",
+          "subsection": "Business Environment and Company Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical factors pose risks to international operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Negative economic conditions could adversely affect demand for the company's products and services.",
+      "evidence": [
+        {
+          "text": "We and our customers continue to be sensitive to negative changes in general economic conditions, both inside and outside the U.S. Business customers use our credit information and related analytical services and data to process applications for new credit cards, automobile loans, home and equity loans and other consumer loans, and to manage their existing credit relationships. Bank and other lenders\u2019 willingness to extend credit is adversely affected by elevated consumer delinquency and loan losses in a weak economy.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Negative economic conditions could adversely affect demand for the company's products and services.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company's reliance on business customers using credit information may lead to concentration risks.",
+      "evidence": [
+        {
+          "text": "Business customers use our credit information and related analytical services and data to process applications for new credit cards, automobile loans, home and equity loans and other consumer loans, and to manage their existing credit relationships.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Reliance on business customers may lead to concentration risks.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment could intensify due to economic factors affecting the industry.",
+      "evidence": [
+        {
+          "text": "Bank and other lenders\u2019 willingness to extend credit is adversely affected by elevated consumer delinquency and loan losses in a weak economy.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic factors could intensify competition, affecting the company's performance.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Fluctuations in foreign currency exchange rates, particularly the strengthening of the U.S. dollar, can have a negative impact on the company's financial results.",
+      "evidence": [
+        {
+          "text": "Fluctuations in foreign currency exchange rates, particularly the strengthening of the U.S. dollar against major currencies, may materially affect our consolidated financial results.",
+          "section": "risk_factors",
+          "subsection": "Economic, political and other risks associated with international sales and operations could adversely affect our results of operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Fluctuations in foreign currency exchange rates pose a financial risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company faces challenges in retaining key personnel, particularly in specialized areas, which could impact its ability to maintain or expand its business.",
+      "evidence": [
+        {
+          "text": "Our future success depends partly on the continued service of our key development, sales, marketing, executive and administrative personnel. Additionally, increased retention risk exists in certain key areas of our operations that require specialized skills, such as maintenance of certain legacy computer systems, data security experts and analytical modelers. If we fail to retain and hire a sufficient number of these personnel, we will not be able to maintain or expand our business.",
+          "section": "risk_factors",
+          "subsection": "Our business will suffer if we are not able to retain and hire key personnel."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenges in retaining key personnel could impact business expansion.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "credit_ratings",
+      "category": "unknown",
+      "summary": "A downgrade in credit ratings could increase borrowing costs and negatively impact the company's ability to access capital markets.",
+      "evidence": [
+        {
+          "text": "A downgrade of our credit ratings would increase our cost of borrowing under the Credit Facilities, negatively affect our ability to access the capital markets on advantageous terms, or at all, negatively affect the trading price of our securities and have a material adverse effect on our business, financial condition and results of operations.",
+          "section": "risk_factors",
+          "subsection": "A downgrade to our credit ratings would increase our cost of borrowing under our credit facility and adversely affect our ability to access the capital markets."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "A downgrade in credit ratings could increase borrowing costs and negatively impact the company's ability to access capital markets.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "There is no specific information provided about the backlog of orders or book-to-bill trends.",
+      "evidence": [
+        {
+          "text": "The text does not mention anything related to backlog orders or book-to-bill growth.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information is provided about backlog orders or book-to-bill trends, making it impossible to assess any positive or negative sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is exposed to potential cost increases from data sources, which could impact margins.",
+      "evidence": [
+        {
+          "text": "If a substantial number of data sources or certain key data sources were to withdraw or be unable to provide their data, [...] our ability to provide products and services to our clients could be materially adversely impacted, which could result in decreased revenue, net income and earnings per share.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential cost increases from data sources pose a risk to margins, indicating a moderate headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are not specifically addressed in the text.",
+      "evidence": [
+        {
+          "text": "There is no information provided regarding labor costs, wage inflation, or benefit expenses.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "There is no information provided regarding labor costs, wage inflation, or benefit expenses, leading to a neutral assessment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes are creating challenges, particularly in the U.S. and foreign countries, impacting operations and compliance costs.",
+      "evidence": [
+        {
+          "text": "We are subject to a number of U.S. and state and foreign laws and regulations [...] which could harm our business. [...] Any failure by us to comply [...] could result in the curtailment of certain of our operations, the imposition of fines and penalties, and restrictions on our ability to carry on or expand our operations.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory challenges in multiple jurisdictions could impact operations and compliance costs, presenting a moderate risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation and regulatory risks, including potential fines and reputational damage.",
+      "evidence": [
+        {
+          "text": "We are regularly involved in claims, suits, government investigations, supervisory examinations and regulatory proceedings [...] which could result in reputational harm, liability, penalties, or sanctions, as well as judgments, consent decrees, or orders [...] which could in the future materially and adversely affect our business, operating results, and financial condition.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant litigation and regulatory risks pose a threat to the company's reputation and financial health, indicating a negative sentiment.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is confident, as evidenced by increased capital expenditures and investments in new products.",
+      "evidence": [
+        {
+          "text": "Our capital expenditures are used for developing, enhancing and deploying new and existing software in support of our expanding product set, replacing or adding equipment, updating systems for regulatory compliance, licensing of standard software applications, investing in system reliability, security and disaster recovery enhancements, and updating or expanding our office facilities.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's confidence is evident through increased investments in new products and capital expenditures, signaling a positive outlook.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include foreign currency fluctuations and economic conditions in certain regions.",
+      "evidence": [
+        {
+          "text": "Local currency fluctuations against the U.S. dollar negatively impacted revenue by $70.5 million, or 13%, in 2015, as a result of growth across many geographies, including solid growth in Argentina and the U.K., compared to prior year.",
+          "section": "mda",
+          "subsection": "International"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign currency fluctuations and economic conditions in certain regions pose near-term risks, indicating a negative sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic direction is clear, with investments in technology and product development.",
+      "evidence": [
+        {
+          "text": "Our capital expenditures are used for developing, enhancing and deploying new and existing software in support of our expanding product set, replacing or adding equipment, updating systems for regulatory compliance, licensing of standard software applications, investing in system reliability, security and disaster recovery enhancements, and updating or expanding our office facilities.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investments in technology and product development reflect a clear long-term strategic direction, signaling a positive sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign currency fluctuations and economic conditions in key geographies are significant sensitivities.",
+      "evidence": [
+        {
+          "text": "Local currency fluctuations against the U.S. dollar negatively impacted revenue by $70.5 million, or 13%, in 2015, as a result of growth across many geographies, including solid growth in Argentina and the U.K., compared to prior year.",
+          "section": "mda",
+          "subsection": "International"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign currency fluctuations and economic conditions pose significant risks, impacting revenue negatively.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "CapEx is increasing, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Capital expenditures in 2015 increased from 2014, as we are continuing to invest in new products and technology infrastructure.",
+          "section": "mda",
+          "subsection": "Investing Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing capital expenditures indicate confidence in future growth and investment in new products and technology.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not explicitly adjusted forward guidance but has provided long-term revenue growth expectations of 6-8% annually and anticipates EPS growth outpacing revenue growth.",
+      "evidence": [
+        {
+          "text": "Management has not explicitly raised, maintained, or lowered forward guidance in the provided text.",
+          "section": "mda",
+          "subsection": "Financing Activities"
+        },
+        {
+          "text": "Over the long term, we expect that...organic revenue growth ranging between 6% and 8%...We also expect to grow earnings per share at a somewhat faster rate than revenue over time as a result of both operating and financial leverage.",
+          "section": "mda",
+          "subsection": "Business Environment and Company Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Long-term revenue growth expectations and EPS growth outpacing revenue suggest a positive outlook.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, supported by increased cash flows from operations and positive trends in operating activities. The improvement is further evidenced by the increase in cash provided by operating activities and the decrease in net short-term borrowings related to CP notes in 2015. ",
+      "evidence": [
+        {
+          "text": "The decrease in net short-term borrowings (repayments) primarily relates to the net activity of CP notes in 2015, and reflects the increase in cash flow from operations as well as no material acquisitions entered into during the year.",
+          "section": "mda",
+          "subsection": "Financing Activities"
+        },
+        {
+          "text": "Cash provided by operating activities for 2015 increased by $125.9 million over the prior year, due to $75.6 million growth in Net Income, adjusted for the Brazil impairment, and improvements in working capital, notably an increase in current liabilities related to current payables, incentives and unearned income.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in cash flow from operations and decrease in borrowings indicate strong cash generation.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is improving its debt leverage through deleveraging and refinancing activities. The refinancing of credit facilities and the use of lower interest rates contribute to a stronger balance sheet.",
+      "evidence": [
+        {
+          "text": "Our principal unsecured revolving credit facility... may be used for general corporate purposes. Availability of the Revolver for borrowings is reduced by the outstanding face amount of any letters of credit issued under the facility and, pursuant to our existing Board of Directors authorization, by the outstanding principal amount of our commercial paper (CP) notes.",
+          "section": "mda",
+          "subsection": "Financing Activities"
+        },
+        {
+          "text": "On November 21, 2015, the Company refinanced the existing unsecured revolving credit facility of $750.0 million set to expire on December 19, 2017, and entered into a new Credit Agreement (the \u201cSenior Credit Facility\u201d)",
+          "section": "mda",
+          "subsection": "Sources and Uses of Cash"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Debt leverage is improving through refinancing and deleveraging, strengthening the balance sheet.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is actively engaged in acquisition activity, including the acquisition of Veda and a strategic investment in a U.K. debt collections venture. While these acquisitions are aimed at creating value through strategic investments, the success of these initiatives is uncertain and could potentially disrupt the company's operations and affect its financial condition.",
+      "evidence": [
+        {
+          "text": "On November 21, 2015, we entered into the Agreement to acquire Veda for a cash consideration of approximately $1.7 billion... The transaction is subject to customary closing conditions, as disclosed above.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Transactions"
+        },
+        {
+          "text": "Expected benefits, synergies and growth from these initiatives may not materialize as planned. We may have difficulty assimilating new businesses [...] which could disrupt our ongoing business and materially adversely affect our operating results and financial condition.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        },
+        {
+          "text": "During the first quarter of 2015, we acquired a 75% equity interest investment in a debt collections and recovery management venture in the U.K., as more fully described in Note 1. During the third quarter of 2015, we received $2.9 million proceeds from the escrow related to a past disposition. We did not make significant investments in unconsolidated affiliates during 2015.",
+          "section": "mda",
+          "subsection": "Acquisitions, Divestitures and Investments"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While acquisition activity shows strategic investments, uncertainties and potential disruptions exist.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand for Equifax's services is mixed, with modest growth expected in the U.S. driven by economic activity and consumer credit, but facing challenges internationally due to political and economic issues. Additionally, there is evidence of accelerating demand in certain key segments such as mortgage, automotive, and financial services in the U.S.",
+      "evidence": [
+        {
+          "text": "In 2016, in the United States, we expect modest growth in overall economic activity and consumer credit. Mortgage market originations are expected to be relatively flat to slightly down for the year. Internationally, the environment continues to be challenging as various countries address their particular political, fiscal and economic issues.",
+          "section": "mda",
+          "subsection": "Business Environment and Company Outlook"
+        },
+        {
+          "text": "U.S. Information Solutions revenue increased 8% in 2015 as compared to the prior year. USIS realized solid growth from our mortgage business, as well as continued revenue growth in the automotive and financial services verticals.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand with growth in U.S. segments but challenges internationally.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "The company's volume trends show a mixed picture. While certain segments like mortgage solutions experienced significant growth, with a 17% revenue increase driven by strong market activity, other areas indicate potential vulnerabilities. Specifically, economic downturns or slow growth periods could negatively impact transaction volumes and consumer demand for credit products.",
+      "evidence": [
+        {
+          "text": "Revenue for 2015 increased by 9% compared to 2014. This broad-based growth was organic, and was driven by revenue increases in mortgage, direct to consumer reseller, healthcare, government, and auto verticals.",
+          "section": "mda",
+          "subsection": "Operating Revenue from Continuing Operations"
+        },
+        {
+          "text": "Mortgage Solutions. Revenue increased 17% in 2015 when compared to prior year, driven by a strong market for refinancing and purchase activity, as well as growth from other mortgage product offerings.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        },
+        {
+          "text": "Consumer demand for credit (i.e., rates of spending and levels of indebtedness) also tends to grow more slowly or decline during periods of economic contraction or slow economic growth.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends show growth in some areas but vulnerabilities in others.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company anticipates organic revenue growth between 6% and 8% annually, driven by new product innovation and business execution. However, economic downturns and slow economic growth may negatively impact this growth by slowing consumer demand for credit and other services. Additionally, while organic growth is accelerating in key segments like Verification Services, there is no specific information provided on how external data access affects organic growth.",
+      "evidence": [
+        {
+          "text": "Over the long term, we expect that our ongoing investments in new product innovation, business execution, enterprise growth initiatives, technology infrastructure, and continuous process improvement will enable us to deliver long-term average organic revenue growth ranging between 6% and 8% with additional growth of 1% to 2% derived from strategic acquisitions consistent with our long-term business strategy.",
+          "section": "mda",
+          "subsection": "Business Environment and Company Outlook"
+        },
+        {
+          "text": "Consumer demand for credit (i.e., rates of spending and levels of indebtedness) also tends to grow more slowly or decline during periods of economic contraction or slow economic growth.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        },
+        {
+          "text": "Verification Services. Revenue increased 25% in 2015 compared to prior year, due to strong growth in mortgage, auto, pre-employment screening and government verticals, and continued addition of new records to The Work Number database.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company expects steady organic revenue growth of 6-8%, driven by new products and execution.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end-market momentum is mixed across different segments and geographies. While the USIS and Workforce Solutions segments are growing, particularly in sectors like automotive, financial services, and government, the International segment faces challenges due to geopolitical factors. Additionally, while mortgage activity showed some decline, there are signs of solid growth in other areas.",
+      "evidence": [
+        {
+          "text": "The USIS segment...Online Information Solutions and Mortgage Solutions revenue is principally transaction-based...The Workforce Solutions segment...Verification Services revenue is transaction-based...Internationally, the environment continues to be challenging as various countries address their particular political, fiscal and economic issues.",
+          "section": "mda",
+          "subsection": "Segment and Geographic Information"
+        },
+        {
+          "text": "U.S. Information Solutions revenue increased 8% in 2015 as compared to the prior year. USIS realized solid growth from our mortgage business, as well as continued revenue growth in the automotive and financial services verticals.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance across segments and geographies with some growth but challenges in international markets.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "High or rising interest rates negatively impact the company's demand for credit products, increase the cost of capital, and reduce net income.",
+      "evidence": [
+        {
+          "text": "High or rising rates of unemployment and interest, declines in income, home prices, or investment values, lower consumer confidence and reduced access to credit adversely affect demand for our products and services, and consequently our revenue, as consumers may continue to postpone or reduce their spending and use of credit, and lenders may reduce the amount of credit offered or available.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        },
+        {
+          "text": "Rising interest rates, credit market dislocations and decisions and actions by credit rating agencies can affect the availability and cost of our funding and adversely affect our net income.",
+          "section": "risk_factors",
+          "subsection": "Changes in interest rates could adversely affect our cost of capital and net income ."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High interest rates harm demand for credit products and increase costs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is mixed. While there are signs of improvement in certain segments and internal restructuring leading to margin expansion, there are also risks associated with economic downturns and competitive pressures that could negatively impact margins.",
+      "evidence": [
+        {
+          "text": "Consolidated operating margin decreased slightly in 2015 due to the costs for the realignment of internal resources of $20.7 million and other increases in people costs. The decrease was mostly offset by the margin improvements of 290 basis points and 510 basis points in our USIS and Workforce Solutions segments, respectively.",
+          "section": "mda",
+          "subsection": "Operating Income and Operating Margin"
+        },
+        {
+          "text": "High or rising rates of unemployment and interest, declines in income, home prices, or investment values, lower consumer confidence and reduced access to credit adversely affect demand for our products and services, and consequently our revenue, as consumers may continue to postpone or reduce their spending and use of credit, and lenders may reduce the amount of credit offered or available.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        },
+        {
+          "text": "Price reductions by our competitors could negatively impact our margins and results of operations and could also harm our ability to obtain new customers on favorable terms.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        },
+        {
+          "text": "U.S. Information Solutions operating margin increased to 41.9% in 2015 as compared to 2014 of 39.0%. Margin expansion resulted from strong revenue growth and product mix.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Some margin improvements but risks from economic downturns and competition.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power is negatively affected by both economic conditions and competitive pressures. Economic downturns reduce demand for credit products, limiting pricing power, while competitive factors and customer demand have led to declines in per unit pricing for key products.",
+      "evidence": [
+        {
+          "text": "High or rising rates of unemployment and interest, declines in income, home prices, or investment values, lower consumer confidence and reduced access to credit adversely affect demand for our products and services, and consequently our revenue, as consumers may continue to postpone or reduce their spending and use of credit, and lenders may reduce the amount of credit offered or available.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        },
+        {
+          "text": "Historically, certain of our key products have experienced declines in per unit pricing due to competitive factors and customer demand.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions and competition weaken pricing power.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, which is beneficial for margins. However, during economic downturns, the revenue mix could shift to lower-margin segments, potentially harming profitability.",
+      "evidence": [
+        {
+          "text": "U.S. Information Solutions operating margin increased to 41.9% in 2015 as compared to 2014 of 39.0%. Margin expansion resulted from strong revenue growth and product mix.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        },
+        {
+          "text": "High or rising rates of unemployment and interest, declines in income, home prices, or investment values, lower consumer confidence and reduced access to credit adversely affect demand for our products and services, and consequently our revenue, as consumers may continue to postpone or reduce their spending and use of credit, and lenders may reduce the amount of credit offered or available.",
+          "section": "mda",
+          "subsection": "U.S. Information Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin segments supports margin expansion.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is at risk due to several factors, including economic downturns that reduce demand for credit products and consolidation in customer end markets which could lower average prices and harm business performance.",
+      "evidence": [
+        {
+          "text": "High or rising rates of unemployment and interest, declines in income, home prices, or investment values, lower consumer confidence and reduced access to credit adversely affect demand for our products and services, and consequently our revenue, as consumers may continue to postpone or reduce their spending and use of credit, and lenders may reduce the amount of credit offered or available.",
+          "section": "risk_factors",
+          "subsection": "Uncertain general economic conditions could materially adversely affect us."
+        },
+        {
+          "text": "Continuation of the consolidation trends in these and other industries could result in lower average prices for the larger combined entities, [...] which could have a material adverse effect on our business, financial condition and results of operations.",
+          "section": "risk_factors",
+          "subsection": "The loss of access to credit, employment, financial and other data from external sources could harm our ability to provide our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Market share risks due to economic downturns and consolidation.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

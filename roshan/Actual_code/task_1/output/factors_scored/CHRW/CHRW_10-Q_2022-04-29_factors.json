@@ -1,0 +1,634 @@
+{
+  "ticker": "CHRW",
+  "form": "10-Q",
+  "filing_date": "2022-04-29",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 35,
+  "factors": [
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, though cash used for operating activities was still negative.",
+      "evidence": [
+        {
+          "text": "Cash flow used for operating activities improved in the three months ended March 31, 2022 compared to the three months ended March 31, 2021 due to increased net income, partially offset by unfavorable changes in working capital.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow generation is improving despite negative cash use for operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining its debt leverage, with net borrowings on debt to fund working capital and share repurchases.",
+      "evidence": [
+        {
+          "text": "Net borrowings on debt in the three months ended March 31, 2022 and the three months ended March 31, 2021 were to fund working capital needs and share repurchases.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable debt leverage with borrowings for working capital and repurchases.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are being prioritized through share repurchases and dividends, indicating management confidence.",
+      "evidence": [
+        {
+          "text": "We are committed to our quarterly dividend and share repurchases to enhance shareholder value. Such repurchases, if any, will depend on prevailing market conditions, our cash position, other potential uses of our cash, and market conditions.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shareholder returns are prioritized through dividends and repurchases, showing confidence.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "There is no explicit mention of backlog orders or book-to-bill trends in the provided text.",
+      "evidence": [
+        {
+          "text": "Not applicable",
+          "section": "mda",
+          "subsection": "Introduction / ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit information on backlog orders or book-to-bill trends.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting toward higher-margin services.",
+      "evidence": [
+        {
+          "text": "Our adjusted gross profit and adjusted gross profit margin are non-GAAP financial measures...",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting towards higher-margin services, indicating improvement.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating.",
+      "evidence": [
+        {
+          "text": "Total revenues increased 41.9 percent to $6.8 billion...",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Organic revenue growth is accelerating, showing strong performance.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing.",
+      "evidence": [
+        {
+          "text": "Our combined NAST truckload and less than truckload (LTL) volume increased 1.0 percent during the first quarter of 2022...",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are growing, reflecting positive demand trends.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The global forwarding market is experiencing strong growth.",
+      "evidence": [
+        {
+          "text": "Global Forwarding Segment Results of Operations Three Months Ended March 31, 2022 compared to the Three Months Ended March 31, 2021...",
+          "section": "mda",
+          "subsection": "Three Months Ended March 31, 2022 compared to the Three Months Ended March 31, 2021"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong growth in the global forwarding market suggests positive momentum.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising.",
+      "evidence": [
+        {
+          "text": "Purchased transportation costs continue to be well above historic levels...",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Input costs are rising, indicating a headwind for margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are creating margin pressure.",
+      "evidence": [
+        {
+          "text": "Personnel expenses increased 14.6 percent to $413.4 million...",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are creating margin pressure, a moderate challenge.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction programs are delivering measurable savings.",
+      "evidence": [
+        {
+          "text": "Income from operations totaled $345.5 million, up 54.7 percent due to the increase in adjusted gross profits...",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction programs are delivering measurable savings, a clear positive development.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving.",
+      "evidence": [
+        {
+          "text": "Adjusted gross profit / Adjusted gross profit margin $ 906,196 13.3 % $ 702,380 14.6 %",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Operational efficiency is improving, indicating a tailwind.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is improving.",
+      "evidence": [
+        {
+          "text": "While port congestion remains challenging in the western United States, conditions showed signs of improvement in the first quarter of 2022...",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Supply chain improvements are evident, despite ongoing challenges.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is increasing.",
+      "evidence": [
+        {
+          "text": "The average routing guide depth of tender in the first quarter of 2022 was 1.7...",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing capacity utilization suggests operational efficiency gains.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are normalizing.",
+      "evidence": [
+        {
+          "text": "Freight levels and increasing costs and availability of truck capacity or alternative means of transporting freight...",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING INFORMATION"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory levels are normalizing, but evidence is limited to indicate a clear trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "No notable incidents or recalls mentioned.",
+      "evidence": [
+        {
+          "text": "No specific information on product quality, safety incidents, or recalls was provided in the text.",
+          "section": "mda",
+          "subsection": "Introduction / ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No notable incidents or recalls, but also no positive information.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has maintained forward guidance.",
+      "evidence": [
+        {
+          "text": "No explicit mention of forward guidance changes in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit mention of changes in forward guidance suggests stability, but no positive or negative indication.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears confident with growth investments.",
+      "evidence": [
+        {
+          "text": "Our adjusted gross profit and adjusted gross profit margin are non-GAAP financial measures...",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's confidence in growth investments indicates a positive outlook.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include supply chain disruptions and economic uncertainties.",
+      "evidence": [
+        {
+          "text": "Risks that could cause actual results to differ materially from our current expectations include, but are not limited to, changes in economic conditions...",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING INFORMATION"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks like supply chain disruptions and economic uncertainties pose challenges.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic direction is clear with investments in technology and global expansion.",
+      "evidence": [
+        {
+          "text": "C.H. Robinson Worldwide, Inc. (\u201cC.H. Robinson,\u201d \u201cthe company,\u201d \u201cwe,\u201d \u201cus,\u201d or \u201cour\u201d) is one of the world's largest logistics platforms...",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Clear long-term strategic investments in technology and global expansion suggest growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include fuel prices, economic conditions, and supply chain disruptions.",
+      "evidence": [
+        {
+          "text": "Risks that could cause actual results to differ materially from our current expectations include, but are not limited to, changes in economic conditions...",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING INFORMATION"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Sensitivities to fuel prices and economic conditions indicate vulnerabilities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Catalysts include market softening and integration of acquired companies.",
+      "evidence": [
+        {
+          "text": "Within the first quarter of 2022, this metric declined and reached 1.5 by the end of the quarter as more capacity entered the market...",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Market softening and integration of acquisitions present mixed opportunities and challenges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is likely stable or improving.",
+      "evidence": [
+        {
+          "text": "We provide freight transportation services and logistics solutions to companies of all sizes in a wide variety of industries...",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable or improving market share signals moderate positive, but evidence is limited.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics are intense with supply chain disruptions affecting the market.",
+      "evidence": [
+        {
+          "text": "The global forwarding market continues to be significantly impacted by supply chain disruptions caused by ongoing port congestion...",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intense competitive dynamics and supply chain issues create a challenging environment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "Differentiation is maintained through technology and scale.",
+      "evidence": [
+        {
+          "text": "Our global network of supply chain experts work with our customers to drive better supply chain outcomes by leveraging our experience, data, digital solutions, and scale...",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is maintaining differentiation through technology and scale, which are competitive advantages.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer diversification is improving.",
+      "evidence": [
+        {
+          "text": "We provide freight transportation services and logistics solutions to companies of all sizes in a wide variety of industries...",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving customer diversification reduces reliance on a few customers, enhancing stability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is increasing.",
+      "evidence": [
+        {
+          "text": "We have continued to reprice our contractual truckload business to reflect the elevated cost environment...",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While R&D investment is increasing, the evidence provided does not specify the impact or direction of innovation.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Digital adoption is enhancing efficiency.",
+      "evidence": [
+        {
+          "text": "Our global network of supply chain experts work with our customers to drive better supply chain outcomes by leveraging our experience, data, digital solutions, and scale...",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Digital adoption is enhancing efficiency, which is a positive trend for operational performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products are gaining traction.",
+      "evidence": [
+        {
+          "text": "On June 3, 2021, we acquired Combinex Holding B.V. (\u201cCombinex\u201d) to further expand our European road transportation presence...",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The evidence mentions acquisition for expansion but does not indicate the success or traction of new products.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount is increasing.",
+      "evidence": [
+        {
+          "text": "Average headcount increased 15.1 percent...",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Headcount is increasing, suggesting growth or strategic expansion, which is a positive sign.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable.",
+      "evidence": [
+        {
+          "text": "No specific mention of labor relations issues or strikes in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable labor relations indicate a harmonious work environment, which is beneficial for operations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Talent retention is likely stable.",
+      "evidence": [
+        {
+          "text": "No explicit information on talent retention challenges or successes in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction / ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit information is provided on talent retention, making it difficult to assess the trend.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company has demonstrated strong pricing power, successfully raising prices across multiple segments, including Robinson Fresh and Other Surface Transportation, with positive customer responses and increased revenues.",
+      "evidence": [
+        {
+          "text": "Robinson Fresh total revenues increased due to higher pricing per case and increased case volume across all customer verticals. In addition, total revenues in Other Surface Transportation increased due to higher truckload pricing and volumes.",
+          "section": "mda",
+          "subsection": "Three Months Ended March 31, 2022 compared to the Three Months Ended March 31, 2021"
+        },
+        {
+          "text": "We have continued to reprice our contractual truckload business to reflect the elevated cost environment...",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The company has demonstrated strong pricing power with increased revenues across multiple segments.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed, with acceleration in certain areas such as Robinson Fresh and Other Surface Transportation, driven by higher pricing and increased volumes, while the broader North American surface transportation market shows signs of deceleration.",
+      "evidence": [
+        {
+          "text": "Robinson Fresh total revenues increased due to higher pricing per case and increased case volume across all customer verticals. In addition, total revenues in Other Surface Transportation increased due to higher truckload pricing and volumes.",
+          "section": "mda",
+          "subsection": "Three Months Ended March 31, 2022 compared to the Three Months Ended March 31, 2021"
+        },
+        {
+          "text": "The North American surface transportation market... softening within the first quarter of 2022. Despite these declines, purchased transportation costs continue to be well above historic levels...",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand trends are mixed but show acceleration in certain areas with positive customer responses and increased revenues.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are improving, with both gross and operating margins expanding across multiple segments. The improvement is driven by higher adjusted gross profits in various areas, including Robinson Fresh, Managed Services, and Other Surface Transportation, each citing factors such as increased case volume, freight under management, and higher profits per transaction.",
+      "evidence": [
+        {
+          "text": "Gross margins are improving, driven by higher adjusted gross profits across segments.",
+          "section": "mda",
+          "subsection": "Three Months Ended March 31, 2022 compared to the Three Months Ended March 31, 2021"
+        },
+        {
+          "text": "Robinson Fresh adjusted gross profits increased due to an increase in case volume across all customer verticals.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        },
+        {
+          "text": "Managed Services adjusted gross profits increased due to an increase in freight under management, which was driven by growth with new and existing customers.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        },
+        {
+          "text": "Other Surface Transportation adjusted gross profits increased as a result of higher adjusted gross profits per transaction.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        },
+        {
+          "text": "Adjusted operating margin of 38.1 percent increased 630 basis points...",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Margins are improving significantly across multiple segments with clear positive developments.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

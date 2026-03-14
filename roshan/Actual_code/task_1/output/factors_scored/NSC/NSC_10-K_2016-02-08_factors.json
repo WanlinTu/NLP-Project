@@ -1,0 +1,561 @@
+{
+  "ticker": "NSC",
+  "form": "10-K",
+  "filing_date": "2016-02-08",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 30,
+  "factors": [
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable with ongoing negotiations and recent agreements.",
+      "evidence": [
+        {
+          "text": "More than 80% of our railroad employees are covered by collective bargaining agreements with various labor unions. [...] Separately, in January 2015 we reached an agreement covering wages and work rules through 2019 with the Brotherhood of Locomotive Engineers and Trainmen (BLET).",
+          "section": "mda",
+          "subsection": "Labor Agreements"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable labor relations with recent agreements suggest a positive sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations are creating significant compliance costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "Railroads are also subject to extensive federal and state environmental laws and regulations concerning [...] cleanup of hazardous material or petroleum releases. [...] could have a significant effect on our financial position, results of operations, or liquidity in a particular year or quarter.",
+          "section": "risk_factors",
+          "subsection": "Item 1A. Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant compliance costs and operational constraints indicate a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes could impact financial position through increased interest expense.",
+      "evidence": [
+        {
+          "text": "We manage overall exposure to fluctuations in interest rates by issuing both fixed- and floating-rate debt instruments. [...] A one-percentage point increase in interest rates would increase total annual interest expense related to all variable debt by approximately $2 million.",
+          "section": "mda",
+          "subsection": "Market Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential for increased interest expense due to rate changes poses a risk, leading to a negative sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks such as terrorism and war pose potential threats.",
+      "evidence": [
+        {
+          "text": "We may be affected by terrorism or war. [...] could cause significant business interruption and may adversely affect our financial position, results of operations, or liquidity in a particular year or quarter.",
+          "section": "risk_factors",
+          "subsection": "Item 1A. Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical threats like terrorism and war pose significant risks, resulting in a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is managing labor relations and workforce levels effectively.",
+      "evidence": [
+        {
+          "text": "Our employment averaged 30,456 in 2015, compared with 29,482 in 2014, and 30,103 in 2013. Looking forward to 2016, we expect normalized levels of incentive compensation in addition to increased medical cost inflation and higher wages to be offset in part by lower employment levels driven from operational efficiencies and the TCS restructuring.",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals about workforce management, including employment level changes, lead to a neutral sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is stable, supported by operating activities.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities, our principal source of liquidity, was $2.9 billion in 2015 and 2014, and $3.1 billion in 2013. Lower cash from operations in 2015 compared with 2014 was offset by reduced tax payments.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION, LIQUIDITY, AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable free cash flow generation supports a positive sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are expected to increase, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "For 2016, we have budgeted $2.1 billion for property additions. The anticipated spending includes $820 million for the normalized replacement of rail, ties, and ballast, and the improvement or replacement of bridges.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION, LIQUIDITY, AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Anticipated increase in capital expenditures signals confidence in growth, indicating a positive sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is stable, with a manageable capital structure.",
+      "evidence": [
+        {
+          "text": "Our debt-to-total capitalization ratio was 45.3% at December 31, 2015, compared with 42.0% at December 31, 2014.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION, LIQUIDITY, AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable debt leverage with a manageable capital structure suggests no significant positive or negative trend, leading to a neutral sentiment.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Share buybacks are active, signaling management confidence.",
+      "evidence": [
+        {
+          "text": "Share repurchases totaled $1.1 billion in 2015, $318 million in 2014, and $627 million in 2013 for the purchase and retirement of 11.3 million, 3.1 million, and 8.3 million shares, respectively.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION, LIQUIDITY, AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active share buybacks indicate management confidence and positive sentiment towards shareholder value.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are decelerating, particularly in commodity-related markets.",
+      "evidence": [
+        {
+          "text": "Despite these challenges we continued our focus on deploying resources to improve network velocity and service, while streamlining our corporate assets with the restructuring of our Triple Crown Services Company (TCS) subsidiary and the closure of our Roanoke, Virginia, corporate office. As a result of operational improvements, network fluidity improved throughout the year, as evidenced by a 21% decrease in terminal dwell from the beginning of the year and a 17% improvement in train speed over the same time period.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand trends are decelerating, particularly in commodity-related markets, indicating a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is successfully raising prices, particularly in certain segments like automotive and intermodal.",
+      "evidence": [
+        {
+          "text": "Average revenue per unit is anticipated to benefit from pricing gains. Improving our rail service, generating higher returns on capital, and increasing the efficiency of our resources remain our focus and we believe we are well-positioned to meet continued headwinds in 2016.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Successfully raising prices in certain segments shows strong pricing power and positive sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments like intermodal and automotive, while commodity-related markets are under pressure.",
+      "evidence": [
+        {
+          "text": "We also expect to see modest growth in our intermodal and automotive markets, which should help temper weakness in our commodity-related markets. However, further declines in commodity prices or consumer activity could erode demand.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating due to challenges in commodity markets and lower fuel surcharge revenues.",
+      "evidence": [
+        {
+          "text": "In 2015, we faced significant headwinds as operating revenues were negatively impacted by the steep decline in energy prices, which drove both reduced fuel surcharge revenue and volume decreases in coal and energy-related products.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Deceleration in organic growth due to commodity market challenges and lower fuel surcharge revenues shows negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volumes are declining, particularly in coal and general merchandise markets, due to lower demand and competition.",
+      "evidence": [
+        {
+          "text": "The decline in 2015 resulted from lower average revenue per unit (a result of reduced fuel surcharge revenues, which were down $852 million, or 64%) and decreased volumes (primarily driven by continued weakness in the coal markets).",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining volumes in key markets indicate negative sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The automotive and intermodal markets are growing, while commodity markets like coal and metals are facing challenges.",
+      "evidence": [
+        {
+          "text": "We also expect to see modest growth in our intermodal and automotive markets, which should help temper weakness in our commodity-related markets. However, further declines in commodity prices or consumer activity could erode demand.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving due to operational initiatives, evidenced by decreased terminal dwell and improved train speeds.",
+      "evidence": [
+        {
+          "text": "As a result of operational improvements, network fluidity improved throughout the year, as evidenced by a 21% decrease in terminal dwell from the beginning of the year and a 17% improvement in train speed over the same time period.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving productivity through operational initiatives reflects positive sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management conveys cautious confidence, focusing on operational improvements and cost control despite challenges.",
+      "evidence": [
+        {
+          "text": "Average revenue per unit is anticipated to benefit from pricing gains. Improving our rail service, generating higher returns on capital, and increasing the efficiency of our resources remain our focus and we believe we are well-positioned to meet continued headwinds in 2016.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management expresses cautious confidence with a focus on operational improvements and cost control.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include further declines in commodity prices and consumer activity, which could reduce demand.",
+      "evidence": [
+        {
+          "text": "However, further declines in commodity prices or consumer activity could erode demand.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include potential declines in commodity prices and consumer activity, which could reduce demand.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is focused on improving service, increasing productivity, and enhancing efficiency, which are well-supported by operational initiatives.",
+      "evidence": [
+        {
+          "text": "Improving our rail service, generating higher returns on capital, and increasing the efficiency of our resources remain our focus and we believe we are well-positioned to meet continued headwinds in 2016.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Long-term strategy focuses on improving service, productivity, and efficiency, supported by operational initiatives.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "A key catalyst is the expected cost savings from restructuring initiatives, which could improve margins.",
+      "evidence": [
+        {
+          "text": "Through these initiatives, we expect to produce expense savings of $130 million in 2016 while increasing productivity and efficiency.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Expected cost savings from restructuring initiatives could improve margins significantly.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The company's forward guidance reflects a cautious approach, acknowledging potential risks, while also indicating expectations for modest growth in specific markets and cost savings.",
+      "evidence": [
+        {
+          "text": "Certain statements [...] are forward-looking statements [...] involve known and unknown risks [...] could result in a material adverse effect [...] disclaims any intention or obligation to update.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "In 2016, we expect to see continued improvement in our service levels and the implementation of multiple cost-control initiatives, as we balance resources with the demand for our high-quality rail service. Through these initiatives, we expect to produce expense savings of $130 million in 2016 while increasing productivity and efficiency.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Forward guidance reflects caution with potential risks but also expects modest growth and cost savings.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces potential litigation exposure in various areas, including labor, employment, personal injury, environmental, and commercial disputes, but manages these risks through accruals and regular evaluations.",
+      "evidence": [
+        {
+          "text": "The nature of our business exposes us to the potential for various claims and litigation related to labor and employment, personal injury, commercial disputes, freight loss and other property damage, and other matters.",
+          "section": "risk_factors",
+          "subsection": "Item 1A. Risk Factors"
+        },
+        {
+          "text": "Casualties and other claims expense, included in 'Materials and other' in the Consolidated Statements of Income, consists primarily of our accrual for personal injury liabilities and environmental remediation costs. We are subject to various jurisdictions\u2019 environmental laws and regulations. We record a liability where such liability or loss is probable and its amount can be estimated reasonably.",
+          "section": "mda",
+          "subsection": "Personal Injury, Environmental, and Legal Liabilities"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Litigation exposure is present but managed through accruals and regular evaluations, indicating controlled risk.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions present risks and challenges, particularly with prolonged negative changes potentially impacting financials. However, there are also opportunities for cost savings, such as lower fuel expenses due to decreased fuel prices.",
+      "evidence": [
+        {
+          "text": "Prolonged negative changes in domestic and global economic conditions [...] could have an adverse effect on our financial position, results of operations, or liquidity in a particular year or quarter.",
+          "section": "risk_factors",
+          "subsection": "Item 1A. Risk Factors"
+        },
+        {
+          "text": "Looking forward to 2016, we expect lower fuel expenses as current prices for locomotive fuel are significantly below the average cost per gallon of $1.74 experienced in 2015. In addition, we anticipate the TCS restructuring and improved fuel productivity will benefit fuel expense in 2016.",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Economic conditions pose risks but also present opportunities like lower fuel expenses.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company faces significant sensitivities in both market and operational aspects. Interest rate fluctuations pose a notable risk, as a one-percentage point increase could raise annual interest expenses by $2 million. Additionally, commodity prices, particularly fuel surcharges tied to oil prices, are a major factor impacting near-term revenues, with over 85% of revenue covered by these surcharges.",
+      "evidence": [
+        {
+          "text": "We manage overall exposure to fluctuations in interest rates by issuing both fixed- and floating-rate debt instruments. [...] A one-percentage point increase in interest rates would increase total annual interest expense related to all variable debt by approximately $2 million.",
+          "section": "mda",
+          "subsection": "Market Risks"
+        },
+        {
+          "text": "Over 85% of our revenue base is covered by negotiated fuel surcharges, and revenues associated with these surcharges totaled $477 million, $1,329 million, and $1,254 million in 2015, 2014 and 203, respectively.",
+          "section": "mda",
+          "subsection": "Railway Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant sensitivities to interest rates and commodity prices pose notable risks to the company.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain health is showing improvement, with operational efficiency gains leading to better fluidity. Despite this positive trend, there is no mention of significant disruptions, indicating overall stability.",
+      "evidence": [
+        {
+          "text": "From time-to-time we rely on the capital markets to provide some of our capital requirements, including the issuance of long-term debt instruments and commercial paper, as well as the sale of certain receivables.",
+          "section": "risk_factors",
+          "subsection": "Item 1A. Risk Factors"
+        },
+        {
+          "text": "As a result of operational improvements, network fluidity improved throughout the year, as evidenced by a 21% decrease in terminal dwell from the beginning of the year and a 17% improvement in train speed over the same time period.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The summary indicates improvement in supply chain health with gains in operational efficiency and network fluidity.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "The factor of capacity utilization appears to be mixed based on the information provided. On one hand, there are ongoing efforts to manage and potentially improve capacity utilization through labor agreements and operational improvements. However, the evidence also suggests that there may be challenges in achieving significant increases in utilization due to the bargaining process and the existing agreements in place.",
+      "evidence": [
+        {
+          "text": "We largely bargain nationally in concert with other major railroads, represented by the National Carriers Conference Committee (NCCC).",
+          "section": "mda",
+          "subsection": "Labor Agreements"
+        },
+        {
+          "text": "As a result of operational improvements, network fluidity improved throughout the year, as evidenced by a 21% decrease in terminal dwell from the beginning of the year and a 17% improvement in train speed over the same time period.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "There are mixed signals with ongoing efforts for improvement but challenges in achieving significant increases.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly fuel expenses, are declining, driven by lower fuel prices. This decline is beneficial for margins, though it also reflects reduced coal volumes and lower average revenue per unit.",
+      "evidence": [
+        {
+          "text": "Fuel expense, which includes the cost of locomotive fuel as well as other fuel used in railway operations, decreased $640 million, or 41%, in 2015 and decreased $39 million, or 2%, in 2014. Both declines were principally the result of lower locomotive fuel prices (down 40% in 2015 and 6% in 2014).",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        },
+        {
+          "text": "The decrease in net income for the year reflected lower income from railway operations, down $691 million, or 19%, primarily due to a $1.1 billion, or 10%, decline in railway operating revenues as a result of lower average revenue per unit (driven primarily by reduced fuel surcharge revenues offset in part by price increases) and depressed coal volumes.",
+          "section": "mda",
+          "subsection": "2015 Compared with 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Declining input costs, particularly fuel expenses, are beneficial for margins.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising due to increased wages and compensation, though there have been some reductions in incentive compensation expenses. The overall impact on net income has been affected by higher wage rates and other associated costs.",
+      "evidence": [
+        {
+          "text": "Compensation and benefits, which represents 38% of total operating expenses, increased $14 million in 2015 reflecting changes in: \u2022pay rates (up $83 million), \u2022payroll taxes (up $37 million), \u2022labor agreement payments ($24 million), \u2022employee levels, including overtime and increased trainees (up $21 million), and \u2022incentive compensation (down $151 million).",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        },
+        {
+          "text": "$93 million of costs associated with the restructuring of our TCS subsidiary and the closure of our Roanoke, Virginia corporate office, which reduced net income by $58 million, or $0.19 per diluted share, and by higher wage rates.",
+          "section": "mda",
+          "subsection": "2015 Compared with 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs due to increased wages and compensation are affecting net income.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction actions are delivering measurable savings, particularly in fuel expenses and operational efficiency improvements, though some initiatives have incurred associated costs.",
+      "evidence": [
+        {
+          "text": "In 2015, decreases in fuel costs and incentive compensation were offset in part by costs associated with the TCS restructuring and closure of our Roanoke, Virginia corporate office, in addition to higher wage rates.",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        },
+        {
+          "text": "Through these initiatives, we expect to produce expense savings of $130 million in 2016 while increasing productivity and efficiency.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Measurable savings from cost reduction actions are being achieved, despite some associated costs.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins are facing downward pressure due to lower revenues and higher costs, but operational improvements and cost management are partially mitigating this trend. There is a mixed outlook with expected decreases in certain expenses offsetting higher costs in other areas.",
+      "evidence": [
+        {
+          "text": "Looking forward to 2016, we expect decreases in our purchased services and equipment rents expenses principally due to lower TCS operational costs and improved network velocity. These decreases will be partially offset by higher intermodal operations costs associated with higher conventional volumes.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION, LIQUIDITY, AND CAPITAL RESOURCES"
+        },
+        {
+          "text": "The decrease in net income for the year reflected lower income from railway operations, down $691 million, or 19%, primarily due to a $1.1 billion, or 10%, decline in railway operating revenues as a result of lower average revenue per unit (driven primarily by reduced fuel surcharge revenues offset in part by price increases) and depressed coal volumes.",
+          "section": "mda",
+          "subsection": "2015 Compared with 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Margins are under downward pressure but partially mitigated by improvements and cost management.",
+        "confidence": 0.65
+      }
+    }
+  ]
+}

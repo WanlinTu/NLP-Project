@@ -1,0 +1,533 @@
+{
+  "ticker": "INFO",
+  "form": "10-K",
+  "filing_date": "2021-01-22",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 27,
+  "factors": [
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is a headwind due to the ongoing impact of the COVID-19 pandemic.",
+      "evidence": [
+        {
+          "text": "The COVID-19 pandemic... has caused significant economic disruption and adversely impacted the global economy, leading to reduced consumer spending and disruptions and volatility in the global financial and commodities markets.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has had and could continue to have a material adverse effect on our business, financial condition, results of operations, or cash flows."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The COVID-19 pandemic has caused significant economic disruption, leading to reduced consumer spending and financial market volatility.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is a focus, but challenges exist.",
+      "evidence": [
+        {
+          "text": "Customers are focused on controlling or reducing their operating costs, and may use strategies that result in a reduction in their spending on our products and services, such as by consolidating their spending with fewer or lower cost vendors, by deferring capital spending, or by internally developing functionality.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenges exist as customers reduce spending and consolidate with lower-cost vendors.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "Differentiation is maintained through proprietary technology and customer relationships.",
+      "evidence": [
+        {
+          "text": "Our success depends in part on our proprietary technology, processes, methodologies, and information. We rely on a combination of copyright, trademark, trade secret, patent, and other intellectual property laws and nondisclosure, license, assignment, and confidentiality arrangements to establish, maintain, and protect our proprietary rights, as well as the intellectual property rights of third parties whose assets we license.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Proprietary technology and strong customer relationships provide a competitive advantage.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration risks exist, particularly in financial services.",
+      "evidence": [
+        {
+          "text": "Many of our products and services, particularly in our resources and financial end-markets, are dependent upon the robustness of the core end-markets in which we operate, as well as the financial health of the participants in those markets and the general economy.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High concentration in financial services poses risks due to market and economic dependencies.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is stable, but new orders are not outpacing revenue in all segments.",
+      "evidence": [
+        {
+          "text": "Recurring revenue streams represented approximately 88 percent of total revenue in 2020, indicating stable demand.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Order backlog is stable, but new orders aren't outpacing revenue in all segments, indicating mixed signals.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments, benefiting the company.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA margins increased in Financial Services and Transportation, driven by favorable product mix.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shifting revenue mix towards higher-margin segments is a positive development.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Transaction counts are declining in some areas, particularly in non-recurring revenue streams.",
+      "evidence": [
+        {
+          "text": "Non-recurring revenue decreased due to event cancellations and lower OEM activity.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining transaction counts in non-recurring revenue streams indicate a headwind.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "Financial Services is the fastest-growing end market, while Transportation and Resources are slowing.",
+      "evidence": [
+        {
+          "text": "Financial Services saw strong organic growth, while Transportation and Resources faced challenges due to the pandemic.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While Financial Services is growing, Transportation and Resources are slowing, resulting in mixed momentum.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable, with some reduction in accrued compensation.",
+      "evidence": [
+        {
+          "text": "Decrease in accrued compensation due to lower bonus accruals.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor costs are manageable, indicating stability, but the reduction in accrued compensation suggests a slight positive trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are expanding due to cost reduction efforts and stable revenue.",
+      "evidence": [
+        {
+          "text": "Adjusted EBITDA margins increased by 250 basis points in 2020.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Gross and operating margins are expanding significantly, showing strong improvement.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving through initiatives like automation and workforce management.",
+      "evidence": [
+        {
+          "text": "Cost of revenue and SG&A expense decreased as a percentage of revenue, indicating improved productivity.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improved operational efficiency through automation and workforce management indicates progress.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain is stable, with no significant disruptions reported.",
+      "evidence": [
+        {
+          "text": "No mention of supply chain issues or disruptions in the provided text.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Supply chain stability without disruptions suggests a steady state, but no significant positive or negative developments.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is stable, with no significant changes in manufacturing utilization.",
+      "evidence": [
+        {
+          "text": "No specific information on manufacturing utilization changes in the provided text.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable capacity utilization indicates no major changes, but insufficient data for a definitive sentiment.",
+        "confidence": 0.4
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are stable, with no indication of excessive buildup or shortages.",
+      "evidence": [
+        {
+          "text": "Accounts receivable and deferred revenue balances were relatively flat in 2020 compared to 2019.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory levels are stable, showing no excess or shortages, which is a neutral indicator.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "No significant quality or safety incidents reported.",
+      "evidence": [
+        {
+          "text": "No mention of product quality, safety incidents, or warranty issues in the provided text.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No incidents reported, but the lack of information doesn't provide a clear sentiment direction.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is cautiously optimistic, with actions like dividend initiation and share repurchases indicating confidence.",
+      "evidence": [
+        {
+          "text": "Initiated a quarterly dividend in 2020 and repurchased significant shares.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Actions like dividend initiation and share repurchases demonstrate management's confidence in the company's future.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Near-term catalysts include new product launches and post-pandemic economic recovery.",
+      "evidence": [
+        {
+          "text": "Expectation to pivot to post-pandemic recovery with increased organic growth and new product introductions.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Near-term catalysts like new product launches and post-pandemic recovery suggest growth opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company has demonstrated mixed evidence regarding its pricing power. While it has shown resilience through cost reduction efforts without compromising pricing, it has also implemented voluntary price relief for certain customers, indicating some loss of pricing power.",
+      "evidence": [
+        {
+          "text": "voluntary price relief for certain customers",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has had and could continue to have a material adverse effect on our business, financial condition, results of operations, or cash flows."
+        },
+        {
+          "text": "Adjusted EBITDA profit margin increased by 250 basis points due to cost reduction efforts, not price hikes",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed evidence shows some loss of pricing power due to voluntary price relief despite cost reductions.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed, with some segments showing growth while others face challenges, particularly in the second and third quarters of 2020 when demand decelerated significantly.",
+      "evidence": [
+        {
+          "text": "we experienced a decrease to our revenue primarily in the second and third quarters of 2020, particularly in our Resources and Transportation segments, such as from cancellation of customer events, voluntary price relief for certain customers and other interruptions and cancellations of business activity.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has had and could continue to have a material adverse effect on our business, financial condition, results of operations, or cash flows."
+        },
+        {
+          "text": "Organic revenue growth in Financial Services was strong, while Transportation and Resources saw declines due to the pandemic.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is mixed with significant declines in certain segments during the pandemic.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is facing significant challenges, primarily due to the ongoing impact of the COVID-19 pandemic, which has led to a deceleration in growth and increased pressure on revenue. While the company is focusing on various strategies to achieve growth objectives, including organic development, cross-selling, and acquisitions, the near-term outlook remains uncertain and dependent on improving economic conditions.",
+      "evidence": [
+        {
+          "text": "we may experience continued pressure on organic revenue growth over the near term until economic conditions improve.",
+          "section": "risk_factors",
+          "subsection": "The COVID-19 pandemic has had and could continue to have a material adverse effect on our business, financial condition, results of operations, or cash flows."
+        },
+        {
+          "text": "We seek to achieve our growth objectives by: organically developing our offerings to meet the needs of our customers; cross selling our products and services to existing customers; acquiring new customers; entering into strategic partnerships and acquisitions; and implementing operational efficiency initiatives.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        },
+        {
+          "text": "Organic revenue growth in 2020 was lower compared to 2019, especially in Transportation and Resources.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic growth is challenged by the pandemic and uncertain outlook.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The company operates in highly competitive markets where competition is intense, and competitors are actively investing and enhancing their products and services. This competitive environment poses risks, including potential adverse effects on financial results, challenges in maintaining growth and profitability, and the possibility of competitors reducing willingness to supply necessary data or increasing costs.",
+      "evidence": [
+        {
+          "text": "we operate in competitive markets... competitors are continuously investing, developing, and enhancing their products, services, and technology... could negatively impact our business, financial condition, and results of operations.",
+          "section": "risk_factors",
+          "subsection": "We operate in competitive markets, which may adversely affect our financial results."
+        },
+        {
+          "text": "Our license agreements with these third parties are often nonexclusive and many are terminable on less than one year\u2019s notice. In addition, many of these third parties compete with one another and with us, including by providing data to our competitors, consolidating with each other, or becoming competitors themselves, which may cause them to reduce their willingness to supply, or increase the price of, data and content that are important to our products and services.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intense competition poses risks to financial results and growth.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The company has maintained its forward guidance despite facing challenges, reflecting management's confidence in future performance. However, there are risks such as execution difficulties, customer retention issues, and higher-than-expected costs that could impact achieving these objectives.",
+      "evidence": [
+        {
+          "text": "If we are unable to successfully execute on our strategies to achieve our growth objectives, retain existing customers, or if we experience higher than expected operating costs or taxes, our growth rates, profitability and operating results could be materially adversely affected and we may fail to meet the full-year financial guidance that we provide, or find it necessary to revise such guidance during the year.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        },
+        {
+          "text": "Expectations include actions like increasing geographic penetration and introducing new products.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Company maintains guidance despite risks, but challenges remain.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost reduction and efficiency programs, with some success as they are delivering measurable savings. However, there are risks related to increased power usage and potential system strain from aging technology.",
+      "evidence": [
+        {
+          "text": "The company is implementing cost reduction and efficiency programs.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        },
+        {
+          "text": "Cost reduction programs are delivering measurable savings, on track with expectations.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        },
+        {
+          "text": "We may also face significant increases in our use of power and data storage and may experience a shortage of capacity and increased costs associated with such usage.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        },
+        {
+          "text": "We may also face additional strain on our systems and networks due to aging or end-of-life technology that we have not yet updated or replaced.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction programs are successful, but face potential strain from aging technology.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company faces a potential risk related to input costs due to its reliance on third-party data and technology, which could be a concern. However, the management has implemented cost reduction efforts, leading to a decrease in cost of revenue and SG&A expenses, indicating some stability in input costs.",
+      "evidence": [
+        {
+          "text": "We obtain data from a wide variety of external sources that we transform into critical information and analytics and use to create integrated product and service offerings for our customers.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        },
+        {
+          "text": "Cost of revenue and SG&A expense decreased due to cost management and rationalization efforts.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable input costs due to management efforts, but reliance on third parties remains.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces near-term risks, including cybersecurity threats, system failures, and regulatory changes, as well as lingering effects from the pandemic and economic uncertainty.",
+      "evidence": [
+        {
+          "text": "Cyber-threats vary in technique and sources, are persistent, and increasingly are more sophisticated, targeted, and difficult to detect and prevent. We rely on a system of physical and technological security measures, internal processes and controls, contractual precautions and business continuity plans, and policies, procedures, and training to protect the confidentiality of such data.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        },
+        {
+          "text": "COVID-19 pandemic impacts on revenue and demand are still being managed.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company identifies multiple near-term risks such as cybersecurity, system failures, regulatory changes, and pandemic effects, which could impact operations and profitability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company faces key sensitivities related to foreign currency movements, exchange rate fluctuations, and cybersecurity risks. Additionally, the impact of the pandemic on end markets poses another significant sensitivity. These factors could negatively affect the company's revenue, margins, and overall profitability. ",
+      "evidence": [
+        {
+          "text": "Our international operations are subject to exchange rate fluctuations. We operate in many countries around the world and a significant part of our revenue comes from international sales.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        },
+        {
+          "text": "Foreign currency movements and economic conditions influenced revenue and margins.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant sensitivities including foreign currency fluctuations, exchange rates, and ongoing pandemic impacts, posing risks to revenue and margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is centered on innovation, market expansion, and strategic growth initiatives, including technological advancements and expanding product offerings. However, the strategy involves significant challenges, such as increasing complexity and costs associated with new technologies and customer expectations.",
+      "evidence": [
+        {
+          "text": "The process of developing and enhancing our products and services is complex and may become increasingly complex and expensive in the future due to the introduction of new platforms, operating systems, technologies, and customer expectations. Current areas of significant technological change include artificial intelligence, mobility, cloud-based computing, blockchain, speed of availability of data, and the storing, processing, and analysis of large amounts of data.",
+          "section": "risk_factors",
+          "subsection": "We may be unsuccessful in achieving our guidance, growth and profitability objectives."
+        },
+        {
+          "text": "Plans include increasing geographic, product, and customer penetration, and introducing new product offerings.",
+          "section": "mda",
+          "subsection": "Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the company has a strategic focus on innovation and expansion, it also acknowledges substantial challenges and complexities, leading to a balanced outlook.",
+        "confidence": 0.75
+      }
+    }
+  ]
+}

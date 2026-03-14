@@ -1,0 +1,111 @@
+{
+  "ticker": "TT",
+  "form": "10-Q",
+  "filing_date": "2020-10-28",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 6,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand appears stable with improved working capital.",
+      "evidence": [
+        {
+          "text": "The year-over-year increase in net cash provided by continuing operating activities was primarily driven by improved working capital whereby lower inventory and higher outstanding accounts payable balances more than offset higher accounts receivable and lower earnings in the current year.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improved working capital suggests positive demand trends.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are lower, supporting demand stability.",
+      "evidence": [
+        {
+          "text": "The year-over-year increase in net cash provided by continuing operating activities was primarily driven by improved working capital whereby lower inventory and higher outstanding accounts payable balances more than offset higher accounts receivable and lower earnings in the current year.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Lower inventory levels indicate efficient operations and stable demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is improving.",
+      "evidence": [
+        {
+          "text": "Free cash flow may not be comparable to similarly-titled measures used by other companies and should not be considered a substitute for net cash provided by (used in) continuing operating activities in accordance with GAAP.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Evidence does not clearly support improvement in free cash flow.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are a headwind.",
+      "evidence": [
+        {
+          "text": "The overall economic environment is a tailwind (expansion, strong GDP) or headwind (slowdown, recession risk) for the company's business.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions are explicitly stated as a headwind.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are stable.",
+      "evidence": [
+        {
+          "text": "The year-over-year increase in net cash provided by continuing operating activities was primarily driven by improved working capital whereby lower inventory and higher outstanding accounts payable balances more than offset higher accounts receivable and lower earnings in the current year.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Summary indicates stability, but evidence does not clearly support a trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "CapEx is stable.",
+      "evidence": [
+        {
+          "text": "The primary driver of the usage was attributable to capital expenditures, which totaled $89.1 million.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "CapEx is stable, with no indication of significant change.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

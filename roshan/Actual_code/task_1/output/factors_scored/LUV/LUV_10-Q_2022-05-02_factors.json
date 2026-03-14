@@ -1,0 +1,733 @@
+{
+  "ticker": "LUV",
+  "form": "10-Q",
+  "filing_date": "2022-05-02",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 37,
+  "factors": [
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is not explicitly addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not contain specific information on backlog orders or book-to-bill ratios.",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The absence of specific information on backlog orders makes it impossible to determine a clear sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments with an increase in operating revenue per ASM and passenger revenue per ASM.",
+      "evidence": [
+        {
+          "text": "Operating revenues per ASM increased by 54.1%, and passenger revenue per ASM increased by 62.6% compared to 2021.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shifting towards higher-margin segments indicates a positive development in revenue structure.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating as demand recovers, though it remains below pre-pandemic levels.",
+      "evidence": [
+        {
+          "text": "Operating revenues for the first quarter 2022 increased by 128.8% compared to 2021, indicating strong growth despite being below 2019 levels.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Accelerating organic growth, even if below pre-pandemic levels, suggests recovery and positive momentum.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, driven by increased demand and capacity management.",
+      "evidence": [
+        {
+          "text": "Revenue passengers carried increased by 83.0% year-over-year, and available seat miles increased by 48.6% year-over-year.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing unit volumes driven by increased demand and capacity management are favorable signs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "Domestic travel demand is recovering faster than international travel, which is still impacted by the pandemic.",
+      "evidence": [
+        {
+          "text": "The company has resumed service to all 14 of its international destinations, but international operations have been particularly negatively impacted by the pandemic.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Domestic recovery outpacing international, which is still struggling, presents a mixed picture.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction programs, such as the Voluntary Separation Program and Extended Emergency Time Off, have delivered savings but are not expected to provide further significant benefits.",
+      "evidence": [
+        {
+          "text": "The company realized approximately $1.1 billion of full year 2021 cost savings from these programs but expects no material savings in 2022 and beyond.",
+          "section": "mda",
+          "subsection": "COVID-19 Pandemic Impacts"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Cost savings achieved but no further significant benefits expected, indicating limited future impact.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are evident through increased load factors and revenue per available seat mile, though challenges remain with staffing.",
+      "evidence": [
+        {
+          "text": "Load factor improved by 12.7 percentage points year-over-year, and passenger revenue yield per RPM increased by 35.7% year-over-year.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvements in productivity metrics like load factor and revenue yield suggest positive developments.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain, particularly related to aircraft deliveries, is facing challenges with delays in Boeing 737 MAX certifications.",
+      "evidence": [
+        {
+          "text": "The company expects the FAA to determine the timing of Boeing 737-7 certification, creating uncertainty in delivery schedules.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Challenges with aircraft delivery delays pose risks to operations and growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is improving with load factors increasing, but still below pre-pandemic levels.",
+      "evidence": [
+        {
+          "text": "Load factor for the first quarter 2022 was 77.0%, compared to 81.0% in 2019.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Capacity utilization is improving, though still below pre-pandemic levels.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed through aircraft retirements and temporary storage, with some risk of obsolescence.",
+      "evidence": [
+        {
+          "text": "Four Boeing 737 Next Generation aircraft were in temporary storage as of March 31, 2022, and the company expects to retire 28 such aircraft in 2022.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory management is ongoing but carries risks of obsolescence.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "No significant quality or safety incidents are reported in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not mention any product quality, safety incidents, or warranty costs.",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant incidents reported, indicating stability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is cautiously optimistic, investing in staff and infrastructure while managing risks.",
+      "evidence": [
+        {
+          "text": "The company is hiring aggressively and investing in new fare products and sustainability initiatives, signaling confidence in recovery.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management is investing in growth and sustainability, showing confidence.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company is focused on long-term strategic goals, including fleet modernization and environmental sustainability.",
+      "evidence": [
+        {
+          "text": "The company is increasing orders with Boeing to modernize its fleet with more efficient aircraft and has published sustainability reports.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Focus on modernization and sustainability suggests strategic growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Fuel prices and labor costs are key sensitivities impacting near-term results.",
+      "evidence": [
+        {
+          "text": "Fuel costs are projected to rise, and labor expenses are increasing due to higher wages and staffing investments.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased fuel and labor costs pose risks to near-term results.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "New fare products and potential collective bargaining agreement outcomes are near-term catalysts.",
+      "evidence": [
+        {
+          "text": "The introduction of Wanna Get Away Plus fare product and ongoing collective bargaining discussions could impact future performance.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "New fare products and labor outcomes could drive future performance positively.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "route_network",
+      "category": "airlines_transport",
+      "summary": "The company is expanding its route network to add frequencies and new destinations, signaling a focus on growth.",
+      "evidence": [
+        {
+          "text": "The company is adding city pair frequencies and connecting new service with existing points to increase customer depth.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Expanding route network indicates a growth-focused strategy.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fleet_strategy",
+      "category": "airlines_transport",
+      "summary": "The company is modernizing its fleet with new Boeing 737 orders, which should improve efficiency and reduce carbon emissions.",
+      "evidence": [
+        {
+          "text": "The company has entered into supplemental agreements with Boeing to increase aircraft orders and accelerate options for fleet modernization.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is modernizing its fleet with new Boeing 737 orders, which should improve efficiency and reduce carbon emissions.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "travel_demand_mix",
+      "category": "airlines_transport",
+      "summary": "Travel demand is shifting towards leisure travel, which may have lower yields compared to business travel.",
+      "evidence": [
+        {
+          "text": "The company's new fare product, Wanna Get Away Plus, targets leisure travelers with flexible options, suggesting a focus on this segment.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Travel demand is shifting towards leisure travel, which may have lower yields compared to business travel.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is not currently engaging in significant shareholder returns, focusing instead on growth investments.",
+      "evidence": [
+        {
+          "text": "There is no mention of buybacks or increased dividends in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is not currently engaging in significant shareholder returns, focusing instead on growth investments.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is not actively pursuing acquisitions, focusing instead on organic growth and fleet modernization.",
+      "evidence": [
+        {
+          "text": "There is no mention of mergers, acquisitions, or divestitures in the provided text.",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is not actively pursuing acquisitions, focusing instead on organic growth and fleet modernization.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "The company is investing in sustainability initiatives, which may present both costs and opportunities.",
+      "evidence": [
+        {
+          "text": "The company published its 2021 One Report on sustainability, focusing on fuel conservation, emissions reduction, and DEI efforts.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is investing in sustainability initiatives, which may present both costs and opportunities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is increasing capital expenditures, primarily for aircraft and other infrastructure to support growth, with progress payments on future aircraft deliveries being a significant driver.",
+      "evidence": [
+        {
+          "text": "Capital expenditures increased year-over-year, largely due to an increase in progress payments made on future aircraft deliveries during the three months ended March 31, 2022, compared to the same prior year period.",
+          "section": "mda",
+          "subsection": "(in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "The company projects $5.0 billion in capital spending for 2022, including $900 million in non-aircraft capital spending.",
+          "section": "mda",
+          "subsection": "2022 Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is increasing capital expenditures, primarily for aircraft and other infrastructure to support growth, with progress payments on future aircraft deliveries being a significant driver.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation has shown improvement, with net cash provided by operating activities increasing from $645 million to $1.1 billion. However, the company continues to face challenges due to the ongoing impact of the COVID-19 pandemic, and operating expenses are also rising, which may affect future cash flow performance.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities was $1.1 billion for the three months ended March 31, 2022, compared with $645 million provided by operating activities in the same prior year period.",
+          "section": "mda",
+          "subsection": "(in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "The company's net loss improved significantly on a non-GAAP basis, but cash flow details are not explicitly provided.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Free cash flow generation has shown improvement, but the company continues to face challenges due to the ongoing impact of the COVID-19 pandemic and rising operating expenses.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fuel_costs_hedging",
+      "category": "airlines_transport",
+      "summary": "The company is facing rising fuel costs, and its hedging position presents mixed results. While the hedging strategy has provided some protection and offset market price increases in certain periods, the overall hedging position is unfavorable relative to current market prices, leading to higher net fuel and oil expenses.",
+      "evidence": [
+        {
+          "text": "Fuel and oil expense, as reported $ 1,004 $ 469 Add: Fuel hedge contracts settling in the current period, but for which losses were reclassified from AOCI (a) \u2014 8 Add: Premium cost of fuel contracts not designated as hedges \u2014 11 Fuel and oil expense, excluding special items (economic) $ 1,004 $ 488 105.7",
+          "section": "mda",
+          "subsection": "(in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "The Company's fuel hedge is providing excellent protection against rising energy prices and significantly offset the market price increase in jet fuel in first quarter 2022.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Economic fuel costs per gallon are estimated to be $3.05 to $3.15 for the second quarter 2022, reflecting higher prices.",
+          "section": "mda",
+          "subsection": "2022 Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is facing rising fuel costs, and its hedging position presents mixed results, leading to higher net fuel and oil expenses.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is actively working to reduce its debt levels through repayments and refinancing, which is improving its balance sheet strength. The evidence shows a clear focus on deleveraging with significant repayments in the first quarter of 2022 and projections for further reductions throughout the year. This indicates a positive direction in managing debt leverage.",
+      "evidence": [
+        {
+          "text": "The Company repaid $323 million in debt and finance lease obligations, including the extinguishment of $164 million in principal of its Convertible Notes for a cash payment of $230 million during the three months ended March 31, 2022.",
+          "section": "mda",
+          "subsection": "(in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "The company projects $650 million in debt repayments for 2022, indicating a focus on reducing debt levels.",
+          "section": "mda",
+          "subsection": "2022 Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is actively reducing debt through repayments and refinancing, improving balance sheet strength.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The company has not updated its forward guidance in this filing, but management anticipates continued recovery with projected revenue growth for the second quarter of 2022.",
+      "evidence": [
+        {
+          "text": "The company projects a 8% to 12% increase in operating revenue for the second quarter 2022 compared to 2019 levels.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        },
+        {
+          "text": "There have been no material changes to the factors disclosed in Item 1A. Risk Factors in the Company\u2019s Annual Report on Form 10-K for the year ended December\u00a031, 2021.",
+          "section": "mda",
+          "subsection": "2022 Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No updated forward guidance, but management expects continued recovery with projected revenue growth.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is facing significant pressure on its margins, primarily due to rising expenses such as fuel costs, labor expenses, and other operational costs, despite increases in revenues. The margin pressures are evident across both gross and operating margins, with operating expenses outpacing revenue growth.",
+      "evidence": [
+        {
+          "text": "Operating income (loss), as reported $ (151) $ 199 Deduct: Payroll support and voluntary Employee programs, net \u2014 (1,448) Deduct: Fuel hedge contracts settling in the current period, but for which losses were reclassified from AOCI (a) \u2014 (8) Deduct: Interest rate swap agreements terminated in a prior period, but for which losses were reclassified from AOCI (a) \u2014 (1) Deduct: Premium cost of fuel contracts not designated as hedges \u2014 (11) Add: Impairment of long-lived assets 16 \u2014 Operating loss, excluding special items $ (135) $ (1,269) (89.4)",
+          "section": "mda",
+          "subsection": "(in millions, except per share amounts and per ASM amounts)"
+        },
+        {
+          "text": "Operating expenses for first quarter 2022 increased by $3.0 billion, or 161.5 percent, compared with first quarter 2021, while capacity increased 48.6 percent over the same prior year period.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating expenses per ASM increased by 76.1%, outpacing the 54.1% increase in operating revenues per ASM.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is facing significant margin pressures due to rising expenses outpacing revenue growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The impact of interest rate changes on the company's operations and financial performance is not explicitly mentioned in the provided text. The evidence from different subsections consistently indicates that interest rates were not addressed as a factor affecting the company.",
+      "evidence": [
+        {
+          "text": "The text does not explicitly address the impact of interest rate changes on the company's operations.",
+          "section": "mda",
+          "subsection": "Cautionary Statement Regarding Forward-Looking Statements"
+        },
+        {
+          "text": "There is no mention of interest rates or their impact on the company's financial performance.",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No explicit mention of interest rate impact on the company's operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic conditions present mixed signals, with headwinds such as fuel price changes, labor costs, and geopolitical risks, yet there are signs of improvement due to reduced COVID-19 impacts and increased travel demand supporting recovery.",
+      "evidence": [
+        {
+          "text": "The economic environment is a headwind due to factors such as fuel price changes, labor costs, and geopolitical risks.",
+          "section": "mda",
+          "subsection": "Cautionary Statement Regarding Forward-Looking Statements"
+        },
+        {
+          "text": "The company saw steady improvement in 2021 and 2022 with reduced pandemic-related disruptions.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals with headwinds like fuel prices and labor costs, but some signs of improvement.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company exhibits minimal foreign exchange exposure due to its primarily U.S.-based operations. However, there is no explicit mention of foreign exchange movements impacting its results, which introduces some uncertainty regarding potential FX risks.",
+      "evidence": [
+        {
+          "text": "The text does not explicitly address foreign exchange movements impacting the company's results.",
+          "section": "mda",
+          "subsection": "Cautionary Statement Regarding Forward-Looking Statements"
+        },
+        {
+          "text": "The company's international operations are limited, and there is no mention of FX movements impacting financial results.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Minimal foreign exchange exposure, but no explicit mention of FX impact.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces significant near-term risks, primarily from the ongoing impacts of the COVID-19 pandemic, rising fuel prices, labor shortages, and geopolitical factors. These risks include the duration and recurrence of the pandemic, effectiveness of vaccines, government mandates affecting business plans and employee retention, demand for air travel, and access to capital. Additionally, fuel cost increases and challenges in aligning staffing with demand further complicate the outlook.",
+      "evidence": [
+        {
+          "text": "any negative developments related to the COVID-19 pandemic, including, for example, with respect to (i) the duration, spread, severity, or any recurrence of the COVID-19 pandemic or any new variant strains of the underlying virus; (ii) the effectiveness, availability, and usage of COVID-19 vaccines; (iii) the impact of government mandates, directives, orders, regulations, and other governmental actions related to COVID-19 on the Company\u2019s business plans and its ability to retain key Employees; (iv) the extent of the impact of COVID-19 on overall demand for air travel and the Company's related business plans and decisions; and (v) the impact of the COVID-19 pandemic on the Company's access to capital;",
+          "section": "mda",
+          "subsection": "Cautionary Statement Regarding Forward-Looking Statements"
+        },
+        {
+          "text": "Fuel costs are projected to increase, and the company is facing challenges in aligning staffing with increased demand.",
+          "section": "mda",
+          "subsection": "2022 Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant near-term risks from COVID-19, rising fuel prices, labor shortages, and geopolitical factors.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power, as evidenced by significant year-over-year increases in both average passenger fare and revenue per available seat mile, along with improvements in yield and load factors.",
+      "evidence": [
+        {
+          "text": "The year-over-year RASM increase was primarily driven by a 35.7 percent improvement in yield and an increase in Load factor of 12.7 points.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "Average passenger fare increased by 32.0% year-over-year, and passenger revenue yield per RPM increased by 35.7% year-over-year.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong pricing power demonstrated by significant increases in average passenger fare and revenue yields.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are showing a positive recovery, with acceleration particularly noted in leisure travel. However, there are intermittent challenges due to COVID-19 variant surges, which have caused temporary decelerations in demand.",
+      "evidence": [
+        {
+          "text": "The dollar increase was driven primarily by the improvements in leisure passenger demand and bookings in first quarter 2022 versus the severe impacts to demand and bookings from the COVID-19 pandemic in first quarter 2021.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "The Company saw steady improvement throughout much of 2021 and 2022, with intermittent periods of decelerated demand that coincided with COVID-19 variant surges.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is recovering with leisure travel growth, despite temporary setbacks from COVID variants.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company faces significant geopolitical risks, including conflicts, sanctions, political instability, and cyber-attacks, which could negatively impact its operations and financial results. However, the introduction section does not explicitly mention geopolitical factors as a significant issue, indicating either a lack of emphasis or potential underestimation of these risks.",
+      "evidence": [
+        {
+          "text": "Geopolitical factors such as conflicts, sanctions, and political instability pose risks to the company's operations.",
+          "section": "mda",
+          "subsection": "Cautionary Statement Regarding Forward-Looking Statements"
+        },
+        {
+          "text": "the impact of fears or actual acts of terrorism or war, political instability, cyber-attacks, and other factors beyond the Company\u2019s control on the Company\u2019s plans, financial results, operations, and ability to adequately insure against risks;",
+          "section": "mda",
+          "subsection": "Introduction"
+        },
+        {
+          "text": "There is no discussion of geopolitical factors impacting the company's business.",
+          "section": "mda",
+          "subsection": "Introduction"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant geopolitical risks pose potential threats to operations and financials, though not explicitly discussed.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capacity_load_yield",
+      "category": "airlines_transport",
+      "summary": "Capacity is increasing, load factors are improving, and revenue per available seat mile (RASM) is rising, reflecting strong demand and recovery from the COVID-19 pandemic. The improvements are driven by leisure passenger demand and bookings, which have significantly increased compared to the previous year.",
+      "evidence": [
+        {
+          "text": "First quarter 2022 operating revenues per ASM (RASM) were 13.65 cents, an increase of 54.1 percent, compared with first quarter 2021.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "Load factor improved by 12.7 percentage points year-over-year, and passenger revenue yield per RPM increased by 35.7% year-over-year.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Strong recovery with increasing capacity, load factors, and revenue per seat mile.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly fuel costs, are rising significantly, creating cost pressure despite revenue growth. Both subsections highlight substantial increases in fuel expenses, with the Operating Expenses section noting a 114.1% year-over-year increase in fuel and oil expense for the first quarter of 2022, and the Financial Overview section pointing to a 41.1% year-over-year increase in fuel costs per gallon.",
+      "evidence": [
+        {
+          "text": "Fuel and oil expense for first quarter 2022 increased by $535 million, or 114.1 percent, compared with first quarter 2021. On a per ASM basis, first quarter 2022 Fuel and oil expense increased 44.6 percent.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Fuel costs per gallon increased by 41.1% year-over-year, contributing to higher operating expenses.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Substantial increases in fuel costs are creating significant cost pressure despite revenue growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising due to higher wages, step rate increases, additional incentive pay, and staffing investments. While per unit costs decreased, the overall dollar increase is significant, impacting margins negatively.",
+      "evidence": [
+        {
+          "text": "Salaries, wages, and benefits expense for first quarter 2022 increased by $658 million, or 41.9 percent, compared with first quarter 2021. On a per ASM basis, first quarter 2022 Salaries, wages, and benefits expense decreased 4.6 percent, compared with first quarter 2021. On a dollar basis, the increase was primarily driven by higher salaries and wages due to significantly more trips, step/pay rate increases for certain workgroups, and $127 million of additional salaries, wages, and benefits expense as a result of incentive pay offered to the Company's Operations Employees through early February 2022 in an effort to address available staffing challenges related to the Omicron variant.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The company is adding more than 10,000 employees in 2022, which is expected to increase salaries, wages, and benefits expenses.",
+          "section": "mda",
+          "subsection": "COVID-19 Pandemic Impacts"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs due to wage increases and staffing investments are negatively impacting margins.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

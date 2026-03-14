@@ -1,0 +1,60 @@
+{
+  "ticker": "PCAR",
+  "form": "10-Q",
+  "filing_date": "2016-11-04",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 3,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is decelerating.",
+      "evidence": [
+        {
+          "text": "In the third quarter, PFS revenue decreased to $296.2 million in 2016 from $301.0 million in 2015, primarily due to the effects of translating weaker foreign currencies to the U.S. dollar and lower revenues from used truck sales, partially offset by higher revenues from an increase in average operating lease assets.",
+          "section": "mda",
+          "subsection": "PACCAR Inc \u0096 Form 10-Q"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary indicates a deceleration in demand, supported by evidence of decreased revenue and weaker foreign currencies.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting, with higher average operating lease assets contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "Higher average operating lease assets increased revenues by $6.9 million and related depreciation and other expenses by $5.6 million.",
+          "section": "mda",
+          "subsection": "PACCAR Inc \u0096 Form 10-Q"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The revenue mix is shifting favorably, with higher average operating lease assets contributing to growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating.",
+      "evidence": [
+        {
+          "text": "In the third quarter, PFS revenue decreased to $296.2 million in 2016 from $301.0 million in 2015, primarily due to the effects of translating weaker foreign currencies to the U.S. dollar and lower revenues from used truck sales, partially offset by higher revenues from an increase in average operating lease assets.",
+          "section": "mda",
+          "subsection": "PACCAR Inc \u0096 Form 10-Q"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic revenue growth is decelerating, as evidenced by the decrease in PFS revenue from 2015 to 2016.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

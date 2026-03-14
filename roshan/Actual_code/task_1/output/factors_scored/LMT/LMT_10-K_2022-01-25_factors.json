@@ -1,0 +1,922 @@
+{
+  "ticker": "LMT",
+  "form": "10-K",
+  "filing_date": "2022-01-25",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 39,
+  "factors": [
+    {
+      "key": "classified_programs",
+      "category": "defense_government",
+      "summary": "Classified programs contribute significantly to revenue but faced performance issues.",
+      "evidence": [
+        {
+          "text": "Aeronautics\u2019 operating results included the following (in millions): Operating profit decreased due to a $225 million loss on a classified program. The operating results of these classified programs are included in our consolidated and business segment results.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The classified programs contributed significantly to revenue but faced performance issues, including a $225 million loss.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, with a $1.0 billion increase in 2021 operating cash flow compared to 2020, driven by lower pension contributions and higher net earnings.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities 9,221 8,183 7,311 [...] The increase in cash from operating activities was primarily attributable to lower pension contributions, as we made no contributions in 2021 compared to a pension contribution of $1.0 billion in 2020, and an increase of approximately $865 million in cash from our net earnings adjusted for noncash items.",
+          "section": "mda",
+          "subsection": "Operating Activities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow improved with a $1.0 billion increase in 2021 operating cash flow, driven by lower pension contributions and higher net earnings.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company faces significant geopolitical risks, including sanctions from China and Turkey, which could disrupt its supply chain and international sales.",
+      "evidence": [
+        {
+          "text": "On July 14, 2020 and again on October 26, 2020, the People\u2019s Republic of China (China) announced it may impose sanctions against Lockheed Martin in response to Congressional Notifications of potential Foreign Military Sales to Taiwan, which included sales of Lockheed Martin products. [...] The U.S. Government has imposed certain sanctions on Turkish entities and persons as described in the risk factor below, and could act in the future to prevent or restrict sales to other customers.",
+          "section": "risk_factors",
+          "subsection": "Geopolitical issues and considerations could have a significant effect on our business."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant geopolitical risks from potential sanctions by China and Turkey pose serious threats to supply chain and international sales.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company is heavily reliant on U.S. Government contracts, which constitutes a significant portion of their business.",
+      "evidence": [
+        {
+          "text": "We derived 71% of our total consolidated net sales from the U.S. Government in 2021, including 62% from the DoD. We expect to continue to derive most of our sales from work performed under U.S. Government contracts.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Reliance on Government Contracts"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Heavy reliance on U.S. Government contracts constitutes a significant portion of their business, increasing risk exposure.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions, including U.S. Government budget constraints, pose risks to the company's operations and financial performance.",
+      "evidence": [
+        {
+          "text": "Budget uncertainty, [...] can adversely affect our industry and the funding for our programs. [...] The U.S. Government could assert that it is not required to appropriate additional funding.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Reliance on Government Contracts"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "U.S. Government budget constraints pose risks to the company's operations and financial performance.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "government_budget",
+      "category": "unknown",
+      "summary": "The company is sensitive to U.S. Government budget decisions, which can affect funding for its programs and overall business stability.",
+      "evidence": [
+        {
+          "text": "Budget uncertainty, the risk of future budget cuts, the potential for U.S. Government shutdowns, [...] can adversely affect our industry and the funding for our programs.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Reliance on Government Contracts"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is sensitive to U.S. Government budget decisions, which can affect funding for its programs and overall business stability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, particularly in production efficiency, as evidenced by increased production rates and reduced COVID-19 impacts.",
+      "evidence": [
+        {
+          "text": "In 2021, we continued to be impacted by COVID-19 but the production rate improved from its 2020 levels... We delivered 142 aircraft in 2021, exceeding our contractual obligation by three aircraft.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity is improving, particularly in production efficiency, as evidenced by increased production rates and reduced COVID-19 impacts.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is increasing, as evidenced by higher production rates and increased backlog.",
+      "evidence": [
+        {
+          "text": "We anticipate delivering 148-153 aircraft in 2022. In 2023 and beyond, we anticipate delivering 156 aircraft for the foreseeable future. We have 230 aircraft in backlog as of December 31, 2021 extending into 2023.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Capacity utilization is increasing, as evidenced by higher production rates and increased backlog.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is confident with actions like maintaining production targets and increasing deliveries, signaling a growth-oriented approach.",
+      "evidence": [
+        {
+          "text": "We delivered 142 aircraft in 2021, exceeding our contractual obligation by three aircraft. We anticipate delivering 148-153 aircraft in 2022.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's confidence is evident through their ability to exceed delivery obligations and set higher targets.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategy is focused on sustaining F-35 production and expanding international sales, with a clear and well-resourced plan.",
+      "evidence": [
+        {
+          "text": "Production of the aircraft is expected to continue for many years given the U.S. Government\u2019s current inventory objective... expressions of interest from other countries.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "A clear, well-resourced long-term strategy focused on sustaining production and expanding sales indicates strong planning.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is occurring with layoffs and facility closures, particularly in the RMS segment.",
+      "evidence": [
+        {
+          "text": "During 2021, we recorded severance and restructuring charges of $36 million... associated with plans to close and consolidate certain facilities and reduce total workforce within our RMS business segment.",
+          "section": "mda",
+          "subsection": "Cost of Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring involving layoffs and facility closures suggests cost-cutting measures, which may impact operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is improving with scheduled repayments reducing outstanding debt.",
+      "evidence": [
+        {
+          "text": "Interest expense in 2021 was $569 million, compared to $591 million in 2020. The decrease in interest expense in 2021 resulted primarily from our scheduled repayment of debt in October 2020 and September 2021 of $500 million each.",
+          "section": "mda",
+          "subsection": "Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in debt leverage due to scheduled repayments shows effective financial management.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is facing pricing pressures due to increased competition and bid protests, which could affect its ability to maintain prices.",
+      "evidence": [
+        {
+          "text": "The U.S. Government increasingly has relied on competitive contract award types, including indefinite-delivery, indefinite-quantity and other multi-award contracts, which have the potential to create pricing pressure and to increase our costs by requiring us to submit multiple bids and proposals.",
+          "section": "risk_factors",
+          "subsection": "Increased competition and bid protests in a budget-constrained environment may make it more difficult to maintain our financial performance and customer relationships."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased competition and bid protests are creating pricing pressures, which could harm revenue.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is monitoring inflationary pressures, particularly in supply chains and labor, which could impact costs and margins, especially under fixed-price contracts.",
+      "evidence": [
+        {
+          "text": "Given broader inflation in the economy, we are monitoring the risk inflation presents to active and future contracts. To date we have not seen broad based increases in costs from inflation that are material to the business as a whole; however, if we began to experience greater than expected supply chain and labor inflation our profits and margins under our contracts, in particular fixed price contracts, could be adversely affected.",
+          "section": "risk_factors",
+          "subsection": "Our profitability and cash flow may vary based on the mix of our contracts and programs, our performance, and our ability to control costs."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Inflationary pressures in supply chains and labor could negatively impact costs and margins, especially under fixed-price contracts.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are a concern due to collective bargaining agreements and potential union actions.",
+      "evidence": [
+        {
+          "text": "Approximately 20% of our employees are covered by collective bargaining agreements with various unions. If we encounter difficulties with renegotiations or renewals of collective bargaining arrangements or are unsuccessful in those efforts, we could incur additional costs and experience work stoppages.",
+          "section": "risk_factors",
+          "subsection": "Our business and financial performance depends on our ability to identify, attract and retain a highly skilled workforce."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential union actions and difficulties in renegotiating collective bargaining agreements pose risks to operations and costs.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant risks due to changes in tax laws and regulations, which could negatively impact their financial results.",
+      "evidence": [
+        {
+          "text": "Changes in U.S. (federal or state) or foreign tax laws and regulations, or their interpretation and application, including those with retroactive effect, could result in increases in our tax expense and affect profitability and cash flows.",
+          "section": "risk_factors",
+          "subsection": "Changes in tax laws and regulations or exposure to additional tax liabilities could adversely affect our financial results."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Risks from changes in tax laws and regulations could lead to increased tax expenses and negatively impact profitability.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "The U.S. defense budget is growing, with increased funding allocated through the FY 2022 NDAA, supporting key programs like GPS III and hypersonics. However, there are ongoing uncertainties due to continuing resolutions and potential risks from budget cuts or shifting priorities that could impact the company's business.",
+      "evidence": [
+        {
+          "text": "The FY 2022 NDAA authorizes approximately $25 billion more than the President requested in the FY 2022 budget request.",
+          "section": "mda",
+          "subsection": "U.S. Government Funding"
+        },
+        {
+          "text": "Space\u2019s major programs include [...] GPS III, hypersonics programs and Next Generation Interceptor (NGI).",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "Changes in the U.S. Government\u2019s priorities, or delays or reductions in spending could have a material adverse effect on our business.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Reliance on Government Contracts"
+        },
+        {
+          "text": "The U.S. Government continued testing the aircraft... including ship trials, mission and weapons systems evaluations... expressions of interest from other countries.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The U.S. defense budget is growing with increased funding, which supports key programs and indicates a positive outlook.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is mixed across the company's business segments, with some areas experiencing slight decreases while others show modest increases. Despite overall net sales showing a 3% increase in products and 1% in services, specific segments like Space and three out of four business areas are facing declines, indicating a deceleration in organic revenue growth.",
+      "evidence": [
+        {
+          "text": "We expect 2022 net sales to decrease by approximately 2% from 2021 levels. The projected decline is driven by declines at three of the four business areas (MFC, RMS, and Space).",
+          "section": "mda",
+          "subsection": "2022 Financial Trends"
+        },
+        {
+          "text": "Net sales for Aeronautics increased by 2%, MFC by 4%, and RMS by 5%. Operating profits showed similar trends with increases in MFC and RMS, but a slight decrease in Aeronautics.",
+          "section": "mda",
+          "subsection": "Business Segment Results of Operations"
+        },
+        {
+          "text": "Space\u2019s net sales in 2021 decreased $66 million, or 1%, compared to 2020. [...] Space\u2019s operating profit in 2021 decreased $15 million, or 1%, compared to 2020.",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "Product sales increased $1.5 billion, or 3%, in 2021 as compared to 2020... Service sales increased $139 million, or 1%, in 2021 as compared to 2020.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic growth is mixed with declines in some segments, indicating a deceleration in revenue growth.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance across different business segments. While the overall gross and operating margins are stable or improving slightly in some areas, such as Aeronautics and the Consolidated Results, other segments like Space are experiencing margin compression. Additionally, there are risks related to potential cost overruns and reduced fees under certain contract types, which could further pressure margins.",
+      "evidence": [
+        {
+          "text": "Total business segment operating margin in 2022 is expected to be approximately 10.9% and cash from operations in 2022 is expected to be greater than or equal to $7.9 billion.",
+          "section": "mda",
+          "subsection": "2022 Financial Trends"
+        },
+        {
+          "text": "Operating margins for Aeronautics were 10.5%, MFC 14.1%, and RMS 10.7% in 2021, showing stability or slight improvement from prior years.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        },
+        {
+          "text": "Operating margin 9.6 % 9.7 % 11.0 %",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "Gross profit increased to $9.1 billion in 2021 from $8.7 billion in 2020... Operating profit increased to $9.1 billion in 2021 from $8.6 billion in 2020.",
+          "section": "mda",
+          "subsection": "Contractual Commitments"
+        },
+        {
+          "text": "Under fixed-price contracts, we agree to perform specified work for a pre-determined price. If our actual costs exceed our estimates our profits are reduced and we could incur a loss. Some fixed-price contracts have a performance-based component under which we may earn incentive payments or incur financial penalties based on our performance.",
+          "section": "mda",
+          "subsection": "Consolidated Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance across segments with some improvement and others facing margin compression, showing no clear trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends across the organization show mixed performance, with some segments experiencing declines while others see increases. The declines are attributed to factors such as the renationalization of the Atomic Weapons Establishment and reduced demand in certain programs, while increases are driven by higher production rates on key programs like F-35 and F-16.",
+      "evidence": [
+        {
+          "text": "Specifically, these decreases are driven by the renationalization of the Atomic Weapons Establishment (AWE) at Space, the 2021 delivery of a training system on an international pilot training program at RMS not projected to repeat in 2022, as well as a decrease in Special Operations Forces Global Logistics Support Services (SOF GLSS) volume at MFC due to withdrawal of U.S. forces from Afghanistan.",
+          "section": "mda",
+          "subsection": "2022 Financial Trends"
+        },
+        {
+          "text": "Aeronautics saw higher net sales due to higher volume on classified contracts and F-16, F-35 programs. MFC experienced higher volume on integrated air and missile defense and tactical missile programs. RMS had higher production volume on helicopter programs.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        },
+        {
+          "text": "The decrease was primarily attributable to lower net sales of approximately $535 million due to the renationalization of the AWE program; and about $105 million for commercial civil space programs due to lower volume (primarily Orion). These decreases were partially offset by higher net sales of approximately $405 million for strategic and missile defense programs due to higher volume (primarily hypersonic development and NGI programs); and about $140 million for national security space programs due to higher volume and risk retirements (primarily Next Gen OPIR and SBIRS).",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "We delivered 142 aircraft in 2021, exceeding our contractual obligation by three aircraft. We anticipate delivering 148-153 aircraft in 2022. In 2023 and beyond, we anticipate delivering 156 aircraft for the foreseeable future.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends show some increases and decreases across different programs, leading to a mixed outlook.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is pursuing a pending acquisition of Aerojet Rocketdyne, which faces significant regulatory challenges, particularly from the FTC. The acquisition, valued at approximately $4.4 billion, would be financed through new debt issuances if completed. However, there is uncertainty surrounding the transaction's completion due to the potential FTC lawsuit and the company's options to defend or terminate the merger agreement.",
+      "evidence": [
+        {
+          "text": "On December 20, 2020, we entered into an agreement to acquire Aerojet Rocketdyne Holdings, Inc. [...] We believe it is highly likely that the FTC will vote to sue to block the transaction and expect they will make a decision before January 27, 2022. If the FTC sues to block the transaction, we could elect to defend the lawsuit within 30 days or terminate the merger agreement.",
+          "section": "mda",
+          "subsection": "Pending Acquisition of Aerojet Rocketdyne Holdings, Inc."
+        },
+        {
+          "text": "On December 20, 2020, we entered into an agreement to acquire Aerojet Rocketdyne for approximately $4.4 billion after the assumption of Aerojet Rocketdyne\u2019s then-projected net cash and are awaiting a final FTC decision. If the transaction is completed, we expect to finance the acquisition primarily through new debt issuances.",
+          "section": "mda",
+          "subsection": "Liquidity and Cash Flows"
+        },
+        {
+          "text": "If the FTC sues to block the transaction, we could elect to defend the lawsuit within 30 days or terminate the merger agreement.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Significant Contingencies, Uncertainties and Estimates, including Pension, Taxes, Environmental and Litigation Costs"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The acquisition faces significant regulatory challenges, creating uncertainty and potential risks.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "The company's international sales are a significant and growing component of its business, with a strategic focus on initiatives like FMS and DCS. However, these sales are not without risks, including geopolitical tensions and regulatory challenges. The F-35 program has also contributed to international growth through commitments and interest from partner countries.",
+      "evidence": [
+        {
+          "text": "In 2021, international customers accounted for 71% of our $67.0 billion in net sales.",
+          "section": "mda",
+          "subsection": "International Business"
+        },
+        {
+          "text": "In 2021, 28% of our total net sales were from international customers and these sales may grow in the future.",
+          "section": "risk_factors",
+          "subsection": "International sales may pose different economic, regulatory, competition and other risks."
+        },
+        {
+          "text": "International sales present risks that are different and potentially greater than those encountered in our U.S. business.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Reliance on Government Contracts"
+        },
+        {
+          "text": "commitments from our seven international partner countries and six international customers; as well as expressions of interest from other countries.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "International sales are a significant and growing part of the business, contributing to future growth despite some risks.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is investing in its workforce to retain talent, particularly amid challenges like COVID-19 vaccine mandates and workforce attrition. However, intense competition for skilled personnel poses a risk to retaining talent, especially in highly competitive industries.",
+      "evidence": [
+        {
+          "text": "We invest substantially in our people to ensure we have the technical skills necessary to succeed, and we expect to continue to invest internally on innovative technologies that address rapidly evolving mission requirements for our customers. [...] As of December 31, 2021, more than 96% of our U.S. employee population had been vaccinated or received an approved exception.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "If the executive order is reinstated on appeal, or new mandates implemented, it is uncertain to what extent compliance with any such vaccine mandates may result in adverse impacts such as workforce attrition for us or our suppliers or reduced morale or efficiency.",
+          "section": "risk_factors",
+          "subsection": "The effects of COVID-19 and other potential future public health crises, epidemics, pandemics or similar events on our business, operating results and cash flows are uncertain."
+        },
+        {
+          "text": "Competition for talent is intense, and this may affect our ability to successfully attract or retain personnel with the requisite skills or clearances.",
+          "section": "risk_factors",
+          "subsection": "Our business and financial performance depends on our ability to identify, attract and retain a highly skilled workforce."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Talent retention is challenged by vaccine mandates and workforce attrition, with intense competition for skilled personnel.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The potential completion of the Aerojet Rocketdyne acquisition and the F-35 production rebaseline agreement are both significant catalysts for future growth. The acquisition, if FTC issues are resolved, could enhance growth, while the rebaseline agreement aims to improve production predictability and recover shortfalls.",
+      "evidence": [
+        {
+          "text": "If the FTC does not file a lawsuit to block the transaction before January 27, 2022, the parties could proceed to close the transaction, but there is no assurance that the FTC would not file a lawsuit challenging the transaction after the closing since the parties have not reached agreement on the terms of a consent order.",
+          "section": "mda",
+          "subsection": "Pending Acquisition of Aerojet Rocketdyne Holdings, Inc."
+        },
+        {
+          "text": "In September 2021, the F-35 JPO and the Lockheed Martin industry team agreed on an F-35 production rebaseline that ensures predictability and stability in the production process while recovering the aircraft shortfall realized over the last year during the COVID-19 pandemic.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Potential acquisition and production agreements could drive future growth if successful.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain has faced significant disruptions in 2021, primarily due to the COVID-19 pandemic. These disruptions have resulted in increased costs, delays, and negative impacts on net sales. Additionally, global supply chain issues, including component shortages like semiconductors, have further complicated operations.",
+      "evidence": [
+        {
+          "text": "The COVID-19 pandemic continued to present business challenges in 2021. We experienced impacts in each of our business areas related to COVID-19, primarily in continued increased coronavirus-related costs, delays in supplier deliveries, travel restrictions, site access and quarantine restrictions, employee absences, remote work and adjusted work schedules.",
+          "section": "mda",
+          "subsection": "COVID-19"
+        },
+        {
+          "text": "Lower than expected supply chain activity negatively affected our net sales during 2021.",
+          "section": "mda",
+          "subsection": "Business Segment Results of Operations"
+        },
+        {
+          "text": "Global supply chain disruption caused by COVID-19 has impacted some of our programs and could impact our ability to perform on our contracts, in particular in instances where there is not a qualified second source of supply.",
+          "section": "risk_factors",
+          "subsection": "The effects of COVID-19 and other potential future public health crises, epidemics, pandemics or similar events on our business, operating results and cash flows are uncertain."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant disruptions from COVID-19 and component shortages have caused increased costs, delays, and lower net sales.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure across multiple areas, including potential FTC lawsuits to block acquisitions, intellectual property disputes, government contract compliance issues, cybersecurity risks, tax audits, environmental litigation, and ongoing legal proceedings. These risks could lead to financial losses, operational disruptions, reputational damage, and reduced competitiveness.",
+      "evidence": [
+        {
+          "text": "We believe it is highly likely that the FTC will vote to sue to block the transaction and expect they will make a decision before January 27, 2022. If the FTC sues to block the transaction, we could elect to defend the lawsuit within 30 days or terminate the merger agreement.",
+          "section": "mda",
+          "subsection": "Pending Acquisition of Aerojet Rocketdyne Holdings, Inc."
+        },
+        {
+          "text": "Third parties may assert that our products or services infringe their intellectual property rights, which could result in costly and time-consuming disputes, subject us to damages and injunctions and adversely affect our ability to compete and perform on contracts.",
+          "section": "mda",
+          "subsection": "Liquidity and Cash Flows"
+        },
+        {
+          "text": "We must comply with laws and regulations relating to the award, administration and performance of U.S. Government contracts. [...] A violation [...] could harm our reputation and result in the imposition of fines and penalties, [...] loss of our ability to export products or perform services and civil or criminal investigations or proceedings.",
+          "section": "risk_factors",
+          "subsection": "We may be unable to benefit fully from or adequately protect our intellectual property rights or use third-party intellectual property, which could negatively affect our business."
+        },
+        {
+          "text": "The costs related to cyber or other security threats or disruptions may not be fully insured or indemnified by other means.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Reliance on Government Contracts"
+        },
+        {
+          "text": "We are regularly under audit or examination by tax authorities, including foreign tax authorities. The final determination of tax audits and any related litigation could similarly result in unanticipated increases in our tax expense and affect profitability and cash flows.",
+          "section": "risk_factors",
+          "subsection": "Our business and financial performance depends on our ability to identify, attract and retain a highly skilled workforce."
+        },
+        {
+          "text": "Environmental remediation activities usually span many years, and the extent of financial exposure can be difficult to estimate.",
+          "section": "risk_factors",
+          "subsection": "Changes in tax laws and regulations or exposure to additional tax liabilities could adversely affect our financial results."
+        },
+        {
+          "text": "Our business may be adversely affected by the outcome of legal proceedings and other contingencies that cannot be predicted with certainty.",
+          "section": "risk_factors",
+          "subsection": "Environmental costs and regulation, including in response to climate change, could adversely affect our future earnings as well as the affordability of our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Multiple ongoing litigations and regulatory risks pose significant financial, operational, and reputational threats.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends overall are mixed across different segments. While the F-35 program shows stability with ongoing production and international commitments, the Space segment experienced a decrease in net sales due to lower volumes in certain programs, though other areas saw increases.",
+      "evidence": [
+        {
+          "text": "Demand appears stable with mixed trends across segments.",
+          "section": "mda",
+          "subsection": "Business Segment Results of Operations"
+        },
+        {
+          "text": "Space\u2019s net sales in 2021 decreased $66 million, or 1%, compared to 2020. The decrease was primarily attributable to lower net sales of approximately $535 million due to the renationalization of the AWE program; and about $105 million for commercial civil space programs due to lower volume (primarily Orion). These decreases were partially offset by higher net sales of approximately $405 million for strategic and missile defense programs due to higher volume (primarily hypersonic development and NGI programs); and about $140 million for national security space programs due to higher volume and risk retirements (primarily Next Gen OPIR and SBIRS).",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "Production of the aircraft is expected to continue for many years given the U.S. Government\u2019s current inventory objective of 2,456 aircraft... commitments from our seven international partner countries and six international customers; as well as expressions of interest from other countries.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand trends with some segments stable or growing while others decline.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end market momentum is mixed. While the F-35 program shows strong growth due to high demand from the U.S. and international partners, the Aeronautics and MFC sectors are facing slower growth and declining net sales due to lower backlog and orders.",
+      "evidence": [
+        {
+          "text": "Backlog decreased in Aeronautics and MFC. RMS expects net sales to decrease in 2022 due to lower volume on certain programs.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        },
+        {
+          "text": "Production of the aircraft is expected to continue for many years given the U.S. Government\u2019s current inventory objective... commitments from our seven international partner countries... expressions of interest from other countries.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "While F-35 shows growth, other sectors face slower growth and declining sales.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces multiple near-term risks, including supply chain disruptions, classified program losses, potential challenges from supplier performance, software development issues, and funding delays.",
+      "evidence": [
+        {
+          "text": "Lower than expected supply chain activity negatively affected our net sales during 2021. A $225 million loss was recognized for performance issues on a classified program.",
+          "section": "mda",
+          "subsection": "Business Segment Results of Operations"
+        },
+        {
+          "text": "Current program challenges include supplier, Lockheed Martin and partner performance... software development, the receipt of funding for contracts on a timely basis, execution of future flight tests and findings resulting from testing and operating the aircraft.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Multiple near-term risks including supply chain issues and program losses threaten short-term performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has provided mixed forward guidance for 2022, with some areas expecting slight increases and others anticipating decreases. The Aeronautics segment expects slight growth in net sales and operating profit, while the Space segment anticipates a mid-single-digit decrease in net sales and a high single-digit decrease in operating profit. The F-35 Program maintains confidence with increased production targets.",
+      "evidence": [
+        {
+          "text": "Aeronautics expects net sales and operating profit to increase slightly. MFC expects a decrease in net sales and operating profit. RMS expects a decline in net sales and operating profit margin.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        },
+        {
+          "text": "We expect Space\u2019s 2022 net sales to decrease in the mid-single digit levels from 2021 primarily driven by the renationalization of the AWE and lower volume on OPIR/SBIRS due to program lifecycles, partially offset by growth on the NGI program. Operating profit is expected to decrease in the high single-digit level from 2021. Operating profit margin for 2022 is expected to be lower than 2021 levels.",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "We anticipate delivering 148-153 aircraft in 2022. In 2023 and beyond, we anticipate delivering 156 aircraft for the foreseeable future.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed forward guidance with some segments expecting growth and others anticipating decreases.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's backlog decreased overall from $147.1 billion to $135.4 billion, with specific decreases in Aeronautics and MFC. However, the Space segment saw an increase in backlog due to multi-year contract awards, though this was partially offset by higher sales on hypersonic programs and renationalization of the Atomic Weapons Establishment. Despite the overall decrease, new orders are expected to outpace revenue over the next two years, and the backlog remains stable as contract wins balance against completions.",
+      "evidence": [
+        {
+          "text": "Backlog was approximately $135.4 billion and $147.1 billion at December 31, 2021 and 2020. Funded backlog was approximately $88.5 billion at December 31, 2021, as compared to $102.3 billion at December 31, 2020.",
+          "section": "mda",
+          "subsection": "Business Segment Results of Operations"
+        },
+        {
+          "text": "Backlog increased in 2021 compared to 2020 primarily due to multi-year contract awards in national security space (Next Gen OPIR) and strategic missile defense (Next Generation Interceptor). These backlog increases were partially offset by higher sales on hypersonic development programs and the renationalization of the Atomic Weapons Establishment.",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "At December 31, 2021, our backlog was $135.4 billion compared with $147.1 billion at December 31, 2020. We expect to recognize approximately 38% of our backlog over the next 12 months and approximately 60% over the next 24 months as revenue.",
+          "section": "mda",
+          "subsection": "Backlog"
+        },
+        {
+          "text": "Are contract wins outpacing completions? Any significant losses or protests?",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Significant Contingencies, Uncertainties and Estimates, including Pension, Taxes, Environmental and Litigation Costs"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Overall backlog decreased, but new orders are expected to outpace revenue, indicating stability.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "Program execution exhibits mixed performance across different segments. While some programs, like the F-35, show progress with milestone achievements and increased production, others, such as classified and commercial space programs, face challenges including performance issues, delays, and cost overruns.",
+      "evidence": [
+        {
+          "text": "A $225 million loss was recognized for performance issues on a classified program. There were also performance issues on certain programs in Aeronautics and RMS.",
+          "section": "mda",
+          "subsection": "Business Segment Results of Operations"
+        },
+        {
+          "text": "Operating profit was comparable for commercial civil space programs as higher risk retirements (primarily space transportation programs) were offset by lower volume (primarily Orion). Adjustments not related to volume, including net profit booking rate adjustments, were $100 million higher in 2021 compared to 2020.",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "Current program challenges include [...] software development, the receipt of funding for contracts on a timely basis, execution of future flight tests and findings resulting from testing and operating the aircraft, [...] and the ability to continue to reduce the unit production costs and improve affordability.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Reliance on Government Contracts"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed program execution with some successes but notable challenges and cost overruns in others.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "The company's contract backlog decreased overall, particularly in the Aeronautics and MFC segments, with some increases in Space due to multi-year awards. However, there are risks related to geopolitical factors and government contract uncertainties that could further impact the backlog.",
+      "evidence": [
+        {
+          "text": "Backlog was approximately $135.4 billion and $147.1 billion at December 31, 2021 and 2020. Aeronautics backlog decreased from $56,551 million to $49,118 million. MFC backlog decreased from $29,183 million to $27,021 million.",
+          "section": "mda",
+          "subsection": "Business Segment Results of Operations"
+        },
+        {
+          "text": "Backlog increased in 2021 compared to 2020 primarily due to multi-year contract awards in national security space (Next Gen OPIR) and strategic missile defense (Next Generation Interceptor). These backlog increases were partially offset by higher sales on hypersonic development programs and the renationalization of the Atomic Weapons Establishment.",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "The amounts ultimately applied against our offset agreements are based on negotiations with the customer and typically require cash outlays that represent only a fraction of the original amount in the offset agreement.",
+          "section": "mda",
+          "subsection": "Other Contract Accounting Considerations"
+        },
+        {
+          "text": "U.S. Government sanctions on Turkey could adversely impact our results of operations and cash flows. [...] These effects could have a material impact on our operating results, financial position and cash flows.",
+          "section": "mda",
+          "subsection": "Contractual Commitments"
+        },
+        {
+          "text": "Contracts are often partially funded initially and additional funds are committed only as Congress makes further appropriations over time. [...] The U.S. Government may decide not to exercise option periods, which could result in a loss of expected sales or profits.",
+          "section": "mda",
+          "subsection": "Contractual Commitments"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The contract backlog decreased in key segments with risks from geopolitical factors and government uncertainties.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is prioritizing shareholder returns through increased dividends and share repurchases, indicating management confidence. However, the board retains discretion over these policies, which could change based on financial performance and other factors.",
+      "evidence": [
+        {
+          "text": "In September 2021, our Board of Directors increased our dividend rate in the fourth quarter by $0.20 to $2.80 per share and approved a $5.0 billion increase to our share repurchase program. [...] We have returned cash to stockholders through dividends and share repurchases.",
+          "section": "mda",
+          "subsection": "Liquidity and Cash Flows"
+        },
+        {
+          "text": "Cash dividend payments and share repurchases are subject to limitations under applicable laws and the discretion of our Board of Directors and are determined after considering then-existing conditions, including earnings, other operating results and capital requirements and cash deployment alternatives.",
+          "section": "risk_factors",
+          "subsection": "There can be no assurance that we will continue to increase our dividend or to repurchase shares of our common stock."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased dividends and share repurchases show management confidence in the company's performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, including strategic and missile defense programs and sustainment services on F-35, which is driving growth and improving profitability.",
+      "evidence": [
+        {
+          "text": "Space\u2019s operating profit in 2021 decreased $15 million, or 1%, compared to 2020. The decrease was primarily attributable to approximately $70 million of lower equity earnings from the company's investment in ULA due to lower launch volume and launch vehicle mix; and about $20 million due to the renationalization of the AWE program. These decreases were partially offset by an increase of about $35 million for strategic and missile defense programs due to higher volume (primarily hypersonic development programs); and approximately $25 million for national security space programs due to higher risk retirements (primarily SBIRS and classified programs) and higher volume (primarily Next Gen OPIR) that was partially offset by charges of about $80 million on a commercial ground solutions program.",
+          "section": "mda",
+          "subsection": "Space"
+        },
+        {
+          "text": "Service sales increased $139 million, or 1%, in 2021 as compared to 2020. The increase in service sales was primarily attributable to higher sales... sustainment volume on F-35.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shift towards higher-margin segments indicates improved profitability and growth opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost management strategies, including restructuring and efficiency programs, which have resulted in $36 million in severance charges in 2021. However, wage inflation and benefit expenses are creating margin pressure, requiring close monitoring of accounting policies and compliance with U.S. Government regulations.",
+      "evidence": [
+        {
+          "text": "During 2021, we recorded severance and restructuring charges of $36 million... associated with plans to close and consolidate certain facilities and reduce total workforce within our RMS business segment.",
+          "section": "mda",
+          "subsection": "Other Contract Accounting Considerations"
+        },
+        {
+          "text": "We closely monitor compliance with and the consistent application of our critical accounting policies related to contract accounting. Costs incurred and allocated to contracts are reviewed for compliance with U.S. Government regulations by our personnel and are subject to audit by the Defense Contract Audit Agency.",
+          "section": "mda",
+          "subsection": "Cost of Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Cost management actions are being taken, but challenges like wage inflation and compliance pressures are present.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are generally manageable, though restructuring charges and workforce reductions have been incurred. Wage inflation and margin pressure from benefits are not significant, but there are ongoing efforts to monitor and comply with accounting policies.",
+      "evidence": [
+        {
+          "text": "We closely monitor compliance with and the consistent application of our critical accounting policies related to contract accounting. Costs incurred and allocated to contracts are reviewed for compliance with U.S. Government regulations by our personnel and are subject to audit by the Defense Contract Audit Agency.",
+          "section": "mda",
+          "subsection": "Other Contract Accounting Considerations"
+        },
+        {
+          "text": "During 2021, we recorded severance and restructuring charges of $36 million... associated with plans to close and consolidate certain facilities and reduce total workforce within our RMS business segment.",
+          "section": "mda",
+          "subsection": "Cost of Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor costs are manageable with restructuring, but ongoing challenges like wage inflation are noted.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company identifies several key sensitivities, including government budgets, program performance, and regulatory changes, which could significantly impact its results.",
+      "evidence": [
+        {
+          "text": "The outcome of one or more of these risks could have a material effect on our operating results, financial position, or cash flows. [...] The U.S. Government could implement procurement policies that negatively impact our profitability or the ability to win new business.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        },
+        {
+          "text": "Current program challenges include supplier, Lockheed Martin and partner performance... the receipt of funding for contracts on a timely basis.",
+          "section": "mda",
+          "subsection": "Status of the F-35 Program"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Multiple key sensitivities pose risks to the company's financial performance and business outlook.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant risks related to environmental regulations and compliance costs, particularly concerning GHG emissions and climate change, which could negatively impact its financial performance and product affordability.",
+      "evidence": [
+        {
+          "text": "We are subject to federal, state, local and foreign requirements for the protection of the environment, including those for discharge of hazardous materials and remediation of contaminated sites.",
+          "section": "risk_factors",
+          "subsection": "Environmental costs and regulation, including in response to climate change, could adversely affect our future earnings as well as the affordability of our products and services."
+        },
+        {
+          "text": "The increasing global regulatory focus on greenhouse gas ('GHG') emissions and their potential impacts relating to climate change could result in laws, regulations or policies that significantly increase our direct and indirect operational and compliance burdens, which could adversely affect our financial condition and results of operations.",
+          "section": "risk_factors",
+          "subsection": "Environmental costs and regulation, including in response to climate change, could adversely affect our future earnings as well as the affordability of our products and services."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant environmental risks and regulatory burdens could negatively impact financial performance.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

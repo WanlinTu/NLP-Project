@@ -1,0 +1,43 @@
+{
+  "ticker": "LHX",
+  "form": "10-Q",
+  "filing_date": "2023-07-26",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 2,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is repurchasing shares under a repurchase program, indicating confidence in its stock.",
+      "evidence": [
+        {
+          "text": "On October 21, 2022, we announced that our Board of Directors approved a $3 billion share repurchase authorization under our share repurchase program that was in addition to the remaining unused authorization of $1.5 billion at that time. Our repurchase program does not have an expiration date and authorizes us to repurchase shares of our common stock through open market purchases, private transactions, transactions structured through investment banking institutions or any combination thereof. As of June\u00a030, 2023, the remaining unused authorization under our repurchase programs was $3.9 billion (as reflected in the table above).",
+          "section": "risk_factors",
+          "subsection": "Issuer Purchases of Equity Securities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's share repurchase program indicates confidence in its stock, which is a positive signal for shareholder returns.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is stable as the company is managing costs effectively.",
+      "evidence": [
+        {
+          "text": "We limit executive officers to a single 10b5-1 Plan in effect at any time, subject to limited exceptions in accordance with Rule 10b5-1. In addition, our stock ownership guidelines require executive officers to maintain ownership of L3Harris securities (excluding stock options and unearned performance share units) with a value equal to a multiple of their annual salary. Each executive officer identified in the table below is expected to hold securities considerably in excess of L3Harris\u2019 stock ownership guidelines following the sale of the maximum number of shares contemplated.",
+          "section": "risk_factors",
+          "subsection": "Securities Trading Plans of Directors and Executive Officers"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The summary mentions stable margin trajectory with effective cost management, but the evidence provided doesn't clearly indicate a positive or negative trend beyond that.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

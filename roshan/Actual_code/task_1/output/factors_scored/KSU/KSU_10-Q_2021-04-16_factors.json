@@ -1,0 +1,391 @@
+{
+  "ticker": "KSU",
+  "form": "10-Q",
+  "filing_date": "2021-04-16",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's backlog orders are stable as there is no mention of growth or decline in the provided text.",
+      "evidence": [
+        {
+          "text": "There is no specific information provided about the backlog orders or book-to-bill ratios in the text.",
+          "section": "mda",
+          "subsection": "Summarized Financial Information"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company's backlog orders are stable with no mention of growth or decline.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable as union labor negotiations have not historically resulted in strikes or disruptions.",
+      "evidence": [
+        {
+          "text": "Union labor negotiations have not historically resulted in any strike, boycott, or other disruption in the Company\u2019s business operations.",
+          "section": "mda",
+          "subsection": "Collective Bargaining"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor relations are stable as there have been no historical strikes or disruptions.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is decelerating.",
+      "evidence": [
+        {
+          "text": "Revenues decreased primarily due to lower volumes, lower fuel surcharge, and the weakening of the Mexican peso against the U.S. dollar. The volume declines were primarily due to network congestion driven by weather impacts, partially offset by increased volumes in the chemical and petroleum business unit due to strength in refined fuel product shipments into Mexico.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is decelerating due to lower volumes and economic factors.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The chemical and petroleum end market is growing, while others are slowing.",
+      "evidence": [
+        {
+          "text": "The volume declines were primarily due to network congestion driven by weather impacts across the business. In addition, industrial and consumer products volume decreased due to lower demand in the energy sector, automotive was impacted by auto plant shutdowns driven by a global microchip shortage, and intermodal was impacted by slow recovery at the Lazaro Cardenas port in Mexico following service interruptions in the fourth quarter of 2020 due to KCSM right-of-way blockages resulting from teachers\u2019 protests. These decreases were partially offset by increased volumes in the chemical and petroleum business unit due to strength in refined fuel product shipments into Mexico.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are stable or declining.",
+      "evidence": [
+        {
+          "text": "Fuel surcharge revenue decreased $26.6 million, compared to the same period in 2020, primarily due to lower fuel prices and volumes.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Input costs are stable or declining, indicating no significant pressure.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company is experiencing negative impacts from foreign exchange movements.",
+      "evidence": [
+        {
+          "text": "For the three months ended March\u00a031, 2021, revenues decreased primarily due to lower volumes, lower fuel surcharge, and the weakening of the Mexican peso against the U.S. dollar. The average exchange rate of Mexican pesos per U.S. dollar was Ps.20.3 for the three months ended March\u00a031, 2021, compared to Ps.19.9 for the same period in 2020, which resulted in a decrease in revenues of approximately $4.0 million.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The weakening of the Mexican peso is negatively impacting revenues.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are creating headwinds.",
+      "evidence": [
+        {
+          "text": "The volume declines were primarily due to network congestion driven by weather impacts across the business. In addition, industrial and consumer products volume decreased due to lower demand in the energy sector, automotive was impacted by auto plant shutdowns driven by a global microchip shortage, and intermodal was impacted by slow recovery at the Lazaro Cardenas port in Mexico following service interruptions in the fourth quarter of 2020 due to KCSM right-of-way blockages resulting from teachers\u2019 protests.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic challenges, such as weather impacts and global shortages, are creating headwinds.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is improving.",
+      "evidence": [
+        {
+          "text": "Service metrics continue to recover from the polar vortex as operations have returned to pre-weather event levels.",
+          "section": "mda",
+          "subsection": "Operating Metrics"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Capacity utilization is improving as operations have returned to pre-weather levels.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is deteriorating.",
+      "evidence": [
+        {
+          "text": "The decline in velocity and increase in dwell are primarily due to lingering network congestion exacerbated by COVID-19 related crew shortages and the impact of the polar vortex, or extreme cold weather during February. Service metrics continue to recover from the polar vortex as operations have returned to pre-weather event levels.",
+          "section": "mda",
+          "subsection": "Operating Metrics"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs may be creating margin pressure.",
+      "evidence": [
+        {
+          "text": "The decline in velocity and increase in dwell are primarily due to lingering network congestion exacerbated by COVID-19 related crew shortages...",
+          "section": "mda",
+          "subsection": "Operating Metrics"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction actions are partially offsetting cost increases.",
+      "evidence": [
+        {
+          "text": "Operating expenses increased 2% during the three months ended March\u00a031, 2021, as compared to the same period in 2020, primarily due to merger costs incurred during the first quarter of 2021 relating to the Merger Agreement, partially offset by decreased restructuring charges.",
+          "section": "mda",
+          "subsection": "First Quarter Highlights"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is stable or improving.",
+      "evidence": [
+        {
+          "text": "The Company reported quarterly earnings of $1.68 per diluted share on consolidated net income of $153.0 million for the three months ended March\u00a031, 2021, compared to earnings of $1.58 per diluted share on consolidated net income of $151.8 million for the same period in 2020, due to a decrease in foreign exchange losses and an increase in shares repurchased, partially offset by a decrease in operating income and an increase in income tax expense primarily due to fluctuations in the foreign exchange rate.",
+          "section": "mda",
+          "subsection": "First Quarter Highlights"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Mergers and acquisitions are a significant activity, with a merger agreement signed.",
+      "evidence": [
+        {
+          "text": "On March 21, 2021, KCS entered into a merger agreement with Canadian Pacific Railway Limited, a Canadian corporation, under which CP has agreed to acquire KCS in a stock and cash transaction representing an enterprise value of approximately $29.0 billion, which includes the assumption of $3.8 billion of outstanding KCS debt.",
+          "section": "mda",
+          "subsection": "Merger Agreement"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is a consideration with the merger.",
+      "evidence": [
+        {
+          "text": "Upon completion of the Merger, which is subject to approval by stockholders of both companies and satisfaction of other customary closing conditions, the KCS shares will be deposited into a voting trust subject to a voting trust agreement (the \u201cVoting Trust Transaction\u201d), pending final approval of the transaction by the Surface Transportation Board (the \u201cSTB\u201d)",
+          "section": "mda",
+          "subsection": "Merger Agreement"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Litigation exposure exists regarding the merger.",
+      "evidence": [
+        {
+          "text": "Lawsuits may be filed against the Company and/or CP challenging the transactions contemplated by the merger between, among others, the Company and CP.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include fuel prices, foreign exchange rates, and economic conditions.",
+      "evidence": [
+        {
+          "text": "KCS\u2019s fuel surcharges are a mechanism to adjust revenue based upon changes in fuel prices above fuel price thresholds set in KCS\u2019s tariffs or contracts. Fuel surcharge revenue is calculated using a fuel price from a prior time period that can be up to 60\u00a0days earlier. In a period of volatile fuel prices or changing customer business mix, changes in fuel expense and fuel surcharge revenue may differ.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer concentration is a risk with significant customers.",
+      "evidence": [
+        {
+          "text": "The Company is engaged primarily in the freight rail transportation business, operating a single coordinated rail network under one reportable business segment. The primary operating subsidiaries of the Company consist of the following...",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "Competitive dynamics include consolidation and potential challenges from new entrants.",
+      "evidence": [
+        {
+          "text": "The transportation industry is subject to competition and consolidation.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "Differentiation is maintained through a single coordinated rail network and operational efficiency.",
+      "evidence": [
+        {
+          "text": "The Company is engaged primarily in the freight rail transportation business, operating a single coordinated rail network under one reportable business segment.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is a key consideration, particularly in the context of the merger.",
+      "evidence": [
+        {
+          "text": "Upon completion of the Merger, KCS stockholders are expected to own 25% of CP\u2019s outstanding common shares.",
+          "section": "mda",
+          "subsection": "Merger Agreement"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns may be impacted by the merger.",
+      "evidence": [
+        {
+          "text": "KCS\u2019s stockholders cannot be sure of the value of the merger consideration they will receive from CP in the merger.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is encountering difficulties in maintaining its pricing power, as evidenced by a 2% decrease in revenue per carload/unit. This decline is attributed to lower fuel surcharge, the weakening of the Mexican peso against the U.S. dollar, and a shorter average length of haul, despite some positive pricing impacts.",
+      "evidence": [
+        {
+          "text": "The company is not successfully raising prices as there is no evidence of price increases in the text.",
+          "section": "mda",
+          "subsection": "Summarized Financial Information"
+        },
+        {
+          "text": "Revenue per carload/unit decreased by 2%, compared to the same period in 2020 due to lower fuel surcharge, the weakening of the Mexican peso against the U.S. dollar, and shorter average length of haul, partially offset by positive pricing impacts.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "The company's volume trends show conflicting signals. While unit volumes or transaction counts are growing, as indicated by the increase in revenues and operating income, there is evidence suggesting a decline in carload/unit volumes. This discrepancy indicates a mixed performance in volume trends.",
+      "evidence": [
+        {
+          "text": "Unit volumes or transaction counts are growing as the company's revenues and operating income increased from the three months ended March 31, 2021, compared to the same period in 2020.",
+          "section": "mda",
+          "subsection": "Summarized Financial Information"
+        },
+        {
+          "text": "Revenues for the three months ended March 31, 2021 were $361.7 million, up from $341.8 million in the same period in 2020.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Revenues decreased 4% for the three months ended March 31, 2021, as compared to the same period in 2020, due to a 2% decrease in revenue per carload/unit and a 1% decrease in carload/unit volumes.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins are showing signs of compression. While the operating income margin decreased only slightly from 33.0% in 2020 to 32.6% in 2021, the increase in operating expenses as a percentage of revenues from 60.5% to 64.2% indicates a negative trend.",
+      "evidence": [
+        {
+          "text": "Gross and operating margins are stable as the operating income margin decreased slightly from 33.0% in 2020 to 32.6% in 2021, but the change is minimal.",
+          "section": "mda",
+          "subsection": "Summarized Financial Information"
+        },
+        {
+          "text": "Operating expenses increased 2% during the three months ended March\u00a031, 2021, as compared to the same period in 2020, primarily due to merger costs incurred during the first quarter of 2021 relating to the Merger Agreement, partially offset by decreased restructuring charges. Operating expenses as a percentage of revenues was 64.2% for the three months ended March\u00a031, 2021, compared to 60.5% for the same period in 2020.",
+          "section": "mda",
+          "subsection": "First Quarter Highlights"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic revenue growth is stable as there is no indication of acceleration or deceleration.",
+      "evidence": [
+        {
+          "text": "The text does not provide specific information on organic revenue growth trends.",
+          "section": "mda",
+          "subsection": "Summarized Financial Information"
+        },
+        {
+          "text": "Revenues decreased 4% for the three months ended March\u00a031, 2021, as compared to the same period in 2020, due to a 2% decrease in revenue per carload/unit and a 1% decrease in carload/unit volumes.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's organic revenue growth is stable, but with a 4% decrease in revenues, indicating a negative trend.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

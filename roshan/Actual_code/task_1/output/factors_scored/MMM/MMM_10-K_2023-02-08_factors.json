@@ -1,0 +1,686 @@
+{
+  "ticker": "MMM",
+  "form": "10-K",
+  "filing_date": "2023-02-08",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 33,
+  "factors": [
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow has decreased from 2021 to 2022.",
+      "evidence": [
+        {
+          "text": "Free cash flow decreased from $5,851 million in 2021 to $3,842 million in 2022.",
+          "section": "mda",
+          "subsection": "Cash, cash equivalents and marketable securities:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Free cash flow decreased from 2021 to 2022, indicating a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog or book-to-bill information is not explicitly mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "The text does not provide specific information on order backlog or book-to-bill trends.",
+          "section": "mda",
+          "subsection": "Item 5. Market for Registrant\u2019s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information on order backlog or book-to-bill trends is provided.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "No specific information on talent retention or labor relations is provided in the text.",
+      "evidence": [
+        {
+          "text": "The text does not address talent retention or labor relations issues.",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific information on talent retention or labor relations is provided.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company is dealing with evolving regulatory changes, particularly concerning PFAS.",
+      "evidence": [
+        {
+          "text": "The Company has noticed several global regulatory trends related to PFAS, including declining emission standards and limits set as to the presence of certain compounds in various media, and the inclusion of a broadening group of PFAS.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Proceedings"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is facing evolving regulatory changes concerning PFAS, which pose a risk.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cybersecurity",
+      "category": "unknown",
+      "summary": "The company faces significant cybersecurity risks that could disrupt operations and lead to financial and reputational damage.",
+      "evidence": [
+        {
+          "text": "Security and data breaches, cyberattacks, and other cybersecurity incidents involving the Company\u2019s information technology systems and infrastructure could disrupt or interfere with the Company\u2019s operations; result in the compromise and misappropriation of proprietary and confidential information belonging to the Company or its customers, suppliers, and employees; and expose the Company to numerous expenses, liabilities, and other negative consequences, any or all of which could adversely impact the Company\u2019s business, reputation, and results of operations.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Proceedings"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant cybersecurity risks could disrupt operations and lead to financial and reputational damage.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "acquisition_strategy",
+      "category": "unknown",
+      "summary": "The company's acquisition strategy poses risks to future results.",
+      "evidence": [
+        {
+          "text": "The Company monitors its business portfolio and organizational structure and has made and may continue to make acquisitions, strategic alliances, divestitures, and changes to its organizational structure. With respect to acquisitions and strategic alliances, future results will be affected by, as applicable, the Company\u2019s ability to integrate acquired businesses quickly and obtain the anticipated synergies and the Company's ability to operationalize and derive anticipated benefits from alliances.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Proceedings"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's acquisition strategy poses risks to future results.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pension_plan_risks",
+      "category": "unknown",
+      "summary": "The company's defined benefit pension plans are subject to financial market risks.",
+      "evidence": [
+        {
+          "text": "The performance of financial markets and discount rates impact the Company's funding obligations under its defined benefit plans. Significant changes in market interest rates, decreases in the fair value of plan assets and investment losses on plan assets, and legislative or regulatory changes relating to defined benefit plan funding may increase the Company's funding obligations and adversely impact its results of operations and cash flows.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Financial and Capital Markets and Tax Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's defined benefit pension plans are subject to financial market risks that could adversely impact results.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "credit_rating_impact",
+      "category": "unknown",
+      "summary": "The company's credit ratings could impact its cost of funding.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s credit ratings are important to 3M\u2019s cost of capital. The major rating agencies routinely evaluate the Company\u2019s credit profile and assign debt ratings to 3M. [...] Failure to maintain strong investment grade ratings would adversely affect the Company\u2019s cost of funding and could adversely affect liquidity and access to capital markets.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Financial and Capital Markets and Tax Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential downgrade in credit ratings could increase the cost of funding and affect liquidity.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "tax_changes",
+      "category": "unknown",
+      "summary": "Changes in tax laws could negatively impact the company's financial results.",
+      "evidence": [
+        {
+          "text": "Changes in tax rates, laws, or regulations could adversely impact our financial results. [...] These actions could have an adverse impact on the Company's financial results.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Financial and Capital Markets and Tax Matters"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The summary explicitly states that changes in tax laws could negatively impact the company's financial results, supported by direct evidence of potential adverse impacts.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments, benefiting margins.",
+      "evidence": [
+        {
+          "text": "Sales increased in separation and purification, health information systems, food safety and medical solutions, and was flat in oral care.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The revenue mix is shifting towards higher-margin segments, which is expected to benefit the company's margins, indicating a positive development.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed with some growth areas but facing challenges from economic factors.",
+      "evidence": [
+        {
+          "text": "Growth continues to be impacted by COVID-related trends on elective procedure volumes and ongoing inflationary pressures.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Volume trends are mixed with growth areas but facing challenges from economic factors like inflation and COVID-related impacts, creating headwinds.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are creating margin pressure due to wage inflation.",
+      "evidence": [
+        {
+          "text": "Increased compensation and benefit costs... manufacturing productivity impacts.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing due to wage inflation, creating margin pressure, which is a significant concern for profitability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is facing headwinds due to manufacturing challenges.",
+      "evidence": [
+        {
+          "text": "manufacturing productivity headwinds.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Productivity is facing headwinds due to manufacturing challenges, indicating operational inefficiencies that could impact performance.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "CapEx is increasing to support growth and efficiency.",
+      "evidence": [
+        {
+          "text": "Investments in property, plant and equipment enable growth across many diverse markets, helping to meet product demand and increasing manufacturing efficiency.",
+          "section": "mda",
+          "subsection": "Employment: / Capital Spending/Net Property, Plant and Equipment:"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "CapEx is increasing to support growth and efficiency, suggesting strategic investments that could drive future profitability and expansion.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are challenging with inflationary pressures impacting demand.",
+      "evidence": [
+        {
+          "text": "Growth continues to be impacted by COVID-related trends on elective procedure volumes and ongoing inflationary pressures.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions are challenging with inflationary pressures impacting demand, creating a difficult environment for growth.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is occurring, impacting employment levels.",
+      "evidence": [
+        {
+          "text": "Employment decreased in 2022 when compared to 2021.",
+          "section": "mda",
+          "subsection": "Employment: / Capital Spending/Net Property, Plant and Equipment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Headcount restructuring is occurring, which typically indicates employment reductions, leading to potential workforce instability and costs.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange exposure is negatively impacting sales and earnings due to the stronger U.S. dollar.",
+      "evidence": [
+        {
+          "text": "The stronger U.S. dollar had a negative impact on sales in full year 2022 compared to the same periods last year. Net of the Company\u2019s hedging strategy, foreign currency negatively impacted earnings in full year 2022 compared to the same period last year.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The stronger U.S. dollar is negatively impacting both sales and earnings despite hedging efforts.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is ongoing, focusing on innovation and product development.",
+      "evidence": [
+        {
+          "text": "3M continues to invest in a range of R&D activities from application development, product and manufacturing support, product development and technology development aimed at disruptive innovations.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Ongoing R&D investment in innovation and product development indicates a commitment to future growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "3M is demonstrating strong commitment to shareholders through consistent and increasing dividend payments, as well as stock buyback programs, reflecting confidence in the company's performance.",
+      "evidence": [
+        {
+          "text": "3M has paid dividends since 1916. In February 2023, 3M\u2019s Board of Directors declared a first-quarter 2023 dividend of $1.50 per share, an increase of 1 percent.",
+          "section": "mda",
+          "subsection": "Cash, cash equivalents and marketable securities:"
+        },
+        {
+          "text": "This marked the 65th consecutive year of dividend increases for 3M.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Consistent and increasing dividends, along with buyback programs, show strong commitment to shareholders.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "3M's debt leverage is improving due to significant debt repayments in 2022, which have strengthened the balance sheet.",
+      "evidence": [
+        {
+          "text": "Decreases in debt were largely due to the repayments of 500 million euros and $600 million aggregate principal amounts of fixed-rate medium-term notes in February 2022 and June 2022, respectively.",
+          "section": "mda",
+          "subsection": "Cash, cash equivalents and marketable securities:"
+        },
+        {
+          "text": "Total debt was lower at December\u00a031, 2022 when compared to December\u00a031, 2021. Decreases in debt were largely due to the repayments of 500 million euros and $600 million aggregate principal amounts of fixed-rate medium-term notes in February 2022 and June 2022, respectively.",
+          "section": "mda",
+          "subsection": "Total debt:"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant debt repayments have improved the balance sheet and reduced leverage.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "3M is facing challenges with pricing power due to inflationary pressures and supply chain issues. While the company has attempted to offset cost increases through price adjustments and other measures, these efforts have only partially mitigated the impact of rising raw material and logistics costs.",
+      "evidence": [
+        {
+          "text": "In 2022, 3M continued to experience inflationary pressures with year-on-year increases in raw material and logistics costs driven by many geopolitical, logistics, and disruptive events that caused imbalance in the global supply chain.",
+          "section": "mda",
+          "subsection": "Operating income margin and earnings per share attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "Business segment operating income margins decreased year-on-year due to increased raw materials and logistics costs... partially offset by sales growth (including selling price actions), strong spending discipline and restructuring actions.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "Margins were also impacted by increased raw materials and logistics costs, manufacturing productivity headwinds which were further magnified by the shutdown of certain operations in Belgium and progress on restarting previously-idled operations, and investments in growth, productivity and sustainability. On a percent of sales basis, these increases were partially offset by increases in selling prices.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Inflationary pressures and supply chain issues are challenging the company's pricing power.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost reduction actions, including restructuring, but these measures are not fully offsetting the impact of rising costs. The effectiveness of these actions is mixed, as they partially offset cost increases but may not fully achieve the desired savings.",
+      "evidence": [
+        {
+          "text": "Restructuring actions are being taken, but their impact on savings is not explicitly detailed.",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        },
+        {
+          "text": "strong spending discipline and restructuring actions.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "These increases were partially offset by restructuring benefits and ongoing general 3M cost management.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Cost reduction actions are being taken but have only partially offset cost increases, indicating mixed results.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is facing significant challenges with rising input costs, particularly in raw materials and logistics, which are putting pressure on margins despite efforts to offset through pricing actions. Additionally, these cost increases are exacerbated by various external factors such as geopolitical events, supply chain disruptions, and manufacturing productivity issues.",
+      "evidence": [
+        {
+          "text": "In 2022, 3M continued to experience inflationary pressures with year-on-year increases in raw material and logistics costs driven by many geopolitical, logistics, and disruptive events that caused imbalance in the global supply chain.",
+          "section": "mda",
+          "subsection": "Operating income margin and earnings per share attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "The Company\u2019s future results are subject to vulnerability with respect to materials and fluctuations in the costs and availability of purchased components, compounds, raw materials, energy, and labor due to shortages, increased demand and wages, logistics, supply chain interruptions, manufacturing site disruptions, regulatory developments, natural disasters, and other disruptive factors.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Proceedings"
+        },
+        {
+          "text": "Business segment operating income margins decreased year-on-year due to increased raw materials and logistics costs along with manufacturing productivity headwinds, investments in the business and transaction-related costs associated with the announced divestiture of the food safety business.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "Increases were primarily due to 2022 special item costs for significant litigation from additional commitments to address PFAS-related matters at 3M's Zwijndrecht, Belgium site (discussed in Note 16), higher raw materials and logistics costs, manufacturing productivity headwinds which were further magnified by the shutdown of certain operations in Belgium and progress on restarting previously-idled operations, and investments in growth, productivity and sustainability.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Rising input costs, driven by external factors, are significantly impacting margins despite efforts to mitigate.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are under pressure and compressing due to higher raw material and logistics costs, despite efforts to control expenses through restructuring actions. The effective tax rates have decreased, contributing to a partially offsetting effect on earnings.",
+      "evidence": [
+        {
+          "text": "The effective tax rates for 2022, 2021, and 2020 were 9.6 percent, 17.8 percent, and 19.7 percent, respectively. These reflect a decrease of 8.2 percentage points from 2021 to 2022 and a decrease of 1.9 percentage points from 2020 to 2021.",
+          "section": "mda",
+          "subsection": "Operating income margin and earnings per share attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "Business segment operating income margins decreased year-on-year due to increased raw materials and logistics costs... partially offset by sales growth... strong spending discipline and restructuring actions.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "The tax rate can vary from quarter to quarter due to discrete items, such as the settlement of income tax audits, changes in tax laws, and employee share-based payment accounting; as well as recurring factors, such as the geographic mix of income before taxes.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margins are under pressure due to higher costs, though tax rate decreases provide some relief.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces multiple near-term risks, including potential delays in the spin-off of its Health Care business, inflationary pressures, supply chain disruptions, unfavorable foreign exchange impacts, and ongoing litigation costs. These risks could affect the company's ability to achieve expected benefits and may negatively impact its financial performance.",
+      "evidence": [
+        {
+          "text": "The failure to satisfy all of the required conditions... could delay the completion of the spin-off... or prevent it from occurring. Any delay... could reduce the expected benefits... or delay the time at which such benefits are realized.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to the Planned Spin-off of the Company\u2019s Health Care Business"
+        },
+        {
+          "text": "Growth continues to be impacted by COVID-related trends on elective procedure volumes and ongoing inflationary pressures.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "The stronger U.S. dollar had a negative impact on sales in full year 2022 compared to the same periods last year. Net of the Company\u2019s hedging strategy, foreign currency negatively impacted earnings in full year 2022 compared to the same period last year.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Multiple significant risks threaten the company's financial performance and ability to achieve expected benefits.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is a significant cost and operational constraint for the company, particularly concerning PFAS-related matters. The company faces potential additional costs and risks due to global regulatory trends, including investigation, remediation, and compliance actions, as well as possible litigation and enforcement costs. Additionally, the company's commitment to exiting PFAS manufacturing led to a goodwill impairment charge, indicating financial repercussions associated with environmental compliance efforts.Overall, environmental compliance presents substantial challenges and financial burdens for the company, especially in relation to PFAS substances and ongoing regulatory developments.",
+      "evidence": [
+        {
+          "text": "Developments in these and other global regulatory trends may require additional actions by 3M, including investigation, remediation, and compliance, or may result in additional litigation and enforcement action costs.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Proceedings"
+        },
+        {
+          "text": "As a result of 3M's commitment to exit per- and polyfluoroalkyl substance (PFAS) manufacturing, 3M recorded a goodwill impairment charge related to the Advanced Materials reporting unit (within the Transportation and Electronics business).",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Substantial challenges and financial burdens from environmental compliance, especially regarding PFAS.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is facing significant disruptions and ongoing vulnerabilities, with issues persisting through 2022 and showing no signs of improvement. Disruptions are attributed to various factors including supplier material shortages, climate impacts, natural disasters, military conflicts, and increased costs associated with raw materials and logistics.",
+      "evidence": [
+        {
+          "text": "The Company depends on various components, compounds, raw materials, and energy (including oil and natural gas and their derivatives) supplied by others for the manufacturing of its products. Supplier relationships have been and could be interrupted in the future due to supplier material shortage, climate impacts, natural and other disasters, and other disruptive events such as military conflicts, or be terminated.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Proceedings"
+        },
+        {
+          "text": "supply chain disruptions, increases in raw materials and logistics costs.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Ongoing and persistent disruptions with no signs of improvement, impacting operations and costs.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "3M faces significant litigation exposure, primarily related to PFAS and Combat Arms Earplugs. The company has incurred substantial costs, including approximately $2.3 billion pre-tax in 2022, and is involved in multiple legal proceedings and regulatory inquiries. Additionally, its subsidiaries are undergoing Chapter 11 proceedings to address liabilities associated with these products.",
+      "evidence": [
+        {
+          "text": "In 2022, 3M's costs for significant litigation totaled approximately $2.3 billion pre-tax and included, among things, pre-tax charges associated with steps toward resolving Combat Arms Earplugs litigation and associated with additional commitments to address PFAS-related matters at its Zwijndrecht, Belgium site.",
+          "section": "mda",
+          "subsection": "OVERVIEW"
+        },
+        {
+          "text": "The Company is subject to risks related to its subsidiaries\u2019 chapter 11 proceedings... seeking bankruptcy court supervision to establish a trust... to address potential liabilities related to Dual-Ended Combat Arms \u2013 Version 2 earplugs and mask/respirator products historically manufactured and sold by Aearo Entities.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to the Voluntary Chapter 11 Proceedings Initiated by the Company\u2019s Aearo Entities"
+        },
+        {
+          "text": "3M currently is defending lawsuits concerning various PFAS-related products and chemistries, and is subject to unasserted and asserted claims and governmental regulatory proceedings and inquiries related to the production and use of PFAS in a variety of jurisdictions.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Legal and Regulatory Proceedings"
+        },
+        {
+          "text": "Corporate special items include net costs for significant litigation associated with Combat Arms Earplugs and Aearo-respirator mask/asbestos matters during the chapter 11 bankruptcy period (which began in July 2022) and with PFAS-related other environmental matters (see Note 16).",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant costs and multiple legal proceedings, including bankruptcy-related issues, pose major risks.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End market momentum is mixed across various sectors, with growth observed in automotive, aerospace, and advanced materials, while facing challenges in consumer electronics and oral care.",
+      "evidence": [
+        {
+          "text": "Sales increased in separation and purification, health information systems, food safety and medical solutions, and was flat in oral care.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "On an organic sales basis: \u2022 Sales increased in automotive and aerospace, commercial solutions and advanced materials, and decreased in transportation safety and electronics.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance across sectors with both growth and challenges observed.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed across different business segments and markets. While certain areas, such as electrical markets and automotive aftermarket, are experiencing growth, others, like personal safety, are seeing declines. Overall, the demand is influenced by ongoing economic challenges, including inflationary pressures and the lingering effects of COVID-related trends on elective procedure volumes.",
+      "evidence": [
+        {
+          "text": "Demand trends are mixed with some growth areas but facing challenges from economic factors.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "Growth continues to be impacted by COVID-related trends on elective procedure volumes and ongoing inflationary pressures.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        },
+        {
+          "text": "On an organic sales basis: \u2022 Sales increased in electrical markets, abrasives, automotive aftermarket, roofing granules, closure and masking systems, and industrial adhesives and tapes and decreased in personal safety.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is mixed with declines in certain areas influenced by economic and pandemic factors.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is decelerating across the company, with notable challenges in the Safety and Industrial segment and a decline in the Health Care sector.",
+      "evidence": [
+        {
+          "text": "Sales in Health Care were down 2.0 percent in U.S. dollars. On an organic sales basis: \u2022 Sales increased in separation and purification, health information systems, food safety and medical solutions, and was flat in oral care.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "Sales change analysis: Organic sales 1.0 % 7.3 % Translation (4.2) 1.9 Total sales change (3.2 %) 9.2 %",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decelerating organic growth and challenges in key segments indicate a weakening trend.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Mergers and acquisitions (MA) activity had a mixed impact on the business in 2022. While there were significant gains from divestitures, such as the $2.7 billion pre-tax gain from the Food Safety business split-off and combination with Neogen, there were also negative effects, including lost sales year-on-year due to these divestitures.",
+      "evidence": [
+        {
+          "text": "Divestiture impact relates to the lost sales year-on-year from the divestiture from the Food Safety Division split-off transaction and combination with Neogen completed in the third quarter of 2022.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "In the third quarter of 2022, 3M recorded a pre-tax gain of $2.7 billion ($2.7 billion after tax) related to the split-off and combination of its Food Safety business with Neogen Corporation.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed impact from MA activity with gains offset by lost sales from divestitures.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company faces multiple key sensitivities in 2022, including rising raw material costs and labor expenses, which impacted manufacturing productivity. Additionally, foreign exchange fluctuations, particularly the stronger U.S. dollar, negatively affected both sales and earnings, despite the company's hedging strategy.",
+      "evidence": [
+        {
+          "text": "input costs, manufacturing productivity headwinds, investments in the business and transaction-related costs associated with the announced divestiture of the food safety business.",
+          "section": "mda",
+          "subsection": "Year 2022 results:"
+        },
+        {
+          "text": "The stronger U.S. dollar had a negative impact on sales in full year 2022 compared to the same periods last year. Net of the Company\u2019s hedging strategy, foreign currency negatively impacted earnings in full year 2022 compared to the same period last year.",
+          "section": "mda",
+          "subsection": "Sales and operating income (loss) by business segment:"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "LHX",
+  "form": "10-Q",
+  "filing_date": "2024-07-26",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 4,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is repurchasing shares under a repurchase program, indicating management confidence.",
+      "evidence": [
+        {
+          "text": "Repurchase program (1) \u2014\u00a0 $ \u2014\u00a0 \u2014\u00a0 $ 3,702\u00a0",
+          "section": "risk_factors",
+          "subsection": "Issuer Purchases of Equity Securities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's share repurchase indicates management confidence in its future prospects.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rates are not specifically mentioned as having an impact on the company's financials.",
+      "evidence": [
+        {
+          "text": "The following table sets forth information with respect to repurchases by us of our common stock during the quarter ended June\u00a028, 2024:",
+          "section": "risk_factors",
+          "subsection": "Issuer Purchases of Equity Securities"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Interest rates are not discussed as impacting the company's financials, so no clear sentiment is evident.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not provided specific forward guidance in the provided text.",
+      "evidence": [
+        {
+          "text": "Investors should carefully review and consider the information regarding certain factors that could materially affect our business, results of operations, financial condition, cash flows and equity as set forth in Part I. Item 1A. Risk Factors in our Fiscal 2023 Form 10-K. There have been no material changes to the risk factors disclosed in our Fiscal 2023 Form 10-K.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No specific forward guidance is provided, leaving sentiment unclear.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Overall economic conditions are not specifically addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "The following table includes the material terms (other than with respect to the price) of each 10b5-1 Plan adopted or terminated by our executive officers and directors during the quarter ended June\u00a028, 2024:",
+          "section": "risk_factors",
+          "subsection": "Securities Trading Plans of Directors and Executive Officers"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Economic conditions are not addressed, so no sentiment can be inferred.",
+        "confidence": 0.6
+      }
+    }
+  ]
+}

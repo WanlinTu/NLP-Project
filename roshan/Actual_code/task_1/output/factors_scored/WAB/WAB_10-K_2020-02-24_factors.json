@@ -1,0 +1,362 @@
+{
+  "ticker": "WAB",
+  "form": "10-K",
+  "filing_date": "2020-02-24",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 19,
+  "factors": [
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments.",
+      "evidence": [
+        {
+          "text": "The increase in gross profit margin for the Freight Segment is attributed to a favorable product mix which saw an increase in net sales for train control and signaling products and services and freight car products due to an increase in freight cars built which have a higher margin.",
+          "section": "mda",
+          "subsection": "Freight Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The shift towards higher-margin segments indicates improved profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating.",
+      "evidence": [
+        {
+          "text": "Freight Segment net sales increased by $228 million, or 14.8%, primarily due to an organic increase of $113 million from higher demand for freight rail components and an increase of $76 million for train control and signaling products. Transit Segment net sales increased by $254 million, or 10.8%, primarily due to favorable foreign exchange and increased demand for original equipment brake products.",
+          "section": "mda",
+          "subsection": "Net sales"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Significant organic revenue growth across segments suggests strong demand.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising.",
+      "evidence": [
+        {
+          "text": "Cost of sales increased by $313.2 million to $3.1 billion in 2018 compared to $2.8 billion in 2017. In 2018, cost of sales as a percentage of net sales was 71.7% compared to 72.5% in 2017.",
+          "section": "mda",
+          "subsection": "Cost of sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs may pressure margins despite a slight improvement.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are creating margin pressure.",
+      "evidence": [
+        {
+          "text": "Selling, general, and administrative expenses increased $121 million, or 23.5%, primarily due to $21 million of costs related to the GE Transportation transaction, $20 million of restructuring costs related to the exit of certain operations and headcount reductions across the company, $7 million of costs related to a goods and service tax law change in India, $15 million of increased employee benefit costs and $18 million in incremental expense from acquisitions.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased labor-related expenses are creating margin pressure.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are expanding.",
+      "evidence": [
+        {
+          "text": "Gross profit increased by $168 million to $1,233.9 million in 2018 compared to $1,065.3 million in 2017. Operating expenses as a percentage of net sales increased 0.8% to 17.4% in 2018 compared to 16.6% in 2017.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals from expanding gross margins but rising operating expenses.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring programs are delivering measurable savings.",
+      "evidence": [
+        {
+          "text": "Cost of sales in 2018 includes $18 million of restructuring costs, primarily in the Transit Segment. Cost of sales in 2017 includes $45 million of project adjustments on certain projects and $12 million of restructuring and integration costs related to recent acquisitions.",
+          "section": "mda",
+          "subsection": "Cost of sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring programs are showing measurable cost savings.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving.",
+      "evidence": [
+        {
+          "text": "Excluding the restructuring costs and contract adjustments in both years, cost of sales increased 0.2% as a percentage of net sales.",
+          "section": "mda",
+          "subsection": "Cost of sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Operational efficiency is improving, though modestly.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange is having a mixed impact.",
+      "evidence": [
+        {
+          "text": "Unfavorable foreign currency exchange rate changes decreased net sales by $137 million. Favorable foreign exchange increased net sales $62 million.",
+          "section": "mda",
+          "subsection": "Net sales"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign exchange has both positive and negative impacts, leading to mixed results.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company is restructuring its workforce.",
+      "evidence": [
+        {
+          "text": "Operating expenses includes $13 million for restructuring costs in the current year, compared to $26 million in the prior year. The decrease as a percentage of net sales can be attributed to the effect of prior year restructuring plans and headcount reductions in the current year.",
+          "section": "mda",
+          "subsection": "Operating expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The decrease in restructuring costs indicates efficiency improvements.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog is subject to instability and potential cancellations due to economic and market conditions.",
+      "evidence": [
+        {
+          "text": "Our backlog represents future production and estimated potential revenue attributable to firm contracts with, or written orders from, our customers for delivery in various periods. Instability in the global economy, negative conditions in the global credit markets, volatility in the industries that our products serve, changes in legislative policy, adverse changes in the financial condition of our customers, adverse changes in the availability of raw materials and supplies, or un-remedied contract breaches could possibly lead to contract termination or cancellations of orders in our backlog or request for deferred deliveries of our backlog orders, each of which could adversely affect our cash flows and results of operations.",
+          "section": "risk_factors",
+          "subsection": "Our backlog is not necessarily indicative of the level of our future revenues."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Potential cancellations due to economic instability pose significant risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intense, with established competitors and potential commoditization risks.",
+      "evidence": [
+        {
+          "text": "We operate in a global, competitive marketplace and face substantial competition from a limited number of established competitors, some of which may have greater financial resources than we do, may have a more extensive low-cost sourcing strategy and presence in low-cost regions than we do or may receive significant governmental support. Price competition is strong and, coupled with the existence of a number of cost conscious customers with significant negotiating power, has historically limited our ability to increase prices.",
+          "section": "risk_factors",
+          "subsection": "Our business operates in a highly competitive industry."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Strong competition and price pressures limit pricing flexibility.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company is dependent on key customers, which poses concentration risk.",
+      "evidence": [
+        {
+          "text": "We rely on several key customers who represent a significant portion of our business. While we believe our relationships with our customers are generally good, our top customers could choose to reduce or terminate their relationships with us.",
+          "section": "risk_factors",
+          "subsection": "We are dependent upon key customers."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Dependency on key customers creates concentration risk.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, such as extensions of Positive Train Control deadlines, could impact revenue timing and project assessments.",
+      "evidence": [
+        {
+          "text": "In 2015, the U.S. rail industry's PTC deadline was extended by Congress by three years through December 31, 2018, which also included the ability of railroads to request an additional two years for compliance with the approval of the Department of Transportation if certain parameters are met. The Department of Transportation has largely granted the additional two years for compliance. All freight railroads are required to have testing complete and Positive Train Control fully implemented across the required network by December 31, 2020. These extensions could change the timing of our revenues and could cause us to reassess the staffing, resources and assets deployed in delivering PTC services to our customers.",
+          "section": "risk_factors",
+          "subsection": "A portion of our sales are related to delivering products and services to help our U.S. railroad and transit customers meet the Positive Train Control mandate from the U.S. federal government."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory extensions may impact revenue timing and project assessments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include economic instability, customer demand fluctuations, and regulatory changes affecting the company's operations.",
+      "evidence": [
+        {
+          "text": "Unfavorable general economic and market conditions in the United States and internationally, particularly in our key end markets, could have a negative impact on our sales and operations. To the extent that these factors result in continued instability of capital markets, shortages of raw materials or component parts, longer sales cycles, deferral or delay of customer orders or an inability to market our products effectively, our business and results of operations could be materially adversely affected.",
+          "section": "risk_factors",
+          "subsection": "Prolonged unfavorable economic and market conditions could adversely affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Multiple near-term risks threaten sales and operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are managed with reserves for excess, slow-moving, and obsolete items, but market conditions could lead to write-downs.",
+      "evidence": [
+        {
+          "text": "Inventories are stated at the lower of cost or market and are reviewed to ensure that an adequate provision is recognized for excess, slow moving and obsolete inventories. If the market value of our products were to decrease due to changing market conditions, the Company could be at risk of incurring write-downs to adjust inventory value to a market value lower than stated cost.",
+          "section": "mda",
+          "subsection": "Inventories:"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Market conditions could lead to inventory write-downs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions could negatively impact demand and operations, particularly in key end markets.",
+      "evidence": [
+        {
+          "text": "Unfavorable general economic and market conditions in the United States and internationally, particularly in our key end markets, could have a negative impact on our sales and operations. To the extent that these factors result in continued instability of capital markets, shortages of raw materials or component parts, longer sales cycles, deferral or delay of customer orders or an inability to market our products effectively, our business and results of operations could be materially adversely affected.",
+          "section": "risk_factors",
+          "subsection": "Prolonged unfavorable economic and market conditions could adversely affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Economic instability poses significant risks to demand and operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is accelerating in both Freight and Transit segments, driven by higher demand for freight rail components, train control and signaling products, and original equipment brake products. However, demand could be negatively impacted by economic downturns and deferred customer orders, particularly in the Freight Segment due to potential reductions in freight traffic.",
+      "evidence": [
+        {
+          "text": "Freight Segment net sales increased by $228 million, or 14.8%, primarily due to higher demand for freight rail components and train control and signaling products.",
+          "section": "mda",
+          "subsection": "Net sales"
+        },
+        {
+          "text": "Transit Segment net sales increased by $254 million, or 10.8%, primarily due to favorable foreign exchange and increased demand for original equipment brake products.",
+          "section": "mda",
+          "subsection": "Competitive factors / Political/governmental factors"
+        },
+        {
+          "text": "Reductions in freight traffic may reduce demand for our replacement products.",
+          "section": "mda",
+          "subsection": "Competitive factors / Political/governmental factors"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is growing in key segments, though there are risks from economic downturns.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing in certain segments, but there is a risk of decline due to economic downturns and reduced freight traffic.",
+      "evidence": [
+        {
+          "text": "Freight Segment net sales increased by $228 million, or 14.8%, primarily due to higher demand for freight rail components and an increase of $76 million for train control and signaling products. Transit Segment net sales increased by $254 million, or 10.8%, primarily due to favorable foreign exchange and increased demand for original equipment brake products.",
+          "section": "mda",
+          "subsection": "Net sales"
+        },
+        {
+          "text": "Reductions in freight traffic may reduce demand for our replacement products.",
+          "section": "mda",
+          "subsection": "Competitive factors / Political/governmental factors"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are growing, but face risks from economic downturns and reduced freight traffic.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end-market momentum for the company appears to be mixed. While the Freight and Transit segments are experiencing growth, driven by higher demand for freight rail components, train control and signaling products, and original equipment brake products, the broader railway industry is subject to significant fluctuations due to economic conditions and potential declines in demand during downturns. This creates a tension between positive segment-specific momentum and industry-wide cyclicality risks.",
+      "evidence": [
+        {
+          "text": "Freight Segment net sales increased by $228 million, or 14.8%, primarily due to higher demand for freight rail components and an increase of $76 million for train control and signaling products.",
+          "section": "mda",
+          "subsection": "Net sales"
+        },
+        {
+          "text": "Transit Segment net sales increased by $254 million, or 10.8%, primarily due to favorable foreign exchange and increased demand for original equipment brake products.",
+          "section": "mda",
+          "subsection": "Competitive factors / Political/governmental factors"
+        },
+        {
+          "text": "The railway industry historically has been subject to significant fluctuations due to overall economic conditions, the use of alternate methods of transportation and the levels of government spending on railway projects.",
+          "section": "mda",
+          "subsection": "Competitive factors / Political/governmental factors"
+        },
+        {
+          "text": "In economic downturns, railroads have deferred, and may defer, certain expenditures in order to conserve cash in the short term. Reductions in freight traffic may reduce demand for our replacement products.",
+          "section": "mda",
+          "subsection": "Competitive factors / Political/governmental factors"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals from segment growth and industry cyclicality risks.",
+        "confidence": 0.6
+      }
+    }
+  ]
+}

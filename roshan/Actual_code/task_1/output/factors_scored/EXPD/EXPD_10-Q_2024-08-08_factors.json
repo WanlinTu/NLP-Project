@@ -1,0 +1,60 @@
+{
+  "ticker": "EXPD",
+  "form": "10-Q",
+  "filing_date": "2024-08-08",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 3,
+  "factors": [
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces potential claims and expenses related to the handling of customer inventory.",
+      "evidence": [
+        {
+          "text": "Our failure to properly handle and safeguard such inventory exposes us to potential claims and expenses as well as harm to our business and reputation.",
+          "section": "risk_factors",
+          "subsection": "We face risks associated with the handling, transporting, and storing of customer inventory, including high value commodities."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant potential claims and expenses due to improper handling of customer inventory, posing a major risk.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins could be negatively impacted by significant uninsured losses.",
+      "evidence": [
+        {
+          "text": "If an uninsured loss or a loss in excess of insured limits occurs with respect to one or more of our facilities in the future, we could experience a significant loss of assets, including customer inventory (inclusive of high value commodities), and future operations could be harmed resulting in a loss of revenues or higher claims and operating expenses.",
+          "section": "risk_factors",
+          "subsection": "Our insurance coverage does not cover all potential losses and significant uninsured losses could adversely impact our financial results."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Potential uninsured losses could severely impact the company's margins, indicating a clear negative trajectory.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "internal_control",
+      "category": "unknown",
+      "summary": "The company has identified and is addressing a material weakness in its internal control over financial reporting related to IT systems.",
+      "evidence": [
+        {
+          "text": "We identified a material weakness in our internal control over financial reporting related to an ineffective information technology general control which, if not remediated appropriately or timely, could result in loss of investor confidence and adversely impact our stock price.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company has identified a material weakness in internal controls, which could harm investor confidence and stock price, though the situation is being addressed.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "ticker": "KSU",
+  "form": "10-K",
+  "filing_date": "2022-02-01",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 22,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is increasing capital expenditures compared to the previous year.",
+      "evidence": [
+        {
+          "text": "During 2021, the Company invested $489.4 million in capital expenditures. See Capital Expenditures section for further details.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is increasing capital expenditures, indicating a positive outlook for investments.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has terminated its share repurchase program and is making periodic cash distributions.",
+      "evidence": [
+        {
+          "text": "The Company terminated its share repurchase program upon entering into its initial merger agreement with CP in March 2021. [...] KCS plans to make periodic cash distributions to a wholly-owned subsidiary of CP based upon cash generated, the timing of capital expenditures and working capital needs of the Company.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company has terminated its share repurchase program and is making periodic cash distributions, which does not clearly indicate a positive or negative trend for shareholder returns.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation has improved compared to the previous year.",
+      "evidence": [
+        {
+          "text": "Cash and cash equivalents end of year $ 339.3\u00a0 $ 188.2",
+          "section": "mda",
+          "subsection": "Cash Flow Information and Contractual Obligations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improved free cash flow generation suggests positive financial health.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "KCS has a significant portion of its employees covered by collective bargaining agreements, which could lead to strikes or work stoppages affecting operations.",
+      "evidence": [
+        {
+          "text": "The Company is a party to collective bargaining agreements with various labor unions in the United States and Mexico. As of December 31, 2021, approximately 72% and 77% of KCSR and KCSM employees, respectively, were covered by labor contracts subject to collective bargaining.",
+          "section": "risk_factors",
+          "subsection": "A majority of KCS\u2019s employees belong to labor unions. Strikes or work stoppages could adversely affect operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "A significant portion of employees being covered by collective bargaining agreements poses a risk of strikes or work stoppages, which could negatively impact operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "KCS is sensitive to fuel costs and disruptions, which could impact its operating results significantly.",
+      "evidence": [
+        {
+          "text": "KCS incurs substantial fuel costs in its railroad operations and these costs represent a significant portion of its transportation expenses. Significant price increases for fuel may have a material adverse effect on operating results.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s business is vulnerable to fluctuations in fuel costs and disruptions in fuel supplies."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Sensitivity to fuel costs and disruptions indicates potential negative impacts on operating results.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "KCS faces significant environmental regulations and compliance costs, which could affect its business operations.",
+      "evidence": [
+        {
+          "text": "KCS subsidiaries\u2019 operations are subject to environmental regulation enacted by federal, state and local legislatures in the U.S. and Mexico.",
+          "section": "risk_factors",
+          "subsection": "KCS is subject to environmental regulations, which may impose significant costs on the Company\u2019s business operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant environmental regulations and compliance costs pose risks to business operations.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating.",
+      "evidence": [
+        {
+          "text": "For the year ended December\u00a031, 2021, revenues increased 12% due to an increase in revenue per carload/unit of 7% and an increase in carloads/unit volumes of 5%, respectively, compared to 2020.",
+          "section": "mda",
+          "subsection": "Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Accelerating organic revenue growth is a strong positive indicator for the company's performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks include potential disruptions from increased regulation in Mexico and global trade dynamics.",
+      "evidence": [
+        {
+          "text": "Partially offset by refined fuel terminal shutdowns and import inspections delays as a result of increased Mexico regulation.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential disruptions from increased regulation in Mexico and global trade dynamics pose significant risks.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "Uncertainty about the merger may impair KCS's ability to attract and retain key employees.",
+      "evidence": [
+        {
+          "text": "Uncertainty about the effect of the transaction on KCS and CP employees may have an adverse effect on KCS and consequently the combined company. This uncertainty may impair KCS\u2019s ability to attract, retain and motivate key personnel.",
+          "section": "risk_factors",
+          "subsection": "KCS may have difficulty attracting, motivating and retaining executives and other key employees in light of the combination of CP and KCS."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Uncertainty about the merger could impair KCS's ability to attract and retain key employees, posing a risk to operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "The merger may strain KCS's operational capabilities, affecting its capacity utilization.",
+      "evidence": [
+        {
+          "text": "The future operating results of the combined company will be affected by the ability of its officers and key employees to manage changing business conditions and to implement and expand the Company\u2019s operational and financial controls and reporting systems in response to the transaction.",
+          "section": "risk_factors",
+          "subsection": "Significant demands will be placed on KCS as a result of the combination of the two companies."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The merger may strain KCS's operational capabilities, potentially affecting its capacity utilization.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is strengthening its balance sheet through deleveraging and refinancing, which supports compliance with debt covenants. However, the combination with CP is imposing significant demands on managerial, operational, and financial resources, potentially affecting its ability to maintain this positive trajectory.",
+      "evidence": [
+        {
+          "text": "The Company has been, and expects to continue to be, in compliance with all of its debt covenants. [...] The obligations of each Guarantor Subsidiary under its note guarantee are limited as necessary to prevent such note guarantee from constituting a fraudulent conveyance under applicable law.",
+          "section": "mda",
+          "subsection": "Overview"
+        },
+        {
+          "text": "As a result of the combination of KCS and CP following receipt of STB Final Approval, significant demands will be placed on the managerial, operational and financial personnel and systems of KCS.",
+          "section": "risk_factors",
+          "subsection": "Significant demands will be placed on KCS as a result of the combination of the two companies."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While KCS is managing debt well, the merger adds significant demands that could affect its ability to maintain this positive trajectory.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "KCS faces potential material losses from legal proceedings, including various claims and litigation, tax contingencies, and disputes. While management believes current provisions are adequate, there are risks related to uncertain outcomes and ongoing examinations.",
+      "evidence": [
+        {
+          "text": "KCS is exposed to potential material losses from legal proceedings, though management believes current provisions are adequate.",
+          "section": "mda",
+          "subsection": "OTHER MATTERS"
+        },
+        {
+          "text": "KCS is subject to various claims and litigation that could have a material adverse effect on KCS\u2019s consolidated financial statements.",
+          "section": "risk_factors",
+          "subsection": "KCS may be subject to various claims and litigation that could have a material adverse effect on KCS\u2019s consolidated financial statements."
+        },
+        {
+          "text": "The Company is exposed to the potential of various claims and litigation related to labor and employment, personal injury, commercial disputes, freight loss and other property damage, and other matters that arise in the normal course of business.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s ownership of KCSM and operations in Mexico subject it to Mexican economic and political risks."
+        },
+        {
+          "text": "The Company has several tax contingencies including, multiple tax periods subject to current examination, audit assessments for the KCSM 2009 and 2010 Mexico tax returns, and a receivable for refundable VAT. Tax contingencies are further discussed with Item 8, Financial Statements and Supplemental Data.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s ownership of KCSM and operations in Mexico subject it to Mexican economic and political risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "KCS faces potential material losses from legal proceedings and tax contingencies, with risks related to uncertain outcomes.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic conditions present a mixed impact on KCS's operations. While there are signs of recovery from the COVID-19 pandemic in certain sectors and regions, ongoing economic and political risks, particularly in Mexico, pose potential material adverse effects on KCS\u2019s financial performance and stability.",
+      "evidence": [
+        {
+          "text": "KCS\u2019s operations may be materially adversely affected by changes in the economic conditions of the industries and geographic areas that produce and consume the freight that KCS transports.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s business may be adversely affected by changes in general economic or other conditions."
+        },
+        {
+          "text": "Recovery from COVID-19 impacts in 2020 on the industrial and consumer and intermodal business units... The discussions set forth in this Annual Report on Form 10-K may contain forward-looking statements... Actual results could materially differ from those anticipated by such forward-looking statements.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        },
+        {
+          "text": "The Mexican economy in the past has suffered balance of payment deficits and shortages in foreign exchange reserves. ... Downturns in the United States or Mexican economies or in trade between the United States and Mexico could have material adverse effects on KCS\u2019s consolidated financial statements and the Company\u2019s ability to meet debt service obligations.",
+          "section": "risk_factors",
+          "subsection": "KCS\u2019s ownership of KCSM and operations in Mexico subject it to Mexican economic and political risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic recovery is mixed, with ongoing risks in Mexico and potential adverse effects on financial performance.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "KCS faces challenges with labor costs, including wage inflation, increased headcount, and currency effects, which are pressuring margins. However, labor costs remain manageable during the COVID-19 pandemic with no significant issues like strikes.",
+      "evidence": [
+        {
+          "text": "KCS aggressively defends these matters and has established liability provisions that management believes are adequate to cover expected costs. The outcome of litigation and other legal matters is always uncertain.",
+          "section": "mda",
+          "subsection": "OTHER MATTERS"
+        },
+        {
+          "text": "Compensation and benefits increased $45.5 million for the year ended December\u00a031, 2021, compared to 2020, due to wage and benefit inflation of approximately $18.0 million, an increase in headcount and hours worked of approximately $15.0 million, the strengthening of the Mexican peso against the U.S. dollar of approximately $8.0 million, and costs relating to Mexican outsourcing reform of approximately $8.0 million, partially offset by decreased incentive compensation of approximately $8.0 million.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Throughout the COVID-19 pandemic, KCS has remained focused on protecting the health and well-being of its employees... KCS continues to monitor the ongoing impacts of the COVID-19 pandemic on its liquidity and capital resources.",
+          "section": "mda",
+          "subsection": "COVID-19"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs due to wage inflation and currency effects are pressuring margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company has demonstrated strong pricing power, successfully raising prices and contributing to higher revenue per carload/unit. This increase was driven by positive pricing impacts, higher fuel surcharges, and favorable currency exchange effects.",
+      "evidence": [
+        {
+          "text": "Revenue per carload/unit increased by 7%, compared to the prior year, due to higher fuel surcharge, positive pricing, mix, and the strengthening of the Mexican peso against the U.S. dollar.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Revenue per carload/unit increased due to higher fuel surcharge, positive pricing impacts, mix, and the strengthening of the Mexican peso against the U.S. dollar.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong pricing power has led to revenue growth, driven by higher fuel surcharges and favorable currency effects.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are showing a positive recovery, particularly in utility coal, grain, and refined fuel shipments, despite some challenges such as refined fuel terminal shutdowns and import inspections delays in Mexico.",
+      "evidence": [
+        {
+          "text": "Carload/unit volumes increased due to strength in utility coal shipments, recovery from COVID-19 impacts on the industrial and consumer and intermodal business units, increased grain shipments, and strength in refined fuel product shipments into Mexico during the first half of the year.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Carload/unit volumes increased due to strength in utility coal shipments, recovery from COVID-19 impacts in 2020 on the industrial and consumer and intermodal business units, increased grain shipments, and strength in refined fuel product shipments into Mexico during the first half of the year, partially offset by refined fuel terminal shutdowns and import inspections delays as a result of increased Mexico regulation.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive demand trends in key sectors despite some challenges indicate a recovery in operations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing, driven by increased shipments in several key sectors. However, there are some offsetting factors such as refined fuel terminal shutdowns and import inspections delays due to increased Mexico regulation.",
+      "evidence": [
+        {
+          "text": "Carload/unit volumes increased due to strength in utility coal shipments, recovery from COVID-19 impacts on the industrial and consumer and intermodal business units, increased grain shipments, and strength in refined fuel product shipments into Mexico during the first half of the year.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Carload/unit volumes increased due to strength in utility coal shipments, recovery from COVID-19 impacts in 2020 on the industrial and consumer and intermodal business units, increased grain shipments, and strength in refined fuel product shipments into Mexico during the first half of the year, partially offset by refined fuel terminal shutdowns and import inspections delays as a result of increased Mexico regulation.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Unit volumes are growing despite offsetting factors.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, particularly in utility coal and refined fuels. This shift is driven by factors such as higher fuel surcharges, positive pricing impacts, and a strengthening Mexican peso, which have contributed to increased revenue per carload/unit. However, there are some offsetting factors, including shorter average length of haul, refined fuel terminal shutdowns, and import inspections delays due to increased Mexico regulation.",
+      "evidence": [
+        {
+          "text": "Revenue per carload/unit increased due to higher fuel surcharge, positive pricing impacts, and the strengthening of the Mexican peso against the U.S. dollar, partially offset by shorter average length of haul.",
+          "section": "mda",
+          "subsection": "Revenues"
+        },
+        {
+          "text": "Carload/unit volumes increased due to strength in utility coal shipments, recovery from COVID-19 impacts in 2020 on the industrial and consumer and intermodal business units, increased grain shipments, and strength in refined fuel product shipments into Mexico during the first half of the year, partially offset by refined fuel terminal shutdowns and import inspections delays as a result of increased Mexico regulation.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue is shifting towards higher-margin segments with some offsetting factors.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly diesel fuel prices, are rising, which has led to an increase in operating expenses. This upward trend in raw material and commodity costs is putting pressure on the company's financial performance.",
+      "evidence": [
+        {
+          "text": "Fuel expense increased $93.8 million for the year ended December\u00a031, 2021, compared to 2020, due to higher diesel fuel prices in the U.S. and Mexico.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating expenses increased 27% for the year ended December 31, 2021, as compared to 2020, primarily due to merger costs, higher diesel fuel price and consumption, and the strengthening of the Mexican peso against the U.S. dollar.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs, particularly diesel fuel prices, are increasing operating expenses.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is facing margin compression, with both gross and operating margins under pressure. This is driven by higher expenses, including merger costs, increased diesel fuel prices and consumption, as well as the strengthening of the Mexican peso. Operating income has decreased, and the operating ratio has significantly increased, indicating a challenging environment for maintaining profitability.",
+      "evidence": [
+        {
+          "text": "Operating expenses increased $433.9 million for the year ended December\u00a031, 2021, compared to 2020, primarily due to merger costs, higher diesel fuel price and consumption and the strengthening of the Mexican peso against the U.S. dollar.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating ratio increased to 70.0% in 2021 from 61.9% in 2020. Operating income decreased by 119.2 million compared to the prior year.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Margin compression due to higher expenses and decreased operating income.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes in Mexico are posing significant challenges for KCSM, including increased operational costs and potential risks to their concession. The new labor and tax laws require KCSM to absorb former subcontractors as employees, and the Mexican Concession is vulnerable to revocation, which could disrupt their rail operations and harm KCS's financials.",
+      "evidence": [
+        {
+          "text": "Outsourcing Reform. In April 2021, Mexico approved several amendments to federal labor, tax, social security, and other laws ('Outsourcing Reform'), which prohibit the subcontracting and outsourcing of personnel. [...] KCSM Servicios was merged into KCSM on July 2, 2021, resulting in KCSM Servicios employees becoming employees of KCSM.",
+          "section": "mda",
+          "subsection": "Mexico Regulatory and Legal Updates"
+        },
+        {
+          "text": "KCSM\u2019s Mexican Concession is subject to revocation or termination in certain circumstances, which would prevent KCSM from conducting rail operations under the Concession and would have a material adverse effect on the Company\u2019s consolidated financial statements.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to KCS\u2019s Foreign Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes in Mexico pose significant challenges and risks.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company faces significant foreign exchange risks, primarily due to the strengthening of the Mexican peso against the U.S. dollar. This movement has resulted in increased expenses and has also positively impacted revenue per carload/unit.",
+      "evidence": [
+        {
+          "text": "The strengthening of the Mexican peso against the U.S. dollar resulted in increased expense of approximately $25.0 million for expense transactions denominated in Mexican pesos. The average exchange rate of Mexican pesos per U.S. dollar was Ps.20.3 for 2021 compared to Ps.21.5 for 2020.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Revenue per carload/unit increased due to higher fuel surcharge, positive pricing impacts, mix, and the strengthening of the Mexican peso against the U.S. dollar.",
+          "section": "mda",
+          "subsection": "2021 Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign exchange exposure has mixed impacts on expenses and revenue.",
+        "confidence": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "ticker": "NDSN",
+  "form": "10-K",
+  "filing_date": "2024-12-18",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 8,
+  "factors": [
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is a headwind due to global economic slowdowns and trade tensions.",
+      "evidence": [
+        {
+          "text": "A general sustained slowdown in the global economy or in a particular region or industry or an increase in trade tensions with U.S. trading partners could negatively impact our business, financial condition or liquidity.",
+          "section": "risk_factors",
+          "subsection": "Changes in United States or international economic conditions, including declines in the industries we serve, could adversely affect the revenue stream and profitability of any of our operations."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The evidence points to significant risks from a global economic slowdown and trade tensions, which are likely to have a substantial negative impact.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are a headwind as a stronger U.S. dollar negatively impacts sales and net income.",
+      "evidence": [
+        {
+          "text": "In 2024, as compared with 2023, the United States dollar was slightly stronger against foreign currencies. If 2023 exchange rates had been in effect during 2024, sales would have been approximately $3,352 higher and third-party costs would have been approximately $903 higher.",
+          "section": "mda",
+          "subsection": "Effects of Foreign Currency"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The stronger U.S. dollar negatively impacts sales and net income, indicating a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical factors such as conflicts in Europe and the Middle East pose significant risks, impacting trade and currency exchange rates.",
+      "evidence": [
+        {
+          "text": "The conflicts in Europe and the Middle East may have significant adverse effects on international trade policy. The impact of conflicts in Europe and the Middle East, changes in monetary policies and the effects of the departure of the United Kingdom from the European Union ('Brexit') have caused increased volatility in global currency exchange rates that have resulted in the strengthening of the United States dollar against the foreign currencies in which we conduct business.",
+          "section": "risk_factors",
+          "subsection": "Significant movements in foreign currency exchange rates or change in monetary policy may harm our financial results."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Geopolitical conflicts and their effects on trade and currency volatility pose significant risks, suggesting a very negative sentiment.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating.",
+      "evidence": [
+        {
+          "text": "The decrease of 4.1 percent in net income and 4.1 percent decrease in diluted earnings per share was primarily driven by higher interest expense in 2024 compared to 2023.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decelerating organic revenue growth indicates a moderate headwind in this factor.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are stable with slight improvements.",
+      "evidence": [
+        {
+          "text": "Gross margins improved 1.0 percentage point reflecting the impact of favorable product mix and lower incremental inventory step-up amortization related to acquisitions.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable margins with slight improvements suggest a positive sentiment, indicating progress in this area.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction actions are contributing to margin improvements.",
+      "evidence": [
+        {
+          "text": "ATS operating margin improved by 90 basis points on lower sales volumes due to cost reduction actions and favorable mix.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction actions leading to margin improvements show a positive development.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisitions are creating value with successful integration.",
+      "evidence": [
+        {
+          "text": "The financial results of the Atrion acquisition are not expected to have a material impact on our Consolidated Financial Statements.",
+          "section": "mda",
+          "subsection": "Atrion Acquisition"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The evidence suggests that the acquisition's impact is not material, indicating no clear directional signal.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are increasing borrowing costs.",
+      "evidence": [
+        {
+          "text": "Interest expense in 2024 was $88,924, an increase of $29,419, or 49.4 percent, from 2023. The increase reflects higher average debt levels compared to the prior year due to funding of acquisitions.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher borrowing costs due to interest rate changes pose a moderate headwind.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

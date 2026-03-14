@@ -1,0 +1,613 @@
+{
+  "ticker": "NDSN",
+  "form": "10-K",
+  "filing_date": "2016-12-15",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 33,
+  "factors": [
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are stable as the company has not reported any significant changes in raw material or commodity costs.",
+      "evidence": [
+        {
+          "text": "The weighted-average discount rate used to determine the present value of our domestic pension plan obligations was 3.94 percent at October 31, 2016 and 4.39 percent at October 31, 2015.",
+          "section": "mda",
+          "subsection": "Critical Accounting Policies and Estimates"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Input costs are stable with no significant changes reported.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes related to conflict minerals are increasing the company's compliance costs.",
+      "evidence": [
+        {
+          "text": "Pursuant to the Dodd-Frank Wall Street Reform and Consumer Protection Act, the SEC promulgated final rules regarding disclosure of the use of certain minerals [...] These new disclosure obligations will require continuing due diligence efforts to support our future disclosure requirements. [...] We incurred and will continue to incur costs associated with complying with such disclosure requirements.",
+          "section": "risk_factors",
+          "subsection": "Regulations related to conflict-free minerals may result in additional expenses that could affect our financial condition and business operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes are increasing compliance costs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to potential legal risks under the FCPA and other anti-corruption laws.",
+      "evidence": [
+        {
+          "text": "We are subject to compliance with various laws and regulations, including the FCPA and similar worldwide anti-bribery and anti-corruption laws [...] Violations of these laws could result in severe criminal or civil sanctions and financial penalties and other consequences that may have a material adverse effect on our business, reputation, financial condition or results of operations.",
+          "section": "risk_factors",
+          "subsection": "We may be exposed to liabilities under the Foreign Corrupt Practices Act (FCPA), which could have a material adverse effect on our business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential legal risks under FCPA and anti-corruption laws pose significant challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The company's supply chain may face disruptions due to natural disasters and geopolitical risks.",
+      "evidence": [
+        {
+          "text": "Severe weather conditions such as hurricanes or tornadoes, as well as major earthquakes and other natural disasters, [...] may cause physical damage to our properties, closure of one or more of our manufacturing or distribution facilities, [...] and delays in the delivery of products to our customers.",
+          "section": "risk_factors",
+          "subsection": "Our business and operating results may be adversely affected by natural disasters or other catastrophic events beyond our control."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Natural disasters and geopolitical risks may disrupt supply chains.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "inflation",
+      "category": "unknown",
+      "summary": "Inflation is a concern, but its impact is currently manageable.",
+      "evidence": [
+        {
+          "text": "Inflation affects profit margins as the ability to pass cost increases on to customers is restricted by the need for competitive pricing. Although inflation has been modest in recent years and has had no material effect on the years covered by these financial statements, we continue to seek ways to minimize the impact of inflation through focused efforts to increase productivity.",
+          "section": "mda",
+          "subsection": "Inflation"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inflation impact is currently manageable but remains a concern.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "risk_factors",
+      "category": "unknown",
+      "summary": "Multiple risk factors, including economic conditions, foreign currency fluctuations, and geopolitical instability, pose significant challenges.",
+      "evidence": [
+        {
+          "text": "The significant risk factors affecting our operations include the following:",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Multiple significant risk factors pose challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction and infrastructure spending is not explicitly addressed in the provided text.",
+      "evidence": [
+        {
+          "text": "Construction and infrastructure spending is not mentioned in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Construction and infrastructure spending is not addressed in the text.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "equipment_replacement",
+      "category": "industrial_infrastructure",
+      "summary": "Equipment replacement cycles are not explicitly discussed in the text.",
+      "evidence": [
+        {
+          "text": "Equipment replacement cycles are not mentioned in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Equipment replacement cycles are not discussed in the text.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "dealer_channel",
+      "category": "industrial_infrastructure",
+      "summary": "The status of the dealer/distributor channel is not addressed in the text.",
+      "evidence": [
+        {
+          "text": "Dealer/distributor inventory levels and orders are not discussed in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "Aftermarket service revenue is not specifically mentioned in the text.",
+      "evidence": [
+        {
+          "text": "Aftermarket/service revenue growth is not addressed in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is not explicitly discussed in the text.",
+      "evidence": [
+        {
+          "text": "R&D spending is not mentioned in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "digital_automation",
+      "category": "technology_innovation",
+      "summary": "Adoption of digital technologies is not explicitly addressed in the text.",
+      "evidence": [
+        {
+          "text": "Adoption of digital technologies is not discussed in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New product success is critical, but challenges exist.",
+      "evidence": [
+        {
+          "text": "Innovation is critical to our success. We believe that we must continue to enhance our existing products and to develop and manufacture new products with improved capabilities in order to continue to be a leading provider of precision technology solutions for the industrial equipment market.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "Headcount restructuring is not explicitly mentioned in the text.",
+      "evidence": [
+        {
+          "text": "Headcount restructuring is not discussed in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are stable as challenges are not mentioned.",
+      "evidence": [
+        {
+          "text": "Labor relations are not specifically addressed in the text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow increased in 2016 compared to 2015, primarily due to higher net income and efficient cash management.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities was $331,158 in 2016, compared to $261,951 in 2015. [...] The increase in cash provided by operating activities was primarily due to higher net income.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company increased its dividend and continued share repurchases, indicating confidence in its future cash flows.",
+      "evidence": [
+        {
+          "text": "Dividend payments were $56,436 in 2016, up from $54,849 in 2015 due to an increase in the annual dividend to $0.99 per share from $0.90 per share. [...] Approximately $118,971 remained available for share repurchases at October 31, 2016.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company increased dividends and maintained share repurchase capacity, showing confidence in future cash flows.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand appears to be accelerating, particularly in certain end markets.",
+      "evidence": [
+        {
+          "text": "Sales volume increased 8.5 percent... particularly strong in Europe. Organic growth was driven by product lines serving consumer non-durable, disposable hygiene, general product assembly, rigid packaging, and polymer processing end markets.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Sales growth is accelerating across multiple end markets, indicating strong demand.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "Pricing power does not appear to be a significant factor in revenue growth.",
+      "evidence": [
+        {
+          "text": "It is estimated that the effect of pricing on total revenue was not material relative to 2015.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Pricing had a negligible impact on revenue, suggesting neither strength nor weakness in pricing power.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments, benefiting overall margins.",
+      "evidence": [
+        {
+          "text": "Favorable product mix added 1.3 percentage points primarily related to higher sales growth in our Adhesive Dispensing Systems and Advanced Technology Systems segments, which have higher margins relative to our Industrial Coating Systems segment.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting towards higher-margin segments, improving overall margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End markets such as consumer non-durable, disposable hygiene, and electronics are growing fastest.",
+      "evidence": [
+        {
+          "text": "Organic growth was driven by product lines serving consumer non-durable, disposable hygiene, general product assembly, rigid packaging, and polymer processing end markets. Growth was driven by increased demand for test and inspection and automated dispensing solutions serving electronics end markets.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Rapid growth in key end markets like consumer non-durable and electronics presents significant opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears confident with actions such as share repurchases and strategic investments.",
+      "evidence": [
+        {
+          "text": "Net income... a 28.8 percent increase in net income and a 37.1 percent increase in diluted earnings per share... performing a preliminary review of the new guidance... early adoption is permitted.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management actions, such as share repurchases and strategic investments, reflect confidence in the company's future.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company faces significant risks related to retaining its senior management team and key personnel, which could constrain its global growth and operational initiatives. However, there is no explicit mention of talent retention in the Outlook subsection.",
+      "evidence": [
+        {
+          "text": "Our success will continue to depend to a significant extent on the continued service of our executive management team and the ability to recruit, hire and retain other key management personnel [...] Failure to retain our leadership team and attract and retain other important management and technical personnel could place a constraint on our global growth and operational initiatives.",
+          "section": "risk_factors",
+          "subsection": "Failure to retain our existing senior management team or the inability to attract and retain qualified personnel could hurt our business and inhibit our ability to operate and grow successfully."
+        },
+        {
+          "text": "Talent retention is not mentioned in the provided text.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant risks in retaining key personnel, which could hinder growth and operational initiatives.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has increased its long-term debt, but its ability to manage debt leverage is constrained by restrictive covenants which could hinder growth or impair its ability to meet obligations. While it remains compliant with debt covenants, access to capital may be limited, potentially affecting its operations and financial flexibility.",
+      "evidence": [
+        {
+          "text": "The limits imposed on us by the restrictive covenants contained in our credit facilities could prevent us from making acquisitions or cause us to lose access to these facilities. [...] These restrictions could limit our ability to plan for or react to market conditions or meet extraordinary capital needs and could otherwise restrict our financing activities.",
+          "section": "risk_factors",
+          "subsection": "Inability to access capital could impede growth or the repayment or refinancing of existing indebtedness."
+        },
+        {
+          "text": "At October 31, 2016, $244,680 was outstanding under this facility, compared to $457,025 outstanding at October 31, 2015. [...] We were in compliance with all debt covenants, and the amount we could borrow under the credit facility would not have been limited by any debt covenants.",
+          "section": "mda",
+          "subsection": "Contractual Obligations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased debt and restrictive covenants pose risks that could limit growth and financial flexibility.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's gross and operating margins have shown mixed performance over the years. While there have been periods of expansion due to favorable product mix and leverage, there have also been instances of decline attributed to unfavorable currency translation effects and higher severance costs.",
+      "evidence": [
+        {
+          "text": "The calculated internal rate of return for the discounted cash flow method was 10 percent, the same as the calculated WACC for total Nordson.",
+          "section": "mda",
+          "subsection": "Critical Accounting Policies and Estimates"
+        },
+        {
+          "text": "The reduction in gross margin was primarily a result of unfavorable currency translation effects. [...] Of the 2.7 percentage point decrease in operating margin, 1.9 percentage points were due to unfavorable currency translation effects, 0.5 percentage points were due to higher severance and restructuring costs, and 0.3 percentage points were due to higher selling and administrative expenses.",
+          "section": "mda",
+          "subsection": "2015 compared to 2014"
+        },
+        {
+          "text": "Gross profit, expressed as a percentage of sales, increased to 54.9 percent in 2016 from 54.1 percent in 2015... favorable leverage of our selling and administrative expenses contributed 1.8 percentage points... favorable product mix added 1.3 percentage points.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's margins have shown mixed performance with declines due to unfavorable currency effects and higher severance costs.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The company faces risks related to changes in interest rates, with an increase potentially reducing profitability. While the company has fixed-rate notes, past increases in borrowing levels for acquisitions and share repurchases have led to higher interest expenses.",
+      "evidence": [
+        {
+          "text": "Any period of interest rate increases may also adversely affect our profitability. [...] A one percent increase in the interest rate on the floating rate debt in 2016 would have resulted in approximately $7,205 of additional interest expense.",
+          "section": "risk_factors",
+          "subsection": "Changes in interest rates could adversely affect us."
+        },
+        {
+          "text": "The notes mature between July 2017 and July 2025 and bear interest at fixed rates between 2.27 percent and 3.13 percent.",
+          "section": "mda",
+          "subsection": "Outlook"
+        },
+        {
+          "text": "Interest expense in 2015 was $18,104, an increase of $3,069, or 20.4 percent, from 2014. The increase was due to higher borrowing levels used primarily to fund acquisitions in the second half of 2014 and in 2015, and to fund the purchase of treasury shares in 2015.",
+          "section": "mda",
+          "subsection": "2015 compared to 2014"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces risks from rising interest rates, which could harm profitability despite having fixed-rate notes.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, particularly related to Brexit and political instability in foreign countries, pose significant risks to the company's international operations. These risks include threats such as war, terrorism, and governmental instability, which could reduce demand for products, limit pricing, disrupt supply chains, and negatively impact operating performance.",
+      "evidence": [
+        {
+          "text": "We conduct our manufacturing, sales and distribution operations on a worldwide basis [...] Such risks include [...] threats of war, terrorism or governmental instability; [...] Any of these events could reduce the demand for our products, limit the prices at which we can sell our products, interrupt our supply chain, or otherwise have an adverse effect on our operating performance.",
+          "section": "risk_factors",
+          "subsection": "Political conditions in foreign countries in which we operate could adversely affect us."
+        },
+        {
+          "text": "Until more specific details are determined, the economic and political uncertainty in the UK and EU likely will continue along with implications upon the global economy.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical instability and risks like Brexit pose significant threats to the company's international operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company faces a challenging economic environment characterized by low-growth macroeconomic conditions, political instability, and potential negative impacts from economic instability and negative trends. These factors could lead to impairments in the value of intangible assets, including goodwill, and negatively affect the company's operating results and total capitalization.",
+      "evidence": [
+        {
+          "text": "If future operating performance at one or more of our business units were to fall significantly below current levels, if competing or alternative technologies emerge, if market conditions for acquired businesses decline, if significant and prolonged negative industry or economic trends exist, [...] we could incur [...] a non-cash charge to operating earnings for goodwill impairment.",
+          "section": "risk_factors",
+          "subsection": "Any impairment in the value of our intangible assets, including goodwill, would negatively affect our operating results and total capitalization."
+        },
+        {
+          "text": "However, we move forward in the near-term with caution given continued slow growth in emerging markets, expectations for global GDP indicating a low-growth macroeconomic environment, and marketplace effects of political instability in certain areas of the world.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company operates in a low-growth, politically unstable environment, risking asset impairments and weaker results.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company faces significant risks from foreign currency exchange rate fluctuations, which have led to unfavorable impacts on sales and margins in recent years. While the effects have been mixed across different regions, with some areas experiencing favorable impacts and others unfavorable, overall, the exposure has been detrimental to financial results.",
+      "evidence": [
+        {
+          "text": "The impact of changes in foreign currency exchange rates on sales and operating results cannot be precisely measured due to fluctuating selling prices, sales volume, product mix and cost structures in each country where we operate.",
+          "section": "mda",
+          "subsection": "Effects of Foreign Currency"
+        },
+        {
+          "text": "Unfavorable currency translation effects caused by the stronger U.S. dollar reduced sales by 6.7 percent. [...] The reduction in gross margin was primarily a result of unfavorable currency translation effects.",
+          "section": "mda",
+          "subsection": "2015 compared to 2014"
+        },
+        {
+          "text": "Unfavorable currency translation effects reduced sales by 1.4 percent... favorable currency effects of 11.0 percent.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company has significant foreign exchange risks leading to unfavorable impacts on sales and margins.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Sales volume has shown positive growth from 2014 to 2016, driven by organic growth and acquisitions. While currency translation effects had a negative impact, particularly in 2015, the overall trend indicates growth.",
+      "evidence": [
+        {
+          "text": "Sales volume increased 5.8 percent, and unfavorable currency translation effects caused by the stronger U.S. dollar reduced sales by 6.7 percent. The volume increase consisted of 3.4 percent from organic growth and 2.4 percent from acquisitions.",
+          "section": "mda",
+          "subsection": "2015 compared to 2014"
+        },
+        {
+          "text": "Sales volume increased 8.5 percent... unfavorable currency translation effects reduced sales by 1.4 percent.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Sales volume has shown positive growth driven by organic growth and acquisitions, despite currency impacts.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has a history of successful acquisitions, but future integration and performance remain uncertain. While past acquisitions contributed to revenue growth, they also led to integration challenges. However, recent evidence suggests that successful integration can enhance revenue growth.",
+      "evidence": [
+        {
+          "text": "Our recent historical growth has depended, and our future growth is likely to continue to depend, in part on our acquisition strategy and the successful integration of acquired businesses into our existing operations.",
+          "section": "mda",
+          "subsection": "Trends"
+        },
+        {
+          "text": "Three acquisitions were made during 2015: Liquidyn and MatriX, which are included within the Advanced Technology Systems segment, and WAFO, which is included in the Adhesives Dispensing Systems segment. [...] The increase in sales volume consisted of 6.9 percent from the first-year effect of acquisitions.",
+          "section": "mda",
+          "subsection": "2015 compared to 2014"
+        },
+        {
+          "text": "We had one acquisition during 2016, LinkTech, which is included within the Advanced Technology Systems segment. Three acquisitions were made during 2015... included within the Advanced Technology Systems segment, and WAFO Produktionsgesellschaft GmbH (''WAFO''), which was included in the Adhesives Dispensing Systems segment.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While acquisitions have contributed to growth, future integration challenges pose uncertainty.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring initiatives in 2015 and 2016 resulted in significant severance and restructuring costs, with $11,411 in 2015 and $10,775 in 2016, contributing to improved margins in the following year.",
+      "evidence": [
+        {
+          "text": "\"Severance and restructuring costs of $11,411 were recorded in 2015. Within the Adhesives Dispensing Systems segment, restructuring initiatives [...] resulted in severance and restructuring costs of $7,972. Within the Advanced Technology Systems segment, certain restructuring programs [...] resulted in severance and restructuring costs of $3,060.\"",
+          "section": "mda",
+          "subsection": "2015 compared to 2014"
+        },
+        {
+          "text": "\"Severance and restructuring costs of $10,775 were recorded in 2016... All severance and restructuring costs are included in selling and administrative expenses in the Consolidated Statements of Income.\"",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Restructuring actions have incurred high costs but may lead to improved margins in the future.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, contributing significantly to overall sales increases.",
+      "evidence": [
+        {
+          "text": "The volume increase consisted of 3.4 percent from organic growth and 2.4 percent from acquisitions.",
+          "section": "mda",
+          "subsection": "2015 compared to 2014"
+        },
+        {
+          "text": "The volume increase consisted of 6.5 percent from organic growth... Organic growth was driven by product lines serving... polymer processing end markets.",
+          "section": "mda",
+          "subsection": "2016 compared to 2015"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The evidence shows a significant increase in organic revenue growth, which is accelerating and contributing to overall sales increases.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

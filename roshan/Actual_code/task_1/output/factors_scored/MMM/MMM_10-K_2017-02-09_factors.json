@@ -1,0 +1,167 @@
+{
+  "ticker": "MMM",
+  "form": "10-K",
+  "filing_date": "2017-02-09",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 9,
+  "factors": [
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "3M's organic revenue growth is stable as it excludes the impact of acquisitions and divestitures.",
+      "evidence": [
+        {
+          "text": "The following table provides the increase (decrease) in diluted earnings per share for 2016 compared to 2015, and 2015 compared to 2014.",
+          "section": "mda",
+          "subsection": "Earnings per share (EPS) attributable to 3M common shareholders \u2013 diluted:"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The summary indicates stable organic revenue growth, which is a positive sign for the company's performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company faces risks from global economic and political conditions, which could negatively impact its results.",
+      "evidence": [
+        {
+          "text": "Results are impacted by the effects of, and changes in, worldwide economic, political, and capital markets conditions. The Company operates in more than 70 countries and derives approximately 60 percent of its revenues from outside the United States. The Company\u2019s business is subject to global competition and geopolitical risks and may be adversely affected by factors in the United States and other countries that are beyond its control, such as slower economic growth, disruptions in financial markets, economic downturns in the form of either contained or widespread recessionary conditions, inflation, elevated unemployment levels, sluggish or uneven recovery, government deficit reduction and other austerity measures in specific countries or regions, or in the various industries in which the Company operates; social, political or labor conditions in specific countries or regions; natural and other disasters or climate change affecting the operations of the Company or its customers and suppliers; or adverse changes in the availability and cost of capital, interest rates, tax rates, tax laws, or exchange control, ability to expatriate earnings and other regulations in the jurisdictions in which the Company operates.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The evidence highlights various macroeconomic risks that could negatively impact the company's results.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The company's credit ratings affect its cost of capital, and changes in interest rates could impact its borrowing costs.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s credit ratings are important to 3M\u2019s cost of capital. The major rating agencies routinely evaluate the Company\u2019s credit profile and assign debt ratings to 3M. This evaluation is based on a number of factors, which include financial strength, business and financial risk, as well as transparency with rating agencies and timeliness of financial reporting. 3M currently has an AA- credit rating with a stable outlook from Standard\u00a0& Poor\u2019s and has an A1 credit rating with a stable outlook from Moody\u2019s Investors Service. In March 2016, Moody\u2019s downgraded 3M\u2019s rating from Aa3 to A1, revised 3M\u2019s outlook from negative to stable, and affirmed the Company\u2019s short-term rating of P-1. This ratings action followed 3M\u2019s announcement of its new five-year plan for the period 2016 through 2020 in which the Company communicated its intent to further increase financial leverage. The Company\u2019s credit ratings have served to lower 3M\u2019s borrowing costs and facilitate access to a variety of lenders.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the company benefits from its credit ratings, the evidence does not indicate a clear positive or negative trend regarding interest rates.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company is exposed to foreign currency exchange rate fluctuations, which could impact its sales and earnings.",
+      "evidence": [
+        {
+          "text": "Foreign currency exchange rates and fluctuations in those rates may affect the Company\u2019s ability to realize projected growth rates in its sales and earnings. Because the Company\u2019s financial statements are denominated in U.S. dollars and approximately 60 percent of the Company\u2019s revenues are derived from outside the United States, the Company\u2019s results of operations and its ability to realize projected growth rates in sales and earnings could be adversely affected if the U.S. dollar strengthens significantly against foreign currencies.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is exposed to foreign currency fluctuations, which pose a risk to its sales and earnings.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, such as conflicts and trade tensions, pose significant risks to the company's operations and could impact its results.",
+      "evidence": [
+        {
+          "text": "The Company operates in more than 70 countries and derives approximately 60 percent of its revenues from outside the United States. The Company\u2019s business is subject to global competition and geopolitical risks and may be adversely affected by factors in the United States and other countries that are beyond its control, such as [...] natural and other disasters or climate change affecting the operations of the Company or its customers and suppliers; or adverse changes in the availability and cost of capital, interest rates, tax rates, tax laws, or exchange control, ability to expatriate earnings and other regulations in the jurisdictions in which the Company operates.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical risks, such as conflicts and trade tensions, pose significant threats to the company's operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is exposed to legal and regulatory proceedings that could have a material impact on its results.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s future results may be affected by various legal and regulatory proceedings and legal compliance risks, including those involving product liability, antitrust, intellectual property, environmental, the U.S. Foreign Corrupt Practices Act and other anti-bribery, anti-corruption, or other matters. The outcome of these legal proceedings may differ from the Company\u2019s expectations because the outcomes of litigation, including regulatory matters, are often difficult to reliably predict.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces legal and regulatory proceedings that could have a material negative impact on its results.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The company's supply chain is subject to risks that could disrupt operations and lead to increased costs.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s future results are subject to fluctuations in the costs and availability of purchased components, compounds, raw materials and energy, including oil and natural gas and their derivatives, due to shortages, increased demand, supply interruptions, currency exchange risks, natural disasters and other factors. The Company depends on various components, compounds, raw materials, and energy (including oil and natural gas and their derivatives) supplied by others for the manufacturing of its products. It is possible that any of its supplier relationships could be interrupted due to natural and other disasters and other events, or be terminated in the future. Any sustained interruption in the Company\u2019s receipt of adequate supplies could have a material adverse effect on the Company.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The evidence suggests risks to the supply chain that could disrupt operations and increase costs.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins may be under pressure due to various factors, including input costs and competitive conditions.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s results are impacted by the effects of, and changes in, worldwide economic, political, and capital markets conditions. [...] The Company\u2019s results are affected by competitive conditions and customer preferences. [...] The Company\u2019s future results are subject to fluctuations in the costs and availability of purchased components, compounds, raw materials and energy, including oil and natural gas and their derivatives, due to shortages, increased demand, supply interruptions, currency exchange risks, natural disasters and other factors.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's margins are under pressure due to various factors, indicating a negative trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "3M is facing challenges with input costs, including foreign exchange impacts and fluctuating raw material costs, which are affecting its margins and profitability. These cost increases could have a material adverse effect on the company's future results.",
+      "evidence": [
+        {
+          "text": "Foreign exchange impacts",
+          "section": "mda",
+          "subsection": "Earnings per share (EPS) attributable to 3M common shareholders \u2013 diluted:"
+        },
+        {
+          "text": "The Company\u2019s future results are subject to fluctuations in the costs and availability of purchased components, compounds, raw materials and energy, including oil and natural gas and their derivatives, due to shortages, increased demand, supply interruptions, currency exchange risks, natural disasters and other factors.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company is facing significant challenges with input costs, including foreign exchange impacts and fluctuating raw material costs, which are affecting its margins and profitability.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "ticker": "FBIN",
+  "form": "10-Q",
+  "filing_date": "2022-07-28",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 10,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is managing its debt by issuing senior unsecured notes and using proceeds to pay down existing debt.",
+      "evidence": [
+        {
+          "text": "In March 2022, the Company issued $900 million in aggregate principal amount of senior unsecured notes... The Company used the net proceeds from the 2022 Notes offering to pay down a portion of the outstanding balance on the 2021 Term Loan.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is managing its debt through issuance and repayment, but there's no clear indication of improvement or deterioration.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has been actively repurchasing shares and paying dividends, indicating confidence in its stock.",
+      "evidence": [
+        {
+          "text": "In the first six months of 2022, we repurchased 6.2 million shares... and paid dividends in the amount of $73.6 million.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active share repurchases and dividend payments show confidence in the company's stock.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has completed an acquisition, specifically Solar Innovations, which is part of its strategic initiatives.",
+      "evidence": [
+        {
+          "text": "The increase in cash used of $110.3 million reflects the Solar Innovations acquisition in January 2022 ($61.6 million).",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Completion of an acquisition indicates strategic growth initiatives.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces ongoing litigation but believes it will not have a material adverse effect.",
+      "evidence": [
+        {
+          "text": "We are defendants in lawsuits... The Company believes the likelihood of material loss is remote.",
+          "section": "risk_factors",
+          "subsection": "Item 1. LEGAL PROCEEDINGS."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Ongoing litigation with remote material loss likelihood doesn't significantly impact sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company is facing headwinds due to an uncertain and volatile global supply chain environment.",
+      "evidence": [
+        {
+          "text": "mitigate the impact of an uncertain and volatile global supply chain environment.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Uncertain and volatile supply chain environment poses headwinds.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The company's credit facilities have variable interest rates tied to SOFR and LIBOR, which could impact its financial condition based on rate changes.",
+      "evidence": [
+        {
+          "text": "interest rates under the 2021 Term Loan were variable based on SOFR... and can range from LIBOR + 0.91% to LIBOR + 1.4%.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Variable interest rates could impact financials, but no specific direction is indicated.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company has significant foreign operations, leading to foreign exchange exposure that affects financial statements.",
+      "evidence": [
+        {
+          "text": "We have operations in various foreign countries... Changes in the value of the related currencies affect our financial statements when translated into U.S. dollars.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign operations expose the company to currency fluctuations, but no clear sentiment is conveyed.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "The company is exposed to geopolitical risks through its foreign operations and supply chain.",
+      "evidence": [
+        {
+          "text": "Our operating cash flows are significantly impacted by the seasonality of our business... The repatriation of non-U.S. cash balances from certain subsidiaries could have adverse tax consequences.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign operations and supply chain exposure to geopolitical risks pose challenges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "The company has maintained its forward guidance, with no significant changes expected in revenue, earnings, or liquidity.",
+      "evidence": [
+        {
+          "text": "The adoption of recent accounting standards... is not expected to have a significant impact on our revenue, earnings or liquidity.",
+          "section": "risk_factors",
+          "subsection": "RECENTLY ISSUED ACCOUNTING STANDARDS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company has maintained its forward guidance without significant changes, indicating stability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management's confidence is reflected in their active share repurchases, dividend payments, and strategic initiatives.",
+      "evidence": [
+        {
+          "text": "The company has been repurchasing shares... and paying dividends, indicating confidence in its stock.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's active share repurchases and dividend payments reflect confidence in the company's performance and future prospects.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

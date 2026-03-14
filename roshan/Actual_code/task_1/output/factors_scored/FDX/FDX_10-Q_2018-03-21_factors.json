@@ -1,0 +1,473 @@
+{
+  "ticker": "FDX",
+  "form": "10-Q",
+  "filing_date": "2018-03-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 22,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is deleveraging through re-evaluation of its permanent reinvestment strategy and has increased its credit facility, indicating cautious balance sheet management.",
+      "evidence": [
+        {
+          "text": "We are currently re-evaluating our permanent reinvestment strategy as a result of the TCJA and... During the quarter, we amended our five-year revolving credit facility to increase the aggregate amount available under the facility from $1.75 billion to $2.0 billion.",
+          "section": "mda",
+          "subsection": "LIQUIDITY OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is adjusting its strategy and increasing credit facilities, which could be seen as cautious rather than positive or negative.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include economic conditions affecting capital market access and potential changes in tax laws.",
+      "evidence": [
+        {
+          "text": "If our credit ratings drop below investment grade, our access to financing may become limited. If our commercial paper ratings drop below current levels, we may have difficulty utilizing the commercial paper market.",
+          "section": "mda",
+          "subsection": "LIQUIDITY OUTLOOK"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic conditions and potential tax changes pose moderate risks to the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations, such as global climate change legislation, pose potential compliance costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "increasing costs of compliance with federal, state and foreign governmental agency mandates (including the Foreign Corrupt Practices Act and the U.K. Bribery Act) and defending against inappropriate or unjustified enforcement or other actions by such agencies.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased compliance costs and operational constraints from environmental regulations are a concern.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade restrictions and tariffs could negatively impact the company's supply chain and sales.",
+      "evidence": [
+        {
+          "text": "protectionist measures or restrictions on free trade",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Trade restrictions could negatively impact the supply chain and sales, posing a risk.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The TNT Express integration is ongoing with significant costs, but expected to deliver benefits by 2020.",
+      "evidence": [
+        {
+          "text": "The integration process is complex as it spans over 200 countries and involves combining our pickup and delivery operations at a local level, our global and regional air and ground networks, and our extensive operations, customs clearance, sales and back-office information technology systems. The integration is expected to be substantially complete by the end of 2020. We are targeting operating income improvement at the FedEx Express segment of $1.2 billion to $1.5 billion in 2020 from 2017 assuming moderate economic growth and current accounting rules and tax laws. This target includes TNT Express synergies as well as base business and other operational improvements across the global FedEx Express network.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Integration of TNT Express is expected to deliver significant benefits by 2020, indicating a positive outlook.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost management actions are being implemented, particularly at FedEx Ground.",
+      "evidence": [
+        {
+          "text": "During the remainder of 2018, we will continue to implement various cost management plans at FedEx Ground for the remainder of 2018.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Implementation of cost management plans without clear positive or negative outcome mentioned.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are increasing due to merit increases, higher incentive compensation, and unfavorable exchange rates.",
+      "evidence": [
+        {
+          "text": "Salaries and employee benefits increased 10% in the third quarter and 6% in the nine months of 2018 primarily due to merit increases, unfavorable exchange rates and higher incentive compensation accruals.",
+          "section": "mda",
+          "subsection": "FedEx Express Segment Operating Income"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising labor costs due to various factors are a headwind for the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "There is a risk from the NotPetya cyberattack, which negatively impacted results.",
+      "evidence": [
+        {
+          "text": "The NotPetya cyberattack had an estimated $400 million negative impact for the first half of 2018 with lingering impacts in the third quarter of 2018.",
+          "section": "mda",
+          "subsection": "FedEx Express Segment Operating Income"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The NotPetya cyberattack had a significant negative impact, indicating geopolitical risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company is investing in labor costs, including wage increases and bonuses, which may indicate efforts to retain talent.",
+      "evidence": [
+        {
+          "text": "During the third quarter of 2018 we announced more than $3.2 billion in wage increases, bonuses, pension funding and expanded U.S. capital investment following the passage of the TCJA. In connection with this, during the third quarter of 2018 we made a pension funding contribution (noted above) and funded increases in performance-based incentive compensation plans. The incentive compensation adjustments made in the third quarter of 2018 include the year-to-date impact of the announced changes.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investing in wage increases and bonuses suggests efforts to retain talent, which is beneficial for the company.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cybersecurity",
+      "category": "unknown",
+      "summary": "The company is exposed to significant cybersecurity risks, including potential data breaches and operational disruptions.",
+      "evidence": [
+        {
+          "text": "A significant data breach or other disruption to our technology infrastructure could disrupt our operations and result in the loss of critical confidential information, adversely impacting our reputation, business or results of operations. Our ability to attract and retain customers, to efficiently operate our businesses, and to compete effectively depends in part upon the sophistication and reliability of our technology network, including our ability to provide features of service that are important to our customers, to protect our confidential business information and the information provided by our customers, and to maintain customer confidence in our ability to protect our systems and to provide services consistent with their expectations.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Exposure to cybersecurity risks poses a significant threat to operations and reputation.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Overall economic conditions are favorable, with strong demand across segments and positive market momentum.",
+      "evidence": [
+        {
+          "text": "FedEx Ground segment revenues increased 11% in the third quarter and 10% in the nine months of 2018 due to volume growth and increased yields. FedEx Freight segment revenues increased 14% in the third quarter and 10% in the nine months of 2018 primarily due to higher LTL revenue per shipment and average daily LTL shipments.",
+          "section": "mda",
+          "subsection": "FEDEX GROUND SEGMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Favorable economic conditions with strong demand and market momentum support growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has maintained forward guidance, indicating a stable outlook with expectations for revenue and earnings growth, despite challenges. The company anticipates supporting this growth through cash flow from operations and existing financing mechanisms.",
+      "evidence": [
+        {
+          "text": "Our cash flow from operations will be sufficient to fund these expenditures. Historically, we have been successful in obtaining unsecured financing... We have a shelf registration statement filed with the SEC that allows us to sell, in one or more future offerings, any combination of our unsecured debt securities and common stock.",
+          "section": "mda",
+          "subsection": "LIQUIDITY OUTLOOK"
+        },
+        {
+          "text": "We expect yield and volume growth at all of our transportation segments to support revenue and earnings growth in the fourth quarter and full year of 2018, prior to any mark-to-market benefit plans adjustment. Our expectations for earnings growth in 2018 assumes moderate economic growth.",
+          "section": "mda",
+          "subsection": "Outlook"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable outlook with revenue and earnings growth expectations indicates confidence.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is increasing capital expenditures, primarily due to aircraft purchases and facility investments, which signals confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Our capital expenditures are expected to be approximately $5.8 billion in 2018 and include spending for aircraft and aircraft-related equipment at FedEx Express, sort facility expansion, primarily at FedEx Ground, and new and replacement vehicles at all of our transportation segments.",
+          "section": "mda",
+          "subsection": "LIQUIDITY OUTLOOK"
+        },
+        {
+          "text": "Capital expenditures increased during the nine months of 2018 primarily due to aircraft and related equipment purchases at FedEx Express, which included the delivery of ten Boeing 767-300 Freighter aircraft and three Boeing 777 Freighter (\u201cB777F\u201d) aircraft, increased spending on facilities and other at all of our transportation segments and increased vehicle purchases at FedEx Freight, partially offset by lower spending related to package handling and ground support equipment at FedEx Ground.",
+          "section": "mda",
+          "subsection": "CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increased capital expenditures signal confidence in future growth opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Fuel prices and their impact on fuel surcharges are a key sensitivity affecting near-term results.",
+      "evidence": [
+        {
+          "text": "The price and availability of jet and vehicle fuel; our ability to manage our network capacity and cost structure for capital expenditures and operating expenses, and match it to shifting and future customer volume levels.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "The net impact of fuel had a significant benefit to operating income in the third quarter and nine months of 2018 as higher fuel surcharges more than offset increased fuel prices. Because of the factors described above, our operating results may be affected should the market price of fuel suddenly change by a significant amount or change by amounts that do not result in an adjustment in our fuel surcharges, which can significantly affect our earnings either positively or negatively in the short-term.",
+          "section": "mda",
+          "subsection": "Fuel"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Fuel prices are a key sensitivity that could negatively impact near-term results.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure across multiple fronts, including potential class-action lawsuits, IRS examinations, data breach-related risks, and challenges related to the classification of independent contractors. While no material financial impact is expected from the IRS matters, the company is actively defending against various lawsuits and regulatory risks that could harm its reputation and operations.",
+      "evidence": [
+        {
+          "text": "any liability resulting from and the costs of defending against class-action litigation, such as wage-and-hour, joint employment, and discrimination and retaliation claims, and any other legal or governmental proceedings.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "We are currently under examination by the Internal Revenue Service (\u201cIRS\u201d) for the 2014 and 2015 tax years. It is reasonably possible that certain income tax return proceedings will be completed during the next twelve months and could result in a change in our balance of unrecognized tax benefits. The expected impact of any changes would not be material to our consolidated financial statements.",
+          "section": "mda",
+          "subsection": "Income Taxes"
+        },
+        {
+          "text": "These types of adverse impacts could also occur in the event the confidentiality, integrity or availability of company and customer information was compromised due to a data loss by FedEx or a trusted third party... failure to comply with applicable U.S. or foreign data protection regulations or other data protection standards may expose us to litigation, fines, sanctions or other penalties, which could harm our reputation and adversely impact our business, results of operations and financial condition.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors"
+        },
+        {
+          "text": "FedEx Ground is involved in lawsuits and administrative proceedings claiming that owner-operators engaged under a contractor model no longer in use should have been treated as employees of FedEx Ground, rather than independent contractors... We will continue to vigorously defend ourselves in these proceedings and continue to believe that owner-operators engaged by FedEx Ground are properly classified as independent contractors and that FedEx Ground is not an employer of the drivers employed by these owner-operators.",
+          "section": "mda",
+          "subsection": "Independent Contractor Model"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant litigation exposure could harm reputation and operations, posing a risk.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company is significantly impacted by regulatory changes, particularly the TCJA, which has altered the U.S. corporate income tax system. These changes include a reduced federal income tax rate, elimination of certain deductions, and a modified territorial tax system with a one-time transition tax on foreign earnings. The company's strategy and financial planning are being adjusted in response to these regulatory shifts, though the ability to fully realize the benefits of the TCJA remains uncertain due to future guidance and interpretations.",
+      "evidence": [
+        {
+          "text": "On December 22, 2017, the United States government enacted comprehensive tax legislation through the TCJA. The TCJA significantly changes the U.S. corporate income tax system including, among other things, lowering the statutory federal income tax rate from 35% to 21%, eliminating or reducing certain income tax deductions, and implementing a modified territorial tax system that includes a one-time transition tax on previously deferred foreign earnings.",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "future guidance and interpretations relating to the recently enacted TCJA and our ability to realize the benefits of certain provisions of the TCJA.",
+          "section": "mda",
+          "subsection": "Income Taxes"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Impact of regulatory changes is mixed with potential benefits but uncertainties exist.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is experiencing rising fuel costs, which are significantly impacting input costs. However, these increases are being partially offset by higher fuel surcharges across multiple segments, leading to a mixed impact on operating income. While the net effect has been beneficial in some periods, there is potential volatility in fuel costs that could affect future pricing strategies.",
+      "evidence": [
+        {
+          "text": "the price and availability of jet and vehicle fuel",
+          "section": "mda",
+          "subsection": "FORWARD-LOOKING STATEMENTS"
+        },
+        {
+          "text": "Fuel expense increased 24% in the third quarter and 19% in the nine months of 2018 due to increased fuel prices. However, the net impact of fuel had a moderate benefit to operating income in the third quarter of 2018 and a significant benefit to operating income in the nine months of 2018 as higher fuel surcharges more than offset increased fuel prices.",
+          "section": "mda",
+          "subsection": "FedEx Express Segment Operating Income"
+        },
+        {
+          "text": "Fuel expense increased 24% in the third quarter and 19% in the nine months of 2018 primarily due to increased fuel prices. The net impact of fuel had a significant benefit to operating income in the third quarter and nine months of 2018 as higher fuel surcharges more than offset increased fuel prices.",
+          "section": "mda",
+          "subsection": "Fuel"
+        },
+        {
+          "text": "Fuel expense increased 28% in the third quarter and 19% in the nine months of 2018 due to higher fuel prices. The net impact of fuel had a moderate benefit to operating income in the third quarter and nine months of 2018 as higher fuel surcharges more than offset increased fuel prices.",
+          "section": "mda",
+          "subsection": "FEDEX FREIGHT SEGMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed impact due to rising fuel costs offset by higher surcharges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are positive across multiple segments, with growth observed in international economy shipments, FedEx Ground, and FedEx Freight. The increases are driven by higher unit volumes, average daily shipments, and improved yields.",
+      "evidence": [
+        {
+          "text": "International export average daily volumes increased 1% in the third quarter and 2% in the nine months of 2018 primarily due to increased international economy shipments.",
+          "section": "mda",
+          "subsection": "FedEx Express Segment Revenues"
+        },
+        {
+          "text": "Revenues increased 10% in the third quarter and 8% in the nine months of 2018 due to improved performance at all of our transportation segments.",
+          "section": "mda",
+          "subsection": "Revenue"
+        },
+        {
+          "text": "Average daily package volume FedEx Ground 8,993 8,522 6 8,408 7,963 6. Average daily LTL shipments (in thousands) Priority 69.7 65.6 6 73.5 70.3 5. Economy 30.6 29.0 6 31.5 30.9 2. Total average daily LTL shipments 100.3 94.6 6 105.0 101.2 4.",
+          "section": "mda",
+          "subsection": "FEDEX GROUND SEGMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive growth across multiple segments with increased volumes and yields.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power across its segments, with evidence of successful price increases and higher fuel surcharges contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "U.S. domestic package yields increased 5% in the third quarter and nine months of 2018 primarily due to higher base rates and fuel surcharges.",
+          "section": "mda",
+          "subsection": "FedEx Express Segment Revenues"
+        },
+        {
+          "text": "Revenues increased 10% in the third quarter and 8% in the nine months of 2018 due to improved performance at all of our transportation segments. Higher fuel surcharges had a positive impact on revenues at all of our transportation segments in the third quarter and nine months of 2018.",
+          "section": "mda",
+          "subsection": "Revenue"
+        },
+        {
+          "text": "Effective January 1, 2018, FedEx Ground announced a 4.9% average list price increase. In addition, as announced on September 18, 2017, dimensional weight pricing applies to the majority of FedEx SmartPost shipments effective January 22, 2018. Effective February\u00a06, 2017, FedEx Ground fuel surcharges are adjusted on a weekly basis compared to the previous monthly adjustment. On January 2, 2017, FedEx Ground implemented a 4.9% average list price increase and a change to the U.S. domestic dimensional weight divisor.",
+          "section": "mda",
+          "subsection": "FEDEX GROUND SEGMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong pricing power with successful increases and surcharges contributing to revenue growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance across segments. While FedEx Express and Operating Expenses are experiencing declining margins due to higher incentive compensation, peak-related costs, integration expenses, and unfavorable exchange rates, the FedEx Ground and Freight segments are showing improvement with increasing margins.",
+      "evidence": [
+        {
+          "text": "FedEx Express operating income and margin decreased in the third quarter of 2018 due to higher incentive compensation accruals, higher peak-related costs, increased TNT Express integration expenses, the negative impacts of inclement winter weather and unfavorable exchange rates, partially offset by yield growth and positive net impact of fuel.",
+          "section": "mda",
+          "subsection": "FedEx Express Segment Operating Income"
+        },
+        {
+          "text": "Operating margin declined in the third quarter of 2018 primarily as a result of significantly higher incentive compensation accruals, higher peak-related costs at FedEx Express, the negative impacts of inclement winter weather at FedEx Express and increased TNT Express integration expenses.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating margin 12.1% 11.0% 110bp 12.0% 11.9% 10bp. Operating margin 3.2% 2.7% 50bp 6.7% 5.6% 110bp.",
+          "section": "mda",
+          "subsection": "FEDEX GROUND SEGMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed margin performance with some segments improving while others decline.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends for FedEx services are generally positive, with notable growth in both international economy shipments and FedEx Ground segment revenues. The evidence indicates stable to growing demand across different service areas, supported by increased shipments and higher yields.",
+      "evidence": [
+        {
+          "text": "International export average daily volumes increased 1% in the third quarter and 2% in the nine months of 2018 primarily due to increased international economy shipments.",
+          "section": "mda",
+          "subsection": "FedEx Express Segment Revenues"
+        },
+        {
+          "text": "FedEx Ground service offerings include day-certain delivery to businesses in the U.S. and Canada and to 100% of U.S. residences. The following tables compare revenues, operating expenses, operating income (dollars in millions), operating margin, selected package statistics (in thousands, except yield amounts) and operating expenses as a percent of revenue for the periods ended February\u00a028: Three Months Ended Percent Nine Months Ended Percent 2018 2017 Change 2018 2017 Change Revenues: FedEx Ground $4,824 $4,296 12 $13,586 $12,202 11 Operating expenses: Salaries and employee benefits 956 834 15 2,711 2,420 12 Purchased transportation 2,235 2,015 11 6,194 5,568 11 Rentals 209 197 6 617 567 9 Depreciation and amortization 187 177 6 537 508 6 Fuel 4 3 33 10 8 25 Maintenance and repairs 82 83 (1) 249 237 5 Intercompany charges 371 330 12 1,087 983 11 Other 544 534 2 1,604 1,516 6 Total operating expenses 4,588 4,173 10 13,009 11,807 10 Operating income $634 $515 23 $1,781 $1,590 12 Operating margin 12.1% 11.0% 110bp 12.0% 11.9% 10bp Average daily package volume FedEx Ground 8,993 8,522 6 8,408 7,963 6 Revenue per package (yield) FedEx Ground $8.64 $8.12 6 $8.49 $8.05 5",
+          "section": "mda",
+          "subsection": "FEDEX GROUND SEGMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Generally positive demand with growth in international and Ground shipments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is mixed across the company's segments. While FedEx Ground and Freight are experiencing organic growth with revenue increases, other segments like FedEx Express are facing challenges such as higher costs and weather impacts, leading to a slight decline in overall operating income.",
+      "evidence": [
+        {
+          "text": "Our operating income declined slightly in the third quarter of 2018 primarily due to significantly higher incentive compensation accruals (described below), higher peak-related costs at FedEx Express, increased TNT Express integration expenses and the negative impacts of inclement winter weather at FedEx Express. These factors were partially offset by increased yields and the favorable net impact of fuel at all of our transportation segments and volume growth at FedEx Ground and FedEx Freight.",
+          "section": "mda",
+          "subsection": "Overview"
+        },
+        {
+          "text": "FedEx Ground segment revenues increased 11% in the third quarter and 10% in the nine months of 2018 due to volume growth and increased yields. Average daily volume at FedEx Ground increased 6% in the third quarter and nine months of 2018 primarily due to continued growth in our residential services. FedEx Ground yield increased 6% during the third quarter and 5% during the nine months of 2018 primarily driven by higher base rates and higher fuel surcharges.",
+          "section": "mda",
+          "subsection": "FEDEX GROUND SEGMENT"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed organic growth with some segments growing while others face challenges.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

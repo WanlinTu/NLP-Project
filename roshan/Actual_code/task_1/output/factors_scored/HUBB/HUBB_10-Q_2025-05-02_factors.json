@@ -1,0 +1,507 @@
+{
+  "ticker": "HUBB",
+  "form": "10-Q",
+  "filing_date": "2025-05-02",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 26,
+  "factors": [
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation has deteriorated.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities for the three months ended March\u00a031, 2025 was $37.4 million compared to $92.2 million for the same period in 2024. The decrease is due to increased working capital, pension contributions, and lower depreciation and amortization.",
+          "section": "mda",
+          "subsection": "Cash Flow"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Free cash flow has decreased significantly compared to the previous year.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is returning capital to shareholders through share repurchases and dividends.",
+      "evidence": [
+        {
+          "text": "In the first three months of 2025, we returned capital to our shareholders by paying $70.7 million of dividends on our common stock and using $125.0 million of cash for share repurchases.",
+          "section": "mda",
+          "subsection": "Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is actively returning capital to shareholders through dividends and share repurchases.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage is stable with net debt to total capital improving slightly.",
+      "evidence": [
+        {
+          "text": "Net Debt to Total Capital (non-GAAP measure) was 28% at March 31, 2025, compared to 24% at December 31, 2024.",
+          "section": "mda",
+          "subsection": "Short-term Debt and Current Portion of Long-Term Debt"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Net debt to total capital has only slightly improved, indicating stable leverage.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs and policy changes pose significant risks to the company's business and operating results.",
+      "evidence": [
+        {
+          "text": "The imposition of new tariffs, changes in trade policy or agreements, or the escalation of trade tensions between the United States and other countries or regions could adversely impact our business, financial condition and results of operations.",
+          "section": "risk_factors",
+          "subsection": "Changes in U.S. and international trade policies may adversely impact our business and operating results; changes in U.S. trade policies could have a material adverse effect on us."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain disruptions are a concern, particularly regarding raw materials and manufacturing.",
+      "evidence": [
+        {
+          "text": "Supply chain disruptions and availability, costs and quantity of raw materials, purchased components, energy and freight.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Disruptions in supply chain and raw material availability are concerning.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Potential litigation and regulatory changes pose risks.",
+      "evidence": [
+        {
+          "text": "Incurring significant and/or unexpected costs to avoid, manage, defend and litigate intellectual property matters.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential for significant costs from litigation and regulatory changes is a risk.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "natural_disasters",
+      "category": "unknown",
+      "summary": "Potential natural disasters and public health emergencies could impact operations.",
+      "evidence": [
+        {
+          "text": "The impact of potential natural disasters or additional public health emergencies on our financial condition and results of operations.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While potential impacts are noted, there's no indication of current or immediate risk.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "cybersecurity",
+      "category": "unknown",
+      "summary": "Cybersecurity breaches pose risks to operations and financial reporting.",
+      "evidence": [
+        {
+          "text": "Failure of information technology systems, cybersecurity breaches, cyber threats, malware, phishing attacks, break-ins and similar events resulting in unauthorized disclosure of confidential information or disruptions or damage to information technology systems that could cause interruptions to our operations or adversely affect our internal control over financial reporting.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Cybersecurity breaches pose risks to operations and financial reporting.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are stable with mixed evidence.",
+      "evidence": [
+        {
+          "text": "Organic net sales decreased by 0.6% driven by a low single digit percentage decrease in volumes, partially offset by a low single digit increase in price realization.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand trends are stable with mixed evidence.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments.",
+      "evidence": [
+        {
+          "text": "Organic net sales in the Electrical Solutions segment grew by 4.8% in the first quarter of 2025 led by continued strength in the datacenter vertical. In the Utility Solutions segment, organic net sales contracted 3.7% on lower volume from Grid Automation products due to the timing of large metering and AMI projects which drove a strong first quarter of 2024, as well as in our enclosures products on continued weakness in telcom markets.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting towards higher-margin segments, indicating a strategic shift towards more profitable areas.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining.",
+      "evidence": [
+        {
+          "text": "Organic net sales decreased by 0.6% driven by a low single digit percentage decrease in volumes, partially offset by a low single digit increase in price realization.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Unit volumes are declining, which could negatively impact revenue growth.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "Datacenter vertical is growing fastest, while telcom markets are weakening.",
+      "evidence": [
+        {
+          "text": "Organic net sales in the Electrical Solutions segment grew by 4.8% in the first quarter of 2025 led by continued strength in the datacenter vertical. In the Utility Solutions segment, organic net sales contracted 3.7% on lower volume from Grid Automation products due to the timing of large metering and AMI projects which drove a strong first quarter of 2024, as well as in our enclosures products on continued weakness in telcom markets.",
+          "section": "mda",
+          "subsection": "Overview"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, contributing to margin expansion.",
+      "evidence": [
+        {
+          "text": "Approximately four percentage points of gross profit margin expansion was driven by lower acquisition-related intangible asset amortization, improved operational productivity and favorable price realization, partially offset by three percentage points of gross profit margin contraction due to material and other cost inflation, including tariff expense and lower volume.",
+          "section": "mda",
+          "subsection": "Cost of Goods Sold and Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improvements are contributing to margin expansion, which is a positive development for the company.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include geopolitical tensions and economic conditions.",
+      "evidence": [
+        {
+          "text": "International tensions, such as the conflicts in the Middle East and Ukraine, as well as trade and other tensions, including those with China, may affect demand for our products, as well as our production costs. In particular, recent tariff actions by the U.S. and other countries and the widespread uncertainty and international tensions resulting therefrom, including, without limitation, the effect on the value of the U.S. dollar relative to other currencies, may adversely affect demand for our products, disrupt our supply chains, increase manufacturing costs and adversely affect our revenues, cost of sales and production volumes, any of which could materially and adversely harm our business, financial condition and results of operations.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include geopolitical tensions and economic conditions, which pose significant challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategy is focused on innovation and market expansion.",
+      "evidence": [
+        {
+          "text": "The Company's long-term strategy is to serve its customers with reliable and innovative electrical and related infrastructure solutions with desired brands and high-quality service, delivered through a competitive cost structure; to complement organic revenue growth with acquisitions that enhance its product offerings; and to allocate capital effectively to create shareholder value.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Long-term strategy focuses on innovation and market expansion, which are positive developments for future growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate increases are negatively impacting the company.",
+      "evidence": [
+        {
+          "text": "Macroeconomic effects such as increases in interest rates and other measures taken by central banks and other policy makers could have a negative effect on overall economic activity which could reduce our customers\u2019 demand for our products, and cause the continuation of relatively high market interest rates that increase our borrowing costs.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Interest rate increases are negatively impacting the company, leading to higher borrowing costs and potential reduced demand.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange is creating headwinds.",
+      "evidence": [
+        {
+          "text": "Organic net sales (or organic net sales growth), a non-GAAP measure, represents Net sales according to U.S. GAAP, less Net sales from acquisitions and divestitures during the first twelve months of ownership or divestiture, respectively, less the effect of fluctuations in Net sales from foreign currency exchange. The period-over-period effect of fluctuations in Net sales from foreign currency exchange is calculated as the difference between local currency Net sales of the prior period translated at the current period exchange rate as compared to the same local currency Net sales translated at the prior period exchange rate.",
+          "section": "mda",
+          "subsection": "SUMMARY OF CONDENSED CONSOLIDATED RESULTS (IN MILLIONS, EXCEPT PER SHARE DATA):"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange fluctuations are acting as a headwind, negatively impacting net sales.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power is mixed, with some success in increasing prices but offset by declines in unit volume.",
+      "evidence": [
+        {
+          "text": "The decrease in organic net sales was driven by a mid single digit percentage decrease in unit volume, partially offset by a low single digit increase in price realization.",
+          "section": "mda",
+          "subsection": "UTILITY SOLUTIONS"
+        },
+        {
+          "text": "The Company has taken various pricing actions to cover the higher costs and to protect our profitability. Although inflation has moderated since its high point in 2022, we expect inflation to remain a factor for the foreseeable future and we expect to continue to take these pricing actions subject to demand and market conditions.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Pricing power is mixed with slight increases offset by volume declines, indicating moderate challenges.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring and productivity programs are ongoing and expected to continue through 2025, with some savings partially offsetting cost pressures. While these initiatives aim to minimize the impact of rising material and administrative costs, they are not yet sufficient to fully offset all cost pressures.",
+      "evidence": [
+        {
+          "text": "Restructuring and related costs are ongoing, with expected savings partially offsetting cost pressures.",
+          "section": "mda",
+          "subsection": "Investments in the Business"
+        },
+        {
+          "text": "We expect our investments in restructuring and related activities to continue through 2025 as we continue to invest in previously initiated actions and initiate further footprint consolidation, and other cost reduction initiatives.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        },
+        {
+          "text": "Productivity improvement also continues to be a key area of focus for the Company and efforts to drive productivity complement our restructuring and related activities to minimize the impact of rising material costs and other administrative cost inflation.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Restructuring and productivity programs are ongoing but insufficient to fully offset cost pressures, indicating continued strain.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing a deceleration in organic revenue growth, with both the Utility Solutions segment and overall net sales showing declines. The Utility Solutions segment saw a 3.7% decrease in organic net sales, while overall organic net sales decreased by 0.6%, driven by lower volumes and partially offset by price increases.",
+      "evidence": [
+        {
+          "text": "Net sales in the Utility Solutions segment in the first quarter of 2025 decreased by $36.9 million, or 4.2%, as compared to the first quarter of 2024. That decrease was driven by a 3.7% decrease in organic net sales, and a 0.5% decrease due to foreign exchange.",
+          "section": "mda",
+          "subsection": "UTILITY SOLUTIONS"
+        },
+        {
+          "text": "Organic net sales decreased by 0.6% driven by a low single digit percentage decrease in volumes, partially offset by a low single digit increase in price realization.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Deceleration in organic revenue growth across segments highlights a slowdown in demand.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is experiencing significant margin pressure due to rising input costs, primarily driven by material and tariff inflation. While operational improvements have partially offset these increases, ongoing cost volatility poses a risk to profitability.",
+      "evidence": [
+        {
+          "text": "That decrease includes approximately four percentage points of margin contraction due to material and other cost inflation, including tariff expense and the impact of lower unit volume, which was partially offset by three percentage points of margin expansion from improved operational productivity and favorable price realization.",
+          "section": "mda",
+          "subsection": "UTILITY SOLUTIONS"
+        },
+        {
+          "text": "The general impact of inflation on our business, including the impact on raw materials costs, elevated interest rates and increased energy costs and our ability to implement and maintain pricing actions that we have taken to cover higher costs and protect our margin profile.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "Because material costs are approximately half of our cost of goods sold, continued volatility in this area could significantly impact profitability. Our goal is to have pricing and productivity programs that offset material and other inflationary cost increases as well as pay for investments in key growth areas.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant margin pressure from rising input costs and inflation poses a major threat to profitability.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has been active in making strategic acquisitions to expand its capabilities and product offerings, which are expected to contribute positively to growth.",
+      "evidence": [
+        {
+          "text": "In the first quarter of 2025, we acquired Ventev for $73.3 million, expanding our portfolio of wireless network solutions within the Electrical Solutions segment.",
+          "section": "mda",
+          "subsection": "Investments in the Business"
+        },
+        {
+          "text": "The Company acquired all of the issued and outstanding equity of Alliance USAcqCo2, Inc. (''Ventev''), a leading manufacturer and provider of a complete ecosystem of solutions to power, protect, and connect wireless networks. The Ventev business has been added to the Electrical Solutions segment.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strategic acquisitions to expand product offerings and capabilities present a growth opportunity.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions, marked by inflation and rising interest rates, are presenting significant challenges. These factors are affecting raw material costs, increasing borrowing expenses, and potentially reducing customer demand for products.",
+      "evidence": [
+        {
+          "text": "The general impact of inflation on our business, including the impact on raw materials costs, elevated interest rates and increased energy costs and our ability to implement and maintain pricing actions that we have taken to cover higher costs and protect our margin profile.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "Macroeconomic effects such as increases in interest rates and other measures taken by central banks and other policy makers could have a negative effect on overall economic activity which could reduce our customers\u2019 demand for our products, and cause the continuation of relatively high market interest rates that increase our borrowing costs.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic challenges such as inflation and rising interest rates are creating significant headwinds.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, including trade tensions, conflicts, and international tensions, are creating significant risks for the company. These factors may affect demand for products and increase production costs.",
+      "evidence": [
+        {
+          "text": "Political unrest and military actions in foreign countries, including trade tensions with China and the wars in Ukraine and the Middle East, as well as the impact on world markets and energy supplies and prices resulting therefrom.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "International tensions, such as the conflicts in the Middle East and Ukraine, as well as trade and other tensions, including those with China, may affect demand for our products, as well as our production costs.",
+          "section": "mda",
+          "subsection": "Introduction / Executive Overview of the Business"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical tensions pose risks to demand and production costs, indicating external instability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company is experiencing mixed margin performance, with pressures from rising costs and inflation impacting margins, yet also benefiting from lower costs and improved productivity which have contributed to margin expansion.",
+      "evidence": [
+        {
+          "text": "Margins are under pressure due to rising costs and the ability to implement pricing actions.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "The general impact of inflation on our business, including the impact on raw materials costs, elevated interest rates and increased energy costs and our ability to implement and maintain pricing actions that we have taken to cover higher costs and protect our margin profile.",
+          "section": "mda",
+          "subsection": "Cost of Goods Sold and Gross Profit"
+        },
+        {
+          "text": "As a percentage of Net sales, cost of goods sold decreased by 110 basis points to 66.9% in the first quarter of 2025, resulting in gross profit margin expanding to 33.1%. Approximately four percentage points of gross profit margin expansion was driven by lower acquisition-related intangible asset amortization, improved operational productivity and favorable price realization, partially offset by three percentage points of gross profit margin contraction due to material and other cost inflation, including tariff expense and lower volume.",
+          "section": "mda",
+          "subsection": "Cost of Goods Sold and Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed margin performance due to both cost pressures and positive productivity improvements.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include trade policies, economic conditions, and geopolitical factors.",
+      "evidence": [
+        {
+          "text": "Such factors include, but are not limited to: Impact of trade tariffs, import quotas or other trade restrictions or measures taken by the United States, China, Mexico, the United Kingdom, member states of the European Union, and other countries, including the recent and ongoing potential changes in U.S. trade policies, that may be made by the current or a future presidential administration and changes in trade policies in other countries made in response to changes in the U.S. trade policies.",
+          "section": "mda",
+          "subsection": "Forward-Looking Statements"
+        },
+        {
+          "text": "Significant items impacting comparability comprise the following: Transaction, integration and separation costs... The effect that acquisitions and divestitures may have on our results fluctuate significantly based on the timing, size and number of transactions, and therefore result in significant volatility in the costs to complete transactions and to integrate or separate the businesses.",
+          "section": "mda",
+          "subsection": "SUMMARY OF CONDENSED CONSOLIDATED RESULTS (IN MILLIONS, EXCEPT PER SHARE DATA):"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Exposure to trade policies, economic conditions, and geopolitical factors presents significant risks.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

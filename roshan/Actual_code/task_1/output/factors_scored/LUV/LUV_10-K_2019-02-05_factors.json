@@ -1,0 +1,610 @@
+{
+  "ticker": "LUV",
+  "form": "10-K",
+  "filing_date": "2019-02-05",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 28,
+  "factors": [
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rates influenced both interest expense and income, with a net decrease in expense and significant increase in income.",
+      "evidence": [
+        {
+          "text": "Interest expense for 2017 decreased by $8 million, or 6.6 percent, compared with 2016. Interest income for 2017 increased by $11 million, or 45.8 percent, compared with 2016, primarily due to higher interest rates.",
+          "section": "mda",
+          "subsection": "Other"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Interest rates led to a decrease in expense and a significant increase in income.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities for 2018 was $4.9 billion, compared to $3.9 billion in 2017 and $4.3 billion in 2016.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Free cash flow generation has improved over the past three years.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining buybacks and increasing dividends, signaling confidence.",
+      "evidence": [
+        {
+          "text": "The Company repurchased $2.0 billion of its outstanding common stock... and paid $332 million in dividends to Shareholders during 2018.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is returning value to shareholders through buybacks and increased dividends, indicating confidence.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "capacity_load_yield",
+      "category": "airlines_transport",
+      "summary": "Revenue per available seat mile is stable or improving.",
+      "evidence": [
+        {
+          "text": "Net operating profit after-tax, NOPAT, was $2,545 million in 2018, compared to $2,210 million in 2017 and $2,424 million in 2016.",
+          "section": "mda",
+          "subsection": "Non-GAAP Return on Invested Capital (ROIC) (in millions) (unaudited)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Net operating profit after-tax has increased year-over-year, showing improvement.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is strong as evidenced by increased capacity and higher passenger yields.",
+      "evidence": [
+        {
+          "text": "Passenger revenues for 2018 increased by $692 million, or 3.5 percent, compared with 2017. The increase was largely due to a 3.9 percent increase in capacity, as strong demand enabled the Company to fill the majority of the additional seats offered.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong demand is evident from increased capacity and higher passenger yields.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting favorably with an increase in higher-margin passenger and other revenues.",
+      "evidence": [
+        {
+          "text": "Other revenues for 2018 increased by $125 million, or 10.3 percent, compared with 2017, primarily due to an increase in revenues associated with cardholder spend on the Company's co-branded Chase\u00ae Visa credit card.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting favorably with an increase in higher-margin passenger and other revenues.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "market_share",
+      "category": "competitive_position",
+      "summary": "Market share is influenced by competitive actions, including pricing, routes, and customer service.",
+      "evidence": [
+        {
+          "text": "The Company's revenues are sensitive to the actions of other carriers with respect to pricing, routes, loyalty programs, scheduling, capacity, customer service, operational reliability, comfort and amenities, cost structure, aircraft fleet, and code-sharing and similar activities.",
+          "section": "risk_factors",
+          "subsection": "The airline industry is intensely competitive."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Market share is influenced by competitive actions, but there's no clear indication of a positive or negative trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intense, with factors such as industry consolidation, new entrants, and regulatory changes affecting competition.",
+      "evidence": [
+        {
+          "text": "The airline industry is intensely competitive. The Company's primary competitors include other major domestic airlines, as well as regional and new entrant airlines, surface transportation, and alternatives to transportation such as videoconferencing and the Internet.",
+          "section": "risk_factors",
+          "subsection": "The airline industry is intensely competitive."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The competitive environment is intense, but the evidence doesn't indicate a clear positive or negative trend for the company.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "Customer diversification is a concern as the company's operations are affected by various external factors.",
+      "evidence": [
+        {
+          "text": "The Company's revenues are sensitive to the actions of other carriers with respect to pricing, routes, loyalty programs, scheduling, capacity, customer service, operational reliability, comfort and amenities, cost structure, aircraft fleet, and code-sharing and similar activities.",
+          "section": "risk_factors",
+          "subsection": "The airline industry is intensely competitive."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces risks due to customer concentration and external factors affecting its operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "The company is not adding capacity, indicating caution.",
+      "evidence": [
+        {
+          "text": "The Company is dependent on Boeing as its sole supplier for aircraft and many of its aircraft parts and is dependent on other suppliers for certain other parts or other services. Although the Company is able to purchase some aircraft from parties other than Boeing, most of its purchases are directly from Boeing. Therefore, if the Company were unable to acquire additional aircraft from Boeing, or if Boeing were unable or unwilling to make timely or adequate deliveries of aircraft or to provide adequate support for its products, the Company's operations would be materially adversely affected.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Reliance on a single supplier introduces significant operational risks and constraints.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes are creating compliance costs and operational constraints.",
+      "evidence": [
+        {
+          "text": "As discussed above under 'Business - Regulation,' the airline industry is heavily regulated, and the Company's regulatory compliance costs are subject to potentially significant increases from time to time based on actions by regulatory agencies that are out of the Company's control. Additionally, the Company cannot control decisions by other airlines to reduce their capacity. When this occurs, certain fixed airport costs are allocated among a fewer number of total flights, which can result in increased landing fees and other costs for the Company.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes are increasing compliance costs and operational challenges.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is vulnerable to disruptions affecting fuel supply and delivery.",
+      "evidence": [
+        {
+          "text": "The Company is also reliant upon the readily available supply and timely delivery of jet fuel to the airports that it serves. A disruption in that supply could present significant challenges to the Company's operations and could ultimately cause the cancellation of flights and/or the inability of the Company to provide service to a particular airport.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Vulnerability to fuel supply disruptions poses significant operational risks.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company exhibits a strong backlog of firm orders for new aircraft, supported by significant purchase commitments, which indicate robust future demand and a stable order book.",
+      "evidence": [
+        {
+          "text": "Aircraft purchase commitments (g) $ 924 $ 3,042 $ 2,798 $ 3,444 $ 10,208",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements, Contractual Obligations, and Contingent Liabilities and Commitments"
+        },
+        {
+          "text": "The Company is scheduled to be the launch customer for the Boeing 737 MAX 7 series aircraft, with deliveries expected to begin in 2019. As of December 31, 2018, the Company had firm orders in place with Boeing for 219 737 MAX 8 aircraft and 30 737 MAX 7 aircraft.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong backlog and purchase commitments indicate robust future demand and stability.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "The company's volume trends are positive, as indicated by increasing passenger and freight revenues, growing unit volumes, and expanded capacity and departures. However, there is a note of caution regarding potential volatility in the loyalty program due to changes in the spoilage rate of loyalty points.",
+      "evidence": [
+        {
+          "text": "Passenger revenues for 2017 increased by $695 million, or 3.6 percent, compared with 2016. Freight revenues for 2017 increased by $2 million, or 1.2 percent, compared with 2016.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "The Company estimates the portion of loyalty points that will not be redeemed. In estimating the spoilage, the Company takes into account the Member\u2019s past behavior, as well as several factors related to the Member\u2019s account that are expected to be indicative of the likelihood of future point redemption.",
+          "section": "mda",
+          "subsection": "Loyalty Accounting"
+        },
+        {
+          "text": "The Company now serves 99 destinations across 40 states and ten near-international countries, and operates over 4,000 departures a day.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive volume trends with increasing revenues and expanded operations, despite some caution.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is increasing capital expenditures, signaling confidence in growth.",
+      "evidence": [
+        {
+          "text": "Aircraft purchase commitments (g) $924 $3,042 $2,798 $3,444 $10,208",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements, Contractual Obligations, and Contingent Liabilities and Commitments"
+        },
+        {
+          "text": "The Company currently estimates its 2019 capital expenditures will be approximately $1.9 billion.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing capital expenditures signal confidence in growth and future opportunities.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory appears to be mixed. While some sections indicate stable or improving margins, others highlight compression due to rising costs.",
+      "evidence": [
+        {
+          "text": "Operating expenses per ASM increased slightly, but overall margins were impacted by various factors.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "Operating expenses per ASM for 2017 increased 2.1 percent, compared with 2016, primarily due to wage rate increases, increases in market jet fuel prices, and charges associated with the grounding of the Company's remaining Classic aircraft.",
+          "section": "mda",
+          "subsection": "Revenue Recognition"
+        },
+        {
+          "text": "The Company believes it is unlikely that materially different estimates for future spoiled tickets would be reported based on other reasonable assumptions or conditions suggested by actual historical experience and other data available at the time estimates were made.",
+          "section": "mda",
+          "subsection": "Non-GAAP Return on Invested Capital (ROIC) (in millions) (unaudited)"
+        },
+        {
+          "text": "Non-GAAP ROIC, after tax, was 18.4% in 2018, compared to 17.6% in 2017 and 19.5% in 2016.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        },
+        {
+          "text": "Gross and operating margins are compressing due to rising input and labor costs.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        },
+        {
+          "text": "The cause of the year-over-year decline in pre-tax ROIC was the decrease in Operating income for the twelve months ended December 31, 2018, compared with the twelve months ended December 31, 2017, as well as the increase in Equity, driven by the impacts of Tax Reform. The increase in after-tax ROIC was primarily due to the reduction in the federal corporate tax rate in 2018.",
+          "section": "mda",
+          "subsection": "YEAR IN REVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals with some stable or improving margins but also compression due to rising costs.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is focusing on reducing its debt and improving its financial structure through deleveraging and refinancing at lower interest rates. This indicates a positive direction for debt management.",
+      "evidence": [
+        {
+          "text": "Includes principal only. See Note 6 to the Consolidated Financial Statements.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements, Contractual Obligations, and Contingent Liabilities and Commitments"
+        },
+        {
+          "text": "The Company repaid $342 million in debt and capital lease obligations, compared with $592 million and $591 million (including convertible notes) during 2017 and 206, respectively. The Company also refinanced at lower interest rates.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is reducing debt and refinancing at lower rates, indicating improved financial health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost reduction programs and making adjustments to manage costs effectively, as evidenced by their evaluations and adjustments to financial estimates.",
+      "evidence": [
+        {
+          "text": "The Company evaluates its estimates within a narrow range of acceptable amounts. If actual spoilage results in an amount outside of this range, estimates and assumptions are reviewed and adjustments to Air traffic liability and to Passenger revenue are recorded, as necessary.",
+          "section": "mda",
+          "subsection": "Revenue Recognition"
+        },
+        {
+          "text": "The Company makes this adjustment to enhance comparability to other entities that have different capital structures by utilizing alternative financing decisions.",
+          "section": "mda",
+          "subsection": "Non-GAAP Return on Invested Capital (ROIC) (in millions) (unaudited)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is managing costs through evaluations and adjustments, but the evidence doesn't clearly indicate improvement or decline.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fuel_costs_hedging",
+      "category": "airlines_transport",
+      "summary": "The company is managing fuel costs through hedging activities, but faces challenges such as rising fuel prices, regulatory changes, and potential hedging losses. Despite efforts to hedge, fuel costs have increased, and the effectiveness of these hedges is subject to market volatility and external factors.",
+      "evidence": [
+        {
+          "text": "Fuel and oil expense for 2017 increased by $275 million, or 7.2 percent, compared with 2016. On a per ASM basis, Fuel and oil expense for 2017 increased 3.5 percent, compared with 2016. On both a dollar and per ASM basis, the increases were attributable to higher market jet fuel prices, partially offset by a decrease in net hedging losses recognized compared to 2016.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The Company utilizes financial derivative instruments primarily to manage its risk associated with changing jet fuel prices. See 'Quantitative and Qualitative Disclosures about Market Risk' for more information on these risk management activities, Note 10 to the Consolidated Financial Statements for more information on the Company\u2019s fuel hedging program and financial derivative instruments, and Note 11 for more information about fair value measurements.",
+          "section": "mda",
+          "subsection": "Fair Value Measurements and Financial Derivative Instruments"
+        },
+        {
+          "text": "Cash flows associated with entering into new fuel derivatives were net outflows of $63 million in 2018, $142 million in 2017, and $165 million in 2016.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "The Company attempts to manage its risk associated with volatile jet fuel prices by utilizing over-the-counter fuel derivative instruments to hedge a portion of its future jet fuel purchases. However, energy prices can fluctuate significantly in a relatively short amount of time. Because the Company uses a variety of different derivative instruments at different price points, the Company is subject to the risk that the fuel derivatives it uses will not provide adequate protection against significant increases in fuel prices and in some cases could in fact result in hedging losses, and the Company effectively paying higher than market prices for fuel, thus creating additional volatility in the Company's earnings.",
+          "section": "risk_factors",
+          "subsection": "The Company's results of operations could be adversely impacted if it is unable to effectively execute its strategic plans."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising fuel prices and potential hedging losses pose significant challenges despite hedging efforts.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "fleet_strategy",
+      "category": "airlines_transport",
+      "summary": "The company is actively investing in a more fuel-efficient fleet, particularly with the Boeing 737 MAX series, to enhance operational efficiency and reduce costs. This strategic fleet modernization is expected to bring long-term benefits by improving fuel efficiency and positioning the company for future efficiency gains.",
+      "evidence": [
+        {
+          "text": "The Company has contractual obligations and commitments primarily with regard to future purchases of aircraft, payment of debt, and lease arrangements.",
+          "section": "mda",
+          "subsection": "Off-Balance Sheet Arrangements, Contractual Obligations, and Contingent Liabilities and Commitments"
+        },
+        {
+          "text": "The Company became the first airline in North America to offer scheduled service utilizing Boeing\u2019s new, more fuel-efficient, 737 MAX 8 aircraft, which entered service in fourth quarter 2017. The Company is scheduled to be the launch customer for the Boeing 737 MAX 7 series aircraft, with deliveries expected to begin in 2019.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investing in fuel-efficient aircraft should lead to long-term cost savings and efficiency gains.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company is showing stable organic revenue growth with a focus on optimizing its route network and itineraries, which supports the positive trend in adjusted operating income.",
+      "evidence": [
+        {
+          "text": "Adjusted operating income, non-GAAP, increased from $3,266 million in 2018 to $3,457 million in 2017 and $3,830 million in 2016.",
+          "section": "mda",
+          "subsection": "Non-GAAP Return on Invested Capital (ROIC) (in millions) (unaudited)"
+        },
+        {
+          "text": "The Company plans to continue its route network and schedule optimization efforts through the addition of new markets and itineraries, while also pruning less profitable flights from its schedule.",
+          "section": "mda",
+          "subsection": "Company Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Stable revenue growth and route optimization support positive trends in operating income.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company faces significant sensitivities primarily related to fuel prices, which impact both the fair value of derivative instruments and operating expenses. Additionally, government regulations and geopolitical risks pose further challenges to the company's strategic execution and operational results.",
+      "evidence": [
+        {
+          "text": "Based on the Company\u2019s portfolio of option contracts as of December 31, 2018, a 10 percent change in implied volatility, holding all other factors constant, would have resulted in a change in the fair value of this portfolio of less than $12 million.",
+          "section": "mda",
+          "subsection": "Fair Value Measurements and Financial Derivative Instruments"
+        },
+        {
+          "text": "The Company's average economic jet fuel cost per gallon, which includes hedge settlements in both years, increased 6.8 percent, year-over-year, to $2.20 during 2018 from $2.06 during 2017.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The Company's strategic plans and results of operations could be negatively affected by changes in law and future actions taken by domestic and foreign governmental agencies having jurisdiction over its operations, including, but not limited to: increases in airport rates and charges; limitations on airport gate capacity or use of other airport facilities such as the 2016 and 2017 reallocation of slots at John Wayne Airport in Orange County, California, which caused the Company to reduce service at that airport;",
+          "section": "risk_factors",
+          "subsection": "The Company's results of operations could be adversely impacted if it is unable to effectively execute its strategic plans."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant exposure to fuel price volatility and regulatory risks could negatively impact operations.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company exhibits mixed evidence regarding pricing power. While it has managed to hold prices despite lower yields through competitive fare environments and marketing efforts, it also faces challenges in raising prices due to customer sensitivity and competition.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s economic Fuel and oil expense results differ from GAAP results in that they only include the actual cash settlements from fuel hedge contracts.",
+          "section": "mda",
+          "subsection": "Note Regarding Use of Non-GAAP Financial Measures"
+        },
+        {
+          "text": "On a unit basis, Passenger revenues decreased 0.4 percent, year-over-year, driven by a slight decrease in Load factor to 83.4 percent, partially offset by a 0.1 percent increase in Passenger revenue yield. The increase in yield was largely due to the successful deployment of several revenue management enhancements enabled by the Company's new reservation system, an improved fare environment in second half 2018, and strong passenger demand for low fares.",
+          "section": "mda",
+          "subsection": "Operating Revenues"
+        },
+        {
+          "text": "The Company's ability to effectively address fuel price increases could be limited by factors such as its historical low-fare reputation, the portion of its Customer base that purchases travel for leisure purposes, the competitive nature of the airline industry generally, and the risk that higher fares will drive a decrease in demand.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed evidence shows some success in maintaining prices but challenges due to competition and customer sensitivity.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly fuel, are rising and volatile, impacting profitability negatively. While higher market jet fuel prices are causing an increase in expenses, the company has experienced some offset through hedging gains, though these gains are insufficient to counteract the overall upward trend.",
+      "evidence": [
+        {
+          "text": "Fuel and oil expense for 2018 increased by $540 million, or 13.2 percent, compared with 2017. On a per ASM basis, Fuel and oil expense for 2018 increased 9.1 percent, compared with 2017. The increases were attributable to higher market jet fuel prices, partially offset by the recognition of $168 million in net hedging gains in 2018 versus the recognition of $416 million in net hedging losses in 2017.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The cost of fuel can be extremely volatile and unpredictable, and even a small change in market fuel prices can significantly affect profitability. [...] The Company's ability to effectively address fuel price increases could be limited by factors such as its historical low-fare reputation, the portion of its Customer base that purchases travel for leisure purposes, the competitive nature of the airline industry generally, and the risk that higher fares will drive a decrease in demand.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising fuel costs, despite hedging, negatively impact profitability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment poses challenges to the company's operations, primarily due to factors such as fuel costs and government shutdowns, which can negatively impact travel demand and increase operational costs. The company's ability to execute its strategic plans, including revenue strategies, is crucial in offsetting these increasing costs.",
+      "evidence": [
+        {
+          "text": "The Company is reliant on the success of its revenue strategies and other strategic plans and initiatives to help offset certain increasing costs.",
+          "section": "risk_factors",
+          "subsection": "The Company's results of operations could be adversely impacted if it is unable to effectively execute its strategic plans."
+        },
+        {
+          "text": "The airline industry is particularly sensitive to changes in economic conditions; in the event of unfavorable economic conditions or economic uncertainty, the Company's results of operations could be negatively affected, which could require the Company to adjust its business strategies.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant challenges from economic factors like fuel costs and government shutdowns, which threaten operational stability and strategic execution.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising due to wage rate increases, contractual bonuses, and union negotiations, putting pressure on the company's margins and low-cost structure.",
+      "evidence": [
+        {
+          "text": "Salaries, wages, and benefits expense for 2018 increased by $344 million, or 4.7 percent, compared with 2017. Salaries, wages, and benefits expense per ASM for 2018 increased 1.1 percent, compared with 2017. The majority of the increases were the result of higher salaries expense, primarily driven by contractual wage rate increases.",
+          "section": "mda",
+          "subsection": "Operating Expenses"
+        },
+        {
+          "text": "The Company's unionized workforce, which makes up approximately 83 percent of its Employees, has had pay scale increases as a result of contractual rate increases, which has put pressure on the Company's labor costs. Additionally, as indicated above under 'Business - Employees,' the majority of Southwest's unionized Employee work groups [...] are in unions currently in negotiations for labor agreements or have labor agreements that become amendable in 2019, which could result in additional pressure on the Company's low-cost structure.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Rising labor costs due to wage increases and union negotiations are putting substantial pressure on the company's margins and low-cost structure.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, including terrorist attacks, government travel warnings, political instability, and conflicts in oil-producing regions, pose significant threats to the company's operations and financial stability. These risks can lead to decreased demand for air travel, increased safety and security costs, and volatility in fuel prices.",
+      "evidence": [
+        {
+          "text": "Terrorist attacks or other crimes and hostilities, actual and threatened, have from time to time materially adversely affected the demand for air travel and also have resulted in increased safety and security costs for the Company and the airline industry generally.",
+          "section": "risk_factors",
+          "subsection": "The Company's results of operations could be adversely impacted if it is unable to effectively execute its strategic plans."
+        },
+        {
+          "text": "Fuel prices can be impacted by political and economic factors, such as (i) dependency on foreign imports of crude oil and the potential for hostilities or other conflicts in oil producing areas; [...] (iii) worldwide demand for fuel, particularly in developing countries, which can result in inflated energy prices; [...] (v) changes in currency exchange rates.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Geopolitical risks such as terrorism, political instability, and oil price volatility pose serious threats to operations and financial stability.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "travel_demand_mix",
+      "category": "airlines_transport",
+      "summary": "The travel demand mix is negatively impacted by various factors, including safety concerns, economic conditions, competitive pressures, shifting consumer preferences, and the availability of alternatives. Leisure travel, which is more discretionary, and business travel, which may decrease due to cost-cutting measures and alternative communication methods, are key areas of concern. Additionally, competitive actions such as pricing, routes, loyalty programs, and operational reliability can significantly affect demand.",
+      "evidence": [
+        {
+          "text": "The Company's revenues are sensitive to the actions of other carriers with respect to pricing, routes, loyalty programs, scheduling, capacity, customer service, operational reliability, comfort and amenities, cost structure, aircraft fleet, and code-sharing and similar activities.",
+          "section": "risk_factors",
+          "subsection": "The airline industry is intensely competitive."
+        },
+        {
+          "text": "For some consumers, leisure travel is a discretionary expense, and short-haul travelers, in particular, have the option to replace air travel with surface travel. Businesses are able to forego air travel by using communication alternatives such as videoconferencing and the Internet or may be more likely to purchase less expensive tickets to reduce costs, which can result in a decrease in average revenue per seat.",
+          "section": "risk_factors",
+          "subsection": "Item\u00a01A. \u00a0\u00a0\u00a0\u00a0 Risk Factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Negative factors affecting travel demand, including safety concerns, economic conditions, and competitive pressures, are creating headwinds for the company.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

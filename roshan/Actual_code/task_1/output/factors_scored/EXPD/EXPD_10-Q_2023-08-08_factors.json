@@ -1,0 +1,94 @@
+{
+  "ticker": "EXPD",
+  "form": "10-Q",
+  "filing_date": "2023-08-08",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 5,
+  "factors": [
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The global economic environment is a headwind for the company due to unfavorable conditions.",
+      "evidence": [
+        {
+          "text": "Unfavorable economic conditions, rising interest rates and high inflation could result in lower freight volumes, reduced sell rates, higher operating expenses and may adversely affect Expeditors' revenues, operating results and cash flows.",
+          "section": "risk_factors",
+          "subsection": "Global economic uncertainty impacted trade and could affect demand for our services or the financial stability of our service providers, customers and financial institutions."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The summary explicitly states that economic conditions are a headwind, and the evidence lists multiple negative impacts.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Rising interest rates are negatively impacting the company.",
+      "evidence": [
+        {
+          "text": "Unfavorable economic conditions, rising interest rates and high inflation could result in lower freight volumes, reduced sell rates, higher operating expenses and may adversely affect Expeditors' revenues, operating results and cash flows.",
+          "section": "risk_factors",
+          "subsection": "Global economic uncertainty impacted trade and could affect demand for our services or the financial stability of our service providers, customers and financial institutions."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Rising interest rates are directly linked to negative impacts on the company's performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Freight volumes are expected to decline due to economic conditions.",
+      "evidence": [
+        {
+          "text": "Unfavorable economic conditions... could result in lower freight volumes...",
+          "section": "risk_factors",
+          "subsection": "Global economic uncertainty impacted trade and could affect demand for our services or the financial stability of our service providers, customers and financial institutions."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Freight volumes are expected to decline, indicating a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include lower freight volumes, reduced sell rates, higher operating expenses, and potential credit losses.",
+      "evidence": [
+        {
+          "text": "Unfavorable economic conditions, rising interest rates and high inflation could result in lower freight volumes, reduced sell rates, higher operating expenses and may adversely affect Expeditors' revenues, operating results and cash flows. These conditions, should they occur for an extended period of time, could adversely affect our customers, service providers and the stability of financial institutions. Should our customers\u2019 ability to pay deteriorate, additional credit losses may be incurred.",
+          "section": "risk_factors",
+          "subsection": "Global economic uncertainty impacted trade and could affect demand for our services or the financial stability of our service providers, customers and financial institutions."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Multiple near-term risks including lower volumes, reduced rates, higher expenses, and potential credit losses are significant.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include economic conditions, freight volumes, and customer payment abilities.",
+      "evidence": [
+        {
+          "text": "Unfavorable economic conditions, rising interest rates and high inflation could result in lower freight volumes... Should our customers\u2019 ability to pay deteriorate, additional credit losses may be incurred.",
+          "section": "risk_factors",
+          "subsection": "Global economic uncertainty impacted trade and could affect demand for our services or the financial stability of our service providers, customers and financial institutions."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The key sensitivities point to significant risks related to economic conditions and customer payment abilities.",
+        "confidence": 0.9
+      }
+    }
+  ]
+}

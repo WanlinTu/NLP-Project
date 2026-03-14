@@ -1,0 +1,43 @@
+{
+  "ticker": "LHX",
+  "form": "10-Q",
+  "filing_date": "2024-10-25",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 2,
+  "factors": [
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is actively repurchasing shares under its repurchase program, indicating confidence in its stock.",
+      "evidence": [
+        {
+          "text": "The following table sets forth information with respect to repurchases by us of our common stock during the quarter ended September\u00a027, 2024:",
+          "section": "risk_factors",
+          "subsection": "Issuer Purchases of Equity Securities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's share repurchases indicate confidence in its stock, suggesting positive sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "The company is generating free cash flow as evidenced by its share repurchases and absence of unregistered equity sales.",
+      "evidence": [
+        {
+          "text": "During the quarter ended September\u00a027, 2024, we did not issue or sell any unregistered equity securities.",
+          "section": "risk_factors",
+          "subsection": "Sales of Unregistered Equity Securities"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Generating free cash flow and absence of equity sales indicate strong financial health, signaling a positive sentiment.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

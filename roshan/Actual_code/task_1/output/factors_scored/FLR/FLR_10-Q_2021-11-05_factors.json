@@ -1,0 +1,566 @@
+{
+  "ticker": "FLR",
+  "form": "10-Q",
+  "filing_date": "2021-11-05",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 31,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand is decelerating, particularly in the energy sector due to the impact of COVID and a shift toward energy transition.",
+      "evidence": [
+        {
+          "text": "Our business has been adversely affected by the impacts of COVID and the steep decline in oil prices that occurred in early 2020. These events created significant uncertainty and economic volatility and disruption, which have impacted and may continue to impact our business.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Demand is decelerating due to COVID and energy transition, indicating significant challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Backlog orders are shrinking due to project cancellations and deferrals.",
+      "evidence": [
+        {
+          "text": "Backlog decreased during the 2021 Period primarily due to the removal of approximately $2 billion from backlog due to the cancellation of both a chemicals project and a steel project.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Backlog orders are shrinking due to cancellations, which is a major issue for future revenue.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company is not successfully raising prices; cost increases are offsetting pricing power.",
+      "evidence": [
+        {
+          "text": "Segment profit for the 2021 Quarter decreased due to cost increases and foreign currency losses on an international upstream project and reduced execution activities on a separate upstream project partially offset by gains on embedded foreign currency derivatives.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company struggles to raise prices, offset by cost increases, leading to margin pressure.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting toward lower-margin segments, particularly in Urban Solutions due to cost growth and project cancellations.",
+      "evidence": [
+        {
+          "text": "Segment profit for the 2021 Period was adversely affected by the recognition of reserves for expected credit losses on aged receivables and COVID related cost growth.",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Shift towards lower-margin segments due to cost growth and cancellations, affecting profitability.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining across all segments due to project completions and cancellations.",
+      "evidence": [
+        {
+          "text": "During the first quarter of 2021, we changed the composition of our segments to implement our new strategy and to pursue opportunities in our designated markets. We now report our operating results in four reportable segments as follows: Energy Solutions, Urban Solutions, Mission Solutions and Other.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining unit volumes across segments due to project issues, indicating weaker demand.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The energy sector is the slowest growing end market, while mission solutions show some improvement but are still constrained.",
+      "evidence": [
+        {
+          "text": "Revenue for the 2021 Period decreased due to declines in the volume of execution activities for the portfolio continuing to be impacted by COVID and other market migration toward energy transition, projects nearing completion as well as the cancellation of a chemicals project in North America.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Energy sector slow growth and mission solutions constrained despite some improvement.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, particularly in construction materials and labor, leading to cost overruns and margin pressure.",
+      "evidence": [
+        {
+          "text": "The significant decline in segment profit during the 2021 Period was due to forecast revisions for procurement and subcontractor cost growth, delays and disruptions in schedule of a legacy infrastructure project, resulting in a charge of $138 million recognized in the second quarter of 2021.",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Rising input costs leading to significant cost overruns and margin pressure.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are creating margin pressure due to wage inflation and productivity issues.",
+      "evidence": [
+        {
+          "text": "Segment profit for the 2021 Quarter declined due to forecast revisions for schedule delays and productivity on a light rail project.",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs increasing due to wage inflation and productivity issues, affecting margins.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving in some areas but deteriorating in others, particularly due to project delays and cost overruns.",
+      "evidence": [
+        {
+          "text": "Segment profit for the 2021 Period increased due to the negotiation of change orders, scope increases and cost improvements across numerous projects, the ramp up of execution activities on the projects discussed in the revenue paragraph above, and the collection of previously reserved accounts receivable but was partially offset by losses on embedded foreign currency derivatives and the decline in execution activity for projects nearing completion.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Operational efficiency is improving in some areas but deteriorating in others, particularly due to project delays and cost overruns.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "Supply chain health is a concern due to disruptions and delays affecting project execution.",
+      "evidence": [
+        {
+          "text": "The significant decline in segment profit during the 2021 Period was due to forecast revisions for procurement and subcontractor cost growth, delays and disruptions in schedule of a legacy infrastructure project, resulting in a charge of $138 million recognized in the second quarter of 2021.",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain health is a concern due to disruptions and delays affecting project execution.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is likely decreasing due to project cancellations and reduced demand.",
+      "evidence": [
+        {
+          "text": "Backlog decreased during the 2021 Period primarily due to the removal of approximately $2 billion from backlog due to the cancellation of both a chemicals project and a steel project.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Capacity utilization is likely decreasing due to project cancellations and reduced demand.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed, but there is risk of obsolescence or shortage due to project cancellations and delays.",
+      "evidence": [
+        {
+          "text": "Backlog is adjusted to reflect any known project cancellations, revisions to project scope and cost, foreign currency exchange fluctuations and project deferrals, as appropriate.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory levels are being managed, but there is risk of obsolescence or shortage due to project cancellations and delays.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Quality and safety are not mentioned as significant issues in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Quality and safety are not mentioned as significant issues in the provided text.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not provided specific forward guidance in the text, but the tone suggests caution due to ongoing market uncertainties.",
+      "evidence": [
+        {
+          "text": "Our actual results may differ materially from our expectations or projections. While most risks affect only future cost or revenue, some risks may relate to accruals that have already been reflected in earnings.",
+          "section": "mda",
+          "subsection": "CAUTIONARY STATEMENT REGARDING FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management has not provided specific forward guidance in the text, but the tone suggests caution due to ongoing market uncertainties.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears cautious due to ongoing challenges and uncertainties, particularly in the energy and urban solutions sectors.",
+      "evidence": [
+        {
+          "text": "Although oil prices have rebounded in 2021, we have not yet seen our energy clients respond with elevated capital expenditures for our services. Our estimates reflect our best assessment of project results inclusive of COVID effects, which have been dynamic as our projects have seen changes in prevailing regulations as COVID cases crested and fell.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Management appears cautious due to ongoing challenges and uncertainties, particularly in the energy and urban solutions sectors.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include project cancellations, supply chain disruptions, and ongoing impacts of COVID on demand and execution.",
+      "evidence": [
+        {
+          "text": "These events created significant uncertainty and economic volatility and disruption, which have impacted and may continue to impact our business.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include project cancellations, supply chain disruptions, and ongoing impacts of COVID on demand and execution.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company is pursuing a long-term strategy focused on strategic divestitures and new market opportunities, particularly in energy transition and mission solutions.",
+      "evidence": [
+        {
+          "text": "During the first quarter of 2021, we committed to a plan to sell our Stork business, which had previously represented the majority of operations from our former diversified services segment.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's focus on strategic divestitures and new market opportunities, especially in energy transition and mission solutions, indicates a proactive and potentially beneficial long-term approach.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include oil prices, COVID-19 impacts, and project cancellations, which are significantly affecting revenue and margins.",
+      "evidence": [
+        {
+          "text": "Our business has been adversely affected by the impacts of COVID and the steep decline in oil prices that occurred in early 2020. These events created significant uncertainty and economic volatility and disruption, which have impacted and may continue to impact our business.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces significant challenges from oil price volatility, COVID-19 impacts, and project cancellations, which are negatively affecting revenue and margins.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "A potential catalyst is the ramp-up of execution activities on new projects, particularly in energy and mission solutions, which could improve results.",
+      "evidence": [
+        {
+          "text": "The decline in revenue for LOGCAP was partially offset by the ramp up of execution activities on a newly awarded project to provide contingency and humanitarian support for Afghan evacuees in the United States.",
+          "section": "mda",
+          "subsection": "Mission Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The ramp-up of execution activities on new projects could drive improved results and provide a positive catalyst for the company.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are likely to remain cautious as the company focuses on reducing overhead and managing existing projects.",
+      "evidence": [
+        {
+          "text": "Although we have not satisfied the requirements to recognize charges for any restructurings for the 2021 undertaking, we are likely to recognize expense in future quarters for these efforts.",
+          "section": "mda",
+          "subsection": "G&A"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "A cautious capital expenditure approach, focusing on reducing overhead, suggests potential limitations in growth investment, which could be a negative for future expansion.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisition activity is limited, with a focus on strategic divestitures to reduce overhead.",
+      "evidence": [
+        {
+          "text": "During the first quarter of 2021, we committed to a plan to sell our Stork business, which had previously represented the majority of operations from our former diversified services segment.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is focusing on divestitures rather than acquisitions, indicating a defensive strategy that may limit growth opportunities.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly related to climate and energy transition, are creating challenges and uncertainties.",
+      "evidence": [
+        {
+          "text": "The change in segment profit margin reflects these same factors.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes related to climate and energy transition are posing challenges and uncertainties for the company.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance costs are not explicitly mentioned, but they are part of the broader regulatory challenges affecting the company.",
+      "evidence": [
+        {
+          "text": "The change in segment profit margin reflects these same factors.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While environmental compliance is a challenge, there's no explicit mention of costs or impacts, making the sentiment unclear.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs are not specifically mentioned as having a significant impact in the provided text.",
+      "evidence": [
+        {
+          "text": "No relevant information provided in the text.",
+          "section": "mda",
+          "subsection": "Introduction / Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Trade tariffs are not discussed in detail, so their impact is unknown.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Litigation exposure is a risk, particularly related to cybersecurity and contractual disputes.",
+      "evidence": [
+        {
+          "text": "Failure to obtain favorable results in existing or future litigation, regulatory proceedings or dispute resolution proceedings (including claims for indemnification), or claims against project owners, subcontractors or suppliers;",
+          "section": "mda",
+          "subsection": "CAUTIONARY STATEMENT REGARDING FORWARD-LOOKING STATEMENTS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The factor indicates significant legal risks with potential unfavorable outcomes in litigation and disputes.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow has decreased due to lower operating cash flow and deteriorating generation from project cancellations and increased costs.",
+      "evidence": [
+        {
+          "text": "Increase (decrease) in cash and cash equivalents (73,266) 96,583",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "The effective tax rate on earnings (loss) from Cont Ops was 38.4% for the 2021 Quarter and 97.8% for the 2021 Period compared to 52.6% and (5.3)% for the corresponding periods of 2020. For all periods, the effective tax rate was unfavorably impacted by increases in the valuation allowances against foreign tax credit carryforwards and certain foreign net operating loss carryforwards.",
+          "section": "mda",
+          "subsection": "Net Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Decreasing free cash flow due to lower operating cash flow and project cancellations, indicating financial strain.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost reduction programs to address increased G&A expenses and tax payments, which have negatively impacted operating cash flow. However, the full impact of these measures has not yet been realized.",
+      "evidence": [
+        {
+          "text": "Our operating cash flow for the 2021 Period was negatively impacted by increased funding of COVID costs on our projects, higher cash payments of G&A (including the timing and extent of employee bonuses) and increased tax payments, most of which occurred in the first quarter of 2021.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "We announced in January 2021 that we had begun an undertaking to substantially reduce our overhead costs. Although we have not satisfied the requirements to recognize charges for any restructurings for the 2021 undertaking, we are likely to recognize expense in future quarters for these efforts.",
+          "section": "mda",
+          "subsection": "G&A"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Cost reduction programs aim to address increased expenses but have not yet shown positive results.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company's approach to shareholder returns is mixed. While they have a stock repurchase program available, with over 10 million shares still purchasable, there is no immediate intent to repurchase shares. Additionally, the company is focusing on reducing overhead costs, which may lead to reduced shareholder returns in the future.",
+      "evidence": [
+        {
+          "text": "As of September\u00a030, 2021, over 10 million shares could still be purchased under the existing stock repurchase program, although we don't have any immediate intent to begin such repurchases.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "We announced in January 2021 that we had begun an undertaking to substantially reduce our overhead costs. Although we have not satisfied the requirements to recognize charges for any restructurings for the 2021 undertaking, we are likely to recognize expense in future quarters for these efforts.",
+          "section": "mda",
+          "subsection": "G&A"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed approach with no immediate intent to repurchase shares and focus on reducing costs, potentially harming shareholder returns.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is managing its debt by repurchasing notes and planning to extend its credit facility, but this activity reflects rising interest costs and refinancing concerns, indicating a mixed approach to debt leverage.",
+      "evidence": [
+        {
+          "text": "In September 2021, we completed a tender offer in which we repurchased $375 million (face value) of 2023 Notes and $108 million (face value) of 2024 Notes, excluding accrued interest. Additionally, we redeemed $26 million of outstanding 2023 and 2024 Notes in open market transactions during the 2021 Period. We used the proceeds from the issuance of preferred stock to redeem the 2023 and 2024 Notes. We recognized $20 million in losses related to these redemptions which is included in interest expense.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "The loss on debt repurchases includes costs to redeem $509 million of 2023 and 2024 Notes through a tender offer completed in September 2021 as well as through open market transactions following the issuance of the CPS in the second quarter of 2021.",
+          "section": "mda",
+          "subsection": "Net Interest Expense"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Debt management activities reflect rising interest costs and refinancing concerns, indicating financial stress.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are under pressure and compressing due to higher expenses, project execution challenges, cost increases, and project cancellations.",
+      "evidence": [
+        {
+          "text": "Our operating cash flow for the 2021 Period was negatively impacted by increased funding of COVID costs on our projects, higher cash payments of G&A (including the timing and extent of employee bonuses) and increased tax payments, most of which occurred in the first quarter of 2021.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "The change in segment profit margin reflects these same factors.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Gross and operating margins are under significant pressure due to various cost increases and project challenges.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is facing challenges due to decreased operating cash flow from increased COVID-related expenses, higher G&A payments, and elevated tax payments. Additionally, revenue growth is decelerating as a result of project cancellations and reduced demand, particularly from energy clients who have not increased their capital expenditures despite rebounding oil prices.",
+      "evidence": [
+        {
+          "text": "Our operating cash flow for the 2021 Period was negatively impacted by increased funding of COVID costs on our projects, higher cash payments of G&A (including the timing and extent of employee bonuses) and increased tax payments, most of which occurred in the first quarter of 2021.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "Although oil prices have rebounded in 2021, we have not yet seen our energy clients respond with elevated capital expenditures for our services. Our estimates reflect our best assessment of project results inclusive of COVID effects, which have been dynamic as our projects have seen changes in prevailing regulations as COVID cases crested and fell.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Organic growth is challenged by decreased cash flow, project cancellations, and reduced demand, particularly from energy clients.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

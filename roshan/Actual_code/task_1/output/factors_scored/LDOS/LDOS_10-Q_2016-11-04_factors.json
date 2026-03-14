@@ -1,0 +1,207 @@
+{
+  "ticker": "LDOS",
+  "form": "10-Q",
+  "filing_date": "2016-11-04",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 12,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has increased its debt leverage due to new term loans incurred in connection with acquisitions.",
+      "evidence": [
+        {
+          "text": "In connection with the Transactions, Leidos has incurred $2.5 billion of new indebtedness in the form of term loans (see \"Note 2\u2013Acquisitions\").",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased debt leverage can pose financial risks, such as higher interest obligations and potential credit rating downgrades.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company has increased shareholder returns through a special dividend and quarterly dividends.",
+      "evidence": [
+        {
+          "text": "In August 2016, our Board of Directors declared a special dividend of $13.64 per share of Leidos common stock... In addition, we paid quarterly dividends of $48 million and $94 million for the three and nine months ended September 30, 2016.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Returning capital to shareholders through dividends is a positive sign of company financial health and\u56de\u62a5.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow decreased due to higher financing activities, primarily from a special dividend payment.",
+      "evidence": [
+        {
+          "text": "Cash used in financing activities of continuing operations increased $295 million for the nine months ended September 30, 2016, when compared to the prior year, primarily due to a special cash dividend payment in connection with the Transactions of $993 million, partially offset by net borrowings of $560 million.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decrease in free cash flow due to significant dividend payments indicates reduced liquidity and financial flexibility.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to various reviews, investigations, claims, and lawsuits, but no material impact is expected.",
+      "evidence": [
+        {
+          "text": "We are subject to a number of reviews, investigations, claims, lawsuits and other uncertainties related to our business.",
+          "section": "mda",
+          "subsection": "Commitments and Contingencies"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Exposure to legal issues can lead to financial losses and reputational damage, posing a risk to the company.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand appears to be stable with mixed evidence from bookings and backlog.",
+      "evidence": [
+        {
+          "text": "We received net bookings worth an estimated $2.9 billion and $5.1 billion during the three and nine months ended September 30, 2016, respectively, compared to $1.5 billion and $6.4 billion for the three and nine months ended October 2, 2015, respectively.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed evidence on demand stability makes it difficult to determine a clear trend.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Backlog is growing, with total backlog increasing significantly.",
+      "evidence": [
+        {
+          "text": "The estimated value of our total backlog was as follows: Total backlog at September 30, 2016 included $454 million of reduction due to the adverse impact of foreign currency movement between the U.S. dollar and the British pound.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing backlog suggests strong future demand and positive business momentum.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is decelerating, primarily due to the divestiture of certain businesses.",
+      "evidence": [
+        {
+          "text": "Excluding the revenues from the divested business, HIS revenues increased $25 million, or 8.3%, primarily due to growth in the Federal Health business, partially offset by lower revenues from the sale of security products and our engineering services business.",
+          "section": "mda",
+          "subsection": "Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Deceleration in organic growth, especially due to business divestitures, indicates potential challenges in revenue expansion.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are expanding, driven by fee performance improvements.",
+      "evidence": [
+        {
+          "text": "NSS operating income increased $13 million, or 16.7%, for the three months ended September 30, 2016, as compared to the three months ended October 2, 2015. This increase in operating income was primarily driven by an increase in fees resulting from profit write-ups on certain contracts.",
+          "section": "mda",
+          "subsection": "Item\u00a02. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations."
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in margins driven by fee performance suggests operational efficiency and profitability enhancement.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring costs are being incurred, primarily related to the Lockheed Martin acquisition.",
+      "evidence": [
+        {
+          "text": "For the three and nine months ended September 30, 2016, we recognized $5 million of restructuring expenses related to this program.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "Government defense budgets are a significant factor, with 76% of revenues from U.S. Government contracts.",
+      "evidence": [
+        {
+          "text": "For the 11-month period ended January 1, 2016, we generated approximately 76% of our total revenues from contracts with the U.S. Government.",
+          "section": "mda",
+          "subsection": "Business Environment and Trends"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "Funded and unfunded backlog is growing, particularly in the National Security Solutions segment.",
+      "evidence": [
+        {
+          "text": "Total backlog at September 30, 2016 included $454 million of reduction due to the adverse impact of foreign currency movement between the U.S. dollar and the British pound.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has engaged in significant acquisition activities, including the IS&GS Business acquisition, which has led to increased debt and incurred integration costs. These activities have resulted in notable financial commitments and obligations.",
+      "evidence": [
+        {
+          "text": "In connection with the Transactions, Leidos has incurred $2.5 billion of new indebtedness in the form of term loans (see 'Note 2\u2013Acquisitions')...",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "On August 16, 2016, in connection with the acquisition of the IS&GS Business, Leidos, Inc. secured a new term loan of $690 million from certain financial institutions.",
+          "section": "mda",
+          "subsection": "Lockheed Martin Transaction"
+        },
+        {
+          "text": "We expect to incur significant integration costs in connection with the Transactions and related transactions through fiscal 2018.",
+          "section": "mda",
+          "subsection": "Lockheed Martin Transaction"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

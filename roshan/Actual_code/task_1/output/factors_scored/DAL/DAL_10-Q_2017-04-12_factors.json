@@ -1,0 +1,640 @@
+{
+  "ticker": "DAL",
+  "form": "10-Q",
+  "filing_date": "2017-04-12",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 33,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Overall demand appears stable with mixed trends across regions.",
+      "evidence": [
+        {
+          "text": "PRASM decreased 0.5% on 0.5% lower capacity compared to the March 2016 quarter, resulting primarily from weakness in the domestic close-in yield environment, despite improvement throughout the quarter.",
+          "section": "mda",
+          "subsection": "Passenger Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Overall demand is stable with mixed regional trends, indicating neither a clear positive nor negative direction.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capacity_load_yield",
+      "category": "airlines_transport",
+      "summary": "Capacity is slightly lower, load factors are improving, but PRASM is decreasing.",
+      "evidence": [
+        {
+          "text": "Available seat miles decreased 0.5% compared to the prior year quarter, and load factor improved 0.8 points. However, PRASM decreased 0.5%.",
+          "section": "mda",
+          "subsection": "Operating Statistics"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Lower PRASM despite improved load factors suggests revenue pressure.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "route_network",
+      "category": "airlines_transport",
+      "summary": "Route network adjustments are expected to improve profitability, particularly in the Pacific region.",
+      "evidence": [
+        {
+          "text": "We continue to optimize the Pacific region with a 10.1% reduction in capacity during the March 2017 quarter focused on underperforming markets as we seek to drive value from our Chinese and Korean partnerships.",
+          "section": "mda",
+          "subsection": "Passenger Revenue"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Adjustments in the Pacific region aim to enhance profitability through strategic market focus.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fleet_strategy",
+      "category": "airlines_transport",
+      "summary": "Fleet strategy involves modernizing with new aircraft orders, which should improve efficiency.",
+      "evidence": [
+        {
+          "text": "The company has orders for new aircraft such as the A350-900 and CS100, which are expected to improve efficiency.",
+          "section": "mda",
+          "subsection": "Fleet Information"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Modernizing with new efficient aircraft should improve operational efficiency.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company expects significant capital expenditures in 2017, primarily for aircraft purchases and modifications, indicating confidence in growth.",
+      "evidence": [
+        {
+          "text": "Our expected 2017 investment of over $3 billion will be primarily for (1) aircraft, including deliveries of B-737-900ERs, A321-200s, A350-900s and A330-300s, along with advance deposit payments for these and our A330-900neo and CS100 orders, as well as for (2) aircraft modifications, the majority of which relate to increasing the seat density and enhancing the cabins on our domestic fleet.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant capital expenditures indicate confidence in growth and future investments.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company has committed to significant future aircraft purchases, indicating a stable or growing backlog of orders.",
+      "evidence": [
+        {
+          "text": "We have committed to future aircraft purchases that will require significant capital investment and have obtained, but are under no obligation to use, long-term financing commitments for a substantial portion of the purchase price of a significant number of these aircraft.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Significant future aircraft purchases suggest a stable or growing backlog, indicating positive demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is expected to improve with the introduction of new aircraft and seat density projects, enhancing operational efficiency.",
+      "evidence": [
+        {
+          "text": "Our expected 2017 investment of over $3 billion will be primarily for (1) aircraft, including deliveries of B-737-900ERs, A321-200s, A350-900s and A330-300s, along with advance deposit payments for these and our A330-900neo and CS100 orders, as well as for (2) aircraft modifications, the majority of which relate to increasing the seat density and enhancing the cabins on our domestic fleet.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Expected improvements through new aircraft and seat density projects should enhance efficiency.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are expected through seat density projects and aircraft modifications, which should drive efficiency gains.",
+      "evidence": [
+        {
+          "text": "Our expected 2017 investment of over $3 billion will be primarily for [...] (2) aircraft modifications, the majority of which relate to increasing the seat density and enhancing the cabins on our domestic fleet.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improvements through seat density and modifications should drive efficiency gains.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is stable with long-term financing commitments for aircraft purchases, but there are risks related to compliance with credit facility covenants.",
+      "evidence": [
+        {
+          "text": "We have committed to future aircraft purchases that will require significant capital investment and have obtained, but are under no obligation to use, long-term financing commitments for a substantial portion of the purchase price of a significant number of these aircraft. [...] We were in compliance with the covenants in our financings at March 31, 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The supply chain is stable with long-term financing, but there are compliance risks.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed with significant capital expenditures expected, but there is no specific mention of excessive buildup or shortage risks.",
+      "evidence": [
+        {
+          "text": "Our capital expenditures were $802 million and $871 million for the three months ended March\u00a031, 2017 and 2016, respectively.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Inventory is being managed with capital expenditures, but no mention of excess or shortage.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction actions are in place through a hedging program and pension contributions, which have reduced financial risks.",
+      "evidence": [
+        {
+          "text": "We have recently managed our fuel price risk through a hedging program intended to reduce the financial impact from changes in the price of jet fuel as jet fuel prices are subject to potential volatility. [...] Using the net proceeds from the $2.0 billion debt issuance and existing cash, we contributed $2.6 billion to our qualified defined benefit pension plans during the three months ended March 31, 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Hedging and pension contributions reduce financial risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company is increasing its ownership in Grupo Aerom\u00e9xico, signaling potential strategic expansion in the region.",
+      "evidence": [
+        {
+          "text": "During the March 2017 quarter, we completed the $622 million tender offer for additional capital stock of Grupo Aerom\u00e9xico, increasing our ownership percentage to 36%. [...] We also have derivative contracts that may be settled for shares of Grupo Aerom\u00e9xico representing 13% of its shares. We expect to execute these derivative contracts during the June 2017 quarter for approximately $175 million.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Increasing ownership in Grupo Aerom\u00e9xico indicates strategic expansion.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Overall economic conditions are stable with positive cash flows expected and manageable labor and fuel costs.",
+      "evidence": [
+        {
+          "text": "We expect to generate positive cash flows from operations for the remainder of 2017. [...] The market price for jet fuel is highly volatile, which can impact the comparability of our cash flows from operations from period to period. [...] We have recently managed our fuel price risk through a hedging program intended to reduce the financial impact from changes in the price of jet fuel as jet fuel prices are subject to potential volatility.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Positive cash flows and manageable costs suggest stability.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rates have a neutral impact as the company refinanced at lower rates and has a stable balance sheet.",
+      "evidence": [
+        {
+          "text": "Since December\u00a031, 2009, we have reduced our principal amount of debt and capital leases by $9.0 billion. [...] We have $2.4 billion available in undrawn revolving lines of credit. [...] We were in compliance with the covenants in our financings at March 31, 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Refinancing at lower rates with stable balance sheet.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company has foreign exchange exposure related to Grupo Aerom\u00e9xico investments, but specific impacts are not detailed.",
+      "evidence": [
+        {
+          "text": "During the March 2017 quarter, we completed the $622 million tender offer for additional capital stock of Grupo Aerom\u00e9xico, increasing our ownership percentage to 36%. [...] We expect to execute these derivative contracts during the June 2017 quarter for approximately $175 million.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign exchange exposure exists but specifics are unclear.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "There is no significant litigation exposure mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "None of the text addresses significant litigation or investigations.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No significant litigation mentioned.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company is managing regulatory changes related to fuel hedging and retirement benefits, with compliance expected to be manageable.",
+      "evidence": [
+        {
+          "text": "In March 2017, the FASB issued ASU No. 2017-07, [...] We will adopt the standard effective January 1, 2018.",
+          "section": "mda",
+          "subsection": "Recent Accounting Standards"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is managing regulatory changes, but there's no indication of positive or negative impact.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental compliance is not a significant factor impacting the company's operations, as no specific costs or constraints are mentioned.",
+      "evidence": [
+        {
+          "text": "None of the text addresses environmental regulations or emissions requirements in detail.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Environmental compliance is not a significant factor, as no specific costs or constraints are mentioned.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks are not explicitly mentioned in the provided text.",
+      "evidence": [
+        {
+          "text": "None of the text addresses geopolitical factors.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Geopolitical risks are not explicitly mentioned, so no sentiment can be determined.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include fuel prices, which are hedged, and economic conditions affecting demand and labor costs.",
+      "evidence": [
+        {
+          "text": "The market price for jet fuel is highly volatile, which can impact the comparability of our cash flows from operations from period to period. [...] We have recently managed our fuel price risk through a hedging program intended to reduce the financial impact from changes in the price of jet fuel as jet fuel prices are subject to potential volatility.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company mentions fuel prices and economic conditions as sensitivities, but no clear sentiment is provided.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "A catalyst is the execution of derivative contracts for Grupo Aerom\u00e9xico shares, which could enhance strategic positioning.",
+      "evidence": [
+        {
+          "text": "We expect to execute these derivative contracts during the June 2017 quarter for approximately $175 million.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The execution of derivative contracts could enhance strategic positioning, indicating a positive development.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends are mixed, with some regions experiencing lower capacity and weaker demand, while overall volume trends are stable with seasonality impacting cash flows, particularly related to advance ticket sales.",
+      "evidence": [
+        {
+          "text": "Revenue passenger miles decreased slightly compared to the prior year quarter, and PRASM decreased 0.5% on 0.5% lower capacity.",
+          "section": "mda",
+          "subsection": "Operating Statistics"
+        },
+        {
+          "text": "Our operating cash flows are impacted by the seasonality of advance ticket sales. [...] The air traffic liability increases during the winter and spring as advanced ticket sales grow prior to the summer peak travel season and decreases during the summer and fall months.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends are mixed with some regions experiencing lower demand, but overall trends are stable.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting with growth in Latin America, driven by unit revenue improvements in Brazil due to traffic increases and higher fares, while also moving towards higher-margin segments through investments in seat density and new aircraft.",
+      "evidence": [
+        {
+          "text": "Unit revenues increased in Latin America principally as a result of continued unit revenue improvement in Brazil compared to the March 2016 quarter, related to both improved traffic and higher fares. This improvement was driven by the strengthening of the Brazilian real against the U.S. dollar and additional connectivity for our customers provided by our partnership with GOL.",
+          "section": "mda",
+          "subsection": "Passenger Revenue"
+        },
+        {
+          "text": "Our expected 2017 investment of over $3 billion will be primarily for [...] (2) aircraft modifications, the majority of which relate to increasing the seat density and enhancing the cabins on our domestic fleet.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in Latin America and investments in higher-margin segments suggest a positive trend.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company faces mixed evidence regarding its pricing power. While it has managed fuel costs and maintained positive cash flows, suggesting some success in managing pricing strategies, it also experiences challenges in domestic and international markets with declining unit revenues and yield declines due to supply-demand imbalances and foreign currency fluctuations.",
+      "evidence": [
+        {
+          "text": "Unit revenues of the domestic region decreased 1.4% resulting from weakness in the close-in yield environment, despite improvement throughout the quarter. Revenues related to our international regions decreased 3.6% year-over-year primarily due to yield declines resulting from imbalances between supply and demand, principally in the Atlantic and Pacific regions, and the impact of foreign currency fluctuations.",
+          "section": "mda",
+          "subsection": "Passenger Revenue"
+        },
+        {
+          "text": "Excluding the $1.5 billion contributed to the pension plans from the debt issuance proceeds, our operating activities generated cash flows of $699 million. [...] We expect to generate positive cash flows from operations for the remainder of 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed evidence shows some success but also challenges in pricing strategies.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company is experiencing mixed signals regarding organic growth. While there is a current deceleration in organic growth due to lower passenger and other revenues, there is an expectation that organic growth will continue as the company generates positive cash flows and invests in new aircraft and modifications.",
+      "evidence": [
+        {
+          "text": "Our operating revenue decreased $103 million, or 1.1%, and passenger revenue per available seat mile ('PRASM') decreased 0.5% on 0.5% lower capacity compared to the March 2016 quarter.",
+          "section": "mda",
+          "subsection": "March 2017 Quarter Financial Highlights"
+        },
+        {
+          "text": "We expect to generate positive cash flows from operations for the remainder of 2017. Our expected 2017 investment of over $3 billion will be primarily for (1) aircraft, including deliveries of B-737-900ERs, A321-200s, A350-900s and A330-300s, along with advance deposit payments for these and our A330-900neo and CS100 orders, as well as for (2) aircraft modifications, the majority of which relate to increasing the seat density and enhancing the cabins on our domestic fleet.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company is currently experiencing a deceleration in organic growth, but expects future improvement due to positive cash flows and investments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, particularly in fuel and labor expenses, which could impact the company's financial performance. However, the company has implemented a hedging program to manage fuel price volatility, which has locked in net hedge settlements for 2017, providing some financial stability.",
+      "evidence": [
+        {
+          "text": "Aircraft fuel and related taxes increased $13 million compared to the prior year quarter due to an increase in the market price per gallon of fuel. Salaries and related costs increased 7.0% primarily due to contractual pay rate increases for pilots.",
+          "section": "mda",
+          "subsection": "Operating Expense"
+        },
+        {
+          "text": "The market price for jet fuel is highly volatile, which can impact the comparability of our cash flows from operations from period to period. [...] We have recently managed our fuel price risk through a hedging program intended to reduce the financial impact from changes in the price of jet fuel as jet fuel prices are subject to potential volatility. [...] As a result, we locked in the amount of the net hedge settlements for the remainder of 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Rising input costs are a concern, but the hedging program provides financial stability, balancing the sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are rising due to contractual pay rate increases for pilots, but the company manages these costs through a profit-sharing program that ties expenses to performance.",
+      "evidence": [
+        {
+          "text": "The increase in salaries and related costs is primarily due to contractual pay rate increases for pilots.",
+          "section": "mda",
+          "subsection": "Operating Expense"
+        },
+        {
+          "text": "During the three months ended March\u00a031, 2017, we accrued $151 million in profit sharing expense based on the March 2017 quarter's performance and current expectations for 2017 pre-tax profit. We paid $1.1 billion in profit sharing in February 2017 related to our 2016 pre-tax profit in recognition of our employees' contributions toward meeting our financial goals.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Labor costs are rising, but managed through a profit-sharing program, indicating a balanced approach.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Margins are currently under pressure due to higher costs and lower revenues, but the company anticipates improvement as it generates positive cash flows from operations and manages costs effectively for the remainder of 2017.",
+      "evidence": [
+        {
+          "text": "Consolidated operating cost per available seat mile ('CASM') increased 5.5% to 13.99 cents compared to the March 2016 quarter, primarily due to increases in salaries and related costs, regional carriers expense and aircraft maintenance, partially offset by a decrease in profit sharing expense.",
+          "section": "mda",
+          "subsection": "March 2017 Quarter Financial Highlights"
+        },
+        {
+          "text": "We expect to generate positive cash flows from operations for the remainder of 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        },
+        {
+          "text": "We expect to generate positive cash flows from operations for the remainder of 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Margins are under pressure, but there are expectations for improvement, leading to a mixed sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "fuel_costs_hedging",
+      "category": "airlines_transport",
+      "summary": "Fuel costs are managed through a hedging program, which has been effective in reducing financial impact from price volatility.",
+      "evidence": [
+        {
+          "text": "The average price per gallon increased compared to the prior year quarter, but the hedging position resulted in a favorable impact on fuel expense.",
+          "section": "mda",
+          "subsection": "Operating Expense"
+        },
+        {
+          "text": "We have recently managed our fuel price risk through a hedging program intended to reduce the financial impact from changes in the price of jet fuel as jet fuel prices are subject to potential volatility.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        },
+        {
+          "text": "We have recently managed our fuel price risk through a hedging program intended to reduce the financial impact from changes in the price of jet fuel as jet fuel prices are subject to potential volatility. [...] As a result, we locked in the amount of the net hedge settlements for the remainder of 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Effective hedging program mitigates fuel price volatility, providing a positive outlook.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "travel_demand_mix",
+      "category": "airlines_transport",
+      "summary": "The travel demand mix is shifting towards leisure travel, which may impact yields. Demand is seasonal with advance ticket sales growing prior to peak seasons, but overall demand is expected to remain positive.",
+      "evidence": [
+        {
+          "text": "Increased leisure traffic to Mexico and the Caribbean also contributed to the Latin America unit revenue improvement.",
+          "section": "mda",
+          "subsection": "Passenger Revenue"
+        },
+        {
+          "text": "We sell tickets for air travel in advance of the customer's travel date. [...] The air traffic liability increases during the winter and spring as advanced ticket sales grow prior to the summer peak travel season and decreases during the summer and fall months.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Shift towards leisure travel with seasonal variations and positive demand expectations suggest a stable sentiment.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company has shown a mixed trend in debt leverage, with an increase due to recent debt issuances offset by significant reductions over the past several years.",
+      "evidence": [
+        {
+          "text": "During the three months ended March 31, 2017, we issued $2.0 billion of unsecured notes. As a result of the debt issuance, the principal amount of debt and capital leases increased to $9.3 billion at March 31, 2017.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "Since December\u00a031, 2009, we have reduced our principal amount of debt and capital leases by $9.0 billion.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed trend with recent increases offset by past reductions, indicating stability.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is actively returning capital to shareholders through a combination of share repurchases and dividends, which reflects confidence in its financial position. The evidence shows significant returns, including share buybacks and dividend payments, indicating a strong commitment to shareholder value.",
+      "evidence": [
+        {
+          "text": "During the three months ended March 31, 2017, we returned $349 million to shareholders.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "During the three months ended March\u00a031, 2017, we repurchased and retired 4.1 million shares of our common stock at a cost of $200 million. We also paid a quarterly dividend of $0.2025 per share.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Active capital return through buybacks and dividends shows strong commitment to shareholder value.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "The company is generating strong free cash flow, which is expected to improve further. This cash flow is supporting investments and returns, and the company anticipates positive cash flows from operations for the remainder of 2017.",
+      "evidence": [
+        {
+          "text": "We expect to meet our cash needs for the next 12 months with cash flows from operations, cash and cash equivalents, short-term investments and financing arrangements. As of March 31, 2017, we had $5.1 billion in unrestricted liquidity.",
+          "section": "mda",
+          "subsection": "Financial Condition and Liquidity"
+        },
+        {
+          "text": "We expect to generate positive cash flows from operations for the remainder of 2017. Our capital expenditures were $802 million for the three months ended March\u00a031, 2017.",
+          "section": "mda",
+          "subsection": "Sources of Liquidity"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The company is generating strong free cash flow with expectations of further improvement, supporting investments and operations.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

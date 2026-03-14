@@ -1,0 +1,515 @@
+{
+  "ticker": "FLR",
+  "form": "10-K",
+  "filing_date": "2025-02-18",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 25,
+  "factors": [
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand appears to be growing, particularly in Urban Solutions, driven by new awards and project ramp-ups.",
+      "evidence": [
+        {
+          "text": "Revenue in 2024 significantly increased compared to 2023 primarily due to the ramp up of execution activities on several recently awarded projects including two life sciences projects, a large metals project, a green steel project and a large mining project.",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The summary indicates growing demand, driven by new projects and ramp-ups, which is a positive sign for revenue growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost management initiatives are showing results, with severance charges and efficiency gains contributing to margin improvements.",
+      "evidence": [
+        {
+          "text": "The decrease in compensation expense in 2024 was primarily driven by lower performance-based compensation. [...] We recognized changes in contract estimates on a cumulative catch-up basis in the period in which the changes are identified.",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost management initiatives have led to margin improvements, showing effective cost control.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's balance sheet is strengthening with a focus on reducing leverage and improving liquidity.",
+      "evidence": [
+        {
+          "text": "Our credit facility was amended in February 2025 to increase the facility to $2.2 billion and extend the maturity to February 2028. The facility contains customary financial covenants, including a debt-to-capitalization ratio that cannot exceed 0.60 to 1.00, based upon total shareholders' equity excluding AOCI.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Reducing leverage and improving liquidity are strong positive developments for financial health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation has improved, driven by strong operating cash flow and effective cash management.",
+      "evidence": [
+        {
+          "text": "Operating cash flow for 2024 significantly improved driven by decreases in working capital on several large projects. The improvement in operating cash flow was also attributable to customer payments on several large projects, distributions from joint ventures of $367 million and refunds of $169 million from the IRS.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improved free cash flow indicates strong cash management and operational efficiency.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The company faces near-term risks related to systems and IT interruptions, new system implementations, and disruptions from extraordinary events.",
+      "evidence": [
+        {
+          "text": "Systems and IT interruption, as well as new systems implementation, could adversely impact our ability to operate. Extraordinary or force majeure events beyond our control could negatively impact our ability to operate or increase our costs to operate.",
+          "section": "risk_factors",
+          "subsection": "Systems and IT interruption, as well as new systems implementation, could adversely impact our ability to operate."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks from systems and IT issues, as well as extraordinary events, pose potential disruptions.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, such as conflicts and political instability, pose significant risks to the company's international operations.",
+      "evidence": [
+        {
+          "text": "Our business is subject to international economic and political conditions that change... including natural disasters and public health crises, including pandemics; expropriation and nationalization of our assets or projects; international hostilities, such as the ongoing Russia-Ukraine conflict and political and economic instability and conflict in the Middle East; and other unrest, civil strife, acts of war, terrorism and insurrection.",
+          "section": "risk_factors",
+          "subsection": "Systems and IT interruption, as well as new systems implementation, could adversely impact our ability to operate."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical instability and conflicts pose significant risks to international operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic slowdowns and instability in oil and gas prices pose risks to the company's projects and backlog.",
+      "evidence": [
+        {
+          "text": "During periods of economic slowdown, or decreases and/or instability in oil and gas prices, the risk of projects being suspended, delayed or canceled generally increases.",
+          "section": "risk_factors",
+          "subsection": "Our backlog is subject to unexpected adjustments and cancellations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic slowdowns and oil/gas price instability threaten project continuity and backlog.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The company's supply chain is vulnerable to disruptions, including those caused by catastrophic events and geopolitical factors.",
+      "evidence": [
+        {
+          "text": "Extraordinary or force majeure events beyond our control, such as natural or man-made disasters, severe weather conditions, public health crises, supply chain disruption, geopolitical conflicts, political crises or other catastrophic events, could negatively impact our ability to operate or increase our costs to operate.",
+          "section": "risk_factors",
+          "subsection": "Our businesses could be materially and adversely affected by events outside of our control."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Vulnerability to disruptions from various factors could negatively impact operations and costs.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes could impact the company's financial health, particularly through government spending and borrowing costs.",
+      "evidence": [
+        {
+          "text": "A significant reduction in federal government spending or a change in budgetary priorities could reduce demand for our services, cancel or delay federal projects, and result in the closure of federal facilities and significant personnel reductions.",
+          "section": "risk_factors",
+          "subsection": "Systems and IT interruption, as well as new systems implementation, could adversely impact our ability to operate."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The summary indicates potential negative impacts on financial health due to changes in interest rates.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade restrictions and tariffs could negatively impact the company's operations.",
+      "evidence": [
+        {
+          "text": "The implementation of trade barriers, countervailing duties, or border taxes, or the addition, relaxation or repeal of laws, policies and regulations regarding the industries and sectors in which we work could result in a decline in demand for our services, or may make the manner in which we perform our services, less profitable.",
+          "section": "risk_factors",
+          "subsection": "New or changing legal requirements could adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Trade restrictions and tariffs are expected to negatively impact demand and profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, particularly due to inflation and tariffs, creating margin pressure.",
+      "evidence": [
+        {
+          "text": "Failure to accurately estimate the timing and cost of projects, including due to inflation, supply chain disruption, rising construction costs or unforeseen increases in the cost of labor; Unanticipated increases in the cost of raw materials, components or equipment, including due to inflation or the imposition of import tariffs, including the Proposed Tariffs.",
+          "section": "risk_factors",
+          "subsection": "Our revenue and earnings are largely dependent on new awards."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising input costs, including inflation and tariffs, create margin pressure.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment is intensifying with new entrants and aggressive pricing.",
+      "evidence": [
+        {
+          "text": "We serve markets that are highly competitive and in which a large number of multinational companies compete. These markets require substantial resources, investment in technology and skilled personnel. We have seen a continuing influx of non-traditional competitors offering below-market pricing while accepting greater risk. Competition places downward pressure on our contract prices and profit margins, and could cause us to accept contractual terms and conditions that are not normal or customary, thereby increasing the risk of reduced profitability. Intense competition is expected to continue in our markets, presenting us with challenges to maintain acceptable profit margins.",
+          "section": "risk_factors",
+          "subsection": "Intense competition in the EPC industry can impact our revenue and profits."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intense competition is causing downward pressure on prices and margins.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "sustainability_practices",
+      "category": "unknown",
+      "summary": "The company faces increasing scrutiny and costs related to its sustainability practices which could harm its reputation and financial performance.",
+      "evidence": [
+        {
+          "text": "Investors, clients, governments and other stakeholders have continued to focus on the sustainability practices of companies, including practices with respect to human capital, emissions and environmental impact and political spending. Expectations and requirements evolve rapidly, vary in their support for or rejection of such matters, and are largely out of our control, and our sustainability initiatives and disclosures in response to such expectations and requirements may result in increased costs (including but not limited to increased costs related to compliance, stakeholder engagement, contracting, litigation and insurance), change in demand for certain services, change in our competitiveness, enhanced or modified compliance or disclosure obligations, or other adverse impacts to our business or results of operations, including reputational harm.",
+          "section": "risk_factors",
+          "subsection": "Increasing scrutiny and changing expectations from stakeholders with respect to sustainability practices may impose additional costs on us or expose us to reputational or other risks."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increasing scrutiny and costs related to sustainability could harm reputation and financials.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company identifies foreign exchange movements, economic conditions, and regulatory changes as key sensitivities impacting its near-term results.",
+      "evidence": [
+        {
+          "text": "Adverse credit and financial market conditions, including increasing or continued high interest rates, could impair our clients', our partners' and our own borrowing capacity, which could negatively affect us. Our ability to access cash is important for the funding of our operations, investing in ventures, the servicing of our indebtedness, paying dividends and making acquisitions. To the extent that existing cash balances and operating cash flow, together with borrowing capacity under our credit facility, are insufficient to make investments or acquisitions or provide needed working capital, we may require additional financing from other sources. Our ability to obtain such additional financing will depend upon prevailing capital market conditions, including those arising due to events occurring in our industry, as well as conditions in our business and our operating results; and those factors may affect our efforts to negotiate terms that are acceptable to us.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to Indebtedness and Other Credit Related Risks"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange and regulatory changes pose risks to near-term results.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The company's margins are showing improvement, with both gross and operating margins expanding. This positive trend is attributed to improved segment performance and effective cost management, as evidenced by the decreasing effective tax rate over the past three years.",
+      "evidence": [
+        {
+          "text": "Gross and operating margins are expanding, driven by improved segment performance and cost management.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Total segment profit and margin are non-GAAP financial measures.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / LIQUIDITY AND CAPITAL RESOURCES"
+        },
+        {
+          "text": "The effective tax rate on earnings was 103%, 75%, and 70% for 2024, 2023, and 2022, respectively.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / LIQUIDITY AND CAPITAL RESOURCES"
+        },
+        {
+          "text": "The company's operating cash flow improved, and there were no significant changes in margin compression or expansion noted in the provided text.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Gross and operating margins are expanding, indicating improved performance.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company exhibits mixed organic growth with notable increases in certain segments like Urban and Mission Solutions, offset by declines in Energy Solutions due to project cancellations and reduced execution activity. Additionally, overall growth is challenged by cyclical market conditions, volatile demand, economic factors, and intensifying competition which pressures contract prices and profit margins.",
+      "evidence": [
+        {
+          "text": "Revenue in 2024 significantly increased compared to 2023 [...]",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        },
+        {
+          "text": "Revenue declined during 2024 primarily due to a decline in execution activity for several projects nearing completion [...]",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Operations"
+        },
+        {
+          "text": "The demand for our services is dependent upon our clients' capital investments [...] affected by economic conditions, low or volatile oil and gas prices, political uncertainties and currency fluctuations.",
+          "section": "risk_factors",
+          "subsection": "Intense competition in the EPC industry can impact our revenue and profits."
+        },
+        {
+          "text": "Competition places downward pressure on our contract prices and profit margins [...] increasing the risk of reduced profitability.",
+          "section": "risk_factors",
+          "subsection": "Intense competition in the EPC industry can impact our revenue and profits."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Mixed organic growth with declines in some segments and market challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company experiences foreign exchange impacts, with favorable results in 2024 due to currency gains, but faces ongoing foreign currency risks that could affect profitability and cash flows despite hedging efforts.",
+      "evidence": [
+        {
+          "text": "Our results were significantly impacted by evolving foreign currency rates in 2024. [...] The U.S. dollar appreciated against the Euro, British Pound, Canadian Dollar and Mexican Peso.",
+          "section": "mda",
+          "subsection": "Results of Operations"
+        },
+        {
+          "text": "Our contracts may subject us to foreign currency risk, particularly when project revenue is denominated in a currency different from its expected costs. Contracts may be denominated in different currencies at various points in time as a project progresses. We may attempt to minimize our exposure to foreign currency risk by obtaining contract provisions that protect us from foreign currency fluctuations and/or by implementing hedging strategies utilizing derivatives. However, these actions may not always eliminate all foreign currency risk, and as a result, our profitability or cash flows could be affected.",
+          "section": "risk_factors",
+          "subsection": "Foreign currency risks could have an adverse impact on us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company benefits from current currency gains but faces ongoing foreign currency risks that could impact profitability despite hedging.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's backlog is mixed, showing growth in some areas but facing risks in others. While the backlog increased due to new awards, there are significant risks related to project cancellations, scope adjustments, and foreign currency fluctuations, which could negatively impact its value and profitability.",
+      "evidence": [
+        {
+          "text": "Backlog increased during 2024 due to these 2 large awards. [...] Backlog declined during 2024 due to the execution pace exceeding new award activity.",
+          "section": "mda",
+          "subsection": "Urban Solutions"
+        },
+        {
+          "text": "As of December 31, 2024, our backlog included $702 million for ongoing legacy projects in a loss position, including approximately $237 million of estimated unfunded losses associated therewith. The comparable amounts in 2023 were $1.3 billion of backlog and $344 million of unfunded losses.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / LIQUIDITY AND CAPITAL RESOURCES"
+        },
+        {
+          "text": "Project cancellations, scope adjustments or deferrals, or foreign currency fluctuations may occur with respect to contracts reflected in our backlog and could reduce the value of our backlog and the revenue and profits that we actually earn.",
+          "section": "risk_factors",
+          "subsection": "Our backlog is subject to unexpected adjustments and cancellations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The backlog shows mixed growth but faces significant risks from cancellations, scope changes, and foreign currency fluctuations.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power is facing mixed influences. While stable cash flows and moderate revenue growth suggest maintained pricing power, increased competition is exerting downward pressure on contract prices and profit margins, challenging the company's ability to sustain acceptable profitability.",
+      "evidence": [
+        {
+          "text": "The company's pricing strategy is not explicitly detailed in the provided text, but given the stable cash flows and moderate revenue growth, it suggests pricing power is maintained without major fluctuations.",
+          "section": "mda",
+          "subsection": "Recent Accounting Pronouncements / Litigation and Matters in Dispute Resolution / LIQUIDITY AND CAPITAL RESOURCES"
+        },
+        {
+          "text": "Competition places downward pressure on our contract prices and profit margins, and could cause us to accept contractual terms and conditions that are not normal or customary, thereby increasing the risk of reduced profitability. Intense competition is expected to continue in our markets, presenting us with challenges to maintain acceptable profit margins.",
+          "section": "risk_factors",
+          "subsection": "Intense competition in the EPC industry can impact our revenue and profits."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Pricing power is under pressure due to increased competition, which is reducing contract prices and profit margins.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company faces challenges with talent retention due to dangerous working conditions and high security risks, as well as intense competition for qualified personnel in the current market. These factors could lead to increased employee turnover, higher project and operating costs, and difficulties in attracting and retaining skilled individuals necessary for business success.",
+      "evidence": [
+        {
+          "text": "Unsafe work conditions also have the potential of increasing employee turnover, increasing project costs and raising our operating costs.",
+          "section": "risk_factors",
+          "subsection": "Our employees work on projects that are inherently dangerous and in locations where there are high security risks, and a failure to maintain a safe work site could result in significant losses."
+        },
+        {
+          "text": "The success of our business is dependent upon being able to attract, develop and retain personnel, including engineers, project management, craft employees and management, who have the necessary and required experience and expertise, and who will perform these services at a reasonable and competitive rate. Competition for experienced personnel can be intense. It may be difficult to attract and retain qualified individuals with the expertise and in the timeframe demanded by our clients.",
+          "section": "risk_factors",
+          "subsection": "Our ability to operate profitably requires us to hire and retain qualified personnel."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces challenges with talent retention due to dangerous working conditions and high competition for personnel.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are a significant factor with both manageable and increasing pressures. While the company is currently managing labor costs, there are notable wage inflation pressures that could impact margins and project viability. Additionally, challenges in hiring and retaining qualified personnel, particularly in certain geographic areas, pose risks to operations and project completion.",
+      "evidence": [
+        {
+          "text": "Our ability to operate profitably requires us to hire and retain qualified personnel. The success of teaming arrangements and joint ventures depends on the satisfactory performance by our venture partners over whom we may have little or no control.",
+          "section": "risk_factors",
+          "subsection": "Risks Related to our Operations"
+        },
+        {
+          "text": "In certain geographic areas, for example, we may be unable to satisfy the demand for our services because of our inability to deploy qualified personnel. Also, it may be difficult to replace personnel who hold government required credentials. Loss of the services of, or failure to recruit, qualified technical and management personnel, including a preference by some candidates to work remotely, could limit our ability to successfully complete existing projects and compete for new projects. In addition, as costs related to our workforce are dependent on market conditions, inflationary pressure has increased, and may continue to increase, labor costs in certain geographic areas.",
+          "section": "risk_factors",
+          "subsection": "Our ability to operate profitably requires us to hire and retain qualified personnel."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Labor costs are increasing due to wage inflation and challenges in retaining qualified personnel, impacting margins and project viability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation and regulatory risks, including potential contract terminations, financial penalties, and material impacts on its financial and operational performance. Legal proceedings, liability claims, and contract disputes could arise from various sources, such as government audits, project disputes, and shareholder litigation.",
+      "evidence": [
+        {
+          "text": "Our U.S. government contracts are subject to audits, cost reviews and investigations by U.S. government oversight agencies such as the U.S. Defense Contract Audit Agency... which could result in contract price adjustments, financial penalties or contract termination.",
+          "section": "risk_factors",
+          "subsection": "Systems and IT interruption, as well as new systems implementation, could adversely impact our ability to operate."
+        },
+        {
+          "text": "Following contract award, we may also encounter significant expense, delay, contract modification or even contract loss. Additionally, certain awards have been and may in the future be contested and/or otherwise involved in legal proceedings, inquiries or other similar developments outside of our control, which may result in significant delays in the project timeline or the wholesale cancellation or termination of a project.",
+          "section": "risk_factors",
+          "subsection": "Our revenue and earnings are largely dependent on new awards."
+        },
+        {
+          "text": "We are subject to a variety of legal or regulatory proceedings, liability claims or contract disputes. Our operating activities expose us to claims against us by clients, subcontractors or suppliers for recovery of costs they incurred in excess of what they expected to incur, or for which they believe they are not contractually liable. We may be named as a defendant in legal proceedings where parties may make a claim for damages or other remedies with respect to our projects or other matters, including shareholder litigation.",
+          "section": "risk_factors",
+          "subsection": "We are involved in litigation and regulatory proceedings, potential liability claims and contract disputes that may have a material impact on us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant litigation and regulatory risks pose threats to financial and operational performance through potential penalties and contract terminations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, including potential trade policies, pose significant risks to our business by introducing new costs, restrictions, and uncertainties. These changes could lead to decreased demand for our services or affect their profitability.",
+      "evidence": [
+        {
+          "text": "Our business and results of operations could be affected by the passage of laws, policies and regulations. The implementation of trade barriers, countervailing duties, or border taxes, or the addition, relaxation or repeal of laws, policies and regulations regarding the industries and sectors in which we work could result in a decline in demand for our services, or may make the manner in which we perform our services, less profitable.",
+          "section": "risk_factors",
+          "subsection": "New or changing legal requirements could adversely affect us."
+        },
+        {
+          "text": "The new U.S. presidential administration has mentioned plans to implement tariffs on U.S. imports generally, with higher rates for select U.S. trade partners (collectively, the 'Proposed Tariffs'). We cannot predict the outcome of changing trade policies or other unanticipated economic or political conditions, nor can we predict the timing, strength or duration of any worldwide economic recovery or downturn.",
+          "section": "risk_factors",
+          "subsection": "Our revenue and earnings are largely dependent on new awards."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential regulatory changes, including trade policies, could increase costs, restrict operations, and reduce demand for services.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant environmental compliance costs and risks due to various regulations and climate change impacts. These risks include potential liabilities from handling hazardous materials and disruptions from natural disasters.",
+      "evidence": [
+        {
+          "text": "We are subject to numerous environmental laws and health and safety regulations. Our projects can involve the handling of hazardous and other highly regulated materials, including nuclear and other radioactive materials, which, if improperly handled or disposed of, could subject us to civil and criminal liabilities.",
+          "section": "risk_factors",
+          "subsection": "Past and future environmental, safety and health regulations could impose significant additional costs on us."
+        },
+        {
+          "text": "Climate-related events, such as increased frequency and severity of storms, floods, wildfires, droughts, hurricanes, freezing conditions, and other natural disasters, may have short-term, intermediate and long-term impacts on our business, financial condition and results of operation. Our efforts to mitigate our business risks associated with climate change cannot eliminate those risks, and we recognize that there are inherent climate related risks regardless of where we conduct our businesses.",
+          "section": "risk_factors",
+          "subsection": "Climate change, natural disasters and related environmental issues could have a material adverse impact on us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High environmental compliance costs and risks from handling hazardous materials and climate change impacts pose significant liabilities.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company faces significant customer concentration risks, particularly with government clients. There is a risk of dependence on a few large customers or contracts, which could lead to material negative impacts on financial condition or results of operations if performance or quality standards are not met.",
+      "evidence": [
+        {
+          "text": "A few clients, including the U.S. government, state governments and governmental agencies comprise a significant portion of our revenue. Although we have long-standing relationships with our most significant clients, our clients may unilaterally reduce, fail to renew or terminate their contracts with us at any time. The loss of business from a significant client could have a material adverse effect on us.",
+          "section": "risk_factors",
+          "subsection": "Our revenue and earnings are largely dependent on new awards."
+        },
+        {
+          "text": "If we fail to meet guaranteed performance or quality standards, we may be held responsible under the guarantee or warranty provisions of our contract for cost impact to the client, generally in the form of contractually agreed-upon liquidated damages or an obligation to re-perform work. To the extent these events occur, the total cost to the project (including any liquidated damages) could be material and could, in some circumstances, equal or exceed the full value of the contract. In such events, our financial condition or results of operations could be materially and negatively impacted.",
+          "section": "risk_factors",
+          "subsection": "The loss of one or a few clients could have an adverse effect on us."
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

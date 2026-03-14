@@ -1,0 +1,638 @@
+{
+  "ticker": "LMT",
+  "form": "10-Q",
+  "filing_date": "2015-04-22",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 32,
+  "factors": [
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has maintained forward guidance, indicating confidence in future performance.",
+      "evidence": [
+        {
+          "text": "We do not believe that there have been any material changes to the risk factors disclosed in our 2014 Form 10-K.",
+          "section": "risk_factors",
+          "subsection": "Risk Factors Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's maintained forward guidance shows confidence in future performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Budget reductions and sequestration are key sensitivities impacting the company's performance.",
+      "evidence": [
+        {
+          "text": "Budget reductions, including sequestration, remain a long-term concern [...] businesses with smaller, short-term contracts are the most susceptible to the impacts of budget reductions.",
+          "section": "mda",
+          "subsection": "Contingencies / Critical Accounting Policies"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Budget reductions and sequestration are significant sensitivities impacting performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "The rollout of the first internationally assembled F-35A is a near-term catalyst.",
+      "evidence": [
+        {
+          "text": "In March 2015, the first internationally assembled F-35A rolled out of the Final Assembly and Check Out facility located in Cameri, Italy.",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The F-35A rollout is a near-term catalyst for growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "headcount_restructuring",
+      "category": "labor_workforce",
+      "summary": "The company anticipates potential workforce reductions due to budget constraints and program terminations.",
+      "evidence": [
+        {
+          "text": "thousands of personnel reductions across the industry that will severely impact advanced manufacturing operations and engineering expertise...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Anticipated workforce reductions due to budget constraints pose a risk.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain may face disruptions due to budget cuts and potential terminations of contracts.",
+      "evidence": [
+        {
+          "text": "impacts to our supply chain, contractual actions (including partial or complete terminations)...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential supply chain disruptions from budget cuts are a concern.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "The company's manufacturing capacity utilization may decrease due to lower production volumes and potential program terminations.",
+      "evidence": [
+        {
+          "text": "decreases in production volume associated with budget cuts, including sequestration, will increase unit costs...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Lower production volumes and program terminations may decrease capacity utilization.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power may be affected by increased competition and market pressures, particularly in services businesses.",
+      "evidence": [
+        {
+          "text": "increased market pressures in these services businesses including lower in-theater support as troop levels are drawn down and increased re-competition...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Increased competition and market pressures may weaken pricing power.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is seeking to mitigate cost pressures through strategic investments and diversification, but faces risks from potential budget cuts.",
+      "evidence": [
+        {
+          "text": "we are seeking to lessen our dependence on contracts with the U.S. Government by focusing on expanding into adjacent markets...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Strategic investments aim to mitigate cost pressures, but risks remain.",
+        "confidence": 0.55
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces potential litigation risks from suppliers due to budget-related contract terminations or rescheduling.",
+      "evidence": [
+        {
+          "text": "such activity could result in claims from our suppliers, which may include the amount established in any settlement agreements...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential litigation risks from suppliers pose a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company is heavily dependent on U.S. Government contracts, which exposes it to significant customer concentration risk.",
+      "evidence": [
+        {
+          "text": "79% of our $45.6 billion in net sales were from the U.S. Government...",
+          "section": "mda",
+          "subsection": "Introduction / BUSINESS OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High dependency on U.S. Government contracts exposes the company to significant concentration risk.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends vary across segments, with some programs experiencing decreased volumes and others increased.",
+      "evidence": [
+        {
+          "text": "The decrease was attributable to lower net sales of approximately $135 million for the C-130 program due to fewer aircraft deliveries... and lower sustainment activities; about $95 million for the C-5 program due to fewer aircraft deliveries...",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand trends across segments with some programs declining and others increasing.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting towards higher-margin segments, particularly in Space Systems.",
+      "evidence": [
+        {
+          "text": "Space Systems\u0092 operating profit increased due to higher risk retirements and volume on programs like Orion.",
+          "section": "mda",
+          "subsection": "Space Systems"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Shifting revenue mix towards higher-margin segments indicates a positive development.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "End markets vary, with defense and space systems showing different momentum.",
+      "evidence": [
+        {
+          "text": "The increase was attributable to higher net sales of approximately $105 million for the Orion program due to increased volume...",
+          "section": "mda",
+          "subsection": "Space Systems"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Varying momentum across defense and space systems with both positive and negative trends.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management appears cautious with capital deployment, focusing on dividends and share buybacks.",
+      "evidence": [
+        {
+          "text": "We have a balanced cash deployment strategy to enhance stockholder value and position ourselves to take advantage of new business opportunities when they arise.",
+          "section": "mda",
+          "subsection": "Liquidity and Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Cautious capital deployment strategy with no clear indication of positive or negative sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include decreased volumes on certain programs and potential contract performance issues.",
+      "evidence": [
+        {
+          "text": "The decrease was primarily attributable to lower operating profit of approximately $70 million for performance matters on an international program at IS&GS...",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include decreased volumes and potential contract performance issues.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "Long-term strategic focus is on core programs and potential growth areas like space systems.",
+      "evidence": [
+        {
+          "text": "The company is investing in new programs such as Space Fence and Orion, indicating a focus on future growth.",
+          "section": "mda",
+          "subsection": "Space Systems"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Focus on core programs and growth areas like space systems suggests a positive long-term outlook.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is stable, with no significant changes in outstanding debt.",
+      "evidence": [
+        {
+          "text": "Our outstanding debt, net of unamortized discounts, amounted to $8.4 billion at March\u00a029, 2015.",
+          "section": "mda",
+          "subsection": "Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Debt leverage is stable with no significant changes, indicating a neutral sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow decreased due to changes in working capital and lower net earnings.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities decreased $1.1 billion for the quarter ended March\u00a029, 2015 compared to the quarter ended March\u00a030, 2014 primarily due to changes in working capital...",
+          "section": "mda",
+          "subsection": "Liquidity and Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Free cash flow decreased due to lower net earnings and changes in working capital, indicating a negative sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products like the F-35 and Orion are contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "Higher net sales of approximately $175 million for F-35 production contracts due to increased volume and sustainment activities.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "New products like the F-35 and Orion are contributing to revenue growth, showing a positive sentiment.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company's M&A activity appears to have contributed to revenue growth, particularly from acquisitions made in 2014, as evidenced by higher net sales. However, there is no mention of recent M&A activities, suggesting no significant changes in this area during the quarter ended March\u00a029, 2015.",
+      "evidence": [
+        {
+          "text": "There were no sales of unregistered equity securities during the quarter ended March\u00a029, 2015.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a02. Unregistered Sales of Equity Securities and Use of Proceeds."
+        },
+        {
+          "text": "The decreases were partially offset by higher net sales of approximately $80 million for businesses acquired in 2014;",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No recent M&A activities, but past contributions to revenue growth, leading to a neutral sentiment.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "contract_backlog",
+      "category": "defense_government",
+      "summary": "The company's contract backlog remains stable with 92 production aircraft, indicating some order stability. However, the reliance on shorter-term contracts may make the backlog more susceptible to budget cuts, which could impact future operations.",
+      "evidence": [
+        {
+          "text": "As of March\u00a029, 2015, we have delivered 117 production aircraft to our U.S. and international partners and have 92 production aircraft in backlog, including orders from our international partners.",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        },
+        {
+          "text": "The results of operations of a particular period... may not be indicative of future operating results... our production contract backlog.",
+          "section": "mda",
+          "subsection": "Introduction / BUSINESS OVERVIEW"
+        },
+        {
+          "text": "The decreases were partially offset by higher net sales of approximately $175 million for F-35 production contracts due to increased volume and sustainment activities.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Contract backlog is stable but susceptible to budget cuts, resulting in a neutral sentiment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "defense_budget",
+      "category": "defense_government",
+      "summary": "The U.S. Government's defense budget is a key factor with mixed signals. While there are commitments from international partners and stable inventory objectives, domestic fiscal constraints and potential sequestration pose risks. Some programs have already experienced funding reductions, indicating overall uncertainty and pressure on defense expenditures.",
+      "evidence": [
+        {
+          "text": "The U.S. Government continues to complete various operational tests [...] Production of the aircraft is expected to continue for many years given the U.S. Government's current inventory objective of 2,443 aircraft [...] commitments from our eight international partners and three international customers.",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        },
+        {
+          "text": "The U.S. Government continues to face significant fiscal and economic challenges... sequestration could have significant negative impacts on our industry and company in future periods.",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "The decrease was attributable to lower customer funding levels (primarily command and control programs).",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Uncertainty and potential sequestration pose risks to the defense budget, indicating a negative sentiment.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "program_execution",
+      "category": "defense_government",
+      "summary": "The company is encountering significant challenges across its major programs, including the F-35 program, which faces delays, cost overruns, and execution issues such as supplier performance, software development, and funding delays. Additionally, the IS&GS segment is experiencing performance issues on an international program, contributing to lower operating profits. Budget uncertainties further threaten program continuity, potentially leading to supply chain disruptions and contractual terminations.",
+      "evidence": [
+        {
+          "text": "Current program challenges include, but are not limited to, supplier and partner performance, software development, level of cost associated with life cycle operations and sustainment and warranties, receiving funding for production contracts on a timely basis, executing future flight tests, and findings resulting from testing and operating the aircraft.",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        },
+        {
+          "text": "There may be disruption of ongoing programs, impacts to our supply chain, contractual actions (including partial or complete terminations)...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "The decrease was primarily attributable to lower operating profit of approximately $70 million for performance matters on an international program during the first quarter of 2015...",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant challenges across major programs and budget uncertainties are causing a negative sentiment.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditure is stable, with consistent investments in equipment and facilities infrastructure. Although the specific details about future capital expenditures are not explicitly mentioned, the historical data shows steady investment levels.",
+      "evidence": [
+        {
+          "text": "There were no sales of unregistered equity securities during the quarter ended March\u00a029, 2015.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a02. Unregistered Sales of Equity Securities and Use of Proceeds."
+        },
+        {
+          "text": "Capital expenditures amounted to $118 million and $103 million for the quarters ended March\u00a029, 2015 and March\u00a030, 2014.",
+          "section": "mda",
+          "subsection": "Liquidity and Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Capital expenditure is stable with consistent investments, leading to a neutral sentiment.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company demonstrates strong commitment to shareholder returns through consistent dividend payments and share buybacks, with evidence of increased buyback activity during the quarter.",
+      "evidence": [
+        {
+          "text": "During the quarter ended March\u00a029, 2015, the total number of shares purchased included 557,999 shares [...] not included within the program.",
+          "section": "risk_factors",
+          "subsection": "ITEM\u00a02. Unregistered Sales of Equity Securities and Use of Proceeds."
+        },
+        {
+          "text": "We paid dividends totaling $498 million during the quarter ended March\u00a029, 2015, and repurchased 3.0 million shares.",
+          "section": "mda",
+          "subsection": "Liquidity and Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company consistently increases dividends and buybacks, indicating strong shareholder commitment.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is challenging due to fiscal constraints and market pressures, particularly impacting the U.S. Government and our industry. Sequestration poses significant negative impacts, contributing to overall economic challenges.",
+      "evidence": [
+        {
+          "text": "We continue to experience uncertainty in our business environment due to significant fiscal and economic challenges facing the U.S. Government, our primary customer, as well as market pressures.",
+          "section": "mda",
+          "subsection": "Contingencies / Critical Accounting Policies"
+        },
+        {
+          "text": "The U.S. Government continues to face significant fiscal and economic challenges... sequestration could have significant negative impacts on our industry...",
+          "section": "mda",
+          "subsection": "U.S. Government Funding Constraints"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Challenging economic conditions due to fiscal constraints and sequestration pose significant risks.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company faces significant risks to talent retention due to potential workforce reductions and disruptions, as well as uncertainties related to budget reductions that could further challenge its ability to retain skilled personnel.",
+      "evidence": [
+        {
+          "text": "thousands of personnel reductions across the industry that will severely impact advanced manufacturing operations and engineering expertise...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "thousands of personnel reductions across the industry that will severely impact advanced manufacturing operations and engineering expertise...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential workforce reductions and budget uncertainties threaten talent retention.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "international_sales",
+      "category": "defense_government",
+      "summary": "The company is working to expand its international sales, though it faces challenges such as budget reductions, market pressures, and geopolitical factors which may hinder its success.",
+      "evidence": [
+        {
+          "text": "we are focusing on expanding into adjacent markets close to our core capabilities and growing international sales, but we may not be successful in this strategy.",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "growing international sales, but we may not be successful in this strategy...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "The decrease was attributable to lower net sales of approximately $160 million due to decreased volume as a result of the wind-down or completion of certain programs...",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Efforts to expand international sales are ongoing but face multiple challenges.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic growth is experiencing mixed performance, with some segments declining while others show increases, and facing headwinds due to budget constraints and reduced demand in certain areas.",
+      "evidence": [
+        {
+          "text": "Net sales for the Aeronautics segment decreased by $252 million, while the Space Systems segment increased by $95 million.",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "our businesses with smaller, short-term contracts are the most susceptible to the impacts of budget reductions...",
+          "section": "mda",
+          "subsection": "and Results of Operations (continued)"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed performance with some segments declining and others increasing due to budget constraints.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "The company's volume trends are mixed across different business segments. While some programs have experienced decreases in volumes, others have seen increases. The overall trend shows a decrease in product sales, but an increase in service sales.",
+      "evidence": [
+        {
+          "text": "Product sales decreased $557 million... Service sales increased $18 million...",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "The decrease was primarily attributable to lower operating profit of approximately $30 million for the C-130 program due to fewer aircraft deliveries...",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends show a mixed picture with product sales down and service sales up.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance, with some segments experiencing stability or improvement while others face pressure due to lower sales volumes, increased unit costs, and potential restructuring charges.",
+      "evidence": [
+        {
+          "text": "decreases in production volume associated with budget cuts... will increase unit costs... restructuring charges, impairment of assets...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "Operating margins for Aeronautics were 11.8% in 2015 compared to 11.6% in 2014.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Margins are mixed with some improvements but also pressures from lower sales and costs.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's backlog is influenced by budget uncertainties, with longer-term contracts exhibiting more stable demand. While the backlog itself is not explicitly detailed in the Aeronautics section, there are references to program completions and new awards impacting net sales.",
+      "evidence": [
+        {
+          "text": "our businesses with longer cycles... due to our production contract backlog...",
+          "section": "mda",
+          "subsection": "Potential Impacts of Budget Reductions"
+        },
+        {
+          "text": "The decreases were partially offset by higher net sales of approximately $175 million for F-35 production contracts due to increased volume and sustainment activities.",
+          "section": "mda",
+          "subsection": "Aeronautics"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Backlog is influenced by budget uncertainties with some stable longer-term contracts.",
+        "confidence": 0.65
+      }
+    }
+  ]
+}

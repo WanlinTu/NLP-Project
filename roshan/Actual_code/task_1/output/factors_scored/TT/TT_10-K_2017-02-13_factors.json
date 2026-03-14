@@ -1,0 +1,555 @@
+{
+  "ticker": "TT",
+  "form": "10-K",
+  "filing_date": "2017-02-13",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 28,
+  "factors": [
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining capital expenditures, signaling confidence in future growth.",
+      "evidence": [
+        {
+          "text": "Capital expenditures were $ 182.7 million , $ 249.6 million and $ 233.5 million for the years ended December 31, 2016 , 2015 and 2014 , respectively. Our investments continue to improve manufacturing productivity, reduce costs, provide environmental enhancements, upgrade information technology infrastructure and security and advanced technologies for existing facilities.",
+          "section": "mda",
+          "subsection": "Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "The company's maintenance of capital expenditures and investments in productivity and technology indicate strong confidence in future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The balance sheet is strengthening with lower interest rates, though debt levels remain stable.",
+      "evidence": [
+        {
+          "text": "Our public debt does not contain financial covenants and our revolving credit lines have a debt-to-total capital covenant of 65%. As of December\u00a031, 2016 , our debt-to-total capital ratio was significantly beneath this limit.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The balance sheet is strengthening with lower interest rates, and the company is within its debt covenant limits, indicating prudent financial management.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, supporting increased shareholder returns.",
+      "evidence": [
+        {
+          "text": "Net cash provided by continuing operating activities for the year ended December\u00a031, 2016 was $1,411.3 million , of which net income provided $1,449.8 million after adjusting for non-cash transactions.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Improving free cash flow supports increased shareholder returns, reflecting strong financial health.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is able to offset material inflation through pricing and productivity.",
+      "evidence": [
+        {
+          "text": "Operating margin improved... primarily due to pricing improvements in excess of material inflation (0.7%), favorable volume and product mix (0.2%), non-recurrence of acquisition related step-up amortization (0.1%) and productivity benefits in excess of other inflation (0.1%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company effectively offsets material inflation through pricing and productivity improvements, enhancing margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring and productivity programs are delivering measurable savings.",
+      "evidence": [
+        {
+          "text": "The decrease was primarily due to unfavorable volume and product mix (2.1%), increased investment and restructuring spending (0.4%), decreased productivity in excess of other inflation (0.3%), capitalized costs related to new product engineering and development that were reclassified to the income statement (0.3%), and unfavorable foreign currency exchange rate movements (0.2%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While restructuring programs are delivering savings, unfavorable factors like volume and product mix partially offset these benefits, resulting in mixed signals.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is clear with investments in innovation and geographic expansion.",
+      "evidence": [
+        {
+          "text": "Our growing geographic and industry diversity coupled with our large installed product base provides growth opportunities within our service, parts and replacement revenue streams. In addition, we are investing substantial resources to innovate and develop new products and services which we expect will drive our future growth.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Investments in innovation and geographic expansion clearly indicate a strong, growth-oriented long-term strategy.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "New product launches and aftermarket service growth are catalysts for future growth.",
+      "evidence": [
+        {
+          "text": " aftermarket parts, service, controls, used equipment and rentals... aftermarket/service revenue growing faster than new equipment sales.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "New product launches and aftermarket service growth are catalysts for future growth, indicating positive developments.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "Construction activity is growing, particularly in the United States.",
+      "evidence": [
+        {
+          "text": "Residential and Commercial new construction have seen continued momentum in the United States which is positively impacting the results of our HVAC businesses.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growth in construction activity, particularly in the U.S., is a positive indicator for the company's HVAC businesses.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "equipment_replacement",
+      "category": "industrial_infrastructure",
+      "summary": "Equipment replacement cycles are accelerating in the HVAC sector.",
+      "evidence": [
+        {
+          "text": "Heating, Ventilation, and Air Conditioning (HVAC) equipment replacement and aftermarket continue to experience strong demand.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Accelerating replacement cycles indicate growth in the HVAC sector.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "Aftermarket service revenue is growing faster than new equipment sales.",
+      "evidence": [
+        {
+          "text": " aftermarket parts, service, controls, used equipment and rentals... aftermarket/service revenue growing faster than new equipment sales.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing revenue faster than new sales shows strong performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "rd_investment",
+      "category": "technology_innovation",
+      "summary": "R&D investment is focused on new product development.",
+      "evidence": [
+        {
+          "text": " investing substantial resources to innovate and develop new products and services which we expect will drive our future growth.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Investment in innovation suggests future growth.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "new_products",
+      "category": "technology_innovation",
+      "summary": "New products are contributing to growth.",
+      "evidence": [
+        {
+          "text": "Incremental revenues from acquisitions... new product engineering and development that were reclassified to the income statement.",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Contribution to growth through new products.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "Litigation exposure exists but is manageable.",
+      "evidence": [
+        {
+          "text": "Other activity, net for the year ended December 31, 2016 includes a charge of $16.4 million for the settlement of a lawsuit originally filed by a customer in 2012.",
+          "section": "mda",
+          "subsection": "Other income/(expense), net"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Exposure is manageable but still a concern.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is accelerating, particularly in the Climate segment, driven by higher volumes and pricing improvements. This acceleration is also evident in the HVAC equipment replacement and aftermarket sectors, as well as in Residential and Commercial new construction in the United States.",
+      "evidence": [
+        {
+          "text": "Net revenues for the year ended December\u00a031, 2015 increased by 3.2% , or $409.3 million , compared with the same period of 2014, which primarily resulted from the following: Volume/product mix 4.5 \u00a0% Acquisitions 2.4 \u00a0% Pricing 0.2 \u00a0% Currency translation (3.9 )% Total 3.2 \u00a0% The increase was primarily driven by higher volumes in our Climate segment.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Heating, Ventilation, and Air Conditioning (HVAC) equipment replacement and aftermarket continue to experience strong demand. In addition, Residential and Commercial new construction have seen continued momentum in the United States which is positively impacting the results of our HVAC businesses.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Strong demand across segments indicates robust growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power, successfully raising prices which contributed to both margin improvements and revenue growth.",
+      "evidence": [
+        {
+          "text": "Operating margin improved to 11.0% for the year ended December\u00a031, 2015, compared to 10.9% for the same period of 2014. The increase was primarily due to productivity benefits in excess of other inflation (0.9%), pricing improvements in excess of material inflation (0.3%) and favorable product mix and volume (0.3%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        },
+        {
+          "text": "Improved pricing, along with incremental revenues from acquisitions, further contributed to the year-over-year increase.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Strong pricing leads to margin and revenue growth.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting toward higher-margin segments, particularly the Climate segment, which has resulted in improved operating margins. This shift is driven by higher volumes, favorable product mix, and pricing improvements.",
+      "evidence": [
+        {
+          "text": "Climate net revenues increased by 3.5% or $ 344.6 million , compared with the same period of 2014. The primary driver of the increase related to higher volumes in both the Commercial HVAC and Residential HVAC businesses.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Climate segment operating margin improved to 14.5%... primarily due to pricing improvements in excess of material inflation (0.7%), favorable volume and product mix (0.7%) and productivity benefits in excess of other inflation (0.6%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Shift to higher-margin segments boosts margins.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic revenue growth appears to be mixed, with evidence suggesting both improvement and deceleration. While higher volumes in the Climate segment and moderate market growth contributed to improvement, there are also signs of deceleration due to lower volumes in the Industrial segment and unfavorable foreign currency exchange rate movements.",
+      "evidence": [
+        {
+          "text": "The increase was primarily driven by higher volumes in our Climate segment. In addition, improved pricing and incremental revenues associated with acquisitions within each segment contributed to the year-over-year increase.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Net revenues for the year ended December 31, 2016 increased by 1.6%... partially offset by lower volumes in our Industrial segment and overall unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed signals from both improvement and deceleration in different segments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes exhibit mixed trends, with growth in certain segments such as the Climate segment, particularly in Commercial HVAC and Residential HVAC businesses, while declining in others like the Industrial segment due to market weakness.",
+      "evidence": [
+        {
+          "text": "Net revenues for the year ended December\u00a031, 2015 increased by 3.2% , or $409.3 million , compared with the same period of 2014, which primarily resulted from the following: Volume/product mix 4.5 \u00a0% Acquisitions 2.4 \u00a0% Pricing 0.2 \u00a0% Currency translation (3.9 )% Total 3.2 \u00a0%",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Climate segment net revenues increased by 3.1%... primarily driven by incremental volumes in both the Commercial HVAC and Residential HVAC businesses. Industrial segment net revenues decreased by 3.7%... due to lower overall volumes in the majority of our businesses due to continued weakness in the industrial markets.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining volumes in the Industrial segment offset growth in Climate.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end markets, particularly Commercial HVAC and Residential HVAC within the Climate segment, are experiencing strong growth driven by higher volumes and market expansion. However, non-residential markets in Europe and Asia face challenges, and global Industrial markets remain flat, with only some positive signs in shorter-cycle businesses.",
+      "evidence": [
+        {
+          "text": "The primary driver of the increase related to higher volumes in both the Commercial HVAC and Residential HVAC businesses. Commercial HVAC results reflect continued improvements in equipment, parts and services while Residential HVAC results increased through moderate market growth.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Heating, Ventilation, and Air Conditioning (HVAC) equipment replacement and aftermarket continue to experience strong demand... However, non-residential markets in both Europe and Asia remain challenged and global Industrial markets remain flat, with some positive signs in our shorter-cycle businesses.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong growth in key HVAC markets despite challenges in others.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity is improving, contributing to margin expansion. However, these productivity benefits were partially offset by increased investment and restructuring spending.",
+      "evidence": [
+        {
+          "text": "The increase was primarily due to productivity benefits in excess of other inflation (0.9%), pricing improvements in excess of material inflation (0.3%) and favorable product mix and volume (0.3%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        },
+        {
+          "text": "Productivity benefits in excess of other inflation (0.6%)... These amounts were partially offset by increased investment and restructuring spending (0.2%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving productivity despite offsetting factors.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins have been consistently expanding over the periods discussed, driven by productivity benefits, pricing improvements, favorable product mix, and volume increases. The margin expansion reflects positive trends in operational efficiency and pricing strategies.",
+      "evidence": [
+        {
+          "text": "Operating margin improved to 11.0% for the year ended December\u00a031, 2015 , compared to 10.9% for the same period of 2014. The increase was primarily due to productivity benefits in excess of other inflation (0.9%), pricing improvements in excess of material inflation (0.3%) and favorable product mix and volume (0.3%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        },
+        {
+          "text": "Operating margin improved to 11.6% for the year ended December 31, 2016, compared to 11.0% for the same period of 2015.",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Consistent margin expansion driven by positive operational trends.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is prioritizing shareholder returns through both dividend increases and share repurchase programs, signaling confidence in its financial position.",
+      "evidence": [
+        {
+          "text": "In October 2016, we announced an increase in our quarterly share dividend from $0.32 to $0.40 per ordinary share. This reflects a 25% increase that began with our December 2016 payment.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "In February 2017, our Board of Directors authorized the repurchase of up to $1.5 billion of our ordinary shares under a new share repurchase program upon completion of the current share repurchase program.",
+          "section": "mda",
+          "subsection": "2016 Dividend Increase and Share Repurchase Program"
+        }
+      ],
+      "sentiment": {
+        "label": "very_positive",
+        "rationale": "Significant shareholder returns through dividends and repurchases.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "Acquisitions are contributing to growth, particularly through the Engineered Centrifugal Compression business, which is creating value and boosting Club Car revenues. However, integration challenges exist, as evidenced by the components of the period change, which include a small positive contribution from acquisitions but also note challenges in integration.",
+      "evidence": [
+        {
+          "text": "The primary driver of the increase related to the acquisition of the Engineered Centrifugal Compression business during the year. In addition, Club Car revenues increased as a result of gains in golf cars, utility vehicles and aftermarket sales.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "The components of the period change are as follows: Volume/product mix 2.2% Acquisitions 0.1% Pricing 0.3% Currency translation (1.0)% Total 1.6%",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed impact from acquisitions with both positive contributions and integration challenges.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is mixed, with some positive trends in specific business segments and moderate market growth, but overall conditions remain stable to flat in key industrial markets.",
+      "evidence": [
+        {
+          "text": "Residential HVAC results increased through moderate market growth. In addition, revenues in our Thermo King refrigeration transport business improved through organic growth in North America and Europe.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Current economic conditions continue to show mixed trends in each of the segments in which we participate... global Industrial markets remain flat, with some positive signs in our shorter-cycle businesses.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Economic environment is stable with mixed trends across segments.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements have had a negative impact on both operating income/margin and net revenues, primarily due to unfavorable currency rates.",
+      "evidence": [
+        {
+          "text": "Unfavorable foreign currency exchange rate movements (0.5%) primarily from the Euro, and the inclusion of the Engineered Centrifugal Compression business and related step-up amortization (0.4%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        },
+        {
+          "text": "unfavorable foreign currency exchange rate movements... unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign exchange movements have negatively impacted operating income and net revenues due to unfavorable currency rates.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management demonstrates confidence through actions such as increasing dividends and initiating share repurchase programs, though a cautious tone is also evident.",
+      "evidence": [
+        {
+          "text": "In October 2016, we announced an increase in our quarterly share dividend from $0.32 to $0.40 per ordinary share. This reflects a 25% increase that began with our December 2016 payment.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        },
+        {
+          "text": "In February 2017, our Board of Directors authorized the repurchase of up to $1.5 billion of our ordinary shares under a new share repurchase program upon completion of the current share repurchase program.",
+          "section": "mda",
+          "subsection": "2016 Dividend Increase and Share Repurchase Program"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management demonstrated confidence through dividend increases and share repurchase programs, indicating a positive outlook despite caution.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include weak Industrial markets and unfavorable foreign currency exchange rate movements, which have negatively impacted segment results.",
+      "evidence": [
+        {
+          "text": "However, overall organic revenues decreased due to weak Industrial markets. Segment results were also negatively impacted by unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "Net Revenues"
+        },
+        {
+          "text": "Non-residential markets in both Europe and Asia remain challenged and global Industrial markets remain flat... unfavorable foreign currency exchange rate movements.",
+          "section": "mda",
+          "subsection": "Trends and Economic Events"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks include weak Industrial markets and unfavorable foreign currency exchange rate movements, negatively impacting segment results.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign currency exchange rate movements are a key sensitivity impacting near-term results.",
+      "evidence": [
+        {
+          "text": "Unfavorable foreign currency exchange rate movements (0.5%) primarily from the Euro, and the inclusion of the Engineered Centrifugal Compression business and related step-up amortization (0.4%).",
+          "section": "mda",
+          "subsection": "Operating Income/Margin"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Foreign currency exchange rate movements are a key sensitivity impacting near-term results negatively.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

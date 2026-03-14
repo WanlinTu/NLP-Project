@@ -1,0 +1,512 @@
+{
+  "ticker": "JCI",
+  "form": "10-K",
+  "filing_date": "2019-11-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 27,
+  "factors": [
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable as the company reviews its actuarial assumptions annually and makes modifications when appropriate.",
+      "evidence": [
+        {
+          "text": "The Company reviews its actuarial assumptions on an annual basis and makes modifications to the assumptions based on current rates and trends when appropriate.",
+          "section": "mda",
+          "subsection": "Employee Benefit Plans"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company manages labor costs by reviewing actuarial assumptions annually.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes are impacting the company as the weighted average discount rate on U.S. pension plans decreased from 4.10% to 2.95% and on non-U.S. pension plans from 2.45% to 1.50% over the years.",
+      "evidence": [
+        {
+          "text": "The Company\u2019s weighted average discount rate on U.S. pension plans was 2.95% and 4.10% at September\u00a030, 2019 and 2018, respectively. The Company\u2019s weighted average discount rate on non-U.S. pension plans was 1.50% and 2.45% at September\u00a030, 2019 and 2018, respectively.",
+          "section": "mda",
+          "subsection": "Employee Benefit Plans"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreasing discount rates on pension plans may indicate increased liabilities.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company is strengthening its balance sheet through deleveraging and refinancing.",
+      "evidence": [
+        {
+          "text": "Total net debt as a % of total capitalization decreased from 33.7% to 18.3%. The company repurchased approximately $3.4 billion of debt and completed a debt tender offer, resulting in a loss on extinguishment of debt.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is reducing debt and improving its capital structure.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "The company is returning capital to shareholders through share repurchases and dividends.",
+      "evidence": [
+        {
+          "text": "The company repurchased $4.0 billion of its ordinary shares and maintained its dividend payments, showing confidence in its financial position.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Returning capital through repurchases and dividends shows financial confidence.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix is shifting favorably with higher margins in Building Solutions North America and EMEA/LA, but negatively impacted Global Products.",
+      "evidence": [
+        {
+          "text": "Segment EBITA decreased in Global Products due to a current year environmental charge and higher SG&A, while it increased in Building Solutions North America and EMEA/LA.",
+          "section": "mda",
+          "subsection": "SEGMENT ANALYSIS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Foreign currency translation and mark-to-market adjustments are significant factors impacting financial results.",
+      "evidence": [
+        {
+          "text": "Foreign currency translation had a favorable impact on cost of sales of approximately $304 million. Net mark-to-market adjustments had a net unfavorable year-overyear impact on SG&A of $519 million.",
+          "section": "mda",
+          "subsection": "Cost of Sales / Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Foreign currency and mark-to-market impacts are present but not clearly positive or negative.",
+        "confidence": 0.5
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are favorable, contributing to revenue and margin expansion.",
+      "evidence": [
+        {
+          "text": "The increase in Building Solutions North America was due to the favorable impact of foreign currency translation ($20 million)... The increase in Building Solutions EMEA/LA was due to the favorable impact of foreign currency translation ($7 million)... The increase in Building Solutions Asia Pacific was due to the favorable impact of foreign currency translation ($61 million)... The increase in Global Products was due to the favorable impact of foreign currency translation ($103 million).",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Favorable foreign currency translation contributes to revenue and margin expansion.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "Labor relations are generally stable, but there are risks of future conflicts.",
+      "evidence": [
+        {
+          "text": "Although we believe that our relations with the labor unions and works councils that represent our employees are generally good and we have experienced no material strikes or work stoppages recently, no assurances can be made that we will not experience in the future these and other types of conflicts with labor unions, works council, other groups representing employees or our employees generally.",
+          "section": "risk_factors",
+          "subsection": "Our business may be adversely affected by work stoppages, union negotiations, labor disputes and other matters associated with our labor force."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "While current relations are stable, there are risks of future conflicts.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "divestitures",
+      "category": "unknown",
+      "summary": "Divestitures could have a material adverse effect on the company's financial condition and operations.",
+      "evidence": [
+        {
+          "text": "Divestitures involve risks, including difficulties in the separation of operations, services, products and personnel, the diversion of management's attention from other business concerns, the disruption of our business, the potential loss of key employees and the retention of uncertain environmental or other contingent liabilities related to the divested business.",
+          "section": "risk_factors",
+          "subsection": "Divestitures of some of our businesses or product lines may materially adversely affect our financial condition, results of operations or cash flows."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Divestitures pose significant risks that could materially harm the company's financial condition and operations.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company is subject to significant environmental compliance costs and risks.",
+      "evidence": [
+        {
+          "text": "We are subject to numerous federal, state and local environmental laws and regulations governing, among other things, solid and hazardous waste storage, treatment and disposal, and remediation of releases of hazardous materials. There are significant capital, operating and other costs associated with compliance with these environmental laws and regulations.",
+          "section": "risk_factors",
+          "subsection": "We are subject to requirements relating to environmental and safety regulations and environmental remediation matters which could adversely affect our business, results of operation and reputation."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces substantial costs and risks from environmental regulations, which could impact profitability.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The company faces risks related to the centralization of administrative functions, which could disrupt key business processes.",
+      "evidence": [
+        {
+          "text": "We have been regionally centralizing certain administrative functions, primarily in North America, Europe and Asia, to improve efficiency and reduce costs. To the extent that these central locations are disrupted or disabled, key business processes, such as invoicing, payments and general management operations, could be interrupted, which could have an adverse impact on our business.",
+          "section": "risk_factors",
+          "subsection": "We are subject to business continuity risks associated with centralization of certain administrative functions."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Centralizing administrative functions exposes the company to operational disruptions, posing a moderate risk.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "The company's products are subject to risks related to intellectual property infringement and expiration, which could harm its competitive position.",
+      "evidence": [
+        {
+          "text": "In addition, we are, from time to time, subject to claims of intellectual property infringement by third parties, including practicing entities and non-practicing entities. Regardless of the merit of such claims, responding to infringement claims can be expensive and time-consuming, and the litigation process is subject to inherent uncertainties, and we may not prevail in litigation matters regardless of the merits of our position.",
+          "section": "risk_factors",
+          "subsection": "Infringement or expiration of our intellectual property rights, or allegations that we have infringed the intellectual property rights of third parties, could negatively affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Intellectual property risks could harm the company's competitive position and lead to financial and reputational damage.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is a headwind due to global economic uncertainty and disruptions in capital markets.",
+      "evidence": [
+        {
+          "text": "General economic conditions affect each of our primary businesses. A worldwide economic downturn and/or disruption of the credit markets could reduce our access to capital necessary for our operations and executing our strategic plan.",
+          "section": "risk_factors",
+          "subsection": "General economic, credit and capital market conditions could adversely affect our financial performance, our ability to grow or sustain our businesses and our ability to access the capital markets."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Global economic uncertainty and capital market disruptions present significant threats to the company's operations and strategic plans.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Increases in commodity costs may negatively impact profitability, especially if not offset by pricing or hedging.",
+      "evidence": [
+        {
+          "text": "Increases in commodity costs can negatively impact the profitability of orders in backlog as prices on such orders are typically fixed; therefore, in the short-term, our ability to adjust for changes in certain commodity prices is limited.",
+          "section": "risk_factors",
+          "subsection": "Volatility in commodity prices may adversely affect our results of operations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Rising commodity costs could negatively impact profitability, especially without effective pricing or hedging strategies.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes, particularly in trade and data privacy, are creating challenges and costs.",
+      "evidence": [
+        {
+          "text": "Due to the international scope of our operations, the system of laws and regulations to which we are subject is complex and includes regulations issued by... various non-U.S. governmental agencies, including applicable export controls, anti-trust, customs, currency exchange control and transfer pricing regulations, laws regulating the foreign ownership of assets, and laws governing certain materials that may be in our products.",
+          "section": "risk_factors",
+          "subsection": "Our businesses operate in regulated industries and are subject to a variety of complex and continually changing laws and regulations."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes, particularly in trade and data privacy, are creating challenges and additional costs for the company.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "cybersecurity",
+      "category": "unknown",
+      "summary": "Cybersecurity risks pose a threat to business operations and could result in financial loss and reputational damage.",
+      "evidence": [
+        {
+          "text": "We rely upon the capacity, reliability and security of our IT and data security infrastructure... cybersecurity incidents, depending on their nature and scope, could potentially result in the misappropriation, destruction, corruption or unavailability of critical data and confidential or proprietary information (our own or that of third parties) and the disruption of business operations.",
+          "section": "risk_factors",
+          "subsection": "Cybersecurity incidents could disrupt business operations, result in the loss of critical and confidential information, and adversely impact our reputation and results of operations."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Cybersecurity risks threaten business operations and could result in significant financial loss and reputational damage.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow is improving, driven by multiple factors including debt reduction, share repurchases, lower restructuring payments, and higher affiliate dividends.",
+      "evidence": [
+        {
+          "text": "The company completed a modified Dutch auction tender offer to repurchase approximately $4.0 billion of its ordinary shares. It also repurchased $3.4 billion of debt, indicating strong cash flow generation.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        },
+        {
+          "text": "The increase in cash provided by operating activities was primarily due to lower restructuring payments and higher partially-owned affiliate dividends.",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is accelerating, supported by higher volumes across all segments and excluding the impact of foreign currency translation and business acquisitions/divestitures.",
+      "evidence": [
+        {
+          "text": "Excluding the impact of foreign currency translation and business acquisitions and divestitures, net sales increased 5% as compared to the prior year.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "The increase in Building Solutions North America was due to higher volumes ($343 million)... The increase in Building Solutions EMEA/LA was due to the favorable impact of foreign currency translation ($132 million), higher volumes ($63 million)... The increase in Building Solutions Asia Pacific was due to higher volumes ($61 million)... The increase in Global Products was due to higher volumes ($571 million).",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are positive, with organic sales growth observed across all segments, particularly in Building Solutions. Higher volumes and favorable foreign currency translation contributed to this growth, though there were some offsetting factors such as unfavorable foreign currency impacts and divestitures.",
+      "evidence": [
+        {
+          "text": "The increase in net sales was due to higher organic sales ($1,181 million) and acquisitions ($22 million), partially offset by the unfavorable impact of foreign currency translation ($463 million) and lower sales due to business divestitures ($172 million). The increase in organic sales related to higher volumes across all segments.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "The increase in Building Solutions North America was due to higher volumes ($343 million) and the favorable impact of foreign currency translation ($20 million), partially offset by the impact of prior year nonrecurring purchase accounting adjustments ($25 million). The increase in volumes was primarily attributable to higher HVAC, controls, fire and security sales.",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is undertaking restructuring and cost reduction initiatives, which are showing signs of progress with annual savings expected. However, these efforts are accompanied by integration and other related costs, indicating that while cost savings are being realized, there are ongoing expenses associated with these actions.",
+      "evidence": [
+        {
+          "text": "The company committed to restructuring plans in fiscal 2018, 2017, and 2016, resulting in annual operating cost reductions. Savings are expected to be realized in future years.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        },
+        {
+          "text": "Restructuring and impairment costs decreased by 8% from $255 million in 2018 to $235 million in 2019.",
+          "section": "mda",
+          "subsection": "Restructuring and Impairment Costs"
+        },
+        {
+          "text": "The increase in Segment EBITA for Building Solutions North America... partially offset by current year integration costs ($25 million)... The increase in Building Solutions EMEA/LA... partially offset by current year integration costs ($6 million)... The increase in Building Solutions Asia Pacific... partially offset by higher SG&A... The increase in Global Products... partially offset by current year integration costs ($27 million).",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing across all segments, contributing to revenue growth, as evidenced by increases in organic sales. However, demand for products and services may be affected by economic downturns and capital spending decisions, leading to fluctuating unit volumes. Despite the risks, the current trend indicates positive volume growth.",
+      "evidence": [
+        {
+          "text": "The increase in organic sales related to higher volumes across all segments.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "The increase in Building Solutions North America was due to higher volumes... The increase in Building Solutions EMEA/LA was due to higher volumes... The increase in Building Solutions Asia Pacific was due to higher volumes... The increase in Global Products was due to higher volumes...",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        },
+        {
+          "text": "Levels of industrial capital expenditures for facility expansions and maintenance turn on general economic conditions, economic conditions within specific industries we serve, expectations of future market behavior and available financing.",
+          "section": "risk_factors",
+          "subsection": "Some of the industries in which we operate are cyclical and, accordingly, demand for our products and services could be adversely affected by downturns in these industries."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance. While gross profit margins are stable and operating margins are expanding due to favorable volumes and cost management, there are increasing SG&A expenses and potential pressure from rising commodity costs and unfavorable hedging outcomes.",
+      "evidence": [
+        {
+          "text": "Gross profit as a percentage of sales decreased by 70 basis points. SG&A as a percentage of sales increased by 200 basis points.",
+          "section": "mda",
+          "subsection": "Cost of Sales / Gross Profit"
+        },
+        {
+          "text": "The increase in Segment EBITA for Building Solutions North America... partially offset by higher SG&A... The increase in Building Solutions EMEA/LA... partially offset by prior year nonrecurring purchase accounting adjustments... The increase in Building Solutions Asia Pacific... partially offset by higher SG&A... The increase in Global Products... partially offset by higher SG&A and operating expenses...",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        },
+        {
+          "text": "Unfavorability in our hedging programs during a period of declining commodity prices could result in lower margins as we reduce prices to match the market on a fixed commodity cost level.",
+          "section": "risk_factors",
+          "subsection": "Volatility in commodity prices may adversely affect our results of operations."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, including trade tensions and political instability, pose potential risks to the company's operations and supply chains. However, the company has not explicitly identified these risks as material factors impacting its performance.",
+      "evidence": [
+        {
+          "text": "No specific mention of geopolitical risks or their impact on the company's results.",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        },
+        {
+          "text": "Changes in laws or policies governing the terms of foreign trade, and in particular increased trade restrictions, tariffs or taxes on imports from countries where we manufacture products or from where we import products or raw materials (either directly or through our suppliers) could have an impact on our competitive position, business and financial results.",
+          "section": "risk_factors",
+          "subsection": "Our businesses operate in regulated industries and are subject to a variety of complex and continually changing laws and regulations."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has experienced positive impacts from acquisition activity, including incremental sales and cost synergies. However, there are risks and challenges in integrating future acquisitions and realizing full benefits, as well as potential difficulties in managing the timing of acquisitions with capital obligations.",
+      "evidence": [
+        {
+          "text": "The increase in Building Solutions EMEA/LA was due to incremental sales related to a business acquisition ($2 million)... The increase in Global Products was due to a gain on sale of Scott Safety ($114 million)...",
+          "section": "mda",
+          "subsection": "Segment Analysis"
+        },
+        {
+          "text": "The success of the Merger will depend on, among other things, our ability to combine the legacy businesses of Johnson Controls and Tyco in a manner that realizes anticipated synergies and facilitates growth opportunities, and achieves the projected stand-alone cost savings and revenue growth trends identified by us.",
+          "section": "risk_factors",
+          "subsection": "We may fail to realize the anticipated benefits of the business combination between Johnson Controls, Inc. and Tyco International plc."
+        },
+        {
+          "text": "We expect acquisitions of businesses and assets, as well as joint ventures (or other strategic arrangements), to play a role in our future growth. We cannot be certain that we will be able to identify attractive acquisition or joint venture targets, obtain financing for acquisitions on satisfactory terms, successfully acquire identified targets or form joint ventures, or manage the timing of acquisitions with capital obligations across our businesses.",
+          "section": "risk_factors",
+          "subsection": "We may be unable to complete or integrate acquisitions or joint ventures effectively, which may adversely affect our growth, profitability and results of operations."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company faces significant risks related to talent retention, particularly in attracting and retaining highly skilled personnel, including management and technical expertise, which are crucial for executing its strategic plan and driving innovation and growth.",
+      "evidence": [
+        {
+          "text": "Our ability to sustain and grow our business requires us to hire, retain and develop a highly skilled and diverse management team and workforce. Failure to ensure that we have the leadership capacity with the necessary skill set and experience could impede our ability to deliver our growth objectives and execute our strategic plan.",
+          "section": "risk_factors",
+          "subsection": "Our business success depends on attracting and retaining qualified personnel."
+        },
+        {
+          "text": "We must also attract, develop and retain individuals with the requisite technical expertise and understanding of customers' needs to develop new technologies and introduce new products, particularly as we increase investment in our digital solutions businesses.",
+          "section": "risk_factors",
+          "subsection": "Our future growth is dependent upon our ability to develop or acquire new technologies that achieve market acceptance with acceptable margins."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces significant risks in retaining highly skilled personnel, which are critical for growth and innovation.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation risks, including potential material legal actions, regulatory investigations, and financial or operational impacts due to employee actions, system failures, contractual disputes, intellectual property issues, and compliance with anti-bribery laws. These risks could result in substantial costs, reputational damage, and adverse effects on financial performance.",
+      "evidence": [
+        {
+          "text": "If a customer or third party believes that he or she has suffered harm to person or property due to an actual or alleged act or omission of one of our employees or a security or fire system failure, he or she may pursue legal action against us, and the cost of defending the legal action and of any judgment could be substantial.",
+          "section": "risk_factors",
+          "subsection": "We are exposed to greater risks of liability for employee acts or omissions, or system failure, in our fire and security businesses than may be inherent in other businesses."
+        },
+        {
+          "text": "We are currently, and may in the future, become subject to legal proceedings and commercial or contractual disputes. These are typically claims that arise in the normal course of business including, without limitation, commercial or contractual disputes with our suppliers or customers, intellectual property matters, third party liability, including product liability claims and employment claims.",
+          "section": "risk_factors",
+          "subsection": "Legal proceedings in which we are, or may be, a party may adversely affect us."
+        },
+        {
+          "text": "Violations of these laws may result in criminal or civil sanctions, which could disrupt our business and result in a material adverse effect on our reputation, business, financial condition, results of operations and cash flows.",
+          "section": "risk_factors",
+          "subsection": "We could be adversely affected by violations of the U.S. Foreign Corrupt Practices Act, the U.K. Bribery Act and similar anti-bribery laws around the world."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company is exposed to substantial legal and financial risks due to various potential litigations and regulatory issues.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "The company faces risks related to government spending and economic conditions affecting construction and infrastructure demand. Government contracts expose the company to potential spending fluctuations, while economic downturns and real estate market changes can reduce demand for products tied to construction and infrastructure projects.",
+      "evidence": [
+        {
+          "text": "Our customers include many U.S. federal, state and local government authorities. Doing business with the U.S. government and state and local authorities subjects us to unusual risks, including dependence on the level of government spending...",
+          "section": "risk_factors",
+          "subsection": "We are subject to risks arising from regulations applicable to companies doing business with the U.S. government."
+        },
+        {
+          "text": "Much of the demand for installation of HVAC, security products, and fire detection and suppression solutions is driven by commercial and residential construction and industrial facility expansion and maintenance projects. Commercial and residential construction projects are heavily dependent on general economic conditions, localized demand for commercial and residential real estate and availability of credit.",
+          "section": "risk_factors",
+          "subsection": "Some of the industries in which we operate are cyclical and, accordingly, demand for our products and services could be adversely affected by downturns in these industries."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company is vulnerable to fluctuations in government spending and economic conditions affecting construction and infrastructure demand.",
+        "confidence": 0.85
+      }
+    }
+  ]
+}

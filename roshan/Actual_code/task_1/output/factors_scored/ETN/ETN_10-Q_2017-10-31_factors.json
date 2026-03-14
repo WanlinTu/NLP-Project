@@ -1,0 +1,111 @@
+{
+  "ticker": "ETN",
+  "form": "10-Q",
+  "filing_date": "2017-10-31",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 6,
+  "factors": [
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Eaton is experiencing organic revenue growth in several business segments.",
+      "evidence": [
+        {
+          "text": "Net sales increased 4.5% in the third quarter of 2017 compared to the third quarter of 2016 due to an increase of 3.5% in organic sales and an increase of 1% from the impact of positive currency translation. Net sales increased 2% in the first nine months of 2017 compared to the first nine months of 2016 due to an increase of 2% in organic sales.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company is experiencing organic revenue growth across multiple business segments, indicating strong demand and positive business performance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing across several business segments, contributing to revenue growth.",
+      "evidence": [
+        {
+          "text": "The increase in organic sales in the third quarter and first nine months of 2017 was primarily due to higher sales volumes in the Electrical Products, Hydraulics, and Vehicle business segments.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Higher unit volumes across several segments are contributing to revenue growth, which is a positive indicator for demand and sales performance.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Commodity inflation is putting pressure on margins, but the company is partially offsetting it.",
+      "evidence": [
+        {
+          "text": "The increase in gross profit margin was primarily due to higher sales volumes, savings from restructuring actions, and lower restructuring charges, partially offset by commodity inflation and the impact of three recent hurricanes and the earthquake in Mexico City.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Commodity inflation is pressuring margins, although the company is partially offsetting this with other strategies.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Gross and operating margins are improving, driven by higher sales and restructuring savings.",
+      "evidence": [
+        {
+          "text": "Gross profit margin increased from 32.4% in the third quarter of 2016 to 33.4% in the third quarter of 2017, and from 32.3% in the first nine months of 2016 to 32.7% in the first nine months of 2017.",
+          "section": "mda",
+          "subsection": "Gross Profit"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improvement in gross and operating margins shows positive progress in managing costs and increasing profitability.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Restructuring actions are delivering savings, contributing to improved margins.",
+      "evidence": [
+        {
+          "text": "Restructuring charges in the third quarter and first nine months of 2017 were $22 and $75, respectively, and were $23 and $121 in 2016, respectively. Charges from this initiative are primarily comprised of severance costs.",
+          "section": "mda",
+          "subsection": "Summary of Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Restructuring actions are yielding savings, which are contributing to improved margins and operational efficiency.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is confident, as indicated by share repurchases and positive commentary.",
+      "evidence": [
+        {
+          "text": "Net income per share in the third quarter and first nine months of 2017 included $1.89 and $1.88, respectively, from the gain on the sale of business discussed in Note 2. Net income per ordinary share increased to $3.14 in the third quarter of 2017 compared to $1.15 in the third quarter of 2016.",
+          "section": "mda",
+          "subsection": "Net Income"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's confidence is reflected in share repurchases and positive financial results, indicating a favorable outlook.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

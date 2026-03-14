@@ -1,0 +1,94 @@
+{
+  "ticker": "PNR",
+  "form": "10-K",
+  "filing_date": "2016-02-26",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 5,
+  "factors": [
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Disruptions in financial markets could negatively impact access to credit and increase funding costs, affecting the company's business.",
+      "evidence": [
+        {
+          "text": "Disruptions in the financial markets have had adverse effects on other areas of the economy and have led to a slowdown in general economic activity that may continue to adversely affect our businesses.",
+          "section": "risk_factors",
+          "subsection": "Disruptions in the financial markets could adversely affect us, our customers and our suppliers by increasing funding costs or reducing availability of credit."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The evidence highlights adverse effects on economic activity and continued negative impacts on the business.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes could impact the company's ability to service debt and access credit.",
+      "evidence": [
+        {
+          "text": "Our ability to make payments on and to refinance our indebtedness, including our existing debt as well as any future debt that we may incur, will depend on our ability to generate cash in the future from operations, financings or asset sales.",
+          "section": "risk_factors",
+          "subsection": "Covenants in our debt instruments may adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company's ability to service debt is dependent on future cash generation, indicating a moderate concern.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's leverage could have a material adverse effect on its business, financial condition, or results of operations.",
+      "evidence": [
+        {
+          "text": "Our ability to make payments on and to refinance our indebtedness, including our existing debt as well as any future debt that we may incur, will depend on our ability to generate cash in the future from operations, financings or asset sales.",
+          "section": "risk_factors",
+          "subsection": "Covenants in our debt instruments may adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The summary explicitly states a material adverse effect on the company's financials.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Changes in tax laws could negatively impact the company's effective tax rate and profitability.",
+      "evidence": [
+        {
+          "text": "While we believe that we should be able to maintain a worldwide effective corporate tax rate that is competitive in our industry, we cannot give any assurance as to what our effective tax rate will be in the future because of, among other things, uncertainty regarding tax policies of the jurisdictions where we operate.",
+          "section": "risk_factors",
+          "subsection": "We are subject to changes in law and other factors that may not allow us to maintain a worldwide effective corporate tax rate that is competitive in our industry."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Uncertainty in tax policies introduces risk to the company's effective tax rate and profitability.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company identifies interest rates and economic conditions as key sensitivities impacting its near-term results.",
+      "evidence": [
+        {
+          "text": "Our ability to make payments on and to refinance our indebtedness, including our existing debt as well as any future debt that we may incur, will depend on our ability to generate cash in the future from operations, financings or asset sales.",
+          "section": "risk_factors",
+          "subsection": "Covenants in our debt instruments may adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Interest rates and economic conditions are identified as key sensitivities with potential negative impacts.",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

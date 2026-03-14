@@ -1,0 +1,213 @@
+{
+  "ticker": "NSC",
+  "form": "10-Q",
+  "filing_date": "2016-07-27",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 12,
+  "factors": [
+    {
+      "key": "inflation",
+      "category": "unknown",
+      "summary": "The company is impacted by inflation as their capital-intensive nature leads to higher replacement costs and depreciation expenses beyond historical cost reporting.",
+      "evidence": [
+        {
+          "text": "In preparing financial statements, GAAP requires the use of historical cost that disregards the effects of inflation on the replacement cost of property. As a capital-intensive company, we have most of our capital invested in long-lived assets. The replacement cost of these assets, as well as the related depreciation expense, would be substantially greater than the amounts reported on the basis of historical cost.",
+          "section": "mda",
+          "subsection": "New Accounting Pronouncements / Inflation"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Higher replacement costs and depreciation expenses due to inflation negatively impact the company's financials.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are decelerating, particularly in coal and export markets, driven by economic challenges and market conditions.",
+      "evidence": [
+        {
+          "text": "The decrease in net income reflected lower income from railway operations, down $44 million, or 5%, primarily due to a decline in operating revenues (down $259 million, or 10%) as a result of a 7% drop in volumes and lower average revenue per unit (driven primarily by reduced fuel surcharge revenues).",
+          "section": "mda",
+          "subsection": "SUMMARIZED RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining demand and revenue, driven by economic challenges, present a headwind for the company.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are declining across several segments, particularly coal and intermodal, due to market conditions and reduced demand.",
+      "evidence": [
+        {
+          "text": "Second-quarter railway operating revenues were $2.5 billion in 2016, down $259 million, or 10%, compared with the second quarter of 2015. For the first six months, railway operating revenues were $4.9 billion, down $406 million, or 8%, compared with the same period last year.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decreasing unit volumes across segments indicate a weakening demand environment.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "Pricing power is being challenged, with average revenue per unit declining due to reduced fuel surcharges and lower volumes.",
+      "evidence": [
+        {
+          "text": "Average revenue per unit fell 2% and 1% respectively, primarily driven by the decline in fuel surcharges (which lowered average revenue per unit by $30 and $47, respectively).",
+          "section": "mda",
+          "subsection": "Coal"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Declining average revenue per unit due to reduced fuel surcharges and lower volumes signals weakened pricing power.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Operating margins are improving due to cost control initiatives and lower fuel prices, despite challenges in revenue.",
+      "evidence": [
+        {
+          "text": "Our second-quarter operating ratio improved 140 basis points over the same period last year, and our first six-month operating ratio was record-setting, despite the economic challenges that continue to affect our industry.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving operating margins despite revenue challenges suggest effective cost control measures.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "Cost reduction initiatives are delivering measurable savings, particularly in fuel expenses and compensation.",
+      "evidence": [
+        {
+          "text": "Implementation and maintenance of multiple cost control initiatives allowed for further expense reductions while maintaining strong network fluidity and near all-time best service levels.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Successful cost reduction initiatives are driving measurable savings and efficiency.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management expects continued improvement with productivity savings of about $200 million and an operating ratio below 70% for the year.",
+      "evidence": [
+        {
+          "text": "We remain committed to executing our strategic plan and believe we are well positioned to achieve productivity savings of about $200 million and an operating ratio below 70% this year.",
+          "section": "mda",
+          "subsection": "Norfolk Southern Corporation and Subsidiaries / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Management's optimistic outlook with expected productivity savings and improved operating ratios indicates a positive trajectory.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly fuel expenses, are declining due to lower fuel prices, which is beneficial for margins.",
+      "evidence": [
+        {
+          "text": "Fuel expense, which includes the cost of locomotive fuel as well as other fuel used in railway operations, decreased $81 million, or 32%, in the second quarter and $196 million, or 38%, for the first six months, primarily the result of lower locomotive fuel prices (down 25% and 31%, respectively) and reduced locomotive fuel consumption (down 6% and 5%, respectively).",
+          "section": "mda",
+          "subsection": "Railway Operating Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Declining input costs, particularly fuel expenses, are beneficial for margin expansion.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces a potential rate reasonableness complaint, but it is decided in their favor and does not expect material financial impact.",
+      "evidence": [
+        {
+          "text": "One of our chemical customers, Sunbelt, filed a rate reasonableness complaint before the STB alleging that our tariff rates for transportation of regulated movements are unreasonable. [...] We believe the estimate of any reasonably possible loss will not have a material effect on our financial position, results of operations, or liquidity.",
+          "section": "mda",
+          "subsection": "Merchandise"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The company successfully defended against a rate reasonableness complaint, and the financial impact is not expected to be material.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "Capital expenditures are expected to increase, signaling confidence in future growth with property additions projected at $1.9 billion.",
+      "evidence": [
+        {
+          "text": "Property additions for 2016 are expected to total $1.9 billion.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION AND LIQUIDITY"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Anticipated increase in capital expenditures signals confidence in growth, with property additions projected at $1.9 billion.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is stable with a total debt-to-total capitalization ratio of 45.1%, indicating manageable financial risk.",
+      "evidence": [
+        {
+          "text": "Our total debt-to-total capitalization ratio was 45.1% at June\u00a030, 2016, and 45.3% at December\u00a031, 2015.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION AND LIQUIDITY"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Stable debt-to-capitalization ratio indicates manageable financial risk without significant change.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Share repurchase activity has decreased, signaling cautiousness in capital deployment.",
+      "evidence": [
+        {
+          "text": "We repurchased 5.0 million shares of Common Stock, totaling $400 million, in the first six months of 2016, compared to 7.4 million shares, totaling $765 million, in the same period last year.",
+          "section": "mda",
+          "subsection": "FINANCIAL CONDITION AND LIQUIDITY"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decrease in share repurchase activity suggests cautious capital deployment, potentially indicating uncertainty or prioritization of other uses for capital.",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

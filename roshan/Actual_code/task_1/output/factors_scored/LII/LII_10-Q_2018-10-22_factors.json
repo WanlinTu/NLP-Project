@@ -1,0 +1,544 @@
+{
+  "ticker": "LII",
+  "form": "10-Q",
+  "filing_date": "2018-10-22",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 28,
+  "factors": [
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "Order backlog or book-to-bill is stable.",
+      "evidence": [
+        {
+          "text": "We sell our products and services through a combination of direct sales, distributors and company-owned parts and supplies stores. The demand for our products and services is seasonal and significantly impacted by the weather.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The order backlog or book-to-bill is stable, indicating no significant change in demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is disrupted due to the tornado damage.",
+      "evidence": [
+        {
+          "text": "The segment results were negatively impacted by the supply disruption caused by the tornado at our Marshalltown facility.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The supply chain is disrupted due to tornado damage, which is a significant operational issue.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization is being affected by the tornado damage and insurance recoveries.",
+      "evidence": [
+        {
+          "text": "We estimate the impact from the tornado will be a loss of approximately $100 million of revenue and $55 million of segment profit in 2018 and $85 million of revenue and $35 million of segment profit in 2019. The lost segment profits in 2018 and 2019 from business interruption due to the tornado are expected to be fully offset by insurance proceeds in 2019.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Capacity utilization is being affected by tornado damage, though partially offset by insurance recoveries, indicating significant disruption.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being adjusted due to the tornado damage.",
+      "evidence": [
+        {
+          "text": "We incurred expenses of $49.4 million related to damages caused by the tornado, which included the write-off of damaged property, equipment and inventory, freight to move product to other warehouses and professional fees to secure and maintain the site.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Inventory levels are being adjusted due to tornado damage, including write-offs and disruptions, signaling significant strain.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "No significant quality or safety issues reported.",
+      "evidence": [
+        {
+          "text": "No specific incidents or recalls were mentioned in the text.",
+          "section": "mda",
+          "subsection": "Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "No significant quality or safety issues reported, which is a positive outcome for operations.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Forward guidance is cautious due to ongoing disruptions.",
+      "evidence": [
+        {
+          "text": "We estimate the impact from the tornado will be a loss of approximately $100 million of revenue and $55 million of segment profit in 2018 and $85 million of revenue and $35 million of segment profit in 2019.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Forward guidance is cautious due to ongoing disruptions, indicating potential challenges ahead.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "Catalysts include favorable foreign currency exchange rates and successful cost reduction initiatives.",
+      "evidence": [
+        {
+          "text": "Favorable foreign currency exchange rates contributed to net sales increases. Sourcing and engineering-led cost reductions drove profit improvements.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Catalysts include favorable foreign currency exchange rates and successful cost reduction initiatives, which are positive developments.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "CapEx is steady, with a focus on manufacturing capacity expansion and technology upgrades.",
+      "evidence": [
+        {
+          "text": "Capital expenditures were $61 million in both 2018 and 2017, primarily for manufacturing and systems/software.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "CapEx is steady with a focus on expansion and upgrades, showing a stable investment approach without clear positive or negative signals.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "Debt leverage is increasing, with a higher debt-to-total-capital ratio.",
+      "evidence": [
+        {
+          "text": "Debt-to-total-capital ratio increased to 108.4% at September 30, 2018 from 95.2% at December 31, 2017.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Higher debt-to-total-capital ratio indicates increased reliance on debt, which can be a positive sign of aggressive growth funding.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are increasing through higher share repurchases and dividend payments.",
+      "evidence": [
+        {
+          "text": "Repurchased $350 million of shares in the first nine months of 2018 and declared $68 million in dividends.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Higher share repurchases and dividend payments show strong commitment to returning value to shareholders.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow generation is improving, driven by higher operating cash flows.",
+      "evidence": [
+        {
+          "text": "Net cash provided by operating activities increased to $231.3 million in 2018 from $129.0 million in 2017.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Improving free cash flow suggests enhanced financial health and ability to fund future investments.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "MA activity includes divestitures, with the sale of Asia Pacific and Brazilian businesses impacting Refrigeration segment.",
+      "evidence": [
+        {
+          "text": "Lost sales from divested Asia Pacific and Brazilian businesses contributed to a 11% decrease in Refrigeration net sales.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Divestitures impacting Refrigeration segment net sales indicate strategic restructuring with short-term negative effects.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "Economic conditions are favorable, with stable demand and positive cash flow trends.",
+      "evidence": [
+        {
+          "text": "Working capital needs are generally greater in the first and second quarters due to seasonal business cycles. Net cash provided by operating activities increased significantly.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Favorable economic conditions with stable demand and positive cash flow trends support business growth.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "Foreign exchange movements are having a mixed impact, with some favorable effects offset by unfavorable rates.",
+      "evidence": [
+        {
+          "text": "Favorable foreign currency exchange rates contributed to net sales increases, but also had unfavorable impacts in certain segments.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed foreign exchange impacts, with some positive and negative effects, result in an overall neutral sentiment.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power, as evidenced by revenue growth driven by both price increases and favorable price and mix contributions across segments. However, this pricing power has not been sufficient to offset rising costs, leading to a decrease in segment profit.",
+      "evidence": [
+        {
+          "text": "The increased revenue was driven by volume and price gains. The decrease in segment profit was driven by increase commodity and other product costs as well as increased freight and distribution.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        },
+        {
+          "text": "Net sales increased by 6% in the first nine months of 2018 compared to the first nine months of 2017. Sales volume increased 4%, and price and mix combined increased 2%.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Strong pricing power is offset by rising costs, leading to decreased segment profit.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand trends are mixed with some stability and slight increases observed across segments, though there are seasonal and weather-related fluctuations that can impact demand.",
+      "evidence": [
+        {
+          "text": "The demand for our products and services is seasonal and significantly impacted by the weather. Warmer than normal summer temperatures generate demand for replacement air conditioning and refrigeration products and services, and colder than normal winter temperatures have a similar effect on heating products and services. Conversely, cooler than normal summers and warmer than normal winters depress the demand for HVACR products and services.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Net sales increased by 6% in the first nine months of 2018 compared to the first nine months of 2017. Sales volume increased 4% and price and mix combined increased 2%",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed demand trends with seasonal and weather-related fluctuations suggest neither strong positive nor negative sentiment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic revenue growth shows mixed performance, with a deceleration in the third quarter compared to the previous year, but stable to slightly increasing year-to-date through September 2018 compared to the same period in 2017.",
+      "evidence": [
+        {
+          "text": "The Residential Heating & Cooling segment had a 1% increase in net sales and had $2 million in decreased segment profit compared to the third quarter of 2017. The segment results were negatively impacted by the supply disruption caused by the tornado at our Marshalltown facility.",
+          "section": "mda",
+          "subsection": "Third Quarter of 2018 Compared to Third Quarter of 2017 - Results by Segment"
+        },
+        {
+          "text": "Net sales increased by 6% in the first nine months of 2018 compared to the first nine months of 2017. Sales volume increased 4%, and price and mix combined increased 2%.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Organic growth shows mixed performance with a deceleration in the third quarter but stable year-to-date.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting favorably with higher sales volume and favorable price and mix. However, there was a negative impact on segment profit due to supply disruption from a tornado at the Marshalltown facility.",
+      "evidence": [
+        {
+          "text": "The segment results were negatively impacted by the supply disruption caused by the tornado at our Marshalltown facility. Our Commercial Heating & Cooling segment had a 2% increase in net sales and had $3 million in decreased segment profit compared to the third quarter of 2017. The increased revenue was driven by volume and price gains.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        },
+        {
+          "text": "Net sales increased by 6% in the first nine months of 2018 compared to the first nine months of 2017. Sales volume increased 4%, and price and mix combined increased 2%.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Revenue mix is shifting favorably with higher sales volume and favorable price and mix, despite some segment profit issues.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Overall, unit volumes show mixed trends with growth in certain segments and declines in others, contributing to both revenue increases and challenges.",
+      "evidence": [
+        {
+          "text": "Net sales increased 1% in the third quarter of 2018 compared to the third quarter of 2017. The increased revenue was driven by volume and price gains.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        },
+        {
+          "text": "Sales volume increased 4% in the first nine months of 2018 compared to the first nine months of 2017.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Unit volumes show mixed trends with growth in some segments and declines in others.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs are rising, leading to margin pressure, though partially offset by pricing and productivity improvements.",
+      "evidence": [
+        {
+          "text": "Raw material and commodity costs are rising, creating margin pressure.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "The principal raw materials used in our manufacturing processes are steel, copper and aluminum. In recent years, pricing volatility for these commodities and related components, including the impact of newly imposed tariffs on the import of certain of our raw materials and components, has impacted us and the HVACR industry in general.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        },
+        {
+          "text": "Higher commodity costs increased by $28 million and $7 million for Residential and Commercial segments respectively, partially offset by favorable price and mix.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Input costs are rising, causing margin pressure despite some offsetting measures.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory shows mixed performance, with compression in gross and operating margins due to higher costs, particularly from increased commodity prices, freight, and distribution expenses, while also indicating expansion due to favorable pricing, productivity improvements, and cost reductions across segments.",
+      "evidence": [
+        {
+          "text": "Gross profit margin in the third quarter of 2018 decreased to 29.3% compared to 29.8% in the third quarter of 2017. We saw decreases in profit margin of 160 basis points ('bps') from higher commodity prices, 100 bps from higher freight and distribution costs, and 30 bps from other costs.",
+          "section": "mda",
+          "subsection": "Third Quarter of 2018 Compared to Third Quarter of 2017 - Consolidated Results"
+        },
+        {
+          "text": "Segment profit increased due to favorable price and mix, higher sales volume, sourcing and engineering-led cost reductions, and SG&A savings.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Margin trajectory is mixed due to both compression and expansion factors.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end market momentum is mixed across the company's segments. The Commercial Heating & Cooling segment is growing, with a 2% increase in net sales and $3 million decreased segment profit. The Residential Heating & Cooling segment also shows growth, with a 6% increase in net sales. However, the Refrigeration segment is facing challenges, with a 10% decrease in net sales due to divested businesses.",
+      "evidence": [
+        {
+          "text": "The Commercial Heating & Cooling segment had a 2% increase in net sales and had $3 million in decreased segment profit compared to the third quarter of 2017. The increased revenue was driven by volume and price gains.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        },
+        {
+          "text": "Residential Heating & Cooling net sales increased by 6%. Commercial Heating & Cooling net sales increased by 7%. Refrigeration net sales decreased 10% due to divested businesses.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "End market momentum is mixed with growth in some segments and challenges in others.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost reduction initiatives, which are delivering savings through sourcing, engineering, and productivity improvements, partially offsetting the impact of volatility in commodity prices.",
+      "evidence": [
+        {
+          "text": "We seek to mitigate the impact of volatility in commodity prices through a combination of price increases, commodity contracts, improved production efficiency and cost reduction initiatives. We also partially mitigate volatility in the prices of these commodities by entering into futures contracts and fixed forward contracts.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Savings from sourcing and engineering-led cost reductions, SG&A savings, and improved factory productivity.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Cost reduction initiatives are effectively mitigating the impact of commodity price volatility.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Productivity improvements are evident across the company, driven by efficiency initiatives and cost reduction efforts. Both the Residential and Commercial segments have benefited from enhanced factory productivity, contributing to overall profit increases.",
+      "evidence": [
+        {
+          "text": "We seek to mitigate the impact of volatility in commodity prices through a combination of price increases, commodity contracts, improved production efficiency and cost reduction initiatives.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Improved factory productivity contributed to profit increases in both Residential and Commercial segments.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Productivity improvements are evident and contributing to profit increases.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The near-term risks include challenges such as ongoing supply chain disruptions from natural disasters like the tornado, higher commodity costs, increased freight expenses, and unfavorable foreign currency exchange rates, which are partially offsetting profit increases.",
+      "evidence": [
+        {
+          "text": "The segment results were negatively impacted by the supply disruption caused by the tornado at our Marshalltown facility.",
+          "section": "mda",
+          "subsection": "Financial Overview"
+        },
+        {
+          "text": "Higher commodity costs, freight and distribution expenses, and unfavorable foreign currency exchange rates are partially offsetting profit increases.",
+          "section": "mda",
+          "subsection": "Year-to-Date through September 30, 2018 Compared to Year-to-Date through September 30, 2017 - Results by Segment"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management exhibits mixed confidence as they are cautiously optimistic about recovery efforts but demonstrate strong confidence through significant share repurchases and increased capital expenditures.",
+      "evidence": [
+        {
+          "text": "The lost segment profits in 2018 and 2018 from business interruption due to the tornado are expected to be fully offset by insurance proceeds in 2019.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Net cash used in financing activities increased due to share repurchases ($350 million in 2018 vs. $250 million in 2017).",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company's long-term strategy is centered on managing supply chain risks through recovery and mitigation, as evidenced by their focus on offsetting losses from external disruptions like the tornado. Additionally, they are strategically investing in capital expenditures to expand manufacturing capacity and upgrade systems, which is supported by their strong liquidity position.",
+      "evidence": [
+        {
+          "text": "We estimate the impact from the tornado will be a loss of approximately $100 million of revenue and $55 million of segment profit in 2018 and $85 million of revenue and $35 million of segment profit in 2019. The lost segment profits in 2018 and 2019 from business interruption due to the tornado are expected to be fully offset by insurance proceeds in 2019.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Capital expenditures were primarily related to expansion of manufacturing capacity and equipment and investments in systems and software.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "The company is sensitive to several factors, including commodity prices, foreign currency exchange rates, and economic conditions. Commodity price volatility, particularly for steel, copper, and aluminum, has impacted the company and the broader HVACR industry. Additionally, foreign currency fluctuations and economic trends affecting demand are key sensitivities.",
+      "evidence": [
+        {
+          "text": "The principal raw materials used in our manufacturing processes are steel, copper and aluminum. In recent years, pricing volatility for these commodities and related components, including the impact of newly imposed tariffs on the import of certain of our raw materials and components, has impacted us and the HVACR industry in general.",
+          "section": "mda",
+          "subsection": "Business Overview"
+        },
+        {
+          "text": "Higher commodity costs and unfavorable foreign currency exchange rates impacted profits. Economic conditions influence demand trends.",
+          "section": "mda",
+          "subsection": "Liquidity and Capital Resources"
+        }
+      ],
+      "sentiment": null
+    }
+  ]
+}

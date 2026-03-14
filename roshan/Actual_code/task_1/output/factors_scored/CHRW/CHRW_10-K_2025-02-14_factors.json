@@ -1,0 +1,555 @@
+{
+  "ticker": "CHRW",
+  "form": "10-K",
+  "filing_date": "2025-02-14",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 29,
+  "factors": [
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's balance sheet appears to be strengthening as it has no financing lease obligations and long-term liabilities are primarily noncurrent taxes payable and long-term notes payable.",
+      "evidence": [
+        {
+          "text": "We have no financing lease obligations. Long-term liabilities consist primarily of noncurrent taxes payable and long-term notes payable.",
+          "section": "mda",
+          "subsection": "DISCLOSURES ABOUT CONTRACTUAL OBLIGATIONS AND COMMERCIAL CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company's balance sheet is strengthening with no financing lease obligations and manageable long-term liabilities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company is maintaining its capital expenditure as there is no mention of increases or cuts in the provided text.",
+      "evidence": [
+        {
+          "text": "As of December\u00a031, 2024, we do not have significant off-balance sheet arrangements as defined in Item\u00a0303(a)(4)(ii) of Regulation S-K.",
+          "section": "mda",
+          "subsection": "DISCLOSURES ABOUT CONTRACTUAL OBLIGATIONS AND COMMERCIAL CONTINGENCIES"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "No information indicates changes in capital expenditures, maintaining current levels.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company is exposed to potential litigation risks, particularly related to transportation and product liability claims.",
+      "evidence": [
+        {
+          "text": "We are subject to claims arising from our transportation operations... A material increase in the frequency or severity of accidents, liability claims, workers\u2019 compensation claims, or unfavorable resolutions of claims could materially and adversely affect our operating results.",
+          "section": "risk_factors",
+          "subsection": "Governmental, regulatory, and legal risk factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential litigation risks, particularly related to transportation and product liability, pose a moderate concern.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical factors, such as conflicts and trade tensions, pose risks to the company's operations and supply chain.",
+      "evidence": [
+        {
+          "text": "Our business may be subject to negative impacts of changes in political and governmental conditions... Increased public concern regarding greenhouse gas emissions by transportation carriers could harm the reputations of companies operating in the transportation and logistics industries and shift consumer demand toward more locally-sourced products and away from our services.",
+          "section": "risk_factors",
+          "subsection": "Governmental, regulatory, and legal risk factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Geopolitical factors and trade tensions pose risks to operations and supply chain stability.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The economic environment is a headwind due to potential recessions and economic downturns.",
+      "evidence": [
+        {
+          "text": "Economic recessions could have a significant, adverse impact on our business. The transportation industry historically has experienced cyclical fluctuations in financial results due to economic recessions, downturns in business cycles of our customers, interest rate fluctuations, currency fluctuations, and other economic factors beyond our control.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Economic recessions and downturns present significant headwinds to the company's financial health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company is dependent on a few large customers, posing concentration risk.",
+      "evidence": [
+        {
+          "text": "We derive a significant portion of our total revenues and adjusted gross profits from our largest customers. During 2024, our top 100 customers based on total revenue comprised approximately 34 percent of our consolidated total revenues and our top 100 customers based on adjusted gross profits comprised approximately 27 percent of our consolidated adjusted gross profits.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High dependency on a few large customers introduces concentration risk, a moderate headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "Interest rate changes could negatively impact financial position and results.",
+      "evidence": [
+        {
+          "text": "We are exposed to changes in interest rates, primarily on our short-term debt that carries floating interest rates. Interest rates are highly sensitive to many factors, including governmental monetary policies, economic conditions, and other factors beyond our control. A significant increase in interest rates could adversely impact our financial position and results of operations.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Exposure to interest rate changes could negatively impact the company's financial position.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "Free cash flow has decreased due to lower operating cash flows and higher capital expenditures.",
+      "evidence": [
+        {
+          "text": "Cash provided by operating activities decreased by 30.4% compared to 2023... Capital expenditures consisted primarily of investments in software... Cash used for financing activities included net repayments on debt.",
+          "section": "mda",
+          "subsection": "LIQUIDITY AND CAPITAL RESOURCES"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Decrease in free cash flow due to lower operating cash flows and higher capital expenditures indicates a headwind.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has engaged in divestitures and restructuring activities, including the sale of the Europe Surface Transportation business.",
+      "evidence": [
+        {
+          "text": "On July 27, 2024, we entered into an agreement to sell our Europe Surface Transportation business. The sale included the assets and liabilities of the Europe Surface Transportation business other than its proprietary technology platform... As part of our annual Step Zero Analysis performed in 2024 for all other reporting units, there were no factors identified suggesting that it was more likely than not that the fair value was less than their respective carrying value. As such, a Step One Analysis was not completed for any other reporting units and no impairments have been recorded in any period presented in the financial statements.",
+          "section": "mda",
+          "subsection": "CRITICAL ACCOUNTING ESTIMATES"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "Revenue mix shifted towards higher-margin segments, particularly ocean services, driven by increased volumes and pricing.",
+      "evidence": [
+        {
+          "text": "Our sourcing total revenue and direct costs increased, driven by higher average pricing with retail customers and increased case volume with foodservice customers.",
+          "section": "mda",
+          "subsection": "CONSOLIDATED RESULTS OF OPERATIONS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The global forwarding market, particularly ocean and air freight, is growing due to elevated demand and repositioning of air freight capacity.",
+      "evidence": [
+        {
+          "text": "The global air freight market has largely stabilized, although air freight costs remain elevated compared to the prior year. The elevated ecommerce export demand from Asia during much of 2024 resulted in the repositioning of air freight capacity to that trade lane, causing freighter capacity shortages in other trade lanes and driving up pricing in the market in certain trade lanes.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are being managed through cost optimization efforts and productivity improvements, leading to a decrease in average employee headcount.",
+      "evidence": [
+        {
+          "text": "Personnel expenses decreased 0.6 percent to $1.5 billion, primarily due to cost optimization efforts and productivity improvements, partially offset by higher variable compensation and higher restructuring charges related to workforce reductions. Average employee headcount decreased 10.3 percent.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "Operational efficiency is improving through disciplined pricing and capacity procurement, leading to better adjusted gross profits per transaction.",
+      "evidence": [
+        {
+          "text": "Despite these challenging market conditions, we were able to improve our adjusted gross profit per transaction in 2024 compared to 2023 as a result of disciplined pricing and capacity procurement efforts leading to better adjusted gross profits per transaction within our transactional portfolio.",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The supply chain is facing disruptions, particularly in global forwarding due to the Red Sea conflict and repositioning of air freight capacity.",
+      "evidence": [
+        {
+          "text": "The global forwarding market experienced significant volatility in 2024, impacted by re-routing, extended transit times, and improving demand. Most carriers avoided the Suez Canal for the majority of 2024 due to the Red Sea conflict, which increased transit times, straining global carrier capacity.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "Capacity utilization in surface transportation is low, with excess carrier capacity leading to soft market conditions.",
+      "evidence": [
+        {
+          "text": "The North America surface transportation market continued to experience excess carrier capacity relative to shipper demand throughout 2024, which resulted in an oversupplied and very competitive market.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management is cautious due to market softness but is implementing strategies to improve profitability through cost management and operational efficiency.",
+      "evidence": [
+        {
+          "text": "Despite these challenging market conditions, we were able to improve our adjusted gross profit per transaction in 2024 compared to 2023 as a result of disciplined pricing and capacity procurement efforts leading to better adjusted gross profits per transaction within our transactional portfolio.",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "Near-term risks include ongoing softness in the surface transportation market and geopolitical factors impacting global forwarding.",
+      "evidence": [
+        {
+          "text": "The global forwarding market experienced significant volatility in 2024, impacted by re-routing, extended transit times, and improving demand. Most carriers avoided the Suez Canal for the majority of 2024 due to the Red Sea conflict, which increased transit times, straining global carrier capacity. Consequently, ocean freight rates have remained elevated compared to the prior year. Uncertainty remains on how the Red Sea conflict, along with geopolitical factors and new capacity entering the market, will impact the global forwarding market in 2025.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The factor highlights significant near-term risks from market softness and geopolitical issues, which could severely impact the global forwarding market.",
+        "confidence": 0.95
+      }
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include geopolitical factors, commodity prices, and changes in demand affecting transportation costs and market dynamics.",
+      "evidence": [
+        {
+          "text": "Uncertainty remains on how the Red Sea conflict, along with geopolitical factors and new capacity entering the market, will impact the global forwarding market in 2025.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The company faces critical sensitivities to geopolitical factors and commodity prices, which pose major risks to its operations and market dynamics.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "differentiation",
+      "category": "competitive_position",
+      "summary": "The company is differentiating through its ability to add value and solve logistics challenges, maintaining a strong customer focus.",
+      "evidence": [
+        {
+          "text": "We deliver logistics like no one else. Companies around the world look to us to reimagine supply chains, advance freight technology, and solve logistics challenges \u2014 from the simple to the complex. We are grounded in our promise to deliver exceptional customer success, using our expertise, scale, and tailored solutions to help customers navigate increasingly complex global supply chains.",
+          "section": "mda",
+          "subsection": "Introduction / OVERVIEW"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "The company effectively differentiates itself through strong customer focus and innovative logistics solutions, providing a competitive edge.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "The company is exposed to significant regulatory changes, particularly in tax regulations and environmental policies, which could increase tax liabilities and affect operational costs. Additionally, other regulatory shifts, such as those impacting transportation and fuel supply, pose risks beyond the company's control.",
+      "evidence": [
+        {
+          "text": "Changes to income tax regulations in the United States and other jurisdictions where we operate may increase our tax liability... The Organization for Economic Cooperation and Development ('OECD') reached agreement among various countries to implement a minimum 15 percent tax rate on certain multinational enterprises, commonly referred to as Pillar Two.",
+          "section": "risk_factors",
+          "subsection": "Governmental, regulatory, and legal risk factors"
+        },
+        {
+          "text": "Many of these risks are beyond our control, including: changes in regulations impacting transportation; disruption in the supply or cost of fuel; reduction or deterioration in rail service; geopolitical factors that may limit the availability of certain carriers; the introduction of alternative means of transporting freight; and unanticipated changes in freight markets.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant regulatory changes, including tax and environmental policies, pose substantial risks and could increase operational costs and tax liabilities.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Volume trends show mixed performance across transportation services. While ocean and air freight volumes have increased, truckload volumes have declined due to market softness. Overall, freight volumes are subject to market conditions which could decrease, impacting growth opportunities.",
+      "evidence": [
+        {
+          "text": "Our total ocean freight volumes increased 5.5 percent while our air freight tonnage increased 17.0 percent in 2024 compared to the prior year.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        },
+        {
+          "text": "Global Forwarding total revenues and direct costs increased, driven by higher pricing and purchased transportation costs in ocean services in addition to volume increases across all global forwarding transportation services.",
+          "section": "mda",
+          "subsection": "Twelve Months Ended December 31, 2024 Compared to Twelve Months Ended December 31, 2023"
+        },
+        {
+          "text": "A reduction in overall freight volumes in the marketplace may reduce our opportunities for growth. A significant portion of our freight is comprised of transactional or spot market opportunities. The market may be impacted by supply chain disruptions or overall economic conditions.",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        },
+        {
+          "text": "Unit volumes in ocean and air freight services are growing, while truckload volumes are declining due to market softness.",
+          "section": "mda",
+          "subsection": "BUSINESS TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Volume trends show mixed performance with some growth in certain services but declines in others, indicating a balanced yet uncertain outlook.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "Environmental regulations are creating significant costs and operational challenges, particularly related to climate change and transportation emissions. These regulations impose compliance costs and transition risks, including physical risks from extreme weather and reputational risks due to shifting customer demands.",
+      "evidence": [
+        {
+          "text": "Environmental regulations are creating costs and operational constraints, particularly related to climate change and transportation emissions.",
+          "section": "risk_factors",
+          "subsection": "Governmental, regulatory, and legal risk factors"
+        },
+        {
+          "text": "Our contracted transportation providers are subject to increasingly stringent laws protecting the environment, including transitional risks relating to climate change... Future and existing environmental regulatory requirements, including evolving transportation technology, in the United States and abroad could adversely affect operations and increase operating expenses.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        },
+        {
+          "text": "We may be subject to the negative impacts of climate change, which could adversely impact our business and financial results. The potential impacts of climate change may subject us to various risks, including: physical risks such as extreme weather conditions or other types of weather events, which could disrupt our operations; compliance costs and transition risks such as increased regulation on us and on our contracted transportation providers; and reputational and strategic risks due to shifts in customer demands such as customers requiring more fuel-efficient transportation, autonomous transportation modes, or increased transparency to carbon emissions in their supply chains.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Environmental regulations impose significant costs and operational challenges, including transition and physical risks, which are detrimental to the company's operations.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company's pricing power appears to be mixed. While it has successfully raised prices, particularly in ocean services, driven by market volatility and increased demand, it also faces challenges with limited pricing power as freight rates were near the estimated cost to operate a truck for much of 2024. Additionally, there are risks related to higher carrier prices affecting adjusted gross profit margins and working capital.",
+      "evidence": [
+        {
+          "text": "Higher carrier prices may result in decreased adjusted gross profit margin and increases in working capital. Carriers can be expected to charge higher prices if market conditions warrant or to cover higher operating expenses. Our adjusted gross profits and income from operations may decrease if we are unable to increase our pricing to our customers.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        },
+        {
+          "text": "Global Forwarding total revenues and direct costs increased, driven by higher pricing and purchased transportation costs in ocean services... The higher pricing and purchased transportation costs in ocean services were driven by the volatile market conditions in 2024... which significantly impacted carrier capacity and led to increased ocean freight rates in 2024.",
+          "section": "mda",
+          "subsection": "Twelve Months Ended December 31, 2024 Compared to Twelve Months Ended December 31, 2023"
+        },
+        {
+          "text": "Transportation rates at, or near, the estimated cost to operate a truck for much of 2024.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While the company has managed to increase prices in some areas, challenges with pricing power and risks to margins suggest a mixed situation.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "The demand for transportation services is mixed, with certain segments experiencing growth, such as air freight, while others, like surface transportation, face challenges due to excess capacity and soft market conditions.",
+      "evidence": [
+        {
+          "text": "The higher pricing and purchased transportation costs in ocean services were driven by the volatile market conditions in 2024, which significantly impacted carrier capacity and led to increased ocean freight rates. Additionally, disruptions in the ocean freight market resulted in increased air freight tonnage in 2024, driven by ocean freight conversions in many trade lanes.",
+          "section": "mda",
+          "subsection": "Twelve Months Ended December 31, 2024 Compared to Twelve Months Ended December 31, 2023"
+        },
+        {
+          "text": "The North America surface transportation market continued to experience excess carrier capacity relative to shipper demand throughout 2024, which resulted in an oversupplied and very competitive market.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Demand trends are mixed across different transportation segments, with growth in some areas but challenges in others, leading to an overall neutral assessment.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The competitive environment in the transportation services industry is intensifying due to market pressures, excess carrier capacity, and increased volatility. This intensification is driven by various competitors, including traditional and non-traditional logistics companies, as well as the oversupply of carriers relative to shipper demand.",
+      "evidence": [
+        {
+          "text": "Competition in the transportation services industry is intense and broad-based. We compete against traditional and non-traditional logistics companies, including transportation providers that own equipment, third-party freight brokers, technology matching services, internet freight brokers, carriers offering logistics services, and on-demand transportation service providers.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        },
+        {
+          "text": "The North America surface transportation market continued to experience excess carrier capacity relative to shipper demand throughout 2024, which resulted in an oversupplied and very competitive market.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "The transportation services industry is facing intense competition due to excess carrier capacity and market pressures, posing a significant risk to the company.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "Overall, the margin trajectory is mixed. While there are signs of improvement in certain segments, such as higher gross margins in ocean services and air freight, there are also challenges, particularly from fluctuating fuel costs and carrier pricing pressures which may negatively impact margins.",
+      "evidence": [
+        {
+          "text": "Changing fuel costs and interruptions of fuel supplies may have an impact on our adjusted gross profit margin. In our truckload transportation business, fluctuating fuel prices may result in a decreased adjusted gross profit margin. While our different pricing arrangements with customers and contracted motor carriers make it very difficult to measure the precise impact, we believe fuel costs essentially act as a pass-through cost to our truckload business. In times of fluctuating fuel prices, our adjusted gross profit margin may also fluctuate.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        },
+        {
+          "text": "Global Forwarding adjusted gross profits increased, driven by higher adjusted gross profits per shipment and an increase in volumes in ocean services... Air freight adjusted gross profits increased due to an increase in metric tons shipped which was partially offset by lower adjusted gross profits per metric ton shipped.",
+          "section": "mda",
+          "subsection": "Twelve Months Ended December 31, 2024 Compared to Twelve Months Ended December 31, 2023"
+        },
+        {
+          "text": "Adjusted gross profit margin increased to 15.6% from 14.8%, and adjusted operating margin increased to 24.2% from 19.8%.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "While there are signs of improvement in some areas, challenges like fluctuating fuel costs and pricing pressures suggest mixed margins.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing cost optimization measures, including reducing employee headcount and amortization expenses, which have contributed to cost savings. However, expense management remains challenging due to fixed costs and rapid market changes, making it difficult to adjust staffing levels and other expenses to meet fluctuating market demands.",
+      "evidence": [
+        {
+          "text": "Expense management is challenging due to fixed costs and rapid market changes.",
+          "section": "risk_factors",
+          "subsection": "Business environment and competition risk factors"
+        },
+        {
+          "text": "We may not be able to appropriately adjust our expenses to changing market demands. In order to maintain high variability in our business model, it is necessary to adjust staffing levels to changing market demands. In periods of rapid change, it may be more difficult to match our staffing levels to our business needs. In addition, we have other expenses that are fixed for a period of time, and we may not be able to adequately adjust them in a period of rapid change in market demand.",
+          "section": "mda",
+          "subsection": "Twelve Months Ended December 31, 2024 Compared to Twelve Months Ended December 31, 2023"
+        },
+        {
+          "text": "Personnel expenses increased primarily due to increased variable compensation reflecting the improved results relative to the prior year. This increase was partially offset by cost optimization efforts, including lower average employee headcount. Other SG&A expenses decreased... following the completion of amortization of intangible assets from a prior acquisition.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        },
+        {
+          "text": "Our personnel expenses decreased 0.6 percent to $1.5 billion, primarily due to cost optimization efforts and productivity improvements, partially offset by higher variable compensation and higher restructuring charges related to workforce reductions. Average employee headcount decreased 10.3 percent.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Cost optimization efforts are struggling due to fixed costs and rapid market changes, making it difficult to manage expenses effectively.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "Organic revenue growth is mixed, with positive contributions from ocean services and negative trends in truckload services. While higher pricing and increased volumes in ocean services have driven growth, truckload services are experiencing deceleration due to lower pricing and reduced volumes.",
+      "evidence": [
+        {
+          "text": "Global Forwarding adjusted gross profits increased, driven by higher adjusted gross profits per shipment and an increase in volumes in ocean services... This compared to a market characterized by weak freight demand and excess carrier capacity in 2023.",
+          "section": "mda",
+          "subsection": "Twelve Months Ended December 31, 2024 Compared to Twelve Months Ended December 31, 2023"
+        },
+        {
+          "text": "Total revenues increased 0.7 percent to $17.7 billion, primarily driven by higher pricing and volume in our ocean services, partially offset by lower pricing and volume in our truckload services.",
+          "section": "mda",
+          "subsection": "SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Positive growth in ocean services is offset by negative trends in truckload services, resulting in mixed organic growth signals.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "Input costs, particularly transportation costs, have increased significantly due to market volatility, geopolitical factors, and elevated demand. These increases have impacted pricing strategies and resulted in challenges such as freighter capacity shortages.",
+      "evidence": [
+        {
+          "text": "The higher pricing and purchased transportation costs in ocean services were driven by the volatile market conditions in 2024... which significantly impacted carrier capacity and led to increased ocean freight rates in 2024.",
+          "section": "mda",
+          "subsection": "Twelve Months Ended December 31, 2024 Compared to Twelve Months Ended December 31, 2023"
+        },
+        {
+          "text": "Elevated ecommerce export demand from Asia during much of 2024 resulted in the repositioning of air freight capacity to that trade lane, causing freighter capacity shortages in other trade lanes and driving up pricing in the market in certain trade lanes.",
+          "section": "mda",
+          "subsection": "MARKET TRENDS"
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Input costs have risen significantly due to market volatility and geopolitical factors, leading to challenges in pricing and capacity.",
+        "confidence": 0.95
+      }
+    }
+  ]
+}

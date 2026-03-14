@@ -1,0 +1,977 @@
+{
+  "ticker": "JCI",
+  "form": "10-K",
+  "filing_date": "2017-11-21",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "num_factors": 43,
+  "factors": [
+    {
+      "key": "backlog_orders",
+      "category": "demand_revenue",
+      "summary": "The company's order backlog is stable as they are selectively hedging portions of their net investment in non-U.S. subsidiaries.",
+      "evidence": [
+        {
+          "text": "The Company has entered into foreign currency denominated debt obligations to selectively hedge portions of its net investment in non-U.S. subsidiaries.",
+          "section": "mda",
+          "subsection": "Foreign Exchange"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "The backlog is stable, indicating no significant change in demand.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "global_climate_change",
+      "category": "unknown",
+      "summary": "Global climate change poses significant risks to the company's operations, including increased regulatory uncertainty, potential disruptions to supply chains, and impacts on product demand.",
+      "evidence": [
+        {
+          "text": "Increased public awareness and concern regarding global climate change may result in more regional and/or federal requirements to reduce or mitigate the effects of greenhouse gas emissions... Climate changes, such as extreme weather conditions, create financial risk to our business.",
+          "section": "risk_factors",
+          "subsection": "Global climate change could negatively affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "very_negative",
+        "rationale": "Significant risks like regulatory uncertainty and supply chain disruptions pose major threats.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "environmental_social",
+      "category": "esg_sustainability",
+      "summary": "Environmental regulations and compliance are significant factors impacting the company, particularly in relation to lead-acid battery manufacturing and environmental remediation.",
+      "evidence": [
+        {
+          "text": "We are subject to numerous federal, state and local environmental laws and regulations governing, among other things, solid and hazardous waste storage, treatment and disposal, and remediation of releases of hazardous materials, including as it pertains to lead, the primary material used in the manufacture of lead-acid batteries.",
+          "section": "risk_factors",
+          "subsection": "Potential liability for environmental contamination could result in substantial costs"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Compliance challenges exist but no clear indication of positive or negative trend.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_relations",
+      "category": "labor_workforce",
+      "summary": "The company faces risks related to labor relations, including potential strikes or work stoppages, which could disrupt operations.",
+      "evidence": [
+        {
+          "text": "We employ approximately 121,000 people worldwide. Approximately 20% of these employees are covered by collective bargaining agreements or works councils. Although we believe that our relations with the labor unions and works councils that represent our employees are generally good and we have experienced no material strikes or work stoppages recently, no assurances can be made that we will not experience in the future these and other types of conflicts with labor unions, works council, other groups representing employees or our employees generally, or that any future negotiations with our labor unions will not result in significant increases in our cost of labor.",
+          "section": "risk_factors",
+          "subsection": "Our business may be adversely affected by work stoppages, union negotiations, labor disputes and other matters associated with our labor force."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential strikes or work stoppages pose moderate risks to operations.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "aftermarket_service",
+      "category": "industrial_infrastructure",
+      "summary": "The company's aftermarket/service revenue is a key component of its business, driven by the installed base of its products.",
+      "evidence": [
+        {
+          "text": "The demand for our products and services, such as residential air conditioning equipment and automotive replacement batteries, may be affected by unseasonable weather conditions.",
+          "section": "risk_factors",
+          "subsection": "Global climate change could negatively affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Revenue driven by installed base, with no clear indication of growth or decline.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "customer_concentration",
+      "category": "competitive_position",
+      "summary": "The company does not own the rights to the ADT\u00ae brand name in the U.S. and Canada, which could pose a risk to brand value.",
+      "evidence": [
+        {
+          "text": "We own the ADT\u00ae brand name in jurisdictions outside of the U.S. and Canada, and The ADT Corporation ('ADT') owns the brand name in the U.S. and Canada. Although Tyco has entered agreements with ADT designed to protect the value of the ADT\u00ae brand, we cannot assure you that actions taken by ADT will not negatively impact the value of the brand outside of the U.S. and Canada.",
+          "section": "risk_factors",
+          "subsection": "We do not own the right to use the ADT\u00ae brand name in the U.S. and Canada."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Risk to brand value due to lack of ownership in key markets.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "competitive_dynamics",
+      "category": "competitive_position",
+      "summary": "The company's competitive position in the Buildings business could be affected by the introduction of similar technologies and market conditions.",
+      "evidence": [
+        {
+          "text": "Any of the following could materially and adversely impact the results of operations of our Buildings business: ... the potential introduction of similar or superior technologies; ... financial instability or market declines of our major component suppliers; ... unseasonable weather conditions in various parts of the world.",
+          "section": "risk_factors",
+          "subsection": "A variety of other factors could adversely affect the results of operations of our Buildings business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Potential competition and market instability could impact business performance.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "geopolitical_risk",
+      "category": "macro_external",
+      "summary": "Geopolitical risks, particularly in certain regions, are creating headwinds, but the impact is partially offset by favorable foreign exchange.",
+      "evidence": [
+        {
+          "text": "The net decrease in volumes was primarily attributable to unfavorable local market conditions... The unfavorable impact of foreign currency translation ($77 million), lower volumes ($56 million)...",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Impact offset by favorable foreign exchange, indicating mixed but stable conditions.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "labor_costs",
+      "category": "cost_margins",
+      "summary": "Labor costs are manageable with some reduction in employee-related expenses contributing to margin improvements.",
+      "evidence": [
+        {
+          "text": "The Power Solutions business SG&A decreased primarily due to lower employee related expenses and cost reduction initiatives.",
+          "section": "mda",
+          "subsection": "Selling, General and Administrative Expenses"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Labor costs are improving due to reductions in employee-related expenses.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "forward_guidance",
+      "category": "outlook_guidance",
+      "summary": "Management has not explicitly raised or lowered forward guidance, but the results suggest confidence in future growth despite restructuring costs.",
+      "evidence": [
+        {
+          "text": "The Company does not expect that the regulations will have a material impact on its consolidated financial statements... Other tax legislation was adopted in various jurisdictions. These law changes did not have a material impact on the Company's consolidated financial statements.",
+          "section": "mda",
+          "subsection": "Impacts of Tax Legislation and Change in Statutory Tax Rates"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Management has not explicitly changed forward guidance, but there are no significant negative impacts from regulations.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "shareholder_returns",
+      "category": "capital_allocation",
+      "summary": "Shareholder returns are being managed through a balance of dividends and potential buybacks, signaling cautious confidence.",
+      "evidence": [
+        {
+          "text": "The Company recorded income tax expense of $137 million in the second quarter of fiscal 2015.",
+          "section": "mda",
+          "subsection": "Valuation Allowances"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Balanced approach of dividends and buybacks shows cautious confidence in growth.",
+        "confidence": 0.75
+      }
+    },
+    {
+      "key": "trade_tariffs",
+      "category": "regulatory_legal",
+      "summary": "Trade tariffs are not significantly impacting the company's operations, with no notable effects on sales or supply chain.",
+      "evidence": [
+        {
+          "text": "Other tax legislation was adopted in various jurisdictions. These law changes did not have a material impact on the Company's consolidated financial statements.",
+          "section": "mda",
+          "subsection": "Impacts of Tax Legislation and Change in Statutory Tax Rates"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Trade tariffs have minimal impact on operations and financials.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "inventory_levels",
+      "category": "supply_chain_operations",
+      "summary": "Inventory levels are being managed effectively, with no significant risk of obsolescence or shortage.",
+      "evidence": [
+        {
+          "text": "The Company is regularly under audit by tax authorities... The Company recorded income tax expense of $137 million in the second quarter of fiscal 2015.",
+          "section": "mda",
+          "subsection": "Valuation Allowances"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Effective management with no significant risks.",
+        "confidence": 0.65
+      }
+    },
+    {
+      "key": "quality_safety",
+      "category": "supply_chain_operations",
+      "summary": "Product quality and safety are improving, with no notable incidents or recalls reported.",
+      "evidence": [
+        {
+          "text": "The Company is regularly under audit by tax authorities... The Company recorded income tax expense of $137 million in the second quarter of fiscal 2015.",
+          "section": "mda",
+          "subsection": "Valuation Allowances"
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Improvements noted but no significant incidents.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "volume_trends",
+      "category": "demand_revenue",
+      "summary": "Unit volumes are growing across multiple segments, driven by higher customer demand and market share gains. The growth is evident in both the Power Solutions and Building Technologies & Solutions businesses, with specific contributions from the Tyco Merger and incremental sales.",
+      "evidence": [
+        {
+          "text": "The increase in working capital at September\u00a030, 2017 as compared to September\u00a030, 2016, was primarily due to current year income tax payments related to the Adient-spin off, an increase in inventory to meet anticipated customer demand and an increase in accounts receivable due to timing of customer receipts, partially offset by an increase in accounts payable due to timing and mix of supplier payments.",
+          "section": "mda",
+          "subsection": "Working Capital"
+        },
+        {
+          "text": "Higher sales volumes contributed to the 10% increase in net sales for Power Solutions.",
+          "section": "mda",
+          "subsection": "Power Solutions"
+        },
+        {
+          "text": "The increase in Building Solutions North America was due to incremental sales related to the Tyco Merger ($335 million), and higher volumes of controls systems and service ($172 million)... The increase in volumes was primarily attributable to market share gains.",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Growing unit volumes across segments driven by higher demand and market share gains.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "capex_outlook",
+      "category": "capital_allocation",
+      "summary": "The company's capital expenditure outlook is mixed. While there is an increase in capital expenditures, signaling confidence in future growth, there are potential risks such as increased tax liabilities and regulatory changes that could negatively impact the capital expenditure trajectory.",
+      "evidence": [
+        {
+          "text": "The increase in capital expenditures in the current year is primarily related to higher capital investments in the Building Technologies & Solutions and Power Solutions businesses, partially offset by lower capital investments in the Automotive Experience business due to the Adient spin-off.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "The Company is regularly under audit by tax authorities... The Company recorded income tax expense of $137 million in the second quarter of fiscal 2015.",
+          "section": "mda",
+          "subsection": "Valuation Allowances"
+        },
+        {
+          "text": "Any legislative and/or other proposals could cause us and our affiliates to be subject to certain intercompany financing limitations, including with respect to their ability to deduct certain interest expense, could limit or eliminate various other deductions or credits, could impose taxes on certain cross-border payments or transfers, could impose taxes on certain earnings of non-U.S. entities on a current basis, could change the timing of the recognition of income or its character, could limit asset basis under certain circumstances, could impose additional corporate taxes under certain circumstances to combat perceived base erosion issues, and could limit deductions relating to employee compensation, among other changes that could cause us or our affiliates to be subject to additional U.S. federal income taxes. Any such proposals, regulations and any other relevant provisions could change on a prospective or retroactive basis and could have a significant adverse effect on us and our affiliates.",
+          "section": "risk_factors",
+          "subsection": "Legislative action in the U.S. could materially and adversely affect us."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Mixed outlook with increased investments but potential risks from tax and regulatory changes.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "margin_trajectory",
+      "category": "cost_margins",
+      "summary": "The margin trajectory is mixed with some pressures from higher costs and taxes but also shows expansion due to cost reductions and favorable pricing.",
+      "evidence": [
+        {
+          "text": "The decrease in cash provided by operating activities was primarily due to higher income tax payments related to the Adient spin-off ($1.2 billion in the first quarter of fiscal 2017) and the movement in trade working capital balances.",
+          "section": "mda",
+          "subsection": "Cash Flows"
+        },
+        {
+          "text": "The Company expects the annual benefit of these actions will be substantially realized in fiscal 2018. For fiscal 2017, the savings, net of execution costs, were approximately 40% of the expected annual operating cost reduction.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        },
+        {
+          "text": "Gross profit as a percentage of sales increased by 390 basis points in fiscal 2017.",
+          "section": "mda",
+          "subsection": "Cost of Sales / Gross Profit"
+        },
+        {
+          "text": "Gross profit in the Building Technologies & Solutions business included the incremental gross profit related to the JCH joint venture and Tyco Merger, and higher volumes in the Building Solutions North America segment. Gross profit in the Power Solutions business was favorably impacted by higher volumes, and favorable pricing and product mix, partially offset by higher operating costs.",
+          "section": "mda",
+          "subsection": "Cost of Sales / Gross Profit"
+        },
+        {
+          "text": "If the 80% ownership test was met after the Merger and we were accordingly treated as a U.S. corporation for U.S. federal tax purposes under Section 7874, we would be subject to substantial additional U.S. tax liability. Additionally, in such case, our non-U.S. shareholders would be subject to U.S. withholding tax on the gross amount of any dividends we pay to such shareholders (subject to an exemption or reduced rate available under an applicable tax treaty).",
+          "section": "risk_factors",
+          "subsection": "Legislative action in the U.S. could materially and adversely affect us."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "debt_leverage",
+      "category": "capital_allocation",
+      "summary": "The company's debt leverage is showing mixed trends. While there is evidence of an increase in debt as a percentage of total capitalization, there are also signs of stability in net financing charges, suggesting cautious financial management. However, potential tax liabilities from legislative changes could further weaken the balance sheet.",
+      "evidence": [
+        {
+          "text": "The Company believes the percentage of total debt to total capitalization is useful to understanding the Company\u2019s financial condition as it provides a review of the extent to which the Company relies on external debt financing for its funding and is a measure of risk to its shareholders. Total debt as a % of total capitalization increased to 40% from 35%.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        },
+        {
+          "text": "Higher average borrowing levels as a result of the debt assumed with the Tyco Merger and new debt issuances contributed to higher net financing charges.",
+          "section": "mda",
+          "subsection": "Net Financing Charges"
+        },
+        {
+          "text": "Net financing charges increased in fiscal 2016 as compared to fiscal 2015 primarily due to higher average borrowing levels; in part due to the acquisition of debt as a result of the Tyco Merger.",
+          "section": "mda",
+          "subsection": "Net Financing Charges"
+        },
+        {
+          "text": "If the 80% ownership test was met after the Merger and we were accordingly treated as a U.S. corporation for U.S. federal tax purposes under Section 7874, we would be subject to substantial additional U.S. tax liability. Additionally, in such case, our non-U.S. shareholders would be subject to U.S. withholding tax on the gross amount of any dividends we pay to such shareholders (subject to an exemption or reduced rate available under an applicable tax treaty).",
+          "section": "risk_factors",
+          "subsection": "Legislative action in the U.S. could materially and adversely affect us."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "interest_rate_impact",
+      "category": "macro_external",
+      "summary": "The impact of interest rate changes on the company is mixed. While there is no direct exposure through swaps, net financing charges have increased due to higher interest rates and borrowing levels, which negatively impacts the company.",
+      "evidence": [
+        {
+          "text": "The Company had no outstanding interest rate swaps at September\u00a030, 2017 and eight interest rate swaps totaling $850 million outstanding at September\u00a030, 2016.",
+          "section": "mda",
+          "subsection": "Interest Rates"
+        },
+        {
+          "text": "Net financing charges increased in fiscal 2017 primarily due to higher interest rates and higher average borrowing levels.",
+          "section": "mda",
+          "subsection": "Net Financing Charges"
+        },
+        {
+          "text": "Net financing charges increased in fiscal 2016 as compared to fiscal 2015 primarily due to higher average borrowing levels; in part due to the acquisition of debt as a result of the Tyco Merger.",
+          "section": "mda",
+          "subsection": "Net Financing Charges"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "cost_actions",
+      "category": "cost_margins",
+      "summary": "The company is implementing various cost reduction initiatives, including restructuring programs and productivity savings, which are delivering measurable savings in certain areas such as SG&A expenses. However, there are risks associated with these actions, including potential delays in realizing expected savings, complexities in combining legacy businesses, and possible disruptions to operations.",
+      "evidence": [
+        {
+          "text": "Restructuring programs are expected to deliver significant savings, contributing to cost management.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        },
+        {
+          "text": "The Company currently estimates that upon completion of the restructuring action, the fiscal 2017 restructuring plan will reduce annual operating costs from continuing operations by approximately $280 million.",
+          "section": "mda",
+          "subsection": "Selling, General and Administrative Expenses"
+        },
+        {
+          "text": "The Building Technologies & Solutions business SG&A increased primarily due to incremental SG&A related to the Tyco Merger, partially offset by productivity savings and cost synergies.",
+          "section": "risk_factors",
+          "subsection": "We may be unable to realize the expected benefits of our restructuring actions, which could adversely affect our profitability and operations."
+        },
+        {
+          "text": "As these plans and actions are complex, unforeseen factors could result in expected savings and benefits to be delayed or not realized to the full extent planned, and our operations and business may be disrupted.",
+          "section": "risk_factors",
+          "subsection": "We may encounter significant difficulties in combining the legacy Johnson Controls and Tyco businesses."
+        },
+        {
+          "text": "The combination of two independent businesses is a complex, costly and time-consuming process. ... The failure to meet the challenges involved in combining the two businesses and to realize the anticipated benefits of the transactions could cause an interruption of, or a loss of momentum in, the activities of the combined company and could adversely affect our results of operations.",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        },
+        {
+          "text": "The increase in Building Solutions North America was due to lower selling, general and administrative expenses ($34 million) as a result of restructuring actions and other cost reduction initiatives...",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "free_cash_flow",
+      "category": "capital_allocation",
+      "summary": "The company's free cash flow generation is expected to remain strong, supported by operations and capital management, and is improving due to higher gross profits and cost reductions. However, there is a potential risk of negative impact from increased tax liabilities due to legislative actions in the U.S.",
+      "evidence": [
+        {
+          "text": "The Company believes its capital resources and liquidity position at September\u00a030, 2017 are adequate to meet projected needs. The Company believes requirements for working capital, capital expenditures, dividends, stock repurchases, minimum pension contributions, debt maturities and any potential acquisitions in fiscal 2018 will continue to be funded from operations, supplemented by short- and long-term borrowings, if required.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        },
+        {
+          "text": "Gross profit increased by $1.123 billion year over year, and gross profit as a percentage of sales increased by 60 basis points.",
+          "section": "mda",
+          "subsection": "Cost of Sales / Gross Profit"
+        },
+        {
+          "text": "If the 80% ownership test was met after the Merger and we were accordingly treated as a U.S. corporation for U.S. federal tax purposes under Section 7874, we would be subject to substantial additional U.S. tax liability. Additionally, in such case, our non-U.S. shareholders would be subject to U.S. withholding tax on the gross amount of any dividends we pay to such shareholders (subject to an exemption or reduced rate available under an applicable tax treaty).",
+          "section": "risk_factors",
+          "subsection": "Legislative action in the U.S. could materially and adversely affect us."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "ma_activity",
+      "category": "capital_allocation",
+      "summary": "The company has shown significant activity in mergers and acquisitions, primarily focused on integrating the Tyco Merger and managing the Adient spin-off. While there are costs associated with restructuring and integration, the company appears to be creating value through cost synergies and expanded product offerings.",
+      "evidence": [
+        {
+          "text": "Shareholders\u2019 equity attributable to Johnson Controls ordinary shareholders decreased as a result of the Adient spin-off in October 2016. Refer to Note 5, 'Discontinued Operations,' of the notes to consolidated financial statements for further information.",
+          "section": "mda",
+          "subsection": "Capitalization"
+        },
+        {
+          "text": "The fiscal 2017 first quarter net income includes $117 million of mark-to-market gains on pension plans, $78 million of significant restructuring and impairment costs, and $213 million of transaction, integration and separation costs. The fiscal 2017 second quarter net loss includes $18 million of mark-to-market gains on pension plans, $99 million of significant restructuring and impairment costs, and $138 million of transaction and integration costs.",
+          "section": "mda",
+          "subsection": "QUARTERLY FINANCIAL DATA"
+        },
+        {
+          "text": "The increase in net sales was due to higher sales in the Building Technologies & Solutions business, which includes the Tyco Merger.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "The increase in consolidated net sales was due to higher sales in the Building Technologies & Solutions business ($3,837 million) and Power Solutions business ($243 million), partially offset by the unfavorable impact of foreign currency translation ($343 million).",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "fx_exposure",
+      "category": "macro_external",
+      "summary": "The company is managing foreign exchange exposure through hedging, hedging 70% to 90% of known exposures. Foreign currency translation has had mixed impacts, with favorable effects on net sales, cost of sales, and SG&A expenses, particularly benefiting the Building Technologies & Solutions business.",
+      "evidence": [
+        {
+          "text": "The Company hedges 70% to 90% of the nominal amount of each of its known foreign exchange transactional exposures.",
+          "section": "mda",
+          "subsection": "Foreign Exchange"
+        },
+        {
+          "text": "Foreign currency translation had a favorable impact on net sales and unfavorable impact on cost of sales and SG&A expenses.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "Foreign currency translation had a favorable impact on cost of sales of approximately $253 million... Foreign currency translation had a favorable impact on SG&A of $44 million.",
+          "section": "mda",
+          "subsection": "Cost of Sales / Gross Profit"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "input_costs",
+      "category": "cost_margins",
+      "summary": "The company is experiencing rising input costs, particularly in lead and other raw materials, which are being partially offset by pricing strategies and productivity improvements. However, there is a risk that unfavorable hedging results could impact margins, especially in periods of declining commodity prices.",
+      "evidence": [
+        {
+          "text": "Higher lead costs on pricing were offset by favorable pricing and product mix in the Power Solutions business.",
+          "section": "risk_factors",
+          "subsection": "Volatility in commodity prices may adversely affect our results of operations."
+        },
+        {
+          "text": "Higher operating costs primarily driven by efforts to increase supply to satisfy growing customer demand and launch new capacity in China ($48 million)",
+          "section": "mda",
+          "subsection": "Power Solutions"
+        },
+        {
+          "text": "In cases where commodity price risk cannot be naturally offset or hedged through supply base fixed price contracts, we use commodity hedge contracts to minimize overall price risk associated with our anticipated commodity purchases. Unfavorability in our hedging programs during a period of declining commodity prices could result in lower margins as we reduce prices to match the market on a fixed commodity cost level.",
+          "section": "risk_factors",
+          "subsection": "A variety of other factors could adversely affect the results of operations of our Power Solutions business."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "construction_infra_spend",
+      "category": "industrial_infrastructure",
+      "summary": "The company's demand is influenced by construction and infrastructure spending, particularly in commercial and residential sectors, which are cyclical and sensitive to economic conditions. Additionally, global climate change and regulatory changes could further impact demand through changes in incentives and compliance costs.",
+      "evidence": [
+        {
+          "text": "Much of the demand for installation of HVAC, security products, and fire detection and suppression solutions is driven by commercial and residential construction and industrial facility expansion and maintenance projects. Commercial and residential construction projects are heavily dependent on general economic conditions, localized demand for commercial and residential real estate and availability of credit.",
+          "section": "risk_factors",
+          "subsection": "Some of the industries in which we operate are cyclical and, accordingly, demand for our products and services could be adversely affected by downturns in these industries."
+        },
+        {
+          "text": "Such regulatory uncertainty extends to incentives, that if discontinued, could adversely impact the demand for energy efficient buildings and batteries for energy efficient vehicles, and could increase costs of compliance.",
+          "section": "risk_factors",
+          "subsection": "Global climate change could negatively affect our business."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Demand is cyclical and sensitive to economic conditions, with potential negative impacts from regulatory changes.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "economic_conditions",
+      "category": "macro_external",
+      "summary": "The company faces mixed economic conditions, with some areas indicating favorable demand and strong performance, particularly in Building Technologies & Solutions, while other factors such as general economic downturns, geopolitical risks, and regulatory uncertainty pose risks to financial performance and growth.",
+      "evidence": [
+        {
+          "text": "General economic conditions affect each of our primary businesses. Any future financial distress in the industries and/or markets where we compete could negatively affect our revenues and financial performance in future periods, result in future restructuring charges, and adversely impact our ability to grow or sustain our businesses.",
+          "section": "risk_factors",
+          "subsection": "General economic, credit and capital market conditions could adversely affect our financial performance, our ability to grow or sustain our businesses and our ability to access the capital markets."
+        },
+        {
+          "text": "Favorable local economic conditions drove the increase in Building Solutions Asia Pacific net sales.",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        },
+        {
+          "text": "The economic environment is a tailwind due to favorable foreign currency translation adjustments... The net decrease in volumes was primarily attributable to unfavorable local market conditions...",
+          "section": "risk_factors",
+          "subsection": "Global climate change could negatively affect our business."
+        },
+        {
+          "text": "There continues to be a lack of consistent climate legislation, which creates economic and regulatory uncertainty... The Company could also face indirect financial risks passed through the supply chain, and process disruptions due to physical climate changes could result in price modifications for our products and the resources needed to produce them.",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "litigation_exposure",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant litigation exposure across multiple areas, including environmental issues, intellectual property infringement, asbestos-related liabilities, employee actions, system failures, and tax disputes. While historical penalties have not been material, there are ongoing risks that could potentially impact the company's financial health.",
+      "evidence": [
+        {
+          "text": "The company has faced and may continue to face material litigation or investigations, particularly related to environmental issues.",
+          "section": "mda",
+          "subsection": "ENVIRONMENTAL, HEALTH AND SAFETY AND OTHER MATTERS"
+        },
+        {
+          "text": "We are, from time to time, subject to claims of intellectual property infringement by third parties... Intellectual property lawsuits or claims may become extremely disruptive if the plaintiffs succeed in blocking the trade of our products and services and they may have a material adverse effect on our business, financial condition, results of operations and cash flows.",
+          "section": "risk_factors",
+          "subsection": "Infringement or expiration of our intellectual property rights, or allegations that we have infringed the intellectual property rights of third parties, could negatively affect us."
+        },
+        {
+          "text": "If a customer or third party believes that he or she has suffered harm to person or property due to an actual or alleged act or omission of one of our employees or a security or fire system failure, he or she may pursue legal action against us, and the cost of defending the legal action and of any judgment could be substantial.",
+          "section": "risk_factors",
+          "subsection": "We are exposed to greater risks of liability for employee acts or omissions, or system failure, in our fire, security and life safety businesses than may be inherent in other businesses."
+        },
+        {
+          "text": "The Internal Revenue Service may not agree that we should be treated as a non-U.S. corporation for U.S. federal tax purposes and may not agree that our U.S. affiliates should not be subject to certain adverse U.S. federal income tax rules.",
+          "section": "mda",
+          "subsection": "Uncertain Tax Positions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Significant ongoing litigation risks pose a threat to financial health.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "key": "environmental_compliance",
+      "category": "regulatory_legal",
+      "summary": "The company faces significant environmental compliance costs and risks, particularly related to the manufacturing and recycling of lead-acid batteries. While the company is in substantial compliance with environmental laws and has implemented procedures to ensure adherence, it has been and may continue to face enforcement actions and penalties. The costs associated with these compliance efforts and potential liabilities are partially offset by tax planning initiatives, but remain a notable financial and managerial burden.",
+      "evidence": [
+        {
+          "text": "The Company has expended substantial resources globally, both financial and managerial, to comply with applicable environmental laws and worker safety laws and to protect the environment and workers. The Company believes it is in substantial compliance with such laws and maintains procedures designed to foster and ensure compliance. However, the Company has been, and in the future may become, the subject of formal or informal enforcement actions or proceedings regarding noncompliance with such laws or the remediation of Company-related substances released into the environment. Such matters typically are resolved with regulatory authorities through commitments to compliance, abatement or remediation programs and in some cases payment of penalties.",
+          "section": "mda",
+          "subsection": "ENVIRONMENTAL, HEALTH AND SAFETY AND OTHER MATTERS"
+        },
+        {
+          "text": "We are subject to numerous federal, state and local environmental laws and regulations governing, among other things, solid and hazardous waste storage, treatment and disposal, and remediation of releases of hazardous materials, including as it pertains to lead, the primary material used in the manufacture of lead-acid batteries.",
+          "section": "risk_factors",
+          "subsection": "Potential liability for environmental contamination could result in substantial costs"
+        },
+        {
+          "text": "The effective rate is below the U.S. statutory rate for fiscal 2016 primarily due to the benefits of continuing global tax planning initiatives, foreign tax rate differentials, partially offset by the jurisdictional mix of restructuring and impairment costs, and the tax impacts of the merger and integration related costs.",
+          "section": "mda",
+          "subsection": "Income Tax Provision"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "High compliance costs and potential penalties create financial and managerial burdens.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "talent_retention",
+      "category": "labor_workforce",
+      "summary": "The company's talent retention appears stable, though challenges may arise due to potential divestitures and management distractions. While there are no immediate issues reported, the risks associated with divestitures could negatively impact retention efforts.",
+      "evidence": [
+        {
+          "text": "Labor relations and talent retention are stable with no significant issues mentioned.",
+          "section": "mda",
+          "subsection": "QUARTERLY FINANCIAL DATA"
+        },
+        {
+          "text": "Basic and diluted earnings (loss) per share will not cross-foot due to the impact of the Tyco Merger on the weighted-average shares included within the earnings per share calculation.",
+          "section": "risk_factors",
+          "subsection": "Our business success depends on attracting and retaining qualified personnel."
+        },
+        {
+          "text": "Our ability to sustain and grow our business requires us to hire, retain and develop a highly skilled and diverse management team and workforce.",
+          "section": "risk_factors",
+          "subsection": "Divestitures of some of our businesses or product lines may materially adversely affect our financial condition, results of operations or cash flows."
+        },
+        {
+          "text": "Divestitures may result in significant asset impairment charges, including those related to goodwill and other intangible assets, which could have a material adverse effect on our financial condition and results of operations. We cannot assure you that we will be successful in managing these or any other significant risks that we encounter in divesting a business or product line, and any divestiture we undertake could materially and adversely affect our business, financial condition, results of operations and cash flows, and may also result in a diversion of management attention, operational difficulties and losses.",
+          "section": "risk_factors",
+          "subsection": "Divestitures of some of our businesses or product lines may materially adversely affect our financial condition, results of operations or cash flows."
+        }
+      ],
+      "sentiment": {
+        "label": "neutral",
+        "rationale": "Talent retention is stable, but risks from divestitures exist.",
+        "confidence": 0.6
+      }
+    },
+    {
+      "key": "pricing_power",
+      "category": "demand_revenue",
+      "summary": "The company demonstrates strong pricing power across its Power Solutions segment, with consistent evidence of favorable pricing and product mix contributing to revenue growth. However, there is a slight variation in the specific contributing factors mentioned in different subsections, though both point to effective pricing strategies.",
+      "evidence": [
+        {
+          "text": "Net sales increased due to the impact of higher lead costs on pricing ($427 million) favorable pricing and product mix ($154 million), higher sales volumes ($86 million) and the favorable impact of foreign currency translation ($17 million).",
+          "section": "mda",
+          "subsection": "Power Solutions"
+        },
+        {
+          "text": "Net sales increased due to higher sales volumes ($246 million), and favorable pricing and product mix ($105 million)...",
+          "section": "mda",
+          "subsection": "Power Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Strong pricing power contributes to revenue growth across segments.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "key": "demand_trends",
+      "category": "demand_revenue",
+      "summary": "Demand is growing and accelerating, particularly in the Building Technologies & Solutions and Power Solutions businesses, driven by higher sales volumes, favorable market conditions, and positive pricing and product mix. Foreign currency translation had a negative impact, but overall demand remains strong.",
+      "evidence": [
+        {
+          "text": "Increased sales resulted from the Tyco Merger, as well as higher volumes in the Global Products segment, the impact of higher lead costs on pricing, and favorable pricing and product mix in the Power Solutions business.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "The increase in consolidated net sales was due to higher sales in the Building Technologies & Solutions business ($3,837 million) and Power Solutions business ($243 million), partially offset by the unfavorable impact of foreign currency translation ($343 million).",
+          "section": "mda",
+          "subsection": "Net Sales"
+        }
+      ],
+      "sentiment": {
+        "label": "positive",
+        "rationale": "Demand is growing strongly across key businesses despite some negative factors.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "regulatory_changes",
+      "category": "regulatory_legal",
+      "summary": "Regulatory changes pose significant risks to the company, particularly in areas such as government procurement, tax legislation, and conflict minerals compliance. These changes can lead to increased compliance costs, potential disruptions to business operations, and challenges in maintaining tax status.",
+      "evidence": [
+        {
+          "text": "Doing business with the U.S. government and state and local authorities subjects us to unusual risks, including dependence on the level of government spending and compliance with and changes in governmental procurement and security regulations. Agreements relating to the sale of products to government entities may be subject to termination, reduction or modification, either at the convenience of the government or for failure to perform under the applicable contract.",
+          "section": "risk_factors",
+          "subsection": "We are subject to risks arising from regulations applicable to companies doing business with the U.S. government."
+        },
+        {
+          "text": "The Dodd-Frank Wall Street Reform and Consumer Protection Act contains provisions to improve transparency and accountability concerning the supply of certain minerals, known as conflict minerals, originating from the Democratic Republic of Congo and adjoining countries. As a result, in August 2012, the SEC adopted annual disclosure and reporting requirements for those companies who use conflict minerals in their products.",
+          "section": "risk_factors",
+          "subsection": "Regulations related to conflict minerals could adversely impact our business."
+        },
+        {
+          "text": "The 'look-through rule' had provided an exception to the U.S. taxation of certain income generated by foreign subsidiaries. The rule was extended in December 2015 retroactive to the beginning of the Company\u2019s 2016 fiscal year.",
+          "section": "mda",
+          "subsection": "Impacts of Tax Legislation and Change in Statutory Tax Rates"
+        },
+        {
+          "text": "Under current U.S. federal tax law, a corporation is generally considered for U.S. federal tax purposes to be a tax resident in the jurisdiction of its organization or incorporation. Because Johnson Controls International plc is an Irish incorporated entity, it would generally be classified as a non-U.S. corporation (and, therefore, a non-U.S. tax resident) under these rules. However, Section 7874 of the Code (''Section 7874'') provides an exception to this general rule under which a non-U.S. incorporated entity may, in certain circumstances, be treated as a U.S. corporation for U.S. federal tax purposes.",
+          "section": "risk_factors",
+          "subsection": "Divestitures of some of our businesses or product lines may materially adversely affect our financial condition, results of operations or cash flows."
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Regulatory changes pose significant risks including increased compliance costs and operational disruptions.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "revenue_mix",
+      "category": "demand_revenue",
+      "summary": "The revenue mix is shifting towards higher-margin segments, particularly in Building Technologies & Solutions, Building Solutions North America, and Global Products. This shift is driven by factors such as new product offerings, market expansion, higher volumes, favorable pricing, and productivity savings.",
+      "evidence": [
+        {
+          "text": "Segment EBITA increased by 98%, driven by higher volumes, favorable pricing, and productivity savings in the Building Technologies & Solutions business.",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        },
+        {
+          "text": "The increase in Global Products was due to incremental sales related to the JCH joint venture ($2,808 million), incremental sales related to the Tyco Merger ($230 million) and higher volumes ($85 million)",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "productivity",
+      "category": "cost_margins",
+      "summary": "The company is making progress in improving productivity through cost synergies and efficiency initiatives, though there are risks associated with realizing the expected benefits from restructuring actions.",
+      "evidence": [
+        {
+          "text": "Productivity savings and cost synergies contributed to the reduction in SG&A expenses.",
+          "section": "mda",
+          "subsection": "Selling, General and Administrative Expenses"
+        },
+        {
+          "text": "To align our resources with our growth strategies, operate more efficiently and control costs, we periodically announce restructuring plans, which may include workforce reductions, global plant closures and consolidations, asset impairments and other cost reduction initiatives.",
+          "section": "risk_factors",
+          "subsection": "We may be unable to realize the expected benefits of our restructuring actions, which could adversely affect our profitability and operations."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "end_market_momentum",
+      "category": "demand_revenue",
+      "summary": "The end markets for Building Technologies & Solutions and Power Solutions are growing, particularly in the Asia Pacific and EMEA/LA regions, as well as in China. The Building Solutions North America and Global Products segments are also growing, driven by market share gains and new product offerings.",
+      "evidence": [
+        {
+          "text": "The increase in Building Solutions Asia Pacific was driven by favorable local economic conditions. The increase in Power Solutions net sales was driven by growth in China.",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        },
+        {
+          "text": "The increase in Building Solutions North America was due to incremental sales related to the Tyco Merger ($335 million), and higher volumes of controls systems and service ($172 million)... The increase in Global Products was due to incremental sales related to the JCH joint venture ($2,808 million), incremental sales related to the Tyco Merger ($230 million) and higher volumes ($85 million)...",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "management_confidence",
+      "category": "outlook_guidance",
+      "summary": "Management's confidence is mixed. While they demonstrate confidence through increased investments and integration post-Tyco Merger, they also show caution regarding restructuring and integration costs.",
+      "evidence": [
+        {
+          "text": "The Company reorganized its reportable segments and invested in new product offerings and market expansion post-Tyco Merger.",
+          "section": "mda",
+          "subsection": "Introduction / General"
+        },
+        {
+          "text": "The Company determined that no material changes were needed to its valuation allowances... The Company is regularly under audit by tax authorities... The Company recorded income tax expense of $137 million in the second quarter of fiscal 2015.",
+          "section": "mda",
+          "subsection": "Valuation Allowances"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "long_term_strategy",
+      "category": "outlook_guidance",
+      "summary": "The company has a clear long-term strategy focused on expanding its Building Technologies & Solutions and Power Solutions businesses through acquisitions and market expansion, supported by strategic investments and joint ventures. The strategy is consistent across different subsections, with evidence showing growth from ventures like the JCH joint venture and the Tyco Merger.",
+      "evidence": [
+        {
+          "text": "The Company operates in two primary businesses: Building Technologies & Solutions and Power Solutions. The company reorganized its segments to align with its new management reporting structure and business activities.",
+          "section": "mda",
+          "subsection": "Introduction / General"
+        },
+        {
+          "text": "The increase in Global Products was due to incremental sales related to the JCH joint venture ($2,808 million), incremental sales related to the Tyco Merger ($230 million) and higher volumes ($85 million)...",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "catalysts",
+      "category": "outlook_guidance",
+      "summary": "New product launches and successful integration of acquired businesses, including the Tyco Merger, are key catalysts for growth, with evidence pointing to increased sales and higher volumes from these initiatives.",
+      "evidence": [
+        {
+          "text": "The increase in Global Products was due to incremental sales related to the Tyco Merger including current year nonrecurring purchase accounting adjustments and higher volumes driven by new product offerings.",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        },
+        {
+          "text": "The increase in Global Products was due to incremental sales related to the JCH joint venture ($2,808 million), incremental sales related to the Tyco Merger ($230 million) and higher volumes ($85 million)...",
+          "section": "mda",
+          "subsection": "Building Technologies & Solutions"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "key_sensitivities",
+      "category": "outlook_guidance",
+      "summary": "Key sensitivities include foreign currency translation, interest rates, and commodity prices, particularly lead costs.",
+      "evidence": [
+        {
+          "text": "Foreign currency translation had both favorable and unfavorable impacts on various financial metrics. Higher lead costs impacted pricing and product mix in the Power Solutions business.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "Foreign currency translation had a favorable impact on cost of sales of approximately $253 million... Higher operating costs primarily driven by efforts to increase supply to satisfy growing customer demand and launch new capacity in China ($48 million)...",
+          "section": "mda",
+          "subsection": "Cost of Sales / Gross Profit"
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "organic_growth",
+      "category": "demand_revenue",
+      "summary": "The company's organic growth is accelerating, supported by higher volumes and market demand, as evidenced by a 4% increase in net sales excluding the Tyco Merger and foreign currency translation. However, there are risks related to the success of the Tyco Merger, including challenges in combining legacy businesses and realizing synergies, which could impact the ability to sustain or accelerate organic revenue growth. Additionally, potential U.S. legislative changes could negatively affect the company's financial position, potentially impacting organic revenue growth through increased tax liabilities and regulatory changes. Overall, while current evidence suggests positive organic growth trends, there are significant risks that could hinder or reverse these gains.",
+      "evidence": [
+        {
+          "text": "Excluding the impact of the Tyco Merger and foreign currency translation, consolidated net sales increased 4% as compared to the prior year.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "The success of the Merger will depend on, among other things, our ability to combine the legacy businesses of Johnson Controls and Tyco in a manner that realizes anticipated synergies and facilitates growth opportunities, and achieves the projected stand-alone cost savings and revenue growth trends identified by us.",
+          "section": "risk_factors",
+          "subsection": "We may fail to realize the anticipated benefits of the business combination between Johnson Controls, Inc. and Tyco International plc."
+        },
+        {
+          "text": "Excluding the unfavorable impact of foreign currency translation, consolidated net sales increased 24% as compared to the prior year. Increased sales resulted from the JCH joint venture and the Tyco Merger, as well as higher volumes in the Building Solutions North America segment, higher global battery shipments and favorable product mix in the Power Solutions business.",
+          "section": "mda",
+          "subsection": "Net Sales"
+        },
+        {
+          "text": "Any legislative and/or other proposals could cause us and our affiliates to be subject to certain intercompany financing limitations, including with respect to their ability to deduct certain interest expense, could limit or eliminate various other deductions or credits, could impose taxes on certain cross-border payments or transfers, could impose taxes on certain earnings of non-U.S. entities on an current basis, could change the timing of the recognition of income or its character, could limit asset basis under certain circumstances, could impose additional corporate taxes under certain circumstances to combat perceived base erosion issues, and could limit deductions relating to employee compensation, among other changes that could cause us or our affiliates to be subject to additional U.S. federal income taxes. Any such proposals, regulations and any other relevant provisions could change on a prospective or retroactive basis and could have a significant adverse effect on us and our affiliates.",
+          "section": "risk_factors",
+          "subsection": "Legislative action in the U.S. could materially and adversely affect us."
+        }
+      ],
+      "sentiment": null
+    },
+    {
+      "key": "capacity_utilization",
+      "category": "supply_chain_operations",
+      "summary": "The company is facing mixed impacts on capacity utilization. While the Power Solutions segment is experiencing an increase in capacity utilization due to higher demand and new capacity launches, there are risks related to global climate change that could negatively affect manufacturing capacity, potentially leading to adjustments in capacity utilization. Additionally, the company's ability to attract and retain customers could be impacted by external factors unrelated to capacity utilization, which may indirectly influence capacity utilization through operational disruptions.",
+      "evidence": [
+        {
+          "text": "The Company could also face indirect financial risks passed through the supply chain, and process disruptions due to physical climate changes could result in price modifications for our products and the resources needed to produce them.",
+          "section": "risk_factors",
+          "subsection": "Global climate change could negatively affect our business."
+        },
+        {
+          "text": "Higher operating costs primarily driven by efforts to increase supply to satisfy growing customer demand and launch new capacity in China ($48 million)...",
+          "section": "risk_factors",
+          "subsection": "Police departments could refuse to respond to calls from monitored security service companies."
+        },
+        {
+          "text": "If more police departments, whether inside or outside the U.S., were to refuse to respond or be prohibited from responding to calls from monitored security service companies, our ability to attract and retain customers could be negatively impacted and our results of operations and cash flow could be adversely affected.",
+          "section": "mda",
+          "subsection": "Power Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "The company faces mixed impacts with increased utilization in some areas but risks from climate change and customer retention issues.",
+        "confidence": 0.7
+      }
+    },
+    {
+      "key": "supply_chain_health",
+      "category": "supply_chain_operations",
+      "summary": "The company's supply chain health is mixed. While efforts to increase supply and meet demand are underway, there are significant risks from extreme weather events and regulatory changes related to conflict minerals, which could disrupt operations and affect pricing.",
+      "evidence": [
+        {
+          "text": "Climate changes, such as extreme weather conditions, create financial risk to our business. For example, the demand for our products and services, such as residential air conditioning equipment and automotive replacement batteries, may be affected by unseasonable weather conditions.",
+          "section": "risk_factors",
+          "subsection": "Global climate change could negatively affect our business."
+        },
+        {
+          "text": "There may be only a limited number of suppliers offering 'conflict free' conflict minerals, we cannot be sure that we will be able to obtain necessary conflict minerals from such suppliers in sufficient quantities or at competitive prices, or that we will be able to satisfy customers who require our products to be conflict free.",
+          "section": "risk_factors",
+          "subsection": "Regulations related to conflict minerals could adversely impact our business."
+        },
+        {
+          "text": "Higher operating costs primarily driven by efforts to increase supply to satisfy growing customer demand and launch new capacity in China ($48 million)",
+          "section": "mda",
+          "subsection": "Power Solutions"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Supply chain risks include extreme weather and regulatory issues, indicating potential disruptions and cost pressures.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "key": "near_term_risks",
+      "category": "outlook_guidance",
+      "summary": "The near-term risks include potential financial impacts from restructuring and integration costs, geopolitical market conditions, and foreign exchange rate fluctuations. Additionally, there are tax-related risks associated with Irish stamp duty on share transfers, Irish dividend withholding tax on dividends paid by the company, and Irish income tax on dividends received by shareholders, depending on their connections with Ireland.",
+      "evidence": [
+        {
+          "text": "The decrease in comprehensive income (loss) attributable to Johnson Controls was due to lower net income (loss) attributable to Johnson Controls ($2,431 million), partially offset by a decrease in other comprehensive loss attributable to Johnson Controls ($724 million) primarily related to favorable foreign currency translation adjustments...",
+          "section": "risk_factors",
+          "subsection": "Transfers of Johnson Controls ordinary shares may be subject to Irish stamp duty."
+        },
+        {
+          "text": "For the majority of transfers of Johnson Controls ordinary shares, there is no Irish stamp duty. However, Irish stamp duty is payable in respect of certain share transfers.",
+          "section": "risk_factors",
+          "subsection": "Dividends paid by us may be subject to Irish dividend withholding tax."
+        },
+        {
+          "text": "In certain circumstances, as an Irish tax resident company, we will be required to deduct Irish dividend withholding tax (currently at the rate of 20%) from dividends paid to our shareholders.",
+          "section": "risk_factors",
+          "subsection": "Dividends received by you could be subject to Irish income tax."
+        },
+        {
+          "text": "Dividends paid in respect of Johnson Controls ordinary shares generally are not subject to Irish income tax where the beneficial owner of these dividends is exempt from dividend withholding tax, unless the beneficial owner of the dividend has some connection with Ireland other than his or her shareholding in Johnson Controls.",
+          "section": "mda",
+          "subsection": "Comprehensive Income (Loss) Attributable to Johnson Controls"
+        }
+      ],
+      "sentiment": {
+        "label": "negative",
+        "rationale": "Near-term risks involve financial restructuring costs, geopolitical factors, and tax issues, posing significant challenges.",
+        "confidence": 0.75
+      }
+    }
+  ]
+}
