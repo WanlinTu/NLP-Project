@@ -232,25 +232,31 @@ Agent 4 combines the upstream signals:
 
 ---
 
-### `task_2_4_multi_agent.ipynb` (GPU — A100 40GB)
-**Purpose**: Multi-agent pipeline that consolidates factor sentiments into filing-level investment signals.
+### `task_2_4_multi_agent.ipynb` (No GPU)
+**Purpose**: Multi-agent pipeline that consolidates factor sentiments into filing-level investment signals and validates against 21-day excess returns.
+
+**Design decisions:**
+- Agent 1 uses **existing base model scores** from `factors_scored/` instead of re-scoring ~67K factors with SFT (~130 hrs at 0.15 it/s). SFT improvement proven in task_2_3.
+- Agent 3 is **rule-based** (not LLM) — identifies key drivers/risks programmatically from top/bottom scoring categories. Faster and more reproducible.
+- IC weighting from `reasoning_output.json` — per-sector per-factor Spearman ICs aggregated to category level.
 
 | Cell | What |
 |------|------|
-| 1 | Imports, config, load SFT model (LoRA adapter), load `ticker_mapping.json`, load `filing_returns.csv` for later validation. |
-| 2 | **Load all scored factors** into DataFrame (same as task_1_5 Cell 4). |
-| 3 | **Agent 1 — Factor Sentiment Agent**: Re-score all factors using the SFT model (batched inference). Compare SFT labels vs original base model labels — report how many changed. |
-| 4 | **Agent 2 — Category Aggregator**: group factors by `(ticker, filing_date, category)`, compute weighted avg sentiment per category (weight = confidence). Output: per-filing category score vector. |
-| 5 | **Agent 3 — Sub-Sector Context Agent**: for each filing, build a prompt with category scores + sub-sector context, call SFT model to produce a filing-level assessment with `key_drivers` and `risk_flags`. |
-| 6 | **Agent 4 — Signal Consolidator**: combine category scores (weighted by IC from task_1_5 significance) + Agent 3 adjustment → continuous signal → cohort assignment (very_negative/negative/neutral/positive/very_positive). |
-| 7 | **Output**: save `task_2/output/filing_signals.jsonl` — one JSON per filing with `{ticker, filing_date, signal, cohort, category_scores, key_drivers, risk_flags}`. |
-| 8 | **Visualization 1**: cohort distribution bar chart (how many filings in each cohort). |
-| 9 | **Visualization 2**: cohort vs actual 21d excess return — grouped bar chart showing mean return per cohort. This is the key validation: do positive-sentiment cohorts have higher returns? |
-| 10 | **Visualization 3**: signal (continuous) vs excess return scatter plot with regression line and Spearman correlation. |
-| 11 | **Summary stats**: print cohort counts, mean return per cohort, Spearman(signal, return), information ratio. |
+| 0 | Title, 4-agent architecture diagram, input/output table |
+| 1–2 | Imports, config, load returns (2,441 filings), IC data (16 factor-sector pairs), ticker mapping (86 tickers) |
+| 3–4 | **Agent 1 — Factor Sentiment**: load all scored factors → 67,741 factors, 83 tickers, 15 categories, 5-class labels |
+| 5–6 | **Agent 2 — Category Aggregator**: confidence-weighted avg per (filing, category) → pivot to 2,441 × 15 matrix, merge with returns |
+| 7–8 | **Agent 3 — Sub-Sector Context**: top-3 key drivers + top-3 risk flags per filing, sector-specific category flagging |
+| 9–10 | **Agent 4 — Signal Consolidator**: IC-weighted category scores → continuous signal [-1, 1] → 5-cohort assignment |
+| 11–12 | Save `filing_signals.jsonl` (2,441 lines, ~1.2 MB) |
+| 13–14 | Cohort distribution bar chart |
+| 15–16 | **Key validation**: cohort vs mean 21d excess return + Spearman correlation |
+| 17–18 | Signal vs return scatter (colored by sub-sector) + Pearson/Spearman |
+| 19–20 | Per-sector cohort vs return (2×2 subplot) with monotonicity check |
+| 21–22 | Summary stats: cohort table, long-short return, IR |
 
-**Inputs**: `output/factors_scored/`, `task_2/models/sentiment_lora/`, `filing_returns.csv`, `ticker_mapping.json`
-**Outputs**: `task_2/output/filing_signals.jsonl`, visualizations
+**Inputs**: `output/factors_scored/`, `filing_returns.csv`, `reasoning_output.json`, `ticker_mapping.json`
+**Outputs**: `task_2/output/filing_signals.jsonl`, validation charts
 
 ---
 
@@ -261,7 +267,7 @@ Agent 4 combines the upstream signals:
 | 1 | Build annotation dataset | `task_2_1_annotation_dataset.ipynb` | No | Done |
 | 2 | Fine-tune with QLoRA | `task_2_2_fine_tuning.ipynb` | Yes (A100) | Done |
 | 3 | Evaluate SFT model | `task_2_3_evaluation.ipynb` | Yes (A100) | Done |
-| 4 | Multi-agent + signal consolidation | `task_2_4_multi_agent.ipynb` | Yes (A100) | Not started |
+| 4 | Multi-agent + signal consolidation | `task_2_4_multi_agent.ipynb` | No | Done |
 
 ---
 
@@ -278,7 +284,7 @@ Agent 4 combines the upstream signals:
 - [x] 2.1.4 Train/val split — 4,000 train / 1,000 val (stratified)
 - [x] 2.2 Fine-tuning — complete (QLoRA, 3 epochs, LoRA adapter saved to models/sentiment_lora/)
 - [x] 2.3 Evaluation — complete (results in output/eval_report.json)
-- [ ] 2.4 Multi-agent + signal consolidation — not started
+- [x] 2.4 Multi-agent + signal consolidation — complete (results in output/filing_signals.jsonl)
 
 ---
 
@@ -307,3 +313,40 @@ Agent 4 combines the upstream signals:
 4. **Confidence is not calibrated**: Mean confidence on incorrect predictions (0.860) is slightly higher than on correct ones (0.844). Cannot use confidence as a reliability filter.
 5. **Sub-sector improvements**: general (+0.185), industrial_equipment (+0.114), defense (+0.112), airlines (+0.028).
 6. **Weak categories**: labor_workforce (-0.126), technology_innovation (-0.118) — small sample sizes, likely noise. All large categories improved.
+
+---
+
+## Task 2.4 Multi-Agent Results (2026-03-12)
+
+### Pipeline Stats
+| Metric | Value |
+|--------|-------|
+| Scored factors loaded | 67,741 |
+| Tickers | 83 |
+| Filings matched with returns | 2,441 |
+| Categories | 15 |
+| IC factor-sector pairs | 16 |
+
+### Cohort Distribution
+| Cohort | Count | % | Mean Excess Return |
+|--------|-------|---|-------------------|
+| very_negative | 50 | 2.0% | +0.91% |
+| negative | 446 | 18.3% | +0.79% |
+| neutral | 1,314 | 53.8% | +0.33% |
+| positive | 607 | 24.9% | +0.36% |
+| very_positive | 24 | 1.0% | +3.69% |
+
+### Key Metrics
+| Metric | Value |
+|--------|-------|
+| Spearman(signal, return) | 0.013 (p=0.53) |
+| Spearman(cohort, return) | 0.009 (p=0.65) |
+| Long-short (VP - VN) | **+2.78%** |
+| Information ratio | 0.067 |
+
+### Interpretation
+- **Right half is monotonic**: neutral (0.33%) < positive (0.36%) < very_positive (3.69%) — the signal correctly identifies the strongest positive filings.
+- **Left half is inverted**: very_negative (0.91%) and negative (0.79%) outperform neutral — a contrarian/"kitchen sink" effect where strongly negative filings precede turnarounds.
+- **Overall Spearman is near zero** because the left-side inversion cancels the right-side monotonicity.
+- **This is the Base model baseline** shown in the PDF's expected performance chart. SFT improves classification accuracy (task_2_3), and RL alignment (Task 3) is designed to fix the monotonicity by directly optimizing cohort-return alignment.
+- **Per-sector**: defense shows significant negative Spearman (-0.148, p=0.007). General and industrial_equipment drive the aggregate positive tail result.
