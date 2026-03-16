@@ -5,7 +5,7 @@
 | Speaker | Slides | Approx. Time |
 |---------|--------|-------------|
 | **Maggie** | 1-9 | ~8 min |
-| **Luka** | 10-16 | ~7 min |
+| **Luka** | 10-16 | ~6 min |
 | **Roshan** | 17-27 | ~10 min |
 
 ---
@@ -37,8 +37,9 @@
 - "Every public U.S. company files 10-Ks and 10-Qs with the SEC. Inside each filing is the MD&A section — Management Discussion and Analysis — where leadership tells you what happened, what went wrong, and what they expect. It's the richest source of forward-looking qualitative information in public markets."
 - "The problem is volume. 86 companies. Four sub-sectors — airlines, defense, general industrials, and industrial equipment. Ten years of filings. That's roughly 2,500 filings, each 50 to 100 pages. No human analyst can read all of them, and certainly not consistently."
 - "So our goal is to have a reasoning LLM do it — extract the key financial themes, classify the sentiment on a 5-class scale, and ultimately generate signals that predict whether a stock outperforms or underperforms the S&P 500 (Standard & Poor's 500)."
+- "And here's the punchline up front — our best cohort outperforms the market by nearly 4% in just three weeks. Let me walk you through how we got there."
 
-> **Time: ~50 sec**
+> **Time: ~55 sec**
 
 ---
 
@@ -59,7 +60,7 @@
 
 - "This is the full pipeline, left to right." [gesture across the diagram]
 - "We start with raw EDGAR (Electronic Data Gathering, Analysis, and Retrieval) filings — 10-Ks and 10-Qs in HTML. Our parser extracts the MD&A sections and splits them into processable chunks. We focused on 10-Ks and 10-Qs because they contain the structured MD&A narrative — 8-Ks are event-driven disclosures without a consistent MD&A section, so they weren't a fit for factor extraction."
-- "Those chunks go to DeepSeek-R1 — a 14-billion parameter reasoning model running on ACCRE's (Advanced Computing Center for Research and Education) A6000 GPUs (Graphics Processing Units) via vLLM. The model answers 60 targeted questions across 14 categories per filing. Questions like: is revenue growing? Are input costs under control? Any new regulatory risk?"
+- "Those chunks go to DeepSeek-R1 — a 14-billion parameter reasoning model running on ACCRE's (Advanced Computing Center for Research and Education) GPU cluster via vLLM — A6000 GPUs for inference and A100 GPUs for fine-tuning. The model answers 60 targeted questions across 14 categories per filing. Questions like: is revenue growing? Are input costs under control? Any new regulatory risk?"
 - "From those answers, the model produces factors — each with a 5-class sentiment label, a written rationale, and a confidence score."
 - "We then fine-tune the model with QLoRA on 5,000 curated samples to improve that classification — that's the SFT step."
 - "A 4-agent system consolidates all the factor scores into a single investment signal per filing."
@@ -107,9 +108,9 @@
 ### Slide 9 — Per-Sector Analysis
 
 - "Last slide on Task 1 — the sentiment-return relationship by sub-sector." [gesture across panels]
-- "We use Spearman rank correlation here — it measures how monotonically two variables move together, from -1 to +1, without assuming a linear relationship. It's the right tool when we care about rank order — do more positive filings tend to have higher returns? — rather than exact magnitudes."
+- "We use Spearman rank correlation here — it measures whether more positive filings tend to rank higher in returns, from -1 to +1. It captures rank order without assuming a linear relationship."
 - "Airlines, far left — high dispersion, Spearman near zero. Too much noise at this stage to draw conclusions."
-- "Defense is where it gets interesting. Spearman of negative 0.146, p-value 0.007. The p-value tells us the probability of seeing a correlation this strong by pure chance — 0.007 means less than 1% chance, so this is statistically significant. Negative sentiment in defense filings predicts positive returns. This is the classic 'kitchen sink' effect: management front-loads bad news, the market overreacts, and the stock recovers. It's a contrarian signal, and it's real."
+- "Defense is where it gets interesting. Spearman of negative 0.146 with a p-value of 0.007 — less than 1% probability this is due to chance, so statistically significant. Negative sentiment in defense filings predicts positive returns. This is the classic 'kitchen sink' effect: management front-loads bad news, the market overreacts, and the stock recovers. It's a contrarian signal, and it's real."
 - "General and industrial equipment — the two largest groups — show slight positive trends, but not yet statistically significant at the individual factor level."
 - "Here's the key takeaway: the raw signal has genuine predictive content, especially in certain sectors. But it's inconsistent. It needs consolidation — combining 25 to 30 factors into one signal per filing — and it needs alignment with actual returns. That's precisely what Tasks 2 and 3 deliver."
 - "With that, let me hand it to Luka, who'll walk you through how we fine-tuned the model and built the multi-agent consolidation system."
@@ -125,7 +126,7 @@
 - "Thanks, Maggie. So we have 68,000 raw factor scores, and as Maggie just showed, the signal is there — but it's noisy and inconsistent. My job was to fix the classifier, then consolidate everything into tradeable signals."
 - "To fine-tune, we need training data. The project spec requires 5,000+ annotated data points. Here's how we built that dataset." [gesture to slide]
 - "We started with all 67,741 scored factors and applied a quality gate — confidence at least 0.5, non-empty rationale. That left about 66,000 high-quality factors. From those, we sampled exactly 5,000 — 1,000 per sentiment class — balanced across sub-sectors and all 14 categories. You can see the balanced distribution on the left, sub-sector representation in the center, and category coverage on the right."
-- "Now, I want to address the annotation approach directly, because it's a deliberate design choice. Our annotations are the base model's own high-confidence labels. This is self-distillation — a well-established technique in RLHF (Reinforcement Learning from Human Feedback) pipelines, used for example in the Alpaca and Vicuna lineage. The reasoning is straightforward: the base model scored 67,000 factors and was mostly correct, but inconsistent. It almost never predicted 'very positive' even when the evidence clearly warranted it. So we selected the 5,000 best examples — where the model was confident and articulate, with an average confidence of 0.834 — and trained it to match its own best behavior, consistently. The proof is in the results: very positive recall went from 11.5% to 80.5% after SFT."
+- "Now, I want to address the annotation approach directly, because it's a deliberate design choice. Our annotations are the base model's own high-confidence labels. This is self-training — a well-established technique where a model's best outputs become its training signal, similar to Noisy Student Training by Xie et al. The reasoning is straightforward: the base model scored 67,000 factors and was mostly correct, but inconsistent. It almost never predicted 'very positive' even when the evidence clearly warranted it. So we selected the 5,000 best examples — where the model was confident and articulate, with an average confidence of 0.834 — and trained it to match its own best behavior, consistently. The proof is in the results: very positive recall went from 11.5% to 80.5% after SFT."
 - "We also chose to train a single universal model rather than separate sector-specific models. With 5,000 total samples, splitting four ways would leave only about 500 per sector for airlines — not enough for reliable fine-tuning. The universal model still improves across all four sectors, as we'll show."
 - "We used an 80/20 stratified split — 4,000 train, 1,000 validation — preserving class and sector balance throughout."
 
@@ -136,7 +137,7 @@
 ### Slide 11 — Fine-Tuning
 
 - "For fine-tuning, we used QLoRA — 4-bit NF4 (NormalFloat 4-bit) quantization with LoRA (Low-Rank Adaptation) adapters. This lets us train a 14-billion parameter model on a single A100 40GB GPU by only updating about 1.8% of the parameters — roughly 275 million out of 15 billion total."
-- "The loss curve on the left tells the story." [point to chart] "Training loss drops from 0.65 to 0.10 over 3 epochs, 750 steps, with clean drops at each epoch boundary. Total training time: about 82 minutes."
+- "The loss curve on the left tells the story." [point to chart] "Training loss drops sharply over 3 epochs and 750 steps — you can see the clean drops at each epoch boundary. Total training time: about 82 minutes."
 - "On the right, the key hyperparameters. LoRA rank 64, alpha 128, targeting all 7 projection layers — Q, K, V, O in attention, plus gate, up, and down in the MLP (Multi-Layer Perceptron). Effective batch size of 16 through gradient accumulation. Cosine learning rate at 2e-4 with 5% warmup, paged AdamW 8-bit optimizer, and gradient checkpointing to stay within GPU memory."
 - "One important design detail: we used label masking during training — the loss is computed only on the assistant's response tokens, not on the prompt tokens. This ensures the model learns to produce the correct classification output rather than memorizing the input format."
 
@@ -160,7 +161,7 @@
 - "Headline numbers. Macro F1 — that's F1 averaged equally across all five sentiment classes, regardless of how many samples each class has — comes in at 0.731, up from 0.604. That's a +0.127 improvement. Accuracy: 73.3%, up 9.1 points. Both models produce valid JSON 100% of the time, so output format was never the bottleneck — classification quality was."
 - "Bottom left — F1 by sub-sector. SFT improves across all four. General sees the biggest gain at +0.185, industrial equipment at +0.114, defense at +0.112, and airlines at +0.028."
 - "Bottom right — F1 by category." [gesture to chart] "The standout is competitive position, jumping from 0.50 to 0.87. The high-volume categories — cost margins, demand revenue, macro external — all improved substantially."
-- "Why does this matter for the investment signal? Because the extreme labels — very positive and very negative — are exactly the classes that drive the strongest return predictions. The base model was crushing those extremes into neighboring classes. The SFT model preserves them. And as Roshan will show, that distinction is worth nearly 4% excess return in three weeks."
+- "Why does this matter for the investment signal? Because the extreme labels — very positive and very negative — are exactly the classes that drive the strongest return predictions. The base model was crushing those extremes into neighboring classes. The SFT model preserves them. And as Roshan will show, that distinction translates directly into excess return."
 
 > **Time: ~55 sec**
 
@@ -170,7 +171,7 @@
 
 - "So now we have 68,000 improved factor scores. The next problem: each filing has roughly 25 individual scores across 14 categories. We need one investment signal per filing. That's what the multi-agent system delivers." [gesture to architecture diagram]
 - "Four agents, each with a clear role. Agent 1 loads the scored factors. Agent 2 computes a confidence-weighted average per category — collapsing 25 factors into 14 category-level scores. Agent 3 extracts the top 3 key drivers and top 3 risk flags for interpretability. And Agent 4 produces the final signal: an IC-weighted sum of category scores, mapped to one of five cohorts."
-- "The cohort distribution across 2,441 filings is shown below. Most filings land in neutral — 54%. The tails are thin: 50 very negative, 24 very positive. That's the expected shape — when you average across 14 categories, the central limit theorem pulls everything toward the center."
+- "The cohort distribution across 2,441 filings is shown below. Most filings land in neutral — 54%. The tails are thin: 50 very negative, 24 very positive. That's the expected shape — averaging across 14 categories naturally concentrates the signal near the center and reduces variance."
 
 > **Time: ~55 sec**
 
@@ -180,7 +181,7 @@
 
 - "Here's the full distribution. 50 very negative, 446 negative, 1,314 neutral, 607 positive, 24 very positive."
 - "The positive skew — more filings classified positive than negative — is consistent with the optimistic management language Maggie showed earlier. Our pipeline reflects the underlying language distribution faithfully."
-- "So: we've gone from 68,000 raw factor scores to 2,441 filing-level signals, each assigned to a cohort. The question this sets up — and the reason we built all of this — is whether these cohort labels actually predict future stock returns. Roshan has that answer."
+- "So: we've gone from 68,000 raw factor scores to 2,441 filing-level signals, each assigned to a cohort. The question now is whether these cohort labels actually predict future stock returns."
 
 > **Time: ~25 sec**
 
@@ -189,7 +190,7 @@
 ### Slide 16 — Task 4.1: Category Coverage
 
 - "One more piece before Roshan takes over — the coverage table." [gesture to table]
-- "14 categories. The universal ones — demand revenue, cost margins, capital allocation — cover all 83 tickers across 126 active months. That's the full 10-year window with no gaps."
+- "14 categories. The universal ones — demand revenue, cost margins, capital allocation — cover 83 of our 86 tickers across 126 active months. The remaining 3 had incomplete filing data. That's essentially the full 10-year window."
 - "Sector-specific categories are narrower by design — airlines transport covers 5 tickers, defense government covers 12 — matching the actual universe for those sectors."
 - "This matters because it means the backtesting results you're about to see are built on dense, well-populated data, not sparse edge cases."
 - "Roshan, over to you."
@@ -235,8 +236,8 @@
 
 ### Slide 20 — Factor Ranking IS vs OOS
 
-- "Now let's formalize this. For each of the 14 categories, I constructed a simple long-short strategy: go long when sentiment is positive, short when negative, aggregate monthly, and compute the annualized Sharpe ratio. The Sharpe ratio measures risk-adjusted return — it's the annualized excess return divided by the annualized volatility. Above 0.5 is considered good for a single factor; above 1.0 is very strong." [gesture to left table]
-- "In-sample, cost margins leads at 1.03 with a t-statistic of 2.29. The t-statistic tells us whether the Sharpe is distinguishable from zero — above 1.96 means we can be 95% confident the signal is real, not noise. At 2.29, cost margins clears that bar. Supply chain operations at 1.01, competitive position at 0.97. Three categories above 0.9 in-sample is strong."
+- "Now let's formalize this. For each of the 14 categories, I constructed a simple long-short strategy: go long when sentiment is positive, short when negative, aggregate monthly, and compute the annualized Sharpe ratio — excess return divided by volatility. Above 1.0 is very strong for a single factor." [gesture to left table]
+- "In-sample, cost margins leads at 1.03 with a t-statistic of 2.29 — above the 1.96 significance threshold, so we can be 95% confident this is real signal. Supply chain operations at 1.01, competitive position at 0.97. Three categories above 0.9 in-sample is strong."
 - "But in-sample Sharpe is easy. The right column is the real test — out-of-sample." [gesture to right table] "Most categories decay, which is completely normal in factor research. But cost margins holds at 0.27, and labor workforce actually stays at 0.54 versus 0.58 in-sample."
 - "A positive out-of-sample Sharpe means the signal is real, not overfit. And these are simple long-short strategies with no optimization — the raw sentiment signal from our LLM is already generating tradeable alpha."
 
@@ -271,8 +272,8 @@
 
 - [pause briefly] "This is the most important chart in the presentation. Everything we've built — the factor extraction, the SFT fine-tuning, the multi-agent consolidation — all of it distills into this one question: when our system says a filing is very positive, does the stock actually outperform?"
 - "The x-axis is our five sentiment cohorts. The y-axis is the mean 21-day excess return versus the S&P 500 — measured starting the day after the filing." [gesture to right side of chart]
-- "Start on the right. Neutral: 0.33%. Positive: 0.36%. Very positive: plus 3.69%." [let it land] "That is 24 filings where our system had the highest conviction, and they outperformed the market by nearly 4% in three weeks. That is a strong tail signal."
-- "The long-short spread — very positive minus very negative — is +2.78%. The IR (Information Ratio) — which measures excess return per unit of tracking error, essentially the Sharpe ratio relative to a benchmark — comes in at 0.067. In a 21-day window, that spread is economically meaningful."
+- "Start on the right. Neutral: 0.33%. Positive: 0.36%. Very positive: plus 3.69%." [let it land] "That is 24 filings where our system had the highest conviction, and they outperformed the market by nearly 4% in three weeks. Now, to be transparent — n equals 24 means the standard error is roughly 2%, so this is directionally strong but not individually significant at the 95% level. What gives us confidence is that this tail pattern is consistent with the category-level results we saw in cost margins and demand revenue, which have much larger sample sizes."
+- "The long-short spread — very positive minus very negative — is +2.78%. The IR (Information Ratio) comes in at 0.067. In a 21-day window, that spread is economically meaningful."
 - "Now, the honest part." [gesture to left side] "The left side is inverted. Very negative and negative cohorts also show positive returns. The overall Spearman correlation is 0.009 — not statistically significant. The relationship is not monotonic."
 - "But I want to frame this correctly. This is the SFT-only pipeline — we have not applied RL alignment yet. The project spec's expected progression is Base to SFT to SFT plus RL, with RL specifically designed to enforce monotonicity by directly optimizing the model's sentiment outputs against return outcomes." [gesture to yellow callout] "The +3.69% tail signal tells us the pipeline is extracting real information. RL's job in Task 3 is to fix the left side — to make the full cohort-return curve monotonically increasing."
 
@@ -294,7 +295,7 @@
 
 - "Finally, breaking the cohort analysis down by sub-sector."
 - "Airlines — top left — is noisy. The very positive outlier is about 13% return, but that's n equals 1, so we set it aside."
-- "Defense — top right — shows the contrarian effect most clearly. Spearman of -0.148, the negative cohort outperforms. This is the kitchen-sink dynamic Maggie described earlier, and it's statistically significant."
+- "Defense — top right — shows the contrarian effect most clearly. At the cohort level, Spearman is -0.148 — consistent with the -0.146 we saw at the factor level. The negative cohort outperforms. This is the same contrarian dynamic Maggie described earlier, and it's statistically significant."
 - "General and industrial equipment — bottom row — are the largest groups. Both show the same tail pattern as the aggregate: flat in the middle, very positive outperforming. Spearman of 0.039 and 0.018 respectively."
 - "These sector-level differences are exactly why we plan to incorporate sector-specific weighting in the GRPO reward function for Task 3."
 
@@ -333,7 +334,7 @@
 | Speaker | Slides | Time |
 |---------|--------|------|
 | Maggie | 1-9 | ~8 min |
-| Luka | 10-16 | ~5.75 min |
+| Luka | 10-16 | ~6 min |
 | Roshan | 17-27 | ~10 min |
 | **Total** | **27 slides** | **~23.5 min** |
 | Q&A | | ~6.5 min |
