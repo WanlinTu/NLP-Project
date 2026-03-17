@@ -61,7 +61,7 @@
 - "This is the full pipeline, left to right." [gesture across the diagram]
 - "We start with raw EDGAR (Electronic Data Gathering, Analysis, and Retrieval) filings — 10-Ks and 10-Qs in HTML. Our parser extracts the MD&A sections and splits them into processable chunks. We focused on 10-Ks and 10-Qs because they contain the structured MD&A narrative — 8-Ks are event-driven disclosures without a consistent MD&A section, so they weren't a fit for factor extraction."
 - "Those chunks go to DeepSeek-R1 — a 14-billion parameter reasoning model running on ACCRE's (Advanced Computing Center for Research and Education) GPU cluster via vLLM — A6000 GPUs for inference and A100 GPUs for fine-tuning. The model answers 60 targeted questions across 14 categories per filing. Questions like: is revenue growing? Are input costs under control? Any new regulatory risk?"
-- "From those answers, the model produces factors — each with a 5-class sentiment label, a written rationale, and a confidence score."
+- "From those answers, the model produces factors — each with a 5-class sentiment label, a written rationale, and a confidence score — a number between 0 and 1 representing how certain the LLM is in its own classification."
 - "We then fine-tune the model with QLoRA on 5,000 curated samples to improve that classification — that's the SFT step."
 - "A 4-agent system consolidates all the factor scores into a single investment signal per filing."
 - "And the final step — still ahead — is RL alignment with GRPO to directly optimize for return prediction."
@@ -87,7 +87,7 @@
 - "So what did 67,741 factors actually look like?" [gesture to left panel]
 - "The distribution on the left tells the first story. Most factors cluster in neutral and positive. The tails are thin — about 4% very negative, about 3% very positive. That's not surprising. Management language in MD&A skews optimistic. But those tails are exactly where the strongest investment signals live, so getting them right is critical."
 - "The heatmap in the center breaks sentiment down by category and sector." [gesture to center] "Red at the top — regulatory, macro, labor — these are consistently negative across all four sectors. These are the structural risk themes. Green at the bottom — technology, capital allocation, demand — consistently positive. The driver themes. This pattern is stable and intuitive."
-- "On the right, a scatter of average sentiment versus 21-day excess return per filing. There's a directional relationship, but it's noisy. This is the raw, unconsolidated signal — no weighting, no aggregation. Cleaning this up is what the rest of the pipeline does."
+- "On the right, a scatter of average sentiment versus 21-day excess return per filing — that's how much the stock outperformed or underperformed the S&P 500 in the 21 trading days after the filing. There's a directional relationship, but it's noisy. This is the raw, unconsolidated signal — no weighting, no aggregation. Cleaning this up is what the rest of the pipeline does."
 
 > **Time: ~65 sec**
 
@@ -98,7 +98,7 @@
 - "Which individual factors carry the most predictive weight? This chart ranks the top 25 by significance — the absolute IC (Information Coefficient) multiplied by coverage." [gesture to chart]
 - "Quick primer on IC: it's the Spearman rank correlation between a factor's sentiment score and the subsequent 21-day excess return. It ranges from -1 to +1 — anything above 0.05 is considered meaningful in factor research. Coverage is how many filings contain that factor. The bar captures both — you need a factor that's predictive and that appears broadly enough to trade on."
 - "Color matters. Green bars: positive sentiment predicts positive return, as you'd expect. Red bars: positive sentiment actually predicts negative return — a contrarian signal."
-- "The top factor — interest_rate_impact — stands out. IC of 0.10, roughly 1,200 filings, 54% hit rate. It's red because when management is optimistic about rates, the stock tends to underperform. For industrials, rates are a headwind, and optimistic language signals complacency."
+- "The top factor — interest_rate_impact — stands out. IC of 0.10, roughly 1,200 filings, 54% hit rate — meaning the sentiment direction matched the return direction 54% of the time. It's red because when management is optimistic about rates, the stock tends to underperform. For industrials, rates are a headwind, and optimistic language signals complacency."
 - "Also notable: the airlines-specific factors — capacity_load_yield and fuel_costs_hedging — rank highly despite narrower coverage. Within that sub-sector, they're very predictive."
 
 > **Time: ~75 sec**
@@ -170,7 +170,7 @@
 ### Slide 14 — Multi-Agent Signal Consolidation (Architecture + Chart)
 
 - "So now we have 68,000 improved factor scores. The next problem: each filing has roughly 25 individual scores across 14 categories. We need one investment signal per filing. That's what the multi-agent system delivers." [gesture to architecture diagram]
-- "Four agents, each with a clear role. Agent 1 loads the scored factors. Agent 2 computes a confidence-weighted average per category — collapsing 25 factors into 14 category-level scores. Agent 3 extracts the top 3 key drivers and top 3 risk flags for interpretability. And Agent 4 produces the final signal: an IC-weighted sum of category scores, mapped to one of five cohorts."
+- "Four agents, each with a clear role. Agent 1 loads the scored factors. Agent 2 computes a confidence-weighted average per category — collapsing 25 factors into 14 category-level scores. Agent 3 extracts the top 3 key drivers and top 3 risk flags for interpretability. And Agent 4 produces the final signal: an IC-weighted sum of category scores, mapped to one of five cohorts — cohorts are just buckets of filings grouped by their signal strength, from very negative to very positive."
 - "The cohort distribution across 2,441 filings is shown below. Most filings land in neutral — 54%. The tails are thin: 50 very negative, 24 very positive. That's the expected shape — averaging across 14 categories naturally concentrates the signal near the center and reduces variance."
 
 > **Time: ~55 sec**
@@ -236,10 +236,10 @@
 
 ### Slide 20 — Factor Ranking IS vs OOS
 
-- "Now let's formalize this. For each of the 14 categories, I constructed a simple long-short strategy: go long when sentiment is positive, short when negative, aggregate monthly, and compute the annualized Sharpe ratio — excess return divided by volatility. Above 1.0 is very strong for a single factor." [gesture to left table]
+- "Now let's formalize this. For each of the 14 categories, I constructed a simple long-short strategy — buy stocks where sentiment is positive and simultaneously short-sell stocks where sentiment is negative, so you profit from the spread between winners and losers regardless of the overall market direction. Aggregate monthly, and compute the annualized Sharpe ratio — excess return divided by volatility. Above 1.0 is very strong for a single factor." [gesture to left table]
 - "In-sample, cost margins leads at 1.03 with a t-statistic of 2.29 — above the 1.96 significance threshold, so we can be 95% confident this is real signal. Supply chain operations at 1.01, competitive position at 0.97. Three categories above 0.9 in-sample is strong."
 - "But in-sample Sharpe is easy. The right column is the real test — out-of-sample." [gesture to right table] "Most categories decay, which is completely normal in factor research. But cost margins holds at 0.27, and labor workforce actually stays at 0.54 versus 0.58 in-sample."
-- "A positive out-of-sample Sharpe means the signal is real, not overfit. And these are simple long-short strategies with no optimization — the raw sentiment signal from our LLM is already generating tradeable alpha."
+- "A positive out-of-sample Sharpe means the signal is real, not overfit. And these are simple long-short strategies with no optimization — the raw sentiment signal from our LLM is already generating tradeable alpha — excess return that can't be explained by broad market movements."
 
 > **Time: ~70 sec**
 
@@ -274,7 +274,7 @@
 - "The x-axis is our five sentiment cohorts. The y-axis is the mean 21-day excess return versus the S&P 500 — measured starting the day after the filing." [gesture to right side of chart]
 - "Start on the right. Neutral: 0.33%. Positive: 0.36%. Very positive: plus 3.69%." [let it land] "That is 24 filings where our system had the highest conviction, and they outperformed the market by nearly 4% in three weeks. Now, to be transparent — n equals 24 means the standard error is roughly 2%, so this is directionally strong but not individually significant at the 95% level. What gives us confidence is that this tail pattern is consistent with the category-level results we saw in cost margins and demand revenue, which have much larger sample sizes."
 - "The long-short spread — very positive minus very negative — is +2.78%. The IR (Information Ratio) comes in at 0.067. In a 21-day window, that spread is economically meaningful."
-- "Now, the honest part." [gesture to left side] "The left side is inverted. Very negative and negative cohorts also show positive returns. The overall Spearman correlation is 0.009 — not statistically significant. The relationship is not monotonic."
+- "Now, the honest part." [gesture to left side] "The left side is inverted. Very negative and negative cohorts also show positive returns. The overall Spearman correlation is 0.009 — not statistically significant. The relationship is not monotonic — meaning the returns don't consistently increase from left to right across all five cohorts."
 - "But I want to frame this correctly. This is the SFT-only pipeline — we have not applied RL alignment yet. The project spec's expected progression is Base to SFT to SFT plus RL, with RL specifically designed to enforce monotonicity by directly optimizing the model's sentiment outputs against return outcomes." [gesture to yellow callout] "The +3.69% tail signal tells us the pipeline is extracting real information. RL's job in Task 3 is to fix the left side — to make the full cohort-return curve monotonically increasing."
 
 > **Time: ~90 sec**
