@@ -340,3 +340,294 @@
 | Q&A | | ~6.5 min |
 
 This leaves comfortable room within the 30-minute slot without dragging.
+
+---
+
+## Formulas
+
+Reference sheet for every metric, formula, and term used in the presentation and PPT slides. Organized by pipeline stage.
+
+---
+
+### Returns (Slides 17-25)
+
+**21-Day Stock Return (simple/arithmetic)**
+```
+ret_21d = (P_t+21 / P_t) - 1
+```
+Where `P_t` = adjusted close price on filing date (or next trading day), `P_t+21` = adjusted close price 21 trading days later.
+
+**21-Day SPY (Benchmark) Return**
+```
+ret_21d_spy = (SPY_t+21 / SPY_t) - 1
+```
+Same window, same formula, applied to SPY (S&P 500 ETF).
+
+**21-Day Excess Return**
+```
+ret_21d_excess = ret_21d - ret_21d_spy
+```
+Positive = stock outperformed the market. Negative = stock underperformed. This is the ground truth for the entire project.
+
+---
+
+### Information Coefficient — IC (Slides 8, 14, 20)
+
+**Spearman IC (per factor)**
+```
+IC = Spearman_ρ(sentiment_score, ret_21d_excess)
+```
+Computed across all filings where a given factor appears. Measures rank-order correlation between sentiment and subsequent excess return. Range: [-1, +1]. Values above |0.05| are considered meaningful in factor research.
+
+**Factor Significance Score (Slide 8 chart)**
+```
+significance = |IC| × coverage
+```
+Where `coverage` = number of filings containing that factor. Captures both predictive power and breadth.
+
+**Hit Rate (Slide 8)**
+```
+hit_rate = (# filings where sentiment direction matched return direction) / (# total filings with factor)
+```
+A 54% hit rate means the sentiment correctly predicted the direction of excess return 54% of the time.
+
+---
+
+### Spearman Rank Correlation — ρ (Slides 9, 23, 25)
+
+```
+ρ = 1 - (6 × Σ d_i²) / (n × (n² - 1))
+```
+Where `d_i` = difference between the rank of sentiment score and rank of excess return for filing `i`, and `n` = number of filings. Range: [-1, +1]. Does not assume linearity — measures monotonic relationship only.
+
+**p-value** (Slides 9, 23, 25)
+```
+p-value = P(|ρ_observed| ≥ |ρ| | H₀: no correlation)
+```
+Probability of observing a correlation at least this strong under the null hypothesis of no relationship. p < 0.05 = statistically significant at 95% confidence.
+
+---
+
+### Multi-Agent Signal Consolidation (Slides 14-15)
+
+**Label-to-Score Mapping (Agent 1)**
+```
+very_negative → -2
+negative      → -1
+neutral       →  0
+positive      → +1
+very_positive → +2
+```
+
+**Confidence-Weighted Category Average (Agent 2)**
+```
+cat_score_c = Σ(score_i × confidence_i) / Σ(confidence_i)
+```
+For all factors `i` in category `c` within a single filing. If total confidence = 0, falls back to unweighted mean.
+
+**IC-Weighted Filing Signal (Agent 4)**
+```
+raw_signal = Σ(cat_score_c × weight_c) / Σ(weight_c)
+```
+Where `weight_c = mean(|IC|)` for all factors in category `c` for the filing's sub-sector, computed from training-period IC data.
+
+**Signal Normalization**
+```
+signal = clip(raw_signal, -2, +2) / 2.0    →    signal ∈ [-1, +1]
+```
+
+**Cohort Thresholds**
+```
+very_negative:  signal < -0.6
+negative:      -0.6 ≤ signal < -0.2
+neutral:       -0.2 ≤ signal < +0.2
+positive:      +0.2 ≤ signal < +0.6
+very_positive:  signal ≥ +0.6
+```
+
+---
+
+### Classification Metrics (Slides 12-13)
+
+**Precision (per class)**
+```
+Precision = TP / (TP + FP)
+```
+Of all predictions for this class, how many were correct?
+
+**Recall (per class)**
+```
+Recall = TP / (TP + FN)
+```
+Of all actual instances of this class, how many did the model find?
+
+**F1 Score (per class)**
+```
+F1 = 2 × (Precision × Recall) / (Precision + Recall)
+```
+Harmonic mean of precision and recall. Penalizes models that sacrifice one for the other. Range: [0, 1].
+
+**Macro F1 (Slide 13 headline)**
+```
+Macro_F1 = (1/K) × Σ F1_k
+```
+Where `K` = number of classes (5). Averages F1 equally across all classes regardless of class size. This means the rare classes (very_negative, very_positive) count equally to the common classes (neutral, positive).
+
+**Accuracy**
+```
+Accuracy = (# correct predictions) / (# total predictions)
+```
+
+---
+
+### Sharpe Ratio (Slide 20)
+
+**Monthly Long-Short Return (per category)**
+```
+r_month = mean(ret_21d_excess for positive sentiment filings)
+        - mean(ret_21d_excess for negative sentiment filings)
+```
+Computed for each calendar month across all filings in that month.
+
+**Annualized Sharpe Ratio**
+```
+Sharpe = (mean(r_monthly) / std(r_monthly)) × √12
+```
+Risk-adjusted return. Annualized by multiplying by √12 (12 months per year). Benchmarks: >0.5 = good for a single factor, >1.0 = very strong.
+
+**t-statistic (Slide 20)**
+```
+t = mean(r_monthly) / (std(r_monthly) / √T)
+```
+Where `T` = number of months. Tests whether the Sharpe is statistically different from zero. t > 1.96 → 95% confidence the signal is real (not noise).
+
+**Rolling t-statistic (Slide 22)**
+```
+t_rolling = mean(r_monthly over window) / (std(r_monthly over window) / √W)
+```
+Where `W` = window size (12 or 24 months). Computed at each month by looking back `W` months. Shows whether the signal is stable or time-varying.
+
+---
+
+### Information Ratio — IR (Slide 23)
+
+```
+IR = mean(ret_21d_excess across all filings) / std(ret_21d_excess across all filings)
+```
+Measures excess return per unit of tracking error relative to the benchmark (SPY). Similar to Sharpe but computed against a benchmark rather than the risk-free rate.
+
+**Long-Short Spread (Slide 23)**
+```
+LS_spread = mean(ret_21d_excess | cohort = very_positive) - mean(ret_21d_excess | cohort = very_negative)
+```
+In our results: +3.69% - 0.91% = +2.78%.
+
+**Standard Error of Cohort Mean (Slide 23)**
+```
+SE = std(ret_21d_excess within cohort) / √n
+```
+For the very_positive cohort with n=24: SE ≈ 2%, meaning the 3.69% mean has a 95% confidence interval of roughly [−0.3%, 7.7%].
+
+---
+
+### QLoRA Fine-Tuning (Slide 11)
+
+**LoRA Weight Decomposition**
+```
+W' = W + ΔW = W + B × A
+```
+Where `W` = frozen pre-trained weight matrix (d × d), `B` = trainable (d × r), `A` = trainable (r × d), `r` = rank (64 in our case). Only `B` and `A` are updated during training. Total trainable parameters ≈ 2 × d × r per target module.
+
+**LoRA Scaling**
+```
+ΔW_scaled = (α / r) × B × A
+```
+Where `α` = 128, `r` = 64 → scaling factor = 2.0. Controls how much the LoRA adapters influence the output relative to the frozen weights.
+
+**NF4 Quantization**
+```
+W_quantized = quantize_nf4(W)    →    4 bits per parameter (vs 16 bits for bf16)
+```
+Reduces memory from ~28 GB (14B params × 2 bytes) to ~7 GB (14B params × 0.5 bytes), enabling training on a single 40GB A100.
+
+**Cross-Entropy Training Loss (Slide 11 curve)**
+```
+L = -(1/N) × Σ log P(y_true | x)
+```
+Where the sum is over assistant response tokens only (label masking). Prompt tokens are masked with label = -100 and excluded from loss computation.
+
+**Effective Batch Size**
+```
+effective_batch = per_device_batch × gradient_accumulation_steps × num_gpus
+               = 4 × 4 × 1 = 16
+```
+(Per PPT slide values)
+
+---
+
+### OLS Regression (Slide 24)
+
+**Ordinary Least Squares**
+```
+ret_21d_excess = β₀ + β₁ × signal + ε
+```
+Fits a straight line through the scatter of (signal, return) pairs. In our results, β₁ ≈ 0 (flat line), meaning the continuous signal is not linearly predictive — the value is in the discrete cohort tails, not the linear fit.
+
+---
+
+### Terms Referenced in Next Steps (Slide 26)
+
+**GRPO (Group Relative Policy Optimization)**
+```
+L_GRPO = -E[Σ (min(r_θ × A, clip(r_θ, 1-ε, 1+ε) × A)) - β × KL(π_θ || π_ref)]
+```
+Where `r_θ = π_θ(y|x) / π_old(y|x)` is the probability ratio, `A` is the advantage (computed from reward within a group of sampled outputs), `ε` is the clipping range, and `β` weights the KL divergence penalty against the reference policy. GRPO samples multiple completions per prompt, ranks them by reward, and uses relative ranking as the advantage signal — no separate critic model needed.
+
+**Reward Function (Task 3 design)**
+```
+reward(sentiment, ret_21d_excess) = alignment_score
+```
+The exact reward design is post-midterm work. The goal: reward the model when its predicted sentiment cohort aligns with the actual filing-period excess return, penalize misalignment. Monotonicity is enforced by shaping the reward so that very_positive predictions on high-return filings score highest.
+
+**ORM (Outcome-supervised Reward Model)**
+```
+R_ORM(y) = score based on final answer correctness only
+```
+Evaluates the complete output — did the model get the right sentiment label?
+
+**PRM (Process-supervised Reward Model)**
+```
+R_PRM(y) = Σ score_per_reasoning_step
+```
+Evaluates each intermediate reasoning step — did the model identify the right evidence, apply the right logic, and reach the right conclusion through valid reasoning?
+
+---
+
+### Glossary of Abbreviations
+
+| Abbreviation | Full Form | First Used |
+|---|---|---|
+| LLM | Large Language Model | Slide 1 |
+| SEC | Securities and Exchange Commission | Slide 1 |
+| SFT | Supervised Fine-Tuning | Slide 2 |
+| S&P 500 | Standard & Poor's 500 | Slide 3 |
+| QLoRA | Quantized Low-Rank Adaptation | Slide 4 |
+| RL | Reinforcement Learning | Slide 4 |
+| GRPO | Group Relative Policy Optimization | Slide 4 |
+| EDGAR | Electronic Data Gathering, Analysis, and Retrieval | Slide 5 |
+| ACCRE | Advanced Computing Center for Research and Education | Slide 5 |
+| iXBRL | inline eXtensible Business Reporting Language | Slide 6 |
+| IC | Information Coefficient | Slide 8 |
+| RLHF | Reinforcement Learning from Human Feedback | Slide 10 |
+| NF4 | NormalFloat 4-bit | Slide 11 |
+| LoRA | Low-Rank Adaptation | Slide 11 |
+| MLP | Multi-Layer Perceptron | Slide 11 |
+| IR | Information Ratio | Slide 23 |
+| OLS | Ordinary Least Squares | Slide 24 |
+| CoT | Chain-of-Thought | Slide 26 |
+| ORM | Outcome-supervised Reward Model | Slide 26 |
+| PRM | Process-supervised Reward Model | Slide 26 |
+| IS | In-Sample (training period) | Slide 20 |
+| OOS | Out-of-Sample (validation + test period) | Slide 20 |
+| MD&A | Management Discussion and Analysis | Slide 3 |
+| SPY | SPDR S&P 500 ETF Trust (benchmark) | Slide 17 |
