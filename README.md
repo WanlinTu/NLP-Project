@@ -440,6 +440,93 @@ All notebooks are self-contained and resume-safe. Run them in Jupyter on ACCRE f
 
 ---
 
+## Post-Midterm: Opus-Labeled SFT Re-scoring Pipeline
+
+After the midterm, we improved the annotation quality by using Claude Opus 4.6 (a stronger model) to re-label the 5,000 SFT training samples — replacing self-training with proper knowledge distillation. The Opus-labeled SFT model is then used to re-score all ~68K factors.
+
+### Setup Instructions (for teammates)
+
+**1. Download the merged SFT model from Google Drive:**
+
+- **Link:** https://drive.google.com/drive/folders/1iOLwncMtuq1Atsdg3g94gmcP6Qyjh6Pd?usp=sharing
+- Download ALL files from the folder (6 safetensors shards + config files, ~28GB total)
+- Place them at: `roshan/Actual_code/task_2/models/sentiment_merged_opus/`
+- Verify you have these files:
+  - `model-00001-of-00006.safetensors` through `model-00006-of-00006.safetensors`
+  - `config.json`
+  - `model.safetensors.index.json`
+  - `generation_config.json`
+  - `tokenizer.json`, `tokenizer_config.json`, `chat_template.jinja`
+
+**2. Start vLLM serving the merged model:**
+
+```bash
+cd roshan/Actual_code/task_2
+bash start_vllm.sh
+```
+
+Wait until you see `Application startup complete` in the terminal output.
+
+**3. Set your ticker assignment in `task_2_5_sft_rescoring.ipynb`:**
+
+Open the notebook, find Step 4 (Discover Factor Files), and add your assigned tickers before the `all_factor_files = sorted(...)` line:
+
+```python
+# Person 1 (Roshan): tickers A-FDX
+MY_TICKERS = {"AAL", "ADT", "ALK", "ALLE", "AME", "AMTM", "AOS", "AXON", "AYI", "BA", "BLDR", "CAT", "CARR", "CHRW", "CMI", "COL", "CPRT", "CSX", "CTAS", "DAL", "DE", "DOV", "EFX", "EMR", "ETN", "EXPD", "FAST", "FBIN", "FDX"}
+
+# Person 2 (Maggie): tickers FLR-MAS
+MY_TICKERS = {"FLR", "FLS", "FTV", "GD", "GE", "GNRC", "GWW", "HII", "HON", "HUBB", "INFO", "IR", "ITW", "J", "JBHT", "JCI", "KSU", "LDOS", "LHX", "LII", "LLL", "LMT", "LUV", "MAS"}
+
+# Person 3 (Luka): tickers MMM-XYL
+MY_TICKERS = {"MMM", "NDSN", "NLSN", "NOC", "NSC", "ODFL", "OTIS", "PCAR", "PH", "PNR", "PWR", "R", "RHI", "ROK", "ROL", "ROP", "RSG", "RTN", "RTX", "SNA", "SWK", "TDG", "TT", "TXT", "UAL", "UNP", "UPS", "URI", "VNT", "VRSK", "WAB", "WM", "XYL"}
+```
+
+Then add this line right after `all_factor_files = sorted(...)`:
+
+```python
+all_factor_files = [f for f in all_factor_files if f.parent.name in MY_TICKERS]
+```
+
+**4. Run `task_2_5_sft_rescoring.ipynb`:**
+
+- Skip Phase A (merge cell) — the merged model already exists
+- Run Phase B cells — builds prompts and scores all factors via vLLM concurrently
+- Output goes to `output/factors_scored_sft/{TICKER}/`
+
+**5. After all 3 people finish:**
+
+- Collect all `output/factors_scored_sft/` folders into one directory
+- Run these notebooks locally (no GPU needed):
+  - `task_2_6_sft_multi_agent.ipynb` — consolidates SFT scores into filing signals
+  - `task_2_7_sft_backtesting.ipynb` — backtesting + Base vs SFT comparison
+  - `task_4_1_ticker_analysis.ipynb` — per-ticker signal analysis
+
+### Key Files
+
+| File | Description |
+|------|-------------|
+| `task_2/start_vllm.sh` | One-command vLLM startup script |
+| `task_2/merge_lora.py` | Merges LoRA into base model (already done) |
+| `task_2/merge_lora_sharded.py` | Same but saves in 5GB shards (avoids OOM) |
+| `task_2/task_2_5_sft_rescoring.ipynb` | Re-score all factors via vLLM |
+| `task_2/task_2_6_sft_multi_agent.ipynb` | Multi-agent consolidation on SFT scores |
+| `task_2/task_2_7_sft_backtesting.ipynb` | Full backtesting + Base vs SFT comparison |
+| `task_2/task_4_1_ticker_analysis.ipynb` | Per-ticker signal analysis |
+| `task_2/data/sft_train_opus.jsonl` | Opus-labeled training data (4,172 samples) |
+| `task_2/data/sft_val_opus.jsonl` | Opus-labeled validation data (1,045 samples) |
+| `task_2/models/sentiment_lora_opus/` | Opus-trained LoRA adapter (on ACCRE) |
+| `task_2/models/sentiment_merged_opus/` | Merged model (Google Drive) |
+
+### Important Notes
+
+- The `VLLM_MODEL_NAME` in `task_2_5` must match what vLLM reports at startup: `/workspace/models/sentiment_merged_opus/`
+- The notebook is resume-safe — if interrupted, re-run and it skips already-scored filings
+- All 3 people can write to the same `output/factors_scored_sft/` directory since each ticker gets its own subfolder (no conflicts)
+- If pyarrow import fails in Jupyter, add this as the first line in the notebook: `import sys; sys.path.insert(0, "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/arrow/23.0.1/lib/python3.12/site-packages")`
+
+---
+
 ## Post-Midterm Roadmap
 
 | Task | Description | Dependencies |
