@@ -1,9 +1,11 @@
 #!/bin/bash
 # Start vLLM serving the Opus-trained merged SFT model.
-# Run from: roshan/Actual_code/task_2/
 #
-# Usage:
+# Usage (from ACCRE home directory):
+#   cd asset/fillings/roshan/Actual_code/task_2
 #   bash start_vllm.sh
+#
+# IMPORTANT: Must be run from the task_2/ directory (uses $PWD for bind mount)
 
 apptainer exec --nv \
   --bind /nobackup/user/$USER:/nobackup/user/$USER \
