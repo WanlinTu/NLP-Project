@@ -469,24 +469,11 @@ Wait until you see `Application startup complete` in the terminal output.
 
 **3. Set your ticker assignment in `task_2_5_sft_rescoring.ipynb`:**
 
-Open the notebook, find Step 4 (Discover Factor Files), and add your assigned tickers before the `all_factor_files = sorted(...)` line:
+Open the notebook, find the "Discover Factor Files" cell. The ticker assignments are already in the code — just uncomment YOUR line:
 
-```python
-# Person 1 (Roshan): tickers A-FDX
-MY_TICKERS = {"AAL", "ADT", "ALK", "ALLE", "AME", "AMTM", "AOS", "AXON", "AYI", "BA", "BLDR", "CAT", "CARR", "CHRW", "CMI", "COL", "CPRT", "CSX", "CTAS", "DAL", "DE", "DOV", "EFX", "EMR", "ETN", "EXPD", "FAST", "FBIN", "FDX"}
-
-# Person 2 (Luka): tickers FLR-PH
-MY_TICKERS = {"FLR", "FLS", "FTV", "GD", "GE", "GNRC", "GWW", "HII", "HON", "HUBB", "INFO", "IR", "ITW", "J", "JBHT", "JCI", "KSU", "LDOS", "LHX", "LII", "LLL", "LMT", "LUV", "MAS", "MMM", "NDSN", "NLSN", "NOC", "NSC", "ODFL", "OTIS", "PCAR", "PH"}
-
-# Person 3 (Maggie): tickers PNR-XYL
-MY_TICKERS = {"PNR", "PWR", "R", "RHI", "ROK", "ROL", "ROP", "RSG", "RTN", "RTX", "SNA", "SWK", "TDG", "TT", "TXT", "UAL", "UNP", "UPS", "URI", "VNT", "VRSK", "WAB", "WM", "XYL"}
-```
-
-Then add this line right after `all_factor_files = sorted(...)`:
-
-```python
-all_factor_files = [f for f in all_factor_files if f.parent.name in MY_TICKERS]
-```
+- **Person 1 (Roshan):** Uncomment the `# MY_TICKERS = {"AAL", ...}` line (A-FDX, 29 tickers)
+- **Person 2 (Luka):** Uncomment the `# MY_TICKERS = {"FLR", ...}` line (FLR-PH, 33 tickers)
+- **Person 3 (Maggie):** Uncomment the `# MY_TICKERS = {"PNR", ...}` line (PNR-XYL, 24 tickers)
 
 **4. Run `task_2_5_sft_rescoring.ipynb`:**
 
