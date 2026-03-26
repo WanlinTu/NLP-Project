@@ -460,12 +460,26 @@ After the midterm, we improved the annotation quality by using Claude Opus 4.6 (
 
 **2. Start vLLM serving the merged model:**
 
+Choose the script based on your GPU:
+
+| GPU | Script | Notebook `MAX_CONCURRENT` |
+|-----|--------|--------------------------|
+| A100 40GB | `bash start_vllm.sh` | 16 |
+| A100 80GB | `bash start_vllm_80gb.sh` | 64 |
+
 ```bash
-cd roshan/Actual_code/task_2
+cd asset/fillings/roshan/Actual_code/task_2
+
+# For A100 40GB (default):
 bash start_vllm.sh
+
+# For A100 80GB (4-5x faster — request with: salloc -A p_dsi_acc -p batch_gpu --gres=gpu:nvidia_a100_80gb:1 --mem=64G --time=08:00:00):
+bash start_vllm_80gb.sh
 ```
 
 Wait until you see `Application startup complete` in the terminal output.
+
+**Important:** If using the 80GB GPU, also change `MAX_CONCURRENT = 16` to `MAX_CONCURRENT = 64` in the first code cell of `task_2_5_sft_rescoring.ipynb`.
 
 **3. Set your ticker assignment in `task_2_5_sft_rescoring.ipynb`:**
 
