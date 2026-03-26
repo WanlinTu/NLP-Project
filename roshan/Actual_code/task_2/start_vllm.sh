@@ -20,12 +20,12 @@ python3 -m vllm.entrypoints.openai.api_server \
   --model /workspace/models/sentiment_merged_opus/ \
   --tokenizer deepseek-ai/DeepSeek-R1-Distill-Qwen-14B \
   --dtype bfloat16 \
-  --gpu-memory-utilization 0.95 \
+  --gpu-memory-utilization 0.90 \
   --host 0.0.0.0 \
   --port 8000 \
   --max-model-len 2048 \
   --enable-prefix-caching \
   --disable-log-requests \
-  --max-num-seqs 256 \
-  --max-num-batched-tokens 16384 \
+  --max-num-seqs 16 \
+  --max-num-batched-tokens 8192 \
   --trust-remote-code
