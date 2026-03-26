@@ -475,11 +475,11 @@ Open the notebook, find Step 4 (Discover Factor Files), and add your assigned ti
 # Person 1 (Roshan): tickers A-FDX
 MY_TICKERS = {"AAL", "ADT", "ALK", "ALLE", "AME", "AMTM", "AOS", "AXON", "AYI", "BA", "BLDR", "CAT", "CARR", "CHRW", "CMI", "COL", "CPRT", "CSX", "CTAS", "DAL", "DE", "DOV", "EFX", "EMR", "ETN", "EXPD", "FAST", "FBIN", "FDX"}
 
-# Person 2 (Maggie): tickers FLR-MAS
-MY_TICKERS = {"FLR", "FLS", "FTV", "GD", "GE", "GNRC", "GWW", "HII", "HON", "HUBB", "INFO", "IR", "ITW", "J", "JBHT", "JCI", "KSU", "LDOS", "LHX", "LII", "LLL", "LMT", "LUV", "MAS"}
+# Person 2 (Luka): tickers FLR-PH
+MY_TICKERS = {"FLR", "FLS", "FTV", "GD", "GE", "GNRC", "GWW", "HII", "HON", "HUBB", "INFO", "IR", "ITW", "J", "JBHT", "JCI", "KSU", "LDOS", "LHX", "LII", "LLL", "LMT", "LUV", "MAS", "MMM", "NDSN", "NLSN", "NOC", "NSC", "ODFL", "OTIS", "PCAR", "PH"}
 
-# Person 3 (Luka): tickers MMM-XYL
-MY_TICKERS = {"MMM", "NDSN", "NLSN", "NOC", "NSC", "ODFL", "OTIS", "PCAR", "PH", "PNR", "PWR", "R", "RHI", "ROK", "ROL", "ROP", "RSG", "RTN", "RTX", "SNA", "SWK", "TDG", "TT", "TXT", "UAL", "UNP", "UPS", "URI", "VNT", "VRSK", "WAB", "WM", "XYL"}
+# Person 3 (Maggie): tickers PNR-XYL
+MY_TICKERS = {"PNR", "PWR", "R", "RHI", "ROK", "ROL", "ROP", "RSG", "RTN", "RTX", "SNA", "SWK", "TDG", "TT", "TXT", "UAL", "UNP", "UPS", "URI", "VNT", "VRSK", "WAB", "WM", "XYL"}
 ```
 
 Then add this line right after `all_factor_files = sorted(...)`:
